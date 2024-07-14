@@ -1,3 +1,72 @@
 ﻿POWER_BLOCS = {
+	c:SPA = {
+		create_power_bloc = {
+			name = SPANISH_EMPIRE
+	
+			map_color = { 111 111 111 }
+	
+			founding_date = 1015.6.9 
+			identity = identity_soverign_empire
+			principle = principle_exploit_members_1
+		}
 
+		power_bloc = {
+			
+		}
+	}
+
+	c:BRG = {
+		create_power_bloc = {
+			name = BURGUNDY
+	
+			map_color = { 128 0 32 }
+	
+			founding_date = 1015.6.9 
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
+
+			member = c:SWI
+			member = c:GRB
+			member = c:ULM
+			member = c:WUR
+			member = c:BAD
+			member = c:BAE
+			member = c:FIO
+			member = c:NAS
+			member = c:BEG
+			member = c:MUN
+			member = c:LIP
+		}
+		power_bloc = {
+			
+		}
+	}
+
+	c:BOH = {
+		create_power_bloc = {
+			name = BOHEMIA
+	
+			map_color = { 161 139 40 }
+	
+			founding_date = 1015.6.9 
+			identity = identity_military_treaty_organization
+			principle = principle_aggressive_coordination_1
+
+			member = c:THU
+			member = c:SME
+			member = c:DAR
+			member = c:FRM
+			member = c:FRW
+			member = c:FRE
+			member = c:ASB
+			member = c:BAV
+			member = c:AGR
+			member = c:AUS
+			member = c:SLZ
+			member = c:MSZ
+		}
+		power_bloc = {
+			
+		}
+	}
 }
