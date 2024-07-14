@@ -6,7 +6,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -28,7 +28,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=8
 					}
 				}
 				reserves=1
@@ -50,7 +50,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=4
 					}
 				}
 				reserves=1
@@ -61,7 +61,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
@@ -127,7 +127,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -142,7 +142,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
@@ -153,7 +153,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=10
 					}
 				}
 				reserves=1
@@ -164,7 +164,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
@@ -186,7 +186,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -219,7 +219,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -230,7 +230,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MJN"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -344,7 +344,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:YLO"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -355,7 +355,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:YLO"
-						levels=1
+						levels=7
 					}
 				}
 				reserves=1
@@ -366,7 +366,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:YLO"
-						levels=1
+						levels=5
 					}
 				}
 				reserves=1
@@ -425,7 +425,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:YLO"
-						levels=1
+						levels=6
 					}
 				}
 				reserves=1
@@ -436,7 +436,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:YLO"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -473,7 +473,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:YLO"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -517,7 +517,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:YLO"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -528,7 +528,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:YLO"
-						levels=1
+						levels=4
 					}
 				}
 				reserves=1
@@ -653,7 +653,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:ZSA"
-						levels=1
+						levels=4
 					}
 				}
 				reserves=1
@@ -679,7 +679,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:ZSA"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -723,7 +723,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:ZSA"
-						levels=1
+						levels=5
 					}
 				}
 				reserves=1
@@ -734,7 +734,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:ZSA"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -760,7 +760,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:ZSA"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -771,7 +771,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:ZSA"
-						levels=1
+						levels=8
 					}
 				}
 				reserves=1
@@ -782,7 +782,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:ZSA"
-						levels=1
+						levels=5
 					}
 				}
 				reserves=1
@@ -845,7 +845,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:KOO"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -1001,7 +1001,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:AOT"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
