@@ -1,0 +1,187 @@
+﻿namespace = dvg_central_rus
+
+# start event TVE, NZH and RYA
+dvg_central_rus.1 = {
+	type = country_event
+	placement = root
+	title = dvg_central_rus.1.t
+	desc = dvg_central_rus.1.d
+	flavor = dvg_central_rus.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:NOV = {
+			save_scope_as = novgorod_scope
+		}
+		c:MSO = {
+			save_scope_as = moscow_scope
+		}
+		c:TVE = {
+			save_scope_as = tver_scope
+		}
+		c:RYA = {
+			save_scope_as = ryazan_scope
+		}
+		c:NZH = {
+			save_scope_as = nizhny_scope
+		}
+		c:POL = {
+			save_scope_as = poland_scope
+		}
+		c:SCA = {
+			save_scope_as = sca_scope
+		}
+	}
+
+	option = {
+		name = dvg_central_rus.1.a
+
+		add_journal_entry = {
+			type = je_russian_anarchy
+		}
+
+		show_as_tooltip = {
+            custom_tooltip = {
+                text = diplomatic_plays_blocked_until_russian_anarchy
+                add_modifier = {
+                    name = diplomatic_plays_blocked
+                    months = -1
+                }	
+            }	
+			add_modifier = {
+				name = dvg_rock_and_hard_place
+				months = -1
+			}
+		}
+	}
+}
+
+# start event MSO
+dvg_central_rus.2 = {
+	type = country_event
+	placement = root
+	title = dvg_central_rus.2.t
+	desc = dvg_central_rus.2.d
+	flavor = dvg_central_rus.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:NOV = {
+			save_scope_as = novgorod_scope
+		}
+		c:SMO = {
+			save_scope_as = smo_scope
+		}
+		c:TVE = {
+			save_scope_as = tver_scope
+		}
+		c:NZH = {
+			save_scope_as = nizhny_scope
+		}
+		c:POL = {
+			save_scope_as = poland_scope
+		}
+	}
+
+	option = {
+		name = dvg_central_rus.2.a
+
+		add_journal_entry = {
+			type = je_russian_anarchy
+		}
+
+		show_as_tooltip = {
+            custom_tooltip = {
+                text = diplomatic_plays_blocked_until_russian_anarchy
+                add_modifier = {
+                    name = diplomatic_plays_blocked
+                    months = -1
+                }	
+            }	
+			add_modifier = {
+				name = dvg_rock_and_hard_place
+				months = -1
+			}
+		}
+	}
+}
+
+# start event SMO
+dvg_central_rus.3 = {
+	type = country_event
+	placement = root
+	title = dvg_central_rus.3.t
+	desc = dvg_central_rus.3.d
+	flavor = dvg_central_rus.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:MSO = {
+			save_scope_as = moscow_scope
+		}
+		c:POL = {
+			save_scope_as = poland_scope
+		}
+	}
+
+	option = {
+		name = dvg_central_rus.3.a
+
+		add_journal_entry = {
+			type = je_russian_anarchy
+		}
+
+		show_as_tooltip = {
+            custom_tooltip = {
+                text = diplomatic_plays_blocked_until_russian_anarchy
+                add_modifier = {
+                    name = diplomatic_plays_blocked
+                    months = -1
+                }	
+            }	
+			add_modifier = {
+				name = dvg_rock_and_hard_place
+				months = -1
+			}
+		}
+	}
+}

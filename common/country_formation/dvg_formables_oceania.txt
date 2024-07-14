@@ -1,0 +1,97 @@
+﻿ZHR = { #Zhourao
+	states = {
+		STATE_WENCHENG
+		STATE_JINZHOU
+		STATE_WEIZHOU
+		STATE_WEIHUAI
+		STATE_ZHENG_HE
+		STATE_XINXIANG
+		STATE_GUANSHAN
+		STATE_QINGSHUI
+		STATE_TAITUNG
+		STATE_YONGLING
+	}
+
+	required_states_fraction = 0.65
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+
+	}
+}
+
+CUI = { #Cuiyan
+	states = {
+		STATE_MOTU_PARI
+	}
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+	}
+}
+
+
+GNS = { #Hongshanguo
+	states = {
+		STATE_YOLNGU
+	}
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+	}
+}
+MOA = { #Moana/Polynesia
+	use_culture_states = yes
+
+	required_states_fraction = 0.4
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		any_country = {
+			AND = {
+				NOT = { has_game_rule = plausible_formable_nations }
+				country_rank >= rank_value:insignificant_power
+			}
+			has_technology_researched = pan-nationalism
+		}
+	}
+}
+AST = { #Australia
+	
+	use_culture_states = yes
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
+TMC = { #Timor-Chougie
+	states = {
+		STATE_YOLNGU
+		STATE_SUNDA_ISLANDS
+	}
+
+	possible = {
+		has_technology_researched = pan-nationalism
+	}
+
+	required_states_fraction = .60
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+	}
+}

@@ -1,0 +1,324 @@
+﻿PLA = { #Plantagenia
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+BLC = { #Belgian Confederation
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+VIN = { #Vinland
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+QIN = { #Qingqiu
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+MEX = { #Mexico
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+LUS = { #Lusitania
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+JLS = { #Jalisco
+	states = {
+		STATE_JALISCO
+		STATE_SINALOA
+		STATE_DURANGO
+	}
+
+	ai_will_do = { always = no }
+}
+
+UCA = { #United Provinces of Salvador
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+ELS = { #San Salvador
+	states = {
+		STATE_SAN_SALVADOR
+		STATE_GUATEMALA
+		STATE_CHIAPAS
+		STATE_YUCATAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+NIC = { #Matacalpa
+	states = {
+		STATE_MANAGUA
+		STATE_COSTA_RICA
+	}
+
+	ai_will_do = { always = no }
+}
+
+PNM = { #Andagoya
+	states = {
+		STATE_PANAMA
+	}
+
+	ai_will_do = { always = no }
+}
+
+RHN = { #Rohnnst
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+KKN = { #Kita Kaigan
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+ATH = { #Athesia
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+SFJ = { #Sudurhafeyjar
+	states = {
+		STATE_SUDURHAFEYJAR
+		STATE_RIGHAVN
+	}
+
+	ai_will_do = { always = no }
+}
+
+CUB = { #Kuba
+	states = { STATE_CUBA }
+
+	ai_will_do = { always = no }
+}
+
+JAM = { #Eendrachtsland
+	states = { STATE_EENDRACHTSLAND }
+
+	ai_will_do = { always = no }
+}
+
+NCL = { #New Courland
+	states = { STATE_WEST_INDIES }
+
+	ai_will_do = { always = no }
+}
+RIG = { #Righavn
+	states = { STATE_RIGHAVN }
+
+	ai_will_do = { always = no }
+}
+
+WIN = { #West Indies
+	states = { STATE_WEST_INDIES }
+
+	ai_will_do = { always = no }
+}
+
+CHE = { #Tsalagihi Ayeli
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+IRO = { #Haudenosaunee
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+NAH = { #Aztlan
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+OAX = { #Oaxaca
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+MCO = { #Michoacan/Purepecha
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+MAY = { #Mayapan
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+#Qingqiu Breakaways
+#All tags begin with 'Q' to signify that they come from Qingqiu
+
+QXI = { #Xiazhou
+	states = {
+	
+		STATE_XIAZHOU
+		STATE_TANGWANG
+		STATE_DINGGUO
+	}
+
+	ai_will_do = { always = no }
+}
+
+QHA = { #Haikou	
+	states = {
+		STATE_WENYUAN
+		STATE_BAIZEHU
+		STATE_JULINYUTIAN
+		STATE_TERRES_ROUGES
+	}
+
+	ai_will_do = { always = no }
+}
+
+QDA = { #Dayan
+	states = {
+		STATE_DAYAN
+		STATE_YICHENG
+		STATE_JINSHAN	
+	}
+
+	ai_will_do = { always = no }
+}
+
+QYO = { #Yongle
+	states = {
+		STATE_DONGHAI
+		STATE_XINGTIAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+QDJ = { #Dongji
+	states = {
+		STATE_DONGJI
+		STATE_QIZHOU
+	}
+
+	ai_will_do = { always = no }
+}
+
+QGQ = { #Qingqiu state
+	states = {
+		STATE_SANBAO
+		STATE_XINGYE
+		STATE_ZHONGRONG
+	}
+
+	ai_will_do = { always = no }
+}
+
+OUM = { #Oumissourita
+	states = { 
+		
+		STATE_MONT_AUX_ARCS
+
+		STATE_OSAGERIE
+
+		STATE_OUISKONSIN
+
+		STATE_LES_PAINS
+
+		STATE_NEBRASKIER
+
+		STATE_TERRES_ROUGES
+
+		STATE_COMANCHERIE
+
+		STATE_APACHERIA
+		
+		STATE_AIOUEZ
+		
+		STATE_AKANSA
+
+		}
+
+	ai_will_do = { always = no }
+}
+
+LOU = { #Louisiane Royale
+	states = { 
+		
+		STATE_LOUISIANE_ROYALE
+
+		STATE_SANACOMIE
+
+		STATE_CHARLESIE
+
+		}
+
+	ai_will_do = { always = no }
+}
+
+LIB = { #Liberie
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+CFS = { #Flandre Superieure
+	states = { STATE_FLANDRE_SUPERIEURE }
+
+	ai_will_do = { always = no }
+}
+CNL = { #Nouvelle Lorraine
+	states = { STATE_NOUVELLE_LORRAINE }
+
+	ai_will_do = { always = no }
+}
+CCA = { #Carolina
+	states = { STATE_CAROLINE }
+
+	ai_will_do = { always = no }
+}
+CPH = { #Philippa
+	states = { STATE_PHILIPPA }
+
+	ai_will_do = { always = no }
+}
+CHV = { #Haute Valoise
+	states = { STATE_HAUTE_VALOISIE }
+
+	ai_will_do = { always = no }
+}
+CBV = { #Base Valoise
+	states = { STATE_BASSE_VALOISIE }
+
+	ai_will_do = { always = no }
+}
+CUV = { #United Valoisie
+	
+	states = {
+		STATE_HAUTE_VALOISIE
+		STATE_BASSE_VALOISIE
+	}
+	
+	ai_will_do = { always = no }
+}
+
+
