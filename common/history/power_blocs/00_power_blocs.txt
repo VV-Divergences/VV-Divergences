@@ -1,9 +1,9 @@
 ﻿POWER_BLOCS = {
 	c:SPA = {
 		create_power_bloc = {
-			name = SPANISH_EMPIRE
+			name = SPANISH_EMPIRE_bloc_name
 	
-			map_color = { 111 111 111 }
+			map_color = { 38  97  83 }
 	
 			founding_date = 1015.6.9 
 			identity = identity_sovereign_empire
@@ -17,7 +17,7 @@
 
 	c:BRG = {
 		create_power_bloc = {
-			name = BURGUNDY
+			name = BURGUNDY_bloc_name
 	
 			map_color = { 128 0 32 }
 	
@@ -44,7 +44,7 @@
 
 	c:BOH = {
 		create_power_bloc = {
-			name = BOHEMIA
+			name = BOHEMIA_bloc_name
 	
 			map_color = { 161 139 40 }
 	
@@ -64,6 +64,69 @@
 			member = c:AUS
 			member = c:SLZ
 			member = c:MSZ
+		}
+		power_bloc = {
+			
+		}
+	}
+
+	c:SCA = {
+		create_power_bloc = {
+			name = SCANDANAVIA_bloc_name
+	
+			map_color = { 62  122  189 }
+	
+			founding_date = 1015.6.9 
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+
+			member = c:HAN
+			member = c:BRA
+			member = c:OLD
+			member = c:BRE
+			member = c:OSN
+			
+		}
+		power_bloc = {
+			
+		}
+	}
+
+	c:ARN = {
+		create_power_bloc = {
+			name = ARAGON_ITALY_bloc_name
+	
+			map_color = { 213  132  76 }
+	
+			founding_date = 1015.6.9 
+			identity = identity_military_treaty_organization
+			principle = principle_aggressive_coordination_1
+
+			member = c:VEN
+			member = c:PAP
+			member = c:PRO
+			member = c:BRE
+			member = c:OSN
+			
+		}
+		power_bloc = {
+			
+		}
+	}
+
+	c:DUA = {
+		create_power_bloc = {
+			name = DUAL_MONARCHY_bloc_name 
+	
+			map_color = { 46 0 108 }
+	
+			founding_date = 1015.6.9 
+			identity = identity_ideological_union
+			principle = principle_ideological_truth_1
+
+			member = c:SAV
+
+			
 		}
 		power_bloc = {
 			
