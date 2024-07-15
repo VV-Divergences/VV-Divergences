@@ -3491,15 +3491,15 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:ARN"
+						country="c:SPA"
 						levels=1
 						region="STATE_CATALONIA"
 					}
 					building={
-						type="building_financial_district"
-						country="c:ARN"
+						type="building_furniture_manufacturies"
+						country="c:SPA"
 						levels=2
-						region="STATE_VALENCIA"
+						region="STATE_TOLEDO"
 					}
 				}
 				reserves=1
@@ -3521,9 +3521,9 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ARN"
+						country="c:SPA"
 						levels=6
-						region="STATE_VALENCIA"
+						region="STATE_TOLEDO"
 					}
 				}
 				reserves=1
@@ -3532,9 +3532,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=5
+						region="STATE_TOLEDO"
 					}
 				}
 				reserves=1
@@ -3569,9 +3571,11 @@ BUILDINGS={
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					country={
+					building={
+						type="building_glassworks"
 						country="c:SPA"
 						levels=1
+						region="STATE_GALICIA"
 					}
 				}
 				reserves=1
@@ -3580,9 +3584,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=1
+						region="STATE_GALICIA"
 					}
 				}
 				reserves=1
@@ -3591,9 +3597,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=6
+						region="STATE_GALICIA"
 					}
 				}
 				reserves=1
@@ -3602,9 +3610,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:SPA"
 						levels=2
+						region="STATE_GALICIA"
 					}
 				}
 				reserves=1
@@ -3639,9 +3649,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=1
+						region="STATE_ASTURIAS"
 					}
 				}
 				reserves=1
@@ -3650,9 +3662,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=3
+						region="STATE_ASTURIAS"
 					}
 				}
 				reserves=1
@@ -3661,9 +3675,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:SPA"
 						levels=2
+						region="STATE_ASTURIAS"
 					}
 				}
 				reserves=1
@@ -3709,9 +3725,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=1
+						region="STATE_CASTILE"
 					}
 				}
 				reserves=1
@@ -3720,9 +3738,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=1
+						region="STATE_CASTILE"
 					}
 				}
 				reserves=1
@@ -3731,9 +3751,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:SPA"
 						levels=3
+						region="STATE_CASTILE"
 					}
 				}
 				reserves=1
@@ -3742,9 +3764,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:SPA"
 						levels=2
+						region="STATE_CASTILE"
 					}
 				}
 				reserves=1
@@ -3753,9 +3777,11 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=2
+						region="STATE_CASTILE"
 					}
 				}
 				reserves=1
@@ -3764,9 +3790,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_iron_mine"
 						country="c:SPA"
 						levels=2
+						region="STATE_CASTILE"
 					}
 				}
 				reserves=1
@@ -3775,9 +3803,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=4
+						region="STATE_CASTILE"
 					}
 				}
 				reserves=1
@@ -3836,7 +3866,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=2
+						levels=1
+					}
+					building={
+						type="building_shipyards"
+						country="c:SPA"
+						levels=1
+						region="STATE_ANDALUSIA"
 					}
 				}
 				reserves=1
@@ -3856,9 +3892,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=3
+						region="STATE_ANDALUSIA"
 					}
 				}
 				reserves=1
@@ -3867,9 +3905,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=2
+						region="STATE_ANDALUSIA"
 					}
 				}
 				reserves=1
@@ -3878,9 +3918,11 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=5
+						region="STATE_ANDALUSIA"
 					}
 				}
 				reserves=1
@@ -3889,9 +3931,11 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SPA"
 						levels=2
+						region="STATE_ANDALUSIA"
 					}
 				}
 				reserves=1
