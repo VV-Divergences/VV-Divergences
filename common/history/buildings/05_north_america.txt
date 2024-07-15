@@ -796,7 +796,7 @@ BUILDINGS={
 						type="building_maize_farm"
 						country="c:SKR"
 						levels=1
-						region="COASKAQUIAS"
+						region="STATE_COSKAQUIAS"
 					}
 				}
 				reserves=1
@@ -1570,9 +1570,17 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CBV"
-						levels=6
+						levels=3
+						region="STATE_BASSE_VALOISIE"
+					}
+					building={
+						type="building_maize_farm"
+						country="c:CBV"
+						levels=2
+						region="STATE_BASSE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1581,9 +1589,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CBV"
 						levels=1
+						region="STATE_BASSE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1592,9 +1602,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:CBV"
-						levels=1
+						levels=2
+						region="STATE_BASSE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1603,9 +1615,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CBV"
 						levels=2
+						region="STATE_BASSE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1614,9 +1628,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:CBV"
 						levels=1
+						region="STATE_BASSE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1625,9 +1641,11 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CBV"
 						levels=2
+						region="STATE_BASSE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1658,9 +1676,11 @@ BUILDINGS={
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CBV"
 						levels=2
+						region="STATE_BASSE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1669,9 +1689,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:CBV"
 						levels=3
+						region="STATE_BASSE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1695,9 +1717,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CHV"
 						levels=6
+						region="STATE_HAUTE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1706,9 +1730,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CHV"
 						levels=1
+						region="STATE_HAUTE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1728,9 +1754,11 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CHV"
 						levels=1
+						region="STATE_HAUTE_VALOISIE"
 					}
 				}
 				reserves=1
@@ -1739,9 +1767,11 @@ BUILDINGS={
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CHV"
 						levels=1
+						region="STATE_HAUTE_VALOISIE"
 					}
 				}
 				reserves=1
