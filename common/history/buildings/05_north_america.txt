@@ -453,9 +453,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:MSG"
 						levels=2
+						region="STATE_NUREMBORG"
 					}
 				}
 				reserves=1
@@ -465,8 +467,10 @@ BUILDINGS={
 				building="building_livestock_ranch"
 				add_ownership={
 					country={
+						type="building_manor_house"
 						country="c:MSG"
 						levels=2
+						region="STATE_MECKLENBURG"
 					}
 				}
 				reserves=1
@@ -475,9 +479,21 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MSG"
 						levels=3
+						region="STATE_NUREMBORG"
+					}
+					country={
+						country="c:MSG"
+						levels=1
+					}
+					building={
+						type="building_wheat_farm"
+						country="c:MSG"
+						levels=1
+						region="STATE_NUREMBORG"
 					}
 				}
 				reserves=1
@@ -486,9 +502,21 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:MSG"
+						levels=1
+						region="STATE_NUREMBORG"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SCA"
+						levels=2
+						region="STATE_ZEALAND"
+					}
 					country={
 						country="c:MSG"
-						levels=4
+						levels=1
 					}
 				}
 				reserves=1
@@ -499,7 +527,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MSG"
-						levels=2
+						levels=1
+					}
+					building={
+						type="building_financial_district"
+						country="c:MSG"
+						levels=1
+						region="STATE_WESTERN_NORWAY"
 					}
 				}
 				reserves=1
@@ -512,9 +546,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:MSG"
 						levels=2
+						region="STATE_MASGIRLAND"
 					}
 				}
 				reserves=1
@@ -545,9 +581,17 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
+						country="c:SCA"
+						levels=1
+						region="STATE_NORRLAND"
+					}
+					building={
+						type="building_wheat_farm"
 						country="c:MSG"
-						levels=3
+						levels=1
+						region="STATE_MASGIRLAND"
 					}
 				}
 				reserves=1
