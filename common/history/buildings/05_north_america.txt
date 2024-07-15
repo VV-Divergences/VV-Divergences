@@ -817,7 +817,7 @@ BUILDINGS={
 				building="building_coal_mine"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 					}
 				}
