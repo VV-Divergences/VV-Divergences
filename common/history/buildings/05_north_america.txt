@@ -4,9 +4,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:VIN"
 						levels=3
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -15,9 +17,11 @@ BUILDINGS={
 			create_building={
 				building="building_whaling_station"
 				add_ownership={
-					country={
+					building={
+						type="building_whaling_station"
 						country="c:VIN"
 						levels=2
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -37,9 +41,11 @@ BUILDINGS={
 			create_building={
 				building="building_shipyards"
 				add_ownership={
-					country={
+					building={
+						type="building_shipyards"
 						country="c:VIN"
 						levels=2
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -81,9 +87,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:VIN"
 						levels=3
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -92,9 +100,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
-						country="c:VIN"
+					building={
+						type="building_manor_house"
+						country="c:SCA"
 						levels=1
+						region="STATE_NORRLAND"
 					}
 				}
 				reserves=1
@@ -103,9 +113,17 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:VIN"
-						levels=2
+						levels=1
+						region="STATE_VINLAND"
+					}
+					building={
+						type="building_financial_district"
+						country="c:VIN"
+						levels=1
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -114,9 +132,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_paper_mills"
 						country="c:VIN"
 						levels=1
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -140,9 +160,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:VIN"
 						levels=3
+						region="STATE_MARKLAND"
 					}
 				}
 				reserves=1
@@ -151,9 +173,11 @@ BUILDINGS={
 			create_building={
 				building="building_whaling_station"
 				add_ownership={
-					country={
+					building={
+						type="building_whaling_station"
 						country="c:VIN"
 						levels=3
+						region="STATE_MARKLAND"
 					}
 				}
 				reserves=1
@@ -162,9 +186,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:VIN"
 						levels=2
+						region="STATE_MARKLAND"
 					}
 				}
 				reserves=1
@@ -177,9 +203,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:VIN"
 						levels=1
+						region="STATE_NORDELV"
 					}
 				}
 				reserves=1
@@ -188,9 +216,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:VIN"
 						levels=2
+						region="STATE_NORDELV"
 					}
 				}
 				reserves=1
@@ -199,9 +229,17 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VIN"
 						levels=4
+						region="STATE_EASTERN_NORWAY"
+					}
+					building={
+						type="building_manor_house"
+						country="c:SCA"
+						levels=1
+						region="STATE_NORDELV"
 					}
 				}
 				reserves=1
@@ -225,9 +263,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:VIN"
 						levels=1
+						region="STATE_KRONELAND"
 					}
 				}
 				reserves=1
@@ -236,9 +276,17 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_furniture_manufacturies"
 						country="c:VIN"
 						levels=2
+						region="STATE_KRONELAND"
+					}
+					building={
+						type="building_financial_district"
+						country="c:VIN"
+						levels=1
+						region="STATE_KRONELAND"
 					}
 				}
 				reserves=1
@@ -247,9 +295,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VIN"
 						levels=2
+						region="STATE_KRONELAND"
 					}
 				}
 				reserves=1
@@ -258,9 +308,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
-						country="c:VIN"
-						levels=1
+					building={
+						type="building_financial_district"
+						country="c:SCA"
+						levels=2
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -284,9 +336,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:VIN"
 						levels=1
+						region="STATE_ODAWAMARK"
 					}
 				}
 				reserves=1
@@ -295,9 +349,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VIN"
 						levels=1
+						region="STATE_ODAWAMARK"
 					}
 				}
 				reserves=1
@@ -306,9 +362,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VIN"
 						levels=2
+						region="STATE_ODAWAMARK"
 					}
 				}
 				reserves=1
@@ -321,9 +379,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VIN"
 						levels=1
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -336,9 +396,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:MSG"
 						levels=2
+						region="STATE_NUREMBORG"
 					}
 				}
 				reserves=1
