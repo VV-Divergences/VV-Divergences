@@ -604,9 +604,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						type="building_manor_house"
+						country="c:VIN"
 						levels=1
+						region="STATE_NORDELV"
 					}
 				}
 				reserves=1
@@ -615,9 +617,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						type="building_manor_house"
+						country="c:VIN"
 						levels=2
+						region="STATE_NORDELV"
 					}
 				}
 				reserves=1
@@ -630,9 +634,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						type="building_manor_house"
+						country="c:VIN"
 						levels=1
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -641,9 +647,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						type="building_financial_district"
+						country="c:VIN"
 						levels=1
+						region="STATE_KRONELAND"
 					}
 				}
 				reserves=1
@@ -656,9 +664,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						type="building_manor_house"
+						country="c:VIN"
 						levels=1
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -668,7 +678,7 @@ BUILDINGS={
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -693,9 +703,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						type="building_manor_house"
+						country="c:VIN"
 						levels=1
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -730,9 +742,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						type="building_manor_house"
+						country="c:MSG"
 						levels=1
+						region="STATE_NUREMBORG"
 					}
 				}
 				reserves=1
@@ -752,8 +766,8 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -764,7 +778,7 @@ BUILDINGS={
 				building="building_tobacco_plantation"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=2
 					}
 				}
@@ -778,9 +792,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_maize_farm"
 						country="c:SKR"
 						levels=1
+						region="COASKAQUIAS"
 					}
 				}
 				reserves=1
