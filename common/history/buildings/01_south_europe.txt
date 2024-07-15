@@ -1507,7 +1507,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_forest_glass" "pm_merchant_guilds_building_glassworks" "pm_manual_glassblowing" "pm_ceramics" }
+				activate_production_methods={ "pm_leaded_glass" "pm_merchant_guilds_building_glassworks" "pm_manual_glassblowing" pm_disabled_ceramics" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -2306,6 +2306,7 @@ BUILDINGS={
 						country="c:ARN"
 						levels=1
 						region="STATE_SARDINIA"
+					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
