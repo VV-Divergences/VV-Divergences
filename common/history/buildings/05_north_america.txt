@@ -827,9 +827,11 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					country={
-						country="c:SKR"
+					building={
+						type="building_manor_house"
+						country="c:VIN"
 						levels=2
+						region="STATE_VINLAND"
 					}
 				}
 				reserves=1
@@ -838,9 +840,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:SKR"
 						levels=2
+						region="STATE_COSKAQUIAS"
 					}
 				}
 				reserves=1
