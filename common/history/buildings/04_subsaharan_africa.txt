@@ -496,7 +496,7 @@ BUILDINGS = {
 					"pm_dye_workshops"
 					"pm_no_luxury_clothes"
 					"pm_traditional_looms"
-					""
+					
 				}
 			}
 			create_building = {
@@ -513,7 +513,7 @@ BUILDINGS = {
 					"pm_disabled_canning"
 					"pm_pot_stills"
 					"pm_manual_dough_processing"
-					""
+					
 				}
 			}
 			create_building = {
@@ -890,7 +890,7 @@ BUILDINGS = {
 					"pm_no_hardwood"
 					"pm_no_equipment"
 					"pm_road_carts"
-					""
+					
 				}
 			}
 		}
@@ -947,7 +947,7 @@ BUILDINGS = {
 					"pm_no_hardwood"
 					"pm_no_equipment"
 					"pm_road_carts"
-					""
+					
 				}
 			}
 			create_building = {
@@ -1779,7 +1779,7 @@ BUILDINGS = {
 					"pm_no_hardwood"
 					"pm_no_equipment"
 					"pm_road_carts"
-					""
+					
 				}
 			}
 			create_building = {
