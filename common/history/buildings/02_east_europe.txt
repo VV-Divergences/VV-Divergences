@@ -1487,7 +1487,6 @@ BUILDINGS={
 						region="STATE_YEDISAN"
 					}
 				}
-				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
 			}
@@ -1611,13 +1610,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					add_ownership={
-						building={
-							type="building_fishing_wharf"
-							country="c:CRI"
-							levels=1
-							region="STATE_QOBAN"
-						}
+					building={
+						type="building_fishing_wharf"
+						country="c:CRI"
+						levels=1
+						region="STATE_QOBAN"
 					}
 				}
 				reserves=1
@@ -1652,19 +1649,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					add_ownership={
-						building={
-							type="building_manor_house"
-							country="c:SCA"
-							levels=2
-							region="STATE_ESTONIA"
-						}
-						building={
-							type="building_logging_camp"
-							country="c:SCA"
-							levels=1
-							region="STATE_ESTONIA"
-						}
+					building={
+						type="building_manor_house"
+						country="c:SCA"
+						levels=2
+						region="STATE_ESTONIA"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:SCA"
+						levels=1
+						region="STATE_ESTONIA"
 					}
 				}
 				reserves=1
