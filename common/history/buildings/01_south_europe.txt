@@ -1314,9 +1314,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PAP"
 						levels=1
+						region="STATE_ROMAGNA"
 					}
 				}
 				reserves=1
@@ -1336,9 +1338,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PAP"
 						levels=1
+						region="STATE_ROMANGA"
 					}
 				}
 				reserves=1
@@ -1347,9 +1351,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PAP"
 						levels=2
+						region="STATE_ROMAGNA"
 					}
 				}
 				reserves=1
@@ -1358,9 +1364,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PAP"
 						levels=1
+						region="STATE_ROMAGNA"
 					}
 				}
 				reserves=1
@@ -1369,9 +1377,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:PAP"
-						levels=1
+						levels=2
+						region="STATE_ROMAGNA"
 					}
 				}
 				reserves=1
