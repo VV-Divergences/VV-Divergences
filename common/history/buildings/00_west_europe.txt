@@ -4372,9 +4372,17 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
-						levels=8
+						levels=5
+						region="STATE_PICARDY"
+					}
+					building={
+						type="building_textile_mills"
+						country="c:BRG"
+						levels=3
+						region="STATE_PICARDY"
 					}
 				}
 				reserves=1
@@ -4394,9 +4402,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_PICARDY"
 					}
 				}
 				reserves=1
@@ -4405,9 +4415,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=6
+						region="STATE_PICARDY"
 					}
 				}
 				reserves=1
@@ -4416,9 +4428,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
-						levels=6
+						levels=5
+						region="STATE_PICARDY"
 					}
 				}
 				reserves=1
@@ -4427,9 +4441,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=2
+						region="STATE_PICARDY"
 					}
 				}
 				reserves=1
@@ -4486,9 +4502,17 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
-						levels=5
+						levels=3
+						region="STATE_ALSACE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:BRG"
+						levels=2
+						region="STATE_ALSACE"
 					}
 				}
 				reserves=1
@@ -4508,9 +4532,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_ALSACE"
 					}
 				}
 				reserves=1
@@ -4519,9 +4545,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=4
+						region="STATE_ALSACE"
 					}
 				}
 				reserves=1
@@ -4556,9 +4584,11 @@ BUILDINGS={
 			create_building={
 				building="building_steel_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_LORRAINE"
 					}
 				}
 				reserves=1
@@ -4567,9 +4597,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=5
+						region="STATE_LORRAINE"
 					}
 				}
 				reserves=1
@@ -4578,9 +4610,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_LORRAINE"
 					}
 				}
 				reserves=1
@@ -4589,9 +4623,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=5
+						region="STATE_LORRAINE"
 					}
 				}
 				reserves=1
@@ -4637,9 +4673,17 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
-						levels=10
+						levels=3
+						region="STATE_BURGUNDY"
+					}
+					building={
+						type="building_manor_house"
+						country="c:BRG"
+						levels=7
+						region="STATE_BURGUNDY"
 					}
 				}
 				reserves=1
@@ -4659,9 +4703,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_BURGUNDY"
 					}
 				}
 				reserves=1
@@ -4670,9 +4716,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=8
+						region="STATE_BURGUNDY"
 					}
 				}
 				reserves=1
@@ -4681,9 +4729,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_BURGUNDY"
 					}
 				}
 				reserves=1
@@ -4692,9 +4742,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_BURGUNDY"
 					}
 				}
 				reserves=1
@@ -4703,9 +4755,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_BURGUNDY"
 					}
 				}
 				reserves=1
@@ -4714,9 +4768,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=9
+						region="STATE_BURGUNDY"
 					}
 				}
 				reserves=1
@@ -4725,9 +4781,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=3
+						region="STATE_BURGUNDY"
 					}
 				}
 				reserves=1
@@ -4773,9 +4831,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=4
+						region="STATE_FRANCHE_COMTE"
 					}
 				}
 				reserves=1
@@ -4784,9 +4844,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=10
+						region="STATE_FRANCHE_COMTE"
 					}
 				}
 				reserves=1
@@ -4795,9 +4857,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=3
+						region="STATE_FRANCHE_COMTE"
 					}
 				}
 				reserves=1
@@ -4854,9 +4918,11 @@ BUILDINGS={
 			create_building={
 				building="building_shipyards"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=6
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -4876,9 +4942,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=10
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -4887,9 +4955,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -4898,9 +4968,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=3
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -4909,9 +4981,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=3
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -4920,9 +4994,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=4
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -4990,9 +5066,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=5
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -5001,9 +5079,11 @@ BUILDINGS={
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=5
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -5012,9 +5092,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -5071,9 +5153,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_GELRE"
 					}
 				}
 				reserves=1
@@ -5082,9 +5166,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=5
+						region="STATE_GELRE"
 					}
 				}
 				reserves=1
@@ -5093,9 +5179,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=6
+						region="STATE_GELRE"
 					}
 				}
 				reserves=1
@@ -5104,9 +5192,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=1
+						region="STATE_GELRE"
 					}
 				}
 				reserves=1
@@ -5115,9 +5205,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=2
+						region="STATE_GELRE"
 					}
 				}
 				reserves=1
@@ -5163,9 +5255,11 @@ BUILDINGS={
 			create_building={
 				building="building_steel_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5174,9 +5268,11 @@ BUILDINGS={
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=4
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5185,9 +5281,11 @@ BUILDINGS={
 			create_building={
 				building="building_chemical_plants"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5196,9 +5294,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=4
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5207,9 +5307,11 @@ BUILDINGS={
 			create_building={
 				building="building_motor_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=1
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5218,9 +5320,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=5
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5229,9 +5333,11 @@ BUILDINGS={
 			create_building={
 				building="building_lead_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5240,9 +5346,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=4
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5251,9 +5359,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=9
+						region="STATE_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5262,9 +5372,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=1
+						region="STATE_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5273,9 +5385,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5354,9 +5468,11 @@ BUILDINGS={
 			create_building={
 				building="building_explosives_factory"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5365,9 +5481,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5376,9 +5494,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=4
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5409,9 +5529,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=15
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5420,9 +5542,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5431,9 +5555,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=8
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5442,9 +5568,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5453,9 +5581,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=8
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5464,9 +5594,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=5
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5545,9 +5677,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=1
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -5556,9 +5690,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=2
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -5567,9 +5703,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=7
+						region="STATE_RHINELAND"
 					}
 				}
 				reserves=1
@@ -5578,9 +5716,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=3
+						region="STATE_RHINELAND"
 					}
 				}
 				reserves=1
@@ -5589,9 +5729,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=1
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -5646,9 +5788,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
-						country="c:RHI"
-						levels=2
+					building={
+						type="building_financial_district"
+						country="c:BRG"
+						levels=1
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -5672,9 +5816,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRG"
 						levels=3
+						region="STATE_HOLLAND"
 					}
 				}
 				reserves=1
@@ -5683,9 +5829,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=2
+						region="STATE_PALATINATE"
 					}
 				}
 				reserves=1
@@ -5694,9 +5842,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=1
+						region="STATE_PALATINATE"
 					}
 				}
 				reserves=1
@@ -5705,9 +5855,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=2
+						region="STATE_PALATINATE"
 					}
 				}
 				reserves=1
@@ -5727,9 +5879,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRG"
 						levels=4
+						region="STATE_PALATINATE"
 					}
 				}
 				reserves=1
@@ -5775,9 +5929,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:RHI"
 						levels=2
+						region="STATE_PALATINATE"
 					}
 				}
 				reserves=1
@@ -5801,9 +5957,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BEG"
 						levels=1
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -5812,9 +5970,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BEG"
 						levels=1
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -5823,9 +5983,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BEG"
 						levels=4
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -5834,9 +5996,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BEG"
 						levels=1
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -5860,9 +6024,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:FRM"
 						levels=1
+						region="STATE_HESSE"
 					}
 				}
 				reserves=1
@@ -5884,9 +6050,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HEK"
 						levels=1
+						region="STATE_HESSE"
 					}
 				}
 				reserves=1
@@ -5895,9 +6063,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HEK"
 						levels=1
+						region="STATE_HESSE"
 					}
 				}
 				reserves=1
@@ -5906,9 +6076,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HEK"
 						levels=1
+						region="STATE_HESSE"
 					}
 				}
 				reserves=1
@@ -5917,9 +6089,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HEK"
 						levels=2
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -5928,9 +6102,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HEK"
 						levels=2
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -5939,9 +6115,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HEK"
 						levels=1
+						region="STATE_HESSE"
 					}
 				}
 				reserves=1
@@ -5974,9 +6152,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NAS"
 						levels=6
+						region="STATE_HESSE"
 					}
 				}
 				reserves=1
@@ -5985,9 +6165,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NAS"
 						levels=5
+						region="STATE_HESSE"
 					}
 				}
 				reserves=1
@@ -5996,9 +6178,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:NAS"
 						levels=1
+						region="STATE_HESSE"
 					}
 				}
 				reserves=1
@@ -6022,9 +6206,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:MUN"
 						levels=3
+						region="STATE_WESTPHALIA"
 					}
 				}
 				reserves=1
@@ -6033,9 +6219,11 @@ BUILDINGS={
 			create_building={
 				building="building_sulfur_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:MUN"
 						levels=3
+						region="STATE_WESTPHALIA"
 					}
 				}
 				reserves=1
@@ -6044,9 +6232,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MUN"
 						levels=2
+						region="STATE_WESTPHALIA"
 					}
 				}
 				reserves=1
@@ -6068,9 +6258,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:LIP"
 						levels=1
+						region="STATE_WESTPHALIA"
 					}
 				}
 				reserves=1
@@ -6079,9 +6271,11 @@ BUILDINGS={
 			create_building={
 				building="building_sulfur_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:LIP"
 						levels=1
+						region="STATE_WESTPHALIA"
 					}
 				}
 				reserves=1
@@ -6090,9 +6284,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:LIP"
 						levels=1
+						region="STATE_WESTPHALIA"
 					}
 				}
 				reserves=1
@@ -6114,9 +6310,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HAN"
 						levels=1
+						region="STATE_WESTPHALIA"
 					}
 				}
 				reserves=1
@@ -6125,9 +6323,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HAN"
 						levels=1
+						region="STATE_WESTPHALIA"
 					}
 				}
 				reserves=1
@@ -6140,9 +6340,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:OLD"
 						levels=2
+						region="STATE_EAST_FRISIA"
 					}
 				}
 				reserves=1
@@ -6151,9 +6353,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:OLD"
 						levels=1
+						region="STATE_EAST_FRISIA"
 					}
 				}
 				reserves=1
@@ -6197,9 +6401,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MUN"
 						levels=2
+						region="STATE_EAST_FRISIA"
 					}
 				}
 				reserves=1
@@ -6245,9 +6451,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:OSN"
 						levels=2
+						region="STATE_EAST_FRISIA"
 					}
 				}
 				reserves=1
@@ -6256,9 +6464,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:OSN"
-						levels=1
+						levels=2
+						region="STATE_EAST_FRISIA"
 					}
 				}
 				reserves=1
@@ -6282,9 +6492,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRE"
 						levels=1
+						region="STATE_HANNOVER"
 					}
 				}
 				reserves=1
@@ -6350,9 +6562,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HAN"
 						levels=2
+						region="STATE_HANNOVER"
 					}
 				}
 				reserves=1
@@ -6361,9 +6575,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HAN"
 						levels=3
+						region="STATE_HANNOVER"
 					}
 				}
 				reserves=1
@@ -6372,9 +6588,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HAN"
 						levels=1
+						region="STATE_HANNOVER"
 					}
 				}
 				reserves=1
@@ -6383,9 +6601,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HAN"
 						levels=2
+						region="STATE_HANNOVER"
 					}
 				}
 				reserves=1
@@ -6429,9 +6649,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BRA"
-						levels=1
+						levels=2
+						region="STATE_HANNOVER"
 					}
 				}
 				reserves=1
@@ -6440,9 +6662,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BRA"
 						levels=1
+						region="STATE_HANNOVER"
 					}
 				}
 				reserves=1
@@ -6477,9 +6701,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:THU"
 						levels=6
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -6488,9 +6714,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:THU"
 						levels=3
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -6499,9 +6727,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:THU"
 						levels=1
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -6510,9 +6740,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:THU"
 						levels=1
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -6556,9 +6788,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:SME"
 						levels=1
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -6593,9 +6827,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BAD"
 						levels=10
+						region="STATE_BADEN"
 					}
 				}
 				reserves=1
@@ -6604,9 +6840,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BAD"
 						levels=1
+						region="STATE_BADEN"
 					}
 				}
 				reserves=1
@@ -6615,9 +6853,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BAD"
 						levels=3
+						region="STATE_BADEN"
 					}
 				}
 				reserves=1
@@ -6626,9 +6866,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BAD"
 						levels=2
+						region="STATE_BADEN"
 					}
 				}
 				reserves=1
@@ -6674,42 +6916,50 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:WUR"
 						levels=2
+						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" "" }
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
 			}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:WUR"
 						levels=2
+						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" "" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
 			}
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:WUR"
 						levels=2
+						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" "" }
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
 			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:WUR"
 						levels=10
+						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
@@ -6718,9 +6968,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:WUR"
 						levels=8
+						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
@@ -6729,9 +6981,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:WUR"
 						levels=3
+						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
@@ -6740,13 +6994,15 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:WUR"
 						levels=2
+						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
 				building="building_artillery_foundries"
@@ -6757,16 +7013,18 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_cannons" "pm_automation_disabled" "" }
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
 			}
 		}
 		region_state:ULM = {
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:ULM"
 						levels=3
+						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
@@ -6801,9 +7059,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BAV"
-						levels=1
+						levels=2
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6812,9 +7072,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BAV"
 						levels=1
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6834,9 +7096,11 @@ BUILDINGS={
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BAV"
 						levels=2
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6856,9 +7120,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BAV"
 						levels=3
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6867,9 +7133,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BAV"
 						levels=8
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6878,9 +7146,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BAV"
 						levels=2
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6889,9 +7159,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BAV"
 						levels=2
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6900,9 +7172,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BAV"
 						levels=4
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6935,9 +7209,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:AGR"
 						levels=2
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6946,9 +7222,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:AGR"
 						levels=1
+						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
@@ -6961,9 +7239,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BAV"
 						levels=2
+						region="STATE_FRANCONIA"
 					}
 				}
 				reserves=1
@@ -6996,9 +7276,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:FRE"
-						levels=2
+						levels=3
+						region="STATE_FRANCONIA"
 					}
 				}
 				reserves=1
@@ -7007,20 +7289,24 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:FRE"
-						levels=1
+						levels=2
+						region="STATE_FRANCONIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" "" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:FRE"
 						levels=1
+						region="STATE_FRANCONIA"
 					}
 				}
 				reserves=1
@@ -7042,9 +7328,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:FRW"
 						levels=3
+						region="STATE_FRANCONIA"
 					}
 				}
 				reserves=1
@@ -7053,9 +7341,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:FRW"
 						levels=2
+						region="STATE_FRANCONIA"
 					}
 				}
 				reserves=1
@@ -7064,9 +7354,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:FRW"
 						levels=1
+						region="STATE_FRANCONIA"
 					}
 				}
 				reserves=1
@@ -7088,9 +7380,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:ASB"
 						levels=4
+						region="STATE_FRANCONIA"
 					}
 				}
 				reserves=1
@@ -7136,20 +7430,24 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:SWI"
 						levels=1
+						region="STATE_EAST_SWITZERLAND"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" "" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:SWI"
 						levels=1
+						region="STATE_EAST_SWITZERLAND"
 					}
 				}
 				reserves=1
@@ -7158,9 +7456,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SWI"
 						levels=1
+						region="STATE_EAST_SWITZERLAND"
 					}
 				}
 				reserves=1
@@ -7193,20 +7493,24 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:GRB"
 						levels=1
+						region="STATE_EAST_SWITZERLAND"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" "" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:GRB"
 						levels=2
+						region="STATE_EAST_SWITZERLAND"
 					}
 				}
 				reserves=1
@@ -7241,9 +7545,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:SWI"
 						levels=1
+						region="STATE_WEST_SWITZERLAND"
 					}
 				}
 				reserves=1
@@ -7252,9 +7558,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SWI"
 						levels=2
+						region="STATE_WEST_SWITZERLAND"
 					}
 				}
 				reserves=1
@@ -7263,9 +7571,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SWI"
 						levels=2
+						region="STATE_WEST_SWITZERLAND"
 					}
 				}
 				reserves=1
@@ -7287,9 +7597,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BAE"
-						levels=1
+						levels=2
+						region="STATE_WEST_SWITZERLAND"
 					}
 				}
 				reserves=1
@@ -7313,9 +7625,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:TRT"
 						levels=1
+						region="STATE_TYROL"
 					}
 				}
 				reserves=1
@@ -7324,9 +7638,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:TRT"
 						levels=1
+						region="STATE_TYROL"
 					}
 				}
 				reserves=1
@@ -7337,9 +7653,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:TYR"
 						levels=1
+						region="STATE_TYROL"
 					}
 				}
 				reserves=1
@@ -7348,9 +7666,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:TYR"
 						levels=1
+						region="STATE_TYROL"
 					}
 				}
 				reserves=1
@@ -7383,9 +7703,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SLZ"
 						levels=1
+						region="STATE_TYROL"
 					}
 				}
 				reserves=1
@@ -7408,8 +7730,12 @@ BUILDINGS={
 				building="building_iron_mine"
 				add_ownership={
 					country={
-						country="c:AUS"
-						levels=1
+						building={
+							type="building_financial_district"
+							country="c:AUS"
+							levels=1
+							region="STATE_TYROL"
+						}
 					}
 				}
 				reserves=1
@@ -7420,9 +7746,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BAV"
 						levels=1
+						region="STATE_TYROL"
 					}
 				}
 				reserves=1
@@ -7431,9 +7759,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BAV"
 						levels=3
+						region="STATE_TYROL"
 					}
 				}
 				reserves=1
@@ -7457,9 +7787,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:AUS"
 						levels=1
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7512,9 +7844,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:AUS"
 						levels=5
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7523,9 +7857,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:AUS"
 						levels=5
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7534,9 +7870,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:AUS"
 						levels=10
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7545,9 +7883,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:AUS"
 						levels=3
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7556,9 +7896,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:AUS"
 						levels=1
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7567,9 +7909,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:AUS"
 						levels=3
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7604,9 +7948,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:AUS"
 						levels=3
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7615,9 +7961,11 @@ BUILDINGS={
 			create_building={
 				building="building_lead_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:AUS"
 						levels=3
+						region="STATE_AUSTRIA"
 					}
 				}
 				reserves=1
@@ -7626,9 +7974,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:AUS"
 						levels=1
+						region="STATE_STYRIA"
 					}
 				}
 				reserves=1
@@ -7637,9 +7987,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:AUS"
 						levels=2
+						region="STATE_STYRIA"
 					}
 				}
 				reserves=1
@@ -7680,7 +8032,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" "" }
+				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -7709,7 +8061,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=6
+						levels=2
+					}
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=4
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -7729,9 +8087,11 @@ BUILDINGS={
 			create_building={
 				building="building_chemical_plants"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=2
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -7742,7 +8102,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=5
+						levels=3
+					}
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=2
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -7753,7 +8119,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=5
+						levels=3
+					}
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=2
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -7768,14 +8140,16 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "" }
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=7
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -7845,7 +8219,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=6
+						levels=1
+					}
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=5
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
@@ -7854,42 +8234,50 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=3
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms" "" }
+				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms" }
 			}
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=3
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_pot_stills" "pm_manual_dough_processing" "" }
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_pot_stills" "pm_manual_dough_processing" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=3
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "" }
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=4
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
@@ -7898,9 +8286,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=3
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
@@ -7909,9 +8299,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=2
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
@@ -7920,9 +8312,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=4
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
@@ -7959,7 +8353,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=8
+						levels=6
+					}
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=2
+						region="STATE_SILESIA"
 					}
 				}
 				reserves=1
@@ -7968,9 +8368,11 @@ BUILDINGS={
 			create_building={
 				building="building_explosives_factory"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=1
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -8001,9 +8403,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=5
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -8012,9 +8416,11 @@ BUILDINGS={
 			create_building={
 				building="building_lead_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=5
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -8023,9 +8429,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=2
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -8034,9 +8442,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
-						levels=2
+						levels=1
+						region="STATE_SILESIA"
 					}
 				}
 				reserves=1
@@ -8045,9 +8455,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=1
+						region="STATE_SILESIA"
 					}
 				}
 				reserves=1
@@ -8082,20 +8494,28 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=4
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_steel" "pm_automation_disabled" "" }
+				activate_production_methods={ "pm_steel" "pm_automation_disabled" }
 			}
 			create_building={
 				building="building_glassworks"
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=8
+						levels=3
+					}
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=5
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -8104,9 +8524,11 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=3
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -8115,9 +8537,11 @@ BUILDINGS={
 			create_building={
 				building="building_sulfur_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=3
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -8126,9 +8550,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=2
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -8137,9 +8563,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=5
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -8148,9 +8576,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=1
+						region="STATE_SAXONY"
 					}
 				}
 				reserves=1
@@ -8180,14 +8610,16 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" "" }
+				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=5
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -8202,7 +8634,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_cannons" "pm_automation_disabled" "" }
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
 			}
 		}
 	}
@@ -8211,20 +8643,24 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=3
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled" "" }
+				activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:BOH"
 						levels=4
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -8233,9 +8669,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=3
+						region="STATE_ANHALT"
 					}
 				}
 				reserves=1
@@ -8244,9 +8682,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BOH"
 						levels=2
+						region="STATE_ANHALT"
 					}
 				}
 				reserves=1
