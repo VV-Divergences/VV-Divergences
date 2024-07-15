@@ -2362,7 +2362,7 @@ BUILDINGS={
 						type="building_glassworks"
 						country="c:DUA"
 						levels=5
-						region="STATEEAST_ANGLIA"
+						region="STATE_EAST_ANGLIA"
 					}
 				}
 				reserves=1
@@ -2375,7 +2375,7 @@ BUILDINGS={
 						type="building_food_industry"
 						country="c:DUA"
 						levels=4
-						region="STATEEAST_ANGLIA"
+						region="STATE_EAST_ANGLIA"
 					}
 				}
 				reserves=1
@@ -2399,7 +2399,7 @@ BUILDINGS={
 						type="building_shipyards"
 						country="c:DUA"
 						levels=1
-						region="STATEEAST_ANGLIA"
+						region="STATE_EAST_ANGLIA"
 					}
 				}
 				reserves=1
@@ -2423,7 +2423,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:DUA"
 						levels=2
-						region="STATEEAST_ANGLIA"
+						region="STATE_EAST_ANGLIA"
 					}
 				}
 				reserves=1
@@ -2436,7 +2436,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:DUA"
 						levels=3
-						region="STATEEAST_ANGLIA"
+						region="STATE_EAST_ANGLIA"
 					}
 				}
 				reserves=1
@@ -2449,7 +2449,7 @@ BUILDINGS={
 						type="building_fishing_wharf"
 						country="c:DUA"
 						levels=3
-						region="STATEEAST_ANGLIA"
+						region="STATE_EAST_ANGLIA"
 					}
 				}
 				reserves=1
@@ -2484,9 +2484,17 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:DUA"
-						levels=5
+						levels=3
+						region="STATE_WEST_COUNTRY"
+					}
+					building={
+						type="building_tooling_workshop"
+						country="c:DUA"
+						levels=2
+						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
@@ -2495,9 +2503,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:DUA"
-						levels=5
+						levels=2
+						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
@@ -2506,9 +2516,11 @@ BUILDINGS={
 			create_building={
 				building="building_shipyards"
 				add_ownership={
-					country={
+					building={
+						type="building_building_shipyards"
 						country="c:DUA"
 						levels=2
+						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
@@ -2539,9 +2551,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=5
+						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
@@ -2550,9 +2564,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=3
+						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
@@ -2561,9 +2577,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
@@ -2572,9 +2590,17 @@ BUILDINGS={
 			create_building={
 				building="building_sulfur_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:DUA"
-						levels=4
+						levels=2
+						region="STATE_WEST_COUNTRY"
+					}
+					building={
+						type="building_sulfur_mine"
+						country="c:DUA"
+						levels=2
+						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
@@ -2583,9 +2609,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:DUA"
 						levels=2
+						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
@@ -2609,9 +2637,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_ULSTER"
 					}
 				}
 				reserves=1
@@ -2631,9 +2661,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_ULSTER"
 					}
 				}
 				reserves=1
@@ -2657,9 +2689,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
-						levels=1
+						levels=3
+						region="STATE_MUNSTER"
 					}
 				}
 				reserves=1
@@ -2716,9 +2750,11 @@ BUILDINGS={
 			create_building={
 				building="building_lead_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_lead_mine"
 						country="c:DUA"
 						levels=3
+						region="STATE_LEINSTER"
 					}
 				}
 				reserves=1
@@ -2727,9 +2763,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_iron_mine"
 						country="c:DUA"
 						levels=2
+						region="STATE_LEINSTER"
 					}
 				}
 				reserves=1
@@ -2738,9 +2776,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_food_industry"
 						country="c:DUA"
 						levels=2
+						region="STATE_LEINSTER"
 					}
 				}
 				reserves=1
@@ -2749,9 +2789,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_LEINSTER"
 					}
 				}
 				reserves=1
@@ -2808,9 +2850,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
-						levels=2
+						levels=3
+						region="STATE_CONNAUGHT"
 					}
 				}
 				reserves=1
@@ -2878,9 +2922,17 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_paper_mills"
 						country="c:DUA"
-						levels=8
+						levels=5
+						region="STATE_ILE_DE_FRANCE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=3
+						region="STATE_HOME_COUNTIES"
 					}
 				}
 				reserves=1
@@ -2889,9 +2941,17 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_furniture_manufactories"
 						country="c:DUA"
-						levels=12
+						levels=8
+						region="STATE_ILE_DE_FRANCE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=4
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
@@ -2900,9 +2960,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:DUA"
 						levels=4
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
@@ -2911,9 +2973,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=10
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
@@ -2922,9 +2986,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=3
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
@@ -2933,9 +2999,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=1
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
@@ -2970,9 +3038,11 @@ BUILDINGS={
 			create_building={
 				building="building_shipyards"
 				add_ownership={
-					country={
+					building={
+						type="building_shipyards"
 						country="c:DUA"
 						levels=2
+						region="STATE_NORMANDY"
 					}
 				}
 				reserves=1
@@ -2992,9 +3062,17 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:DUA"
-						levels=8
+						levels=6
+						region="STATE_NORMANDY"
+					}
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=2
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
@@ -3003,9 +3081,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:DUA"
 						levels=3
+						region="STATE_NORMANDY"
 					}
 				}
 				reserves=1
@@ -3025,9 +3105,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=7
+						region="STATE_NORMANDY"
 					}
 				}
 				reserves=1
@@ -3036,9 +3118,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_NORMANDY"
 					}
 				}
 				reserves=1
@@ -3084,9 +3168,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:DUA"
 						levels=2
+						region="STATE_LANGUEDOC"
 					}
 				}
 				reserves=1
@@ -3095,9 +3181,11 @@ BUILDINGS={
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					country={
+					building={
+						type="building_glassworks"
 						country="c:DUA"
 						levels=4
+						region="STATE_LANGUEDOC"
 					}
 				}
 				reserves=1
@@ -3106,9 +3194,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=8
+						region="STATE_LANGUEDOC"
 					}
 				}
 				reserves=1
@@ -3117,9 +3207,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_LANGUEDOC"
 					}
 				}
 				reserves=1
@@ -3128,9 +3220,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=4
+						region="STATE_LANGUEDOC"
 					}
 				}
 				reserves=1
@@ -3176,9 +3270,17 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:DUA"
-						levels=7
+						levels=5
+						region="STATE_RHONE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=2
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
@@ -3187,9 +3289,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_paper_mills"
 						country="c:DUA"
 						levels=6
+						region="STATE_RHONE"
 					}
 				}
 				reserves=1
@@ -3209,9 +3313,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:DUA"
 						levels=3
+						region="STATE_RHONE"
 					}
 				}
 				reserves=1
@@ -3220,9 +3326,11 @@ BUILDINGS={
 			create_building={
 				building="building_silk_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=10
+						region="STATE_RHONE"
 					}
 				}
 				reserves=1
@@ -3231,9 +3339,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=13
+						region="STATE_RHONE"
 					}
 				}
 				reserves=1
@@ -3242,9 +3352,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=6
+						region="STATE_RHONE"
 					}
 				}
 				reserves=1
@@ -3279,9 +3391,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:DUA"
 						levels=2
+						region="STATE_LOIRE"
 					}
 				}
 				reserves=1
@@ -3290,9 +3404,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
-						levels=8
+						levels=10
+						region="STATE_LOIRE"
 					}
 				}
 				reserves=1
@@ -3301,9 +3417,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_LOIRE"
 					}
 				}
 				reserves=1
@@ -3312,9 +3430,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_LOIRE"
 					}
 				}
 				reserves=1
@@ -3349,9 +3469,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_POITOU"
 					}
 				}
 				reserves=1
@@ -3360,9 +3482,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_paper_mills"
 						country="c:DUA"
 						levels=2
+						region="STATE_POITOU"
 					}
 				}
 				reserves=1
@@ -3371,9 +3495,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:DUA"
 						levels=2
+						region="STATE_POITOU"
 					}
 				}
 				reserves=1
@@ -3397,9 +3523,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:DUA"
 						levels=3
+						region="STATE_ARMAGNAC"
 					}
 				}
 				reserves=1
@@ -3408,9 +3536,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=8
+						region="STATE_ARMAGNAC"
 					}
 				}
 				reserves=1
@@ -3419,9 +3549,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_ARMAGNAC"
 					}
 				}
 				reserves=1
@@ -3430,9 +3562,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_ARMAGNAC"
 					}
 				}
 				reserves=1
@@ -3456,9 +3590,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:DUA"
 						levels=3
+						region="STATE_LIMOUSIN"
 					}
 				}
 				reserves=1
@@ -3467,9 +3603,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:DUA"
 						levels=2
+						region="STATE_LIMOUSIN"
 					}
 				}
 				reserves=1
@@ -3478,9 +3616,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_iron_mine"
 						country="c:DUA"
 						levels=2
+						region="STATE_LIMOUSIN"
 					}
 				}
 				reserves=1
@@ -3489,9 +3629,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=3
+						region="STATE_LIMOUSIN"
 					}
 				}
 				reserves=1
@@ -3500,9 +3642,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_LIMOUSIN"
 					}
 				}
 				reserves=1
@@ -3537,9 +3681,11 @@ BUILDINGS={
 			create_building={
 				building="building_shipyards"
 				add_ownership={
-					country={
+					building={
+						type="building_shipyards"
 						country="c:DUA"
 						levels=3
+						region="STATE_BRITTANY"
 					}
 				}
 				reserves=1
@@ -3548,9 +3694,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:DUA"
 						levels=4
+						region="STATE_BRITTANY"
 					}
 				}
 				reserves=1
@@ -3559,9 +3707,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:DUA"
 						levels=3
+						region="STATE_BRITTANY"
 					}
 				}
 				reserves=1
@@ -3581,9 +3731,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=4
+						region="STATE_BRITTANY"
 					}
 				}
 				reserves=1
@@ -3592,9 +3744,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=5
+						region="STATE_BRITTANY"
 					}
 				}
 				reserves=1
@@ -3603,9 +3757,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_BRITTANY"
 					}
 				}
 				reserves=1
@@ -3629,9 +3785,17 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_food_industry"
 						country="c:DUA"
-						levels=6
+						levels=4
+						region="STATE_CHAMPAGNE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=2
+						region="STATE_CHAMPAGNE"
 					}
 				}
 				reserves=1
@@ -3651,9 +3815,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:DUA"
 						levels=3
+						region="STATE_CHAMPAGNE"
 					}
 				}
 				reserves=1
@@ -3662,9 +3828,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=6
+						region="STATE_CHAMPAGNE"
 					}
 				}
 				reserves=1
@@ -3673,9 +3841,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=3
+						region="STATE_CHAMPAGNE"
 					}
 				}
 				reserves=1
@@ -3688,9 +3858,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_tooling_workshops"
 						country="c:DUA"
 						levels=3
+						region="STATE_AUVERGNE"
 					}
 				}
 				reserves=1
@@ -3699,9 +3871,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_furniture_manufactories"
 						country="c:DUA"
 						levels=2
+						region="STATE_AUVERGNE"
 					}
 				}
 				reserves=1
@@ -3710,9 +3884,11 @@ BUILDINGS={
 			create_building={
 				building="building_lead_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_lead_mines"
 						country="c:DUA"
 						levels=4
+						region="STATE_AUVERGNE"
 					}
 				}
 				reserves=1
@@ -3721,9 +3897,11 @@ BUILDINGS={
 			create_building={
 				building="building_sulfur_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_sulfur_mine"
 						country="c:DUA"
 						levels=3
+						region="STATE_AUVERGNE"
 					}
 				}
 				reserves=1
@@ -3732,9 +3910,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:DUA"
 						levels=6
+						region="STATE_AUVERGNE"
 					}
 				}
 				reserves=1
@@ -3743,9 +3923,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=2
+						region="STATE_AUVERGNE"
 					}
 				}
 				reserves=1
@@ -3754,9 +3936,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=3
+						region="STATE_AUVERGNE"
 					}
 				}
 				reserves=1
@@ -3791,9 +3975,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_food_industry"
 						country="c:DUA"
 						levels=3
+						region="STATE_AQUITAINE"
 					}
 				}
 				reserves=1
@@ -3802,9 +3988,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:DUA"
 						levels=2
+						region="STATE_AQUITAINE"
 					}
 				}
 				reserves=1
@@ -3813,9 +4001,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:DUA"
 						levels=1
+						region="STATE_AQUITAINE"
 					}
 				}
 				reserves=1
@@ -3824,9 +4014,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=9
+						region="STATE_AQUITAINE"
 					}
 				}
 				reserves=1
@@ -3835,9 +4027,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=5
+						region="STATE_AQUITAINE"
 					}
 				}
 				reserves=1
@@ -3870,9 +4064,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:NAV"
 						levels=1
+						region="STATE_NAV"
 					}
 				}
 				reserves=1
@@ -3881,9 +4077,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:NAV"
 						levels=1
+						region="STATE_NAV"
 					}
 				}
 				reserves=1
@@ -3892,9 +4090,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NAV"
 						levels=1
+						region="STATE_NAV"
 					}
 				}
 				reserves=1
@@ -3929,9 +4129,11 @@ BUILDINGS={
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					country={
+					building={
+						type="building_glassworks"
 						country="c:DUA"
 						levels=4
+						region="STATE_ORLEANS"
 					}
 				}
 				reserves=1
@@ -3940,9 +4142,11 @@ BUILDINGS={
 			create_building={
 				building="building_chemical_plants"
 				add_ownership={
-					country={
+					building={
+						type="building_chemical_plants"
 						country="c:DUA"
 						levels=2
+						region="STATE_ORLEANS"
 					}
 				}
 				reserves=1
@@ -3951,9 +4155,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=8
+						region="STATE_ORLEANS"
 					}
 				}
 				reserves=1
@@ -3962,9 +4168,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=4
+						region="STATE_ORLEANS"
 					}
 				}
 				reserves=1
@@ -3973,9 +4181,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:DUA"
 						levels=4
+						region="STATE_ORLEANS"
 					}
 				}
 				reserves=1
@@ -4010,9 +4220,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:PRO"
 						levels=3
+						region="STATE_PROVENCE"
 					}
 				}
 				reserves=1
@@ -4021,9 +4233,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:PRO"
 						levels=2
+						region="STATE_PROVENCE"
 					}
 				}
 				reserves=1
@@ -4032,9 +4246,11 @@ BUILDINGS={
 			create_building={
 				building="building_silk_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PRO"
 						levels=8
+						region="STATE_PROVENCE"
 					}
 				}
 				reserves=1
@@ -4043,9 +4259,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PRO"
 						levels=8
+						region="STATE_PROVENCE"
 					}
 				}
 				reserves=1
@@ -4054,9 +4272,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PRO"
 						levels=5
+						region="STATE_PROVENCE"
 					}
 				}
 				reserves=1
@@ -4098,9 +4318,11 @@ BUILDINGS={
 			create_building={
 				building="building_shipyards"
 				add_ownership={
-					country={
+					building={
+						type="building_shipyards"
 						country="c:PRO"
 						levels=1
+						region="STATE_PROVENCE"
 					}
 				}
 				reserves=1
@@ -4122,9 +4344,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
-						country="c:AVN"
+					building={
+						type="building_manor_house"
+						country="c:PRO"
 						levels=2
+						region="STATE_LAZIO"
 					}
 				}
 				reserves=1
