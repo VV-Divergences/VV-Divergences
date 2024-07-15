@@ -159,7 +159,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			name = "1. Kaiserliche Armee"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_BOHEMIA
 				count = 30
 			}
@@ -216,7 +216,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			name = "2. Kaiserliche Armee"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_MORAVIA
 				count = 20
 			}
@@ -302,7 +302,71 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}	
     }
     c:BRG = { # Burgundy
-        
+        create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Sylvain
+			last_name = d_Harscamp
+			age = 50
+			ig_leader = yes
+			commander_rank = commander_rank_3
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			hq = region_rhine
+			traits = {
+				plains_commander
+				cautious
+			}
+			
+			save_scope_as = SDHarscamp_gen
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_rhine
+			name = "Armée Royale de Bourgogne"
+			
+            combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_FLANDERS
+				count = 20
+			}
+            combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_GELRE
+				count = 20
+			}
+            combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_PICARDY
+				count = 20
+			}
+            combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_HOLLAND
+				count = 20
+			}
+            combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_WALLONIA
+				count = 10
+			}
+            combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_FRIESLAND
+				count = 10
+			}
+            combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_BURGUNDY
+				count = 10
+			}
+            combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_FRANCHE_COMTE
+				count = 10
+			}
+			save_scope_as = dvg_brg_rhine_army
+		}
     }
     c:DAR = { # Hesse-Darmstadt
         
