@@ -38,7 +38,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_port"
@@ -75,7 +75,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -205,7 +205,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -218,7 +218,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -400,9 +400,11 @@ BUILDINGS={
 			create_building={
 				building="building_port"
 				add_ownership={
-					country={
+					building={
+						type="building_port"
 						country="c:NOV"
 						levels=1
+						region="STATE_ARKHANGELSK"
 					}
 				}
 				reserves=1
@@ -415,20 +417,30 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NOV"
 						levels=1
+						region="STATE_ARKHANGELSK"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:NOV"
-						levels=3
+						levels=2
+						region="STATE_ARKHANGELSK"
+					}
+					building={
+						type="building_manor_house"
+						country="c:NOV"
+						levels=1
+						region="STATE_ARKHANGELSK"
 					}
 				}
 				reserves=1
@@ -452,9 +464,21 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:UGG"
+						levels=1
+						region="STATE_GALICH"
+					}
 					country={
 						country="c:UGG"
-						levels=5
+						levels=1
+					}
+					building={
+						type="building_logging_camp"
+						country="c:UGG"
+						levels=3
+						region="STATE_GALICH"
 					}
 				}
 				reserves=1
@@ -509,9 +533,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:BLO"
-						levels=4
+						levels=3
+						region="STATE_GALICH"
+					}
+					building={
+						type="building_manor_house"
+						country="c:BLO"
+						levels=1
+						region="STATE_GALICH"
 					}
 				}
 				reserves=1
@@ -520,13 +552,15 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BLO"
 						levels=4
+						region="STATE_GALICH"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -559,9 +593,23 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_iron_mine"
 						country="c:PRM"
-						levels=7
+						levels=1
+						region="STATE_PERM"
+					}
+					building={
+						type="building_manor_house"
+						country="c:PRM"
+						levels=4
+						region="STATE_PERM"
+					}
+					building={
+						type="building_financial_district"
+						country="c:NOV"
+						levels=2
+						region="STATE_NOVGOROD"
 					}
 				}
 				reserves=1
@@ -570,9 +618,17 @@ BUILDINGS={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
+						country="c:NOV"
+						levels=1
+						region="STATE_NOVGOROD"
+					}
+					building={
+						type="building_manor_house"
 						country="c:PRM"
-						levels=2
+						levels=1
+						region="STATE_PERM"
 					}
 				}
 				reserves=1
@@ -596,9 +652,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VYA"
-						levels=5
+						levels=4
+						region="STATE_VYATKA"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:VYA"
+						levels=1
+						region="STATE_VYATKA"
 					}
 				}
 				reserves=1
@@ -607,13 +671,15 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VYA"
 						levels=2
+						region="STATE_VYATKA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_barracks"
@@ -666,9 +732,15 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MSO"
+						levels=1
+						region="STATE_MOSCOW"
+					}
 					country={
 						country="c:MSO"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -699,9 +771,17 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:MSO"
-						levels=4
+						levels=3
+						region="STATE_MOSCOW"
+					}
+					building={
+						type="building_textile_mills"
+						country="c:MSO"
+						levels=1
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
@@ -710,9 +790,17 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:MSO"
-						levels=6
+						levels=3
+						region="STATE_MOSCOW"
+					}
+					building={
+						type="building_furniture_manufacturies"
+						country="c:MSO"
+						levels=1
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
@@ -721,31 +809,43 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MSO"
 						levels=7
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MSO"
 						levels=4
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MSO"
-						levels=8
+						levels=3
+						region="STATE_MOSCOW"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:MSO"
+						levels=3
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
@@ -756,7 +856,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:MSO"
-						levels=3
+						levels=1
+					}
+					building={
+						type="building_financial_district"
+						country="c:MSO"
+						levels=2
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
@@ -822,13 +928,15 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:RYA"
 						levels=2
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_barracks"
@@ -844,9 +952,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:RYA"
-						levels=2
+						levels=1
+						region="STATE_MOSCOW"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:RYA"
+						levels=1
+						region="STATE_MOSCOW"
 					}
 				}
 				reserves=1
@@ -894,7 +1010,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:TVE"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -903,9 +1019,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:TVE"
-						levels=6
+						levels=2
+						region="STATE_TVER"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:TVE"
+						levels=2
+						region="STATE_TVER"
 					}
 				}
 				reserves=1
@@ -914,9 +1038,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_iron_mine"
 						country="c:TVE"
 						levels=1
+						region="STATE_TVER"
 					}
 				}
 				reserves=1
@@ -927,7 +1053,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:TVE"
-						levels=40
+						levels=30
 					}
 				}
 				reserves=1
@@ -936,13 +1062,15 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:TVE"
-						levels=1
+						levels=2
+						region="STATE_TVER"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -995,9 +1123,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_food_industry"
 						country="c:SMO"
-						levels=1
+						levels=2
+						region="STATE_SMOLENSK"
 					}
 				}
 				reserves=1
@@ -1006,20 +1136,30 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SMO"
 						levels=5
+						region="STATE_SMOLENSK"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SMO"
-						levels=5
+						levels=3
+						region="STATE_SMOLENSK"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:SMO"
+						levels=2
+						region="STATE_SMOLENSK"
 					}
 				}
 				reserves=1
@@ -1043,31 +1183,43 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MSO"
 						levels=4
+						region="STATE_BRYANSK"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MSO"
 						levels=1
+						region="STATE_BRYANSK"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MSO"
-						levels=4
+						levels=2
+						region="STATE_BRYANSK"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:MSO"
+						levels=2
+						region="STATE_BRYANSK"
 					}
 				}
 				reserves=1
@@ -1080,7 +1232,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:SMO"
-						levels=2
+						levels=1
+					}
+					building={
+						type="building_manor_house"
+						country="c:SMO"
+						levels=1
+						region="STATE_BRYANSK"
 					}
 				}
 				reserves=1
@@ -1089,9 +1247,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_food_industry"
 						country="c:SMO"
 						levels=2
+						region="STATE_BRYANSK"
 					}
 				}
 				reserves=1
@@ -1100,20 +1260,30 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SMO"
 						levels=4
+						region="STATE_BRYANSK"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SMO"
-						levels=4
+						levels=2
+						region="STATE_BRYANSK"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:SMO"
+						levels=2
+						region="STATE_BRYANSK"
 					}
 				}
 				reserves=1
@@ -1148,20 +1318,30 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CRI"
-						levels=3
+						levels=1
+						region="STATE_CRIMEA"
+					}
+					building={
+						type="building_livestock_ranch"
+						country="c:CRI"
+						levels=2
+						region="STATE_CRIMEA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:CRI"
 						levels=1
+						region="STATE_CRIMEA"
 					}
 				}
 				reserves=1
@@ -1170,9 +1350,11 @@ BUILDINGS={
 			create_building={
 				building="building_port"
 				add_ownership={
-					country={
+					building={
+						type="building_port"
 						country="c:CRI"
 						levels=1
+						region="STATE_CRIMEA"
 					}
 				}
 				reserves=1
@@ -1194,7 +1376,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:CRI"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -1203,9 +1385,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_tooling_workshops"
 						country="c:CRI"
 						levels=1
+						region="STATE_CRIMEA"
 					}
 				}
 				reserves=1
@@ -1225,20 +1409,41 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:CRI"
-						levels=4
+						levels=2
+						region="STATE_CRIMEA"
+					}
+					building={
+						type="building_manor_house"
+						country="c:CRI"
+						levels=2
+						region="STATE_CRIMEA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CRI"
+						levels=1
+						region="STATE_CRIMEA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+			}
+			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
 						country="c:CRI"
-						levels=25
+						levels=15
 					}
 				}
 				reserves=1
@@ -1262,24 +1467,29 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:ZAZ"
 						levels=1
+						region="STATE_YEDISAN"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:ZAZ"
 						levels=1
+						region="STATE_YEDISAN"
 					}
 				}
+				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_barracks"
@@ -1308,31 +1518,37 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NOG"
 						levels=1
+						region="STATE_YEDISAN"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NOG"
 						levels=1
+						region="STATE_YEDISAN"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NOG"
 						levels=1
+						region="STATE_YEDISAN"
 					}
 				}
 				reserves=1
@@ -1362,7 +1578,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_barracks"
@@ -1382,20 +1598,26 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CRI"
 						levels=2
+						region="STATE_QOBAN"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
-						country="c:CRI"
-						levels=1
+					add_ownership={
+						building={
+							type="building_fishing_wharf"
+							country="c:CRI"
+							levels=1
+							region="STATE_QOBAN"
+						}
 					}
 				}
 				reserves=1
@@ -1421,7 +1643,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:SCA"
-						levels=3
+						levels=1
 					}
 				}
 				reserves=1
@@ -1430,9 +1652,19 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
-						country="c:SCA"
-						levels=4
+					add_ownership={
+						building={
+							type="building_manor_house"
+							country="c:SCA"
+							levels=2
+							region="STATE_ESTONIA"
+						}
+						building={
+							type="building_logging_camp"
+							country="c:SCA"
+							levels=1
+							region="STATE_ESTONIA"
+						}
 					}
 				}
 				reserves=1
@@ -1441,9 +1673,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:SCA"
 						levels=1
+						region="STATE_ESTONIA"
 					}
 				}
 				reserves=1
@@ -1452,13 +1686,15 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SCA"
 						levels=1
+						region="STATE_ESTONIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_naval_base"
@@ -1474,9 +1710,11 @@ BUILDINGS={
 			create_building={
 				building="building_port"
 				add_ownership={
-					country={
+					building={
+						type="building_port"
 						country="c:SCA"
 						levels=1
+						region="STATE_ESTONIA"
 					}
 				}
 				reserves=1
@@ -1500,13 +1738,15 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SCA"
 						levels=2
+						region="STATE_LATVIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_naval_base"
@@ -1524,7 +1764,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:SCA"
-						levels=2
+						levels=1
+					}
+					building={
+						type="building_port"
+						country="c:SCA"
+						levels=1
+						region="STATE_LATVIA"
 					}
 				}
 				reserves=1
@@ -1535,9 +1781,11 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
-						country="c:CRL"
+					building={
+						type="building_financial_district"
+						country="c:SCA"
 						levels=1
+						region="STATE_SVEALAND"
 					}
 				}
 				reserves=1
@@ -1546,13 +1794,15 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:CRL"
 						levels=1
+						region="STATE_LATVIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_naval_base"
@@ -1568,9 +1818,11 @@ BUILDINGS={
 			create_building={
 				building="building_port"
 				add_ownership={
-					country={
-						country="c:CRL"
+					building={
+						type="building_port"
+						country="c:SCA"
 						levels=1
+						region="STATE_LATVIA"
 					}
 				}
 				reserves=1
@@ -1633,7 +1885,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_barracks"
@@ -1716,7 +1968,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -1727,7 +1979,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -1764,7 +2016,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_artillery_foundries"
@@ -1788,7 +2040,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -1814,7 +2066,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1838,7 +2090,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_no_secondary" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1897,7 +2149,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_barracks"
@@ -1921,7 +2173,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -1958,7 +2210,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_port"
@@ -1982,7 +2234,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -2008,7 +2260,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_apple_orchards" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_apple_orchards" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2019,7 +2271,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 		}
 	}
@@ -2056,7 +2308,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -2115,7 +2367,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_tooling_workshops"
@@ -2174,7 +2426,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2185,7 +2437,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_glassworks"
@@ -2266,7 +2518,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2277,7 +2529,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -2303,7 +2555,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2314,7 +2566,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -2351,7 +2603,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_privately_owned" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -2388,7 +2640,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -2399,7 +2651,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_barracks"
@@ -2434,7 +2686,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -2445,7 +2697,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_barracks"
@@ -2482,7 +2734,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -2493,7 +2745,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -2574,7 +2826,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -2585,7 +2837,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -2620,7 +2872,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -2646,7 +2898,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -2683,7 +2935,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2694,7 +2946,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -2790,7 +3042,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2801,7 +3053,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -2836,7 +3088,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2847,7 +3099,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -2895,7 +3147,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2906,7 +3158,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -2998,7 +3250,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -3055,7 +3307,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3066,7 +3318,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -3158,7 +3410,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_privately_owned" "pm_tools_disabled" "pm_citrus_orchards" }
+				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_citrus_orchards" }
 			}
 			create_building={
 				building="building_barracks"
@@ -3184,7 +3436,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3195,7 +3447,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_barracks"
@@ -3232,7 +3484,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -3280,7 +3532,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_barracks"
@@ -3306,7 +3558,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3317,7 +3569,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_barracks"
@@ -3343,7 +3595,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3354,7 +3606,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_barracks"
