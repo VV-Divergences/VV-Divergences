@@ -1880,7 +1880,7 @@ BUILDINGS={
 						region="STATE_LITHUANIA"
 					}
 					building={
-						type="building_furniture_manufacturies"
+						type="building_textile_mills"
 						country="c:LIT"
 						levels=1
 						region="STATE_LITHUANIA"
@@ -2192,9 +2192,17 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
+						country="c:POL"
+						levels=1
+						region="STATE_MAZOVIA"
+					}
+					building={
+						type="building_financial_district"
 						country="c:PRU"
-						levels=2
+						levels=1
+						region="STATE_EAST_PRUSSIA"
 					}
 				}
 				reserves=1
@@ -2203,9 +2211,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:PRU"
-						levels=4
+						levels=3
+						region="STATE_EAST_PRUSSIA"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:PRU"
+						levels=1
+						region="STATE_EAST_PRUSSIA"
 					}
 				}
 				reserves=1
@@ -2214,9 +2230,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PRU"
 						levels=2
+						region="STATE_EAST_PRUSSIA"
 					}
 				}
 				reserves=1
@@ -2238,9 +2256,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=1
+						region="STATE_EAST_PRUSSIA"
 					}
 				}
 				reserves=1
@@ -2253,9 +2273,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:POL"
 						levels=1
+						region="STATE_WEST_PRUSSIA"
 					}
 				}
 				reserves=1
@@ -2275,9 +2297,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=2
+						region="STATE_WEST_PRUSSIA"
 					}
 				}
 				reserves=1
@@ -2299,9 +2323,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PRU"
-						levels=1
+						levels=2
+						region="STATE_WEST_PRUSSIA"
 					}
 				}
 				reserves=1
@@ -2314,9 +2340,17 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
-						levels=3
+						levels=2
+						region="STATE_MAZOVIA"
+					}
+					building={
+						type="building_food_industry"
+						country="c:POL"
+						levels=1
+						region="STATE_POSEN"
 					}
 				}
 				reserves=1
@@ -2325,9 +2359,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=2
+						region="STATE_POSEN"
 					}
 				}
 				reserves=1
@@ -2336,9 +2372,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=3
+						region="STATE_POSEN"
 					}
 				}
 				reserves=1
@@ -2351,9 +2389,17 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
-						levels=6
+						levels=5
+						region="STATE_MAZOVIA"
+					}
+					building={
+						type="building_textile_mills"
+						country="c:POL"
+						levels=1
+						region="STATE_GREATER_POLAND"
 					}
 				}
 				reserves=1
@@ -2362,9 +2408,17 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
-						levels=3
+						levels=2
+						region="STATE_MAZOVIA"
+					}
+					building={
+						type="building_iron_mine"
+						country="c:POL"
+						levels=1
+						region="STATE_GREATER_POLAND"
 					}
 				}
 				reserves=1
@@ -2373,9 +2427,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=5
+						region="STATE_GREATER_POLAND"
 					}
 				}
 				reserves=1
@@ -2410,9 +2466,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
 						levels=2
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2421,9 +2479,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
 						levels=3
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2432,9 +2492,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=15
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2443,9 +2505,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
 						levels=1
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2454,9 +2518,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
-						levels=3
+						levels=1
+						region="STATE_MAZOVIA"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:POL"
+						levels=2
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2480,9 +2552,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
 						levels=2
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2491,9 +2565,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=5
+						region="STATE_LESSER_POLAND"
 					}
 				}
 				reserves=1
@@ -2502,9 +2578,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=3
+						region="STATE_LESSER_POLAND"
 					}
 				}
 				reserves=1
@@ -2513,9 +2591,11 @@ BUILDINGS={
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
 						levels=1
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2550,9 +2630,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:POL"
 						levels=2
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2563,7 +2645,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:POL"
-						levels=4
+						levels=2
+					}
+					building={
+						type="building_financial_district"
+						country="c:POL"
+						levels=2
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2572,9 +2660,17 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_iron_mine"
 						country="c:POL"
-						levels=3
+						levels=2
+						region="STATE_WEST_GALICIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:POL"
+						levels=1
+						region="STATE_MAZOVIA"
 					}
 				}
 				reserves=1
@@ -2583,9 +2679,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=5
+						region="STATE_WEST_GALICIA"
 					}
 				}
 				reserves=1
@@ -2594,9 +2692,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=1
+						region="STATE_WEST_GALICIA"
 					}
 				}
 				reserves=1
@@ -2605,9 +2705,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=3
+						region="STATE_WEST_GALICIA"
 					}
 				}
 				reserves=1
@@ -2620,9 +2722,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=6
+						region="STATE_EAST_GALICIA"
 					}
 				}
 				reserves=1
@@ -2631,9 +2735,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=2
+						region="STATE_EAST_GALICIA"
 					}
 				}
 				reserves=1
@@ -2642,9 +2748,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=1
+						region="STATE_EAST_GALICIA"
 					}
 				}
 				reserves=1
@@ -2657,9 +2765,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
-						levels=6
+						levels=3
+						region="STATE_VOLHYNIA"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:POL"
+						levels=3
+						region="STATE_VOLHYNIA"
 					}
 				}
 				reserves=1
@@ -2668,9 +2784,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=3
+						region="STATE_VOLHYNIA"
 					}
 				}
 				reserves=1
@@ -2683,9 +2801,17 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
+						country="c:POL"
+						levels=1
+						region="STATE_MAZOVIA"
+					}
+					building={
+						type="building_financial_district"
 						country="c:KIE"
-						levels=2
+						levels=1
+						region="STATE_KIEV"
 					}
 				}
 				reserves=1
@@ -2705,9 +2831,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:KIE"
 						levels=2
+						region="STATE_KIEV"
 					}
 				}
 				reserves=1
@@ -2716,9 +2844,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:KIE"
 						levels=3
+						region="STATE_KIEV"
 					}
 				}
 				reserves=1
@@ -2751,9 +2881,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:ZAZ"
 						levels=1
+						region="STATE_KIEV"
 					}
 				}
 				reserves=1
@@ -2762,9 +2894,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:ZAZ"
 						levels=2
+						region="STATE_KIEV"
 					}
 				}
 				reserves=1
@@ -2799,9 +2933,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:KHK"
 						levels=2
+						region="STATE_KURSK"
 					}
 				}
 				reserves=1
@@ -2810,9 +2946,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:KHK"
 						levels=2
+						region="STATE_KURSK"
 					}
 				}
 				reserves=1
@@ -2821,9 +2959,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:KHK"
-						levels=2
+						levels=1
+						region="STATE_KURSK"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:KHK"
+						levels=1
+						region="STATE_KURSK"
 					}
 				}
 				reserves=1
@@ -2854,9 +3000,17 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
+						country="c:POL"
+						levels=1
+						region="STATE_MAZOVIA"
+					}
+					building={
+						type="building_financial_district"
 						country="c:KHK"
-						levels=2
+						levels=1
+						region="STATE_KURSK"
 					}
 				}
 				reserves=1
@@ -2865,9 +3019,17 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:KHK"
-						levels=2
+						levels=1
+						region="STATE_KURSK"
+					}
+					building={
+						type="building_iron_mine"
+						country="c:KHK"
+						levels=1
+						region="STATE_KURSK"
 					}
 				}
 				reserves=1
@@ -2891,9 +3053,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:KHK"
 						levels=2
+						region="STATE_SLOBOZ"
 					}
 				}
 				reserves=1
@@ -2902,9 +3066,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:KHK"
 						levels=2
+						region="STATE_SLOBOZ"
 					}
 				}
 				reserves=1
@@ -2913,9 +3079,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:KHK"
-						levels=2
+						levels=1
+						region="STATE_SLOBOZ"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:KHK"
+						levels=1
+						region="STATE_SLOBOZ"
 					}
 				}
 				reserves=1
@@ -2937,9 +3111,11 @@ BUILDINGS={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VOR"
 						levels=3
+						region="STATE_SLOBOZ"
 					}
 				}
 				reserves=1
@@ -2948,9 +3124,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:VOR"
-						levels=2
+						levels=1
+						region="STATE_SLOBOZ"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:VOR"
+						levels=1
+						region="STATE_SLOBOZ"
 					}
 				}
 				reserves=1
@@ -2963,9 +3147,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=1
+						region="STATE_EAST_SLOVAKIA"
 					}
 				}
 				reserves=1
@@ -2974,9 +3160,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:POL"
 						levels=1
+						region="STATE_EAST_SLOVAKIA"
 					}
 				}
 				reserves=1
@@ -3000,9 +3188,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MOL"
 						levels=2
+						region="STATE_MOLDAVIA"
 					}
 				}
 				reserves=1
@@ -3011,9 +3201,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MOL"
 						levels=4
+						region="STATE_MOLDAVIA"
 					}
 				}
 				reserves=1
@@ -3022,9 +3214,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MOL"
 						levels=2
+						region="STATE_MOLDAVIA"
 					}
 				}
 				reserves=1
@@ -3033,9 +3227,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MOL"
-						levels=3
+						levels=1
+						region="STATE_MOLDAVIA"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:MOL"
+						levels=2
+						region="STATE_MOLDAVIA"
 					}
 				}
 				reserves=1
@@ -3070,9 +3272,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:NOG"
 						levels=1
+						region="STATE_BESSARABIA"
 					}
 				}
 				reserves=1
@@ -3081,9 +3285,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NOG"
 						levels=2
+						region="STATE_BESSARABIA"
 					}
 				}
 				reserves=1
@@ -3107,9 +3313,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:WAL"
 						levels=1
+						region="STATE_WALLACHIA"
 					}
 				}
 				reserves=1
@@ -3118,9 +3326,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:WAL"
 						levels=1
+						region="STATE_WALLACHIA"
 					}
 				}
 				reserves=1
@@ -3129,9 +3339,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:WAL"
 						levels=1
+						region="STATE_WALLACHIA"
 					}
 				}
 				reserves=1
@@ -3153,9 +3365,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NOG"
 						levels=1
+						region="STATE_WALLACHIA"
 					}
 				}
 				reserves=1
@@ -3164,9 +3378,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NOG"
 						levels=1
+						region="STATE_WALLACHIA"
 					}
 				}
 				reserves=1
@@ -3175,9 +3391,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:NOG"
 						levels=1
+						region="STATE_WALLACHIA"
 					}
 				}
 				reserves=1
@@ -3201,9 +3419,17 @@ BUILDINGS={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HUN"
-						levels=2
+						levels=1
+						region="STATE_CENTRAL_HUNGARY"
+					}
+					building={
+						type="building_food_industry"
+						country="c:HUN"
+						levels=1
+						region="STATE_TRANSDANUBIA"
 					}
 				}
 				reserves=1
@@ -3212,9 +3438,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HUN"
 						levels=3
+						region="STATE_TRANSDANUBIA"
 					}
 				}
 				reserves=1
@@ -3223,9 +3451,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HUN"
 						levels=3
+						region="STATE_TRANSDANUBIA"
 					}
 				}
 				reserves=1
@@ -3234,9 +3464,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HUN"
 						levels=1
+						region="STATE_TRANSDANUBIA"
 					}
 				}
 				reserves=1
@@ -3293,9 +3525,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HUN"
 						levels=2
+						region="STATE_CENTRAL_HUNGARY"
 					}
 				}
 				reserves=1
@@ -3304,9 +3538,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_iron_mine"
 						country="c:HUN"
 						levels=1
+						region="STATE_CENTRAL_HUNGARY"
 					}
 				}
 				reserves=1
@@ -3315,9 +3551,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HUN"
 						levels=2
+						region="STATE_CENTRAL_HUNGARY"
 					}
 				}
 				reserves=1
@@ -3326,9 +3564,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HUN"
 						levels=2
+						region="STATE_CENTRAL_HUNGARY"
 					}
 				}
 				reserves=1
@@ -3372,9 +3612,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=4
+						region="STATE_CENTRAL_HUNGARY"
 					}
 				}
 				reserves=1
@@ -3383,9 +3625,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=3
+						region="STATE_CENTRAL_HUNGARY"
 					}
 				}
 				reserves=1
@@ -3394,9 +3638,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=1
+						region="STATE_CENTRAL_HUNGARY"
 					}
 				}
 				reserves=1
@@ -3431,9 +3677,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HUN"
 						levels=1
+						region="STATE_CENTRAL_HUNGARY"
 					}
 				}
 				reserves=1
@@ -3442,10 +3690,13 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HUN"
 						levels=2
+						region="STATE_CENTRAL_HUNGARY"
 					}
+					
 				}
 				reserves=1
 				activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled" }
@@ -3453,9 +3704,17 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:HUN"
-						levels=4
+						levels=1
+						region="STATE_CENTRAL_HUNGARY"
+					}
+					building={
+						type="building_iron_mine"
+						country="c:HUN"
+						levels=3
+						region="STATE_WEST_SLOVAKIA"
 					}
 				}
 				reserves=1
@@ -3464,9 +3723,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:HUN"
 						levels=3
+						region="STATE_WEST_SLOVAKIA"
 					}
 				}
 				reserves=1
@@ -3475,9 +3736,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:HUN"
 						levels=3
+						region="STATE_WEST_SLOVAKIA"
 					}
 				}
 				reserves=1
@@ -3501,9 +3764,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=3
+						region="STATE_BEKES"
 					}
 				}
 				reserves=1
@@ -3512,9 +3777,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=2
+						region="STATE_BEKES"
 					}
 				}
 				reserves=1
@@ -3549,9 +3816,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:TRS"
 						levels=3
+						region="STATE_SOUTHERN_TRANSYLVANIA"
 					}
 				}
 				reserves=1
@@ -3560,9 +3829,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:TRS"
-						levels=5
+						levels=1
+						region="STATE_SOUTHERN_TRANSYLVANIA"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:TRS"
+						levels=4
+						region="STATE_SOUTHERN_TRANSYLVANIA"
 					}
 				}
 				reserves=1
@@ -3586,9 +3863,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:TRS"
 						levels=3
+						region="STATE_SOUTHERN_TRANSYLVANIA"
 					}
 				}
 				reserves=1
@@ -3597,9 +3876,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:TRS"
 						levels=6
+						region="STATE_SOUTHERN_TRANSYLVANIA"
 					}
 				}
 				reserves=1
@@ -3623,9 +3904,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=4
+						region="STATE_VOJVODINA"
 					}
 				}
 				reserves=1
@@ -3634,9 +3917,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=3
+						region="STATE_VOJVODINA"
 					}
 				}
 				reserves=1
@@ -3660,9 +3945,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=3
+						region="STATE_BANAT"
 					}
 				}
 				reserves=1
@@ -3671,9 +3958,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:BSG"
 						levels=4
+						region="STATE_BANAT"
 					}
 				}
 				reserves=1
