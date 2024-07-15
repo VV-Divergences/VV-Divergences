@@ -398,6 +398,19 @@ BUILDINGS={
 				activate_production_methods={ "pm_scholastic_education" }
 			}
 			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GEN"
+						levels=1
+						region="STATE_PIEDMONT"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
+			}
+			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
@@ -2195,9 +2208,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:GEN"
 						levels=1
+						region="STATE_CORSICA"
 					}
 				}
 				reserves=1
@@ -2206,9 +2221,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:GEN"
 						levels=2
+						region="STATE_CORSICA"
 					}
 				}
 				reserves=1
@@ -2217,9 +2234,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:GEN"
 						levels=1
+						region="STATE_CORSICA"
 					}
 				}
 				reserves=1
@@ -2276,10 +2295,17 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:ARN"
-						levels=3
+						levels=2
+						region="STATE_SARDINIA"
 					}
+					building={
+						type="building_manor_house"
+						country="c:ARN"
+						levels=1
+						region="STATE_SARDINIA"
 				}
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
@@ -2287,9 +2313,17 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:ARN"
-						levels=3
+						levels=2
+						region="STATE_SARDINIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:ARN"
+						levels=1
+						region="STATE_CATALONIA"
 					}
 				}
 				reserves=1
@@ -2298,9 +2332,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:ARN"
 						levels=2
+						region="STATE_SARDINIA"
 					}
 				}
 				reserves=1
@@ -2330,7 +2366,7 @@ BUILDINGS={
 			}
 		}
 	}
-	s:STATE_SICILY = {
+	s:STATE_SICILY = { ##hey rhaz, i don't wanna edit aragon because i have a feeling you want to work on it, so i changed ownership in sardinia, and i will let you handle the rest -matty jul 14 '24
 		region_state:ARN = {
 			create_building={
 				building="building_government_administration"
