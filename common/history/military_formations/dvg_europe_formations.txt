@@ -455,7 +455,18 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}
     }
     c:DAR = { # Hesse-Darmstadt
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_rhine
+			name = "Darmstadter Stadtwache"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PALATINATE
+				count = 3
+			}
+			save_scope_as = dvg_dar_main_army
+		}	
     }
     c:DUA = { # Dual Monarchy
         
