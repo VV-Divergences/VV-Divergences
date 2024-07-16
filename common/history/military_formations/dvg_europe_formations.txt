@@ -35,7 +35,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 				state_region = s:STATE_CATALONIA
 				count = 5
 			}
-			save_scope_as = dvg_agr_main_army
+			save_scope_as = dvg_arn_main_army
 		}
 		create_military_formation = {
 			type = army
@@ -72,7 +72,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 				state_region = s:STATE_ABRUZZO
 				count = 5
 			}
-			save_scope_as = dvg_agr_main_army
+			save_scope_as = dvg_arn_second_army
 		}
     }
     c:AUS = { # Austria
@@ -164,7 +164,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}
     }
     c:ASB = { # Ansbach
-        		create_military_formation = {
+        create_military_formation = {
 			type = army
 			hq_region = sr:region_south_germany
 			name = "1. Ansbacher Regiment"
@@ -181,7 +181,18 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
         
     }
     c:BAE = { # Basel
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_south_germany
+			name = "Basler Milizkorps"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_SWITZERLAND
+				count = 2
+			}
+			save_scope_as = dvg_bae_main_army
+		}
     }
     c:BAD = { # Baden
         create_military_formation = {
