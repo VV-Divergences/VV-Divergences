@@ -1,6 +1,79 @@
 MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now, will be expanded
     c:ARN = { # Aragon
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_iberia
+			name = "Exèrcit d'Aragó"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ARAGON
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ARAGON
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VALENCIA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_VALENCIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CATALONIA
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_CATALONIA
+				count = 5
+			}
+			save_scope_as = dvg_agr_main_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_italy
+			name = "Marines de la Mediterrània"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_SARDINIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SICILY
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CALABRIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_APULIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CAMPANIA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ABRUZZO
+				count = 5
+			}
+			save_scope_as = dvg_agr_main_army
+		}
     }
     c:AUS = { # Austria
         ### 1. Austrian Army
@@ -869,7 +942,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		scope:BO_gen = {
 			transfer_to_formation = scope:dvg_sca_pomerania_army
 		}
-		
+
 		scope:temriel_gen = {
 			transfer_to_formation = scope:dvg_sca_main_army
 		}
