@@ -7007,17 +7007,6 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled"  }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:BAV"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
 		region_state:FRE = {
 			create_building={
