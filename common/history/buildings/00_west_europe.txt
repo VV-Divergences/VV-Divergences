@@ -7766,17 +7766,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:AUS"
-						levels=25
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
@@ -7842,17 +7831,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:AUS"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
