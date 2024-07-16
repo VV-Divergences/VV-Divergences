@@ -600,7 +600,18 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}
     }
     c:OSN = { # Osnabruck
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_north_germany
+			name = "Osnabrücker Stadtwache"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_EAST_FRISIA
+				count = 2
+			}
+			save_scope_as = dvg_OSN_main_army
+		}
     }
     c:PAP = { # Papal States
         
