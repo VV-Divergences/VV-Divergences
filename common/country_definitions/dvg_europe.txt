@@ -25,7 +25,7 @@ PRO = { #Provence
 }
 
 BRG = { #Burgundy
-	color = { 128 0 32 }
+	color = hsv360{ 345 100 32 }
 	
 	country_type = recognized
 
@@ -791,11 +791,11 @@ PRM = { #Yugra
 }
 
 GER = { #Germany
-	color = { 147 130 110 }
+	color = { 33 48 59 }
 	
 	country_type = recognized
 
-	tier = empire
+	tier = hegemony
 	
 	cultures = { north_german south_german rheinish }
 	capital = STATE_HESSE
@@ -1080,7 +1080,7 @@ HEK = { #Hesse-Kassel
 }
 
 ITA = { #Italy
-	color = { 125  171  84 }
+	color = { 82  120  54 }
 	
 	country_type = recognized
 
@@ -1969,7 +1969,7 @@ DIE = { #Dietsland
 }
 
 ZAP = { #Zapadoslavia
-	color = {  191  95  116 }
+	color = {  10  52  130 }
 	
 	country_type = recognized
 
@@ -1979,19 +1979,19 @@ ZAP = { #Zapadoslavia
 	capital = STATE_WEST_GALICIA
 }
 
-FRK = { #Frankish Empire
-	color = {  128 10 52 }
+FRK = { #Frankia
+	color = {  65 0 55 }
 	
 	country_type = recognized
 
 	tier = hegemony
 	
-	cultures = { french burgundian occitan romand }
+	cultures = { french burgundian rheinish }
 	capital = STATE_BURGUNDY
 }
 
 TLT = { #Transleithania
-	color = {  100  12  100 }
+	color = {  128  62  57 }
 	
 	country_type = recognized
 
@@ -2002,7 +2002,7 @@ TLT = { #Transleithania
 }
 
 CPT = { #Carpathia
-	color = {  150  90  100 }
+	color = {  115  62  57 }
 	
 	country_type = recognized
 
