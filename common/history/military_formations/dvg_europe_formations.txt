@@ -545,7 +545,18 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
         
     }
     c:HAN = { # Luneburg
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_north_germany
+			name = "Hannoveraner Brigarde"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_HANNOVER
+				count = 12
+			}
+			save_scope_as = dvg_han_main_army
+		}
     }
     c:HEK = { # Hesse-Kassel
         
