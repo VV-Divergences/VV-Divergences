@@ -4,6 +4,18 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
     }
     c:AUS = { # Austria
         ### 1. Austrian Army
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_germany
+			name = "1. Jäger Regiment"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_AUSTRIA
+				count = 20
+			}
+			save_scope_as = dvg_aus_main_army
+		}
 		create_character = {
 			is_general = yes
 			historical = yes
@@ -19,44 +31,12 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 
 			save_scope_as = von_Hess_gen
 		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_south_germany
-			name = "1. Jäger Regiment"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_AUSTRIA
-				count = 20
-			}
-			save_scope_as = dvg_aus_main_army
-		}
-
 		scope:von_Hess_gen = {
 			transfer_to_formation = scope:dvg_aus_main_army
 		}
 
 
 		### 1. Austrian Reserves
-		create_character = {
-			is_general = yes
-			historical = yes
-			first_name = Hermann
-			last_name = von_Ficquelmont
-			interest_group = ig_landowners
-			ideology = ideology_royalist
-			birth_date = 1777.3.22
-			hq = region_south_germany
-			commander_rank = commander_rank_1
-			traits = {
-				experienced_diplomat
-				charismatic
-			}
-
-			save_scope_as = von_Ficquelmont_gen
-		}
-
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_germany
@@ -75,7 +55,23 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			}
 			save_scope_as = dvg_aus_second_army
 		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Hermann
+			last_name = von_Ficquelmont
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			birth_date = 1777.3.22
+			hq = region_south_germany
+			commander_rank = commander_rank_1
+			traits = {
+				experienced_diplomat
+				charismatic
+			}
 
+			save_scope_as = von_Ficquelmont_gen
+		}
 		scope:von_Ficquelmont_gen = {
 			transfer_to_formation = scope:dvg_aus_second_army
 		}
@@ -131,6 +127,18 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
     c:BAV = { # Bavaria
 
 		### 1. Bavarian Army
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_germany
+			name = "1. Bayrisches Armeeregiment"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BAVARIA
+				count = 20
+			}
+			save_scope_as = dvg_bav_main_army
+		}
 		create_character = {
 			is_general = yes
 			historical = yes
@@ -146,42 +154,12 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 
 			save_scope_as = von_Jeetze_gen
 		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_south_germany
-			name = "1. Bayrisches Armeeregiment"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BAVARIA
-				count = 20
-			}
-			save_scope_as = dvg_bav_main_army
-		}
-
 		scope:von_Jeetze_gen = {
 			transfer_to_formation = scope:dvg_bav_main_army
 		}
 
 
 		### 1. Bavarian Reserves
-		create_character = {
-			is_general = yes
-			historical = yes
-			first_name = Otto
-			last_name = Langscheid
-			age = 36
-			hq = region_south_germany
-			commander_rank = commander_rank_1
-			traits = {
-				mountain_commander
-				cautious
-			}
-
-			save_scope_as = Langscheid_gen
-		}
-
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_germany
@@ -200,7 +178,21 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			}
 			save_scope_as = dvg_bav_second_army
 		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Otto
+			last_name = Langscheid
+			age = 36
+			hq = region_south_germany
+			commander_rank = commander_rank_1
+			traits = {
+				mountain_commander
+				cautious
+			}
 
+			save_scope_as = Langscheid_gen
+		}
 		scope:Langscheid_gen = {
 			transfer_to_formation = scope:dvg_bav_second_army
 		}
@@ -210,46 +202,6 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
     }
     c:BOH = { # Bohemia
         ### 1. Bohemian Army 55
-		
-		create_character = {
-			is_general = yes
-			historical = yes
-			culture = cu:north_german
-			first_name = Karl
-			last_name = von_Braunschweig
-			age = 40
-			interest_group = ig_petty_bourgeoisie
-			ideology = ideology_kaiserist
-			hq = region_north_germany
-			commander_rank = commander_rank_1
-			traits = {
-				bigoted
-				expensive_tastes
-				grifter
-			}
-			
-			save_scope_as = KVBraunshweig_gen
-		}
-		
-		create_character = {
-			is_general = yes
-			historical = yes
-			first_name = August
-			last_name = Lichnovsky
-			interest_group = ig_landowners
-			hq = region_north_germany
-			commander_rank = commander_rank_2
-			age = 58
-			traits = {
-				wrathful
-				cruel
-			}
-
-			save_scope_as = Lichnovsky_gen
-		}
-		
-
-		
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_north_germany
@@ -281,7 +233,41 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 
 			save_scope_as = dvg_boh_main_army
 		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			culture = cu:north_german
+			first_name = Karl
+			last_name = von_Braunschweig
+			age = 40
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_kaiserist
+			hq = region_north_germany
+			commander_rank = commander_rank_1
+			traits = {
+				bigoted
+				expensive_tastes
+				grifter
+			}
+			
+			save_scope_as = KVBraunshweig_gen
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = August
+			last_name = Lichnovsky
+			interest_group = ig_landowners
+			hq = region_north_germany
+			commander_rank = commander_rank_2
+			age = 58
+			traits = {
+				wrathful
+				cruel
+			}
 
+			save_scope_as = Lichnovsky_gen
+		}
 		scope:Lichnovsky_gen = {
 			transfer_to_formation = scope:dvg_boh_main_army
 		}
@@ -291,22 +277,6 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}
 
 		### 2. Bohemian Army 40
-		create_character = {
-			is_general = yes
-			historical = yes
-			first_name = Konstantin
-			last_name = Vratislav_z_Mitrovic
-			hq = region_north_germany
-			commander_rank = commander_rank_2
-			age = 52
-			traits = {
-				persistent
-				surveyor
-			}
-
-			save_scope_as = Vratislav_z_Mitrovic_gen
-		}
-
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_north_germany
@@ -338,12 +308,38 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 
 			save_scope_as = dvg_boh_second_army
 		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Konstantin
+			last_name = Vratislav_z_Mitrovic
+			hq = region_north_germany
+			commander_rank = commander_rank_2
+			age = 52
+			traits = {
+				persistent
+				surveyor
+			}
 
+			save_scope_as = Vratislav_z_Mitrovic_gen
+		}
 		scope:Vratislav_z_Mitrovic_gen = {
 			transfer_to_formation = scope:dvg_boh_second_army
 		}
 		
 		# 1 Bohemian Reserves 20
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_germany
+			name = "1. Böhmische Reserve"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ANHALT
+				count = 20
+			}
+			save_scope_as = dvg_boh_third_army
+		}
 		create_character = {
 			is_general = yes
 			historical = yes
@@ -359,24 +355,6 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 
 			save_scope_as = z_Bubna_gen
 		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_north_germany
-			name = "1. Böhmische Reserve"
-
-			
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ANHALT
-				count = 20
-			}
-
-
-			save_scope_as = dvg_boh_third_army
-		}
-
 		scope:z_Bubna_gen = {
 			transfer_to_formation = scope:dvg_boh_third_army
 		}
@@ -410,24 +388,6 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}	
     }
     c:BRG = { # Burgundy
-        create_character = {
-			is_general = yes
-			historical = yes
-			first_name = Sylvain
-			last_name = d_Harscamp
-			age = 50
-			ig_leader = yes
-			commander_rank = commander_rank_3
-			interest_group = ig_armed_forces
-			ideology = ideology_moderate
-			hq = region_rhine
-			traits = {
-				plains_commander
-				cautious
-			}
-			
-			save_scope_as = SDHarscamp_gen
-		}
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_rhine
@@ -475,6 +435,27 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			}
 			save_scope_as = dvg_brg_rhine_army
 		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Sylvain
+			last_name = d_Harscamp
+			age = 50
+			ig_leader = yes
+			commander_rank = commander_rank_3
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			hq = region_rhine
+			traits = {
+				plains_commander
+				cautious
+			}
+			save_scope_as = SDHarscamp_gen
+		}
+		scope:SDHarscamp_gen = {
+			transfer_to_formation = scope:dvg_brg_rhine_army
+		}
+
     }
     c:DAR = { # Hesse-Darmstadt
         create_military_formation = {
@@ -620,26 +601,6 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
         
     }
 	c:POL = { # Poland
-		create_character = {
-			is_general = yes
-			historical = yes
-			culture = cu:polish
-			first_name = Filip
-			last_name = Pudzian
-			age = 62
-			interest_group = ig_petty_bourgeoisie
-			ideology = ideology_republican_leader
-			hq = region_poland
-			commander_rank = commander_rank_2
-			traits = {
-				persistent
-				inspirational_orator
-				trench_rat
-			}
-			
-			save_scope_as = filipus_gen
-		}
-		
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_poland
@@ -694,7 +655,25 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			}
 			save_scope_as = dvg_pol_main_army
 		}	
-		
+		create_character = {
+			is_general = yes
+			historical = yes
+			culture = cu:polish
+			first_name = Filip
+			last_name = Pudzian
+			age = 62
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_republican_leader
+			hq = region_poland
+			commander_rank = commander_rank_2
+			traits = {
+				persistent
+				inspirational_orator
+				trench_rat
+			}
+			
+			save_scope_as = filipus_gen
+		}
 		scope:filipus_gen = {
 			transfer_to_formation = scope:dvg_pol_main_army
 		}
@@ -726,64 +705,6 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
         
     }
     c:SCA = { # Scandinavia
-        create_character = {
-			is_general = yes
-			historical = yes
-			culture = cu:scandinavian
-			first_name = Carl
-			last_name = Temriel
-			age = 64
-			interest_group = ig_intelligentsia
-			ideology = ideology_republican_leader
-			hq = region_baltic
-			commander_rank = commander_rank_2
-			traits = {
-				cautious
-				honorable
-				expert_offensive_planner
-			}
-			
-			save_scope_as = temriel_gen
-		}
-		
-		create_character = {
-			is_general = yes
-			historical = yes
-			culture = cu:scandinavian
-			first_name = Simon
-			last_name = Vaflen
-			age = 39
-			interest_group = ig_landowners
-			ideology = ideology_ethno_nationalist
-			hq = region_baltic
-			commander_rank = commander_rank_1
-			traits = {
-				trench_rat
-				psychological_affliction
-			}
-			
-			save_scope_as = SVaflen_gen
-		}
-
-		create_character = {
-			is_general = yes
-			historical = yes
-			culture = cu:scandinavian
-			first_name = Bo
-			last_name = Johansen
-			age = 47
-			interest_group = ig_landowners
-			ideology = ideology_royalist
-			hq = region_north_germany
-			commander_rank = commander_rank_1
-			traits = {
-				psychological_affliction
-				experienced_offensive_planner
-			}
-			
-			save_scope_as = BO_gen
-		}
-		
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_baltic
@@ -863,14 +784,6 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			save_scope_as = dvg_sca_main_army
 		}	
 		
-		scope:temriel_gen = {
-			transfer_to_formation = scope:dvg_sca_main_army
-		}
-		
-		scope:SVaflen_gen = {
-			transfer_to_formation = scope:dvg_sca_main_army
-		}
-		
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_north_germany
@@ -895,9 +808,74 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			}
 			save_scope_as = dvg_sca_pomerania_army
 		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			culture = cu:scandinavian
+			first_name = Carl
+			last_name = Temriel
+			age = 64
+			interest_group = ig_intelligentsia
+			ideology = ideology_republican_leader
+			hq = region_baltic
+			commander_rank = commander_rank_2
+			traits = {
+				cautious
+				honorable
+				expert_offensive_planner
+			}
+			
+			save_scope_as = temriel_gen
+		}
+		
+		create_character = {
+			is_general = yes
+			historical = yes
+			culture = cu:scandinavian
+			first_name = Simon
+			last_name = Vaflen
+			age = 39
+			interest_group = ig_landowners
+			ideology = ideology_ethno_nationalist
+			hq = region_baltic
+			commander_rank = commander_rank_1
+			traits = {
+				trench_rat
+				psychological_affliction
+			}
+			
+			save_scope_as = SVaflen_gen
+		}
+
+		create_character = {
+			is_general = yes
+			historical = yes
+			culture = cu:scandinavian
+			first_name = Bo
+			last_name = Johansen
+			age = 47
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			hq = region_north_germany
+			commander_rank = commander_rank_1
+			traits = {
+				psychological_affliction
+				experienced_offensive_planner
+			}
+			
+			save_scope_as = BO_gen
+		}
 		
 		scope:BO_gen = {
 			transfer_to_formation = scope:dvg_sca_pomerania_army
+		}
+		
+		scope:temriel_gen = {
+			transfer_to_formation = scope:dvg_sca_main_army
+		}
+		
+		scope:SVaflen_gen = {
+			transfer_to_formation = scope:dvg_sca_main_army
 		}
     }
     c:SCO = { # Scotland
