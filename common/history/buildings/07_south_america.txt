@@ -21,29 +21,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:QUI"
 						levels=2
-						region = "STATE_ECUADOR"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:QUI"
 						levels=1
-						region = "STATE_ECUADOR"
 					}
 				}
 				reserves=1
@@ -52,11 +48,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:QUI"
 						levels=2
-						region = "STATE_ECUADOR"
 					}
 				}
 				reserves=1
@@ -91,11 +85,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=3
-						region = "STATE_GUAYANA"
 					}
 				}
 				reserves=1
@@ -130,11 +122,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=1
-						region = "STATE_ZULIA"
 					}
 				}
 				reserves=1
@@ -143,11 +133,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_ZULIA"
 					}
 				}
 				reserves=1
@@ -177,29 +165,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=1
-						region = "STATE_MIRANDA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_citrus_orchards" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
 			}
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_MIRANDA"
 					}
 				}
 				reserves=1
@@ -234,24 +218,20 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=1
-						region = "STATE_BOLIVAR"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=1
-						region = "STATE_BOLIVAR"
 					}
 				}
 				reserves=1
@@ -296,16 +276,14 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_ANTIOQUIA"
 					}
 				}
 				reserves=1
@@ -314,11 +292,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_ANTIOQUIA"
 					}
 				}
 				reserves=1
@@ -353,28 +329,24 @@ BUILDINGS={
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=1
-						region = "STATE_GUAVIARE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=1
-						region = "STATE_GUAVIARE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -411,7 +383,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_arms_industry"
@@ -422,16 +394,14 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" }
+				activate_production_methods={ "pm_muskets"  }
 			}
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=1
-						region = "STATE_CUNDINAMARCA"
 					}
 				}
 				reserves=1
@@ -440,11 +410,9 @@ BUILDINGS={
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_CUNDINAMARCA"
 					}
 				}
 				reserves=1
@@ -453,15 +421,13 @@ BUILDINGS={
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_CUNDINAMARCA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -481,11 +447,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_CAUCA"
 					}
 				}
 				reserves=1
@@ -494,11 +458,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_CAUCA"
 					}
 				}
 				reserves=1
@@ -507,15 +469,13 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:GRA"
 						levels=2
-						region = "STATE_CAUCA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -545,7 +505,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_port"
@@ -571,29 +531,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_TILCARA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=2
-						region = "STATE_TILCARA"
 					}
 				}
 				reserves=1
@@ -634,7 +590,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" }
+				activate_production_methods={ "pm_muskets"  }
 			}
 			create_building={
 				building="building_furniture_manufacturies"
@@ -645,7 +601,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_lathe" "pm_no_luxuries" "pm_automation_disabled" }
+				activate_production_methods={ "pm_lathe" "pm_no_luxuries" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -661,37 +617,31 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_TIWANAKU"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_TIWANAKU"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_TIWANAKU"
 					}
 				}
 				reserves=1
@@ -700,11 +650,9 @@ BUILDINGS={
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=3
-						region = "STATE_TIWANAKU"
 					}
 				}
 				reserves=1
@@ -728,11 +676,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=2
-						region = "STATE_CHARCAS"
 					}
 				}
 				reserves=1
@@ -747,20 +693,18 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_CHARCAS"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
 	}
@@ -775,20 +719,18 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_ANTISUYU"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
 	}
@@ -803,7 +745,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
 	}
@@ -829,29 +771,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:QUI"
 						levels=1
-						region = "STATE_CAJAMARCA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:QUI"
 						levels=1
-						region = "STATE_CAJAMARCA"
 					}
 				}
 				reserves=1
@@ -892,7 +830,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled" }
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -914,20 +852,18 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:QUI"
 						levels=3
-						region = "STATE_LIMA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -938,16 +874,14 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:QUI"
 						levels=2
-						region = "STATE_LIMA"
 					}
 				}
 				reserves=1
@@ -978,11 +912,9 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:QUI"
 						levels=2
-						region = "STATE_LIMA"
 					}
 				}
 				reserves=1
@@ -1006,11 +938,9 @@ BUILDINGS={
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=2
-						region = "STATE_CUZCO"
 					}
 				}
 				reserves=1
@@ -1019,37 +949,31 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=2
-						region = "STATE_CUZCO"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=2
-						region = "STATE_CUZCO"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=2
-						region = "STATE_CUZCO"
 					}
 				}
 				reserves=1
@@ -1064,7 +988,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -1112,29 +1036,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding" }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_CUNTISUYU"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_CUNTISUYU"
 					}
 				}
 				reserves=1
@@ -1143,11 +1063,9 @@ BUILDINGS={
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_CUNTISUYU"
 					}
 				}
 				reserves=1
@@ -1188,29 +1106,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=5
-						region = "STATE_BOURGOGNE_DU_SUD"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=2
-						region = "STATE_BOURGOGNE_DU_SUD"
 					}
 				}
 				reserves=1
@@ -1245,11 +1159,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=2
-						region = "STATE_NORTHUMBRIA"
 					}
 				}
 				reserves=1
@@ -1264,20 +1176,18 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=1
-						region = "STATE_NORTHUMBRIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
 	}
@@ -1296,7 +1206,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" }
+				activate_production_methods={ "pm_muskets"  }
 			}
 			create_building={
 				building="building_tooling_workshops"
@@ -1307,7 +1217,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_crude_tools" "pm_automation_disabled" }
+				activate_production_methods={ "pm_crude_tools" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -1318,7 +1228,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1329,42 +1239,36 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_MARCHES_OUEST"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+				activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_MARCHES_OUEST"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_MARCHES_OUEST"
 					}
 				}
 				reserves=1
@@ -1373,11 +1277,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_MARCHES_OUEST"
 					}
 				}
 				reserves=1
@@ -1386,11 +1288,9 @@ BUILDINGS={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_MARCHES_OUEST"
 					}
 				}
 				reserves=1
@@ -1442,7 +1342,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1453,7 +1353,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_shipyards"
@@ -1464,33 +1364,29 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding" }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=3
-						region = "STATE_AVALON"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=8
-						region = "STATE_AVALON"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_butchering_tools" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_butchering_tools" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -1501,7 +1397,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_naval_base"
@@ -1545,7 +1441,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" }
+				activate_production_methods={ "pm_muskets"  }
 			}
 			create_building={
 				building="building_military_shipyards"
@@ -1556,7 +1452,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_military_shipbuilding_wooden" }
+				activate_production_methods={  "pm_military_shipbuilding_wooden" }
 			}
 			create_building={
 				building="building_tooling_workshops"
@@ -1567,7 +1463,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_crude_tools" "pm_automation_disabled" }
+				activate_production_methods={ "pm_crude_tools" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_food_industry"
@@ -1578,7 +1474,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_disabled_canning" "pm_manual_dough_processing" }
+				activate_production_methods={ "pm_disabled_canning"  "pm_manual_dough_processing" }
 			}
 			create_building={
 				building="building_chemical_plants"
@@ -1589,16 +1485,14 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_artificial_fertilizers" }
+				activate_production_methods={ "pm_artificial_fertilizers"  }
 			}
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=2
-						region = "STATE_AVALON"
 					}
 				}
 				reserves=1
@@ -1623,7 +1517,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_coal_mine"
@@ -1634,7 +1528,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 		}
 	}
@@ -1649,20 +1543,18 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled" }
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=8
-						region = "STATE_EOFERWIC"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_butchering_tools" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_butchering_tools" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -1678,24 +1570,20 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=5
-						region = "STATE_EOFERWIC"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=2
-						region = "STATE_EOFERWIC"
 					}
 				}
 				reserves=1
@@ -1714,29 +1602,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=2
-						region = "STATE_WESSEX"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=1
-						region = "STATE_WESSEX"
 					}
 				}
 				reserves=1
@@ -1749,15 +1633,13 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=3
-						region = "STATE_BRUXELLES_SUR_ODON"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_artillery_foundries"
@@ -1768,7 +1650,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -1784,11 +1666,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=3
-						region = "STATE_BRUXELLES_SUR_ODON"
 					}
 				}
 				reserves=1
@@ -1801,15 +1681,13 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_CATAMARCA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1820,7 +1698,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
 	}
@@ -1829,24 +1707,20 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_TRANSFLEUVE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_TRANSFLEUVE"
 					}
 				}
 				reserves=1
@@ -1876,7 +1750,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_naval_base"
@@ -1898,7 +1772,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1909,7 +1783,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -1920,33 +1794,29 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=2
-						region = "STATE_NEAR_COLLASUYU"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_NEAR_COLLASUYU"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1957,7 +1827,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_port"
@@ -1988,15 +1858,13 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:TWT"
 						levels=1
-						region = "STATE_KUCHICHAY"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
 	}
@@ -2043,15 +1911,13 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=4
-						region = "STATE_NEW_LONDON"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_butchering_tools" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_butchering_tools" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_port"
@@ -2073,29 +1939,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding" }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=3
-						region = "STATE_NEW_LONDON"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:BEO"
 						levels=1
-						region = "STATE_NEW_LONDON"
 					}
 				}
 				reserves=1
@@ -2137,7 +1999,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled" }
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -2159,16 +2021,14 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=2
-						region = "STATE_LORRAINE_ATLANTIQUE"
 					}
 				}
 				reserves=1
@@ -2177,24 +2037,20 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=5
-						region = "STATE_LORRAINE_ATLANTIQUE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_no_secondary" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_LORRAINE_ATLANTIQUE"
 					}
 				}
 				reserves=1
@@ -2242,7 +2098,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
 			}
 		}
 	}
@@ -2257,7 +2113,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -2273,11 +2129,9 @@ BUILDINGS={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_SERMOISE_SUR_ODON"
 					}
 				}
 				reserves=1
@@ -2292,7 +2146,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_percussion_caps" }
+				activate_production_methods={ "pm_percussion_caps"  }
 			}
 		}
 	}
@@ -2301,15 +2155,13 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=2
-						region = "STATE_LIBREVILLE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -2331,7 +2183,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
 	}
@@ -2368,7 +2220,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled" }
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_food_industry"
@@ -2379,7 +2231,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_sweeteners" "pm_disabled_canning" "pm_manual_dough_processing" "pm_pot_stills" }
+				activate_production_methods={ "pm_sweeteners" "pm_disabled_canning"  "pm_manual_dough_processing" "pm_pot_stills" }
 			}
 			create_building={
 				building="building_paper_mills"
@@ -2390,7 +2242,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -2401,16 +2253,14 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:ATL"
 						levels=4
-						region = "STATE_COTE_DU_CAFE"
 					}
 				}
 				reserves=1
@@ -2419,11 +2269,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:ATL"
 						levels=2
-						region = "STATE_COTE_DU_CAFE"
 					}
 				}
 				reserves=1
@@ -2432,15 +2280,13 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:ATL"
 						levels=5
-						region = "STATE_COTE_DU_CAFE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -2473,7 +2319,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_artillery_foundries"
@@ -2484,7 +2330,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
 			}
 		}
 	}
@@ -2499,16 +2345,14 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=5
-						region = "STATE_GOUAS"
 					}
 				}
 				reserves=1
@@ -2523,7 +2367,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" }
+				activate_production_methods={ "pm_muskets"  }
 			}
 		}
 	}
@@ -2532,11 +2376,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=3
-						region = "STATE_NOUVELLE_ALSACE"
 					}
 				}
 				reserves=1
@@ -2551,7 +2393,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding" }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
 				building="building_military_shipyards"
@@ -2562,16 +2404,14 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_military_shipbuilding_wooden" }
+				activate_production_methods={  "pm_military_shipbuilding_wooden" }
 			}
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_NOUVELLE_ALSACE"
 					}
 				}
 				reserves=1
@@ -2586,7 +2426,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -2623,7 +2463,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding" }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
 				building="building_military_shipyards"
@@ -2634,7 +2474,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_military_shipbuilding_wooden" }
+				activate_production_methods={  "pm_military_shipbuilding_wooden" }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -2650,11 +2490,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=3
-						region = "STATE_COTE_DU_SUCRE"
 					}
 				}
 				reserves=1
@@ -2663,11 +2501,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=4
-						region = "STATE_COTE_DU_SUCRE"
 					}
 				}
 				reserves=1
@@ -2676,11 +2512,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=1
-						region = "STATE_COTE_DU_SUCRE"
 					}
 				}
 				reserves=1
@@ -2689,11 +2523,9 @@ BUILDINGS={
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=5
-						region = "STATE_COTE_DU_SUCRE"
 					}
 				}
 				reserves=1
@@ -2708,7 +2540,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -2719,7 +2551,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -2772,11 +2604,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=1
-						region = "STATE_MONTS_DIAMANTS"
 					}
 				}
 				reserves=1
@@ -2785,15 +2615,13 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=6
-						region = "STATE_MONTS_DIAMANTS"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -2804,7 +2632,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -2820,11 +2648,9 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=1
-						region = "STATE_MONTS_DIAMANTS"
 					}
 				}
 				reserves=1
@@ -2843,7 +2669,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -2870,28 +2696,24 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:EQX"
 						levels=1
-						region = "STATE_VAURA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:EQX"
 						levels=2
-						region = "STATE_VAURA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_artillery_foundries"
@@ -2902,7 +2724,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
 			}
 		}
 	}
@@ -2939,20 +2761,18 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms" }
+				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:AMA"
 						levels=1
-						region = "STATE_FRANCE_ANTARTIQUE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -2963,7 +2783,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_port"
@@ -2989,7 +2809,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_naval_base"
@@ -3011,7 +2831,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" }
+				activate_production_methods={ "pm_muskets"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -3033,7 +2853,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -3044,29 +2864,25 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:EQX"
 						levels=3
-						region = "STATE_CAPPADOCE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:EQX"
 						levels=1
-						region = "STATE_CAPPADOCE"
 					}
 				}
 				reserves=1
@@ -3085,7 +2901,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -3101,11 +2917,9 @@ BUILDINGS={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
-					building = {
-						type = "building_manor_house"
+					country={
 						country="c:LOT"
 						levels=1
-						region = "STATE_CHACO_BOREAL"
 					}
 				}
 				reserves=1
