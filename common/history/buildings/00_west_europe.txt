@@ -7031,17 +7031,6 @@ BUILDINGS={
 		}
 		region_state:AGR = {
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:AGR"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={

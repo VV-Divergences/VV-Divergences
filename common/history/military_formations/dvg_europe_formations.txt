@@ -81,7 +81,18 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}
     }
     c:AGR = { # Augsberg
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_south_germany
+			name = "Augsburger Stadtwache"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BAVARIA
+				count = 1
+			}
+			save_scope_as = dvg_agr_main_army
+		}
     }
     c:ASB = { # Ansbach
         		create_military_formation = {
