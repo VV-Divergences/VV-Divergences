@@ -7166,17 +7166,6 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:FRW"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
 		region_state:ASB = {
 			create_building={
