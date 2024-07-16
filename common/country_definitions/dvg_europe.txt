@@ -324,7 +324,7 @@ LOM = { #Milan
 }
 
 VEN = { #Venice
-	color = { 54  167  156 }
+	color = { 180  12  1 }
 	
 	country_type = recognized
 
@@ -393,7 +393,7 @@ MON = { #Montenegro
 }
 
 TUR = { # Rum Empire
-	color = { 30 160 203 }
+	color = { 50  75  40 }
 	
 	country_type = recognized
 
@@ -554,7 +554,7 @@ DON = {
 }
 
 AKH = {
-	color = { 142 97 97 }
+	color = { 143 116 76 }
 	
 	country_type = recognized
 	
@@ -647,7 +647,7 @@ PSK = { #Pskov
 }
 
 NOV = { #Novgorod
-	color = { 186 216 224 }
+	color = { 220 220 230 }
 	
 	country_type = recognized
 	
@@ -671,7 +671,7 @@ MUS = { #Muscovy
 }
 
 MSO = { #Moscow
-	color = { 109 173 157 }
+	color = { 142 148 62 }
 	
 	country_type = recognized
 	
@@ -683,7 +683,7 @@ MSO = { #Moscow
 }
 
 TVE = { #Yaroslavl
-	color = { 112 178 139 }
+	color = { 220 220 200 }
 	
 	country_type = recognized
 	
@@ -695,7 +695,7 @@ TVE = { #Yaroslavl
 }
 
 RYA = { #Ryazan
-	color = { 109 109 173 }
+	color = { 94 134 94 }
 	
 	country_type = recognized
 	
@@ -719,7 +719,7 @@ SMO = { #Smolensk
 }
 
 NZH = { #Nizhny Novgorod
-	color = { 173 109 109 }
+	color = { 148 119 112 }
 	
 	country_type = recognized
 	
@@ -835,7 +835,7 @@ CFR = { #Rhenish Union
 }
 
 TYR = { #Tyrol
-	color = { 237 0 0 }
+	color = { 100 100 100 }
 	
 	country_type = recognized
 	
@@ -1296,7 +1296,7 @@ TOL = { #Toledo
 }
 
 IBE = { #Iberia
-	color = { 250  181  0 }
+	color = { 220  190  10 }
 	
 	country_type = recognized
 
@@ -1770,12 +1770,12 @@ MLT = { #Malta
 	capital = STATE_MALTA
 }
 
-HLR = {
+HLR = { #Holy Roman Empire HRE
 	color = { 240  200  24 }
 	
 	country_type = recognized
 
-	tier = empire
+	tier = hegemony
 	
 	cultures = { czech south_german north_german rheinish  }
 	capital = STATE_BOHEMIA
@@ -1881,7 +1881,7 @@ RAG = { #Ragusa
 }
 
 TRT = { #Prince-Bishopric of Trent 
-	color = { 181 72 106 }
+	color = { 100 180 106 }
 	
 	country_type = recognized
 
@@ -1902,7 +1902,7 @@ PRC = {
     capital = STATE_ILE_DE_FRANCE
 }
 
-AVN = {
+AVN = { #Avignon
 	color = { 105 106 182 }
 	
 	country_type = recognized
@@ -1926,7 +1926,7 @@ TAP = {
 	capital = STATE_PROVENCE
 }
 
-AKZ = {
+AKZ = { #Idishe Mdinh (jewish state in poland??)
 	color = { 105 106 182 }
 	
 	country_type = recognized
@@ -1969,7 +1969,7 @@ DIE = { #Dietsland
 }
 
 ZAP = { #Zapadoslavia
-	color = {  10  52  130 }
+	color = {  12  45  92 }
 	
 	country_type = recognized
 
@@ -1979,7 +1979,7 @@ ZAP = { #Zapadoslavia
 	capital = STATE_WEST_GALICIA
 }
 
-FRK = { #Frankia
+FRK = { #Frankish Empire
 	color = {  65 0 55 }
 	
 	country_type = recognized
@@ -2002,7 +2002,7 @@ TLT = { #Transleithania
 }
 
 CPT = { #Carpathia
-	color = {  115  62  57 }
+	color = {  115  112  79 }
 	
 	country_type = recognized
 

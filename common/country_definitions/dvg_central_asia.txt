@@ -1,5 +1,5 @@
 ﻿AZB = { #Azerbaijan
-	color = { 56 32 172 }
+	color = { 91 75 173 }
 	
 	country_type = unrecognized
 
@@ -11,7 +11,7 @@
 }
 
 ASK = { # Xacitarxan
-	color = { 220  202  96 }
+	color = { 109  153  194 }
 	
 	country_type = unrecognized
 
@@ -46,7 +46,7 @@ DAG = { # Dagestan
 #}
 
 IUS = { #Kazan
-	color = { 101 70 117 }
+	color = { 108 163 158 }
 
 	country_type = recognized
 
