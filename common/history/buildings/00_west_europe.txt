@@ -5665,17 +5665,6 @@ BUILDINGS={
 				activate_production_methods={ "default_building_vineyard_plantation" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:RHI"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_coal_mine"
 				add_ownership={
 					building={
@@ -5806,17 +5795,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={  "pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing" "pm_pot_stills" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:RHI"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}

@@ -703,7 +703,24 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
         
     }
     c:RHI = { # Rhineland
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_rhine
+			name = "Würzburger Stadtwache"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_RHINELAND
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PALATINATE
+				count = 5
+			}
+			save_scope_as = dvg_rhi_main_army
+		}
     }
     c:SAV = { # Savoy
         
