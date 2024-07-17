@@ -2034,7 +2034,7 @@ BUILDINGS={
 						region="STATE_SANACOMIE"
 					}
 					building={
-						type="building_manor house"
+						type="building_manor_house"
 						country="c:PLA"
 						levels=3
 						region="STATE_SANACOMIE"
@@ -2222,9 +2222,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_paper_mills"
 						country="c:PLA"
 						levels=2
+						region="STATE_CHARLESIE"
 					}
 				}
 				reserves=1
@@ -2233,9 +2235,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_textile_mills"
 						country="c:PLA"
 						levels=2
+						region="STATE_CHARLESIE"
 					}
 				}
 				reserves=1
@@ -2244,9 +2248,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PLA"
 						levels=6
+						region="STATE_CHARLESIE"
 					}
 				}
 				reserves=1
@@ -2255,9 +2261,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PLA"
 						levels=2
+						region="STATE_CHARLESIE"
 					}
 				}
 				reserves=1
@@ -2303,9 +2311,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PLA"
 						levels=3
+						region="STATE_CHARLESIE"
 					}
 				}
 				reserves=1
@@ -2320,7 +2330,13 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:PLA"
-						levels=3
+						levels=2
+					}
+					building={
+						type="buidling_financial_district"
+						country="c:PLA"
+						levels=1
+						region="STATE_CHAOUENONS"
 					}
 				}
 				reserves=1
@@ -2329,9 +2345,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PLA"
 						levels=3
+						region="STATE_CHAOUENONS"
 					}
 				}
 				reserves=1
@@ -2344,9 +2362,11 @@ BUILDINGS={
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PLA"
 						levels=3
+						region="STATE_CHAOUENONS"
 					}
 				}
 				reserves=1
@@ -2355,9 +2375,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:PLA"
 						levels=2
+						region="STATE_ANGLETERRE"
 					}
 				}
 				reserves=1
@@ -2366,9 +2388,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PLA"
 						levels=1
+						region="STATE_ANGLETERRE"
 					}
 				}
 				reserves=1
@@ -2392,9 +2416,11 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PLA"
 						levels=2
+						region="STATE_MONT_AUX_ARCS"
 					}
 				}
 				reserves=1
@@ -2403,9 +2429,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:PLA"
 						levels=3
+						region="STATE_MONT_AUX_ARCS"
 					}
 				}
 				reserves=1
@@ -2434,7 +2462,7 @@ BUILDINGS={
 				building="building_maize_farm"
 				add_ownership={
 					country={
-						country="c:CHE"
+						country="c:PLA"
 						levels=1
 					}
 				}
