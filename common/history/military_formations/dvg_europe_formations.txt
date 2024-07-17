@@ -681,7 +681,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_sea
+			hq_region = sr:region_north_sea_coast
 			name = "Le corps irlandais"
 
 			combat_unit = {
