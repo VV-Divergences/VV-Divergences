@@ -567,7 +567,176 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}	
     }
     c:DUA = { # Dual Monarchy
-        
+		## 146 total
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_france
+			name = "La grande armée de France"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ILE_DE_FRANCE
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CHAMPAGNE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORMANDY
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BRITTANY
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_LOIRE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ORLEANS
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ILE_DE_FRANCE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_LIMOUSIN
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_POITOU
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_AUVERGNE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_RHONE
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_LANGUEDOC
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ARMAGNAC
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_AQUITAINE
+				count = 5
+			}
+			save_scope_as = dvg_dua_main_army
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_england
+			name = "Le corps britannique"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_HOME_COUNTIES
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_MIDLANDS
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_EAST_ANGLIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_YORKSHIRE
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LANCASHIRE
+				count = 10
+			}
+			save_scope_as = dvg_dua_second_army
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_sea
+			name = "Le corps irlandais"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ULSTER
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CONNAUGHT
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_MUNSTER
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LEINSTER
+				count = 4
+			}
+			save_scope_as = dvg_dua_third_army
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_india
+			name = "La division maritime indienne"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CEYLON
+				count = 4
+			}
+			save_scope_as = dvg_dua_fourth_army
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_senegal
+			name = "La division maritime du Sénégal"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LIBERIA
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SIERRA_LEONE
+				count = 2
+			}
+			save_scope_as = dvg_dua_fifth_army
+		}
     }
     c:FIO = { # Fribourg
         

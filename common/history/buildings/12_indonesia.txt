@@ -1548,17 +1548,6 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:DUA"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
 	}
 	s:STATE_MINDANAO = {
