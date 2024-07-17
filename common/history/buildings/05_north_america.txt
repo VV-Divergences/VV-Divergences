@@ -3378,9 +3378,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:GCO"
 						levels=1
+						region="STATE_BAHIA"
 					}
 				}
 				reserves=1
@@ -3389,9 +3391,17 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:GCO"
 						levels=3
+						region="STATE_BAHIA"
+					}
+					building={
+						type="building_maize_farm"
+						country="c:GCO"
+						levels=3
+						region="STATE_BAHIA"
 					}
 				}
 				reserves=1
@@ -3400,9 +3410,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:GCO"
 						levels=2
+						region="STATE_BAHIA"
 					}
 				}
 				reserves=1
