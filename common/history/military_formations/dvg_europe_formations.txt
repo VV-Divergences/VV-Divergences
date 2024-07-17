@@ -1159,7 +1159,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			save_scope_as = dvg_slz_main_army
 		}
     }
-    c:SME = { Saxe-Meiningen-Eisenach
+    c:SME = { # Saxe-Meiningen-Eisenach
         
     }
     c:SPA = { # Spain
