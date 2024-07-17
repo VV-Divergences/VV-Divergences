@@ -2476,9 +2476,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=4
+						region="STATE_SANBAO"
 					}
 				}
 				reserves=1
@@ -2509,9 +2511,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_furniture_manufacturies"
 						country="c:QIN"
 						levels=1
+						region="STATE_SANBAO"
 					}
 				}
 				reserves=1
@@ -2520,9 +2524,11 @@ BUILDINGS={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_paper_mills"
 						country="c:QIN"
 						levels=1
+						region="STATE_SANBAO"
 					}
 				}
 				reserves=1
@@ -2531,9 +2537,17 @@ BUILDINGS={
 			create_building={
 				building="building_gold_mine"
 				add_ownership={
-					country={
+					building={
+						type="buidling_financial_district"
 						country="c:QIN"
-						levels=2
+						levels=1
+						region="STATE_SANBAO"
+					}
+					building={
+						type="buidling_gold_mine"
+						country="c:QIN"
+						levels=1
+						region="STATE_SANBAO"
 					}
 				}
 				reserves=1
@@ -2542,9 +2556,11 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="buidling_financial_district"
 						country="c:QIN"
 						levels=1
+						region="STATE_SANBAO"
 					}
 				}
 				reserves=1
@@ -2553,9 +2569,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:QIN"
 						levels=1
+						region="STATE_SANBAO"
 					}
 				}
 				reserves=1
@@ -2590,9 +2608,17 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
-						levels=3
+						levels=2
+						region="STATE_XINGYE"
+					}
+					building={
+						type="building_wheat_farm"
+						country="c:QIN"
+						levels=1
+						region="STATE_XINGYE"
 					}
 				}
 				reserves=1
@@ -2612,9 +2638,11 @@ BUILDINGS={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					building={
+						type="buidling_financial_district"
 						country="c:QIN"
 						levels=1
+						region="STATE_XINGYE"
 					}
 				}
 				reserves=1
@@ -2623,9 +2651,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:QIN"
 						levels=1
+						region="STATE_XINGYE"
 					}
 				}
 				reserves=1
@@ -2645,9 +2675,11 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:QIN"
 						levels=2
+						region="STATE_XINGYE"
 					}
 				}
 				reserves=1
@@ -2667,9 +2699,11 @@ BUILDINGS={
 			create_building={
 				building="building_gold_mine"
 				add_ownership={
-					country={
+					building={
+						type="building_gold_mine"
 						country="c:QIN"
 						levels=1
+						region="STATE_XINGYE"
 					}
 				}
 				reserves=1
@@ -2682,9 +2716,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=3
+						region="STATE_DONGHAI"
 					}
 				}
 				reserves=1
@@ -2693,9 +2729,11 @@ BUILDINGS={
 			create_building={
 				building="building_tea_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=2
+						region="STATE_DONGHAI"
 					}
 				}
 				reserves=1
@@ -2704,9 +2742,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=2
+						region="STATE_DONGHAI"
 					}
 				}
 				reserves=1
@@ -2730,9 +2770,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=2
+						region="STATE_XINGTIAN"
 					}
 				}
 				reserves=1
@@ -2741,9 +2783,11 @@ BUILDINGS={
 			create_building={
 				building="building_tea_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=2
+						region="STATE_XINGTIAN"
 					}
 				}
 				reserves=1
@@ -2752,9 +2796,11 @@ BUILDINGS={
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=1
+						region="STATE_XINGTIAN"
 					}
 				}
 				reserves=1
@@ -2763,9 +2809,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=1
+						region="STATE_XINGTIAN"
 					}
 				}
 				reserves=1
@@ -2774,9 +2822,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=1
+						region="STATE_XINGTIAN"
 					}
 				}
 				reserves=1
@@ -2800,9 +2850,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=2
+						region="STATE_XIAZHOU"
 					}
 				}
 				reserves=1
@@ -2822,9 +2874,11 @@ BUILDINGS={
 			create_building={
 				building="building_shipyards"
 				add_ownership={
-					country={
+					building={
+						type="building_shipyards"
 						country="c:QIN"
 						levels=1
+						region="STATE_XIAZHOU"
 					}
 				}
 				reserves=1
@@ -2844,9 +2898,11 @@ BUILDINGS={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
-					country={
+					building={
+						type="building_furniture_manufacturies"
 						country="c:QIN"
 						levels=1
+						region="STATE_XIAZHOU"
 					}
 				}
 				reserves=1
@@ -2855,9 +2911,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:QIN"
 						levels=1
+						region="STATE_XIAZHOU"
 					}
 				}
 				reserves=1
@@ -2866,9 +2924,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:QIN"
 						levels=2
+						region="STATE_XIAZHOU"
 					}
 				}
 				reserves=1
@@ -2892,9 +2952,17 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
-						levels=3
+						levels=1
+						region="STATE_XIAOSU"
+					}
+					building={
+						type="building_wheat_farm"
+						country="c:QIN"
+						levels=2
+						region="STATE_XIAOSU"
 					}
 				}
 				reserves=1
@@ -2914,9 +2982,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:QIN"
 						levels=3
+						region="STATE_XIAOSU"
 					}
 				}
 				reserves=1
@@ -2925,9 +2995,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:QIN"
 						levels=1
+						region="STATE_XIAOSU"
 					}
 				}
 				reserves=1
@@ -2940,9 +3012,17 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
-						levels=2
+						levels=1
+						region="STATE_QIZHOU"
+					}
+					building={
+						type="building_wheat_farm"
+						country="c:QIN"
+						levels=1
+						region="STATE_QIZHOU"
 					}
 				}
 				reserves=1
@@ -2951,9 +3031,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:QIN"
 						levels=1
+						region="STATE_QIZHOU"
 					}
 				}
 				reserves=1
@@ -2962,9 +3044,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:QIN"
 						levels=1
+						region="STATE_QIZHOU"
 					}
 				}
 				reserves=1
@@ -2973,9 +3057,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=2
+						region="STATE_QIZHOU"
 					}
 				}
 				reserves=1
@@ -2988,9 +3074,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=2
+						region="STATE_HEICHI"
 					}
 				}
 				reserves=1
@@ -2999,9 +3087,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:QIN"
 						levels=1
+						region="STATE_HEICHI"
 					}
 				}
 				reserves=1
@@ -3010,9 +3100,11 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:QIN"
 						levels=1
+						region="STATE_HEICHI"
 					}
 				}
 				reserves=1
@@ -3021,9 +3113,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=1
+						region="STATE_HEICHI"
 					}
 				}
 				reserves=1
@@ -3036,9 +3130,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:QIN"
 						levels=1
+						region="STATE_ZHONGRONG"
 					}
 				}
 				reserves=1
@@ -3047,9 +3143,11 @@ BUILDINGS={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:QIN"
 						levels=2
+						region="STATE_ZHONGRONG"
 					}
 				}
 				reserves=1
@@ -3058,9 +3156,17 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					country={
+					building={
+						type="building_fishing_wharf"
 						country="c:QIN"
-						levels=3
+						levels=2
+						region="STATE_ZHONGRONG"
+					}
+					building={
+						type="building_financial_district"
+						country="c:QIN"
+						levels=1
+						region="STATE_ZHONGRONG"
 					}
 				}
 				reserves=1
