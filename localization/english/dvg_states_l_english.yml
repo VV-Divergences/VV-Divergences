@@ -217,4 +217,15 @@
  
  STATE_JHARKHAND: "Chhota Nagpur"
  STATE_KOLKATA: "West Bengal"
+
+# 1.6 states deleted in 1.7
+ STATE_BRYANSK: "Bryansk"
+ STATE_EASTERN_AFGHANISTAN: "Eastern Afghanistan"
+ STATE_ESTONIA: "Estonia"
+ STATE_LATVIA: "Latvia"
+ STATE_LITHUANIA: "Lithuania"
+ STATE_LUHANSK: "Luhansk"
+ STATE_ORSHA: "Orsha"
+ STATE_SOUTHERN_FINLAND: "Southern Finland"
+ STATE_WESTERN_AFGHANISTAN: "Western Afghanistan"
  
