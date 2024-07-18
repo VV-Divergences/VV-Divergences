@@ -392,7 +392,7 @@ MON = { #Montenegro
 	is_named_from_capital = yes
 }
 
-TUR = { # Rum Empire
+TUR = { # Ottomans
 	color = { 50  75  40 }
 	
 	country_type = recognized
@@ -400,7 +400,7 @@ TUR = { # Rum Empire
 	tier = empire
 	
 	cultures = { turkish }
-	capital = STATE_KONYA
+	capital = STATE_WESTERN_THRACE
 }
 
 ERE = { # East Rum

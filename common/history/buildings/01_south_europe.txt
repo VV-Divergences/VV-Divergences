@@ -5425,34 +5425,10 @@ BUILDINGS={
 	s:STATE_WESTERN_THRACE = {
 		region_state:TUR = {
 			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					country={
-						country="c:TUR"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:TUR"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
-			}
-		}
-		region_state:WRE = {
-			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=10
 					}
 				}
@@ -5463,7 +5439,7 @@ BUILDINGS={
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 					}
 				}
@@ -5474,7 +5450,7 @@ BUILDINGS={
 				building="building_shipyards"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 					}
 				}
@@ -5485,7 +5461,7 @@ BUILDINGS={
 				building="building_textile_mills"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=5
 					}
 				}
@@ -5496,7 +5472,7 @@ BUILDINGS={
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 					}
 				}
@@ -5507,7 +5483,7 @@ BUILDINGS={
 				building="building_glassworks"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 					}
 				}
@@ -5518,7 +5494,7 @@ BUILDINGS={
 				building="building_fishing_wharf"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 					}
 				}
@@ -5529,8 +5505,8 @@ BUILDINGS={
 				building="building_wheat_farm"
 				add_ownership={
 					country={
-						country="c:WRE"
-						levels=2
+						country="c:TUR"
+						levels=4
 					}
 				}
 				reserves=1
@@ -5540,7 +5516,7 @@ BUILDINGS={
 				building="building_tobacco_plantation"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=3
 					}
 				}
@@ -5551,7 +5527,7 @@ BUILDINGS={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=15
 					}
 				}
@@ -5562,7 +5538,7 @@ BUILDINGS={
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=15
 					}
 				}
@@ -5573,7 +5549,7 @@ BUILDINGS={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=4
 					}
 				}
@@ -5584,7 +5560,7 @@ BUILDINGS={
 				building="building_hagia_sophia"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 					}
 				}

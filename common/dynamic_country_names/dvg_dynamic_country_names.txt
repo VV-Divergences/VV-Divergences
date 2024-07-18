@@ -1162,7 +1162,7 @@ EGY = { # Egypt
 	}
 }
 
-TUR = { # Rum
+TUR = { # Ottomans
 	dynamic_country_name = {
 		name = dyn_c_tur_monarchy
 		adjective = dyn_c_tur_monarchy_adj
@@ -1172,6 +1172,8 @@ TUR = { # Rum
 		
 		trigger = {
 			coa_def_monarchy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = { has_law = law_type:law_monarchy }
 		}
 	}
 	dynamic_country_name = {
@@ -1183,6 +1185,12 @@ TUR = { # Rum
 		
 		trigger = {
 			coa_def_republic_flag_trigger = yes
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+			}
 		}
 	}
 	dynamic_country_name = {
@@ -1194,19 +1202,20 @@ TUR = { # Rum
 		
 		trigger = {
 			coa_def_communist_flag_trigger = yes
+			scope:actor = { has_law = law_type:law_council_republic }
 		}
 	}
-	dynamic_country_name = {
-		name = dyn_c_tur_fascist
-		adjective = dyn_c_tur_fascist_adj
+	# dynamic_country_name = {
+		# name = dyn_c_tur_fascist
+		# adjective = dyn_c_tur_fascist_adj
 		
-		is_main_tag_only = yes
-		priority = 1
+		# is_main_tag_only = yes
+		# priority = 1
 		
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-		}
-	}
+		# trigger = {
+			# coa_def_fascist_flag_trigger = yes
+		# }
+	# }
 	dynamic_country_name = {
 		name = dyn_c_tur_theocracy
 		adjective = dyn_c_tur_theocracy_adj
@@ -1216,6 +1225,7 @@ TUR = { # Rum
 		
 		trigger = {
 			coa_def_theocracy_flag_trigger = yes
+			scope:actor = { has_law = law_type:law_theocracy }
 		}
 	}
 }
