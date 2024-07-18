@@ -217,11 +217,7 @@
 		region_state:NAV = {
 			create_pop = {
 				culture = basque
-				size = 132990
-			}
-			create_pop = {
-				culture = navarragon
-				size = 108810
+				size = 541800
 			}
 		}
 		region_state:SPA = {
@@ -259,13 +255,9 @@
 	}
 	s:STATE_ARAGON = {
 		region_state:ARN = {
-			create_pop = {
-				culture = navarragon
-				size = 1008803
-			}
 			 create_pop = {
 				culture = catalan
-				size = 144115
+				size = 852918
 			}
 		}
 	}
@@ -367,11 +359,11 @@
 		region_state:ARN = {
 			create_pop = {
 				culture = catalan
-				size = 241667
+				size = 251667
 			}
 			create_pop = {
 				culture = south_italian
-				size = 1703830
+				size = 2103830
 			}
 			create_pop = {
 				culture = sephardic
@@ -413,11 +405,11 @@
 		region_state:ARN = {
 			create_pop = {
 				culture = catalan
-				size = 132992
+				size = 82992
 			}
 			create_pop = {
 				culture = south_italian
-				size = 1686348
+				size = 1356348
 			}
 			create_pop = {
 				culture = albanian
