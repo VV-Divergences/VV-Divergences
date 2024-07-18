@@ -82,7 +82,7 @@ RHI = { #Rhineland
 MUS = { #Rus/Muscovy
 	states = {
 		STATE_MOSCOW
-		STATE_BRYANSK
+		STATE_ORYOL
 		STATE_SMOLENSK
 		STATE_TVER
 		STATE_OKA
@@ -694,7 +694,7 @@ RHI = { #Rhineland
 MUS = { #Rus/Muscovy
 	states = {
 		STATE_MOSCOW
-		STATE_BRYANSK
+		STATE_ORYOL
 		STATE_SMOLENSK
 		STATE_TVER
 		STATE_OKA

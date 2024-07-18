@@ -7,7 +7,7 @@
 				state_region = s:STATE_ORSHA
 				state_region = s:STATE_SLOBOZ
 				state_region = s:STATE_MOSCOW
-				state_region = s:STATE_BRYANSK
+				state_region = s:STATE_ORYOL
 				state_region = s:STATE_SMOLENSK
 				state_region = s:STATE_TVER
 				state_region = s:STATE_DANU
