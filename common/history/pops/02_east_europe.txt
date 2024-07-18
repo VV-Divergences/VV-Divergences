@@ -1558,17 +1558,17 @@
 			}
 		}
 	}
-	s:STATE_BRYANSK = {
+	s:STATE_ORYOL = {
+		# region_state:MSO = {
+		# 	create_pop = {
+		# 		culture = russian
+		# 		size = 400000
+		# 	}
+		# }
 		region_state:MSO = {
 			create_pop = {
 				culture = russian
-				size = 400000
-			}
-		}
-		region_state:SMO = {
-			create_pop = {
-				culture = russian
-				size = 1038531
+				size = 1438531
 			}
 			create_pop = {
 				culture = byelorussian
