@@ -4,11 +4,9 @@ BUILDINGS={
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:CUB"
 						levels=2
-						region="STATE_CUBA"
 					}
 				}
 				reserves=1
@@ -17,11 +15,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:CUB"
 						levels=3
-						region="STATE_CUBA"
 					}
 				}
 				reserves=1
@@ -30,11 +26,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:CUB"
 						levels=2
-						region="STATE_CUBA"
 					}
 				}
 				reserves=1
@@ -43,11 +37,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:CUB"
 						levels=10
-						region="STATE_CUBA"
 					}
 				}
 				reserves=1
@@ -93,11 +85,9 @@ BUILDINGS={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:BRG"
 						levels=1
-						region="STATE_EENDRACHTSLAND"
 					}
 				}
 				reserves=1
@@ -106,11 +96,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:BRG"
 						levels=3
-						region="STATE_EENDRACHTSLAND"
 					}
 				}
 				reserves=1
@@ -119,11 +107,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:BRG"
 						levels=5
-						region="STATE_EENDRACHTSLAND"
 					}
 				}
 				reserves=1
@@ -147,11 +133,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SFJ"
 						levels=6
-						region="STATE_SUDURHAFEYJAR"
 					}
 				}
 				reserves=1
@@ -160,11 +144,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SFJ"
 						levels=3
-						region="STATE_SUDURHAFEYJAR"
 					}
 				}
 				reserves=1
@@ -173,11 +155,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SFJ"
 						levels=2
-						region="STATE_SUDURHAFEYJAR"
 					}
 				}
 				reserves=1
@@ -186,11 +166,9 @@ BUILDINGS={
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SFJ"
 						levels=2
-						region="STATE_SUDURHAFEYJAR"
 					}
 				}
 				reserves=1
@@ -236,11 +214,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SFJ"
 						levels=3
-						region="STATE_RIGHAVN"
 					}
 				}
 				reserves=1
@@ -249,11 +225,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SFJ"
 						levels=3
-						region="STATE_RIGHAVN"
 					}
 				}
 				reserves=1
@@ -277,11 +251,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SCA"
 						levels=2
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -290,11 +262,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SCA"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -303,11 +273,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SCA"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -329,11 +297,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:DUA"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -342,11 +308,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:DUA"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -355,11 +319,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:DUA"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -381,11 +343,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:ARN"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -407,11 +367,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SPA"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -420,11 +378,9 @@ BUILDINGS={
 			create_building={
 				building="building_port"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:SPA"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -435,11 +391,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:BRG"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -448,11 +402,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:BRG"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -474,11 +426,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:POL"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -500,11 +450,9 @@ BUILDINGS={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:CRL"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -513,11 +461,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:CRL"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -526,11 +472,9 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					building={
-						type="building_fishing_wharf"
+					country={
 						country="c:CRL"
 						levels=1
-						region="STATE_WEST_INDIES"
 					}
 				}
 				reserves=1
@@ -565,11 +509,9 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
-						levels=1
-						region="STATE_GUATEMALA"
+						levels=2
 					}
 				}
 				reserves=1
@@ -578,11 +520,9 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_GUATEMALA"
 					}
 				}
 				reserves=1
@@ -617,11 +557,9 @@ BUILDINGS={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
-					building={
-						type="building_textile_mills"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_SAN_SALVADOR"
 					}
 				}
 				reserves=1
@@ -630,11 +568,9 @@ BUILDINGS={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
-						levels=1
-						region="STATE_SAN_SALVADOR"
+						levels=2
 					}
 				}
 				reserves=1
@@ -643,11 +579,9 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_SAN_SALVADOR"
 					}
 				}
 				reserves=1
@@ -656,11 +590,9 @@ BUILDINGS={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
-					building={
-						type="building_fishing_wharf"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_SAN_SALVADOR"
 					}
 				}
 				reserves=1
@@ -695,11 +627,9 @@ BUILDINGS={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_MANAGUA"
 					}
 				}
 				reserves=1
@@ -708,11 +638,9 @@ BUILDINGS={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_MANAGUA"
 					}
 				}
 				reserves=1
@@ -736,11 +664,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_COSTA_RICA"
 					}
 				}
 				reserves=1
@@ -764,11 +690,9 @@ BUILDINGS={
 			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_PANAMA"
 					}
 				}
 				reserves=1
@@ -777,11 +701,9 @@ BUILDINGS={
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
-					building={
-						type="building_manor_house"
+					country={
 						country="c:GCO"
 						levels=1
-						region="STATE_PANAMA"
 					}
 				}
 				reserves=1

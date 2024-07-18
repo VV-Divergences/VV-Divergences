@@ -63,13 +63,13 @@ BUILDINGS={
 				activate_production_methods={ "pm_general_training" }
 			}
 		}
-		region_state:NOV = {
+		region_state:SCA = {
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOV"
+						country="c:SCA"
 						levels=1
 						region="STATE_INGRIA"
 					}
@@ -82,9 +82,9 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NOV"
+						country="c:SCA"
 						levels=1
-						region="STATE_INGRIA"
+						region="STATE_SVEALAND"
 					}
 				}
 				reserves=1
@@ -94,47 +94,12 @@ BUILDINGS={
 				building="building_shipyards"
 				add_ownership={
 					country={
-						country="c:NOV"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding"  }
-			}
-			create_building={
-				building="building_military_shipyards"
-				add_ownership={
-					country={
-						country="c:NOV"
+						country="c:SCA"
 						levels=1
 					}
 				}
 				reserves=1
-				activate_production_methods={  "pm_military_shipbuilding_wooden" }
-			}
-			create_building={
-				building="building_naval_base"
-				add_ownership={
-					country={
-						country="c:NOV"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_naval_theory" }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					building={
-						type="building_port"
-						country="c:NOV"
-						levels=3
-						region="STATE_INGRIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
+				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 		}
 	}
@@ -376,6 +341,17 @@ BUILDINGS={
 	s:STATE_ARKHANGELSK = {
 		region_state:NOV = {
 			create_building={
+				building="building_naval_base"
+				add_ownership={
+					country={
+						country="c:NOV"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_naval_theory" }
+			}
+			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
@@ -389,6 +365,28 @@ BUILDINGS={
 				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
 			}
 			create_building={
+				building="building_shipyards"
+				add_ownership={
+					country={
+						country="c:NOV"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+			}
+			create_building={
+				building="building_military_shipyards"
+				add_ownership={
+					country={
+						country="c:NOV"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={  "pm_military_shipbuilding_wooden" }
+			}
+			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
@@ -398,6 +396,19 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "pm_general_training" }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					building={
+						type="building_port"
+						country="c:NOV"
+						levels=1
+						region="STATE_ARKHANGELSK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 	}
