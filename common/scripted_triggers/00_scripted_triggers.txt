@@ -1869,3 +1869,15 @@ diplomatic_play_has_no_relations_blocker_with_overlord = {
 		}	
 	}
 }
+
+can_impose_law_default = {
+	scope:target_country = {
+		is_subject_of = root
+		OR = {
+			is_subject_type = subject_type_puppet
+			is_subject_type = subject_type_dominion
+			is_subject_type = subject_type_personal_union
+			is_subject_type = subject_type_vassal
+		}
+	}
+}
