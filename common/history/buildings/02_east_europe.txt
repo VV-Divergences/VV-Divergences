@@ -1,4 +1,4 @@
-BUILDINGS={
+﻿BUILDINGS={
 	s:STATE_INGRIA = {
 		region_state:PSK = {
 			create_building={
@@ -1178,7 +1178,7 @@ BUILDINGS={
 			}
 		}
 	}
-	s:STATE_BRYANSK = {
+	s:STATE_ORYOL = {
 		region_state:MSO = {
 			create_building={
 				building="building_rye_farm"
@@ -1226,81 +1226,81 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
-		region_state:SMO = {
-			create_building={
-				building="building_textile_mills"
-				add_ownership={
-					country={
-						country="c:SMO"
-						levels=1
-					}
-					building={
-						type="building_manor_house"
-						country="c:SMO"
-						levels=1
-						region="STATE_BRYANSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
-			}
-			create_building={
-				building="building_food_industry"
-				add_ownership={
-					building={
-						type="building_food_industry"
-						country="c:SMO"
-						levels=2
-						region="STATE_BRYANSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
-			}
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SMO"
-						levels=4
-						region="STATE_BRYANSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SMO"
-						levels=2
-						region="STATE_BRYANSK"
-					}
-					building={
-						type="building_logging_camp"
-						country="c:SMO"
-						levels=2
-						region="STATE_BRYANSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SMO"
-						levels=12
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-		}
+		# region_state:SMO = {	#uu trinkle
+		# 	create_building={
+		# 		building="building_textile_mills"
+		# 		add_ownership={
+		# 			country={
+		# 				country="c:SMO"
+		# 				levels=1
+		# 			}
+		# 			building={
+		# 				type="building_manor_house"
+		# 				country="c:SMO"
+		# 				levels=1
+		# 				region="STATE_BRYANSK"
+		# 			}
+		# 		}
+		# 		reserves=1
+		# 		activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+		# 	}
+		# 	create_building={
+		# 		building="building_food_industry"
+		# 		add_ownership={
+		# 			building={
+		# 				type="building_food_industry"
+		# 				country="c:SMO"
+		# 				levels=2
+		# 				region="STATE_BRYANSK"
+		# 			}
+		# 		}
+		# 		reserves=1
+		# 		activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
+		# 	}
+		# 	create_building={
+		# 		building="building_rye_farm"
+		# 		add_ownership={
+		# 			building={
+		# 				type="building_manor_house"
+		# 				country="c:SMO"
+		# 				levels=4
+		# 				region="STATE_BRYANSK"
+		# 			}
+		# 		}
+		# 		reserves=1
+		# 		activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
+		# 	}
+		# 	create_building={
+		# 		building="building_logging_camp"
+		# 		add_ownership={
+		# 			building={
+		# 				type="building_manor_house"
+		# 				country="c:SMO"
+		# 				levels=2
+		# 				region="STATE_BRYANSK"
+		# 			}
+		# 			building={
+		# 				type="building_logging_camp"
+		# 				country="c:SMO"
+		# 				levels=2
+		# 				region="STATE_BRYANSK"
+		# 			}
+		# 		}
+		# 		reserves=1
+		# 		activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+		# 	}
+		# 	create_building={
+		# 		building="building_barracks"
+		# 		add_ownership={
+		# 			country={
+		# 				country="c:SMO"
+		# 				levels=12
+		# 			}
+		# 		}
+		# 		reserves=1
+		# 		activate_production_methods={ "pm_general_training" }
+		# 	}
+		# }
 	}
 	s:STATE_CRIMEA = {
 		region_state:CRI = {
