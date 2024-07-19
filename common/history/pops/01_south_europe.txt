@@ -111,7 +111,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 483585
+				size = 523585
 			}
 			create_pop = {
 				culture = basque
@@ -127,7 +127,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 1031904
+				size = 851904
 			}
 		}
 	}
@@ -163,7 +163,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 106150
+				size = 286150
 			}
 		}
 	}
@@ -187,7 +187,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 765658
+				size = 725658
 			}
 			# create_pop = {
 				# culture = spanish

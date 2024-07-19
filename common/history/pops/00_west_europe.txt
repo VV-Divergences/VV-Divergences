@@ -68,7 +68,7 @@
 			}
 			create_pop = {
 				culture = welsh
-				size = 649065
+				size = 649061
 			}
 			create_pop = {
 				culture = british
