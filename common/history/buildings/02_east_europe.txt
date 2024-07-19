@@ -229,12 +229,6 @@ BUILDINGS={
 					building={
 						type="building_manor_house"
 						country="c:NOV"
-						levels=4
-						region="STATE_NOVGOROD"
-					}
-					building={
-						type="building_manor_house"
-						country="c:NOV"
 						levels=2
 						region="STATE_NOVGOROD"
 					}
