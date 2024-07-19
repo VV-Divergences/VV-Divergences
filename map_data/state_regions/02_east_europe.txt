@@ -7,7 +7,7 @@
     farm = xB9FF4E
     mine = x6D20F8
     wood = xD29762
-    arable_land = 30
+    arable_land = 35
     arable_resources = { bg_rye_farms bg_livestock_ranches }
     capped_resources = {
         bg_logging = 9
