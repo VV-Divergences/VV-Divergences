@@ -2163,13 +2163,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_PELOPONNESE = {
-		region_state:GRE = {
+		region_state:VEN = {
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GRE"
+						country="c:VEN"
 						levels=1
 						region="STATE_PELOPONNESE"
 					}
@@ -2182,7 +2182,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:GRE"
+						country="c:VEN"
 						levels=1
 						region="STATE_PELOPONNESE"
 					}
@@ -2194,7 +2194,7 @@ BUILDINGS={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GRE"
+						country="c:VEN"
 						levels=1
 					}
 				}
@@ -2205,7 +2205,7 @@ BUILDINGS={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:GRE"
+						country="c:VEN"
 						levels=5
 					}
 				}
@@ -2217,7 +2217,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:GRE"
+						country="c:VEN"
 						levels=2
 						region="STATE_PELOPONNESE"
 					}
