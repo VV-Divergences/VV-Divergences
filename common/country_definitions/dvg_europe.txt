@@ -363,7 +363,7 @@ YUG = { #Yugoslavia
 	
 	country_type = recognized
 
-	tier = empire
+	tier = kingdom
 	
 	capital = STATE_NORTHERN_SERBIA 
 	cultures = { serb croat slovene bosniak }
@@ -374,7 +374,7 @@ CRO = { #Illyria
 	
 	country_type = recognized
 
-	tier = kingdom
+	tier = principality
 	
 	cultures = { croat }
 	capital = STATE_CROATIA
@@ -425,14 +425,27 @@ WRE = { # West Rum
 	capital = STATE_WESTERN_THRACE
 }
 
-RUM = { # Rumelia
-	color = { 43 134 76 }
+BYZ = {
+	color = { 147  82  173 }
+	
+	valid_as_home_country_for_separatists = { always = no } # root = country to separate from
 	
 	country_type = recognized
 
-	tier = kingdom
+	tier = hegemony
 	
-	cultures = { turkish }
+	cultures = { greek }	
+	capital = STATE_WESTERN_THRACE
+}
+
+RUM = { # Rumelia
+	color = { 130 35 60 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { serb croat slovene bosniak bulgarian greek }
 	capital = STATE_WESTERN_THRACE
 }
 
@@ -1691,7 +1704,7 @@ TRS = { #Transylvania
 }
 
 BOS = { #Bosnia/Illyria
-	color = { 56 172 32 }
+	color = { 90 155 50 }
 	
 	country_type = recognized
 
@@ -1803,12 +1816,12 @@ SWZ = { #Switzerland Confederation
 	capital = STATE_EAST_SWITZERLAND
 }
 
-BSG = { #Begluk Bačka
+BSG = { #Pannonia
 	color = { 72 160 101 }
 	
 	country_type = recognized
 
-	tier = kingdom
+	tier = principality
 	
 	cultures = { bosniak }
 	capital = STATE_VOJVODINA
