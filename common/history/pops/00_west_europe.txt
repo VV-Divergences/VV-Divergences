@@ -68,11 +68,7 @@
 			}
 			create_pop = {
 				culture = welsh
-<<<<<<< Updated upstream
-				size = 649061
-=======
 				size = 599065
->>>>>>> Stashed changes
 			}
 			create_pop = {
 				culture = british
@@ -89,7 +85,7 @@
 		region_state:DUA = {
 			create_pop = {
 				culture = british
-				size = 946472
+				size = 546472
 			}
 			create_pop = {
 				culture = british
@@ -163,6 +159,10 @@
 			create_pop = {
 				culture = irish
 				size = 1916800
+			}
+			create_pop = {
+				culture = british
+				size = 415701
 			}
 		}
 	}
