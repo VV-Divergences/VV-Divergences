@@ -366,7 +366,7 @@ YUG = { #Yugoslavia
 	tier = empire
 	
 	capital = STATE_NORTHERN_SERBIA 
-	cultures = { serb croat slovene bosniak bulgarian }
+	cultures = { serb croat slovene bosniak }
 }
 
 CRO = { #Illyria
@@ -1690,8 +1690,8 @@ TRS = { #Transylvania
 	capital = STATE_SOUTHERN_TRANSYLVANIA
 }
 
-BOS = { #Bosnia
-	color = { 240  167  130 }
+BOS = { #Bosnia/Illyria
+	color = { 56 172 32 }
 	
 	country_type = recognized
 
@@ -1811,7 +1811,7 @@ BSG = { #Begluk Bačka
 	tier = kingdom
 	
 	cultures = { bosniak }
-	capital = STATE_NORTHERN_SERBIA
+	capital = STATE_VOJVODINA
 }
 
 TAR = { #Kipchak Khanate
