@@ -1661,6 +1661,25 @@
 			add_ruling_interest_group = yes
 		}
 
+		add_journal_entry = {
+			type = je_nov_main
+		}
+		add_journal_entry = {
+			type = je_nov_serfdom
+		}
+		add_journal_entry = {
+			type = je_nov_non_russians
+		}
+		add_journal_entry = {
+			type = je_nov_bureaucracy
+		}
+		add_journal_entry = {
+			type = je_nov_education
+		}
+		add_journal_entry = {
+			type = je_nov_urban_center
+		}
+
 		add_modifier = {
 			name = neutrality
 			months = -1

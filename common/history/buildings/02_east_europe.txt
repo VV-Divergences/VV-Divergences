@@ -129,7 +129,7 @@ BUILDINGS={
 					building={
 						type="building_port"
 						country="c:NOV"
-						levels=3
+						levels=5
 						region="STATE_INGRIA"
 					}
 				}

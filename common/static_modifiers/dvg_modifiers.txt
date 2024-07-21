@@ -275,7 +275,7 @@ dvg_unstable_confederation = {
 
 dvg_yasak = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	country_tax_income_add = 500
+	country_tax_income_add = 2000
 	state_conscription_rate_mult = -0.4
 }
 
