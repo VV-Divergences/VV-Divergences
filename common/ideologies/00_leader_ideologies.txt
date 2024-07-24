@@ -3277,6 +3277,28 @@ ideology_positivist = {
 			}
 			add = 100
 		}
+		#VV DVG positivists for Venetian after reforming patricians
+		if = {
+			limit = {
+				AND = {
+					owner = {
+						has_variable = dvg_ven_supported_positivist
+					}
+					scope:interest_group = {
+						is_interest_group_type = ig_intelligentsia
+					}
+				}
+			}
+			add = 200
+		}
+		if = {
+			limit = {
+				owner = {
+					has_variable = dvg_ven_supported_positivist
+				}
+			}
+			add = 25
+		}
 	}
 }
 
