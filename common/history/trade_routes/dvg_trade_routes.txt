@@ -1,4 +1,18 @@
 ﻿TRADE_ROUTES = {
+	c:DUA = {
+		create_trade_route = {
+			goods = silk
+			level = 16
+			direction = import
+			target = c:MYS.market
+		}
+		create_trade_route = {
+			goods = sugar
+			level = 6
+			direction = import
+			target = c:MYS.market
+		}
+	}
 	c:SCA = {
 		create_trade_route = {
 			goods = silk
