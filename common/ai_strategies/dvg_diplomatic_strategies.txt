@@ -1209,8 +1209,6 @@ ai_strategy_unify_ari = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:central_italian
 						country_has_primary_culture = cu:south_italian
-						country_has_primary_culture = cu:maltese
-						country_has_primary_culture = cu:sardinian #DVG
 						country_has_primary_culture = cu:venetian #DVG
 					}
 				}
@@ -1254,8 +1252,6 @@ ai_strategy_unify_ari = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:central_italian
 						country_has_primary_culture = cu:south_italian
-						country_has_primary_culture = cu:sardinian
-						country_has_primary_culture = cu:maltese
 					}
 				}
 			}
@@ -1271,8 +1267,6 @@ ai_strategy_unify_ari = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:central_italian
 						country_has_primary_culture = cu:south_italian
-						country_has_primary_culture = cu:sardinian
-						country_has_primary_culture = cu:maltese
 					}
 				}
 			}
@@ -1329,8 +1323,6 @@ ai_strategy_unify_ari = {
 								is_homeland = cu:north_italian
 								is_homeland = cu:central_italian
 								is_homeland = cu:south_italian
-								is_homeland = cu:maltese
-								is_homeland = cu:sardinian
 								is_homeland = cu:venetian
 							}
 						}					
@@ -1350,8 +1342,6 @@ ai_strategy_unify_ari = {
 								is_homeland = cu:north_italian
 								is_homeland = cu:central_italian
 								is_homeland = cu:south_italian
-								is_homeland = cu:maltese
-								is_homeland = cu:sardinian
 								is_homeland = cu:venetian
 							}
 						}					
@@ -1373,9 +1363,7 @@ ai_strategy_unify_ari = {
 							country_has_primary_culture = cu:north_italian
 							country_has_primary_culture = cu:south_italian
 							country_has_primary_culture = cu:central_italian
-							country_has_primary_culture = cu:sardinian
 							country_has_primary_culture = cu:venetian
-							country_has_primary_culture = cu:maltese
 						}
 						OR = { 
 							is_subject_of = root
@@ -1398,9 +1386,7 @@ ai_strategy_unify_ari = {
 							country_has_primary_culture = cu:north_italian
 							country_has_primary_culture = cu:south_italian
 							country_has_primary_culture = cu:central_italian
-							country_has_primary_culture = cu:sardinian
 							country_has_primary_culture = cu:venetian
-							country_has_primary_culture = cu:maltese
 						}
 						NOR = {
 							is_subject_of = root
@@ -1423,9 +1409,7 @@ ai_strategy_unify_ari = {
 							country_has_primary_culture = cu:north_italian
 							country_has_primary_culture = cu:south_italian
 							country_has_primary_culture = cu:central_italian
-							country_has_primary_culture = cu:sardinian
 							country_has_primary_culture = cu:venetian
-							country_has_primary_culture = cu:maltese
 						}
 					}
 				}
@@ -1440,7 +1424,6 @@ ai_strategy_unify_ari = {
 							country_has_primary_culture = cu:catalan
 							country_has_primary_culture = cu:north_italian
 							country_has_primary_culture = cu:south_italian
-							country_has_primary_culture = cu:maltese
 						}
 					}
 				}
