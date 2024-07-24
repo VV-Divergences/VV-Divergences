@@ -408,7 +408,7 @@
 			owned_provinces = { "x31E041" "x44F127" "x792B8A" "xA709B7" "xB0E040" }
 		}
 		
-		add_homeland = cu:south_german
+		#add_homeland = cu:south_german
 		add_homeland = cu:slovene
 	}
 	
@@ -1810,7 +1810,7 @@
 			owned_provinces = { "x0020E0" "x01A0E0" "x042A4F" "x0FEA4B" "x1AE461" "x246095" "x3266DE" "x57DF51" "x6F9858" "x80A0E0" "x86F5A3" "x87C547" "x89D566" "x8F79E9" "x93FBC9" "x9A8A71" "xA577B1" "xA981B3" "xAEBDCB" "xB6C9C3" "xBB73A3" "xCD164E" "xD0DA34" "xD14E99" "xD1CBDD" "xD7689F" "xDED975" "xDF3F5C" "xE7438E" "xE97616" "xF06F29" }
 		}
 		create_state = {
-			country = c:SCA
+			country = c:NOV
 			owned_provinces = { "x607A9E" "xB64167" }
 		}
 

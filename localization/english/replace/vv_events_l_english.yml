@@ -1,0 +1,7 @@
+﻿l_english:
+  vv_baby_boom.1.t:0 "Baby Boom"               #Baby Boom
+  vv_baby_boom.1.a:0 "Prosperous times are ahead of us!"
+  vv_baby_boom.1.d:0 "The social and economic stability of the recent years have lead to a massive increase in births in [ROOT.GetCountry.GetName] "
+  vv_baby_boom.1.f:0 "In the wake of a resplendent era of social and economic prosperity, [ROOT.GetCountry.GetName] is basking in the radiant glow of Juicy's beautiful rays, as a wave of joyous cries echoes through every corner. Yes, dear readers, we find ourselves amidst a captivating phenomenon—the onset of a Baby Boom. As we delve into the myriad tales of burgeoning families and the blissful arrival of cherubic infants, it becomes evident that our great society has embarked upon a period of unprecedented growth and prosperity. The soaring fortunes of our industrious citizens, combined with the optimistic ambiance that now envelops our nation, have kindled a fertile environment for love, commitment, and the joyous gift of life."
+
+vv_journal_entries_global: "Say Thank You Juicy ;)"
