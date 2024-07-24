@@ -1710,7 +1710,8 @@ BOS = { #Bosnia/Illyria
 
 	tier = principality
 	
-	cultures = { bosniak }
+	cultures = { croat }
+	religion = orthodox
 	capital = STATE_BOSNIA	
 	is_named_from_capital = yes
 }

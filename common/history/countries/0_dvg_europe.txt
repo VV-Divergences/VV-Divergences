@@ -1361,22 +1361,66 @@
 	}
 
 	
-	#c:MON = { #Montenegro
-	#	effect_starting_technology_tier_3_tech = yes
-	#	
-	#	effect_starting_politics_traditional = yes
-	#	activate_law = law_type:law_theocracy
-	#	
-	#	set_ruling_interest_groups = {
-	#		ig_devout
-	#	}
-	#	ig:ig_devout = {
-	#		set_interest_group_name = ig_orthodox_church
-	#		remove_ideology = ideology_patriarchal
-	#		add_ideology = ideology_orthodox_patriarch
-	#	}
-	#}
-	
+	c:MON = { #Montenegro
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_theocracy
+		
+		set_ruling_interest_groups = {
+			ig_devout
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_orthodox_church
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_orthodox_patriarch
+		}
+	}
+
+	c:BOS = { #Bosnia/Illyria
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_orthodox_church
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_orthodox_patriarch
+		}
+	}
+
+	c:BSG = { #Bosnia/Illyria
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_orthodox_church
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_orthodox_patriarch
+		}
+	}
+
+	c:MCD = { #Bosnia/Illyria
+		effect_starting_technology_tier_3_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_orthodox_church
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_orthodox_patriarch
+		}
+	}
 
 	c:TUR = { #East Rum
 		effect_starting_technology_tier_4_tech = yes
@@ -1495,6 +1539,7 @@
 			add_ideology = ideology_orthodox_patriarch
 		}
 	}
+
 	c:SER = { #Serbia
 		effect_starting_technology_tier_3_tech = yes
 

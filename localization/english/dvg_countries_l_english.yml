@@ -142,6 +142,8 @@
  SWZ_ADJ: "Swiss"
  BOS: "Illyria"
  BOS_ADJ: "Illyrian"
+ dyn_c_illyria: "Illyria"
+ dyn_c_illyria_adj: "Illyrian"
  BSG: "Lesser Pannonia"
  BSG_ADJ: "Pannonian"
  dyn_c_bsg_communist: "Democratic Republic of Pannonia"
