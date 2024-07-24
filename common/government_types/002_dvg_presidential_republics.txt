@@ -1,0 +1,155 @@
+﻿gov_hetmanate = {
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_HETMAN"
+	female_ruler = "RULER_TITLE_HETMAN"
+
+    possible = {
+        has_law = law_type:law_presidential_republic
+        OR = {
+            has_law = law_type:law_peasant_levies
+            has_law = law_type:law_national_militia
+        }
+        OR = {
+            AND = {
+                exists = c:CSK
+                c:CSK = ROOT
+            }
+            AND = {
+                exists = c:UKR
+                c:UKR = ROOT
+            }
+            AND = {
+                exists = c:KHK
+                c:KHK = ROOT
+            }
+            AND = {
+                exists = c:DON
+                c:DON = ROOT
+            }
+            AND = {
+                exists = c:AKH
+                c:AKH = ROOT
+            }
+            AND = {
+                exists = c:VOR
+                c:VOR = ROOT
+            }
+        }
+    }
+
+    on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+    on_post_government_type_change = {
+        post_change_to_dictatorial = yes
+    }
+}
+
+gov_guli_confederation = {
+	transfer_of_power = presidential_elective
+	
+	male_ruler = "RULER_TITLE_ELDER"
+	female_ruler = "RULER_TITLE_ELDER" 
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+			
+		exists = c:KOO
+		c:KOO = ROOT
+	}
+}
+
+gov_noongar_confederation = {
+	transfer_of_power = presidential_elective
+	
+	male_ruler = "RULER_TITLE_ELDER"
+	female_ruler = "RULER_TITLE_ELDER" 
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+			
+		exists = c:NNG
+		c:NNG = ROOT
+		NOT = {
+			is_country_type = decentralized
+		}
+	}
+}
+
+gov_vrystaat = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_HOOFKOMMANDANT"
+	female_ruler = "RULER_TITLE_HOOFKOMMANDANT"
+	
+	possible = {
+        OR = {
+        	AND = { 
+        		exists = c:LEW 
+        		c:LEW = ROOT 
+        	}
+        	AND = { 
+        		exists = c:OPS 
+        		c:OPS = ROOT 
+        	}
+        	AND = { 
+        		exists = c:NFL 
+        		c:NFL = ROOT 
+        	}
+        	AND = { 
+        		exists = c:BTV
+        		c:BTV = ROOT 
+        	}
+        }
+        AND = {
+        	has_law = law_type:law_presidential_republic
+     		OR = {
+        		has_law = law_type:law_autocracy
+        		has_law = law_type:law_oligarchy
+        	}
+        }
+    }
+
+    on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+    on_post_government_type_change = {
+        post_change_to_dictatorial = yes
+    }
+}
+
+gov_winkelier_republiek = {
+	transfer_of_power = dictatorial
+	
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		AND = {
+        	exists = c:NFL 
+        	c:NFL = ROOT 
+        }
+        AND = {
+        	has_law = law_type:law_presidential_republic
+			has_law = law_type:law_elected_bureaucrats
+     		OR = {
+        		has_law = law_type:law_wealth_voting
+        		has_law = law_type:law_census_suffrage
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_anarchy
+        	}
+        }
+		root = {
+			has_modifier = dvg_poor_mans_republic 
+		}
+	}
+	
+    on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+    on_post_government_type_change = {
+        post_change_to_dictatorial = yes
+    }
+}

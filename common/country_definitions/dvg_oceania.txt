@@ -1,0 +1,358 @@
+﻿
+
+MOA = { #Moana Nui
+color = { 78  104  81 }
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { polynesian melanesian micronesian yuanzhumin hawaiian maori }
+	
+	capital = STATE_TONGA
+}
+
+ZHR = { #Zhourao
+color = { 78  104  81 }
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { zhourao }
+	
+	capital = STATE_ZHENG_HE
+}
+
+ZSA = { #Zhushan
+	color = { 135  66  53 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { zhourao moluccan }
+	religion = sunni
+	capital = STATE_JINZHOU
+}
+
+MJN = { #Mianjin
+	color = { 173  137  47 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { zhourao }
+	religion = catholic
+	capital = STATE_WEIHUAI
+}
+
+YLO = { #Yaluo
+	color = { 54  105  66 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { zhourao }
+	
+	capital = STATE_QINGSHUI
+}
+
+QQQ = { #Zhongtu
+	color = { 173  137  47 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { zhourao }
+	
+	capital = STATE_MOTU_PARI
+}
+
+CUI = { #Cuiyan
+	color = { 0  191  200 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { zhourao }
+	
+	capital = STATE_MOTU_PARI
+}
+
+AOT = { # Aotearoa
+	color = { 47 140 191 }
+	
+	country_type = unrecognized
+
+	tier = empire
+	
+	cultures = { maori }
+	capital = STATE_MOTU_PARI
+}
+
+NTU = { #Ngati Toa
+	color = { 62 92 54 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { maori }
+	capital = STATE_MOTU_TIMU
+}
+
+NTO = { #Ngai Tahu
+	color = { 148 185 190 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { maori }
+	capital = STATE_MOTU_TIMU
+}
+
+NNG = { #Noongar
+
+	color = { 209 160 107 }
+	
+	country_type = decentralized
+
+	tier = grand_principality
+	
+	cultures = { aborigine }
+	religion = protestant
+	capital = STATE_NOONGAR
+}
+
+GNS = { #Hongshanguo
+
+	color = { 100 80 8 }
+	
+	country_type = unrecognized
+
+	tier = grand_principality
+	
+	cultures = { aborigine }
+	religion = sunni
+	capital = STATE_YOLNGU
+}
+
+
+YLN = { #Yolngu Sultanate
+
+	color = { 84 60 44 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	religion = sunni
+	capital = STATE_YOLNGU
+}
+
+GRJ = { #Gurindji
+
+	color = { 243 180 139 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	religion = sunni
+	capital = STATE_YOLNGU
+}
+
+GWG = { #Gunwinyguan Sultanates
+
+	color = { 223 145 94 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	religion = sunni
+	capital = STATE_YOLNGU
+}
+
+NGL = { #Nungali Sultanate
+
+	color = { 165 136 122 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	religion = sunni
+	capital = STATE_YOLNGU
+}
+
+NUN = { #Nunga
+
+	color = { 209 60 107 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	religion = animist
+	capital = STATE_OODNATTA
+}
+
+KOO = { #Koori/Guli Confederation
+
+	color = { 0 105 0 }
+	
+	country_type = unrecognized
+
+	tier = grand_principality
+	
+	cultures = { aborigine }
+	religion = mahayana
+	capital = STATE_YONGLING
+}
+
+WIR = { #Wiradjuri
+
+	color = { 250 170 0 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_TAITUNG
+}
+
+YAL = { #Yalai
+
+	color = { 200 65 67 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	religion = sunni
+	capital = STATE_WENCHENG
+}
+
+KAU = { #Kauri
+
+	color = { 145 170 50 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_TAITUNG
+}
+
+PJT = { #Pitjantjajara
+
+	color = { 209 160 7 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	religion = animist
+	capital = STATE_PITJANTJAJARA
+}
+
+YMT = { #Yamatji
+
+	color = { 9 160 107 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	religion = protestant
+	capital = STATE_COOMALONG
+}
+
+LML = { #Lamalama
+
+	color = { 209 260 107 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_WENCHENG
+}
+
+NVZ = { #Nouvelle Zealand
+	color = { 150 0 0 }
+	country_type = colonial
+	
+	tier = grand_principality
+	
+	cultures = { verlander }
+	
+	capital = STATE_NOONGAR
+}
+
+VRG = { #Vargø
+	color = { 0 0 150 }
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { ny_sjaellander }
+	
+	capital = STATE_PARLEVAR
+}
+
+NYS = { #Ny Sjaelland
+	color = { 0 25 200 }
+	country_type = colonial
+	
+	tier = grand_principality
+	
+	cultures = { ny_sjaellander }
+	
+	capital = STATE_MOTU_TIMU
+}
+
+CGI = { #Chougie
+	color = { 150 100 150 }
+	country_type = colonial
+	
+	tier = grand_principality
+	
+	cultures = { verlander }
+	
+	capital = STATE_YOLNGU
+}
+
+AST = { #Australia
+	color = { 77  139  106 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	capital = STATE_NOONGAR
+	cultures = { verlander ny_sjaellander }
+}
+
+TMC = { #Timor-Chougie
+	color = { 155 120 170 }
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { verlander moluccan}
+	
+	capital = STATE_YOLNGU
+}
+

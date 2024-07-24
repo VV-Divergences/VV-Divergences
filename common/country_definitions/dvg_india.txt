@@ -1,0 +1,462 @@
+﻿
+SIN = { #Sindh
+	color = { 0 66 33 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sindi }
+	capital = STATE_SINDH
+	is_named_from_capital = yes
+}
+BER = { #Gujarat
+
+	color = { 120  77  119 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { gujarati }
+	capital = STATE_GUJARAT
+}
+RAJ = { #Rajputana
+	color = { 201  255  251  }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { rajput }
+	capital = STATE_RAJPUTANA
+}
+BIK = { #Bikaner
+	color = { 255  208  170 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { rajput }
+	capital = STATE_RAJPUTANA
+}
+
+JAI = { #Jaipur
+	color = { 79  89  182 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { rajput }
+	capital = STATE_RAJPUTANA
+}
+
+JAS = { #Jaisalmer
+	color = { 99  137  153 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { rajput }
+	capital = STATE_RAJPUTANA
+}
+
+JOD = { #Jodhpur
+	color = { 104  207  140 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { rajput }
+	capital = STATE_RAJPUTANA
+}
+
+MEW = { #Mewar
+	color = { 209  251  255 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { rajput }
+	capital = STATE_RAJPUTANA
+}
+
+HYD = { #Bagyanagaram
+	color = { 89  141  140 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { telegu}
+
+	capital = STATE_HYDERABAD
+	is_named_from_capital = yes
+}
+
+VIJ = { #Maratha Empire
+	color = { 232  112  42 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { marathi }
+	religion = hindu
+	capital = STATE_BOMBAY
+}
+
+NAG = { #Nagpur
+	color = { 120  148  140 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { marathi bihari }
+	capital = STATE_NAGPUR
+	is_named_from_capital = yes
+}
+
+TRA = { #Travancore
+	color = { 134  166  117 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	capital = STATE_TRAVANCORE
+	cultures = { malayalam }
+	is_named_from_capital = yes
+}
+
+MDU = { #Madurai
+	color = { 153  122  108 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	capital = STATE_MADRAS
+	cultures = { tamil }
+}
+
+BGL = { #Bengal
+	color = { 36  109  194 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { bengali }
+	capital = STATE_SOUTH_BENGAL
+}
+
+SIK = { #Sikkim
+	color = { 139  138  160 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { nepali }
+	capital = STATE_HIMALAYAS
+}
+
+BHU = { #Bhutan
+	color = { 93  180  76 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { tibetan }
+	capital = STATE_HIMALAYAS
+}
+
+NEP = { #Nepal
+	color = { 137  183  124 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { nepali }
+	capital = STATE_HIMALAYAS
+}
+
+KAS = { #Kashmir
+	color = { 63  150  30 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { kashmiri }
+	capital = STATE_KASHMIR
+}
+
+CEY = { #Selon
+	color = hsv360{ 0  70  61 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { sinhala }
+	capital = STATE_CEYLON
+}
+
+PAN = { #Punjab
+	color = { 255  87  127 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { panjabi }
+	capital = STATE_PUNJAB
+	is_named_from_capital = yes
+}
+
+BHO = { #Bhopal
+	color = { 154  129  35 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { marathi }
+	capital = STATE_CENTRAL_INDIA
+}
+
+ORI = { #Orissa
+	color = { 210  106  47 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { oriya }
+	capital = STATE_ORISSA
+	is_named_from_capital = yes
+}
+
+MYS = { #Mysore
+	color = { 184  193  89 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { kannada }
+	capital = STATE_MYSORE
+	is_named_from_capital = yes
+}
+
+ASM = { #Assam
+	color = { 163 5 77 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { assamese }
+	
+	capital = STATE_ASSAM
+}
+
+MNP = { #Manipur
+	color = { 149 191 117 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { manipuri }
+	
+	capital = STATE_ASSAM
+}
+
+CC2 = { #Compañía de la China Real
+	color = hsv360{ 51  67  78 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { portuguese }
+	
+	capital = STATE_SOUTH_BENGAL
+}
+
+DRV = { #Dravidia
+	color = { 87 49 79 }
+	
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { kannada malayalam tamil telegu }
+	capital = STATE_MADRAS
+}
+MLW = { #Malwa
+	color = { 151  105  131  }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+
+	religion = sunni
+	
+	cultures = { avadhi }
+	capital = STATE_CENTRAL_INDIA
+}
+KZD = { #Khanzada
+	color = { 101  155  151  }
+	
+	country_type = unrecognized
+	
+	tier = principality
+
+	religion = sunni
+	
+	cultures = { avadhi kanauji}
+	capital = STATE_AWADH
+}
+SRY = { #Suriyavamsi
+	color = { 220  203  29 }
+	
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { bihari kanauji }
+	capital = STATE_JHARKHAND
+	
+}
+BAS = { #Karnada
+	color = { 36  109  194 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { telegu }
+	capital = STATE_CIRCARS
+}
+LAD = { #Ladakh
+	color = { 137  183  124 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+
+	religion = gelugpa
+	
+	cultures = { tibetan kashmiri }
+	capital = STATE_KASHMIR
+}
+
+CLC = { #Calicut
+	color = { 165 3 80  }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { malayalam }
+	capital = STATE_TRAVANCORE
+}
+TNJ = { #Tanjore
+	color = { 101  155  151 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	capital = STATE_MADRAS
+	cultures = { tamil }
+}
+BUN = {
+	color = { 91  135  161 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	capital = STATE_JHARKHAND
+	cultures = { kanauji }
+}
+BAG = {
+	color = { 137  183  124 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	capital = STATE_JHARKHAND
+	cultures = { kanauji }
+}
+BHT = { #Bharata
+	color = { 255  140  0 }
+	
+	country_type = recognized
+
+	tier = hegemony
+	
+	cultures = { avadhi assamese baluchi bengali bihari gujarati kanauji kannada malayalam marathi oriya panjabi pashtun rajput sindi tamil telegu }
+	capital = STATE_DELHI
+}
+MUG = { #Mughals
+	color = { 150  230  255 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { avadhi kanauji rajput  }
+	capital = STATE_DELHI
+}
+	MV1 = { #Mughal Civil War contender
+	color = { 150  230  255 }
+	
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { avadhi kanauji rajput   }
+	capital = STATE_AWADH
+}
+
+MDV = { #Maldives
+	color = { 110  130  125 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+
+	religion = sunni
+	
+	cultures = { sinhala  }
+	capital = STATE_CEYLON
+}
+
+HML = { #Himalaya
+	color = { 110  130  125 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+
+	religion = sunni
+	
+	cultures = { tibetan nepali kashmiri  }
+	capital = STATE_HIMALAYAS
+}
+

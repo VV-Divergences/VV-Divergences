@@ -1,0 +1,344 @@
+﻿MGL = { #Mongolia
+	states = { 
+		STATE_ULIASTAI
+		STATE_URGA
+		STATE_HINGGAN
+		STATE_ALXA
+		STATE_IRKUTSK
+		STATE_TRANS_BAIKAL
+		STATE_TUVA
+		STATE_TOMSK
+		STATE_QINGHAI
+	}
+
+	ai_will_do = { always = no }
+}
+
+TUV = { #Tuva
+	states = {
+		STATE_TUVA
+		STATE_TOMSK
+		STATE_IRKUTSK
+	}
+	ai_will_do = { always = no }
+}
+
+SIB = { #Siberia
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+YAK = { #Yakutia
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+DZU = { #Dzungaria
+	states = { 
+		STATE_DZUNGARIA
+		STATE_TIANSHAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+MCH = { #Manchuria
+	states = { 
+		STATE_SOUTHERN_MANCHURIA
+		STATE_NORTHERN_MANCHURIA
+		STATE_OUTER_MANCHURIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+KOR = { #Korea
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+JAP = { #Japan
+	use_culture_states = yes
+	
+	required_num_states = 3
+
+	ai_will_do = { always = no }	
+}
+
+AIN = { #Ainu Mosir
+	use_culture_states = yes
+	
+	ai_will_do = { always = no }
+}
+
+#CHI = { #China
+#	use_culture_states = yes
+#	
+#	required_num_states = 5
+#
+#	ai_will_do = { always = no }	
+#}
+
+XIN = { #Uyghuristan
+	states = {
+		STATE_DZUNGARIA
+		STATE_TIANSHAN
+		STATE_JETISY
+	}
+	
+	ai_will_do = { always = no }
+}
+
+FRS = { #Formosa
+	states = {
+		STATE_FORMOSA
+	}
+	ai_will_do = { always = no }
+}
+
+YUN = { #Yunnan
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+YUE = { #Yue
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+FJN = { #Fujian
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+YUZ = { #Yuanzhumin
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+JIA = { #Jiangxi
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+GNG = { #Guangdong	
+states = {
+	STATE_GUANGDONG
+	STATE_GUANGXI
+		}
+	ai_will_do = { always = no }
+}
+SIH = { #Sichuan
+states = {
+	STATE_SICHUAN
+	STATE_CHONGQING
+		}
+	ai_will_do = { always = no }
+}
+XIB = { #XIBEI
+states = {
+	STATE_GANSU
+	STATE_QINGHAI
+	STATE_NINGXIA
+		}
+	ai_will_do = { always = no }
+}
+NAN = { #Wuguo
+states = {
+	STATE_NANJING
+	STATE_JIANGSU
+	STATE_SUZHOU
+	STATE_ZHEJIANG
+	STATE_SOUTHERN_ANHUI
+	STATE_NORTHERN_ANHUI
+	STATE_EASTERN_HUBEI
+	STATE_WESTERN_HUBEI
+		}
+	ai_will_do = { always = no }
+}
+SHN = { #Shanxi
+states = {
+	STATE_SHANXI
+	STATE_XIAN
+	STATE_HENAN
+		}
+	ai_will_do = { always = no }
+}
+HNA = { #Hunnan	
+states = {
+	STATE_HUNAN
+		}
+	ai_will_do = { always = no }
+}
+HBI = { #Hubei
+states = {
+	STATE_HUNAN
+		}
+	ai_will_do = { always = no }
+}
+GUI = { #Guizhou	
+states = {
+	STATE_GUIZHOU
+		}
+	ai_will_do = { always = no }
+}
+SHA = { #Shandong	
+states = {
+	STATE_SHANDONG
+		}
+	ai_will_do = { always = no }
+}
+SHU = { #Shun	
+states = {
+	STATE_BEIJING
+	STATE_ZHILI
+	STATE_SHANXI
+		}
+	ai_will_do = { always = no }
+}
+JNZ = { #Jinzhou	
+states = {
+	STATE_SHENGJING
+	STATE_BEIJING
+		}
+	ai_will_do = { always = no }
+}
+
+
+QIA = { #Qian
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+DAI = { #Dai Nam
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+LAO = { #Laos
+	states = { STATE_LAOS }
+	
+	required_num_states = 1
+
+	ai_will_do = { always = no }
+}
+
+KHM = { #Khmu
+	states = {
+		STATE_LAOS
+	}
+	ai_will_do = { always = no }
+}
+
+CHA = { #Champa
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+CAM = { #Cambodia
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+SIA = { #Siam
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+BUR = { #Burma
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+CMI = { #Chiang Mai
+	states = { STATE_CHIANG_MAI }
+	
+	ai_will_do = { always = no }
+}
+
+KHN = { #Kachin
+	states = {
+		STATE_KACHIN
+	}
+	ai_will_do = { always = no }
+}
+
+HTH = { #Hanthawaddy
+	states = {
+		STATE_PEGU
+	}
+	ai_will_do = { always = no }
+}
+
+KRN = { #Karen
+	states = {
+		STATE_TENASSERIM
+	}
+	ai_will_do = { always = no }
+}
+SAT = { #Satsuma
+states = {
+	STATE_KYUSHU
+		}
+	ai_will_do = { always = no }
+}
+CHO = { #Choshu
+states = {
+	STATE_SHIKOKU
+	STATE_CHUGOKU
+		}
+	ai_will_do = { always = no }
+}
+MRI = { #Mori
+states = {
+	STATE_CHUGOKU
+		}
+	ai_will_do = { always = no }
+}
+ODW = { #Odawara
+states = {
+	STATE_KANTO
+		}
+	ai_will_do = { always = no }
+}
+YNZ = { #Yonezawa
+states = {
+	STATE_CHUBU
+		}
+	ai_will_do = { always = no }
+}
+SDI = { #Sendai
+states = {
+	STATE_TOHOKU
+		}
+	ai_will_do = { always = no }
+}
+CCR = { #Macao
+states = {
+	STATE_GUANGDONG
+	STATE_GUANGXI
+	STATE_SHAOZHOU
+		}
+	ai_will_do = { always = no }
+}
+KCK = { #Kamchatka
+states = {
+	STATE_KAMCHATKA
+	STATE_CHUKOTKA
+	STATE_OKHOTSK
+		}
+	ai_will_do = { always = no }
+}
+
+SHS = {
+states = {
+	STATE_SHAN_STATES
+	}
+	ai_will_do = { always = no }
+}
+
+MRK = {
+	states = {
+		STATE_MEKONG
+	}
+		ai_will_do = { always = no }
+	}
