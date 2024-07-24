@@ -2003,3 +2003,4 @@ anti_foreign_imposition_country = {
 		is_political_lobby_type = lobby_anti_overlord
 	}
 }
+}
