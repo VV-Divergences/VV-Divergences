@@ -2976,12 +2976,16 @@ CFR = { #Rhenish Union
 ARI = {
 	dynamic_country_name = {
 		name = dyn_c_latin_empire
-		
+		adjective = dyn_c_latin_empire_adj
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1
 		
 		trigger = {
-			coa_def_absolute_monarchy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = { 
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_autocracy
+			}
 		}
 	}
 }
@@ -3015,49 +3019,6 @@ VRG = {
 				has_variable = dvg_stribed_pungulv
 				has_war_with = c:SCA
 			}
-		}
-	}
-}
-YUG = { # Yugoslavia
-	dynamic_country_name = {
-		name = dyn_c_macedonian_yugoslavia
-		
-		is_main_tag_only = yes
-		priority = 5
-		
-		trigger = {
-			exists = scope:actor
-			scope:actor = {
-				country_has_primary_culture = cu:greek
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_macedonian_yugoslavia_commie
-		
-		is_main_tag_only = yes
-		priority = 10
-		
-		trigger = {
-			exists = scope:actor
-			scope:actor = {
-				country_has_primary_culture = cu:greek
-			}
-			coa_def_communist_flag_trigger = yes
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_macedonian_yugoslavia_crown
-		
-		is_main_tag_only = yes
-		priority = 10
-		
-		trigger = {
-			exists = scope:actor
-			scope:actor = {
-				country_has_primary_culture = cu:greek
-			}
-			coa_def_monarchy_flag_trigger = yes
 		}
 	}
 }
