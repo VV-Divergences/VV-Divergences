@@ -1,0 +1,9 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	every_country = {
+		trigger_event = {
+            id = gdp.1
+			days = 1
+        } 
+	}
+}

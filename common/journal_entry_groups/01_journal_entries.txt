@@ -1,0 +1,3 @@
+﻿vv_journal_entries_global = {
+	
+}

@@ -1,0 +1,81 @@
+je_vv_economic_prosperity = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	group = vv_journal_entries_global
+
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_variable = vv_had_baby_boom }
+	}
+	possible = {
+		average_sol >= 15
+		has_technology_researched = improved_fertilizer
+		has_technology_researched = pharmaceuticals
+		NOT = { has_law = law_type:law_no_health_system }
+		market_capital.market = {
+			mg:grain = { 
+				market_goods_cheaper >= 0.2 
+			}
+		}
+	}
+	immediate = {
+		set_variable = {
+			name = vv_baby_boom_ver
+			value = 0
+		}
+	}
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	on_complete = {
+		set_variable = vv_had_baby_boom
+		trigger_event = {
+			id = vv_baby_boom.1
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					market_capital.market = {
+						mg:grain = { 
+							market_goods_cheaper >= 0.2 
+						}
+					}
+					infamy < infamy_threshold:infamous
+					average_sol >= 15
+					is_at_war = no
+				}
+				change_variable = {
+					name = vv_baby_boom_ver
+					add = 1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						market_capital.market = {
+							mg:grain = { 
+								market_goods_cheaper <= -0.1
+							}
+						}
+						average_sol <= 13
+					}
+				}
+				change_variable = {
+					name = vv_baby_boom_ver
+					subtract = 1
+				}
+			}
+		}
+	}
+	current_value = {
+		value = root.var:vv_baby_boom_ver
+	}
+	goal_add_value = {
+		add = 60
+	}
+	progressbar = yes
+}
