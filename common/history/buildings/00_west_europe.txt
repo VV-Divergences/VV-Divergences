@@ -2040,13 +2040,13 @@ BUILDINGS={
 					building={
 						type="building_tooling_workshop"
 						country="c:DUA"
-						levels=5
+						levels=3
 						region="STATE_YORKSHIRE"
 					}
 					building={
 						type="building_financial_district"
 						country="c:DUA"
-						levels=4
+						levels=2
 						region="STATE_YORKSHIRE"
 					}
 				}
@@ -2063,19 +2063,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "pm_iron_frame_buildings" }
-			}
-			create_building={
-				building="building_steel_mills"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:DUA"
-						levels=2
-						region="STATE_YORKSHIRE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_coal_mine"
