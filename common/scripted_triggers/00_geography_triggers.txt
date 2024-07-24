@@ -2,7 +2,7 @@
 
 state_is_in_europe = {
 	OR = {
-		region = sr:region_elbia
+		region = sr:elbia
 		region = sr:region_danubia
 		region = sr:region_england
 		region = sr:region_iberia
