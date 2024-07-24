@@ -13,6 +13,50 @@
 			target = c:MYS.market
 		}
 	}
+	c:BRG = {
+		create_trade_route = {
+			goods = silk
+			level = 10
+			direction = import
+			target = c:BGL.market
+		}
+		create_trade_route = {
+			goods = wood
+			level = 10
+			direction = import
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = hardwood
+			level = 6
+			direction = import
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = clothes
+			level = 6
+			direction = export
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = wine
+			level = 6
+			direction = export
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 6
+			direction = export
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = small_arms
+			level = 7
+			direction = export
+			target = c:TUR.market
+		}
+	}
 	c:SCA = {
 		create_trade_route = {
 			goods = silk
