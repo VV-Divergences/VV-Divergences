@@ -838,16 +838,16 @@ STATE_MORAVIA = {
     }
 }
 STATE_SILESIA = {
-    id = 105
-    subsistence_building = building_subsistence_farms
-    provinces = { x1B72C9 x272E48 x5E9091 x6E617F x732DC0 x7B2F62 x821F52 x88194B x90B12B x94D624 xAF9F20 xC00121 xC108EA xCE74AB }
-    traits = { state_trait_oder_river state_trait_upper_silesia_coalfield }
-    city = x6E617F
-    farm = xAF9F20
-    mine = x272E48
-    wood = x90B12B
-    arable_land = 126
-    arable_resources = { bg_vineyard_plantations bg_rye_farms bg_livestock_ranches }
+    id = 155
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x1B72C9" "x272E48" "x5E9091" "x6E617F" "x732DC0" "x7B2F62" "x821F52" "x88194B" "x90B12B" "x94D624" "xAF9F20" "xC00121" "xC108EA" "xCE74AB" }
+    traits = { "state_trait_oder_river" "state_trait_upper_silesia_coalfield" }
+    city = "x6E617F"
+    farm = "xAF9F20"
+    mine = "x272E48"
+    wood = "x90B12B"
+    arable_land = 105
+    arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 120
         bg_iron_mining = 60

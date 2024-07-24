@@ -6,27 +6,16 @@
 	
 	possible = {
 		has_law = law_type:law_theocracy
-		OR = {
-			AND = {
-				exists = c:TIB
-				c:TIB = ROOT
-			}
-			AND = {
-			NOT = {exists = c:TIB}
-			country_has_primary_culture = cu:mongol
-			country_has_primary_culture = cu:tibetan
-			country_has_state_religion = rel:gelugpa
-			}
-		}
-		
+		exists = c:TIB
+		c:TIB = ROOT
 	}	
 
 	on_government_type_change = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_heavenly_kingdom_theocracy = {
@@ -48,8 +37,8 @@ gov_heavenly_kingdom_theocracy = {
 		change_to_hereditary = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_hereditary = yes
-    }
+		post_change_to_hereditary = yes
+	}
 }
 
 gov_papacy = {
@@ -93,8 +82,8 @@ gov_papacy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_bhutanese_dual_system_dharma = {
@@ -113,8 +102,8 @@ gov_bhutanese_dual_system_dharma = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_prince_bishopric = {					# Oddball political system present in Montenegro, where power usually transferred uncle-to-nephew (due to celibacy req for bishops), but always within the same family
@@ -160,8 +149,8 @@ gov_prince_bishopric = {					# Oddball political system present in Montenegro, w
 		change_to_hereditary = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_hereditary = yes
-    }
+		post_change_to_hereditary = yes
+	}
 }
 
 gov_zaidi_imamate = {
@@ -191,8 +180,8 @@ gov_zaidi_imamate = {
 		change_to_hereditary = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_hereditary = yes
-    }
+		post_change_to_hereditary = yes
+	}
 }
 
 gov_contechne = {
@@ -213,8 +202,8 @@ gov_contechne = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_catholic_theocracy = {
@@ -231,8 +220,8 @@ gov_catholic_theocracy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_protestant_theocracy = {
@@ -249,8 +238,8 @@ gov_protestant_theocracy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_oriental_orthodox_theocracy = {
@@ -270,8 +259,8 @@ gov_oriental_orthodox_theocracy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_sunni_theocracy = {
@@ -288,8 +277,8 @@ gov_sunni_theocracy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_shiite_theocracy = {
@@ -306,8 +295,8 @@ gov_shiite_theocracy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_jewish_theocracy = {
@@ -324,8 +313,8 @@ gov_jewish_theocracy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_theocratic_oligarchy = {
@@ -343,8 +332,8 @@ gov_theocratic_oligarchy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_theocracy = {
@@ -362,8 +351,8 @@ gov_theocracy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_theocratic_democracy = {
@@ -381,8 +370,8 @@ gov_theocratic_democracy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_theocratic_single_party_state = {
@@ -403,8 +392,8 @@ gov_theocratic_single_party_state = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_theocratic_dictatorship = {
@@ -422,8 +411,8 @@ gov_theocratic_dictatorship = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_caliphate = {								

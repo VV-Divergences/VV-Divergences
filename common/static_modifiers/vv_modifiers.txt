@@ -1,0 +1,4 @@
+﻿vv_baby_boom_modifier = {
+	icon = gfx\interface\icons\timed_modifier_icons\unused\modifier_explosion_positive.dds
+	state_birth_rate_mult = 0.2
+}
