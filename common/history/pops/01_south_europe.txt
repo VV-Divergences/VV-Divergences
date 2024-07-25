@@ -689,7 +689,7 @@
 		region_state:VEN = {
 			create_pop = {
 				culture = venetian
-				size = 2389400
+				size = 2194400
 			}
 			create_pop = {
 				culture = slovene

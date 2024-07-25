@@ -1887,6 +1887,19 @@ BUILDINGS={
 				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
 			}
 			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:VEN"
+						levels=1
+						region="STATE_CRETE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
