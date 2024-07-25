@@ -1365,7 +1365,15 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
+
 		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_national_militia
 		
 		set_ruling_interest_groups = {
 			ig_devout
@@ -1379,6 +1387,8 @@
 
 	c:BOS = { #Bosnia/Illyria
 		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
+
 		add_technology_researched = lathe
 		add_technology_researched = napoleonic_warfare
 		add_technology_researched = paddle_steamer
@@ -1386,8 +1396,14 @@
 		add_technology_researched = mass_communication
 		add_technology_researched = stock_exchange
 		add_technology_researched = banking
-		
-		effect_starting_politics_traditional = yes
+
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_migration_controls
 		
 		set_ruling_interest_groups = {
 			ig_landowners
