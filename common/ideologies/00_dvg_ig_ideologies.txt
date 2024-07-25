@@ -185,10 +185,10 @@ ideology_venician_nuovo_patrician = {
 	}
 
 	lawgroup_distribution_of_power = {
-		law_single_party_state = neutral
-		law_oligarchy = strongly_approve
-		law_wealth_voting = strongly_approve
-		law_technocracy = approve
+		law_single_party_state = strongly_approve
+		law_oligarchy = approve
+		law_wealth_voting = approve
+		law_technocracy = strongly_approve
 		law_census_voting = disapprove
 		law_autocracy = disapprove
 		law_landed_voting = disapprove
@@ -197,9 +197,9 @@ ideology_venician_nuovo_patrician = {
 	}
 
 	lawgroup_bureaucracy = {
-		law_hereditary_bureaucrats = approve
+		law_hereditary_bureaucrats = disapprove
 		law_appointed_bureaucrats = approve
-		law_elected_bureaucrats = disapprove
+		law_elected_bureaucrats = approve
 	}
 
 }

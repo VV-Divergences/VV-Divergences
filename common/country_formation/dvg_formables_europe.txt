@@ -593,8 +593,6 @@ ITA = { #Italy
 			country_has_primary_culture = cu:north_italian
 			country_has_primary_culture = cu:south_italian
 			country_has_primary_culture = cu:central_italian
-			country_has_primary_culture = cu:sardinian 
-			country_has_primary_culture = cu:maltese
 			AND = {
 				country_has_primary_culture = cu:venetian
 				NOT = { has_modifier = dvg_ven_patricians }
@@ -607,8 +605,6 @@ ITA = { #Italy
 					country_has_primary_culture = cu:north_italian
 					country_has_primary_culture = cu:south_italian
 					country_has_primary_culture = cu:central_italian
-					country_has_primary_culture = cu:sardinian
-					country_has_primary_culture = cu:maltese 
 					country_has_primary_culture = cu:venetian
 				}
 			}
@@ -951,7 +947,6 @@ ARI = { #Aragon-Italy
 		NOT = { country_has_primary_culture = cu:north_italian}
 		NOT = { country_has_primary_culture = cu:venetian}
 		NOT = { country_has_primary_culture = cu:south_italian}
-		NOT = { country_has_primary_culture = cu:maltese}
 	}
 }
 

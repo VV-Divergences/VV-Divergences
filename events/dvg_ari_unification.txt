@@ -34,7 +34,6 @@ dvg_ari_unification.2 = {
 				country_has_primary_culture = cu:central_italian
 				country_has_primary_culture = cu:north_italian
 				country_has_primary_culture = cu:south_italian
-				country_has_primary_culture = cu:maltese
 			}
 			OR = {
 				is_subject_of = ROOT
@@ -61,7 +60,6 @@ dvg_ari_unification.2 = {
 					country_has_primary_culture = cu:central_italian
 					country_has_primary_culture = cu:north_italian
 					country_has_primary_culture = cu:south_italian
-					country_has_primary_culture = cu:maltese
 				}
 				OR = {
 					is_subject_of = ROOT

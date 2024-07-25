@@ -300,7 +300,7 @@
 				size = 172800
 			}
 			create_pop = {
-				culture = sardinian
+				culture = south_italian
 				size = 627200
 			}
 			create_pop = {
@@ -316,7 +316,7 @@
 				size = 9201
 			}
 			create_pop = {
-				culture = maltese
+				culture = south_italian
 				size = 80960
 			}
 			create_pop = {
@@ -692,8 +692,12 @@
 				size = 2389400
 			}
 			create_pop = {
+				culture = north_italian
+				size = 201019
+			}
+			create_pop = {
 				culture = slovene
-				size = 312019
+				size = 112019
 			}
 			create_pop = {
 				culture = south_german

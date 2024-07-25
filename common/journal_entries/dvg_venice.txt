@@ -1,5 +1,4 @@
-﻿#
-je_ven_patricians_success = {
+﻿je_ven_patricians_success = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
 	group = je_group_internal_affairs
@@ -16,16 +15,28 @@ je_ven_patricians_success = {
     }
 
 	possible = {
-		any_interest_group = {
-			OR = {
-				is_powerful = yes
-				is_insurrectionary = yes
+		OR = {
+			any_interest_group = {
+				OR = {
+					is_powerful = yes
+					is_insurrectionary = yes
+				}
+				OR = {
+					leader = { has_ideology = ideology:ideology_radical }
+					leader = { has_ideology = ideology:ideology_reformer }
+					leader = { has_ideology = ideology:ideology_abolitionist }
+					leader = { has_ideology = ideology:ideology_fascist }
+				}
 			}
-			OR = {
-				leader = { has_ideology = ideology:ideology_radical }
-				leader = { has_ideology = ideology:ideology_reformer }
-				leader = { has_ideology = ideology:ideology_abolitionist }
-				leader = { has_ideology = ideology:ideology_fascist }
+			any_country = {
+				AND = {
+					OR = { 
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:central_italian
+						country_has_primary_culture = cu:south_italian
+					}
+					has_journal_entry = je_risorgimento
+				}
 			}
 		}
 		OR = {
@@ -112,9 +123,21 @@ je_ven_patricians_success = {
 					OR = {
 						ig:ig_landowners ={
 							is_in_government = yes
+							leader = { 
+								NOR = {
+									has_ideology = ideology:ideology_radical
+									has_ideology = ideology:ideology_reformer
+								}
+							}
 						}
 						ig:ig_petty_bourgeoisie ={
 							is_in_government = yes
+							leader = { 
+								NOR = {
+									has_ideology = ideology:ideology_radical
+									has_ideology = ideology:ideology_reformer
+								}
+							}
 						}
 					}
 				}

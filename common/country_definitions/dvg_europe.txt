@@ -1086,7 +1086,7 @@ ITA = { #Italy
 
 	tier = empire
 	
-	cultures = { north_italian south_italian central_italian venetian sardinian maltese}
+	cultures = { north_italian south_italian central_italian venetian }
 	capital = STATE_LAZIO
 }
 
@@ -1335,7 +1335,7 @@ SAR = { #Sardinia
 
 	tier = principality
 	
-	cultures = { sardinian }
+	cultures = { south_italian }
 	capital = STATE_SARDINIA
 	is_named_from_capital = yes
 }
@@ -1765,7 +1765,7 @@ MLT = { #Malta
 	
 	tier = city_state
 	
-	cultures = { maltese }
+	cultures = { south_italian }
 	
 	capital = STATE_MALTA
 }
