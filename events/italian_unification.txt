@@ -515,6 +515,7 @@ italian_unification.7 = {
 				OR = {
 					country_has_primary_culture = cu:north_italian
 					country_has_primary_culture = cu:south_italian
+					country_has_primary_culture = cu:central_italian
 				}
 			}
 			activate_law = law_type:law_presidential_republic
@@ -699,6 +700,15 @@ italian_unification.8 = {
 				culture = cu:north_italian
 			}
 		}
+		if = {
+			limit = {
+				country_has_primary_culture = cu:central_italian
+			}
+			add_loyalists = {
+				value = medium_radicals
+				culture = cu:central_italian
+			}
+		}
 	}
 
 	option = {
@@ -726,6 +736,15 @@ italian_unification.8 = {
 			add_radicals = {
 				value = large_radicals
 				culture = cu:north_italian
+			}
+		}
+		if = {
+			limit = {
+				country_has_primary_culture = cu:central_italian
+			}
+			add_loyalists = {
+				value = large_radicals
+				culture = cu:central_italian
 			}
 		}
 	}
@@ -802,6 +821,16 @@ italian_unification.10 = {
 					add_loyalists = {
 						value = medium_radicals
 						culture = cu:north_italian
+						interest_group = prev
+					}
+				}
+				if = {
+					limit = {
+						country_has_primary_culture = cu:central_italian
+					}
+					add_loyalists = {
+						value = medium_radicals
+						culture = cu:central_italian
 						interest_group = prev
 					}
 				}
