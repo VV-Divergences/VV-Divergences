@@ -719,11 +719,6 @@ dvg_qingqiu_leagues = {
 	country_trade_route_cost_mult = -0.35
 }
 
-dvg_siam_humiliation = {	
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_prestige_add = -25
-}
-
 lore_accurate_rohnnst = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	country_prestige_mult = 0.5
