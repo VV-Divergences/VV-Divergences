@@ -64,7 +64,7 @@ dvg_ven.101 = { #nationalist and anti-caste thoughts have coalesced in calls for
 	immediate = {
 		set_variable = {
 			name = ven_patricians_success_count_var 	#journal entry counter/ticker
-			value = 25
+			value = 15
 		}
 	}
 

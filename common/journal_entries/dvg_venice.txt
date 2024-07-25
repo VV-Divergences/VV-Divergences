@@ -165,7 +165,7 @@ je_ven_patricians_success = {
 	}
 
 	goal_add_value = {
-		add = 50
+		add = 40
 	}
 
 	progressbar = yes

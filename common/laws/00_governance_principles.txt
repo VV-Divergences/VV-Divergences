@@ -12,6 +12,19 @@ law_chiefdom = {
 	can_enact = {
 		is_country_type = decentralized
 	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
 	
 	is_visible = {
 		is_country_type = decentralized
@@ -56,6 +69,19 @@ law_monarchy = {
 		country_legitimacy_ideological_incoherence_mult = 0.1
 		country_aristocrats_pol_str_mult = 0.25
 		country_authority_add = 200
+	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
 	}
 	
 	possible_political_movements = {
@@ -114,6 +140,19 @@ law_presidential_republic = {
 		country_legitimacy_govt_total_votes_add = 10
 		country_legitimacy_ideological_incoherence_mult = 0.2
 		country_authority_add = 100
+	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
 	}
 
 	on_activate = {
@@ -200,6 +239,19 @@ law_parliamentary_republic = {
 		country_legitimacy_govt_total_votes_add = 20
 		country_legitimacy_govt_size_add = 1
 	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
 	
 	on_activate = {
 		if = {
@@ -283,6 +335,19 @@ law_theocracy = {
 		interest_group_ig_devout_pol_str_mult = 0.25
 		country_authority_add = 200
 	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
 	
 	possible_political_movements = {
 		law_monarchy
@@ -335,6 +400,19 @@ law_council_republic = {
 
 	unlocking_technologies = {
 		socialism
+	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_governance_principles_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
 	}
 	
 	on_activate = {		
