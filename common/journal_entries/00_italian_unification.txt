@@ -74,7 +74,7 @@
 
 	on_monthly_pulse = {
 		random_events = {
-			90 = 0	#dvg made more likely than vanilla
+			80 = 0	#vv dvg made more likely than vanilla
 			20 = italian_unification.2
 		}
 		effect = {
