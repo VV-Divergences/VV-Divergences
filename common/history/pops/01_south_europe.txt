@@ -445,25 +445,25 @@
 		region_state:SAV = {
 			create_pop = {
 				culture = north_italian
-				size = 2474425
+				size = 2054425
 			}
 			create_pop = {
 				culture = sephardic
-				size = 89760
+				size = 79760
 			}
 			create_pop = {
 				culture = occitan
-				size = 176783
+				size = 136783
 			}
 			create_pop = {
 				culture = romand
-				size = 68640
+				size = 48640
 			}
 		}
 		region_state:GEN = {
 			create_pop = {
 				culture = north_italian
-				size = 565760
+				size = 685760
 			}
 			create_pop = {
 				culture = central_italian
@@ -503,7 +503,7 @@
 			}
 			create_pop = {
 				culture = romand
-				size = 542788
+				size = 497788
 			}
 			create_pop = {
 				culture = south_german
@@ -667,7 +667,7 @@
 		region_state:LOM = {
 			create_pop = {
 				culture = north_italian
-				size = 3133922
+				size = 2833922
 			}
 			create_pop = {
 				culture = ashkenazi
