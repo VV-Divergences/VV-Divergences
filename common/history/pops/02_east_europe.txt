@@ -1329,20 +1329,16 @@
 				religion = protestant
 			}
 		}
-		region_state:SCA = {
+		region_state:NOV = {
 			create_pop = {
 				culture = north_russian
-				size = 31824
+				size = 101824
 				religion = orthodox
 			}
 			create_pop = {
 				culture = scandinavian
 				size = 15912
-			}
-			create_pop = {
-				culture = finnish
-				size = 34476
-				religion = orthodox
+				religion = protestant
 			}
 			create_pop = {
 				culture = finnish
