@@ -332,7 +332,7 @@
 	}
 	
 	c:SCO = { #Scotland
-		effect_starting_technology_tier_2_tech = yes
+		effect_starting_technology_tier_1_tech = yes
 		effect_starting_politics_conservative = yes
 
 		activate_law = law_type:law_wealth_voting
@@ -1296,7 +1296,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_oligarchy

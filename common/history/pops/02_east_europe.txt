@@ -8,7 +8,7 @@
 			}
 			create_pop = {
 				culture = estonian
-				size = 638241
+				size = 538241
 			}
 			create_pop = {
 				culture = latvian
@@ -40,7 +40,7 @@
 			}
 			create_pop = {
 				culture = latvian
-				size = 381874
+				size = 481874
 			}
 			create_pop = {
 				culture = lithuanian

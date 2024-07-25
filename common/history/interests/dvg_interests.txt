@@ -17,8 +17,8 @@
 	}
 	c:BOH = {
 		add_declared_interest = region_danubia
-		add_declared_interest = region_france
-		add_declared_interest = region_italy
+		add_declared_interest = region_rhine
+		add_declared_interest = region_south_germany
 		add_declared_interest = region_poland
 		add_declared_interest = region_baltic
 	}
@@ -29,6 +29,7 @@
 		add_declared_interest = region_brazil
 		add_declared_interest = region_poland
 		add_declared_interest = region_senegal
+		add_declared_interest = region_anatolia
 	}
 	c:SCA = {
 		add_declared_interest = region_poland

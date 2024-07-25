@@ -81,6 +81,7 @@
 			founding_date = 1015.6.9 
 			identity = identity_sovereign_empire
 			principle = principle_vassalization_1
+			principle = principle_colonial_offices_2
 
 			member = c:HAN
 			member = c:BRA

@@ -111,7 +111,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 483585
+				size = 523585
 			}
 			create_pop = {
 				culture = basque
@@ -127,7 +127,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 1031904
+				size = 851904
 			}
 		}
 	}
@@ -163,7 +163,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 106150
+				size = 286150
 			}
 		}
 	}
@@ -187,7 +187,7 @@
 			}
 			create_pop = {
 				culture = portuguese
-				size = 765658
+				size = 725658
 			}
 			# create_pop = {
 				# culture = spanish
@@ -217,11 +217,7 @@
 		region_state:NAV = {
 			create_pop = {
 				culture = basque
-				size = 132990
-			}
-			create_pop = {
-				culture = navarragon
-				size = 108810
+				size = 541800
 			}
 		}
 		region_state:SPA = {
@@ -259,13 +255,9 @@
 	}
 	s:STATE_ARAGON = {
 		region_state:ARN = {
-			create_pop = {
-				culture = navarragon
-				size = 1008803
-			}
 			 create_pop = {
 				culture = catalan
-				size = 144115
+				size = 852918
 			}
 		}
 	}
@@ -341,7 +333,7 @@
 			}
 			create_pop = {
 				culture = south_italian
-				size = 1608075
+				size = 1588075
 			}
 			create_pop = {
 				culture = albanian
@@ -367,11 +359,11 @@
 		region_state:ARN = {
 			create_pop = {
 				culture = catalan
-				size = 241667
+				size = 251667
 			}
 			create_pop = {
 				culture = south_italian
-				size = 1703830
+				size = 2323830
 			}
 			create_pop = {
 				culture = sephardic
@@ -396,7 +388,7 @@
 		region_state:ARN = {
 			create_pop = {
 				culture = south_italian
-				size = 1273306
+				size = 1193306
 			}
 			create_pop = {
 				culture = albanian
@@ -413,11 +405,11 @@
 		region_state:ARN = {
 			create_pop = {
 				culture = catalan
-				size = 132992
+				size = 82992
 			}
 			create_pop = {
 				culture = south_italian
-				size = 1686348
+				size = 1296348
 			}
 			create_pop = {
 				culture = albanian
@@ -439,7 +431,7 @@
 			}
 			create_pop = {
 				culture = south_italian
-				size = 1190546
+				size = 1130546
 			}
 			create_pop = {
 				culture = croat
@@ -603,7 +595,7 @@
 		region_state:PAP = {
 			create_pop = {
 				culture = central_italian
-				size = 912640
+				size = 562640
 			}
 		}
 	}
@@ -611,7 +603,7 @@
 		region_state:PAP = {
 			create_pop = {
 				culture = central_italian
-				size = 511363
+				size = 861363
 			}
 			create_pop = {
 				culture = sephardic
