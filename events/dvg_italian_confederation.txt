@@ -1,55 +1,55 @@
 ﻿namespace = dvg_italian_confederation
 
-dvg_italian_confederation.1 = {
-	type = country_event
-	placement = ROOT
+# dvg_italian_confederation.1 = {
+# 	type = country_event
+# 	placement = ROOT
 
-	title = dvg_italian_confederation.1.t
-	desc = dvg_italian_confederation.1.d
-	flavor = dvg_italian_confederation.1.f
+# 	title = dvg_italian_confederation.1.t
+# 	desc = dvg_italian_confederation.1.d
+# 	flavor = dvg_italian_confederation.1.f
 
-	event_image = {
-		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
-	}
+# 	event_image = {
+# 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+# 	}
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+# 	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
 
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+# 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
-	duration = 3
+# 	duration = 3
 
-	trigger = {
-	}
+# 	trigger = {
+# 	}
 
-	immediate = {
-		ruler.interest_group = {
-			save_scope_as = ruler_ig_scope
-		}
-	}
+# 	immediate = {
+# 		ruler.interest_group = {
+# 			save_scope_as = ruler_ig_scope
+# 		}
+# 	}
 
-	option = {
-		name = dvg_italian_confederation.1.a
-		default_option = yes
-		give_claims_on_north_italy = yes
-		# prestige
-		add_modifier = {
-			name = italian_unifier_prestige
-			months = long_modifier_time
-		}
-	}
-	option = {
-		name = dvg_italian_confederation.1.b
-		give_claims_on_north_italy = yes
-		# ruler IG attraction
-		scope:ruler_ig_scope = {
-			add_modifier = {
-				name = italian_unifiers_ig
-				months = normal_modifier_time
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = dvg_italian_confederation.1.a
+# 		default_option = yes
+# 		give_claims_on_north_italy = yes
+# 		# prestige
+# 		add_modifier = {
+# 			name = italian_unifier_prestige
+# 			months = long_modifier_time
+# 		}
+# 	}
+# 	option = {
+# 		name = dvg_italian_confederation.1.b
+# 		give_claims_on_north_italy = yes
+# 		# ruler IG attraction
+# 		scope:ruler_ig_scope = {
+# 			add_modifier = {
+# 				name = italian_unifiers_ig
+# 				months = normal_modifier_time
+# 			}
+# 		}
+# 	}
+# }
 
 dvg_italian_confederation.2 = {
 	type = country_event
@@ -153,7 +153,7 @@ dvg_italian_confederation.3 = {
 	}
 
 	option = {
-		name = italian_unification.3.a
+		name = dvg_italian_confederation.3.a
 		default_option = yes
 
 		set_variable = accepted_ITC
@@ -184,7 +184,7 @@ dvg_italian_confederation.3 = {
 	}
 
 	option = {
-		name = italian_unification.3.b
+		name = dvg_italian_confederation.3.b
 
 		set_variable = refused_ITC
 
@@ -267,6 +267,7 @@ dvg_italian_confederation.4 = {
 		annex = c:LOM
 		
 		change_tag = ITC
+		#play_as = c:ITC
 
 		if = {
 			limit = {

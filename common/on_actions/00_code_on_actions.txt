@@ -3296,12 +3296,14 @@ on_secession_start = {
 					OR = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:south_italian
+						country_has_primary_culture = cu:central_italian	#DVG
 					}
 				}
 				ROOT = {
 					NOR = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:south_italian
+						country_has_primary_culture = cu:central_italian 	#DVG
 					}
 				}
 				any_country = {

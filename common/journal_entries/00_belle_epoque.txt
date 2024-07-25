@@ -66,7 +66,7 @@
 				c:BLC ?= this
 				owns_entire_state_region = STATE_NOUVELLE_FLANDRE
 				s:STATE_NOUVELLE_FLANDRE = {
-					average_sol >= 15
+					any_scope_state = { average_sol >= 15 }
 				}
 			}
 			s:STATE_NOUVELLE_FLANDRE = {
@@ -78,7 +78,7 @@
 				c:PLA ?= this
 				owns_entire_state_region = STATE_NOUVELLE_FRANCE
 				s:STATE_NOUVELLE_FRANCE = {
-					average_sol >= 15
+					any_scope_state = { average_sol >= 15 }
 				}
 			}
 			s:STATE_NOUVELLE_FRANCE = {
@@ -94,7 +94,7 @@
 				}
 				owns_entire_state_region = STATE_GUANGDONG
 				s:STATE_GUANGDONG = {
-					average_sol >= 15
+					any_scope_state = { average_sol >= 15 }
 				}
 			}
 			s:STATE_GUANGDONG = {
@@ -109,7 +109,7 @@
 				}
 				owns_entire_state_region = STATE_SUZHOU
 				s:STATE_SUZHOU = {
-					average_sol >= 15
+					any_scope_state = { average_sol >= 15 }
 				}
 			}
 			s:STATE_SUZHOU = {
@@ -124,7 +124,7 @@
 				}
 				owns_entire_state_region = STATE_NANJING
 				s:STATE_NANJING = {
-					average_sol >= 15
+					any_scope_state = { average_sol >= 15 }
 				}
 			}
 			s:STATE_NANJING = {

@@ -2130,86 +2130,86 @@ south_italian={
 	}
 }
 
-maltese={
-	color= hsv{ 0.40 0.03 0.58 }
-	religion = catholic
-	traits = { italophone european_heritage }
-	male_common_first_names={
-		Alessandru
-		Beru
-		Duminku
-		Enrico
-		Evarist
-		Ferlad
-		Fernardu
-		Frangisku
-		Gabriel
-		Gorg
-		Joseph
-		Karmenu
-		Lawrenz
-		Marju
-		Mikiel
-		Ninu
-		Pawlu
-		Rokku
-		Saber
-		Ugo
-		Valent
-	}
-	female_common_first_names = {
-		Agatha
-		Aloisetta
-		Atanasia
-		Beatrici
-		Dorothea
-		Duminka
-		Elizabetta
-		Fawstina
-		Guljetta
-		Guzeppa
-		Helena
-		Karmena
-		Lucija
-		Margerita
-		Marthese
-		Therese
-		Vittorja
-	}	
-	noble_last_names = {
-		Cachia
-		Micallef
-		Moscati
-		Tabone
-	}
-	common_last_names={
-		Abela
-		Adami
-		Azzopardi
-		Boffa
-		Borg
-		Buhagiar
-		Cassar
-		Cumbo
-		Farrugia
-		Frendo
-		Gonzi
-		Howard
-		Mifsud
-		Mintoff
-		Mizzi
-		Muscat
-		Olivier
-		Puli
-		Pullicino
-		Strickland
-		Vella
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+# maltese={
+# 	color= hsv{ 0.40 0.03 0.58 }
+# 	religion = catholic
+# 	traits = { italophone european_heritage }
+# 	male_common_first_names={
+# 		Alessandru
+# 		Beru
+# 		Duminku
+# 		Enrico
+# 		Evarist
+# 		Ferlad
+# 		Fernardu
+# 		Frangisku
+# 		Gabriel
+# 		Gorg
+# 		Joseph
+# 		Karmenu
+# 		Lawrenz
+# 		Marju
+# 		Mikiel
+# 		Ninu
+# 		Pawlu
+# 		Rokku
+# 		Saber
+# 		Ugo
+# 		Valent
+# 	}
+# 	female_common_first_names = {
+# 		Agatha
+# 		Aloisetta
+# 		Atanasia
+# 		Beatrici
+# 		Dorothea
+# 		Duminka
+# 		Elizabetta
+# 		Fawstina
+# 		Guljetta
+# 		Guzeppa
+# 		Helena
+# 		Karmena
+# 		Lucija
+# 		Margerita
+# 		Marthese
+# 		Therese
+# 		Vittorja
+# 	}	
+# 	noble_last_names = {
+# 		Cachia
+# 		Micallef
+# 		Moscati
+# 		Tabone
+# 	}
+# 	common_last_names={
+# 		Abela
+# 		Adami
+# 		Azzopardi
+# 		Boffa
+# 		Borg
+# 		Buhagiar
+# 		Cassar
+# 		Cumbo
+# 		Farrugia
+# 		Frendo
+# 		Gonzi
+# 		Howard
+# 		Mifsud
+# 		Mintoff
+# 		Mizzi
+# 		Muscat
+# 		Olivier
+# 		Puli
+# 		Pullicino
+# 		Strickland
+# 		Vella
+# 	}
+# 	graphics = european
+# 	ethnicities = {
+# 		1 = caucasian
+# 	}
+# }
 
 basque={
 	color= hsv{ 0.12 0.56 0.86 }

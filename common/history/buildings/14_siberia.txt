@@ -1,12 +1,12 @@
 BUILDINGS={
 	s:STATE_URAL = {
-		region_state:PRM = {
+		region_state:NOV = {
 			create_building={
                 building="building_livestock_ranch"
                 add_ownership={
                     building={
                         type="building_manor_house"
-                        country="c:PRM"
+                        country="c:NOV"
                         levels=5
                         region="STATE_URAL"
                     }
@@ -18,7 +18,7 @@ BUILDINGS={
                 building="building_iron_mine"
                 add_ownership={
                     country={
-                        country="c:PRM"
+                        country="c:NOV"
                         levels=2
                     }
                 }
@@ -29,7 +29,7 @@ BUILDINGS={
                 building="building_barracks"
                 add_ownership={
                     country={
-                        country="c:PRM"
+                        country="c:NOV"
                         levels=3
                     }
                 }

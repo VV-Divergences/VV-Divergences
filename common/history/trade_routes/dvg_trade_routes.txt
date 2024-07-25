@@ -1,17 +1,108 @@
 ﻿TRADE_ROUTES = {
+	c:DUA = {
+		create_trade_route = {
+			goods = silk
+			level = 16
+			direction = import
+			target = c:MYS.market
+		}
+		create_trade_route = {
+			goods = sugar
+			level = 6
+			direction = import
+			target = c:MYS.market
+		}
+	}
+	c:BRG = {
+		create_trade_route = {
+			goods = silk
+			level = 10
+			direction = import
+			target = c:BGL.market
+		}
+		create_trade_route = {
+			goods = wood
+			level = 10
+			direction = import
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = hardwood
+			level = 6
+			direction = import
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = clothes
+			level = 6
+			direction = export
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = wine
+			level = 6
+			direction = export
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 6
+			direction = export
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = small_arms
+			level = 7
+			direction = export
+			target = c:TUR.market
+		}
+	}
 	c:SCA = {
 		create_trade_route = {
 			goods = silk
-			level = 1
+			level = 8
 			direction = import
 			target = c:YLO.market
 		}
 		create_trade_route = {
-			goods = fertilizer 
-			level = 1
+			goods = clothes
+			level = 7
 			direction = import
 			target = c:BRG.market
 		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 4
+			direction = import
+			target = c:BRG.market
+		}
+	}
+	c:BOH = {
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 3
+			direction = import
+			target = c:BRG.market
+		}
+		create_trade_route = {
+			goods = dye
+			level = 7
+			direction = import
+			target = c:BRG.market
+		}
+		create_trade_route = {
+			goods = sugar
+			level = 7
+			direction = import
+			target = c:BRG.market
+		}
+		create_trade_route = {
+			goods = fish
+			level = 10
+			direction = import
+			target = c:SCA.market
+		}
+
 	}
 	c:BGL = {
 		create_trade_route = {

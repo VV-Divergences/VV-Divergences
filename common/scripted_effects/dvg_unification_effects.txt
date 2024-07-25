@@ -82,13 +82,15 @@ give_claims_on_north_italy = {
 			OR = {
 				state_region = s:STATE_LOMBARDY
 				state_region = s:STATE_PIEDMONT
-				state_region = s:STATE_SAVOY
+				#state_region = s:STATE_SAVOY
 				state_region = s:STATE_UMBRIA
 				state_region = s:STATE_TUSCANY
 				state_region = s:STATE_ROMAGNA
 				state_region = s:STATE_LAZIO
 				state_region = s:STATE_EMILIA
 				state_region = s:STATE_CORSICA
+				state_region = s:STATE_VENETIA
+				state_region = s:STATE_ISTRIA
 			}
 		}
 		
