@@ -1023,7 +1023,7 @@
 			add_ideology = ideology_buddhist_moralist
 		}
 		add_modifier = {
-			dvg_siam_humiliation
+			#dvg_siam_humiliation 
 		}
 	}
 	

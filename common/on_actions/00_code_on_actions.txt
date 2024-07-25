@@ -1221,21 +1221,21 @@ on_character_creation = {
 # Root = Character
 on_character_death = {
 	effect = {
-		# if = {
-		# 	limit = {
-		# 		is_ruler = yes
-		# 		exists = c:HAW
-		# 		owner = c:HAW
-		# 		owner = {
-		# 			has_law = law_type:law_monarchy
-		# 			NOT = { has_variable = death_of_kamehameha }
-		# 			NOT = { has_global_variable = gp_hawaii_interest }
-		# 		}
-		# 	}
-		# 	owner = {
-		# 		trigger_event = hawaii_events.1
-		# 	}
-		# }
+		 if = {
+		 	limit = {
+		 		is_ruler = yes
+		 		exists = c:HAW
+		 		owner = c:HAW
+		 		owner = {
+		 			has_law = law_type:law_monarchy
+		 			NOT = { has_variable = death_of_kamehameha }
+		 			NOT = { has_global_variable = gp_hawaii_interest }
+		 		}
+		 	}
+		 	owner = {
+		 		trigger_event = hawaii_events.1
+		 	}
+		 }
 		
 		if = {
 			limit = {

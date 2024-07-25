@@ -22,7 +22,7 @@ dvg_xijiao.1 = {
 		# Fired by journal entry
 	}
 	immediate = {
-		set_variable = { name = missionary_works_counter value = 1 }
+		#set_variable = { name = missionary_works_counter value = 1 }
 		random_scope_state = {
 			limit = { 
 				is_incorporated = yes
