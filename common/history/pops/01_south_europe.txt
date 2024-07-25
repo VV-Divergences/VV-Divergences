@@ -962,7 +962,7 @@
 			create_pop = {
 				culture = croat
 				religion = orthodox
-				size = 296765
+				size = 336765
 			}
 			create_pop = {
 				culture = serb
