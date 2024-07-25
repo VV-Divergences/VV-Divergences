@@ -5138,9 +5138,11 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SER"
 						levels=2
+						region="STATE_NORTHERN_SERBIA"
 					}
 				}
 				reserves=1
@@ -5149,9 +5151,11 @@ BUILDINGS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SER"
 						levels=1
+						region="STATE_NORTHERN_SERBIA"
 					}
 				}
 				reserves=1
@@ -5160,9 +5164,11 @@ BUILDINGS={
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:SER"
 						levels=1
+						region="STATE_NORTHERN_SERBIA"
 					}
 				}
 				reserves=1
@@ -5182,20 +5188,37 @@ BUILDINGS={
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_tooling_workshops"
 						country="c:SER"
-						levels=2
+						levels=1
+						region="STATE_NORTHERN_SERBIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
 			}
 			create_building={
-				building="building_iron_mine"
+				building="building_logging_camp"
 				add_ownership={
-					country={
+					building={
+						type="building_logging_camp"
 						country="c:SER"
 						levels=1
+						region="STATE_NORTHERN_SERBIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_iron_mine"
+						country="c:SER"
+						levels=1
+						region="STATE_NORTHERN_SERBIA"
 					}
 				}
 				reserves=1
