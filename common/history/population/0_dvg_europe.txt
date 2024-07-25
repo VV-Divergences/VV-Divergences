@@ -82,7 +82,12 @@
 		effect_starting_pop_literacy_high = yes
 	}
 
-	c:BOS = { #Bosnia
+	c:BOS = { #Bosnia/Illyria
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
+
+	c:BSG = { #Begovina/Pannonia
 		effect_starting_pop_wealth_medium = yes
 		effect_starting_pop_literacy_middling = yes
 	}

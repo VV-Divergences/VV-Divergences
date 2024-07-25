@@ -156,4 +156,30 @@
 			target = c:BOS.market
 		}
 	}
+	c:BSG = {
+		create_trade_route = {
+			goods = small_arms
+			level = 6
+			direction = import
+			target = c:BOS.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 1
+			direction = import
+			target = c:BOS.market
+		}
+		create_trade_route = {
+			goods = luxury_furniture
+			level = 1
+			direction = import
+			target = c:BOS.market
+		}
+		create_trade_route = {
+			goods = tobacco
+			level = 1
+			direction = import
+			target = c:BOS.market
+		}
+	}
 }
