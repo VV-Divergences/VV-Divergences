@@ -276,14 +276,43 @@ dvg_ven.104 = { #Chose your character
 	}
 	immediate = {
 		set_variable = dvg_ven_chose_character
-		random_scope_character = {
+		if = {
 			limit = {
-				OR = {
-					has_ideology = ideology:ideology_radical 
-					has_ideology = ideology:ideology_reformer
+				any_scope_character = {
+					OR = {
+						has_ideology = ideology:ideology_radical 
+						has_ideology = ideology:ideology_reformer
+					}
 				}
 			}
-			set_variable = dvg_ven_radical_leader_var
+			random_scope_character = {
+				limit = {
+					OR = {
+						has_ideology = ideology:ideology_radical 
+						has_ideology = ideology:ideology_reformer
+					}
+				}
+				set_variable = dvg_ven_radical_leader_var
+			}
+		}
+		else = {
+			create_character = {
+				first_name = Felice
+				last_name = Russo
+				is_agitator = yes
+				add_character_role = politician
+				female = no
+				age = 26
+				interest_group = ig:ig_petty_bourgeoisie
+				ideology = ideology_radical
+				traits = {
+					inspirational_orator
+					ambitious
+				}
+				on_created = {
+					set_variable = dvg_ven_radical_leader_var
+				}
+			}
 		}
 		create_character = {
 			template = dvg_giancarlo_iannarella_template
@@ -292,8 +321,8 @@ dvg_ven.104 = { #Chose your character
 			}
 		}
 		# create_character = { #sorry Felice :( but we already have a radical
-		# 	first_name = Felice
-		# 	last_name = Russo
+		# first_name = Felice
+		# last_name = Russo
 		# 	is_agitator = yes
 		# 	add_character_role = politician
 		# 	female = no
@@ -966,9 +995,8 @@ dvg_ven.109 = { #nationalists goo up an Aragonese diplomat
 				}
 			}
 			hidden_effect = {
-				set_secret_goal = {
-					country = c:VEN
-					secret_goal = conquer
+				c:VEN = {
+					set_strategy = ai_strategy_unify_italy
 				}
 			}
 			ai_chance = {

@@ -643,6 +643,7 @@ je_risorgimento_italian_radicals_button = {
 			OR = {
 				country_has_primary_culture = cu:south_italian
 				country_has_primary_culture = cu:north_italian
+				country_has_primary_culture = cu:central_italian
 			}
 			custom_tooltip = {
 				text = risorgimento_opposing_stance_tt
@@ -672,6 +673,7 @@ je_risorgimento_italian_radicals_button = {
 					OR = {
 						country_has_primary_culture = cu:south_italian
 						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:central_italian
 					}
 					NOT = {
 						has_variable = risorgimento_unifying_stance
@@ -687,6 +689,7 @@ je_risorgimento_italian_radicals_button = {
 					OR = {
 						country_has_primary_culture = cu:south_italian
 						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:central_italian
 					}
 					NOT = {
 						has_variable = risorgimento_unifying_stance
@@ -710,6 +713,7 @@ je_risorgimento_italian_radicals_button = {
 				OR = {
 					country_has_primary_culture = cu:south_italian
 					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:central_italian
 				}
 				custom_tooltip = {
 					text = risorgimento_opposing_stance_tt
@@ -738,6 +742,17 @@ je_risorgimento_italian_radicals_button = {
 				add_radicals_in_state = {
 					value = 0.05
 					culture = cu:south_italian
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_region = {
+						is_homeland = cu:central_italian
+					}
+				}
+				add_radicals_in_state = {
+					value = 0.05
+					culture = cu:central_italian
 				}
 			}
 			post_notification = sabotage_decision_agitation_occurred
