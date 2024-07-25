@@ -961,7 +961,8 @@
 		region_state:BOS = {
 			create_pop = {
 				culture = croat
-				size = 246765
+				religion = orthodox
+				size = 296765
 			}
 			create_pop = {
 				culture = serb
@@ -970,7 +971,7 @@
 			create_pop = {
 				culture = bosniak
 				religion = orthodox
-				size = 310880
+				size = 280880
 			}
 			create_pop = {
 				culture = bosniak
