@@ -76,6 +76,16 @@
 		effect_starting_pop_wealth_high = yes
 		effect_starting_pop_literacy_high = yes
 	}
+
+	c:MON = { #Montenegro
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_high = yes
+	}
+
+	c:BOS = { #Bosnia
+		effect_starting_pop_wealth_medium = yes
+		effect_starting_pop_literacy_middling = yes
+	}
 	
 	c:MUN = { #Munster
 		effect_starting_pop_wealth_high = yes
@@ -207,16 +217,10 @@
 		effect_starting_pop_literacy_low = yes
 	}
 
-	c:CRO = { #Illyria
+	c:CRO = { #Croatia
 		effect_starting_pop_wealth_medium = yes
 		effect_starting_pop_literacy_low = yes
 	}
-	
-	# not existant at start
-	#c:MON = { #Montenegro
-	#	effect_starting_pop_wealth_medium = yes
-	#	effect_starting_pop_literacy_low = yes
-	#}
 	
 	c:ALB = { #Albania
 		effect_starting_pop_wealth_medium = yes
