@@ -4686,7 +4686,17 @@ BUILDINGS={
 	}
 	s:STATE_BOSNIA = {
 		region_state:BOS = {
-
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:BOS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
+			}
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
@@ -5426,13 +5436,28 @@ BUILDINGS={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
-					country={
+					building={
+						type="building_manor_house"
 						country="c:MON"
-						levels=2
+						levels=1
+						region="STATE_MONTENEGRO"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:MON"
+						levels=1
+						region="STATE_MONTENEGRO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -5444,6 +5469,17 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "pm_general_training" }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:MON"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 		region_state:VEN = {
