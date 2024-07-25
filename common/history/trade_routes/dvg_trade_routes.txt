@@ -60,16 +60,49 @@
 	c:SCA = {
 		create_trade_route = {
 			goods = silk
-			level = 1
+			level = 8
 			direction = import
 			target = c:YLO.market
 		}
 		create_trade_route = {
-			goods = fertilizer 
-			level = 1
+			goods = clothes
+			level = 7
 			direction = import
 			target = c:BRG.market
 		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 4
+			direction = import
+			target = c:BRG.market
+		}
+	}
+	c:BOH = {
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 3
+			direction = import
+			target = c:BRG.market
+		}
+		create_trade_route = {
+			goods = dye
+			level = 7
+			direction = import
+			target = c:BRG.market
+		}
+		create_trade_route = {
+			goods = sugar
+			level = 7
+			direction = import
+			target = c:BRG.market
+		}
+		create_trade_route = {
+			goods = fish
+			level = 10
+			direction = import
+			target = c:SCA.market
+		}
+
 	}
 	c:BGL = {
 		create_trade_route = {
