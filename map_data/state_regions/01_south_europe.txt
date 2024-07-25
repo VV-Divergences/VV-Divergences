@@ -931,6 +931,7 @@ STATE_MONTENEGRO = {
         bg_lead_mining = 42
         bg_logging = 11
         bg_coal_mining = 20
+        bg_fishing = 3
     }
     naval_exit_id = 3033
 }
