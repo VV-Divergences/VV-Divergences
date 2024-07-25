@@ -1,3 +1,8 @@
 ﻿l_english:
+# Yugoslavia
   formation.5.b: "A union for all yugoslav peoples"
   formation.9.d: "Having broken free from the yoke of the Ottoman empire, the western Yugoslav peoples have unified into a single nation."
+# Rumelia
+  formation.22.t: "The Rumelian Union"
+	formation.22.d: "No longer divided by heritage, nation, or creed, the peoples of Rumelia stand strong in the face of empires and adversaries."
+	formation.22.f: "United we stand. No longer under the boot of the Turks, the time has come for a great union to stand in the face of our former overlords. A great pact between all Rumelians to face the world."

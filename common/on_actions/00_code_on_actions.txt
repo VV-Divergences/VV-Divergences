@@ -2085,6 +2085,12 @@ on_country_formed = {
 		}
 		else_if = {
 			limit = {
+				c:RUM ?= ROOT
+			}
+			trigger_event = { id = formation.22 popup = yes }
+		}
+		else_if = {
+			limit = {
 				c:GER ?= ROOT
 			}
 			trigger_event = { id = german_unification.4 popup = yes }
