@@ -105,7 +105,6 @@
 		
 	}
 	c:NAN = {
-		
 		create_trade_route = {
 			goods = iron
 			level = 2
@@ -130,7 +129,31 @@
 			direction = import
 			target = c:SPA.market
 		}
-		
-		
+	}
+	c:SER = {
+		create_trade_route = {
+			goods = small_arms
+			level = 2
+			direction = import
+			target = c:BOS.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 1
+			direction = import
+			target = c:BOS.market
+		}
+		create_trade_route = {
+			goods = luxury_furniture
+			level = 1
+			direction = import
+			target = c:BOS.market
+		}
+		create_trade_route = {
+			goods = tobacco
+			level = 1
+			direction = import
+			target = c:BOS.market
+		}
 	}
 }

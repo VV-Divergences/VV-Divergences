@@ -1565,10 +1565,14 @@
 
 	c:SER = { #Serbia
 		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_traditional = yes
 
 		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_agrarianism
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_legacy_slavery
 		
-		effect_starting_politics_traditional = yes
 		
 		set_ruling_interest_groups = {
 			ig_landowners
