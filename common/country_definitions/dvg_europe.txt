@@ -1824,7 +1824,7 @@ BSG = { #Pannonia
 
 	tier = principality
 	
-	cultures = { bosniak }
+	cultures = { serb }
 	capital = STATE_VOJVODINA
 }
 
