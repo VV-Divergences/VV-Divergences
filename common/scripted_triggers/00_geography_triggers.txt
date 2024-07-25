@@ -12,10 +12,10 @@ state_is_in_europe = {
 		region = sr:region_italy	
 		region = sr:region_poland
 		region = sr:region_balkans
-		region = sr:region_scandinavia
+		region = sr:region_baltic #(is supposed to be scnadinavia)i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox i hate paradox 
 		region = sr:region_russia
 		region = sr:region_dnieper
-		region = sr:region_carpathia
+		#region = sr:region_carpathia i hate paradoxi hate paradoxi hate paradoxi hate paradoxi hate paradoxi hate paradoxi hate paradoxi hate paradoxi hate paradoxi hate paradoxi hate paradox
 		region = sr:region_north_sea
 	}
 }
