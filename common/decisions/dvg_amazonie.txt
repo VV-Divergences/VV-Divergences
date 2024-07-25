@@ -78,7 +78,7 @@
 }
 
 
-﻿dvg_amazonian_native_integration = {
+dvg_amazonian_native_integration = {
 	is_shown = {
 
 
