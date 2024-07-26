@@ -1,0 +1,18 @@
+﻿
+
+vv_russian_wodka = {
+	# Unlocks colonization of Australia
+	era = era_1
+	texture = "gfx/interface/icons/goods_icons/liquor.dds"
+	category = production
+	can_research = no
+	
+	modifier = {
+		building_rye_farms_throughput_add = 0.05
+		goods_output_liquor_mult = 0.1
+	}
+
+	ai_weight = {
+		value = 0 # If this isn't researchable then this value shouldn't matter if its 0
+	}
+}
