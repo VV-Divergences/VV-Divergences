@@ -51,14 +51,24 @@
 	on_fail = {
 	}
 
-	on_monthly_pulse = {
+	on_monthly_pulse = {	#trinkle revised 7.25.24, DO NOT DELETE unless you check
 		effect = {
 			# Wargoal enforced scores are handled in the on_wargoal_enforced on_action
 			# Advance Conditions
 			if = {
 				limit = {
 					# Your GDP per Capita is relatively high
-					global_country_ranking <= 15
+					gdp_per_capita_ranking <= 20
+				}
+				change_variable = {
+					name = recognition_progress_var
+					add = 1
+				}
+			}
+			if = {	#vv added bonus from ranking 
+				limit = {
+					# Your country rank is relatively high
+					global_country_ranking <= 15	
 				}
 				change_variable = {
 					name = recognition_progress_var
@@ -68,7 +78,7 @@
 			if = {
 				limit = {
 					# Your Standard of Living is relatively high
-					sol_ranking <= 75
+					sol_ranking <= 75	#vv raise from 20 
 				}
 				change_variable = {
 					name = recognition_progress_var
@@ -148,7 +158,7 @@
 					add = -1
 				}
 			}
-			if = {
+			if = {	#vv added low ranking penalty
 				limit = {
 					# Your global country ranking is low
 					global_country_ranking > 16
@@ -158,11 +168,20 @@
 					add = -1
 				}
 			}
-			
+			if = {
+				limit = {
+					# Your GDP per Capita is relatively low
+					gdp_per_capita_ranking >= 50
+				}
+				change_variable = {
+					name = recognition_progress_var
+					add = -1
+				}
+			}
 			if = {
 				limit = {
 					# Your Standard of Living is relatively low
-					sol_ranking >= 100
+					sol_ranking >= 100	#vv increased from 50
 				}
 				change_variable = {
 					name = recognition_progress_var
@@ -171,7 +190,7 @@
 			}	
 			clamp_variable = { name = recognition_progress_var max = 200 min = 0 }
 		}	
-		}
+	}
 
 	current_value = {
 		value = root.var:recognition_progress_var

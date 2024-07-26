@@ -21,8 +21,6 @@
 				culture = ugrian
 				size = 20832
 			}
-		}
-		region_state:PRM = {
 			create_pop = {
 				culture = north_russian
 				size = 271792

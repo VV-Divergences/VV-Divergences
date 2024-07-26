@@ -1,4 +1,13 @@
-﻿gdp_growth_rate = {
+﻿#many no good errors here
+#Script system error!
+#Error: Event target link 'var' returned an unset scope
+#Script location: file: common/script_values/gdp_sv.txt line: 15
+
+#Value of wrong type in 'gdp_growth_rate'. Got value of type 'none/all'
+
+#Div/0 near gdp_growth_rate
+
+gdp_growth_rate = {
     value = 0
     add = gdp_current_value
     subtract = gdp_before_value

@@ -7,12 +7,6 @@
 		scope:journal_entry = {
 			is_goal_complete = yes
 		}
-		custom_tooltip = {
-			text = nov_andrei_yuriyevich_died
-			ruler = {
-				NOT = { has_variable = is_andrei_yuriyevich }
-			}
-		}
 	}
 
 	on_complete = {
@@ -22,28 +16,18 @@
 	fail = {
 		OR = {
 			NOT = { has_law = law_type:law_presidential_republic }
-			custom_tooltip = {
-				text = nov_andrei_yuriyevich_died_fail
-				ruler = {
-					NOT = { has_variable = is_andrei_yuriyevich }
-				}
-				scope:journal_entry = {
-					is_goal_complete = no
-				}
-			}
 		}
 	}
 
 	on_fail = {
-		if = {
-			limit = {
-				NOT = { has_law = law_type:law_presidential_republic }
-			}
-			trigger_event = { id = dvg_nov.4 }
-		} 
-		else = {
-			trigger_event = { id = dvg_nov.3 }
-		}
+		trigger_event = { id = dvg_nov.4 }
+	}
+	on_timeout = {
+		trigger_event = { id = dvg_nov.4 }
+	}
+
+	modifiers_while_active = {
+		neutrality
 	}
 
 	on_monthly_pulse = {
@@ -103,10 +87,7 @@ je_nov_serfdom = {
 	group = je_group_internal_affairs
 
 	complete = {
-		scope:journal_entry = {
-			is_goal_complete = yes
-		}
-		has_law = law_type:law_serfdom
+		NOT = { has_law = law_type:law_serfdom }
 	}
 
 	on_complete = {
@@ -118,27 +99,8 @@ je_nov_serfdom = {
 		}
 	}
 
-	on_monthly_pulse = {
-		effect = {
-			if = {
-				change_variable = {
-					name = nov_serfdom
-					add = 1
-				}
-			}
-		}
-	}
-
-	fail = {
-		NOT = { has_law = law_type:law_serfdom }
-	}
-
-	current_value = {
-		value = var:nov_serfdom
-	}
-
-	goal_add_value = {
-		add = 180
+	modifiers_while_active = {
+		dvg_unstable_confederation
 	}
 
 	invalid = {
@@ -160,15 +122,15 @@ je_nov_non_russians = {
 	group = je_group_internal_affairs
 
 	complete = {
-
 		OR = {
 			custom_tooltip = {
 				text = nov_resolved_nonrussians
 				has_variable = VYA_nonrussians_end
 			}
-			AND = {
-				year >= 1846
-				NOT = { has_law = law_type:law_national_supremacy }
+			cu:ugrian = {
+				NOT = { culture_is_discriminated_in = ROOT }
+			}
+			NOT = { has_law = law_type:law_colonial_exploitation
 			}
 		}
 	}
@@ -180,6 +142,20 @@ je_nov_non_russians = {
 			name = nov_var
 			add = 1
 		}
+		# if = {	#would be nice to add contitional modifier
+		# 	limit = {
+		# 		has_law = law_type:law_colonial_exploitation
+		# 		has_law = law_type:law_serfdom
+		# 	}
+		# 	add_modifier = {	#for as long as you have the above laws??
+		# 		name = dvg_yasak
+		# 		months = -1
+		# 	}
+		# }
+	}
+
+	modifiers_while_active = {
+		dvg_yasak
 	}
 
 	invalid = {
@@ -201,10 +177,15 @@ je_nov_bureaucracy = {
 	group = je_group_internal_affairs
 
 	complete = {
-		NOR = { 
-			has_law = law_type:law_hereditary_bureaucrats 
-			has_law = law_type:law_land_based_taxation
-			has_law = law_type:law_consumption_based_taxation
+		OR = {
+			NOT = { 
+				has_law = law_type:law_oligarchy 
+			}
+			NOT = {
+				any_scope_state = {
+					is_incorporated = no
+				}
+			}
 		}
 		bureaucracy >= 0 
 		approaching_bureaucracy_shortage = no
@@ -242,12 +223,11 @@ je_nov_education = {
 		any_scope_building = {
 			is_building_type = building_university
 			occupancy > 0.9
-			level >= 3
+			level >= 7
 		}
 		scope:journal_entry = {
 			is_goal_complete = yes
 		}
-		has_law = law_type:law_private_schools
 	}
 
 	on_complete = {
@@ -265,14 +245,11 @@ je_nov_education = {
 
 	goal_add_value = {
 		value = root.literacy_rate
-		add = 0.2
+		add = 0.4
 	}
 
 	invalid = {
-		custom_tooltip = {
-			text = finished_nov_tt
-			has_variable = nov_complete
-		}
+		has_variable = nov_complete
 	}
 
 	transferable = no
@@ -281,7 +258,7 @@ je_nov_education = {
 	weight = 5000
 }
 
-# Urbanize Novgorod Reform
+# Centralize Novgorod Reform
 je_nov_urban_center = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
@@ -303,6 +280,9 @@ je_nov_urban_center = {
 			name = nov_var
 			add = 1
 		}
+	}
+
+	modifiers_while_active = {
 	}
 
 	invalid = {

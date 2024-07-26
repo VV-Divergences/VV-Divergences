@@ -1940,24 +1940,6 @@
 				size = 8931
 			}
 		}
-		region_state:BUR = {
-			create_pop = {
-				culture = burmese
-				size = 20091
-			}
-			create_pop = {
-				culture = kachin
-				size = 16392
-			}
-			create_pop = {
-				culture = shan
-				size = 2382
-			}
-			create_pop = {
-				culture = thai
-				size = 11029
-			}
-		}
 	}
 	s:STATE_SHAN_STATES = {
 		region_state:SHS = {
