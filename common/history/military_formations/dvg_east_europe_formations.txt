@@ -1,0 +1,25 @@
+MILITARY_FORMATIONS = {
+	c:MSO = { # Muscovy
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_russia
+			name = "knyazheskaya sila"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MOSCOW
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_MOSCOW
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_MOSCOW
+				count = 5
+			}
+			save_scope_as = dvg_mso_main_army
+		}
+}

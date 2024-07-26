@@ -8,7 +8,7 @@ vv_russian_wodka = {
 	can_research = no
 	
 	modifier = {
-		building_rye_farms_throughput_add = 0.05
+		building_rye_farm_throughput_add = 0.05
 		goods_output_liquor_mult = 0.1
 	}
 
