@@ -12,7 +12,7 @@ principle_construction_1 = {
 
 	member_modifier = {
 		# Members get a +10% Construction Efficiency modifier
-		state_construction_mult = 1
+		state_construction_mult = 0.1
 	}
 	
 	ai_weight = {
