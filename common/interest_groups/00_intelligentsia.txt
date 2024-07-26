@@ -62,7 +62,7 @@
 			ig:ig_intelligentsia = { 
 				set_interest_group_name = ig_literati
 				remove_ideology = ideology_anti_clerical
-				add_ideology = ideolog:ideology_mengzi
+				add_ideology = ideology:ideology_mengzi
 			}
 		}
 	}
