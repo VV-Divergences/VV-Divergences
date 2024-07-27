@@ -182,4 +182,24 @@
 			target = c:BOS.market
 		}
 	}
+	c:TUR = {
+		create_trade_route = {
+			goods = tea
+			level = 5
+			direction = export
+			target = c:DUA.market
+		}
+		create_trade_route = {
+			goods = tobacco
+			level = 4
+			direction = export
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 6
+			direction = export
+			target = c:POL.market
+		}
+	}
 }

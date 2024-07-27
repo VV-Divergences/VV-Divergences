@@ -298,7 +298,7 @@
 		add_homeland = cu:mashriqi
 		add_homeland = cu:assyrian
 		
-		# add_claim = c:TUR
+		add_claim = c:TUR
 		# add_claim = c:KUR
 		# add_claim = c:JNR
 	}

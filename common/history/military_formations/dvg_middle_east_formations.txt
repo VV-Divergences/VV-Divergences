@@ -1,0 +1,16 @@
+MILITARY_FORMATIONS = { # 
+    c:TUR = { # Ottomans
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_anatolia
+			name = ""
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WESTERN_THRACE
+				count = 15
+			}
+			save_scope_as = dvg_tur_main_army
+		}
+    }
+}

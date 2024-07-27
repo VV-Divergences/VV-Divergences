@@ -1035,6 +1035,9 @@ STATE_WESTERN_THRACE = {
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_silk_plantations bg_tobacco_plantations }
     capped_resources = {
         bg_fishing = 5
+        bg_logging = 3
+        bg_iron_mining = 4
+        bg_coal_mining = 2
     }
     naval_exit_id = 3035
 }

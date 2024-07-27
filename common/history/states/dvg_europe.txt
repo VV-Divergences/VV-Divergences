@@ -1228,6 +1228,8 @@
 		
 		add_homeland = cu:greek
 		add_homeland = cu:albanian
+
+		add_claim = c:TUR
 	}
 	s:STATE_PELOPONNESE = {
 		create_state = {
@@ -1237,6 +1239,8 @@
 		}
 		
 		add_homeland = cu:greek
+
+		add_claim = c:TUR
 	}
 	s:STATE_ATTICA = {
 		create_state = {
@@ -1246,6 +1250,8 @@
 		}
 		
 		add_homeland = cu:greek
+
+		add_claim = c:TUR
 	}
 	s:STATE_THESSALIA = {
 		create_state = {
