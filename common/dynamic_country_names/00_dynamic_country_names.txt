@@ -1628,7 +1628,7 @@ LAN = { # Lanfang
 #			coa_def_spanish_ensign_trigger = yes
 #		}
 #	}
-#
+#}
 
 # MKT = { # Miskito
 	# dynamic_country_name = {

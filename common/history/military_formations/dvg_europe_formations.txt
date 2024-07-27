@@ -815,6 +815,126 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
     c:LUC = { # Lucca
         
     }
+	c:MCD = { # Macedonia
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_balkans
+			name = "Bŭlgarski pekhoten polk"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BULGARIA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTHERN_THRACE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SKOPIA
+				count = 5
+			}
+			save_scope_as = dvg_mcd_main_army
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Mateĭ
+			last_name = Pejačević
+			age = 19
+			culture = bulgarian
+			ig_leader = no
+			commander_rank = commander_rank_1
+			interest_group = ig_landowners
+			ideology = ideology_jingoist
+			hq = region_balkans
+			traits = {
+				alcoholic
+				hedonist
+				opium_addiction
+				cocaine_addiction
+				grifter
+				war_criminal
+				cruel
+			}
+			save_scope_as = Matei_gen
+		}
+		scope:Matei_gen = {
+			transfer_to_formation = scope:dvg_mcd_main_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_balkans
+			name = "Makedonikí Taxiarchía"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MACEDONIA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_MACEDONIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_NORTHERN_THRACE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTHERN_THRACE
+				count = 5
+			}
+			save_scope_as = dvg_mcd_second_army
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Odysseas
+			last_name = Arbouzis
+			age = 44
+			culture = greek
+			ig_leader = no
+			commander_rank = commander_rank_3
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist
+			hq = region_balkans
+			traits = {
+				experienced_offensive_planner
+				basic_artillery_commander
+				alcoholic
+				brave
+				direct
+			}
+			save_scope_as = Odysseas_gen
+		}
+		scope:Odysseas_gen = {
+			transfer_to_formation = scope:dvg_mcd_second_army
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Leo
+			last_name = Horta
+			age = 28
+			culture = catalan
+			ig_leader = no
+			commander_rank = commander_rank_1
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_democrat
+			hq = region_balkans
+			traits = {
+			}
+			save_scope_as = Leo_gen
+		}
+		scope:Leo_gen = {
+			transfer_to_formation = scope:dvg_mcd_second_army
+		}
+    }
     c:MOD = { # Modena
         
     }
