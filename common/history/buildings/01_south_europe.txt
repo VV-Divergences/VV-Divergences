@@ -5330,6 +5330,17 @@ BUILDINGS={
 				activate_production_methods={ "pm_basic_shipbuilding"  }
 			}
 			create_building={
+				building="building_military_shipyards"
+				add_ownership={
+					country={
+						country="c:TUR"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={  "pm_military_shipbuilding_wooden" }
+			}
+			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					country={
@@ -5433,28 +5444,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:TUR"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
-				building="building_naval_base"
-				add_ownership={
-					country={
-						country="c:TUR"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_naval_theory" }
 			}
 			create_building={
 				building="building_port"
