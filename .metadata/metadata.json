@@ -24,6 +24,7 @@
       "common/history/states",
       "common/history/trade_routes",
       "common/history/governments",
+      "common/company_types",
       "common/history/buildings",
       "common/scripted_buttons",
       "common/achievements",
