@@ -22,7 +22,7 @@
   dvg_italian_confederation.3.t:0 "Proposal of a Confederation"
   dvg_italian_confederation.3.d:0 "As the flames of Revolution begin to wither, many intellectuals in our Republic have grappled the Roman question: how to unite Italy with the Pope, head of the Catholic Church claiming temporal power over the Eternal City."
   dvg_italian_confederation.3.f:0 "A proposal has come from [SCOPE.sC('initiator').GetName]. They have proposed a peaceful unification of the Peninsula in a weak confederation that would be headed by the Pope while preserving the rights of all members and its own laws. This could be an interesting proposal to end the bickering between Italian statelets and avoid a forceful unification like dreamed about by the Savoyards."
-  dvg_italian_confederation.3.a:0 "We should join under them"
+  dvg_italian_confederation.3.a:0 "This is a very interesting proposal"
   dvg_italian_confederation.3.b:0 "We are better off alone"
   dvg_italian_confederation.4.t:0 "Formation of the Italian Confederation"
   dvg_italian_confederation.4.d:0 "Italian nationalism has never really gone away despite the end of Revolution in Italy."
@@ -31,5 +31,3 @@
   dvg_italian_confederation.5.t:0 "Failure of the Council"
   dvg_italian_confederation.5.d:0 "The Council we had assembled to create a new Italian Confederation ended after the refusal of several members to join."
   dvg_italian_confederation.5.a:0 "It was just a dream after all"
-
-  je_risorgimento_reason: "The winds of nationalism sweeping Europe have begun to pass through [ROOT.GetCountry.GetName], inspiring figures both within our government and without to look towards the restoration of a single, unified Italy.\n\nWithin our [SCOPE.sCulture('north_italian_scope').GetName], [SCOPE.sCulture('central_italian_scope').GetName], and [SCOPE.sCulture('south_italian_scope').GetName] states, we have [Country.MakeScope.Var('italian_states_radicals_total').GetValue|D] radicals out of a total population of [Country.MakeScope.Var('italian_states_pop_total').GetValue|D], representing [Country.MakeScope.Var('italian_states_radicals_total_bar').GetValue|R]#red %#! of our Italian population.\n\nReaching #red;bold;shadow 25%#! will lead to the seizure of the [ROOT.GetCountry.GetAdjective] government by pan-Italian revolutionaries[ROOT.GetCountry.GetCustom('italy_fate_loc')]."
