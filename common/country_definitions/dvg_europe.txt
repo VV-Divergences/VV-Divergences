@@ -445,7 +445,7 @@ RUM = { # Rumelia
 
 	tier = empire
 	
-	cultures = { serb croat slovene bosniak bulgarian greek }
+	cultures = { serb croat slovene bosniak bulgarian greek albanian }
 	capital = STATE_WESTERN_THRACE
 }
 
