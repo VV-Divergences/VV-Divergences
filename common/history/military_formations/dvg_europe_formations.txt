@@ -1,5 +1,19 @@
 MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now, will be expanded
-    c:ARN = { # Aragon
+    c:ALB = { # Albania
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_balkans
+			name = "Ushtria e Princit Shqiptar"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ALBANIA
+				count = 10
+			}
+		}
+	}
+	
+	c:ARN = { # Aragon
         create_military_formation = {
 			type = army
 			hq_region = sr:region_iberia
@@ -994,7 +1008,18 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
         
     }
     c:NAV = { # Navarre
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_iberia
+			name = "Nafarroako Koroaren Armada"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NAVARRA
+				count = 10
+			}
+			save_scope_as = dvg_nav_main_army
+		}
     }
     c:OLD = { # Oldenburg
         create_military_formation = {
