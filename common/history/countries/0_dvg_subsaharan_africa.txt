@@ -67,6 +67,7 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_interventionism
@@ -550,10 +551,10 @@
 			ig_landowners
 		}
 	}
-	c:SHK = { #Buganda
+	c:SHK = { #Shilluk
 		effect_starting_technology_tier_6_tech = yes
 		
-		effect_starting_politics_conservative = yes
+		effect_starting_politics_traditional= yes
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_mercantilism
 		

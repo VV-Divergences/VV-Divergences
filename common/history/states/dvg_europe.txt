@@ -985,7 +985,6 @@
 		}
 		
 		add_homeland = cu:basque
-		add_homeland = cu:navarragon
 		add_homeland = cu:spanish
 	}
 	
@@ -1005,7 +1004,6 @@
 		}
 		
 		add_homeland = cu:catalan
-		add_homeland = cu:navarragon
 	}
 	s:STATE_BALEARES = {
 		create_state = {
