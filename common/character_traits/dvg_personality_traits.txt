@@ -19,3 +19,12 @@ immortal = {
 	
 	value = 0
 }
+rat = {
+	type = skill
+	texture = "gfx/interface/icons/character_trait_icons/trench_rat.dds"
+
+	command_modifier = {
+		character_battle_condition_good_visibility_mult = 0.5
+	}
+	value = 0
+}

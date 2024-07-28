@@ -1025,6 +1025,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 				persistent
 				inspirational_orator
 				forest_commander
+				rat
 			}
 			
 			save_scope_as = filipus_gen
@@ -1251,7 +1252,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			hq = region_baltic
 			commander_rank = commander_rank_1
 			traits = {
-				trench_rat
+				rat
 				psychological_affliction
 			}
 			
