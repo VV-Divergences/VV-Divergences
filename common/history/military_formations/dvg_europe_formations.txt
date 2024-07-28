@@ -905,7 +905,28 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}
     }
     c:PAP = { # Papal States
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_italy
+			name = "Santo Esercito di Roma"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LAZIO
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ROMAGNA
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_UMBRIA
+				count = 3
+			}
+			save_scope_as = dvg_pap_main_army
+		}
     }
     c:PAR = { # Parma
         
@@ -1404,7 +1425,33 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}
     }
     c:VEN = { # Venice
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_italy
+			name = "Corpo della Marina Mercantile"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VENETIA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_VENETIA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ISTRIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_DALMATIA
+				count = 5
+			}
+			save_scope_as = dvg_pap_main_army
+		}
     }
     c:WUR = { # Wurtemburg
         create_military_formation = {

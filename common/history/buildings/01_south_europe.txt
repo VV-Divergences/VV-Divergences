@@ -757,17 +757,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:PAP"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -1565,17 +1554,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:VEN"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
@@ -1772,17 +1750,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation"  }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:VEN"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 			create_building={
 				building="building_port"
