@@ -164,7 +164,7 @@ zhr_migration.2 = {
 	option = {
 		name = zhr_migration.2.b
 		custom_tooltip = zhr_migration_cancel_tt
-		set_variable = cancel_zhr_migration_var
+		#set_variable = cancel_zhr_migration_var
 		ai_chance = {
 			base = 0
 		}

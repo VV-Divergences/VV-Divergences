@@ -62,10 +62,7 @@ dvg_russian_unification.2 = {
 				}
 				country_has_primary_culture = cu:north_russian
 			}
-			has_diplomatic_pact = {
-				who = ROOT
-				type = customs_union
-			}
+			is_in_same_power_bloc = ROOT
 			OR = {
 				is_subject = no
 				is_subject_of = ROOT
@@ -105,10 +102,7 @@ dvg_russian_unification.2 = {
 					}
 					country_has_primary_culture = cu:north_russian
 				}
-				has_diplomatic_pact = {
-					who = ROOT
-					type = customs_union
-				}
+				is_in_same_power_bloc = ROOT
 				OR = {
 					is_subject = no
 					is_subject_of = ROOT

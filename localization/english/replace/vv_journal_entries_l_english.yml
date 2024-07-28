@@ -1,0 +1,7 @@
+﻿l_english:
+  je_vv_economic_prosperity:0 "Economic Security"
+  je_vv_economic_prosperity_reason:0 "The ever increasing standard of living and surplus of food may lead to a population boom in our nation in the near future"
+  je_vv_economic_prosperity_goal:0 "We maintain the cheap food prices and high standard of living while at peace and not being infamous for 5 years"
+  je_earn_recognition_advance: "• Enforcing a [concept_war_goal] on a [concept_major_power] or above\n• Be in the top 15 country rankings\n• Having a [concept_sol] in the top 75\n• Having a [concept_literacy] rating above 40%\n• Having [Concept('concept_votes','$concept_voting_rights$')]\n• The #bold Request Embassy#! [concept_diplomatic_action] is active"
+  je_earn_recognition_deplete: "• Having a [concept_war_goal] enforced on you\n• Having a [concept_sol] below the top 100\n• Be below the top 16 country rankings\n• Having a [concept_literacy] rating below 20%\n• Having #bold not#! abolished [concept_slavery].\n• Having [GetLawType('law_serfdom').GetName]\n• Having [GetLawType('law_traditionalism').GetName]\n• Having [GetLawType('law_outlawed_dissent').GetName]"
+  

@@ -129,7 +129,7 @@ BUILDINGS={
 					building={
 						type="building_port"
 						country="c:NOV"
-						levels=3
+						levels=5
 						region="STATE_INGRIA"
 					}
 				}
@@ -145,7 +145,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:NOV"
-						levels=2
+						levels=6
 					}
 				}
 				reserves=1
@@ -156,7 +156,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:NOV"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -177,7 +177,7 @@ BUILDINGS={
 				building="building_textile_mills"
 				add_ownership={
 					building={
-						type="building_manor_house"
+						type="building_financial_district"
 						country="c:NOV"
 						levels=1
 						region="STATE_NOVGOROD"
@@ -203,13 +203,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:NOV"
-						levels=1
-						region="STATE_NOVGOROD"
-					}
-					building={
-						type="building_manor_house"
-						country="c:NOV"
-						levels=1
+						levels=2
 						region="STATE_NOVGOROD"
 					}
 				}
@@ -235,7 +229,13 @@ BUILDINGS={
 					building={
 						type="building_manor_house"
 						country="c:NOV"
-						levels=8
+						levels=2
+						region="STATE_NOVGOROD"
+					}
+					building={
+						type="building_financial_district"
+						country="c:NOV"
+						levels=4
 						region="STATE_NOVGOROD"
 					}
 				}
@@ -248,7 +248,13 @@ BUILDINGS={
 					building={
 						type="building_manor_house"
 						country="c:NOV"
-						levels=4
+						levels=2
+						region="STATE_NOVGOROD"
+					}
+					building={
+						type="building_financial_district"
+						country="c:NOV"
+						levels=2
 						region="STATE_NOVGOROD"
 					}
 				}
@@ -261,7 +267,7 @@ BUILDINGS={
 					building={
 						type="building_logging_camp"
 						country="c:NOV"
-						levels=6
+						levels=4
 						region="STATE_NOVGOROD"
 					}
 					building={
@@ -273,7 +279,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:NOV"
-						levels=2
+						levels=4
 						region="STATE_NOVGOROD"
 					}
 				}
@@ -449,23 +455,23 @@ BUILDINGS={
 		}
 	}
 	s:STATE_GALICH = {
-		region_state:UGG = {
+		region_state:NOV = {
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:UGG"
+						country="c:NOV"
 						levels=1
 						region="STATE_GALICH"
 					}
 					country={
-						country="c:UGG"
+						country="c:NOV"
 						levels=1
 					}
 					building={
 						type="building_logging_camp"
-						country="c:UGG"
+						country="c:NOV"
 						levels=3
 						region="STATE_GALICH"
 					}
@@ -477,7 +483,7 @@ BUILDINGS={
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:UGG"
+						country="c:NOV"
 						levels=1
 					}
 				}
@@ -488,20 +494,18 @@ BUILDINGS={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:UGG"
+						country="c:NOV"
 						levels=10
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_general_training" }
 			}
-		}
-		region_state:BLO = {
 			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:BLO"
+						country="c:NOV"
 						levels=5
 					}
 				}
@@ -512,7 +516,7 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:BLO"
+						country="c:NOV"
 						levels=1
 					}
 				}
@@ -524,13 +528,13 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:BLO"
+						country="c:NOV"
 						levels=3
 						region="STATE_GALICH"
 					}
 					building={
 						type="building_manor_house"
-						country="c:BLO"
+						country="c:NOV"
 						levels=1
 						region="STATE_GALICH"
 					}
@@ -543,7 +547,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BLO"
+						country="c:NOV"
 						levels=4
 						region="STATE_GALICH"
 					}
@@ -566,13 +570,11 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
-		}
-		region_state:PRM = {
 			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:PRM"
+						country="c:NOV"
 						levels=1
 					}
 				}
@@ -584,20 +586,20 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:PRM"
+						country="c:NOV"
 						levels=1
 						region="STATE_PERM"
 					}
 					building={
 						type="building_manor_house"
-						country="c:PRM"
-						levels=4
+						country="c:NOV"
+						levels=2
 						region="STATE_PERM"
 					}
 					building={
 						type="building_financial_district"
 						country="c:NOV"
-						levels=2
+						levels=4
 						region="STATE_NOVGOROD"
 					}
 				}
@@ -615,7 +617,7 @@ BUILDINGS={
 					}
 					building={
 						type="building_manor_house"
-						country="c:PRM"
+						country="c:NOV"
 						levels=1
 						region="STATE_PERM"
 					}
@@ -627,7 +629,7 @@ BUILDINGS={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:PRM"
+						country="c:NOV"
 						levels=4
 					}
 				}
@@ -637,19 +639,25 @@ BUILDINGS={
 		}
 	}
 	s:STATE_VYATKA = {
-		region_state:VYA = {
+		region_state:NOV = {
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:VYA"
-						levels=4
+						country="c:NOV"
+						levels=2
 						region="STATE_VYATKA"
 					}
 					building={
+						type="building_financial_district"
+						country="c:NOV"
+						levels=2
+						region="STATE_NOVGOROD"
+					}
+					building={
 						type="building_logging_camp"
-						country="c:VYA"
+						country="c:NOV"
 						levels=1
 						region="STATE_VYATKA"
 					}
@@ -662,7 +670,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:VYA"
+						country="c:NOV"
 						levels=2
 						region="STATE_VYATKA"
 					}
@@ -674,7 +682,7 @@ BUILDINGS={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:VYA"
+						country="c:NOV"
 						levels=5
 					}
 				}
@@ -3891,6 +3899,17 @@ BUILDINGS={
 	s:STATE_VOJVODINA = {
 		region_state:BSG = {
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:BSG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" }
+			}
+			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
@@ -3921,7 +3940,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BSG"
-						levels=10
+						levels=20
 					}
 				}
 				reserves=1
@@ -3962,7 +3981,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BSG"
-						levels=10
+						levels=20
 					}
 				}
 				reserves=1

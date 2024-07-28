@@ -5,32 +5,12 @@
 			country = c:ALB
 			months = 24
 		}
-        	create_truce = {
-			country = c:SER
-			months = 24
-		}
 		create_truce = {
 			country = c:VEN
 			months = 24
 		}
 		create_truce = {
-			country = c:CRO
-			months = 24
-		}
-		create_truce = {
-			country = c:WAL
-			months = 24
-		}
-		create_truce = {
-			country = c:MOL
-			months = 24
-		}
-		create_truce = {
-			country = c:EGY
-			months = 24
-		}
-		create_truce = {
-			country = c:HUN
+			country = c:MCD
 			months = 24
 		}
 	}

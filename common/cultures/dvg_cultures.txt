@@ -6137,231 +6137,114 @@ romand={
 	}
 }
 
-sardinian ={
-	color= rgb{ 91 87 107 }
+# sardinian ={
+# 	color= rgb{ 91 87 107 }
 	
-	religion = catholic
-	traits = { italophone european_heritage }
+# 	religion = catholic
+# 	traits = { italophone european_heritage }
 	
-	obsessions = {
-		wine
-	}	
+# 	obsessions = {
+# 		wine
+# 	}	
 	
-	male_common_first_names={
-		Alessandro
-		Armando
-		Augusto
-		Carlo
-		Cesare
-		Corrado
-		Domenico
-		Enrico
-		Enzo
-		Fabio
-		Fabrizio
-		Ferdinando
-		Francesco
-		Gaetano
-		Giacomo
-		Giovanni
-		Giulio
-		Giuseppe
-		Guglielmo
-		Leopoldo
-		Lorenzo
-		Ludovico
-		Luca
-		Marcantonio
-		Marino
-		Mario
-		Matteo
-		Nicola
-		Orazio
-		Sigismondo
-		Tommasso
-		Vincenzo
-	}
-	female_common_first_names = {
-		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
-		Beatrice Bianca Barbara Benedetta
-		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
-		Enrichetta Eleonora Eulalia Elena Emanuela
-		Filippina Francesca
-		Giuseppina Giovanna Giulia Giustiniana
-		Isabella Ippolita
-		Luisa Luisa_Carlotta Lucrezia Laura
-		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
-		Sofia
-		Vittoria Violante
-	}	
-	noble_last_names = {
-		Barracco
-		Berlingieri
-		Caetani
-		Caracciolo
-		de_Liguori
-		de_Riseis
-		della_Rovere
-		Filangieri
-		Galluppi
-		Giannuzzi-Savelli
-		Lanfranci
-		Lucifero
-		Piccolomini
-		Pignatelli
-		Sanfelice
-		Winspeare
-		Zurlo
-	}
-	common_last_names={
-		Anfora
-		Barberini-Colonna
-		Bonaccorsi
-		Benci
-		Caraga
-		Cattaneo
-		Chigi
-		Clary
-		Diaz
-		Ferrari
-		Gironda
-		Gravina
-		Grifeo
-		Lanza
-		Lombardo
-		Lunardi
-		Molinelli
-		Orsini
-		Ottaviani
-		Pironti
-		Scammacca
-		Torlonia
-		Turrisi
-		Vernazza
-		Zunica
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
-
-navarragon={
-	color= hsv{ 0.12 0.56 0.86 }
-	religion = catholic
-	traits = { iberian_culture_group european_heritage }
-	male_common_first_names={
-		Agustin
-		Aitor
-		Alberto
-		Ander
-		Andoni
-		Andres
-		Antonio
-		Arturo
-		Carlos
-		Ceferino
-		Cosme
-		Cristobal
-		Damian
-		Endika
-		Francisco_Javier
-		Ignacio
-		Imanol
-		Inaki
-		Jesus
-		Jon_2
-		Joseba
-		Josu
-		Jose_Antonio
-		Jose_Maria
-		Juan
-		Julen
-		Koldobika
-		Luis
-		Manuel
-		Marino
-		Miguel
-		Paulino
-		Pedro
-		Rafael_2
-		Ramiro
-		Ramon
-		Sabino
-		Tomas
-		Vicente
-		Angel
-	}
-	female_common_first_names = {
-		Ana
-		Bizenta
-		Elbira
-		Ernestina
-		Luisa
-		Maria
-		Martina
-		Mikaela 
-		Oneka
-	}	
-	noble_last_names = {
-		Arana
-		Arellano
-		Imatz
-		Irujo
-		Iturmendi
-		de_Lardizabal
-		Leizaola
-		de_Olazabal
-		Pradera
-	}
-	common_last_names={
-		Aguirre
-		Ajuriaguerra
-		Aldecoa
-		Arana
-		Aranzadi
-		Arizmendiarrieta
-		Armendariz
-		Aznar
-		Balenciaga
-		Berasategui
-		Bilbao
-		Campion
-		Churruca
-		Echague
-		Echave
-		Echegaray
-		Echevarria
-		Elordi
-		Elorza
-		Gaztaneta
-		Ibarrola
-		Ibarruri
-		Irujo
-		Lazcano
-		Mendizabal
-		Moneo
-		Nardiz
-		Olano
-		Olave
-		Oyarzabal
-		Rotaeche
-		Uzcudun
-		Zamarraga
-		Zavala
-		Zumalacarregui
-		Zarate
-		de_Amesquita
-		de_Azpilicueta
-		de_Erauso
-		de_Renteria
-		de_Ubisztongo
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+# 	male_common_first_names={
+# 		Alessandro
+# 		Armando
+# 		Augusto
+# 		Carlo
+# 		Cesare
+# 		Corrado
+# 		Domenico
+# 		Enrico
+# 		Enzo
+# 		Fabio
+# 		Fabrizio
+# 		Ferdinando
+# 		Francesco
+# 		Gaetano
+# 		Giacomo
+# 		Giovanni
+# 		Giulio
+# 		Giuseppe
+# 		Guglielmo
+# 		Leopoldo
+# 		Lorenzo
+# 		Ludovico
+# 		Luca
+# 		Marcantonio
+# 		Marino
+# 		Mario
+# 		Matteo
+# 		Nicola
+# 		Orazio
+# 		Sigismondo
+# 		Tommasso
+# 		Vincenzo
+# 	}
+# 	female_common_first_names = {
+# 		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+# 		Beatrice Bianca Barbara Benedetta
+# 		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+# 		Enrichetta Eleonora Eulalia Elena Emanuela
+# 		Filippina Francesca
+# 		Giuseppina Giovanna Giulia Giustiniana
+# 		Isabella Ippolita
+# 		Luisa Luisa_Carlotta Lucrezia Laura
+# 		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+# 		Sofia
+# 		Vittoria Violante
+# 	}	
+# 	noble_last_names = {
+# 		Barracco
+# 		Berlingieri
+# 		Caetani
+# 		Caracciolo
+# 		de_Liguori
+# 		de_Riseis
+# 		della_Rovere
+# 		Filangieri
+# 		Galluppi
+# 		Giannuzzi-Savelli
+# 		Lanfranci
+# 		Lucifero
+# 		Piccolomini
+# 		Pignatelli
+# 		Sanfelice
+# 		Winspeare
+# 		Zurlo
+# 	}
+# 	common_last_names={
+# 		Anfora
+# 		Barberini-Colonna
+# 		Bonaccorsi
+# 		Benci
+# 		Caraga
+# 		Cattaneo
+# 		Chigi
+# 		Clary
+# 		Diaz
+# 		Ferrari
+# 		Gironda
+# 		Gravina
+# 		Grifeo
+# 		Lanza
+# 		Lombardo
+# 		Lunardi
+# 		Molinelli
+# 		Orsini
+# 		Ottaviani
+# 		Pironti
+# 		Scammacca
+# 		Torlonia
+# 		Turrisi
+# 		Vernazza
+# 		Zunica
+# 	}
+# 	graphics = european
+# 	ethnicities = {
+# 		1 = caucasian
+# 	}
+# }
 
 visayan={
 	color= hsv{ 0.18 0.56 0.86 }

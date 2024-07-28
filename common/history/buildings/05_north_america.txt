@@ -4392,7 +4392,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:GCO"
-						levels=defaultdict(<function <lambda> at 0x0000029322A289A0>, {})
+						levels = 1
 					}
 				}
 				reserves=1

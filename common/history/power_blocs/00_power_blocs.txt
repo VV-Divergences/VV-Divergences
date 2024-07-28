@@ -23,7 +23,7 @@
 	
 			founding_date = 1015.6.9 
 			identity = identity_trade_league
-			principle = principle_internal_trade_1
+			principle = principle_external_trade_1
 
 			member = c:SWI
 			member = c:GRB
@@ -36,6 +36,7 @@
 			member = c:BEG
 			member = c:MUN
 			member = c:LIP
+			member = c:HEK
 		}
 		power_bloc = {
 			
@@ -51,6 +52,7 @@
 			founding_date = 1015.6.9 
 			identity = identity_military_treaty_organization
 			principle = principle_aggressive_coordination_1
+			principle = principle_market_unification_1
 
 			member = c:THU
 			member = c:SME
@@ -79,12 +81,14 @@
 			founding_date = 1015.6.9 
 			identity = identity_sovereign_empire
 			principle = principle_vassalization_1
+			principle = principle_colonial_offices_2
 
 			member = c:HAN
 			member = c:BRA
 			member = c:OLD
 			member = c:BRE
 			member = c:OSN
+			member = c:YLO
 			
 		}
 		power_bloc = {
@@ -100,13 +104,11 @@
 	
 			founding_date = 1015.6.9 
 			identity = identity_military_treaty_organization
-			principle = principle_aggressive_coordination_1
+			principle = principle_defensive_cooperation_3
 
 			member = c:VEN
 			member = c:PAP
 			member = c:PRO
-			member = c:BRE
-			member = c:OSN
 			
 		}
 		power_bloc = {
@@ -125,6 +127,7 @@
 			principle = principle_ideological_truth_1
 
 			member = c:SAV
+			member = c:ZSA
 
 			
 		}

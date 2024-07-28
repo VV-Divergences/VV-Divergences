@@ -39,9 +39,10 @@ dvg_burgundy.1 = {
 		c:DUA = {	save_scope_as = scope_DUA}
 
 		
-		c:BRG = {ruler = {
-			save_scope_as = statue_ruler
-		}
+		c:BRG = {
+			ruler = {
+				save_scope_as = statue_ruler #Error: save_scope_as effect [ Scoped object is not valid. Type: Character ---  (4294967295) ]Script location: file: events/dvg_burgundy.txt line: 43
+			}
 		}
 		
 		

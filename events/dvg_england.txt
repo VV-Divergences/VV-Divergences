@@ -277,7 +277,7 @@ dvg_england.11 = {
 			trigger_event = { id = dvg_england.16 popup = yes } 
 			create_diplomatic_pact = {
 				country = c:BEO
-				type = customs_union
+				type = defensive_pact
 			}
 		}
 		ai_chance = {
@@ -542,7 +542,7 @@ dvg_england.16 = {  #Anglo-Customs
 		c:ENG = {
 			create_diplomatic_pact = {
 				country = c:BEO
-				type = customs_union
+				type = defensive_pact
 			}
 		
 		

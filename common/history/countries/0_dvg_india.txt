@@ -410,7 +410,7 @@
 		activate_law = law_type:law_debt_slavery
 		activate_law = law_type:law_religious_autonomy
 		activate_law = law_type:law_homesteading
-		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_professional_army
 		
 		set_ruling_interest_groups = {
 			ig_landowners

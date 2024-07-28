@@ -34,14 +34,10 @@ dvg_ari_unification.2 = {
 				country_has_primary_culture = cu:central_italian
 				country_has_primary_culture = cu:north_italian
 				country_has_primary_culture = cu:south_italian
-				country_has_primary_culture = cu:maltese
 			}
 			OR = {
 				is_subject_of = ROOT
-				has_diplomatic_pact = {
-					who = ROOT
-					type = customs_union
-				}
+				is_in_same_power_bloc = root
 			}
 			OR = {
 				is_subject = no
@@ -61,14 +57,10 @@ dvg_ari_unification.2 = {
 					country_has_primary_culture = cu:central_italian
 					country_has_primary_culture = cu:north_italian
 					country_has_primary_culture = cu:south_italian
-					country_has_primary_culture = cu:maltese
 				}
 				OR = {
 					is_subject_of = ROOT
-					has_diplomatic_pact = {
-						who = ROOT
-						type = customs_union
-					}
+					is_in_same_power_bloc = root
 				}
 				OR = {
 					is_subject = no

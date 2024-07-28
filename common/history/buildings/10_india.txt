@@ -923,12 +923,25 @@ BUILDINGS={
                     building={
                         type="building_manor_house"
                         country="c:BAS"
-                        levels=1
+                        levels=7
                         region="STATE_CIRCARS"
                     }
                 }
                 reserves=1
                 activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" }
+            }
+            create_building={
+                building="building_silk_plantation"
+                add_ownership={
+                    building={
+                        type="building_manor_house"
+                        country="c:BAS"
+                        levels=12
+                        region="STATE_CIRCARS"
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "default_building_silk_plantation" "pm_road_carts" }
             }
     }
 		region_state:HYD = {
@@ -1568,6 +1581,19 @@ BUILDINGS={
                 reserves=1
                 activate_production_methods={ "pm_wooden_buildings" }
             }
+            create_building={
+                building="building_sugar_plantation"
+                add_ownership={
+                    building={
+                        type="building_manor_house"
+                        country="c:DUA"
+                        levels=4
+                        region="STATE_CIRCARS"
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" }
+            }
 			create_building={
                 building="building_fishing_wharf"
                 add_ownership={
@@ -1889,7 +1915,7 @@ BUILDINGS={
                     }
                 }
                 reserves=1
-                activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" }
+                activate_production_methods={ "default_building_silk_plantation" "pm_road_carts" }
             }
     }
 		region_state:BGL = {

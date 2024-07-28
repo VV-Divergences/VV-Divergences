@@ -363,10 +363,10 @@ YUG = { #Yugoslavia
 	
 	country_type = recognized
 
-	tier = empire
+	tier = kingdom
 	
 	capital = STATE_NORTHERN_SERBIA 
-	cultures = { serb croat slovene bosniak bulgarian }
+	cultures = { serb croat slovene bosniak }
 }
 
 CRO = { #Illyria
@@ -374,7 +374,7 @@ CRO = { #Illyria
 	
 	country_type = recognized
 
-	tier = kingdom
+	tier = principality
 	
 	cultures = { croat }
 	capital = STATE_CROATIA
@@ -392,7 +392,7 @@ MON = { #Montenegro
 	is_named_from_capital = yes
 }
 
-TUR = { # Rum Empire
+TUR = { # Ottomans
 	color = { 50  75  40 }
 	
 	country_type = recognized
@@ -400,7 +400,7 @@ TUR = { # Rum Empire
 	tier = empire
 	
 	cultures = { turkish }
-	capital = STATE_KONYA
+	capital = STATE_WESTERN_THRACE
 }
 
 ERE = { # East Rum
@@ -425,14 +425,27 @@ WRE = { # West Rum
 	capital = STATE_WESTERN_THRACE
 }
 
-RUM = { # Rumelia
-	color = { 43 134 76 }
+BYZ = {
+	color = { 147  82  173 }
+	
+	valid_as_home_country_for_separatists = { always = no } # root = country to separate from
 	
 	country_type = recognized
 
-	tier = kingdom
+	tier = hegemony
 	
-	cultures = { turkish }
+	cultures = { greek }	
+	capital = STATE_WESTERN_THRACE
+}
+
+RUM = { # Rumelia
+	color = { 130 35 60 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { serb croat slovene bosniak bulgarian greek }
 	capital = STATE_WESTERN_THRACE
 }
 
@@ -1086,7 +1099,7 @@ ITA = { #Italy
 
 	tier = empire
 	
-	cultures = { north_italian south_italian central_italian venetian sardinian maltese}
+	cultures = { north_italian south_italian central_italian venetian }
 	capital = STATE_LAZIO
 }
 
@@ -1335,7 +1348,7 @@ SAR = { #Sardinia
 
 	tier = principality
 	
-	cultures = { sardinian }
+	cultures = { south_italian }
 	capital = STATE_SARDINIA
 	is_named_from_capital = yes
 }
@@ -1690,14 +1703,15 @@ TRS = { #Transylvania
 	capital = STATE_SOUTHERN_TRANSYLVANIA
 }
 
-BOS = { #Bosnia
-	color = { 240  167  130 }
+BOS = { #Bosnia/Illyria
+	color = { 90 155 50 }
 	
 	country_type = recognized
 
 	tier = principality
 	
-	cultures = { bosniak }
+	cultures = { croat }
+	religion = orthodox
 	capital = STATE_BOSNIA	
 	is_named_from_capital = yes
 }
@@ -1765,7 +1779,7 @@ MLT = { #Malta
 	
 	tier = city_state
 	
-	cultures = { maltese }
+	cultures = { south_italian }
 	
 	capital = STATE_MALTA
 }
@@ -1803,15 +1817,15 @@ SWZ = { #Switzerland Confederation
 	capital = STATE_EAST_SWITZERLAND
 }
 
-BSG = { #Begluk Bačka
+BSG = { #Pannonia
 	color = { 72 160 101 }
 	
 	country_type = recognized
 
-	tier = kingdom
+	tier = principality
 	
-	cultures = { bosniak }
-	capital = STATE_NORTHERN_SERBIA
+	cultures = { serb }
+	capital = STATE_VOJVODINA
 }
 
 TAR = { #Kipchak Khanate
