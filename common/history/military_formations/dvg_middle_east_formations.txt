@@ -1,0 +1,132 @@
+MILITARY_FORMATIONS = { # 
+    c:TUR = { # Ottomans
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_anatolia
+			name = "Kraliyet Yeniçeri Kolordusu"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WESTERN_THRACE
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_WESTERN_THRACE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_WESTERN_THRACE
+				count = 5
+			}
+			save_scope_as = dvg_tur_main_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_anatolia
+			name = "Anadolu Alayı"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_EASTERN_THRACE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_TRABZON
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_HUDAVENDIGAR
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KONYA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ANKARA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_AYDIN
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ADANA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_DIYARBAKIR
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ERZURUM
+				count = 5
+			}
+			save_scope_as = dvg_tur_second_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_arabic
+			name = "Suriye Alayı"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ALEPPO
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_LEBANON
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_PALESTINE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_TRANSJORDAN
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_DEIR_EZ_ZOR
+				count = 5
+			}
+			save_scope_as = dvg_tur_third_army
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_anatolia
+			name = "Osmanlı Kraliyet Donanması"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_WESTERN_THRACE
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_AYDIN
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_HUDAVENDIGAR
+				count = 10
+			}
+			save_scope_as = dvg_main_third_navy
+		}
+    }
+}

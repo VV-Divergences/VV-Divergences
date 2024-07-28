@@ -3899,6 +3899,17 @@ BUILDINGS={
 	s:STATE_VOJVODINA = {
 		region_state:BSG = {
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:BSG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" }
+			}
+			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
@@ -3929,7 +3940,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BSG"
-						levels=10
+						levels=20
 					}
 				}
 				reserves=1
@@ -3970,7 +3981,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BSG"
-						levels=10
+						levels=20
 					}
 				}
 				reserves=1
