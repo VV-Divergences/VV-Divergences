@@ -108,34 +108,7 @@
 				size = 32203
 			}
 		}
-		region_state:BSG = {
-			create_pop = {
-				culture = hungarian
-				size = 342339
-			}
-			create_pop = {
-				culture = hungarian
-				size = 320325
-				religion = protestant
-			}
-			create_pop = {
-				culture = hungarian
-				size = 13002
-				religion = sunni
-			}
-			create_pop = {
-				culture = turkish
-				size = 71306
-			}
-			create_pop = {
-				culture = slovak
-				size = 32203
-			}
-			create_pop = {
-				culture = bosniak
-				size = 29903
-			}
-		}
+		
 		region_state:TRS = {
 			create_pop = {
 				culture = hungarian
@@ -427,33 +400,6 @@
 		}
 	}
 	s:STATE_BEKES = {
-		region_state:BSG = {
-			create_pop = {
-				culture = hungarian
-				size = 95993
-			}
-			create_pop = {
-				culture = hungarian
-				size = 126477
-				religion = protestant
-			}
-			create_pop = {
-				culture = romanian
-				size = 380079
-			}
-			create_pop = {
-				culture = south_german
-				size = 27890
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 17512
-			}
-			create_pop = {
-				culture = bosniak
-				size = 1297
-			}
-		}
 		region_state:TRS = {
 			create_pop = {
 				culture = hungarian

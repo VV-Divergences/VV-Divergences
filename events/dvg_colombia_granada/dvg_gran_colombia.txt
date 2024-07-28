@@ -946,7 +946,7 @@ dvg_gran_colombia.18 = {
 					set_variable = warlord_state
 				}
 			}
-			else_if = {
+			if = {
 				limit = { exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO }
 				create_country = {
 					tag = LUS
@@ -1600,7 +1600,7 @@ dvg_gran_colombia.26 = {
 		name = dvg_gran_colombia.26.a
 		default_option = yes
 		
-		activate_law = law_type = law:law_census_voting
+		activate_law = law:law_census_voting
 		
 		ai_chance = {
 			base = 1
