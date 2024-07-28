@@ -174,11 +174,15 @@ genoa.5 = {
             }
             activate_law = law_type:law_oligarchy
         }
-        c:ARN = {
-            remove_diplomatic_pact = {
-                country = c:GEN
-                type = customs_union
-            }
+        c:ARN = {	#not possible to remove from power bloc...
+            # remove_diplomatic_pact = {
+            #     country = c:GEN
+            #     type = customs_union
+            # }	
+			change_relations = {	#...so we tank cohesion instead
+				country = c:GEN
+				value = -100
+			}
 			trigger_event = {
                 id = genoa.7
                 days = 7
@@ -336,11 +340,17 @@ genoa.8 = {
 	option = {
 		name = genoa.8.a
 		default_option = yes 
-		c:DUA = {
-            remove_diplomatic_pact = { 
-                country = c:SAV
-                type = customs_union
-            }
+		# c:DUA = {
+        #     remove_diplomatic_pact = { #can't kick from powerbloc...
+        #         country = c:SAV
+        #         type = customs_union
+        #     }
+		# }
+		c:SAV = {	#so we do this instead to tank cohesion
+			change_relations = {
+				country = c:BRG
+				value = -100
+			}
 		}
 	}
 

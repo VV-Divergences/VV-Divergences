@@ -386,10 +386,7 @@ ai_strategy_unify_russia = {
 						OR = { 
 							is_supporting_unification_candidate = { who = root country_formation = RUS }
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+							is_in_same_power_bloc = root		
 						}
 					}
 				}
@@ -1367,10 +1364,7 @@ ai_strategy_unify_ari = {
 						}
 						OR = { 
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+							is_in_same_power_bloc = root							
 						}
 					}
 				}
@@ -1390,10 +1384,7 @@ ai_strategy_unify_ari = {
 						}
 						NOR = {
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}					
+							is_in_same_power_bloc = root				
 						}	
 					}
 				}
@@ -1618,10 +1609,7 @@ ai_strategy_unify_north_germany = {
 						NOT = { is_unification_candidate = GER }
 						OR = { 
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+							is_in_same_power_bloc = root							
 						}
 					}
 				}
@@ -1639,10 +1627,7 @@ ai_strategy_unify_north_germany = {
 						NOT = { is_unification_candidate = GER }
 						NOR = { 
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}
+							is_in_same_power_bloc = root
 						}
 					}
 				}
@@ -1885,10 +1870,7 @@ ai_strategy_unify_britain = {
 						OR = { 
 							is_supporting_unification_candidate = { who = root country_formation = GBR }
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+							is_in_same_power_bloc = root					
 						}
 					}
 				}
@@ -1910,10 +1892,7 @@ ai_strategy_unify_britain = {
 						NOR = { 
 							is_supporting_unification_candidate = { who = root country_formation = GBR }
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}
+							is_in_same_power_bloc = root
 						}
 					}
 				}

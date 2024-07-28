@@ -29,10 +29,7 @@ dvg_imperial_authority.1 = {
 					country_has_primary_culture = cu:south_german
 					country_has_primary_culture = cu:rheinish
 				}
-				has_diplomatic_pact = {
-					who = scope:target_country
-					type = customs_union
-				}
+				is_in_same_power_bloc = scope:initiator
 			}
 
 			change_relations = {
@@ -53,27 +50,14 @@ dvg_imperial_authority.1 = {
 					country_has_primary_culture = cu:south_german
 					country_has_primary_culture = cu:rheinish
 				}
-				has_diplomatic_pact = {
-					who = scope:target_country
-					type = customs_union
-				}
+				is_in_same_power_bloc = scope:target_country
 			}
 
-			remove_diplomatic_pact = {
-				country = scope:target_country
-				type = customs_union
-			}
+			join_power_bloc = scope:initiator
 
 			change_relations = {
 				country = scope:target_country
 				value = -50
-			}
-
-			c:BOH = {
-				create_diplomatic_pact = {
-					country = PREV
-					type = customs_union
-				}
 			}
 		}
 	}
