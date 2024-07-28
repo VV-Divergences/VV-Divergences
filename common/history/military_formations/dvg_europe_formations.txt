@@ -966,7 +966,36 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		}
     }
     c:SAV = { # Savoy
-        
+        create_military_formation = {
+			type = army
+			hq_region = sr:region_italy
+			name = "Reggimento del Principe di Savoia"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SAVOY
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PIEDMONT
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_PIEDMONT
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_PIEDMONT
+				count = 10
+			}
+			save_scope_as = dvg_sav_main_army
+		}
     }
     c:SCA = { # Scandinavia
 		create_military_formation = {
