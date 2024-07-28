@@ -988,7 +988,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_poland
-			name = "Armia Ojczyzny"
+			name = "Pierwszy korpus piechoty"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -1003,23 +1003,50 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			}
 			
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WEST_GALICIA
-				count = 10
-			}
-			
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_POSEN
-				count = 5
-			}
-
-			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_MAZOVIA
 				count = 5
 			}
 
+			save_scope_as = dvg_pol_main_army
+		}	
+		create_character = {
+			is_general = yes
+			historical = yes
+			culture = cu:polish
+			first_name = Filip
+			last_name = Pudzian
+			age = 62
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_republican_leader
+			hq = region_poland
+			commander_rank = commander_rank_2
+			traits = {
+				persistent
+				inspirational_orator
+				forest_commander
+			}
+			
+			save_scope_as = filipus_gen
+		}
+		scope:filipus_gen = {
+			transfer_to_formation = scope:dvg_pol_main_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_poland
+			name = "Pierwszy korpus piechoty konnej"
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_GALICIA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_POSEN
+				count = 5
+			}
+			
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_MAZOVIA
@@ -1037,29 +1064,29 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 				state_region = s:STATE_VOLHYNIA
 				count = 5
 			}
-			save_scope_as = dvg_pol_main_army
+			save_scope_as = dvg_pol_cav_army
 		}	
 		create_character = {
 			is_general = yes
 			historical = yes
 			culture = cu:polish
-			first_name = Filip
-			last_name = Pudzian
-			age = 62
-			interest_group = ig_petty_bourgeoisie
-			ideology = ideology_republican_leader
+			first_name = Michał
+			last_name = Rydz-Śmigły
+			age = 46
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist
 			hq = region_poland
-			commander_rank = commander_rank_2
+			commander_rank = commander_rank_1
 			traits = {
-				persistent
-				inspirational_orator
-				trench_rat
+				reckless
+				innovative
+				plains_commander
 			}
 			
-			save_scope_as = filipus_gen
+			save_scope_as = michal_gen
 		}
-		scope:filipus_gen = {
-			transfer_to_formation = scope:dvg_pol_main_army
+		scope:michal_gen = {
+			transfer_to_formation = scope:dvg_cav_army
 		}
 	}
     c:PRO = { # Provence
