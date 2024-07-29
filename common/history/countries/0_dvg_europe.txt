@@ -1392,11 +1392,9 @@
 
 		add_technology_researched = lathe
 		add_technology_researched = napoleonic_warfare
-		add_technology_researched = paddle_steamer
 		add_technology_researched = empiricism
 		add_technology_researched = mass_communication
 		add_technology_researched = stock_exchange
-		add_technology_researched = banking
 
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_censorship
@@ -1476,7 +1474,12 @@
 	}
 
 	c:TUR = { #Ottomans
-		effect_starting_technology_tier_2_tech = yes
+		effect_starting_technology_tier_3_tech = yes
+
+		add_technology_researched = lathe
+		add_technology_researched = empiricism
+		add_technology_researched = mass_communication
+		add_technology_researched = stock_exchange
 		
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_autocracy 

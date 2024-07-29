@@ -158,7 +158,7 @@ RUM = { #Rumelia
 		STATE_SLOVENIA
 	}
 
-	required_states_fraction = 0.65
+	required_states_fraction = 0.75
 	
 	ai_will_do = { always = yes }
 }
@@ -175,9 +175,11 @@ BYZ = {
 		STATE_HUDAVENDIGAR
 		STATE_AYDIN
 		STATE_ALBANIA
+		STATE_CRETE
+		STATE_IONIAN_ISLANDS
 	}
 
-	required_states_fraction = 0.8
+	required_states_fraction = 0.9
 	
 	ai_will_do = { always = yes }
 
