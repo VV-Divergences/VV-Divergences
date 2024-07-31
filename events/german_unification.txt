@@ -65,17 +65,7 @@ german_unification.1 = {
 				limit = {
 					is_ai = yes			
 					OR = {
-						has_diplomatic_pact = {
-							who = ROOT
-							type = customs_union
-						}
-						AND = {
-							country_has_primary_culture = cu:south_german
-							has_diplomatic_pact = {
-								who = c:BRG #SGF The Partition Solution - Burgundy
-								type = customs_union
-							}
-						}
+						is_in_same_power_bloc = ROOT
 						is_supporting_unification_candidate = { who = root country_formation = GER }
 					}
 				}			

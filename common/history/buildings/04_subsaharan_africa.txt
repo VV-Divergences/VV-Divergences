@@ -967,19 +967,6 @@ BUILDINGS = {
 				}
 			}
 			create_building = {
-				building = "building_barracks"
-				add_ownership = {
-					country = {
-						country = "c:SPA"
-						levels = 5
-					}
-				}
-				reserves = 1
-				activate_production_methods = {
-					"pm_general_training"
-				}
-			}
-			create_building = {
 				building = "building_port"
 				add_ownership = {
 					country = {

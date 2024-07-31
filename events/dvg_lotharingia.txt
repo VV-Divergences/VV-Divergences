@@ -1387,13 +1387,23 @@ dvg_lotharingia.11 = {
 			}
 
 		c:BRG = {
-			create_diplomatic_pact = {
-				country = c:NEA
-				type = customs_union
-			}
+			# create_diplomatic_pact = {
+			# 	country = c:NEA
+			# 	type = customs_union
+			# }
 			create_diplomatic_pact = {
 				country = c:NEA
 				type = defensive_pact
+			}
+		}
+		if = {
+			limit = {
+				c:NEA = {
+					is_ai = yes
+				}
+			}
+			c:NEA = {
+				join_power_bloc = c:BRG
 			}
 		}
 		

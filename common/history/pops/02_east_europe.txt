@@ -8,7 +8,7 @@
 			}
 			create_pop = {
 				culture = estonian
-				size = 638241
+				size = 538241
 			}
 			create_pop = {
 				culture = latvian
@@ -40,7 +40,7 @@
 			}
 			create_pop = {
 				culture = latvian
-				size = 381874
+				size = 481874
 			}
 			create_pop = {
 				culture = lithuanian
@@ -108,34 +108,7 @@
 				size = 32203
 			}
 		}
-		region_state:BSG = {
-			create_pop = {
-				culture = hungarian
-				size = 342339
-			}
-			create_pop = {
-				culture = hungarian
-				size = 320325
-				religion = protestant
-			}
-			create_pop = {
-				culture = hungarian
-				size = 13002
-				religion = sunni
-			}
-			create_pop = {
-				culture = turkish
-				size = 71306
-			}
-			create_pop = {
-				culture = slovak
-				size = 32203
-			}
-			create_pop = {
-				culture = bosniak
-				size = 29903
-			}
-		}
+		
 		region_state:TRS = {
 			create_pop = {
 				culture = hungarian
@@ -427,33 +400,6 @@
 		}
 	}
 	s:STATE_BEKES = {
-		region_state:BSG = {
-			create_pop = {
-				culture = hungarian
-				size = 95993
-			}
-			create_pop = {
-				culture = hungarian
-				size = 126477
-				religion = protestant
-			}
-			create_pop = {
-				culture = romanian
-				size = 380079
-			}
-			create_pop = {
-				culture = south_german
-				size = 27890
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 17512
-			}
-			create_pop = {
-				culture = bosniak
-				size = 1297
-			}
-		}
 		region_state:TRS = {
 			create_pop = {
 				culture = hungarian
@@ -1291,7 +1237,7 @@
 		region_state:PSK = {
 			create_pop = {
 				culture = north_russian
-				size = 457000
+				size = 307000
 				religion = orthodox
 			}
 			create_pop = {
@@ -1329,20 +1275,16 @@
 				religion = protestant
 			}
 		}
-		region_state:SCA = {
+		region_state:NOV = {
 			create_pop = {
 				culture = north_russian
-				size = 31824
+				size = 151824
 				religion = orthodox
 			}
 			create_pop = {
 				culture = scandinavian
-				size = 15912
-			}
-			create_pop = {
-				culture = finnish
-				size = 34476
-				religion = orthodox
+				size = 25912
+				religion = protestant
 			}
 			create_pop = {
 				culture = finnish
@@ -1412,7 +1354,7 @@
 		}
 	}
 	s:STATE_GALICH = {
-		region_state:BLO = {
+		region_state:NOV = {
 			create_pop = {
 				culture = north_russian
 				size = 964668
@@ -1425,8 +1367,7 @@
 				culture = ashkenazi
 				size = 16000
 			}
-		}
-		region_state:UGG = {
+	
 			create_pop = {
 				culture = north_russian
 				size = 683800
@@ -1487,8 +1428,6 @@
 				size = 56140
 				religion = orthodox
 			}
-		}
-		region_state:PRM = {
 			create_pop = {
 				culture = north_russian
 				size = 243078
@@ -1510,7 +1449,7 @@
 		}
 	}
 	s:STATE_VYATKA = {
-		region_state:VYA = {
+		region_state:NOV = {
 			create_pop = {
 				culture = north_russian
 				size = 971208

@@ -1395,8 +1395,8 @@ dvg_hungary.31 = {
 		name = dvg_hungary.31.a
 		default_option = yes
 		
-		### TODO: MAKE SOME CHANGES
-		set_global_variable = dvg_hungarian_crisis_pommerania_deal_success
+		### TODO: MAKE SOME CHANGES nice fucking todo
+		#set_global_variable = dvg_hungarian_crisis_pommerania_deal_success
 
 		### If deal success make special conference
 		every_country = {
@@ -1467,7 +1467,7 @@ dvg_hungary.32 = {
 	option = {
 		name = dvg_hungary.32.b
 
-		set_global_variable = dvg_hungarian_crisis_austria_deal_success
+		#set_global_variable = dvg_hungarian_crisis_austria_deal_success
 
 		#dvg_hungary_crisis_hun_power_loss = yes
 		#dvg_hungary_crisis_hun_power_loss = yes
@@ -1728,7 +1728,7 @@ dvg_hungary.38 = {
 	option = {
 		name = dvg_hungary.38.b
 
-		set_global_variable = dvg_mecklenburg_compromised
+		#set_global_variable = dvg_mecklenburg_compromised
 
 		ai_chance = {
 			base = 20

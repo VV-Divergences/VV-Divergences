@@ -108,9 +108,8 @@ dvg_diplomatic_events.1 = {
 			
 			modifier = {
 				trigger = {
-					has_diplomatic_pact = {
-						type = customs_union
-						who = scope:target_country
+					scope:target_country = {
+						is_in_same_power_bloc = root
 					}
 				}
 				add = 100
@@ -184,9 +183,8 @@ dvg_diplomatic_events.1 = {
 			
 			modifier = {
 				trigger = {
-					has_diplomatic_pact = {
-						type = customs_union
-						who = scope:initiator
+					scope:target_country = {
+						is_in_same_power_bloc = root
 					}
 				}
 				add = 100

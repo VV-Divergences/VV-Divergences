@@ -1,4 +1,342 @@
-﻿gov_provisional_government = {
+﻿gov_francocracia = {
+	transfer_of_power = hereditary
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PERPETUAL_DICTATOR"
+	female_ruler = "RULER_TITLE_PERPETUAL_DICTATOR"
+
+	male_heir = "RULER_TITLE_SECRETARY"
+	female_heir = "RULER_TITLE_SECRETARY"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		country_has_voting_franchise = no
+		has_law = law_type:law_isolationism
+		has_variable = francocracia_paraguay_var
+		has_dlc_feature = rp1_content
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_francocracia_presidential = {
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PERPETUAL_DICTATOR"
+	female_ruler = "RULER_TITLE_PERPETUAL_DICTATOR"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		country_has_voting_franchise = no
+		has_law = law_type:law_isolationism
+		has_variable = patino_paraguay_var
+		has_dlc_feature = rp1_content
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_peru_bolivia_confederal_state_bolivia = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_SUPREME_PROTECTOR"
+	female_ruler = "RULER_TITLE_SUPREME_PROTECTOR"
+	
+	possible = {
+		country_has_voting_franchise = yes
+		has_journal_entry = je_peru_bolivia
+		is_country_type = colonial
+		is_subject = no
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+}
+
+gov_peru_bolivia_confederal_state_bolivia_dictatorship = {
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_SUPREME_PROTECTOR"
+	female_ruler = "RULER_TITLE_SUPREME_PROTECTOR"
+	
+	possible = {
+		OR = {
+			has_law = law_type:law_autocracy 
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_technocracy 
+		}
+		has_journal_entry = je_peru_bolivia
+		is_country_type = colonial
+		is_subject = no
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_peru_bolivia_confederal_state = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		country_has_voting_franchise = yes
+		has_journal_entry = je_peru_bolivia
+		is_country_type = colonial
+		is_subject = yes
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+}
+
+gov_peru_bolivia_confederal_state_dictatorship = {
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		OR = {
+			has_law = law_type:law_autocracy 
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_technocracy 
+		}
+		has_journal_entry = je_peru_bolivia
+		is_country_type = colonial
+		is_subject = yes
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_peru_bolivia_confederal_autonomy = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_SUPREME_CHIEF"
+	female_ruler = "RULER_TITLE_SUPREME_CHIEF"
+	
+	possible = {
+		country_has_voting_franchise = yes
+		has_journal_entry = je_peru_bolivia
+		is_country_type = unrecognized
+		is_subject = yes
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+}
+
+gov_peru_bolivia_confederal_autonomy_dictatorship = {
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_SUPREME_CHIEF"
+	female_ruler = "RULER_TITLE_SUPREME_CHIEF"
+	
+	possible = {
+		OR = {
+			has_law = law_type:law_autocracy 
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_technocracy 
+		}
+		has_journal_entry = je_peru_bolivia
+		is_country_type = unrecognized
+		is_subject = yes
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_brazil_oligarchic_republic_presidential = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		country_has_primary_culture = cu:brazilian
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_landed_voting
+		OR = {
+			has_law = law_type:law_tenant_farmers
+			has_law = law_type:law_serfdom
+		}
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+}
+
+gov_french_2nd_republic_presidential = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		country_has_primary_culture = cu:french
+		has_variable = fra_republic_counter
+		var:fra_republic_counter ?= 2
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+
+gov_french_2nd_republic_presidential_dictator = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		country_has_primary_culture = cu:french
+		country_has_voting_franchise = no
+		has_variable = fra_republic_counter
+		var:fra_republic_counter ?= 2
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_french_3rd_republic_presidential = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		country_has_primary_culture = cu:french
+		has_variable = fra_republic_counter
+		var:fra_republic_counter ?= 3
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+
+gov_french_3rd_republic_presidential_dictator = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		country_has_primary_culture = cu:french
+		country_has_voting_franchise = no
+		has_variable = fra_republic_counter
+		var:fra_republic_counter ?= 3
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_french_4th_republic_presidential = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		country_has_primary_culture = cu:french
+		has_variable = fra_republic_counter
+		var:fra_republic_counter ?= 4
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+ 	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+
+gov_french_4th_republic_presidential_dictator = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		has_law = law_type:law_presidential_republic
+		country_has_primary_culture = cu:french
+		country_has_voting_franchise = no
+		has_variable = fra_republic_counter
+		var:fra_republic_counter ?= 4
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+gov_provisional_government = {
 	transfer_of_power = dictatorial
 
 	male_ruler = "RULER_TITLE_PRESIDENT"
@@ -13,8 +351,8 @@
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_technate_presidential = {
@@ -32,8 +370,8 @@ gov_technate_presidential = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_banana_republic = {
@@ -59,8 +397,8 @@ gov_banana_republic = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_bhutanese_dual_system_temporal = {
@@ -81,8 +419,8 @@ gov_bhutanese_dual_system_temporal = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_free_city = {
@@ -110,8 +448,8 @@ gov_free_city = {
 		change_to_presidential_elective = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_presidential_elective = yes
-    }
+		post_change_to_presidential_elective = yes
+	}
 }
 
 gov_warlord_state = {
@@ -137,8 +475,8 @@ gov_warlord_state = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_fascist_state = {
@@ -164,8 +502,8 @@ gov_fascist_state = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_chartered_company = {
@@ -183,8 +521,8 @@ gov_chartered_company = {
 		change_to_presidential_elective = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_presidential_elective = yes
-    }
+		post_change_to_presidential_elective = yes
+	}
 }
 
 gov_colonial_administration = {
@@ -218,6 +556,26 @@ gov_colonial_administration = {
 				}
 				country_is_in_europe = no
 			}
+			AND = {
+				has_variable = senegal_subject_var
+				is_subject = yes
+			}
+			AND = {
+				has_variable = niger_subject_var
+				is_subject = yes
+			}
+			AND = {
+				has_variable = ethiopia_subject_var
+				is_subject = yes
+			}
+			AND = {
+				has_variable = zanj_subject_var
+				is_subject = yes
+			}
+			AND = {
+				has_variable = congo_subject_var
+				is_subject = yes
+			}
 		}
 	}
 
@@ -225,8 +583,8 @@ gov_colonial_administration = {
 		change_to_presidential_elective = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_presidential_elective = yes
-    }
+		post_change_to_presidential_elective = yes
+	}
 }
 
 gov_crown_colony = {
@@ -257,8 +615,8 @@ gov_crown_colony = {
 		change_to_presidential_elective = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_presidential_elective = yes
-    }
+		post_change_to_presidential_elective = yes
+	}
 }
 
 gov_military_dictatorship = {
@@ -280,8 +638,8 @@ gov_military_dictatorship = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_presidential_dictatorship = {
@@ -303,8 +661,8 @@ gov_presidential_dictatorship = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_junta = {
@@ -320,14 +678,17 @@ gov_junta = {
 			has_law = law_type:law_mass_conscription
 			has_law = law_type:law_professional_army
 		}
+		ig:ig_armed_forces = {
+			is_in_government = yes
+		}
 	}
 
 	on_government_type_change = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_presidential_oligarchy = {
@@ -348,8 +709,8 @@ gov_presidential_oligarchy = {
 		change_to_dictatorial = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_dictatorial = yes
-    }
+		post_change_to_dictatorial = yes
+	}
 }
 
 gov_presidential_democracy = {
@@ -372,8 +733,8 @@ gov_presidential_democracy = {
 		change_to_presidential_elective = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_presidential_elective = yes
-    }
+		post_change_to_presidential_elective = yes
+	}
 }
 
 gov_presidential_single_party_state = {
@@ -391,6 +752,6 @@ gov_presidential_single_party_state = {
 		change_to_presidential_elective = yes
 	}
 	on_post_government_type_change = {
-        post_change_to_presidential_elective = yes
-    }
+		post_change_to_presidential_elective = yes
+	}
 }

@@ -115,6 +115,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_isolationism
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -122,11 +123,7 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
-		add_modifier = {
-			name = dvg_guli_conscription
-			days = 7300
-			is_decaying = yes
-		}
+
 	}
 
 	c:NGL = { #Nungali Sultanate
@@ -141,11 +138,7 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
-		add_modifier = {
-			name = dvg_guli_conscription
-			days = 7300
-			is_decaying = yes
-		}
+		
 	}
 	
 	c:GWG = { #Gunwinyguan
@@ -160,11 +153,7 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
-		add_modifier = {
-			name = dvg_guli_conscription
-			days = 7300
-			is_decaying = yes
-		}
+		
 	}
 
 	c:GRJ = { #Gurindji
@@ -223,27 +212,24 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_buddhist_moralist
 		}
-		add_modifier = {
-			name = dvg_guli_conscription
-			days = 7300
-			is_decaying = yes
-		}
+		
 	}
 	
-	#c:KAU = { #Kauri
-	#	effect_starting_technology_tier_7_tech = yes
-	#	effect_native_conscription_10 = yes
-	#	effect_starting_politics_traditional = yes
-	#}
+	c:KAU = { #Kauri
+		effect_starting_politics_traditional = yes
+
+		effect_starting_technology_tier_7_tech = yes
+		effect_native_conscription_10 = yes
+		effect_starting_politics_traditional = yes
+	}
 	
 	c:QQQ = { #Zhongtu
 		effect_starting_technology_tier_3_tech = yes
 		add_technology_researched = sericulture
 		
+		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_cultural_exclusion
-		activate_law = law_type:law_interventionism
-		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_censorship
+
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_colonial_exploitation
 		
@@ -314,7 +300,7 @@
 		activate_law = law_type:law_colonial_exploitation
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_private_schools
-		activate_law = law_type:law_commercialized_agriculture
+		activate_law = law_type:law_homesteading
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -343,6 +329,7 @@
 	c:YLO = { #Yaluo
 		effect_starting_technology_tier_3_tech = yes
 		add_technology_researched = sericulture
+		add_technology_researched = empiricism
 
 		effect_starting_politics_liberal = yes
 		

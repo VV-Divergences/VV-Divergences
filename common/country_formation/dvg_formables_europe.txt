@@ -133,9 +133,60 @@ MUS = { #Rus/Muscovy
 YUG = { #Yugoslavia
 	use_culture_states = yes
 
-	required_states_fraction = 0.65
+	required_states_fraction = 0.55
 	
 	ai_will_do = { always = yes }
+}
+
+RUM = { #Rumelia
+	states = {
+		STATE_EASTERN_THRACE
+		STATE_MACEDONIA
+		STATE_DOBRUDJA
+		STATE_NORTHERN_THRACE
+		STATE_BULGARIA
+		STATE_THESSALIA
+		STATE_IONIAN_ISLANDS
+		STATE_ATTICA
+		STATE_ALBANIA
+		STATE_SKOPIA
+		STATE_NORTHERN_SERBIA
+		STATE_MONTENEGRO
+		STATE_BOSNIA
+		STATE_DALMATIA
+		STATE_CROATIA
+		STATE_SLOVENIA
+	}
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+}
+
+BYZ = {
+	states = { 
+		STATE_EASTERN_THRACE 
+		STATE_ATTICA 
+		STATE_THESSALIA 
+		STATE_MACEDONIA 
+		STATE_SKOPIA
+		STATE_WESTERN_THRACE
+		STATE_NORTHERN_THRACE
+		STATE_HUDAVENDIGAR
+		STATE_AYDIN
+		STATE_ALBANIA
+		STATE_CRETE
+		STATE_IONIAN_ISLANDS
+	}
+
+	required_states_fraction = 0.9
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_law = law_type:law_monarchy
+		NOT = { has_game_rule = plausible_formable_nations }
+	}
 }
 
 PLC = { #Poland-Lithuania
@@ -593,8 +644,6 @@ ITA = { #Italy
 			country_has_primary_culture = cu:north_italian
 			country_has_primary_culture = cu:south_italian
 			country_has_primary_culture = cu:central_italian
-			country_has_primary_culture = cu:sardinian 
-			country_has_primary_culture = cu:maltese
 			AND = {
 				country_has_primary_culture = cu:venetian
 				NOT = { has_modifier = dvg_ven_patricians }
@@ -607,8 +656,6 @@ ITA = { #Italy
 					country_has_primary_culture = cu:north_italian
 					country_has_primary_culture = cu:south_italian
 					country_has_primary_culture = cu:central_italian
-					country_has_primary_culture = cu:sardinian
-					country_has_primary_culture = cu:maltese 
 					country_has_primary_culture = cu:venetian
 				}
 			}
@@ -951,7 +998,6 @@ ARI = { #Aragon-Italy
 		NOT = { country_has_primary_culture = cu:north_italian}
 		NOT = { country_has_primary_culture = cu:venetian}
 		NOT = { country_has_primary_culture = cu:south_italian}
-		NOT = { country_has_primary_culture = cu:maltese}
 	}
 }
 

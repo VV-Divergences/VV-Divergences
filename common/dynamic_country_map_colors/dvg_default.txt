@@ -59,6 +59,17 @@ dynamic_map_color_spanish_republic = {
 	}
 }
 
+dynamic_map_color_latin_empire = {
+	color = { 180 170 140 }
+
+	possible = {
+		exists = c:ARI
+		THIS = c:ARI
+		has_law = law_type:law_monarchy
+		has_law = law_type:law_autocracy
+	}
+}
+
 dynamic_map_color_quito_granada = {
 	color = { 61 135 120 }
 
