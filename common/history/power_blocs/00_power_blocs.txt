@@ -3,7 +3,7 @@
 		create_power_bloc = {
 			name = SPANISH_EMPIRE_bloc_name
 	
-			map_color = { 38  97  83 }
+			map_color = { 255 255 0 }
 	
 			founding_date = 1015.6.9 
 			identity = identity_sovereign_empire
