@@ -294,7 +294,7 @@
 		}
 	}
 	s:STATE_PHILIPPA = {
-		region_state:CPH = {
+		region_state:CNF = {
 			create_pop = {
 				culture = septiman
 				size = 1310932
@@ -325,7 +325,7 @@
 		}
 	}
 	s:STATE_FLANDRE_SUPERIEURE = {
-		region_state:CFS = {
+		region_state:CNF = {
 			create_pop = {
 				culture = septiman
 				size = 683921

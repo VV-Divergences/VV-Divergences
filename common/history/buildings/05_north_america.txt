@@ -1217,13 +1217,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_PHILIPPA = {
-		region_state:CPH = {
+		region_state:CNF = {
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CPH"
+						country="c:CNF"
 						levels=2
 						region="STATE_PHILIPPA"
 					}
@@ -1235,7 +1235,7 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:CPH"
+						country="c:CNF"
 						levels=1
 					}
 				}
@@ -1247,7 +1247,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:CPH"
+						country="c:CNF"
 						levels=1
 						region="STATE_PHILIPPA"
 					}
@@ -1260,7 +1260,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:CPH"
+						country="c:CNF"
 						levels=2
 						region="STATE_PHILIPPA"
 					}
@@ -1273,7 +1273,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:CPH"
+						country="c:CNF"
 						levels=1
 						region="STATE_PHILIPPA"
 					}
@@ -1285,7 +1285,7 @@ BUILDINGS={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:CPH"
+						country="c:CNF"
 						levels=1
 					}
 				}
@@ -1297,7 +1297,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:CPH"
+						country="c:CNF"
 						levels=1
 						region="STATE_PHILIPPA"
 					}
@@ -1310,7 +1310,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:CPH"
+						country="c:CNF"
 						levels=1
 						region="STATE_PHILIPPA"
 					}
@@ -1323,7 +1323,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CPH"
+						country="c:CNF"
 						levels=1
 						region="STATE_PHILIPPA"
 					}
@@ -1335,7 +1335,7 @@ BUILDINGS={
 				building="building_military_shipyards"
 				add_ownership={
 					country={
-						country="c:CPH"
+						country="c:CNF"
 						levels=1
 					}
 				}
@@ -1346,7 +1346,7 @@ BUILDINGS={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:CPH"
+						country="c:CNF"
 						levels=4
 					}
 				}
@@ -1357,7 +1357,7 @@ BUILDINGS={
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:CPH"
+						country="c:CNF"
 						levels=3
 					}
 				}
@@ -1367,13 +1367,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_FLANDRE_SUPERIEURE = {
-		region_state:CFS = {
+		region_state:CNF = {
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CFS"
+						country="c:CNF"
 						levels=1
 						region="STATE_FLANDRE_SUPERIEURE"
 					}
@@ -1385,7 +1385,7 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:CFS"
+						country="c:CNF"
 						levels=1
 					}
 				}
@@ -1397,7 +1397,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:CFS"
+						country="c:CNF"
 						levels=2
 						region="STATE_FLANDRE_SUPERIEURE"
 					}
@@ -1410,7 +1410,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:CFS"
+						country="c:CNF"
 						levels=1
 						region="STATE_FLANDRE_SUPERIEURE"
 					}
@@ -1422,7 +1422,7 @@ BUILDINGS={
 				building="building_coal_mine"
 				add_ownership={
 					country={
-						country="c:CFS"
+						country="c:CNF"
 						levels=3
 					}
 				}
@@ -1433,7 +1433,7 @@ BUILDINGS={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:CFS"
+						country="c:CNF"
 						levels=5
 					}
 				}

@@ -138,7 +138,7 @@
 	}
 	s:STATE_PHILIPPA = {
 		create_state = {
-			country = c:CPH
+			country = c:CNF
 			owned_provinces = { "x13444D" "x211ECF" "x382709" "x8D8744" "x939ACE" "xA58ED2" "xB040C0" "x3040C0" "x7DE678" "x9D3A73" "x1A77EA" "xC5CE93" }
 		}
 		
@@ -154,7 +154,7 @@
 	}
 	s:STATE_FLANDRE_SUPERIEURE = {
 		create_state = {
-			country = c:CFS
+			country = c:CNF
 			owned_provinces = { "x0804CE" "x260926" "x265ADC" "x308080" "x345319" "x38C881" "x4B0747" "x4CB9DF" "x533151" "x606D4F" "x75F2A6" "x976E86" "x99CB10" "x9CC56A" "xACC198" "xAF1AEE" "xB7EDCF" "xBA53D0" "xBC1A94" "xC786AB" "xCDBD85" "xD534B1" "xFC18F1" }
 		}
 		
