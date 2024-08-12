@@ -982,7 +982,7 @@
 		region_state:ATH = {
 			create_pop = {
 				culture = athesian
-				size = 80474
+				size = 160474
 			}
 			create_pop = {
 				culture = seminole
@@ -995,7 +995,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = afro_latino
-				size = 89854
+				size = 179854
 			}
 		}
 	}
@@ -1003,7 +1003,7 @@
 		region_state:ATH = {
 			create_pop = {
 				culture = athesian
-				size = 68860
+				size = 93860
 			}
 			create_pop = {
 				culture = afro_latino
