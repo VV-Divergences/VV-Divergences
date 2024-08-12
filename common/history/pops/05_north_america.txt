@@ -413,7 +413,7 @@
 		}
 	}
 	s:STATE_MASGIRLAND = {
-		region_state:MSG = {
+		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
 				size = 378600
@@ -425,7 +425,7 @@
 		}
 	}
 	s:STATE_NUREMBORG = {
-		region_state:MSG = {
+		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
 				size = 178600

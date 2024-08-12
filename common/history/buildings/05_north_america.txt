@@ -392,13 +392,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_NUREMBORG = {
-		region_state:MSG = {
+		region_state:VIN = {
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_NUREMBORG"
 					}
@@ -410,7 +410,7 @@ BUILDINGS={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=3
 					}
 				}
@@ -421,7 +421,7 @@ BUILDINGS={
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 					}
 				}
@@ -432,7 +432,7 @@ BUILDINGS={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=5
 					}
 				}
@@ -443,7 +443,7 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -455,7 +455,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_NUREMBORG"
 					}
@@ -468,7 +468,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						type="building_manor_house"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_MECKLENBURG"
 					}
@@ -481,17 +481,17 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MSG"
+						country="c:VIN"
 						levels=3
 						region="STATE_NUREMBORG"
 					}
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 					building={
 						type="building_wheat_farm"
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 						region="STATE_NUREMBORG"
 					}
@@ -504,7 +504,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 						region="STATE_NUREMBORG"
 					}
@@ -515,7 +515,7 @@ BUILDINGS={
 						region="STATE_ZEALAND"
 					}
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -526,12 +526,12 @@ BUILDINGS={
 				building="building_tooling_workshops"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 					building={
 						type="building_financial_district"
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 						region="STATE_WESTERN_NORWAY"
 					}
@@ -542,13 +542,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_MASGIRLAND = {
-		region_state:MSG = {
+		region_state:VIN = {
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_MASGIRLAND"
 					}
@@ -560,7 +560,7 @@ BUILDINGS={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -571,7 +571,7 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -589,7 +589,7 @@ BUILDINGS={
 					}
 					building={
 						type="building_wheat_farm"
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 						region="STATE_MASGIRLAND"
 					}
@@ -744,7 +744,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 						region="STATE_NUREMBORG"
 					}
