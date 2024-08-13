@@ -1,0 +1,58 @@
+﻿MILITARY_FORMATIONS = {
+
+	
+
+	c:PLA = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_great_lakes
+			name = "Les réguliers de l'armée"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NOUVELLE_FRANCE
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LOUISIANE_ROYALE
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_CHARLESIE
+				count = 7
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NOUVELLE_ANGLETERRE
+				count = 3
+			}
+			save_scope_as = dvg_pla_main_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_plantagenia
+			name = "Brigade de Louisiane"
+
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LOUISIANE_ROYALE
+				count = 8
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SANACOMIE
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_CHAOUENONS
+				count = 2
+			}
+			save_scope_as = dvg_pla_second_army
+		}	
+	}
+
+}
