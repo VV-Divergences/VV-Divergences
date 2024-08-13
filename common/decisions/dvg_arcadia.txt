@@ -277,9 +277,6 @@ dvg_incorporate_vinlander = {
 
 	possible = {
 		has_technology_researched = pan-nationalism
-		owns_entire_state_region = STATE_PAYS_TSALAGI
-		owns_entire_state_region = STATE_NOUVELLE_FRANCE
-		owns_entire_state_region = STATE_NOUVELLE_FLANDRE
 		owns_entire_state_region = STATE_NORDELV
 		owns_entire_state_region = STATE_NUREMBORG
 		owns_entire_state_region = STATE_MASGIRLAND
