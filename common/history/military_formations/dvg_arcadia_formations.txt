@@ -2,10 +2,10 @@
 
 	
 
-	c:PLA = {
+	c:PLA = { #Plantagenia
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_great_lakes
+			hq_region = sr:region_dixie
 			name = "Les réguliers de l'armée"
 
 			combat_unit = {
@@ -32,24 +32,24 @@
 		}
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_plantagenia
+			hq_region = sr:region_dixie
 			name = "Brigade de Louisiane"
 
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LOUISIANE_ROYALE
-				count = 8
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SANACOMIE
-				count = 5
+				count = 2
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_CHAOUENONS
-				count = 2
+				count = 1
 			}
 			save_scope_as = dvg_pla_second_army
 		}	

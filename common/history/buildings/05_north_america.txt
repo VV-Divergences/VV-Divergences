@@ -1878,17 +1878,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_no_naval_theory" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:PLA"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
@@ -2194,17 +2183,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_no_naval_theory" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:PLA"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
@@ -2292,17 +2270,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:PLA"
-						levels=7
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
@@ -2397,17 +2364,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:PLA"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
