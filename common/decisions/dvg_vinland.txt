@@ -43,3 +43,27 @@
 		base = 0
 	}
 }
+
+dvg_vinland_arcadia_project = {
+	is_shown = {
+		exists = c:VIN
+		root = c:VIN
+		
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		owns_entire_state_region = STATE_VINLAND
+		owns_entire_state_region = STATE_CAROLINE
+	}
+	
+    when_taken = {
+	
+		add_primary_culture = cu:septiman
+		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}

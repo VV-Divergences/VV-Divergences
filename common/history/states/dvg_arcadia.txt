@@ -151,6 +151,7 @@
 			}
 		
 		add_homeland = cu:septiman
+		add_homeland = cu:vinlander
 	}
 	s:STATE_FLANDRE_SUPERIEURE = {
 		create_state = {
