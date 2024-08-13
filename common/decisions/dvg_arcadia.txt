@@ -270,6 +270,9 @@ dvg_incorporate_vinlander = {
 		exists = c:ARC
 		root = c:ARC
 		
+		NOT = {
+			country_has_primary_culture = cu:vinlander
+		}
 	}
 
 	possible = {
@@ -298,6 +301,9 @@ dvg_incorporate_athesian = {
 		exists = c:ARC
 		root = c:ARC
 		
+		NOT = {
+			country_has_primary_culture = cu:athesian
+		}
 	}
 
 	possible = {

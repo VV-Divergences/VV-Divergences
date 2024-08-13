@@ -49,6 +49,9 @@ dvg_vinland_arcadia_project = {
 		exists = c:VIN
 		root = c:VIN
 		
+		NOT = {
+			country_has_primary_culture = cu:septiman
+		}
 	}
 
 	possible = {

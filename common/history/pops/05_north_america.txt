@@ -313,6 +313,11 @@
 				culture = septiman
 				size = 537231
 			}
+			
+			create_pop = {
+				culture = vinlander
+				size = 58125
+			}
 			create_pop = {
 				culture = afro_arcadian
 				size = 16304
@@ -321,10 +326,6 @@
 			create_pop = {
 				culture = iroquoian
 				size = 4323
-			}
-			create_pop = {
-				culture = vinlander
-				size = 14221
 			}
 		}
 	}
