@@ -279,7 +279,7 @@
 		region_state:CNF = {
 			create_pop = {
 				culture = septiman
-				size = 1586006
+				size = 1686006
 			}
 			create_pop = {
 				culture = septiman
