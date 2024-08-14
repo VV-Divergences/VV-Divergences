@@ -439,6 +439,10 @@
 				culture = afro_germanic
 				size = 14043
 			}
+			create_pop = {
+				culture = septiman
+				size = 32623
+			}
 		}
 	}
 	s:STATE_VINLAND = {
