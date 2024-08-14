@@ -19,7 +19,7 @@
 				count = 4
 			}
 			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
+				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_CHARLESIE
 				count = 7
 			}
@@ -47,12 +47,42 @@
 				count = 4
 			}
 			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
+				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_CHAOUENONS
 				count = 3
 			}
 			save_scope_as = dvg_pla_second_army
 		}	
+
+		c:CNF = { #Belgian Confederation
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_new_england
+			name = "Des hommes minuscules en Arcadie" #Matty here, I used Google Translate for this so revisit if Volodio got back to you with help
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_NOUVELLE_FLANDRE
+				count = 1
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_FLANDRE_SUPERIEURE
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_NOUVELLE_FLANDRE
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_PHILIPPA
+				count = 5
+			}
+			save_scope_as = dvg_pla_main_army
+		}
+		}
 	}
 
 }
