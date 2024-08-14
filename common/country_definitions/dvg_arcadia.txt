@@ -186,7 +186,7 @@ VIN = { #Vinland
 	capital = STATE_VINLAND
 }
 
-MSG = { #Masgirland
+MSG = { #Masgirland THIS COUNTRY WAS REMOVED BY MATTY
 	color = { 2 108 61 }
 	
 	country_type = colonial
@@ -209,7 +209,7 @@ SKR = { #Skraeling Territory
 }
 
 ARC = { #Arcadia
-	color = { 86 165 125 }
+	color = { 13 60 64 }
 
 	country_type = colonial
 
