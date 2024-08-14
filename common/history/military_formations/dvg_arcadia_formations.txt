@@ -92,12 +92,12 @@
 				combat_unit = {
 					type = unit_type:combat_unit_type_line_infantry
 					state_region = s:STATE_VINLAND
-					count = 3
+					count = 2
 				}
 				combat_unit = {
 					type = unit_type:combat_unit_type_mobile_artillery
 					state_region = s:STATE_VINLAND
-					count = 2
+					count = 3
 				}
 				save_scope_as = dvg_vin_main_army
 				}
