@@ -259,7 +259,7 @@ CHA = { #Champa
 }
 
 CAM = { #Khmer
-	color = { 127  180  60 }
+	color = { 41 97 67 }
 	
 	country_type = unrecognized
 	

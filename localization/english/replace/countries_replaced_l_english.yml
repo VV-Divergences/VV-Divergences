@@ -398,13 +398,13 @@
 
  #India
 
- MUG: "Hindustan"
- MUG_ADJ: "Hindustani"
+ MUG: "Mughal Empire"
+ MUG_ADJ: "Mughlai"
  BER: "Gujarat"
  BER_ADJ: "Gujarati"
  SIN: "Sind"
  SIN_ADJ: "Sindi"
- BGL: "Bangladesh"
+ BGL: "Bengal"
  BGL_ADJ: "Bengali"
  ORI: "Odisha"
  ORI_ADJ: "Oriyan"
