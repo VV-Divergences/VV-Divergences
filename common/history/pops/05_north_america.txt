@@ -433,7 +433,7 @@
 		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
-				size = 268600
+				size = 318600
 			}
 			create_pop = {
 				culture = afro_germanic
