@@ -1027,11 +1027,11 @@
 		region_state:GCO = {
 			create_pop = {
 				culture = mexican
-				size = 865844
+				size = 895844
 			}
 			create_pop = {
 				culture = nahua
-				size = 620463
+				size = 640463
 			}
 			create_pop = {
 				culture = afro_latino
@@ -1040,7 +1040,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = afro_latino
-				size = 189294
+				size = 239294
 			}
 		}
 	}
@@ -1048,24 +1048,24 @@
 		region_state:GCO = {
 			create_pop = {
 				culture = mexican
-				size = 120541
+				size = 170541
 			}
 			create_pop = {
 				culture = nahua
-				size = 95986
+				size = 99986
 			}
 			create_pop = {
 				culture = zapotec
-				size = 59526
+				size = 69526
 			}
 			create_pop = {
 				culture = afro_latino
-				size = 8557
+				size = 12557
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = afro_latino
-				size = 87429
+				size = 117429
 			}
 		}
 	}
@@ -1073,11 +1073,11 @@
 		region_state:GCO = {
 			create_pop = {
 				culture = mexican
-				size = 113307
+				size = 213307
 			}
 			create_pop = {
 				culture = tarascan
-				size = 154419
+				size = 254419
 			}
 			create_pop = {
 				pop_type = slaves
@@ -1115,7 +1115,7 @@
 			}
 			create_pop = {
 				culture = cadien
-				size = 17102
+				size = 67102
 			}
 			create_pop = {
 				culture = comanche
@@ -1439,11 +1439,11 @@
 		region_state:GCO = {
 			create_pop = {
 				culture = mexican
-				size = 352476
+				size = 342476
 			}
 			create_pop = {
 				culture = nahua
-				size = 313351
+				size = 413351
 			}
 			create_pop = {
 				culture = afro_latino
@@ -1536,7 +1536,7 @@
 		region_state:GCO = {
 			create_pop = {
 				culture = mexican
-				size = 18454
+				size = 38454
 			}
 			create_pop = {
 				culture = lusitanian
@@ -1548,12 +1548,12 @@
 			}
 			create_pop = {
 				culture = afro_latino
-				size = 27945
+				size = 37945
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = afro_latino
-				size = 68167
+				size = 88167
 			}
 			# create_pop = {
 				# culture = mexican
@@ -1646,20 +1646,20 @@
 		region_state:GCO = {
 			create_pop = {
 				culture = central_american
-				size = 103822
+				size = 143822
 			}
 			create_pop = {
 				culture = granadan
-				size = 3890
+				size = 8890
 			}
 			create_pop = {
 				culture = afro_latino
-				size = 11968
+				size = 15968
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = afro_latino
-				size = 29770
+				size = 79770
 			}
 		}
 	}
