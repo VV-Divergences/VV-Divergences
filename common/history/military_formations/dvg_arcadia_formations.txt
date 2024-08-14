@@ -32,24 +32,24 @@
 		}
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_dixie
+			hq_region = sr:region_the_midwest
 			name = "Brigade de Louisiane"
 
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LOUISIANE_ROYALE
-				count = 6
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SANACOMIE
-				count = 4
+				count = 3
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_CHAOUENONS
-				count = 3
+				count = 2
 			}
 			save_scope_as = dvg_pla_second_army
 		}	
@@ -80,8 +80,46 @@
 				state_region = s:STATE_PHILIPPA
 				count = 5
 			}
-			save_scope_as = dvg_pla_main_army
+			save_scope_as = dvg_cnf_main_army
 		}
+	}
+		c:VIN = { #Vinland
+			create_military_formation = {
+				type = army
+				hq_region = sr:region_canada
+				name = "Præsidentens store hær"
+
+				combat_unit = {
+					type = unit_type:combat_unit_type_line_infantry
+					state_region = s:STATE_VINLAND
+					count = 3
+				}
+				combat_unit = {
+					type = unit_type:combat_unit_type_mobile_artillery
+					state_region = s:STATE_VINLAND
+					count = 2
+				}
+				save_scope_as = dvg_vin_main_army
+				}
+
+				create_military_formation = {
+					type = army
+					hq_region = sr:region_new_england
+					name = "Nationalgarden"
+		
+					
+					combat_unit = {
+						type = unit_type:combat_unit_type_line_infantry
+						state_region = s:STATE_MASGIRLAND
+						count = 3
+					}
+					combat_unit = {
+						type = unit_type:combat_unit_type_mobile_artillery
+						state_region = s:STATE_NUREMBORG
+						count = 2
+					}
+					save_scope_as = dvg_vin_second_army
+				}
 		}
 	}
 
