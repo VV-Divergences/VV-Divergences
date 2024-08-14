@@ -487,7 +487,7 @@
 		region_state:LOT = {
 			create_pop = {
 				culture = lotharian
-				size = 684185
+				size = 834185
 			}
 			create_pop = {
 				culture = afro_amerigan
@@ -510,7 +510,11 @@
 		region_state:LOT = {
 			create_pop = {
 				culture = lotharian
-				size = 467512 #132596 of these should be Anglo-Lotharian if we add that
+				size = 467512 #132596 of these should be Anglo-Lotharian if we add that - Matty here, I just made these into Beornians but left the Lotharian number the same
+			}
+			create_pop = {
+				culture = beornian
+				size = 132596
 			}
 			create_pop = {
 				culture = afro_amerigan
@@ -533,7 +537,7 @@
 		region_state:LOT = {
 			create_pop = {
 				culture = lotharian
-				size = 8275
+				size = 58275
 			}
 			create_pop = {
 				culture = guarani
@@ -545,11 +549,11 @@
 		region_state:LOT = {
 			create_pop = {
 				culture = lotharian
-				size = 31976 
+				size = 51976 
 			}
 			create_pop = {
 				culture = beornian
-				size = 145140
+				size = 175140
 			}
 			create_pop = {
 				culture = guarani
@@ -632,7 +636,7 @@
 		region_state:LOT = {
 			create_pop = {
 				culture = lotharian
-				size = 124944
+				size = 274944
 			}
 			create_pop = {
 				culture = afro_amerigan
@@ -646,7 +650,7 @@
 				size = 125925
 			}
 			
-                        create_pop = {
+            create_pop = {
 				culture = atlantian
 				size = 20606
 			}
@@ -662,11 +666,21 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 640768
+				size = 850768
 			}
 			create_pop = {
 				culture = british
 				size = 10768
+			}
+			create_pop = {
+				culture = beornian
+				religion = catholic
+				size = 30768
+			}
+			create_pop = {
+				culture = british
+				religion = protestant
+				size = 18534
 			}
 		}
 	}
@@ -674,11 +688,11 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 74680
+				size = 254680
 			}
 			create_pop = {
 				culture = patagonian
-				size = 14120
+				size = 34120
 			}
 		}
 	}
@@ -686,7 +700,7 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 41560
+				size = 191560
 			}
 			create_pop = {
 				culture = aimara
@@ -698,11 +712,11 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 20012
+				size = 110012
 			}
 			create_pop = {
 				culture = guarani
-				size = 33788
+				size = 43788
 			}
 		}
 	}
@@ -710,7 +724,7 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 76480
+				size = 296480
 			}
 			create_pop = {
 				culture = guarani
@@ -735,11 +749,11 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 40824
+				size = 240824
 			}
 			create_pop = {
 				culture = guarani
-				size = 10200
+				size = 30200
 			}
 			create_pop = {
 				culture = guarani
@@ -755,7 +769,7 @@
 		region_state:AMA = {
 			create_pop = {
 				culture = antarctican			#Not indigenous
-				size = 295593
+				size = 395593
 			}
 			create_pop = {
 				pop_type = slaves
@@ -813,7 +827,7 @@
 		region_state:AMA = {
 			create_pop = {
 				culture = antarctican
-				size = 453609
+				size = 753609
 			}
 			create_pop = {
 				pop_type = slaves
@@ -880,11 +894,7 @@
 		region_state:AMA = {
 			create_pop = {
 				culture = antarctican
-				size = 294400
-			}
-			create_pop = {
-				culture = antarctican
-				size = 52485
+				size = 346885
 			}
 			create_pop = {
 				pop_type = slaves
@@ -968,11 +978,11 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = patagonian
-				size = 1060
+				size = 3060
 			}
 			create_pop = {
 				culture = beornian
-				size = 500
+				size = 17524
 			}
 		}
 		region_state:PAT = {

@@ -1799,15 +1799,11 @@
 		region_state:DUA = {
 			create_pop = {
 				culture = anglois
-				size = 4590
+				size = 9590
 			}
 			create_pop = {
 				culture = afro_frankish
-				size = 19008
-			}
-			create_pop = {
-				culture = afro_frankish
-				size = 30402
+				size = 64410
 			}
 		}
 		region_state:BRG = {
