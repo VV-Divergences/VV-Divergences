@@ -1434,7 +1434,7 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
     c:SPA = { # Spain
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_carribean
+			hq_region = sr:region_caribbean
 			name = "Fuzileiros Navais da Colômbia"
 
 			
