@@ -138,7 +138,7 @@
 	}
 	s:STATE_PHILIPPA = {
 		create_state = {
-			country = c:CPH
+			country = c:CNF
 			owned_provinces = { "x13444D" "x211ECF" "x382709" "x8D8744" "x939ACE" "xA58ED2" "xB040C0" "x3040C0" "x7DE678" "x9D3A73" "x1A77EA" "xC5CE93" }
 		}
 		
@@ -151,10 +151,11 @@
 			}
 		
 		add_homeland = cu:septiman
+		add_homeland = cu:vinlander
 	}
 	s:STATE_FLANDRE_SUPERIEURE = {
 		create_state = {
-			country = c:CFS
+			country = c:CNF
 			owned_provinces = { "x0804CE" "x260926" "x265ADC" "x308080" "x345319" "x38C881" "x4B0747" "x4CB9DF" "x533151" "x606D4F" "x75F2A6" "x976E86" "x99CB10" "x9CC56A" "xACC198" "xAF1AEE" "xB7EDCF" "xBA53D0" "xBC1A94" "xC786AB" "xCDBD85" "xD534B1" "xFC18F1" }
 		}
 		
@@ -244,11 +245,11 @@
 		add_homeland = cu:algonquian
 	}
 	
-	#Skraelingland
+	#Formerly Masgirland, now NEWLY REINCORPORATED into Vinland
 	
 	s:STATE_NUREMBORG = {
 		create_state = {
-			country = c:MSG
+			country = c:VIN
 			owned_provinces = { "xBD7C03" "x082153" "x1E33E8" "x20CF66" "x326F36" "x441473" "x484A09" "x493CD4" "x4D9EEE" "x54816B" "x5806F4" "x59DEDF" "x5A0CA8" "x62FC6A" "x66DFE7" "x6AE419" "x6B3A42" "x6E757B" "x7040C0" "x70A0CE" "x7182E8" "x71A015" "x740012" "x8243C0" "x8E553E" "x8ED253" "x8F9450" "x990681" "xBB0F05" "xC2B02B" "xC91FD7" "xD090A6" "xD64964" "xD68A28" "xDE0FD5" "xEE2FFF" "xEFC355" "xF01C37" "xF080C0" "xF2502E" "xFB9715" "xFBEDD6" }
 		}
 		
@@ -256,7 +257,7 @@
 	}
 	s:STATE_MASGIRLAND = {
 		create_state = {
-			country = c:MSG
+			country = c:VIN
 			owned_provinces = { "x085C83" "x087678" "x0C0CCC" "x0DB516" "x10A000" "x1FA5AC" "x23500D" "x24AD62" "x2D3204" "x326D52" "x37D0BC" "x380F20" "x406FBA" "x48F357" "x563A89" "x63E1C4" "x68F55E" "x6B5822" "x70C040" "x74E14D" "x798C8E" "x79AB95" "x7C0D56" "x7FA89F" "x8060C0" "x80AA26" "x818D9D" "x8588BF" "x8C6B34" "x8CFA32" "x8D790B" "x905458" "x99CA75" "xA148A8" "xA82803" "xB95DB3" "xBACEF7" "xC060C0" "xC6E552" "xCA0399" "xCB412F" "xD1D79F" "xD6143F" "xDE7BE8" "xDE7D17" "xE4892F" "xEAFA99" "xEB2540" "xEC5B4B" "xEE4F4F" "xF04040" "xF7CF7E" "xF95D47" }
 		}
 		

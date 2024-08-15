@@ -63,7 +63,7 @@ SVB = { #Suvarnabhumi
 	required_states_fraction = 0.6
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		has_technology_researched = nationalism
 		country_has_state_religion = rel:theravada
 		NOT = { 
 			has_game_rule = plausible_formable_nations

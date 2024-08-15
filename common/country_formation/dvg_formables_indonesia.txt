@@ -33,7 +33,7 @@ NUS = { #Nusantara
 	ai_will_do = { always = yes }
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		has_technology_researched = nationalism
 
 	}
 }
@@ -47,7 +47,7 @@ MLY = { #Malaysia
 	ai_will_do = { always = yes }
 
 	possible = {
-		has_technology_researched = nationalism
+		has_technology_researched = colonization
 	}
 }
 

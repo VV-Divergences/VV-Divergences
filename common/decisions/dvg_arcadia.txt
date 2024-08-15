@@ -238,7 +238,7 @@ dvg_embrace_afro_arcadian = {
 			ROOT = {
 				culture_percent_country = {
 				  target = cu:afro_arcadian 
-				  value >= 0.33
+				  value >= 0.25
 				}
 			} 
 			any_scope_state = {
@@ -257,6 +257,63 @@ dvg_embrace_afro_arcadian = {
 		
 		add_primary_culture = cu:afro_arcadian
 
+		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+dvg_incorporate_vinlander = {
+	is_shown = {
+		exists = c:ARC
+		root = c:ARC
+		
+		NOT = {
+			country_has_primary_culture = cu:vinlander
+		}
+	}
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		owns_entire_state_region = STATE_NORDELV
+		owns_entire_state_region = STATE_NUREMBORG
+		owns_entire_state_region = STATE_MASGIRLAND
+	}
+	
+    when_taken = {
+	
+		add_primary_culture = cu:vinlander
+		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+dvg_incorporate_athesian = {
+	is_shown = {
+		exists = c:ARC
+		root = c:ARC
+		
+		NOT = {
+			country_has_primary_culture = cu:athesian
+		}
+	}
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		owns_entire_state_region = STATE_ATHESIA
+		owns_entire_state_region = STATE_NOUVELLE_FRANCE
+		owns_entire_state_region = STATE_NOUVELLE_FLANDRE
+		owns_entire_state_region = STATE_ELEUTHERA
+	}
+	
+    when_taken = {
+	
+		add_primary_culture = cu:athesian
 		
     }
 
