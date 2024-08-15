@@ -166,7 +166,7 @@
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CHAOUENONS
+				state_region = s:STATE_GUATEMALA
 				count = 3
 			}
 			combat_unit = {
@@ -178,7 +178,7 @@
 		}
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_dixie
+			hq_region = sr:region_great_plains
 			name = "Patrulha Fronteiriça de Plantagenia"
 
 			
@@ -189,6 +189,8 @@
 			}
 			save_scope_as = dvg_gco_third_army	
 		}
+		}
 	}
+}
 
 }
