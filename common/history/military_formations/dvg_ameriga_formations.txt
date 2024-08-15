@@ -78,7 +78,7 @@
 	c:QUI = { #New Toledo
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_the_andes
+			hq_region = sr:region_andes
 			name = "Novo Exército Toledano"
 
 			combat_unit = {
@@ -100,7 +100,7 @@
 		}
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_the_andes
+			hq_region = sr:region_andes
 			name = "Reservistas Novos Toledanos"
 
 			combat_unit = {
@@ -132,10 +132,11 @@
 				state_region = s:STATE_ZULIA
 				count = 1
 			}
-			save_scope_as = dvg_gco_main_army
+			save_scope_as = dvg_gra_main_army
+		}
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_the_andes
+			hq_region = sr:region_gran_colombia
 			name = "Reservistas Grenadino"
 
 			combat_unit = {
@@ -143,8 +144,7 @@
 				state_region = s:STATE_MIRANDA
 				count = 6
 			}
-			save_scope_as = dvg_qui_second_army
-			}
+			save_scope_as = dvg_gra_second_army
 		}
 	}
 }
