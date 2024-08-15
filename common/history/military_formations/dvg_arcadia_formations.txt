@@ -58,7 +58,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_new_england
-			name = "Des hommes minuscules en Arcadie" #Matty here, I used Google Translate for this so revisit if Volodio got back to you with help
+			name = "Franc-tireurs"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
@@ -87,7 +87,7 @@
 			create_military_formation = {
 				type = army
 				hq_region = sr:region_canada
-				name = "Præsidentens Store Hær"
+				name = "Forsvaret"
 
 				combat_unit = {
 					type = unit_type:combat_unit_type_line_infantry
