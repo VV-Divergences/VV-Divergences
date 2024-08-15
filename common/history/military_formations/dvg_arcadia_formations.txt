@@ -120,6 +120,74 @@
 					}
 					save_scope_as = dvg_vin_second_army
 				}
+		c:GCO = { #Gran Colombia
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_mexico
+			name = "Força Comunitária Mexicana"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MEXICO
+				count = 9
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_MEXICO
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_MEXICO
+				count = 2
+			}
+			save_scope_as = dvg_gco_main_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_central_america
+			name = "Exército da Colômbia"
+
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PANAMA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_YUCATAN
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SAN_SALVADOR
+				count = 7
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_CHAOUENONS
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_MEXICO
+				count = 4
+			}
+			save_scope_as = dvg_gco_second_army	
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_dixie
+			name = "Patrulha Fronteiriça de Plantagenia"
+
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BAHIA
+				count = 4
+			}
+			save_scope_as = dvg_gco_third_army	
 		}
 	}
 
