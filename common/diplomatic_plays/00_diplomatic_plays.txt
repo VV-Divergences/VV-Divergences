@@ -446,7 +446,7 @@ dp_annex_subject = {
 			}
 		}
 		NAND = {
-			has_journal_entry = je_peru_bolivia
+			has_journal_entry = je_ottoman_consolidation
 			scope:target_country = {
 				OR = {
 					country_has_primary_culture = cu:quechua
