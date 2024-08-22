@@ -1515,7 +1515,7 @@
 		#	months = -1
 		#}
 		set_global_variable = {
-			name = peru_bolivia_var
+			name = ottoman_consolidation_var
 			value = 0
 		}
 		add_journal_entry = {
