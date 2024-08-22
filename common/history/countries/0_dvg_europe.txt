@@ -1514,6 +1514,9 @@
 		#	name = cizye_tax
 		#	months = -1
 		#}
+		add_journal_entry = {
+			type = je_ottoman_consolidation
+		}
 	}
 	
 	# c:JNR = { #Janissary Revolt
