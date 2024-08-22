@@ -22,10 +22,10 @@ je_ottoman_consolidation = {
 					c:TUR ?= this
 					government_legitimacy >= 50
 				}
-				change_global_variable = {
-					name = ottoman_consolidation_var
-					add = 1
-				}
+                change_global_variable = {
+				    name = ottoman_consolidation_var
+				    add = 1
+			    }
 			}
 		}
 	}

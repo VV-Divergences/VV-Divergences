@@ -1514,6 +1514,10 @@
 		#	name = cizye_tax
 		#	months = -1
 		#}
+		set_global_variable = {
+			name = peru_bolivia_var
+			value = 0
+		}
 		add_journal_entry = {
 			type = je_ottoman_consolidation
 		}
