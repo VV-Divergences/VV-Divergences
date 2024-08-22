@@ -24,7 +24,7 @@ je_ottoman_consolidation = {
 				}
                 change_global_variable = {
 				    name = ottoman_consolidation_var
-				    add = 1
+				    add = 20
 			    }
 			}
 		}
@@ -34,6 +34,11 @@ je_ottoman_consolidation = {
 		hidden_trigger = {
 			c:TUR = this
 		}
+        OR = {
+            has_law = law_type:law_racial_segregation
+            has_law = law_type:law_cultural_exclusion
+            has_law = law_type:law_multicultural
+        }
 		scope:journal_entry = { is_goal_complete = yes }
 		OR = {
 			c:EGY ?= {
@@ -43,6 +48,7 @@ je_ottoman_consolidation = {
 				is_subject_of = c:TUR
 			}
 		}
+        
 		custom_tooltip = {
 			text = ottomans_no_revolutions_tt
 			NOT = {
@@ -125,66 +131,7 @@ je_ottoman_consolidation = {
 	}
 
 	on_fail = {
-		if = { #Why? So that [somehow] this doesn't cause four fail events to fire at once. That should be impossible, but you never know.
-			limit = {
-				c:TUR ?= this
-			} 
-			if = {
-				limit = {
-					any_country = {
-						has_variable = ottomans_member
-						is_player = yes
-					}
-				}
-				random_country = {
-					limit = {
-						has_variable = ottomans_member
-						is_player = yes
-					}
-					trigger_event = { id = ottoman_consolidation_events.3 popup = yes }
-				}
-			}
-			else = {
-				ordered_country = {
-					limit = {
-						has_variable = ottomans_member
-					}
-					order_by = gdp
-					trigger_event = { id = ottoman_consolidation_events.3 popup = yes }
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					exists = c:TUR
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						has_variable = ottomans_member
-						is_player = yes
-					}
-				}
-				random_country = {
-					limit = {
-						has_variable = ottomans_member
-						is_player = yes
-					}
-					trigger_event = { id = ottoman_consolidation_events.3 popup = yes }
-				}
-			}
-			else = {
-				ordered_country = {
-					limit = {
-						has_variable = ottomans_member
-					}
-					order_by = gdp
-					trigger_event = { id = ottoman_consolidation_events.3 popup = yes }
-				}
-			}
-		}
+
 	}
 
 	invalid = {
@@ -213,7 +160,7 @@ je_ottoman_consolidation = {
 	}
 
 	current_value = {
-		value = global_var:ottoman_consolidation_var #This variable is initialised in Argentina's country file, because of load orders.
+		value = global_var:ottoman_consolidation_var
 	}
 
 	goal_add_value = {
