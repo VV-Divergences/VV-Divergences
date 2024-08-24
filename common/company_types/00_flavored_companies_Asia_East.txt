@@ -1,0 +1,44 @@
+
+# Sī zhǐ màoyì gōngsī
+company_SiZhiMaoyi = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	building_types = {  
+		building_paper_mills
+		building_silk_plantation
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_north_china
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_SHENGJING
+			}		
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_SHENGJING
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_paper_mills
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_prestige_mult = 0.1
+		country_bureaucracy_mult = 0.1
+		state_loyalists_from_sol_change_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}

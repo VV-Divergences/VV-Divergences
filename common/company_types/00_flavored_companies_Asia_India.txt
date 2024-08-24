@@ -1,0 +1,43 @@
+
+# Banlara Plyantesana Trasti
+company_Banlara = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
+	
+	building_types = {  
+		building_dye_plantation
+		building_silk_plantation
+		building_opium_plantation
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_north_india
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_SOUTH_BENGAL
+			}		
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_SOUTH_BENGAL
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_dye_plantation
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_aristocrats_investment_pool_contribution_add = 0.15
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}

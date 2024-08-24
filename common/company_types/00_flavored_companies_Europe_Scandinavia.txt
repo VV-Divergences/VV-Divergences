@@ -1,0 +1,44 @@
+
+# De Skandinavisk Husmoderforeninger
+company_SkandinaviskHus = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	building_types = {  
+		building_textile_mills
+		building_food_industry
+		building_furniture_manufacturies
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_baltic
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_JUTLAND
+			}		
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_JUTLAND
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 3
+			}
+		}
+		has_technology_researched = feminism
+	}
+	
+	prosperity_modifier = {
+		country_prestige_mult = 0.1
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}

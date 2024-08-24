@@ -1,0 +1,43 @@
+
+# Novgorodskaja Skola
+company_NovgorodSkola = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	building_types = {  
+		building_urban_center
+		building_paper_mills
+		building_arts_academy
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_russia
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_DVG_NOVGOROD
+			}		
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_DVG_NOVGOROD
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_paper_mills
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_education_access_add = 0.2
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}
