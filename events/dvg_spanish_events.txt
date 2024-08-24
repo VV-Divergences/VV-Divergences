@@ -18,7 +18,7 @@ dvg_spain.1 = {
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	duration = 1
+	duration = 3
 
 	trigger = {
 	}
@@ -49,7 +49,7 @@ dvg_spain.1 = {
 		ai_chance = {
 			base = 1
 		}
-		trigger_event = { id = dvg_spain.2 days = 7 }
+		trigger_event = { id = dvg_spain.2 days = 31 }
 	}
 }
 
@@ -70,7 +70,7 @@ dvg_spain.2 = {
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	duration = 1
+	duration = 3
 
 	trigger = {
 	}
@@ -105,6 +105,12 @@ dvg_spain.2 = {
 				type = independence
 				target_country = c:SPA
 			}
+			add_war_goal = {
+				holder = c:SPA
+				type = reduce_autonomy
+				target_country = c:QUI
+			}
+			
 		}
 		c:GCO = {
 			trigger_event = { id = dvg_gran_colombia.2 }
