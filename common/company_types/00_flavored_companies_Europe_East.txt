@@ -17,14 +17,14 @@ company_NovgorodSkola = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_DVG_NOVGOROD
+				state_region = s:STATE_NOVGOROD
 			}		
 		}
 	}		
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_DVG_NOVGOROD
+			state_region = s:STATE_NOVGOROD
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_paper_mills
