@@ -4,23 +4,51 @@ je_ottoman_consolidation = {
 	group = je_group_historical_content
 
 	immediate = {
-		cu:misri = {
-			save_scope_as = misri_culture
+		c:EGY = {
+			save_scope_as = egypt_country
 		}
-		cu:mashriqi = {
-			save_scope_as = mashriqi_culture
+		c:IRQ = {
+			save_scope_as = iraq_country
 		}
 		c:TUR = {
 			save_scope_as = ottomans_scope
 		}
 		set_variable = ottomans_member
 	}
-	on_monthly_pulse = {
+	on_weekly_pulse = {
 		effect = {
 			if = {
-				limit = {
-					c:TUR ?= this
-					government_legitimacy >= 50
+				AND = {
+					limit = {
+						c:TUR ?= this
+						government_legitimacy >= 50
+					}
+					OR = {
+						AND = {
+							c:EGY ?= {
+								is_subject_of = c:TUR
+							}
+							scope:egypt_country = { liberty_desire < 25 }
+						}
+						NOT = {
+							c:EGY ?= {
+								is_subject_of = c:TUR
+							}
+						}
+					}
+					OR = {
+						AND = {
+							c:IRQ ?= {
+								is_subject_of = c:TUR
+							}
+							scope:iraq_country = { liberty_desire < 25 }
+						}
+						NOT = {
+							c:IRQ ?= {
+								is_subject_of = c:TUR
+							}
+						}
+					}
 				}
                 change_global_variable = {
 				    name = ottoman_consolidation_var
