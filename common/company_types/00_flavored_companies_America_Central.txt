@@ -1,7 +1,7 @@
 
 # Fábricas de galletas de pescado
 company_FabricasDeGalletas = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\FabricasDeGalletas.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
 	
 	building_types = {  

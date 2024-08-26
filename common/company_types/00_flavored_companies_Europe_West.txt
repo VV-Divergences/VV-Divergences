@@ -1,7 +1,7 @@
 
 # McGallagher Smelteries Ltd.
 company_McGallagher = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\McGallagher.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	building_types = {  
@@ -11,7 +11,7 @@ company_McGallagher = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_france
+		has_interest_marker_in_region = region_north_sea_coast
 	}
 	
 	attainable = {
@@ -174,7 +174,7 @@ company_SchweizerBank = {
 
 # Fonds de Dons Coloniaux à but Non Lucratif
 company_FondsDeDons = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\FondsDeDons.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
 	
 	building_types = {  
