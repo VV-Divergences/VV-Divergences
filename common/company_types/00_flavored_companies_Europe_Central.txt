@@ -45,7 +45,7 @@ company_SchiffswerftenPommern = {
 
 # Arsenale di Venezi
 company_ArsenaleVenezia = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\ArsenaleVenezia.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 	
 	building_types = {  
