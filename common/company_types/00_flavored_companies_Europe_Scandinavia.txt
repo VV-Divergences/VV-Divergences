@@ -1,7 +1,7 @@
 
 # De Skandinavisk Husmoderforeninger
 company_SkandinaviskHus = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\SkandinaviskHus.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	building_types = {  
@@ -31,11 +31,12 @@ company_SkandinaviskHus = {
 				level >= 3
 			}
 		}
-		has_technology_researched = feminism
+		has_technology_researched = human_rights
 	}
 	
 	prosperity_modifier = {
-		country_prestige_mult = 0.1
+		country_prestige_mult = 0.05
+		state_dependent_wage_mult = 0.1
 	}
 
 	ai_weight = {
