@@ -11,6 +11,11 @@ neutrality = {
 	country_max_declared_interests_mult = -0.5
 }
 
+modifier_women_scandi = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_working_adult_ratio_add = 0.05
+}
+
 order_restored = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_prestige_add = 10
