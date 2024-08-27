@@ -1,7 +1,7 @@
 
 # Quỹ phúc lợi thuốc phiện
 company_QuyPhuc = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\QuyPhuc.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
 	
 	building_types = {  
