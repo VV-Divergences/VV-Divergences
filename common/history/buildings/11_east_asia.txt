@@ -3663,7 +3663,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:JAP"
-						levels=3
+						levels=6
 					}
 				}
 				reserves=1
