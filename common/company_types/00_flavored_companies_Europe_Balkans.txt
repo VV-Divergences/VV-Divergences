@@ -44,8 +44,8 @@ company_BosanskaArtil = {
 }
 
 # Rusenski artileriĭski arsenal
-company_Arsenal = {
-	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\Arsenal.png" 
+company_RuseArsenal = {
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\RuseArsenal.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	building_types = {  
@@ -79,7 +79,7 @@ company_Arsenal = {
 	
 	prosperity_modifier = {
 		unit_defense_add = 5
-		unit_provinces_lost_mult = 0.1
+		unit_provinces_lost_mult = -0.1
 	}
 
 	ai_weight = {
