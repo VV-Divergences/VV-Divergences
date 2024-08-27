@@ -1,0 +1,45 @@
+
+# Fábricas de galletas de pescado
+company_FabricasDeGalletas = {
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\FabricasDeGalletas.png" 
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
+	
+	building_types = {  
+		building_food_industry
+		building_fishing_wharf
+		building_sugar_plantation
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_central_america
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_SAN_SALVADOR
+			}		
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_SAN_SALVADOR
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 3
+			}
+		}
+		has_technology_researched = baking_powder
+	}
+	
+	prosperity_modifier = {
+		unit_morale_recovery_mult = 0.1
+		unit_morale_loss_mult = -0.1
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}

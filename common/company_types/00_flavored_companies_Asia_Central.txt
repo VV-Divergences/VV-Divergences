@@ -1,0 +1,43 @@
+
+# Shāndì jūnfá lián
+company_ShandiJunta = {
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\ShandiJunta.png" 
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {  
+		building_rye_farm
+		building_livestock_ranch
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_himalayas
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_LHASA
+			}		
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_LHASA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_rye_farm
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_defense_mult = 0.1
+		country_infamy_decay_mult = 0.1
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}
