@@ -86,9 +86,6 @@ dvg_spain.2 = {
 			target_country = c:GCO
 			war = yes
 			add_target_backers = { c:QUI }
-			add_initiator_backers = {
-				c:GRA
-				}
 			type = dp_reduce_autonomy
 			
 			add_war_goal = {
@@ -112,11 +109,6 @@ dvg_spain.2 = {
 				holder = c:SPA
 				type = reduce_autonomy
 				target_country = c:QUI
-			}
-			add_war_goal = {
-				holder = c:GRA
-				type = independence
-				target_country = c:SPA
 			}
 			
 		}
