@@ -1199,7 +1199,7 @@ GBR = { #Great Britain
 
 	tier = empire	
 	
-	cultures = { british scottish }
+	cultures = { british scottish welsh }
 	capital = STATE_HOME_COUNTIES
 }
 
