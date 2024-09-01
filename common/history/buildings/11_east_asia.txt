@@ -3663,7 +3663,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:JAP"
-						levels=3
+						levels=6
 					}
 				}
 				reserves=1
@@ -3895,7 +3895,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_livestock_ranch"

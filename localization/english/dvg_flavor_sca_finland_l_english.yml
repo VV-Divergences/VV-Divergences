@@ -2,3 +2,8 @@
   dvg_sca_finland.10.t:0 "Finnish Nationalists"
   dvg_sca_finland.10.d:0 "Finland have given rise to a distinct Finnish national sentiment of lower class origin. The Finns will soon challenge Copenhagen's indifference and ask to reconsider the status of Finland within the realm."
   dvg_sca_finland.10.a:0 "Let them try!"
+
+  dvg_scandinavian_workforce: "Increase Our Workforce"
+  dvg_scandinavian_workforce_desc: "The population of Scandinavia lags behind the other great powers. As they fill their factories with expendable bodies and gorge themselves in their gluttony, we must find in ourselves greater resourcefulness. If one is willing to work, one will recieve pay!"
+
+  modifier_women_scandi: "Arbejde for løn!"

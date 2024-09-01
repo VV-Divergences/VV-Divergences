@@ -1,0 +1,79 @@
+﻿l_english:
+
+ # Modded generic companies
+ 
+ # Sphere of Influence
+ # Can be found in sphere_of_influence_2_I_english.yml
+ 
+ 
+ # Scandinavia
+ company_SkandinaviskHus: "De Skandinavisk Husmoderforeninger"
+
+ # Western Europe
+ company_McGallagher: "McGallagher Smelteries Ltd."
+ company_NectarDeVigna: "Nectar de Vigna"
+ company_Brugghe: "Textiel Brugghe"
+ company_SchweizerBank: "Schweizerische Internationalbank"
+ company_FondsDeDons: "Fonds de Dons Coloniaux à but Non Lucratif"
+ 
+ # Central Europe
+ company_SchiffswerftenPommern: "Vereinigte Schiffswerften Pommern"
+ company_ArsenaleVenezia: "Arsenale di Venezia"
+ company_Krolewska: "Królewska Kuźnia Kawalerii"
+
+ 
+ # Eastern Europe
+ company_NovgorodSkola: "Novgorodskaja Skola"
+ 
+ 
+ # Balkans
+ company_BosanskaArtil: "Bosanska Artiljerijska četa"
+ company_RuseArsenal: "Rusenski Artileriĭski Arsenal"
+ 
+ 
+ # Middle East
+ company_malabis: "Malabis Alrahaala"
+ 
+ 
+ # Central Asia
+ company_ShandiJunta: "Shāndì jūnfá lián"
+ 
+ # East Asia
+ company_SiZhiMaoyi: "Sī zhǐ màoyì gōngsī"
+ 
+ # India
+ company_Banlara: "Banlara Plyantesana Trasti"
+ 
+ 
+ # Indo-China
+ company_QuyPhuc: "Quỹ phúc lợi thuốc phiện"
+ 
+ # Indonesia
+ company_SemuaDalam: "Semua dalam satu pertanian Ltd."
+ 
+ 
+ # Australia 
+ company_Aodaliya: "Àodàlìyǎ zhùfáng"
+ 
+ 
+ # North America
+ company_AdminCoton: "Administrateurs du Coton"
+ company_TangWang: "Táng wàng zìrán zīyuán"
+
+ # Central America
+ company_FabricasDeGalletas: "Fábricas de galletas de pescado"
+ 
+ # South America
+ company_Tawatinsuyu: "Tawatinsuyu qhuyakuna"
+ company_SaintGeorges: "Armement de Saint Georges"
+ 
+ 
+ # Northern Africa
+ company_Tajmae: "Tajmae Almuzariein Al’uwrubiyiyn Almaghariba"
+ 
+ 
+ # Central Africa
+ company_MutuwaDaGinin: "Mutuwa da ginin kamfani"
+ 
+ # Southern Africa
+ company_VrystaatCoal: "Vrystaatse Steenkool"

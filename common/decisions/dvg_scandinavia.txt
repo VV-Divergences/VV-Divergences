@@ -1,0 +1,34 @@
+﻿dvg_scandinavian_workforce = {
+	is_shown = {
+		exists = c:SCA
+		root = c:SCA
+
+	}
+
+    possible = {
+		this = c:SCA
+		has_company = company_type:company_SkandinaviskHus
+		c:SCA = {
+			is_at_war = no
+		}
+		is_diplomatic_play_committed_participant = no
+		hidden_trigger = {
+			NOT = { has_variable = women_work_in_scandi }
+		}
+
+	}
+
+    when_taken = {
+		set_variable = {
+			name = women_work_in_scandi
+			value = yes
+		}
+		add_modifier = {
+			name = modifier_women_scandi
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}

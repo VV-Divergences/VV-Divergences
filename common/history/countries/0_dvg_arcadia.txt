@@ -275,7 +275,7 @@
 		
 	}
 	
-	c:MSG = { #Masgirland
+	c:MSG = { #Masgirland THIS COUNTRY WAS REMOVED BY MATTY
 		effect_starting_technology_tier_2_tech = yes
 		
 		activate_law = law_type:law_presidential_republic

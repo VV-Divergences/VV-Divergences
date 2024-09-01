@@ -11,18 +11,18 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BOURGOGNE_DU_SUD
-				count = 8
+				count = 3
 			}
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_TRANSFLEUVE
-				count = 5
+				count = 3
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_LORRAINE_ATLANTIQUE
-				count = 10
+				count = 7
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
@@ -32,7 +32,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_LORRAINE_ATLANTIQUE
-				count = 3
+				count = 2
 			}
 			save_scope_as = dvg_lot_main_army
 		}
@@ -45,12 +45,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SERMOISE_SUR_ODON
-				count = 3
+				count = 1
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LIBREVILLE
-				count = 3
+				count = 2
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
@@ -60,17 +60,17 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_NOUVELLE_ALSACE
-				count = 4
+				count = 3
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_NOUVELLE_ALSACE
-				count = 3
+				count = 2
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CHACO_BOREAL
-				count = 3
+				count = 1
 			}
 			save_scope_as = dvg_lot_north_army
 		}	

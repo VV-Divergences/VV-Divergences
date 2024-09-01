@@ -2755,4 +2755,19 @@ dvg_japan.23 = {
 	}
 }
 
+# matty experimentation with events - loan expansion
+
+
+dvg_japan_matty.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_japan_matty.1.t
+	desc = dvg_japan_matty.1.d
+	flavor = dvg_japan_matty.1.f
+
+	event_image = {
+		video = "asia_confucianism_shinto"
+	}
+}
 

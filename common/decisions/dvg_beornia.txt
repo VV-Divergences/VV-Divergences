@@ -654,7 +654,7 @@ dvg_proclaim_hbe = {
     }
 
 	ai_chance = {
-		base = 100
+		base = 0
 	}
 }
 
