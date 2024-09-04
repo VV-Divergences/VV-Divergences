@@ -363,7 +363,11 @@
 		}
 		create_state = {
 			country = c:BAE
-			owned_provinces = { "x9080E0" }
+			owned_provinces = { "x9080E0" "x117FE0" }
+		}
+		create_state = {
+			country = c:FIO
+			owned_provinces = { "xD08060" }
 		}
 		add_homeland = cu:south_german
 		add_homeland = cu:rheinish
@@ -1104,14 +1108,6 @@
 		create_state = {
 			country = c:SAV
 			owned_provinces = { "x56B04B" "x6B4BA4" "x7ACC0B" "x9041E0" "x90C060" "xD000E0" "xDDDD3B" "x7516B6" }
-		}
-		create_state = {
-			country = c:FIO
-			owned_provinces = { "xD08060" }
-		}
-		create_state = {
-			country = c:BAE
-			owned_provinces = { "x117FE0" }
 		}
 		
 		#add_homeland = cu:north_italian

@@ -670,6 +670,16 @@
 				culture = rheinish
 				size = 76533
 			}
+			create_pop = {
+				culture = romand
+				size = 52166
+			}
+		}
+		region_state:FIO = {
+			create_pop = {
+				culture = romand
+				size = 69453
+			}
 		}
 	}
 	s:STATE_EAST_SWITZERLAND = {
