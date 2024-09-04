@@ -689,19 +689,19 @@ STATE_PALATINATE = {
 STATE_WEST_SWITZERLAND = {
     id = 60
     subsistence_building = building_subsistence_farms
-    provinces = { x508060 x9080E0 xD00161 xE51E78 xEBF5B1 xED07F7 }
+    provinces = { x508060 x9080E0 xD00161 xE51E78 xEBF5B1 xED07F7 x117FE0 xD08060 }
     traits = { state_trait_alps_mountains state_trait_rhine_river }
     city = xED07F7
     farm = xE51E78
     mine = x9080E0
     wood = xD00161
-    arable_land = 50
+    arable_land = 53
     arable_resources = { bg_vineyard_plantations bg_rye_farms bg_livestock_ranches }
     capped_resources = {
-        bg_coal_mining = 40
-        bg_iron_mining = 24
+        bg_coal_mining = 42
+        bg_iron_mining = 25
         bg_lead_mining = 24
-        bg_logging = 7
+        bg_logging = 10
     }
 }
 STATE_EAST_SWITZERLAND = {
