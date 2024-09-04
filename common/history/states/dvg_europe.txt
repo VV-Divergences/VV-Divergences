@@ -1044,7 +1044,6 @@
 			owned_provinces = { "x015121" "x3A8B51" }
 		}
 		
-		add_homeland = cu:south_italian
 		#add_homeland = cu:maltese
 	}
 	s:STATE_SICILY = {
