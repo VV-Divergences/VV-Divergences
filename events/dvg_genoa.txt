@@ -123,7 +123,7 @@ genoa.4 = {
 		default_option = yes
 		#trigger_event = { id = genoa.# }
 		ai_chance = {
-			base = 50
+			base = 0
 		}        
 	}
 
@@ -131,7 +131,7 @@ genoa.4 = {
 		name = genoa.4.b
 		trigger_event = { id = genoa.5 }
         ai_chance = {
-			base = 50
+			base = 100
 		}
 	}
 }
@@ -245,7 +245,7 @@ genoa.6 = {
 			create_diplomatic_play = {
 				name = savoy_genoa_war
 			
-				target_country = c:SAV
+				target_country = c:GEN
 				
 				war = yes
 				

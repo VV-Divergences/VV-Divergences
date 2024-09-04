@@ -23,28 +23,24 @@ je_ottoman_consolidation = {
 						c:TUR ?= this
 						government_legitimacy >= 50
 					}
-					OR = {
-						AND = {
-							c:EGY ?= {
-								is_subject_of = c:TUR
-							}
-							scope:egypt_country = { liberty_desire < 25 }
+					OR = {	
+						c:EGY ?= {
+							is_subject_of = c:TUR
+							liberty_desire < 25
 						}
-						NOT = {
-							c:EGY ?= {
+						c:EGY ?= {
+							NOT = {
 								is_subject_of = c:TUR
 							}
 						}
 					}
 					OR = {
-						AND = {
-							c:IRQ ?= {
-								is_subject_of = c:TUR
-							}
-							scope:iraq_country = { liberty_desire < 25 }
+						c:IRQ ?= {
+							is_subject_of = c:TUR
+							liberty_desire < 25
 						}
-						NOT = {
-							c:IRQ ?= {
+						c:IRQ ?= {
+							NOT = {
 								is_subject_of = c:TUR
 							}
 						}
