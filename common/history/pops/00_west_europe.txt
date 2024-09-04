@@ -1250,7 +1250,7 @@
 		region_state:SCO = {
 			create_pop = {
 				culture = scottish
-				size = 568435
+				size = 468435
 			}
 			create_pop = {
 				culture = scandinavian
@@ -1276,7 +1276,7 @@
 		region_state:SCO = {
 			create_pop = {
 				culture = scottish
-				size = 1199723
+				size = 1329723
 			}
 			create_pop = {
 				culture = scandinavian
