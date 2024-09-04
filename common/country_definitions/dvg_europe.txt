@@ -2038,7 +2038,7 @@ EUR = { #European Union
 }
 
 CLT = { #Celtic Union
-	color = {  130 10 22 }
+	color = { 80 135 50 }
 	
 	country_type = recognized
 
