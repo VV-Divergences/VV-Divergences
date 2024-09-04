@@ -138,7 +138,7 @@
 		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
-				size = 1359209
+				size = 1559209
 			}
 			create_pop = {
 				culture = hungarian
@@ -152,15 +152,15 @@
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 34216
+				size = 39216
 			}
 			create_pop = {
 				culture = turkish
-				size = 70876
+				size = 20876
 			}
 			create_pop = {
 				culture = south_german
-				size = 472827
+				size = 572827
 			}
 			create_pop = {
 				culture = slovak
