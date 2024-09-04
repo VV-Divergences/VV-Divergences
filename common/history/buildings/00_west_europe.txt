@@ -4661,12 +4661,25 @@ BUILDINGS={
 					building={
 						type="building_manor_house"
 						country="c:BRG"
-						levels=10
+						levels=11
 						region="STATE_FRANCHE_COMTE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:BRG"
+						levels=1
+						region="STATE_FRANCHE_HOLLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_slaughterhouses" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -4675,7 +4688,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:BRG"
 						levels=3
-						region="STATE_FRANCHE_COMTE"
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1

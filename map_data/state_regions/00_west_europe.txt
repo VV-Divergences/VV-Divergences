@@ -547,17 +547,17 @@ STATE_LORRAINE = {
 STATE_FRANCHE_COMTE = {
     id = 117
     subsistence_building = building_subsistence_farms
-    provinces = { x3080E0 x3D8EF9 x708060 xA9D961 xCF46D1 xF00060 }
+    provinces = { x3080E0 x3D8EF9 x708060 xA9D961 xCF46D1 xF00060 xA042B5}
     city = x3D8EF9
     farm = x3080E0
     mine = x708060
     wood = x3080E0
-    arable_land = 64
+    arable_land = 68
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        bg_coal_mining = 8
-        bg_iron_mining = 15
-        bg_logging = 2
+        bg_coal_mining = 10
+        bg_iron_mining = 17
+        bg_logging = 3
     }
 }
 STATE_HOLLAND = {

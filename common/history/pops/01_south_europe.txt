@@ -530,16 +530,6 @@
 				size = 53505
 			}
 		}
-		region_state:BRG = {
-			create_pop = {
-				culture = romand
-				size = 234147
-			}
-			create_pop = {
-				culture = burgundian
-				size = 5569
-			}
-		}
 	}
 	
 	#Modena + Parma + Lucca

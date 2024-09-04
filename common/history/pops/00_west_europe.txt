@@ -492,7 +492,7 @@
 		region_state:BRG = {
 			create_pop = {
 				culture = burgundian
-				size = 1263569
+				size = 1293569
 			}
 			create_pop = {
 				culture = rheinish
@@ -504,7 +504,7 @@
 			}
 			create_pop = {
 				culture = romand
-				size = 46399
+				size = 246399
 			}
 			create_pop = {
 				culture = ashkenazi
