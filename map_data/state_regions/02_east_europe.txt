@@ -52,17 +52,17 @@ STATE_CENTRAL_HUNGARY = {
 STATE_TRANSDANUBIA = {
     id = 165
     subsistence_building = building_subsistence_farms
-    provinces = { x1CAC04 x2668FB x27F483 x3C6913 x715F5D x716180 x906A5F xB02121 xC139B7 xCACEBC xCF2020 xCFDFDF }
+    provinces = { x1CAC04 x2668FB x27F483 x3C6913 x715F5D x716180 x906A5F xB02121 xC139B7 xCACEBC xCF2020 xCFDFDF xF0E001 x6F8D2A }
     traits = { state_trait_danube_river state_trait_pannonian_plain }
     city = xCFDFDF
     farm = xB02121
     mine = x3C6913
     wood = xC139B7
-    arable_land = 125
+    arable_land = 135
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        bg_coal_mining = 84
-        bg_logging = 7
+        bg_coal_mining = 88
+        bg_logging = 8
     }
 }
 STATE_WEST_SLOVAKIA = {

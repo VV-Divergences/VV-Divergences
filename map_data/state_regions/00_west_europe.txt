@@ -724,17 +724,17 @@ STATE_EAST_SWITZERLAND = {
 STATE_AUSTRIA = {
     id = 51
     subsistence_building = building_subsistence_farms
-    provinces = { x0CBB8F x1180A0 x20CF50 x30A020 x316141 x62F70E x6F8D2A x7F2E4E x84C7C3 x9001A0 xA40093 xA9793B xF0E001 xFDA6CB }
+    provinces = { x0CBB8F x1180A0 x20CF50 x30A020 x316141 x62F70E x7F2E4E x84C7C3 x9001A0 xA40093 xA9793B xFDA6CB }
     traits = { state_trait_danube_river }
     city = x316141
     farm = x9001A0
     mine = x9001A0
     wood = x0CBB8F
-    arable_land = 80
+    arable_land = 70
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        bg_coal_mining = 44
-        bg_logging = 7
+        bg_coal_mining = 40
+        bg_logging = 6
     }
 }
 STATE_STYRIA = {

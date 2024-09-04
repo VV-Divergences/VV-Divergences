@@ -393,7 +393,7 @@
 		}
 		create_state = {
 			country = c:HUN
-			owned_provinces = { "x6F8D2A" xF0E001 }
+			owned_provinces = { "x6F8D2A" "xF0E001" }
 		}
 		
 		add_homeland = cu:south_german
