@@ -281,7 +281,7 @@
 	s:STATE_FRANCHE_COMTE = {
 		create_state = {
 			country = c:BRG
-			owned_provinces = { "x3080E0" "x3D8EF9" "x708060" "xA9D961" "xCF46D1" "xF00060" }
+			owned_provinces = { "x3080E0" "x3D8EF9" "x708060" "xA9D961" "xCF46D1" "xF00060" "xA042B5" }
 		}
 		add_homeland = cu:burgundian
 		add_homeland = cu:romand
