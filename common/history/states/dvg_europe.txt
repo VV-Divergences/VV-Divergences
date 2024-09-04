@@ -832,10 +832,6 @@
 			country = c:AUS
 			owned_provinces = { "xF0E0C0" }
 		}
-		create_state = {
-			country = c:TRT
-			owned_provinces = { "xD0BF60" "x1120FF" }
-		}
 		
 		add_homeland = cu:south_german
 	}
@@ -1182,7 +1178,11 @@
 			country = c:VEN
 			owned_provinces = { "x3080A0" "x3083C8" "x5141E0" "x554866" "x605424" "x6984B4" "x8EEB7A" "xB001A0" "xB080A0" "xC02A3F" }
 		}
-
+		create_state = {
+			country = c:TRT
+			owned_provinces = { "xD0BF60" "x1120FF" }
+		}
+		add_homeland = cu:north_italian
 		add_homeland = cu:venetian
 	}
 	s:STATE_ISTRIA = {
