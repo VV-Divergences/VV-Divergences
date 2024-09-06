@@ -296,7 +296,10 @@ law_multicultural = {
 	on_impose = { 
 			
 	}
-
+	modifier = {
+		state_radicals_from_sol_change_accepted_culture_mult = 0.15
+		state_loyalists_from_sol_change_accepted_culture_mult = -0.15		
+	}
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		
