@@ -1987,7 +1987,7 @@ ZAP = { #Zapadoslavia
 	
 	country_type = recognized
 
-	tier = empire
+	tier = hegemony
 	
 	cultures = { polish czech slovak sorb }
 	capital = STATE_WEST_GALICIA

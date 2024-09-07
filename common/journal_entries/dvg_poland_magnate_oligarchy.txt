@@ -134,6 +134,12 @@ je_eastern_resistance = {
         cu:cossack = {
             NOT = { culture_is_discriminated_in = ROOT }
         }
+        cu:cossack = {
+            NOT = { culture_is_discriminated_in = ROOT }
+        }
+        cu:cossack = {
+            NOT = { culture_is_discriminated_in = ROOT }
+        }
     }  
 
     fail = {
@@ -145,7 +151,8 @@ je_eastern_resistance = {
             is_diplomatic_play_target = yes
             OR = {
                 country_has_primary_culture = cu:cossack
-                country_has_primary_culture = cu:byelorussian 
+                country_has_primary_culture = cu:byelorussian
+                country_has_primary_culture = cu:ruthenian
             }
         }
     }
