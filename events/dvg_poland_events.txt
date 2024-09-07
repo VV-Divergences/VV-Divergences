@@ -37,13 +37,6 @@ poland.1 = {
             add_modifier = {
                 name = modifier_slave_to_liberty
                 months = -1
-            }
-            custom_tooltip = {
-                text = diplomatic_plays_blocked_until_golden_liberty
-                add_modifier = {
-                    name = diplomatic_plays_blocked
-                    months = -1
-                }	
             }	
 		}
 	}
@@ -107,22 +100,25 @@ poland.3 = {
 
     option = {
         name = poland.3.a
-        c:POL = {
-		    remove_diplomatic_pact = {
-		    	country = c:LIT
-		    	type = personal_union
-		    }
-		    create_diplomatic_pact = {
-		    	country = c:LIT
-		    	type = puppet
-		    }
-		}
         ROOT = {
             add_modifier = {
                 name = modifier_noble_democracy
                 months = -1
             }
             remove_modifier = modifier_slave_to_liberty
+            every_state_region = {
+			limit = {
+				OR = {
+					is_homeland = cu:ruthenian
+					is_homeland = cu:byelorussian
+				}
+				any_scope_state = {
+					NOT = { owner = ROOT }
+					NOT = { has_claim_by = ROOT }
+				}
+			}
+			add_claim = ROOT
+		}
         }
 	}
 }
