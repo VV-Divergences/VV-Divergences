@@ -846,6 +846,25 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
     c:LIP = { # Lippe
         
     }
+	c:LIT = { # Lithuania
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_baltic
+			name = "Lietuvos kunigaikščių pulkas"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LITHUANIA
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_MINSK
+				count = 10
+			}
+			save_scope_as = dvg_lit_main_army
+		}
+	}
     c:LOM = { # Lombardy
         create_military_formation = {
 			type = army
@@ -1097,6 +1116,23 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_MAZOVIA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GREATER_POLAND
+				count = 10
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_PRUSSIA
+				count = 5
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_GREATER_POLAND
 				count = 5
 			}
 
