@@ -1,9 +1,22 @@
-cohesion_level_very_low = {
+cohesion_level_0 = {
 	threshold = 0
 	
 	modifier = {
 		power_bloc_leverage_generation_mult = -0.5
-		power_bloc_mandate_progress_mult = -0.8
+		power_bloc_mandate_progress_mult = -0.9
+	}
+	
+	background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_low.dds"
+	
+	# AI implications for Power Blocs: very low unification support for countries in a power bloc with very low cohesion
+	ai_unification_support_score = -20
+}
+cohesion_level_1 = {
+	threshold = 10
+	
+	modifier = {
+		power_bloc_leverage_generation_mult = -0.5
+		power_bloc_mandate_progress_mult = -0.7
 	}
 	
 	background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_low.dds"
@@ -12,12 +25,25 @@ cohesion_level_very_low = {
 	ai_unification_support_score = -20
 }
 
-cohesion_level_low = {
+cohesion_level_2 = {
 	threshold = 20
 	
 	modifier = {
 		power_bloc_leverage_generation_mult = -0.2
-		power_bloc_mandate_progress_mult = -0.4
+		power_bloc_mandate_progress_mult = -0.5
+	}
+	
+	background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_low.dds"
+	
+	# AI implications for Power Blocs: low unification support for countries in a power bloc with low cohesion
+	ai_unification_support_score = -10
+}
+cohesion_level_3 = {
+	threshold = 30
+	
+	modifier = {
+		power_bloc_leverage_generation_mult = -0.2
+		power_bloc_mandate_progress_mult = -0.3
 	}
 	
 	background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_low.dds"
@@ -26,22 +52,31 @@ cohesion_level_low = {
 	ai_unification_support_score = -10
 }
 
-cohesion_level_moderate = {
+cohesion_level_4 = {
 	threshold = 40
 
 	modifier = {
-		power_bloc_mandate_progress_mult = 0
+		power_bloc_leverage_generation_mult = -0.2
+		power_bloc_mandate_progress_mult = -0.1
 	}
 	
 	background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_moderate.dds"
 }
+cohesion_level_5 = {
+	threshold = 50
 
-cohesion_level_high = {
+	modifier = {
+		power_bloc_mandate_progress_mult = 0.1
+	}
+	
+	background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_moderate.dds"
+}
+cohesion_level_6 = {
 	threshold = 60
 
 	modifier = {
 		power_bloc_leverage_generation_mult = 0.1
-		power_bloc_mandate_progress_mult = 0.5
+		power_bloc_mandate_progress_mult = 0.3
 	}
 	
 	background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_moderate.dds"
@@ -49,13 +84,35 @@ cohesion_level_high = {
 	# AI implications for Power Blocs: high unification support for countries in a power bloc with high cohesion
 	ai_unification_support_score = 10
 }
+cohesion_level_7 = {
+	threshold = 70
 
-cohesion_level_very_high = {
+	modifier = {
+		power_bloc_leverage_generation_mult = 0.20
+		power_bloc_mandate_progress_mult = 0.5
+	}
+	
+	background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_moderate.dds"
+}
+cohesion_level_8 = {
 	threshold = 80
 	
 	modifier = {
 		power_bloc_leverage_generation_mult = 0.20
-		power_bloc_mandate_progress_mult = 1.0
+		power_bloc_mandate_progress_mult = 0.7
+	}
+	 
+    background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_high.dds"
+	
+	# AI implications for Power Blocs: very high unification support for countries in a power bloc with very high cohesion
+	ai_unification_support_score = 20
+}
+cohesion_level_9 = {
+	threshold = 90
+	
+	modifier = {
+		power_bloc_leverage_generation_mult = 0.20
+		power_bloc_mandate_progress_mult = 0.9
 	}
 	 
     background_texture = "gfx/interface/icons/diplomatic_action_icons/diplomatic_action_backgrounds/subject_liberty_high.dds"
