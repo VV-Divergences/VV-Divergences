@@ -9,7 +9,7 @@
 			interest_group = ig_landowners
 			ideology = ideology_reformer
 			traits = {
-				trench_rat
+				rat
 				
 				expert_offensive_planner
 				

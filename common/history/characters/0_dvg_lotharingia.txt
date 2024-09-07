@@ -68,7 +68,7 @@
 			traits = {
 				reserved
 				scarred
-				trench_rat
+				rat
 			}
 		
 		}
@@ -136,7 +136,7 @@
 		        scarred
 				psychological_affliction
 				wrathful
-				trench_rat
+				rat
 				
 			}
 			
