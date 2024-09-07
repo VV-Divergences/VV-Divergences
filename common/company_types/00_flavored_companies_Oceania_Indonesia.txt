@@ -1,7 +1,7 @@
 
 # Semua dalam satu pertanian Ltd.
 company_SemuaDalam = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\SemuaDalam.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
 	
 	building_types = {  

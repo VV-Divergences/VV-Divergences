@@ -1,7 +1,7 @@
 
 # Àodàlìyǎ zhùfáng
 company_Aodaliya = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\Aodaliya.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	building_types = {  

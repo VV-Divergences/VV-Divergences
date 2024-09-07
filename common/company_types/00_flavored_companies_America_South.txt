@@ -1,7 +1,7 @@
 
 # Tawatinsuyu qhuyakuna
 company_Tawatinsuyu = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\Tawatinsuyu.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 	
 	building_types = {  
@@ -46,7 +46,7 @@ company_Tawatinsuyu = {
 
 # Armement de Saint Georges
 company_SaintGeorges = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\SaintGeorges.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 	
 	building_types = {  

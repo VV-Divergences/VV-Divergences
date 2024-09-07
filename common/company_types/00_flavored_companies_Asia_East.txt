@@ -1,7 +1,7 @@
 
 # Sī zhǐ màoyì gōngsī
 company_SiZhiMaoyi = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\SiZhiMaoyi.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	building_types = {  
@@ -33,7 +33,7 @@ company_SiZhiMaoyi = {
 	}
 	
 	prosperity_modifier = {
-		country_prestige_mult = 0.1
+		country_prestige_mult = 0.01
 		country_bureaucracy_mult = 0.1
 		state_loyalists_from_sol_change_mult = 0.05
 	}

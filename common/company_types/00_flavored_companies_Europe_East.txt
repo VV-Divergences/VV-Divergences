@@ -1,7 +1,7 @@
 
 # Novgorodskaja Skola
 company_NovgorodSkola = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/HarbinBeer.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\NovgorodSkola.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
 	building_types = {  
