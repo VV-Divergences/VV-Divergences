@@ -431,4 +431,70 @@
 		}
 		
 	}
+
+
+
+	# Starting liberty desire
+		#Scandi bloc
+	c:SKR = {
+		add_liberty_desire = -20
+	}
+	c:SCO = {
+		add_liberty_desire = -50
+	}
+	c:PSK = {
+		add_liberty_desire = -15
+	}
+	c:CRL = {
+		add_liberty_desire = -30
+	}
+	c:CHR = {
+		add_liberty_desire = -50
+	}
+
+
+		#OTTOmens
+	c:IRQ = {
+		add_liberty_desire = -20
+	}
+	c:EGY = {
+		add_liberty_desire = -20
+	}
+
+		#asia
+	c:AIN = {
+		add_liberty_desire = -20
+	}
+	c:LAO = {
+		add_liberty_desire = -10
+	}
+	c:BEI = {	#BURGUNDY company
+		add_liberty_desire = -50
+	}
+	c:PLM = {
+		add_liberty_desire = -20
+	}
+
+		#Belgians
+	c:CCA = {
+		add_liberty_desire = -30
+	}
+	c:CHV = {
+		add_liberty_desire = -30
+	}
+	c:CNL = {
+		add_liberty_desire = -40
+	}
+	c:CBV = {
+		add_liberty_desire = -10
+	}
+
+	c:CHE = {
+		add_liberty_desire = -20
+	}
+	c:CUB = {
+		add_liberty_desire = -10
+	}
+
+
 }
