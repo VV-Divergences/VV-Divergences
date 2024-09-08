@@ -20,7 +20,7 @@
 			}
 						
 		}
-		has_technology_researched = nationalism
+		has_technology_researched = colonization
 	}
 }
 
