@@ -44,7 +44,7 @@ dvg_spain.1 = {
 			type = je_colombian_war_of_independence_SPA
 		}
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 		}
 		ai_chance = {
 			base = 1
@@ -386,7 +386,7 @@ dvg_spain.7 = {
 		name = dvg_spain.7.a
 		default_option = yes
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 		}
 		add_journal_entry = {
 			type = je_rebuild_spain
@@ -775,7 +775,7 @@ dvg_spain.13 = {
 			}
 		}
 		add_radicals = {
-			value = 0.5
+			value = 0.33
 			culture = cu:maghrebi
 		}
 		c:MOR = {
@@ -783,7 +783,7 @@ dvg_spain.13 = {
 		}
 
 		ai_chance = {
-			base = 0.99
+			base = 0.95
 		}
 	}
 	
@@ -808,7 +808,7 @@ dvg_spain.13 = {
 			set_variable = dvg_let_morocco_go
 		}
 		ai_chance = {
-			base = 0.01
+			base = 0.05
 		}
 	}
 }
@@ -952,7 +952,7 @@ dvg_spain.15 = {
 		name = dvg_spain.15.a
 		default_option = yes
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 			culture = cu:spanish
 		}
 		custom_tooltip = {
@@ -1148,7 +1148,7 @@ dvg_spain.17 = {
 		name = dvg_spain.17.a
 		default_option = yes
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 			culture = cu:spanish
 		}
 		custom_tooltip = {
@@ -1287,7 +1287,7 @@ dvg_spain.19 = {
 	option = {
 		name = dvg_spain.19.b
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 			culture = cu:spanish
 		}
 		ai_chance = {
@@ -1444,7 +1444,7 @@ dvg_spain.22 = {
 			}
 		}
 		add_radicals = {
-			value = 0.15
+			value = 0.6
 			culture = cu:spanish
 		}
 		custom_tooltip = {
@@ -1537,7 +1537,7 @@ dvg_spain.23 = {
 		name = dvg_spain.15.a
 		default_option = yes
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 			culture = cu:spanish
 		}
 		custom_tooltip = {
@@ -1699,11 +1699,11 @@ dvg_spain.24 = {
 			}
 		}
 		add_loyalists = {
-			value = 0.1
+			value = 0.05
 			culture = cu:spanish
 		}
 		add_radicals = {
-			value = 0.25
+			value = 0.15
 			culture = cu:portuguese
 		}
 		hidden_effect = {
@@ -1763,11 +1763,11 @@ dvg_spain.24 = {
 	option = {
 		name = dvg_spain.24.b
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 			culture = cu:spanish
 		}
 		add_loyalists = {
-			value = 0.1
+			value = 0.15
 			culture = cu:portuguese
 		}
 		custom_tooltip = {
@@ -1826,7 +1826,7 @@ dvg_spain.25 = {
 			culture = cu:portuguese
 		}
 		add_radicals = {
-			value = 0.25
+			value = 0.15
 			culture = cu:spanish
 		}
 		hidden_effect = {
@@ -1841,7 +1841,7 @@ dvg_spain.25 = {
 	option = {
 		name = dvg_spain.25.b
 		add_radicals = {
-			value = 0.25
+			value = 0.1
 			culture = cu:portuguese
 		}
 		hidden_effect = {
@@ -1892,7 +1892,7 @@ dvg_spain.26 = {
 			set_variable = dvg_mateo
 		}
 		add_radicals = {
-			value = 0.25
+			value = 0.15
 			culture = cu:spanish
 		}
 		custom_tooltip = {
