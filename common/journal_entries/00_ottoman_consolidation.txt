@@ -6,11 +6,9 @@ je_ottoman_consolidation = {
 	on_weekly_pulse = {
 		effect = {
 			if = {
-				AND = {
-					limit = {
-						c:TUR ?= this
-						government_legitimacy >= 50
-					}
+				limit = {
+					c:TUR ?= this
+					government_legitimacy >= 50
 					OR = {	
 						c:EGY ?= {
 							is_subject_of = c:TUR
@@ -97,9 +95,11 @@ je_ottoman_consolidation = {
 		OR = {
 			c:EGY ?= {
 				is_subject_of = c:TUR
+				liberty_desire < 25
 			}
 			c:IRQ ?= {
 				is_subject_of = c:TUR
+				liberty_desire < 25
 			}
 		}
 		NOT = {
