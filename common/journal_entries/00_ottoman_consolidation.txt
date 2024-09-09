@@ -3,18 +3,6 @@ je_ottoman_consolidation = {
 
 	group = je_group_historical_content
 
-	immediate = {
-		c:EGY = {
-			save_scope_as = egypt_country
-		}
-		c:IRQ = {
-			save_scope_as = iraq_country
-		}
-		c:TUR = {
-			save_scope_as = ottomans_scope
-		}
-		set_variable = ottomans_member
-	}
 	on_weekly_pulse = {
 		effect = {
 			if = {
