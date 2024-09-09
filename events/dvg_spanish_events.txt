@@ -118,6 +118,9 @@ dvg_spain.2 = {
 		c:SPA = {
 			trigger_event = { id = dvg_spain.3 }
 		}
+		hidden_effect = {
+			set_global_variable = dvg_spa_gco_war
+		}
 		ai_chance = {
 			base = 1
 		}
@@ -625,7 +628,7 @@ dvg_spain.10 = {
 				}
 				activate_law = law_type:law_interventionism
 			}
-		}
+		} 
 	}
 }
 
