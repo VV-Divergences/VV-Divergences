@@ -2302,36 +2302,6 @@ dvg_oceania.50 = {
 				}
 			}
 		}
-		c:ZSA = {
-			create_truce = {
-				country = c:YLO
-				months = 240
-			}
-			create_truce = {
-				country = c:MJN
-				months = 240
-			}
-			create_truce = {
-				country = c:KOO
-				months = 240
-			}
-		}
-		c:MJN = {
-			create_truce = {
-				country = c:YLO
-				months = 240
-			}
-			create_truce = {
-				country = c:KOO
-				months = 240
-			}
-		}
-		c:YLO = {
-			create_truce = {
-				country = c:KOO
-				months = 240
-			}
-		}
 		c:SCA = {
 			create_truce = {
 				country = c:YLO

@@ -21,7 +21,7 @@
 	s:STATE_LANCASHIRE = {
 		create_state = {
 			country = c:DUA
-			owned_provinces = { "x137263" "x410CE6" "x60E000" "x65617C" "xA242B2" "xE06000" "xE0E000" "xE74158" }
+			owned_provinces = { "x410CE6" "x60E000" "x65617C" "xA242B2" "xE06000" "xE0E000" "xE74158" }
 		}
 		
 		add_homeland = cu:british
@@ -646,7 +646,7 @@
 	s:STATE_LOWLANDS = {
 		create_state = {
 			country = c:SCO
-			owned_provinces = { "x002C82" "x0B53FA" "x193EFC" "x206080" "x20E080" "x363883" "x676072" "x80F634" "x832656" "x9B6ACC" "xA06080" "xA0E000" "xA0E080" "xB2A15E" "xD01BE2" "xDCD566" }
+			owned_provinces = { "x137263" "x002C82" "x0B53FA" "x193EFC" "x206080" "x20E080" "x363883" "x676072" "x80F634" "x832656" "x9B6ACC" "xA06080" "xA0E000" "xA0E080" "xB2A15E" "xD01BE2" "xDCD566" }
 		}
 		
 		add_homeland = cu:scottish

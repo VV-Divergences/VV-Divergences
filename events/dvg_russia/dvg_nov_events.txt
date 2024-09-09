@@ -35,10 +35,22 @@ dvg_nov.1 = {
 		add_journal_entry = {
 			type = je_nov_main
 		}
+		
 	}
 
 	option = {
 		name = dvg_nov.1.a
+		hidden_effect = {
+			s:STATE_NOVGOROD.region_state:NOV = {
+				every_scope_pop = {
+					set_pop_literacy = {
+						literacy_rate = {
+							value = 0.9
+						}
+					}
+				}
+			}
+		}
 	}
 }
 

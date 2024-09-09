@@ -696,6 +696,10 @@
 				size = 201019
 			}
 			create_pop = {
+				culture = north_italian
+				size = 201019
+			}
+			create_pop = {
 				culture = slovene
 				size = 112019
 			}
