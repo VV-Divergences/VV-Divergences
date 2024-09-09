@@ -154,7 +154,7 @@ dvg_quechua_open_revolt = {
 dvg_spanish_independence_fighters = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	#state_conscription_rate_add = 0.025
-	building_training_rate_add = 500
+	building_training_rate_add = 100
 	unit_army_offense_mult = 0.05
 	unit_army_defense_mult = 0.05
 }
@@ -307,7 +307,7 @@ dvg_rus_enemies_all_sides = {
 }
 
 dvg_rock_and_hard_place = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 
 	country_law_enactment_success_add = -0.15
 	tax_land_add = 0.25
@@ -513,7 +513,7 @@ dvg_hongshan_mistreatment_still_bad = {
 dvg_spanish_independence_fighters = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	#state_conscription_rate_add = 0.025
-	building_training_rate_add = 500
+	building_training_rate_add = 100
 	unit_army_offense_mult = 0.05
 	unit_army_defense_mult = 0.05
 }

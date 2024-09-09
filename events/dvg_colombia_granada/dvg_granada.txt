@@ -115,6 +115,9 @@ dvg_granada.3 = {
 	# Independence!
 	option = {
 		name = dvg_granada.3.a
+		trigger = {
+			has_global_variable = dvg_spa_gco_war
+		}
 		default_option = yes
 		add_loyalists = {
 			value = 0.1
@@ -153,6 +156,11 @@ dvg_granada.3 = {
 	# We shall stand with Spain... for now.
 	option = {
 		name = dvg_granada.3.b
+		trigger = {
+			NOT = {
+				has_global_variable = dvg_spa_gco_war
+			}
+		} 
 		add_radicals = {
 			value = 0.1
 		}
@@ -181,7 +189,7 @@ dvg_granada.3 = {
 			}
 		}
 		ai_chance = {
-			base = 0
+			base = 1
 		}
 	}
 }

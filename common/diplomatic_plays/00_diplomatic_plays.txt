@@ -386,7 +386,10 @@ dp_make_protectorate = {
 	possible = {	
 		aggressive_diplomatic_plays_permitted = yes
 		NOT = { has_modifier = diplomatic_plays_blocked }
-		NOT = { has_modifier = neutrality }				
+		NOT = { has_modifier = neutrality }	
+		scope:target_country = {
+			NOT = { has_modifier = neutrality }
+		}			
 	}
 	
 	ai_acceptance_max = 90
@@ -732,6 +735,9 @@ dp_give_foreign_investment_rights = {
 		NOT = { is_country_type = decentralized }
 		aggressive_diplomatic_plays_permitted = yes
 		diplomatic_play_has_no_relations_blockers = yes
+		scope:target_country = {
+			NOT = { has_modifier = neutrality }
+		}
 	}
 	
 	selectable_in_lens = {

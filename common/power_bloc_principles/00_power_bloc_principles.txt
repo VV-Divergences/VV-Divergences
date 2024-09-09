@@ -771,7 +771,7 @@ principle_food_standardization_3 = {
 		state_mortality_mult = -0.1
 		
 		# Higher SoL
-		state_standard_of_living_add = 1
+		state_standard_of_living_add = 0.5
 		
 		#Unlocks a PM for Food Industries
 	}
@@ -851,7 +851,7 @@ principle_police_coordination_2 = {
 	institution = institution_police
 	institution_modifier = {
 		# Police institution reduces radicalism of political movements
-		political_movement_radicalism_mult = -0.05
+		political_movement_radicalism_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -882,7 +882,7 @@ principle_police_coordination_3 = {
 		country_authority_add = 50
 		
 		# Police institution reduces radicalism of political movements
-		political_movement_radicalism_mult = -0.05
+		political_movement_radicalism_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -907,7 +907,7 @@ principle_transport_1 = {
 		state_infrastructure_from_population_max_mult = 0.33 		
 	}
 	power_bloc_modifier = {
-		power_bloc_mandate_progress_mult = -0.05
+		power_bloc_mandate_progress_mult = -0.1
 	}
 	ai_weight = {
 		value = 100
@@ -941,6 +941,8 @@ principle_transport_2 = {
 		
 		# Members have increased convoy capacity
 		country_convoys_capacity_mult = 0.2
+
+		country_trade_route_competitiveness_mult = 0.25
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.1
@@ -959,6 +961,8 @@ principle_transport_3 = {
 		country_convoys_capacity_mult = 0.2
 		state_infrastructure_from_population_mult = 0.33
 		state_infrastructure_from_population_max_mult = 0.33 
+
+		country_trade_route_competitiveness_mult = 0.25
 		
 		# Increased land trade capacity
 		market_land_trade_capacity_add = 50
@@ -1095,6 +1099,12 @@ principle_colonial_offices_1 = {
 	leader_modifier = {
 		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes
 	}
+
+	institution = institution_colonial_affairs
+	institution_modifier = {
+		# Members get higher colony growth for each level of institution
+		state_colony_growth_creation_mult = 0.05
+	}	
 	
 	ai_weight = {
 		value = 200 # High base weight if the leader has colonies
@@ -1132,10 +1142,11 @@ principle_colonial_offices_2 = {
 	
 	institution = institution_colonial_affairs
 	institution_modifier = {
-		# Members get higher colony growth for each level of institution
+		# Modifiers from previous level(s)	
 		state_colony_growth_creation_mult = 0.05
+		country_infamy_generation_against_unrecognized_mult = -0.05
 	}	
-	
+
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1150,6 +1161,7 @@ principle_colonial_offices_3 = {
 		country_institution_size_change_speed_institution_colonial_affairs_mult = 0.5
 		country_institution_cost_institution_colonial_affairs_mult = -0.5
 		country_disallow_law_no_colonial_affairs_bool = yes
+		state_colony_growth_speed_mult = 0.1
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.15
@@ -1183,6 +1195,7 @@ principle_foreign_investment_1 = {
 	member_modifier = {
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
+		country_government_dividends_efficiency_add = 0.2
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.05
@@ -1214,6 +1227,7 @@ principle_foreign_investment_2 = {
 	member_modifier = {
 		# Members get reduced nationalization cost for assets of non-members
 		country_nationalization_cost_non_members_mult = -0.5
+		country_government_dividends_efficiency_add = 0.3
 
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
@@ -1237,6 +1251,7 @@ principle_foreign_investment_3 = {
 	member_modifier = {
 		# Modifiers from previous level(s)	
 		country_nationalization_cost_non_members_mult = -0.5
+		country_government_dividends_efficiency_add = 0.4
 
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
@@ -1339,7 +1354,7 @@ principle_freedom_of_movement_1 = {
 
 	member_modifier = {
 		# Increased migration
-		state_migration_quota_mult = 0.25
+		state_migration_quota_mult = 0.15
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.05
@@ -1395,10 +1410,10 @@ principle_freedom_of_movement_2 = {
 
 	member_modifier = {
 		# Modifiers from previous level(s)	
-		state_migration_quota_mult = 0.25
+		state_migration_quota_mult = 0.15
 		
 		# Increases chance to be picked for mass migrations
-		country_mass_migration_attraction_mult = 0.5	
+		country_mass_migration_attraction_mult = 0.25	
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.1
@@ -1414,8 +1429,8 @@ principle_freedom_of_movement_3 = {
 	
 	member_modifier = {
 		# Modifiers from previous level(s)	
-		state_migration_quota_mult = 0.25
-		country_mass_migration_attraction_mult = 0.5	
+		state_migration_quota_mult = 0.15
+		country_mass_migration_attraction_mult = 0.25	
 	}
 
 	power_bloc_modifier = {
@@ -1449,7 +1464,9 @@ principle_divine_economics_1 = {
 	
 	member_modifier = {
 		# Higher subject payments from other religions
-		country_subject_income_transfer_heathen_mult = 0.5		
+		country_private_construction_allocation_mult = 0.15
+		country_legitimacy_base_add = 5
+		country_loan_interest_rate_add = -0.05
 	}
 	
 	ai_weight = {
@@ -1476,7 +1493,9 @@ principle_divine_economics_2 = {
 	
 	member_modifier = {
 		# Modifiers from previous level(s)		
-		country_subject_income_transfer_heathen_mult = 0.5
+		country_private_construction_allocation_mult = 0.15
+		country_legitimacy_base_add = 10
+		country_loan_interest_rate_add = -0.1
 
 		# New PM for Financial Districts/Manor Houses unlocked via trigger
 	}	
@@ -1498,11 +1517,9 @@ principle_divine_economics_3 = {
 	
 	member_modifier = {
 		# Modifiers from previous level(s)		
-		country_subject_income_transfer_heathen_mult = 0.5		
-	
-		# SoL changes less radical/more loyalist for accepted religion pops
-		state_radicals_from_sol_change_accepted_religion_mult = -0.25
-		state_loyalists_from_sol_change_accepted_religion_mult = 0.25
+		country_private_construction_allocation_mult = 0.15
+		country_legitimacy_base_add = 15
+		country_loan_interest_rate_add = -0.15
 		
 		# New PM for Financial Districts/Manor Houses unlocked via trigger
 	}
@@ -1652,6 +1669,8 @@ principle_sacred_civics_1 = {
 		# Higher diplomatic acceptance from countries with same state religion
 		# This modifier actually has no effect and is just here to generate a tooltip, the effects are scripted in diplomactic_actions
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
+
+		state_accepted_birth_rate_mult = 0.033
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.05
@@ -1687,6 +1706,8 @@ principle_sacred_civics_2 = {
 	member_modifier = {
 		# Modifiers from previous level(s)		
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
+
+		state_accepted_birth_rate_mult = 0.067
 		
 		# Lower liberty desire for subjects with the same religion
 		# This modifier actually has no effect and is just here to generate a tooltip, the effects are scripted in scripted_values
@@ -1708,6 +1729,12 @@ principle_sacred_civics_3 = {
 		# Modifiers from previous level(s)		
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
 		country_reduced_liberty_desire_same_religion_bool = yes
+
+		state_accepted_birth_rate_mult = 0.1
+
+		# SoL changes less radical/more loyalist for accepted religion pops
+		state_radicals_from_sol_change_accepted_religion_mult = -0.25
+		state_loyalists_from_sol_change_accepted_religion_mult = 0.25
 	}
 
 	leader_modifier = {
