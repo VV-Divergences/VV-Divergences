@@ -504,7 +504,7 @@ PLC = { #Poland-Lithuania
 	tier = empire
 	
 	cultures = { polish lithuanian }
-	capital = STATE_MAZOVIA
+	capital = STATE_GREATER_POLAND
 }
 
 POL = { #Poland
@@ -516,7 +516,7 @@ POL = { #Poland
 	tier = kingdom
 	
 	cultures = { polish }
-	capital = STATE_MAZOVIA
+	capital = STATE_GREATER_POLAND
 }
 
 LIT = { #Lithuania
@@ -1199,7 +1199,7 @@ GBR = { #Great Britain
 
 	tier = empire	
 	
-	cultures = { british scottish }
+	cultures = { british scottish welsh }
 	capital = STATE_HOME_COUNTIES
 }
 
@@ -1987,7 +1987,7 @@ ZAP = { #Zapadoslavia
 	
 	country_type = recognized
 
-	tier = empire
+	tier = hegemony
 	
 	cultures = { polish czech slovak sorb }
 	capital = STATE_WEST_GALICIA
@@ -2038,7 +2038,7 @@ EUR = { #European Union
 }
 
 CLT = { #Celtic Union
-	color = {  130 10 22 }
+	color = { 80 135 50 }
 	
 	country_type = recognized
 

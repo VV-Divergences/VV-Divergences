@@ -28,7 +28,6 @@
 				exists = c:POL
 				c:POL = ROOT
 			}
-			remove_modifier = diplomatic_plays_blocked
 		}
 	}
 

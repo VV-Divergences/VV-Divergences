@@ -2,7 +2,7 @@
 
 
 ###AMERIGA###
-#Tawantinsuyu
+ #Tawantinsuyu
  STATE_CUZCO: "Qusqu"
  STATE_CUNTISUYU: "Kuntisuyu"
  STATE_NEAR_ANTISUYU: "Near Antisuyu"
@@ -15,7 +15,7 @@
  STATE_CATAMARCA: "Kiri-Kiri"
  STATE_KUCHICHAY: "Kuyun"
 
-#Lotharingia
+ #Lotharingia
  STATE_LIBREVILLE: "Parigny-les-vaux"
  STATE_CHACO_BOREAL: "Marches Marais"
  STATE_NOUVELLE_ALSACE: "Nouvelle Alsace"
@@ -26,7 +26,7 @@
  STATE_LORRAINE_ATLANTIQUE: "Lorraine Atlantique"
  STATE_TRANSFLEUVE: "Transfleuve"
 
-#Beornia
+ #Beornia
  STATE_AVALON: "Avalon"
  STATE_NEW_LONDON: "Alfredshire"
  STATE_GODWINSON: "Godwinson"
@@ -34,7 +34,7 @@
  STATE_WESSEX: "Wessex"
  STATE_EOFERWIC: "Zion"
 
-#Amazonie
+ #Amazonie
  STATE_FRANCE_ANTARTIQUE: "France Antartique"
  STATE_COTE_DU_SUCRE: "Côte du Sucre"
  STATE_GOUAS: "Gouas"
@@ -171,7 +171,7 @@
  STATE_GYLHENVIK: "Gylhenvik"
  STATE_TJORNIN: "Tjornin"
  
- ###EUROPE###
+###EUROPE###
  #Dual Monarchy
  STATE_ARMAGNAC: "Armagnac"
  STATE_LIMOUSIN: "Limousin"
@@ -202,7 +202,7 @@
  STATE_IDEL: "Idel"
  STATE_BASHKORTOSTAN: "Bashkortostan"
  
- ###ASIA###
+###ASIA###
 
  #Afghanistan
  STATE_WESTERN_AFGHANISTAN: "Western Afghanistan"
@@ -244,11 +244,13 @@
  STATE_GUANSHAN: "Guanshan"
  STATE_XINXIANG: "Xinxiang"
  
- ###AFRICA###
+###AFRICA###
  #Venice
  STATE_TERRA_DORO: "Terra d'Oro"
- 
  STATE_MAROUA: "Maroua"
+ 
+ #Ethiopia
+ STATE_ADAL: "Adal"
  
  #Vryland
  STATE_NOORDLAND: "Noordland"
