@@ -3,6 +3,7 @@ l_english:
  #Journal Entries
  je_ottoman_consolidation: "The Integration of The Khedivates"
  ottomans_no_revolutions_tt: "Our arab subjects are not in revolution"
+ ottoman_consolidation_completion_tt: "Triggers the event #BOLD Centralising Our Rule#"
  
  #Events
  ottoman_consolidation_events.1.t: "Centralising Our Rule"

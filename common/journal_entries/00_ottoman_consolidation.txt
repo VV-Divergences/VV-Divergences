@@ -3,7 +3,7 @@ je_ottoman_consolidation = {
 
 	group = je_group_historical_content
 
-	on_weekly_pulse = {
+	on_monthly_pulse = {
 		effect = {
 			if = {
 				limit = {
@@ -34,7 +34,7 @@ je_ottoman_consolidation = {
 				}
                 change_global_variable = {
 				    name = ottoman_consolidation_var
-				    add = 20
+				    add = 1
 			    }
 			}
 		}
