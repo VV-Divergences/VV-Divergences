@@ -1434,34 +1434,10 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
     c:SPA = { # Spain
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_iberia
-			name = "Grande Exército da Espanha"
+			hq_region = sr:region_caribbean
+			name = "Fuzileiros Navais da Colômbia"
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ESTREMADURA
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ALENTEJO
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BEIRA
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_GALICIA
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ASTURIAS
-				count = 5
-			}
+			
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_CASTILE
@@ -1489,11 +1465,6 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ANDALUSIA
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_GRANADA
 				count = 5
 			}
@@ -1514,23 +1485,53 @@ MILITARY_FORMATIONS = { # Extends east to bohemia/austria and no further for now
 				state_region = s:STATE_PEGU
 				count = 5
 			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ESTREMADURA
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BEIRA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ASTURIAS
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ANDALUSIA
+				count = 10
+			}
 			save_scope_as = dvg_spa_second_army
 		}
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_caribbean
-			name = "Fuzileiros Navais da Colômbia"
+			hq_region = sr:region_iberia
+			name = "Grande Exército da Espanha"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ESTREMADURA
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_ALENTEJO
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_GALICIA
 				count = 5
 			}
 			save_scope_as = dvg_spa_third_army
 		}
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_south_germany
+			hq_region = sr:region_zanj
 			name = "Divisão de Zanzibar"
 
 			combat_unit = {
