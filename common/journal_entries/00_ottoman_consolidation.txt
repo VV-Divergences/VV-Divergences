@@ -176,7 +176,7 @@ je_ottoman_consolidation = {
 	}
 
 	goal_add_value = {
-		value = 100
+		value = 72
 	}
 
 	progressbar = yes
