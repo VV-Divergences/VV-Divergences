@@ -307,7 +307,7 @@ dvg_rus_enemies_all_sides = {
 }
 
 dvg_rock_and_hard_place = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 
 	country_law_enactment_success_add = -0.15
 	tax_land_add = 0.25

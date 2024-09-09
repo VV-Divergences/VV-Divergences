@@ -1813,10 +1813,6 @@
 		}
 
 		add_modifier = {
-			name = diplomatic_plays_blocked
-			months = -1
-		}
-		add_modifier = {
 			name = dvg_rock_and_hard_place
 			months = -1
 		}
@@ -1844,10 +1840,6 @@
 			add_ideology = ideology_boyar_paternalistic
 		}
 
-		add_modifier = {
-			name = diplomatic_plays_blocked
-			months = -1
-		}
 		add_modifier = {
 			name = dvg_rock_and_hard_place
 			months = -1
@@ -1886,10 +1878,6 @@
 			add_ideology = ideology_boyar_paternalistic
 		}
 
-		add_modifier = {
-			name = diplomatic_plays_blocked
-			months = -1
-		}
 		add_modifier = {
 			name = dvg_rock_and_hard_place
 			months = -1
@@ -1936,10 +1924,6 @@
 		}
 
 		add_modifier = {
-			name = diplomatic_plays_blocked
-			months = -1
-		}
-		add_modifier = {
 			name = dvg_rock_and_hard_place
 			months = -1
 		}
@@ -1979,10 +1963,6 @@
 			add_ruling_interest_group = yes
 		}
 
-		add_modifier = {
-			name = diplomatic_plays_blocked
-			months = -1
-		}
 		add_modifier = {
 			name = dvg_rock_and_hard_place
 			months = -1
@@ -2035,10 +2015,6 @@
 		}
 
 		add_modifier = {
-			name = neutrality
-			months = 110
-		}
-		add_modifier = {
 			name = cossack_lifestyle
 			months = -1
 		}
@@ -2067,10 +2043,6 @@
 		}
 
 		add_modifier = {
-			name = neutrality
-			months = 108
-		}
-		add_modifier = {
 			name = cossack_lifestyle
 			months = -1
 		}
@@ -2098,10 +2070,6 @@
 			add_ruling_interest_group = yes
 		}
 
-		add_modifier = {
-			name = neutrality
-			months = 110
-		}
 		add_modifier = {
 			name = cossack_lifestyle
 			months = -1
@@ -2134,10 +2102,6 @@
 			type = je_pol_king_maximilian
 		}
 
-		add_modifier = {
-			name = neutrality
-			months = 110
-		}
 		add_modifier = {
 			name = cossack_lifestyle
 			months = -1
@@ -2193,10 +2157,6 @@
 			type = je_pol_king_maximilian
 		}
 
-		add_modifier = {
-			name = neutrality
-			months = 110
-		}
 		add_modifier = {
 			name = cossack_lifestyle
 			months = -1
