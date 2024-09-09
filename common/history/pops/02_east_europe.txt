@@ -138,7 +138,7 @@
 		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
-				size = 1359209
+				size = 1559209
 			}
 			create_pop = {
 				culture = hungarian
@@ -152,15 +152,15 @@
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 34216
+				size = 39216
 			}
 			create_pop = {
 				culture = turkish
-				size = 70876
+				size = 20876
 			}
 			create_pop = {
 				culture = south_german
-				size = 472827
+				size = 572827
 			}
 			create_pop = {
 				culture = slovak
@@ -742,11 +742,11 @@
 		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 921552
+				size = 2421552
 			}
 			create_pop = {
 				culture = polish
-				size = 45341
+				size = 95341
 				religion = protestant
 			}
 			create_pop = {
@@ -755,7 +755,7 @@
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 137156
+				size = 237156
 			}
 		}
 	}
@@ -795,48 +795,23 @@
 		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 242073
+				size = 272073
 			}
 			create_pop = {
 				culture = balters
-				size = 438886
+				size = 508886
 			}
 			create_pop = {
 				culture = ashkenazi
 				size = 4800
 			}
 		}
-		region_state:PRU = {
-			create_pop = {
-				culture = balters
-				size = 82585
-			}
-			create_pop = {
-				culture = polish
-				size = 26655
-			}
-		}
 	}
 	s:STATE_EAST_PRUSSIA = {
-		region_state:POL = {
-			create_pop = {
-				culture = polish
-				size = 3566
-			}
-			create_pop = {
-				culture = polish
-				size = 26460
-				religion = protestant
-			}
-			create_pop = {
-				culture = balters
-				size = 41294
-			}
-		}
 		region_state:PRU = {
 			create_pop = {
 				culture = balters
-				size = 621322
+				size = 661322
 			}
 			create_pop = {
 				culture = polish
@@ -845,7 +820,7 @@
 			}
 			create_pop = {
 				culture = polish
-				size = 39374
+				size = 99374
 			}
 			create_pop = {
 				culture = lithuanian
@@ -890,11 +865,11 @@
 		region_state:POL = {
 			create_pop = {
 				culture = polish
-				size = 216854
+				size = 1216854
 			}
 			create_pop = {
 				culture = ruthenian
-				size = 568620
+				size = 1568620
 			}
 			create_pop = {
 				culture = ruthenian

@@ -1473,14 +1473,11 @@
 
 	c:TUR = { #Ottomans
 		effect_starting_technology_tier_3_tech = yes
-
-		add_technology_researched = lathe
-		add_technology_researched = empiricism
-		add_technology_researched = mass_communication
-		add_technology_researched = stock_exchange
+		effect_starting_politics_traditional = yes
 		
+		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_censorship
@@ -1512,6 +1509,13 @@
 		#	name = cizye_tax
 		#	months = -1
 		#}
+		set_global_variable = {
+			name = ottoman_consolidation_var
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_ottoman_consolidation
+		}
 	}
 	
 	# c:JNR = { #Janissary Revolt
@@ -1647,10 +1651,6 @@
 		}
 		add_modifier = {
 			name = modifier_slave_to_liberty
-			months = -1
-		}
-		add_modifier = {
-			name = diplomatic_plays_blocked
 			months = -1
 		}
 	}

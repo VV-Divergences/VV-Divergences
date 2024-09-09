@@ -492,7 +492,7 @@
 		region_state:BRG = {
 			create_pop = {
 				culture = burgundian
-				size = 1263569
+				size = 1293569
 			}
 			create_pop = {
 				culture = rheinish
@@ -504,7 +504,7 @@
 			}
 			create_pop = {
 				culture = romand
-				size = 46399
+				size = 246399
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -670,6 +670,16 @@
 				culture = rheinish
 				size = 76533
 			}
+			create_pop = {
+				culture = romand
+				size = 52166
+			}
+		}
+		region_state:FIO = {
+			create_pop = {
+				culture = romand
+				size = 69453
+			}
 		}
 	}
 	s:STATE_EAST_SWITZERLAND = {
@@ -714,28 +724,6 @@
 				culture = ashkenazi
 				size = 2216
 			}
-		}
-		region_state:HUN = {
-			create_pop = {
-				culture = hungarian
-				size = 118023
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 17262
-			}
-			create_pop = {
-				culture = south_german
-				size = 78192
-			}
-			create_pop = {
-				culture = czech
-				size = 12819
-			}
-			create_pop = {
-				culture = slovak
-				size = 9102	
-			}			
 		}
 	}
 	s:STATE_STYRIA = {
@@ -862,16 +850,6 @@
 			create_pop = {
 				culture = south_german
 				size = 281490
-			}
-		}
-		region_state:TRT = {
-			create_pop = {
-				culture = north_italian
-				size = 144402
-			}
-			create_pop = {
-				culture = south_german
-				size = 7603
 			}
 		}
 		region_state:SLZ = {
@@ -1272,20 +1250,12 @@
 		region_state:SCO = {
 			create_pop = {
 				culture = scottish
-				size = 568435
+				size = 498435
 			}
 			create_pop = {
 				culture = scandinavian
 				size = 113960
 			}
-			# create_pop = {
-				# culture = scottish
-				# size = 1103758
-			# }
-			# create_pop = {
-				# culture = scandinavian
-				# size = 221282
-			# }
 		}
 		region_state:SCA = {
 			create_pop = {
@@ -1298,7 +1268,7 @@
 		region_state:SCO = {
 			create_pop = {
 				culture = scottish
-				size = 1199723
+				size = 1299723
 			}
 			create_pop = {
 				culture = scandinavian
