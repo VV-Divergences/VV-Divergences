@@ -7140,7 +7140,7 @@ POL = { # Poland
 	}	
 }
 
-POM = { # Pommerania
+POM = { # Pomerania
 	flag_definition = {
 		coa = POM
 		subject_canton = POM
