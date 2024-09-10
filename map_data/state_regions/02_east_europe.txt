@@ -68,7 +68,7 @@ STATE_TRANSDANUBIA = {
 STATE_WEST_SLOVAKIA = {
     id = 168
     subsistence_building = building_subsistence_farms
-    provinces = { x02CE3A x082416 x1F3F2B x20C000 x51306A x516161 x51E061 x695F42 x6B444C x7DE5D3 x853117 x90E0E0 xA0531B xB23DA0 xB386BA xC54074 xC85CD0 xCA932B xD06161 xFC6F14 }
+    provinces = { x02CE3A x082416 x1F3F2B x20C000 x51306A x516161 x51E061 x695F42 x6B444C x7DE5D3 x853117 x90E0E0 xA0531B xB23DA0 xB386BA xC54074 xC85CD0 xCA932B xD06161 xFC6F14 x69BAC7 x359378}
     traits = { state_trait_danube_river }
     city = xCA932B
     farm = x90E0E0
@@ -77,25 +77,26 @@ STATE_WEST_SLOVAKIA = {
     arable_land = 100
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        bg_coal_mining = 44
-        bg_iron_mining = 63
+        bg_coal_mining = 58
+        bg_iron_mining = 72
+        bg_lead_mining = 30
         bg_logging = 8
     }
 }
 STATE_EAST_SLOVAKIA = {
     id = 169
     subsistence_building = building_subsistence_farms
-    provinces = { x31A0A0 x359378 x35CE84 x489C42 x4D0305 x53932F x56839F x69BAC7 x7161A0 x79D62E x7E6263 x7EDD9E x884128 xA3CF78 xB021A0 xC58E1C xD0E061 xFFCCDA }
+    provinces = { x31A0A0 x35CE84 x489C42 x4D0305 x53932F x56839F x7161A0 x79D62E x7E6263 x7EDD9E x884128 xA3CF78 xB021A0 xC58E1C xFFCCDA }
     city = x4D0305
-    farm = x69BAC7
+    farm = x7EDD9E
     mine = x79D62E
     wood = x7EDD9E
-    arable_land = 70
+    arable_land = 60
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        bg_coal_mining = 92
-        bg_lead_mining = 33
-        bg_logging = 15
+        bg_coal_mining = 82
+        bg_lead_mining = 30
+        bg_logging = 13
     }
 }
 STATE_MAZOVIA = {
@@ -213,7 +214,7 @@ STATE_SOUTHERN_TRANSYLVANIA = {
 STATE_NORTHERN_TRANSYLVANIA = {
     id = 171
     subsistence_building = building_subsistence_farms
-    provinces = { x3161A0 x4884E0 x6E6896 x73F00B x896455 x897F3D xA08763 xA77BCB xAF609F xB06161 xC63C51 xD0E0A0 }
+    provinces = { x3161A0 x4884E0 x6E6896 x73F00B x896455 x897F3D xA08763 xA77BCB xAF609F xB06161 xC63C51 xD0E0A0 xD0E061 }
     city = x10E29E
     farm = xD061A0
     mine = x306060
@@ -221,9 +222,9 @@ STATE_NORTHERN_TRANSYLVANIA = {
     arable_land = 50
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
-        bg_coal_mining = 48
+        bg_coal_mining = 53
         bg_iron_mining = 63
-        bg_logging = 13
+        bg_logging = 14
     }
 }
 STATE_WALLACHIA = {
