@@ -41,3 +41,47 @@ company_NovgorodSkola = {
 		value = 3 # Higher base value for flavored companies
 	}	
 }
+
+# Moskovskiy arsenal
+company_MuscovyGuns = {
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\NovgorodSkola.png" 
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	building_types = {  
+		building_arms_industry
+		building_textile_mills
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_russia
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_MOSCOW
+			}		
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_MOSCOW
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_arms_industry
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_kill_rate_add = 0.1
+		unit_morale_loss_mult = -0.05
+		military_formation_movement_speed_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}
