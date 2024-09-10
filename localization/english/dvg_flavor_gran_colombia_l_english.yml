@@ -76,7 +76,7 @@ dvg_gco_claims_granada: "Claim Granada"
 dvg_gco_claims_granada_desc: "The Granadans would not help us in our hour of need. Are they traitors, or so thoroughly oppressed that they are unable to resist their masters? Regardless of the truth, it has become clear that they would be better with us."
 
 dvg_gco_incorporate_granadan: "The Granadans Secured"
-dvg_gco_incorporate_granadan_desc: "With this victory, we have cemented ourselves as the rightful protectors of the former Spanish colonies in Ameriga. Shall we continue southward?"
+dvg_gco_incorporate_granadan_desc: "With this victory, we have cemented ourselves as the rightful protectors of the former Spanish colonies in Ameriga. Shall we continue to the south?"
 
 dvg_gco_claims_kuba: "Claim Kuba"
 dvg_gco_claims_kuba_desc: "The yoke of Spain is so great that the people of the colony of Kuba were unable to mount serious resistance during our war. If they cannot resist our former overlords, who may oppress them next?"
@@ -89,6 +89,9 @@ dvg_gco_claims_peru_desc: "Despite assisting us in our war for freedom, it is cl
 
 dvg_gco_incorporate_peruvian: "New Toledo Secured"
 dvg_gco_incorporate_peruvian_desc: "It is done. Our nation is a protector of catholics and colonists alike. Songs will be sung for hundreds of years to remind our descendants of today."
+
+dvg_gco_incorporate_africans: "End the Cycle"
+dvg_gco_incorporate_africans_desc: "Despite the oppression we have faced under the Spanish, we continued to put our fellow man in bondage. Our atonement can only begin by granting the common men beside us full citizenship."
 
 
 

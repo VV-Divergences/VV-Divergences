@@ -188,3 +188,35 @@ dvg_gco_incorporate_peruvian = {
 		base = 100
 	}
 }
+
+dvg_gco_incorporate_africans = {
+	is_shown = {
+		exists = c:GCO
+		root = c:GCO
+		
+		NOT = {
+			country_has_primary_culture = cu:afro_latino
+		}
+	}
+
+	possible = {
+		owns_entire_state_region = STATE_MEXICO
+		has_technology_researched = human_rights
+		has_law = law_type:law_slavery_banned
+		OR = {
+			has_law = law_type:law_multicultural
+			has_law = law_type:law_cultural_exclusion
+		}
+
+	}
+	
+    when_taken = {
+	
+		add_primary_culture = cu:afro_latino
+		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}
