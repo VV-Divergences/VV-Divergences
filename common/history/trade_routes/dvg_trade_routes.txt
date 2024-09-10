@@ -646,7 +646,7 @@
 	c:MUG = {
 		create_trade_route = {
 			goods = artillery
-			level = 1
+			level = 5
 			direction = import
 			target = c:SCA.market
 		}

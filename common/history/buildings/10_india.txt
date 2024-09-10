@@ -2154,7 +2154,7 @@ BUILDINGS={
                 add_ownership={
                     country={
                         country="c:MUG"
-                        levels=10
+                        levels=12
                     }
                 }
                 reserves=1
@@ -2212,7 +2212,7 @@ BUILDINGS={
                     building={
                         type="building_paper_mills"
                         country="c:MUG"
-                        levels=3
+                        levels=6
                         region="STATE_DELHI"
                     }
                 }
@@ -2254,11 +2254,11 @@ BUILDINGS={
                 add_ownership={
                     country={
                         country="c:MUG"
-                        levels=8
+                        levels=10
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_simple_organization" }
+                activate_production_methods={ "pm_horizontal_drawer_cabinets" }
             }
 			create_building={
                 building="building_silk_plantation"
@@ -2386,7 +2386,7 @@ BUILDINGS={
                 add_ownership={
                     country={
                         country="c:MUG"
-                        levels=5
+                        levels=7
                     }
                 }
                 reserves=1
