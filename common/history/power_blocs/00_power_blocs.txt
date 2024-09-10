@@ -135,4 +135,29 @@
 			
 		}
 	}
+	c:MUG = {
+		create_power_bloc = {
+			name = MUGHALS_bloc_name 
+	
+			map_color = { 46 0 108 }
+	
+			founding_date = 1015.6.9 
+			identity = identity_religious
+			principle = principle_divine_economics_1
+
+			member = c:BGL
+			member = c:ORI
+			member = c:NEP
+			member = c:KZD
+			member = c:BAG
+			member = c:SRY
+			member = c:KAS
+			member = c:BUN
+
+			
+		}
+		power_bloc = {
+			
+		}
+	}
 }
