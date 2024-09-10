@@ -92,7 +92,7 @@ BLC = { #Belgian Confederation
 
 	country_type = colonial
 
-	tier = kingdom
+	tier = principality
 	
 	cultures = { septiman }
 	capital = STATE_NOUVELLE_FLANDRE
