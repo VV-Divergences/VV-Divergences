@@ -107,7 +107,8 @@ dvg_army_reform_spain = {
 
 dvg_naval_enthusiasm = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	unit_navy_offense_add = 1.0
+	unit_navy_offense_add = 5
+	unit_navy_defense_add = 10
 }
 
 russia_unification_popularity = {

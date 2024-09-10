@@ -411,8 +411,9 @@ dvg_gran_colombia.8 = {
 		
 		add_modifier = {
 			name = dvg_naval_enthusiasm
+			years = 15
 		}
-		trigger_event = { id = dvg_gran_colombia.13 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.13 days = 14 }
 		ai_chance = {
 			base = 1
 		}
@@ -591,7 +592,7 @@ dvg_gran_colombia.13 = {
 				type = alliance
 			}
 		}
-		trigger_event = { id = dvg_gran_colombia.14 }
+		trigger_event = { id = dvg_gran_colombia.14 days = 14}
 		ai_chance = {
 			base = 10
 		}
@@ -617,7 +618,7 @@ dvg_gran_colombia.13 = {
 				type = defensive_pact
 			}
 		}
-		trigger_event = { id = dvg_gran_colombia.14 }
+		trigger_event = { id = dvg_gran_colombia.14 days = 14}
 		ai_chance = {
 			base = 65
 		}
@@ -626,7 +627,7 @@ dvg_gran_colombia.13 = {
 	option = {
 		name = dvg_gran_colombia.13.c
 		
-		trigger_event = { id = dvg_gran_colombia.14 }
+		trigger_event = { id = dvg_gran_colombia.14 days = 14}
 		ai_chance = {
 			base = 25
 		}
@@ -656,28 +657,9 @@ dvg_gran_colombia.14 = {
 	trigger = {
 	}
 	
-	# Custom union
+	# Trade Agreements
 	option = {
 		name = dvg_gran_colombia.14.a
-		
-		c:GCO = {
-			create_diplomatic_pact = {
-				country = c:GRA
-				type = custom_unions
-			}
-			create_diplomatic_pact = {
-				country = c:QUI
-				type = custom_unions
-			}
-		}
-		trigger_event = { id = dvg_gran_colombia.15 }
-		ai_chance = {
-			base = 10
-		}
-	}
-	#Trade agreement
-	option = {
-		name = dvg_gran_colombia.14.b
 		default_option = yes
 		
 		c:GCO = {
@@ -696,19 +678,21 @@ dvg_gran_colombia.14 = {
 				type = trade_agreement
 			}
 		}
-		trigger_event = { id = dvg_gran_colombia.15 }
+		trigger_event = { id = dvg_gran_colombia.15 days = 14}
 		ai_chance = {
 			base = 65
 		}
 	}
+	# Nothing
 	option = {
-		name = dvg_gran_colombia.14.c
+		name = dvg_gran_colombia.14.b
 		
-		trigger_event = { id = dvg_gran_colombia.15 }
+		trigger_event = { id = dvg_gran_colombia.15 days = 14}
 		ai_chance = {
-			base = 25
+			base = 10
 		}
 	}
+	
 }
 #Vicente
 dvg_gran_colombia.15 = {
@@ -772,7 +756,7 @@ dvg_gran_colombia.15 = {
 		name = dvg_gran_colombia.15.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.27 days = 5}
+		trigger_event = { id = dvg_gran_colombia.27 days = 14}
 		
 		ai_chance = {
 			base = 50
@@ -789,7 +773,7 @@ dvg_gran_colombia.15 = {
 		scope:intelligentsia_leader = {
 			set_character_as_ruler = yes
 		}
-		trigger_event = { id = dvg_gran_colombia.16 }
+		trigger_event = { id = dvg_gran_colombia.16 days = 5}
 		ai_chance = {
 			base = 50
 		}
@@ -822,7 +806,10 @@ dvg_gran_colombia.16 = {
 		name = dvg_gran_colombia.16.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.17 }
+		add_radicals = {
+			value = 0.05
+		}
+		trigger_event = { id = dvg_gran_colombia.17 days = 14}
 		
 		ai_chance = {
 			base = 1
@@ -856,7 +843,15 @@ dvg_gran_colombia.17 = {
 		name = dvg_gran_colombia.17.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.18 }
+		add_radicals = {
+			value = 0.1
+			interest_group = ig:ig_landowners
+		}
+		add_radicals = {
+			value = 0.1
+			interest_group = ig:ig_rural_folk
+		}
+		trigger_event = { id = dvg_gran_colombia.18 days = 14}
 		
 		ai_chance = {
 			base = 1
@@ -1240,7 +1235,7 @@ dvg_gran_colombia.18 = {
 		name = dvg_gran_colombia.18.b
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.19 days = 5 }
+		trigger_event = { id = dvg_gran_colombia.19 days = 14 }
 		ai_chance = {
 			base = 50
 		}
@@ -1314,7 +1309,7 @@ dvg_gran_colombia.19 = {
 			set_character_as_ruler = yes
 		}
 		
-		trigger_event = { id = dvg_gran_colombia.20 }
+		trigger_event = { id = dvg_gran_colombia.20 days = 14 }
 		
 		ai_chance = {
 			base = 1
@@ -1347,7 +1342,7 @@ dvg_gran_colombia.20 = {
 		name = dvg_gran_colombia.20.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.21 }
+		trigger_event = { id = dvg_gran_colombia.21 days = 14 }
 		
 		ai_chance = {
 			base = 1
@@ -1632,7 +1627,7 @@ dvg_gran_colombia.27 = {
 	option = {
 		name = dvg_gran_colombia.27.a
 		default_option = yes
-		trigger_event = { id = dvg_gran_colombia.28 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.28 days = 14 }
 		
 		ai_chance = {
 			base = 1
@@ -1665,7 +1660,7 @@ dvg_gran_colombia.28 = {
 		name = dvg_gran_colombia.28.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.29 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.29 days = 14 }
 		
 		ai_chance = {
 			base = 1
@@ -1698,7 +1693,7 @@ dvg_gran_colombia.29 = {
 		name = dvg_gran_colombia.29.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.30 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.30 days = 14 }
 		
 		ai_chance = {
 			base = 1

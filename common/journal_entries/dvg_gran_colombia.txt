@@ -13,6 +13,7 @@
 	fail = {
 		c:GCO = {
 			is_subject = yes
+			is_at_war = no
 		}
 	}
 
@@ -41,7 +42,7 @@ je_build_a_navy_gran_colombia = {
 	}
 
     on_complete = {
-		#trigger_event = { id = dvg_gran_colombia.4 }
+		trigger_event = { id = dvg_gran_colombia.8 }
 	}
 	
     on_fail = {
@@ -61,11 +62,19 @@ je_conquer_kuba_gran_colombia = {
 	}
 
 	on_complete = {
-		#trigger_event = { id = dvg_gran_colombia.5 }
+		trigger_event = { id = dvg_gran_colombia.5 }
 	}
 
 	weight = 100
 	should_be_pinned_by_default = yes
+}
+
+je_veracruz_conference = {
+	icon = "gfx/interface/icons/event_icons/waving_flag"
+
+	group = je_group_internal_affairs
+
+	complete = 
 }
 
 
