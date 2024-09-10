@@ -12,6 +12,18 @@
 			direction = import
 			target = c:MYS.market
 		}
+		create_trade_route = {
+			goods = wood
+			level = 20
+			direction = import
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = wood
+			level = 8
+			direction = import
+			target = c:POL.market
+		}
 	}
 	c:BRG = {
 		create_trade_route = {
@@ -23,6 +35,12 @@
 		create_trade_route = {
 			goods = wood
 			level = 10
+			direction = import
+			target = c:NOV.market
+		}
+		create_trade_route = {
+			goods = iron
+			level = 20
 			direction = import
 			target = c:NOV.market
 		}
@@ -132,7 +150,12 @@
 			direction = import
 			target = c:SCA.market
 		}
-
+		create_trade_route = {
+			goods = wood
+			level = 15
+			direction = import
+			target = c:POL.market
+		}
 	}
 	c:BGL = {
 		create_trade_route = {
@@ -370,7 +393,7 @@
 	c:VEN = {
 		create_trade_route = {
 			goods = iron
-			level = 1
+			level = 3
 			direction = import
 			target = c:ARN.market
 		}
@@ -403,6 +426,24 @@
 			level = 1
 			target = c:TUR.market
 			direction = export
+		}
+		create_trade_route = {
+			goods = wood
+			level = 8
+			target = c:POL.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = dye
+			level = 2
+			target = c:TUR.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = hardwood
+			level = 2
+			target = c:TUR.market
+			direction = import
 		}
 	}
 	c:CNF = {
@@ -655,6 +696,14 @@
 			level = 1
 			direction = import
 			target = c:SCA.market
+		}
+	}
+	c:POL = {
+		create_trade_route = {
+			goods = iron
+			level = 3
+			direction = import
+			target = c:NOV.market
 		}
 	}
 }

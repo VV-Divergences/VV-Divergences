@@ -33,8 +33,14 @@
  dvg_ggg.1.f:0 "With the stroke of a pen, the integration of [SCOPE.sCountry('dvg_ggg_integrated_german_nation').GetName] into our realm has been ratified. Though it has not gone unnoticed, our realm continues to swell as the German people flock to our nation."
  dvg_ggg.1.a:0 "Excellent!"
 
+ dvg_ggg.2.t:0 "Pomerania and Mecklenburg Secede"
+ dvg_ggg.2.d:0 "The German states of Pomerania and Mecklenburg have seceded in response to our abandonment of our long-standing German foreign policy."
+ dvg_ggg.2.f:0 "Long have we stood by, and governed the German states of Mecklenburg and Pomerania through consent, and with that, in objection to our recent foreign policy reverse, they have declared their separation from our Union. While leaving is their right enshrined in law, their return by force is not explicitly precluded... "
+ dvg_ggg.2.a:0 "This is unfortunate."
+
  dvg_great_german_game_modifier:0 "Soft Power Focus"
  dvg_left_great_german_game_modifier_brg:0 "War, It Must be"
  dvg_left_great_german_game_modifier_boh:0 "Bohemians Before Germans"
  dvg_left_great_german_game_modifier_sca:0 "Riches Beyond Germany"
+ dvg_ggg_gave_up_german_claims:0 "Gave Up German Claims"
  

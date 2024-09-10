@@ -732,11 +732,16 @@ dvg_left_great_german_game_modifier_boh = {
 }
 dvg_left_great_german_game_modifier_sca = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	state_colony_growth_creation_mult = 0.1
+	state_colony_growth_creation_mult = 0.2
 }
 dvg_left_great_german_game_modifier_brg = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	country_infamy_generation_mult = -0.25
+	country_infamy_generation_mult = -0.15
 	country_radicals_from_conquest_mult = -0.25
+}
+
+dvg_ggg_gave_up_german_claims = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_add = -25
 }
 

@@ -12,18 +12,21 @@
 	scripted_progress_bar = dvg_german_game_scandinavia_bar
 
 	complete = {
-		# has_law = law_type:law_monarchy
-		# custom_tooltip = {
-		# 	text = je_divided_monarchists_02_tt
-		# 	has_variable = one_true_french_dynasty #Can only ever complete upon finishing the Cement the Rightful Dynasty journal entry.
-		# }
+		NOT = {
+			any_nation = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:rheinish
+				}
+				country_rank < rank_value:major_power
+				is_subject = yes
+			}
+		}
 	}
 
 	on_complete = {
-		# custom_tooltip = {
-		# 	text = je_divided_monarchists_03_tt
-		# 	fra_clear_divided_monarchist_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
-		# }
+
 	}
 
 	scripted_button = dvg_german_game_burgundy_button
@@ -57,7 +60,6 @@
 				}
 				dvg_weekly_pulse_SCA_progress = yes
 			}
-			
 		}
 
 	}
@@ -75,6 +77,10 @@
 		}
 	}
 	on_fail = {
+		add_modifier = {
+			name = dvg_ggg_gave_up_german_claims
+			years = 5
+		}
 		if = {
 			limit = {
 				c:BRG ?= THIS
@@ -82,6 +88,7 @@
 			}
 			add_modifier = {
 				name = dvg_left_great_german_game_modifier_brg
+				years = 5
 			}
 		}
 		if = {
@@ -91,6 +98,7 @@
 			}
 			add_modifier = {
 				name = dvg_left_great_german_game_modifier_boh
+				years = 5
 			}
 		}
 		if = {
@@ -100,6 +108,7 @@
 			}
 			add_modifier = {
 				name = dvg_left_great_german_game_modifier_sca
+				years = 5
 			}
 			s:STATE_LANCASHIRE = {
 				add_claim = ROOT
@@ -110,6 +119,7 @@
 			s:STATE_ULSTER = {
 				add_claim = ROOT
 			}
+			trigger_event = { id = dvg_ggg.2 }
 		}
 	}
 

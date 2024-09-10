@@ -15,18 +15,18 @@
 			}
 		}
 		any_neighbouring_state = {	#must have valid target
-				owner = {
-					relations:ROOT >= relations_threshold:amicable
-					OR = {
-						country_has_primary_culture = cu:north_german
-						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish
-					}
-					is_in_same_power_bloc = ROOT
-					NOT = { country_rank >= rank_value:major_power }
-					is_player = no
+			owner = {
+				relations:ROOT >= relations_threshold:amicable
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:rheinish
 				}
+				is_in_same_power_bloc = ROOT
+				NOT = { country_rank >= rank_value:major_power }
+				is_player = no
 			}
+		}
 	}
 
 	effect = {
