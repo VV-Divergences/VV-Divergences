@@ -3,6 +3,10 @@
 		
 		country_has_primary_culture = cu:caladeran
 		
+		NOT = {
+			root = c:GCO
+		}
+		
 	}
 
     possible = {

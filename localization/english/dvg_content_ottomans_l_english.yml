@@ -3,6 +3,9 @@ l_english:
  #Journal Entries
  je_ottoman_consolidation: "The Integration of The Khedivates"
  ottomans_no_revolutions_tt: "Our arab subjects are not in revolution"
+ ottoman_consolidation_completion_tt: "Triggers the event #BOLD Centralising Our Rule#"
+ je_ottoman_consolidation_goal: "The progress bar is full"
+ je_ottoman_consolidation_reason: "The bar will advance if our [concept_legitimacy] is greater than 50 and the [concept_liberty_desire] of Iraq and Egypt is less than 25."
  
  #Events
  ottoman_consolidation_events.1.t: "Centralising Our Rule"

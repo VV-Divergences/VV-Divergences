@@ -32,9 +32,6 @@ dvg_gran_colombia.1 = {
 		add_loyalists = {
 			value = 0.1
 		}
-		add_journal_entry = {
-			type = je_colombian_war_of_independence_GCO
-		}
 		ai_chance = {
 			base = 1
 		}
@@ -70,6 +67,9 @@ dvg_gran_colombia.2 = {
 		default_option = yes
 		add_loyalists = {
 			value = 0.1
+		}
+		add_journal_entry = {
+			type = je_colombian_war_of_independence_GCO
 		}
 		add_modifier = {
 			name = dvg_spanish_independence_fighters

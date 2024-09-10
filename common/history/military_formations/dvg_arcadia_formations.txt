@@ -80,6 +80,26 @@
 				state_region = s:STATE_PHILIPPA
 				count = 5
 			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_BASSE_VALOISIE
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_HAUTE_VALOISIE
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_NOUVELLE_LORRAINE
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_CAROLINE
+				count = 4
+			}
 			save_scope_as = dvg_cnf_main_army
 		}
 	}

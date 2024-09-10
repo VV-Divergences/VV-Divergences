@@ -3,26 +3,12 @@ je_ottoman_consolidation = {
 
 	group = je_group_historical_content
 
-	immediate = {
-		c:EGY = {
-			save_scope_as = egypt_country
-		}
-		c:IRQ = {
-			save_scope_as = iraq_country
-		}
-		c:TUR = {
-			save_scope_as = ottomans_scope
-		}
-		set_variable = ottomans_member
-	}
-	on_weekly_pulse = {
+	on_monthly_pulse = {
 		effect = {
 			if = {
-				AND = {
-					limit = {
-						c:TUR ?= this
-						government_legitimacy >= 50
-					}
+				limit = {
+					c:TUR ?= this
+					government_legitimacy >= 50
 					OR = {	
 						c:EGY ?= {
 							is_subject_of = c:TUR
@@ -48,7 +34,7 @@ je_ottoman_consolidation = {
 				}
                 change_global_variable = {
 				    name = ottoman_consolidation_var
-				    add = 20
+				    add = 1
 			    }
 			}
 		}
@@ -109,9 +95,11 @@ je_ottoman_consolidation = {
 		OR = {
 			c:EGY ?= {
 				is_subject_of = c:TUR
+				liberty_desire < 25
 			}
 			c:IRQ ?= {
 				is_subject_of = c:TUR
+				liberty_desire < 25
 			}
 		}
 		NOT = {
@@ -188,7 +176,7 @@ je_ottoman_consolidation = {
 	}
 
 	goal_add_value = {
-		value = 120
+		value = 72
 	}
 
 	progressbar = yes
