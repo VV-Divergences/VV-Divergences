@@ -1,0 +1,55 @@
+﻿namespace = dvg_ggg
+
+#confederation
+dvg_ggg.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_ggg.1.t
+	desc = dvg_ggg.1.d
+	flavor = dvg_ggg.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					relations:ROOT >= relations_threshold:amicable
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:rheinish
+					}
+					is_in_same_power_bloc = ROOT
+					NOT = { c:BRG ?= THIS }
+					NOT = { c:BOH ?= THIS }
+					NOT = { c:SCA ?= THIS }
+					is_player = no
+				}
+			}
+			owner = {
+				save_scope_as = dvg_ggg_integrated_german_nation
+			}
+		}
+		
+	}
+
+	option = {
+		name = dvg_ggg.1.a
+		default_option = yes
+
+		annex_with_incorporation = scope:dvg_ggg_integrated_german_nation
+	}
+}

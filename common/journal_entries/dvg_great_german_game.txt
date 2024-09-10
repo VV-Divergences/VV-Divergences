@@ -1,0 +1,124 @@
+﻿je_dvg_great_german_game = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_historical_content
+
+	immediate = {
+		dvg_set_great_german_game_variables = yes
+	}
+
+	scripted_progress_bar = dvg_german_game_burgundy_bar
+	scripted_progress_bar = dvg_german_game_bohemia_bar
+	scripted_progress_bar = dvg_german_game_scandinavia_bar
+
+	complete = {
+		# has_law = law_type:law_monarchy
+		# custom_tooltip = {
+		# 	text = je_divided_monarchists_02_tt
+		# 	has_variable = one_true_french_dynasty #Can only ever complete upon finishing the Cement the Rightful Dynasty journal entry.
+		# }
+	}
+
+	on_complete = {
+		# custom_tooltip = {
+		# 	text = je_divided_monarchists_03_tt
+		# 	fra_clear_divided_monarchist_variables = yes #Removes all variables used for math in this JE, to save memory and performance.
+		# }
+	}
+
+	scripted_button = dvg_german_game_burgundy_button
+	scripted_button = dvg_german_game_bohemia_button
+	scripted_button = dvg_german_game_scandinavia_button
+	scripted_button = dvg_german_game_give_up_button
+
+	modifiers_while_active = {
+		dvg_great_german_game_modifier
+	}
+
+	on_weekly_pulse = {
+		events = {
+		}
+		effect = {
+			if = {
+				limit = { 
+					c:BRG ?= THIS
+				}
+				dvg_weekly_pulse_BRG_progress = yes
+			}
+			if = {
+				limit = { 
+					c:BOH ?= THIS
+				}
+				dvg_weekly_pulse_BOH_progress = yes
+			}
+			if = {
+				limit = { 
+					c:SCA ?= THIS
+				}
+				dvg_weekly_pulse_SCA_progress = yes
+			}
+			
+		}
+
+	}
+	on_monthly_pulse = {
+		# random_events = {	someone leaves?
+		# 	500 = 0
+		# 	10 = dvg_ggg.2
+		# }
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = dvg_gave_up_german_claims_tt
+			has_variable = dvg_gave_up_german_claims
+		}
+	}
+	on_fail = {
+		if = {
+			limit = {
+				c:BRG ?= THIS
+				game_date < 1851.1.1
+			}
+			add_modifier = {
+				name = dvg_left_great_german_game_modifier_brg
+			}
+		}
+		if = {
+			limit = {
+				c:BOH ?= THIS
+				game_date < 1851.1.1
+			}
+			add_modifier = {
+				name = dvg_left_great_german_game_modifier_boh
+			}
+		}
+		if = {
+			limit = {
+				c:SCA ?= THIS
+				game_date < 1851.1.1
+			}
+			add_modifier = {
+				name = dvg_left_great_german_game_modifier_sca
+			}
+			s:STATE_LANCASHIRE = {
+				add_claim = ROOT
+			}
+			s:STATE_YORKSHIRE = {
+				add_claim = ROOT
+			}
+			s:STATE_ULSTER = {
+				add_claim = ROOT
+			}
+		}
+	}
+
+	invalid = {
+		
+	}
+	on_invalid = {
+		
+	}
+
+	should_be_pinned_by_default = yes
+}
