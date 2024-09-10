@@ -1,0 +1,14 @@
+﻿
+l_english:
+ #Journal Entries
+ je_ottoman_consolidation: "The Integration of The Khedivates"
+ ottomans_no_revolutions_tt: "Our arab subjects are not in revolution"
+ ottoman_consolidation_completion_tt: "Triggers the event #BOLD Centralising Our Rule#"
+ je_ottoman_consolidation_goal: "The progress bar is full"
+ je_ottoman_consolidation_reason: "The bar will advance if our [concept_legitimacy] is greater than 50 and the [concept_liberty_desire] of Iraq and Egypt is less than 25."
+ 
+ #Events
+ ottoman_consolidation_events.1.t: "Centralising Our Rule"
+ ottoman_consolidation_events.1.d: "Removing both sectarian barriers in our society and borders between our peoples, the nation is united"
+ ottoman_consolidation_events.1.f: "With the centralisation of the nation comes the redundancy of the Khedivates. After whittling down their power, we have finally been able to remove them from their governing role. Folding their lands back under direct rule we are united, just as it was in the days of the great Suleiman."
+ ottoman_consolidation_events.1.a: "Many Peoples, One Nation"

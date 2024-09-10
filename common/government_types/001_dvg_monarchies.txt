@@ -347,6 +347,9 @@ gov_mamluk_sultanate = {
 		has_law = law_type:law_monarchy
 		exists = c:EGY
 		c:EGY = ROOT
+		NOT = {
+			is_subject_of = c:TUR
+		}
 	}
 
 	on_government_type_change = {
@@ -393,11 +396,42 @@ gov_eyalet = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		exists = c:BSG
+		exists = c:CRI
 		exists = c:TUR
-		c:BSG = ROOT
+		c:CRI = ROOT
 		is_subject_of = c:TUR		
 	}		
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+gov_khedive = {
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_KHEDIVE"
+	female_ruler = "" # Empty on purpose
+
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "" # Empty on purpose
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		OR = {
+			AND = {
+				exists = c:EGY
+				c:EGY = ROOT
+			}
+			AND = {
+				exists = c:IRQ
+				c:IRQ = ROOT
+			}
+		}
+		is_subject_of = c:TUR
+	}
 
 	on_government_type_change = {
 		change_to_hereditary = yes
@@ -419,7 +453,6 @@ gov_caliphate = {
 		OR = {
 			has_law = law_type:law_monarchy
 			has_law = law_type:law_theocracy
-
 		}
 		has_law = law_type:law_state_religion
 		OR = {

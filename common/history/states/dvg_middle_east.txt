@@ -138,7 +138,7 @@
 		add_homeland = cu:mashriqi
 		add_homeland = cu:sephardic
 		
-		# add_claim = c:JNR
+		add_claim = c:EGY
 	}
 	s:STATE_LEBANON = {
 		create_state = {
@@ -149,8 +149,7 @@
 		add_homeland = cu:mashriqi
 		add_homeland = cu:syriac
 		
-		# add_claim = c:SYR
-		# add_claim = c:JNR
+		add_claim = c:EGY
 	}
 #	s:STATE_SYRIA = {
 #		create_state = {
@@ -161,8 +160,7 @@
 #		add_homeland = cu:mashriqi
 #		add_homeland = cu:syriac
 #		
-#		# add_claim = c:SYR
-#		# add_claim = c:JNR
+#		add_claim = c:EGY
 #	}
 	s:STATE_TRANSJORDAN = {
 		create_state = {
@@ -173,25 +171,21 @@
 		add_homeland = cu:mashriqi
 		add_homeland = cu:bedouin
 		
-#		# add_claim = c:JNR
+#		add_claim = c:EGY
 	}
 	s:STATE_ALEPPO = {
 		create_state = {
 			country = c:TUR
 			owned_provinces = { "x8517E9" "xCCBD19" "xDAD836"  "xE09060" "xE2C7D1" "x7A1679"  "x0F0BCB" "x1ECFDA" "x14AB01" "x68D9E3" "x7125D6" "x7A47D7" "x7B5D3F" "xE01160" "xECD96B" }
 		}
-		# create_state = {
-			# country = c:SYR
-			# owned_provinces = { "x14AB01" "x619060" "x68D9E3" "x7125D6" "x7A47D7" "x7B5D3F" "xE01160" "xECD96B" }
-		# }
+		
 		
 		add_homeland = cu:mashriqi
 		add_homeland = cu:turkish
 		add_homeland = cu:kurdish
 		add_homeland = cu:syriac
 		
-		# add_claim = c:TUR
-		# add_claim = c:JNR
+		add_claim = c:EGY
 	}
 	s:STATE_DEIR_EZ_ZOR = {
 		create_state = {

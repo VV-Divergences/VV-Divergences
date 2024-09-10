@@ -1,0 +1,187 @@
+je_ottoman_consolidation = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					c:TUR ?= this
+					government_legitimacy >= 50
+					OR = {	
+						c:EGY ?= {
+							is_subject_of = c:TUR
+							liberty_desire < 25
+						}
+						c:EGY ?= {
+							NOT = {
+								is_subject_of = c:TUR
+							}
+						}
+					}
+					OR = {
+						c:IRQ ?= {
+							is_subject_of = c:TUR
+							liberty_desire < 25
+						}
+						c:IRQ ?= {
+							NOT = {
+								is_subject_of = c:TUR
+							}
+						}
+					}
+				}
+                change_global_variable = {
+				    name = ottoman_consolidation_var
+				    add = 1
+			    }
+			}
+		}
+	}
+
+	complete = {
+		hidden_trigger = {
+			c:TUR = this
+		}
+        OR = {
+            has_law = law_type:law_racial_segregation
+            has_law = law_type:law_cultural_exclusion
+            has_law = law_type:law_multicultural
+        }
+		scope:journal_entry = { is_goal_complete = yes }
+		OR = {
+			c:EGY ?= {
+				is_subject_of = c:TUR
+			}
+			c:IRQ ?= {
+				is_subject_of = c:TUR
+			}
+		}
+        
+		custom_tooltip = {
+			text = ottomans_no_revolutions_tt
+			NOT = {
+				any_country = {
+					is_subject_of = c:TUR
+					OR = {
+						country_has_primary_culture = cu:mashriqi
+						country_has_primary_culture = cu:misri
+					}
+					has_revolution = yes
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = ottoman_consolidation_completion_tt
+			if = {
+				limit = {
+					c:TUR ?= this
+				}
+				trigger_event = {
+					id = ottoman_consolidation_events.1
+				}
+			}
+		}
+	}
+
+	is_progressing = {
+		c:TUR ?= {
+			government_legitimacy >= 50
+		}
+		OR = {
+			c:EGY ?= {
+				is_subject_of = c:TUR
+				liberty_desire < 25
+			}
+			c:IRQ ?= {
+				is_subject_of = c:TUR
+				liberty_desire < 25
+			}
+		}
+		NOT = {
+			any_country = {
+				is_subject_of = c:TUR
+				has_revolution = yes
+			}
+		}
+	}
+
+	fail = {
+		OR = {
+			NOT = {
+				exists = c:TUR
+			}
+			AND = {
+				OR = {
+					NOT = {
+						exists = c:EGY
+					}
+					c:EGY ?= {
+						NOT = { is_subject_of = c:TUR }
+					}
+				}
+				OR = {
+					NOT = {
+						exists = c:IRQ
+					}
+					c:IRQ ?= {
+						NOT = { is_subject_of = c:TUR }
+					}
+				}
+			}
+			NOT = {
+				country_has_primary_culture = cu:turkish
+			}
+			c:TUR ?= {
+				is_subject = yes
+			}
+		}
+	}
+
+	on_fail = {
+
+	}
+
+	invalid = {
+		OR = {
+			AND = {
+				OR = {
+					c:EGY ?= this
+					c:IRQ ?= this
+				}
+				NOT = {
+					is_subject_of = c:TUR
+				}
+			}
+			NOT = {
+				exists = c:TUR
+			}
+			AND = {
+				exists = c:TUR 
+				c:TUR = {
+					NOT = {
+						has_journal_entry = je_ottoman_consolidation
+					}
+				}
+			}
+		}
+	}
+
+	current_value = {
+		value = global_var:ottoman_consolidation_var
+	}
+
+	goal_add_value = {
+		value = 72
+	}
+
+	progressbar = yes
+
+	weight = 10000
+
+	should_be_pinned_by_default = yes
+}

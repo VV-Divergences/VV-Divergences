@@ -892,7 +892,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" }
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
 				building="building_arms_industry"
@@ -1058,13 +1058,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_NOUVELLE_LORRAINE = {
-		region_state:CNL = {
+		region_state:CNF = {
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CNL"
+						country="c:CNF"
 						levels=4
 						region="STATE_NOUVELLE_LORRAINE"
 					}
@@ -1076,19 +1076,19 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:CNL"
+						country="c:CNF"
 						levels=1
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" }
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
 				building="building_food_industry"
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:CNL"
+						country="c:CNF"
 						levels=1
 						region="STATE_NOUVELLE_LORRAINE"
 					}
@@ -1101,7 +1101,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CNL"
+						country="c:CNF"
 						levels=2
 						region="STATE_NOUVELLE_LORRAINE"
 					}
@@ -1114,7 +1114,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CNL"
+						country="c:CNF"
 						levels=1
 						region="STATE_NOUVELLE_LORRAINE"
 					}
@@ -1127,7 +1127,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:CNL"
+						country="c:CNF"
 						levels=1
 						region="STATE_NOUVELLE_LORRAINE"
 					}
@@ -1139,7 +1139,7 @@ BUILDINGS={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:CNL"
+						country="c:CNF"
 						levels=1
 					}
 				}
@@ -1151,7 +1151,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:CNL"
+						country="c:CNF"
 						levels=1
 						region="STATE_NOUVELLE_LORRAINE"
 					}
@@ -1160,21 +1160,10 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CNL"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:CNL"
+						country="c:CNF"
 						levels=2
 					}
 				}
@@ -1207,7 +1196,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" }
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
 				building="building_coal_mine"
@@ -1346,7 +1335,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" }
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1388,13 +1377,13 @@ BUILDINGS={
 		}
 	}
 	s:STATE_CAROLINE = {
-		region_state:CCA = {
+		region_state:CNF = {
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CCA"
+						country="c:CNF"
 						levels=1
 						region="STATE_CAROLINE"
 					}
@@ -1406,25 +1395,38 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:CCA"
+						country="c:CNF"
 						levels=1
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" }
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:CNF"
+						levels=2
+						region="STATE_CAROLINE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_food_industry"
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:CCA"
+						country="c:CNF"
 						levels=2
 						region="STATE_CAROLINE"
 					}
 					building={
 						type="building_financial_district"
-						country="c:CCA"
+						country="c:CNF"
 						levels=2
 						region="STATE_CAROLINE"
 					}
@@ -1436,12 +1438,12 @@ BUILDINGS={
 				building="building_iron_mine"
 				add_ownership={
 					country={
-						country="c:CCA"
+						country="c:CNF"
 						levels=1
 					}
 					building={
 						type="building_financial_district"
-						country="c:CCA"
+						country="c:CNF"
 						levels=2
 						region="STATE_CAROLINE"
 					}
@@ -1453,7 +1455,7 @@ BUILDINGS={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:CCA"
+						country="c:CNF"
 						levels=1
 					}
 				}
@@ -1465,7 +1467,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:CCA"
+						country="c:CNF"
 						levels=2
 						region="STATE_CAROLINE"
 					}
@@ -1478,7 +1480,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:CCA"
+						country="c:CNF"
 						levels=1
 						region="STATE_CAROLINE"
 					}
@@ -1487,21 +1489,10 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CCA"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:CCA"
+						country="c:CNF"
 						levels=2
 					}
 				}
@@ -1511,19 +1502,19 @@ BUILDINGS={
 		}
 	}
 	s:STATE_BASSE_VALOISIE = {
-		region_state:CBV = {
+		region_state:CNF = {
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CBV"
+						country="c:CNF"
 						levels=3
 						region="STATE_BASSE_VALOISIE"
 					}
 					building={
 						type="building_maize_farm"
-						country="c:CBV"
+						country="c:CNF"
 						levels=2
 						region="STATE_BASSE_VALOISIE"
 					}
@@ -1536,7 +1527,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CBV"
+						country="c:CNF"
 						levels=1
 						region="STATE_BASSE_VALOISIE"
 					}
@@ -1549,7 +1540,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:CBV"
+						country="c:CNF"
 						levels=2
 						region="STATE_BASSE_VALOISIE"
 					}
@@ -1562,7 +1553,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CBV"
+						country="c:CNF"
 						levels=2
 						region="STATE_BASSE_VALOISIE"
 					}
@@ -1575,7 +1566,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:CBV"
+						country="c:CNF"
 						levels=1
 						region="STATE_BASSE_VALOISIE"
 					}
@@ -1588,7 +1579,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CBV"
+						country="c:CNF"
 						levels=2
 						region="STATE_BASSE_VALOISIE"
 					}
@@ -1600,18 +1591,18 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:CBV"
+						country="c:CNF"
 						levels=1
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" }
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:CBV"
+						country="c:CNF"
 						levels=1
 					}
 				}
@@ -1623,7 +1614,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CBV"
+						country="c:CNF"
 						levels=2
 						region="STATE_BASSE_VALOISIE"
 					}
@@ -1636,7 +1627,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:CBV"
+						country="c:CNF"
 						levels=3
 						region="STATE_BASSE_VALOISIE"
 					}
@@ -1644,27 +1635,16 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CBV"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
 	}
 	s:STATE_HAUTE_VALOISIE = {
-		region_state:CHV = {
+		region_state:CNF = {
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CHV"
+						country="c:CNF"
 						levels=6
 						region="STATE_HAUTE_VALOISIE"
 					}
@@ -1677,7 +1657,7 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CHV"
+						country="c:CNF"
 						levels=1
 						region="STATE_HAUTE_VALOISIE"
 					}
@@ -1702,19 +1682,19 @@ BUILDINGS={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:CHV"
+						country="c:CNF"
 						levels=1
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" }
+				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CHV"
+						country="c:CNF"
 						levels=1
 						region="STATE_HAUTE_VALOISIE"
 					}
@@ -1727,24 +1707,13 @@ BUILDINGS={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CHV"
+						country="c:CNF"
 						levels=1
 						region="STATE_HAUTE_VALOISIE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CHV"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}

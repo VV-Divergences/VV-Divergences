@@ -883,23 +883,6 @@ UKR = {
 	ai_will_do = { always = yes }
 }
 
-GBR = { #Great Britain
-	use_culture_states = yes
-
-	is_major_formation = yes
-	
-	unification_play = dp_unify_britain
-	leadership_play = dp_leadership_britain
-
-	required_states_fraction = 0.75	
-	
-	ai_will_do = { always = yes }
-
-	possible = {
-		has_technology_researched = pan-nationalism
-	}
-}
-
 IBE = { #Iberia
 	use_culture_states = yes
 
