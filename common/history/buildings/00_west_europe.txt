@@ -4436,7 +4436,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=5
+						levels=6
 						region="STATE_LORRAINE"
 					}
 				}
@@ -4583,7 +4583,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=2
+						levels=3
 						region="STATE_BURGUNDY"
 					}
 				}
@@ -5132,7 +5132,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=4
+						levels=6
 						region="STATE_FLANDERS"
 					}
 				}
@@ -8089,7 +8089,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -8208,7 +8208,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"

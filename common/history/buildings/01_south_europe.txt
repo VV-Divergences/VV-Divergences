@@ -2171,7 +2171,7 @@ BUILDINGS={
 					building={
 						type="building_iron_mine"
 						country="c:VEN"
-						levels=2
+						levels=4
 						region="STATE_PELOPONNESE"
 					}
 				}

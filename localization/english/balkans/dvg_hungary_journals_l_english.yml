@@ -2,8 +2,8 @@
   DVG_HUNGARIAN_CRISIS_HUN_POWER_GAIN: "Hungary wil gain #G +1 #! Power"
   DVG_HUNGARIAN_CRISIS_HUN_POWER_LOSS: "Hungary wil lose #R -1 #! Power"
 
-  DVG_HUNGARIAN_CRISIS_POM_POWER_GAIN: "Pommerania wil gain #G +1 #! Power"
-  DVG_HUNGARIAN_CRISIS_POM_POWER_LOSS: "Pommerania wil lose #R -1 #! Power"
+  DVG_HUNGARIAN_CRISIS_POM_POWER_GAIN: "Pomerania wil gain #G +1 #! Power"
+  DVG_HUNGARIAN_CRISIS_POM_POWER_LOSS: "Pomerania wil lose #R -1 #! Power"
 
   dvg_hungarian_crisis_hun_power: "Hungarian Power"
   dvg_hungarian_crisis_pom_power: "Pommeranian Power"

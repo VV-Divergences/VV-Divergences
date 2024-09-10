@@ -81,6 +81,13 @@
   #Decisions
   dvg_ari_acceptitalians: "Proclaim the Empire of the Latins"
   dvg_ari_acceptitalians_desc: "For Centuries now the Crown of Aragon has been a dominant power on the Italian peninsula. But since the Revolutionary Wars the prospect of unifying the North into another Crown ruled by the Kings of Valencia has faded notably because the Italian nationalists have proclaimed us foreigners and imperialists..\n\nJosep Serna will not repeat the mistakes of his forefathers and rule Italy in personal union with Aragon like Sardinia, Sicily, Naples, and the other Crowns. The defunct Imperial Crown of the 12th-century Latin Empire will be the means to forge a new realm of Latins uniting Italy and Aragon under a single Emperor!"
+
+  dvg_ari_centralitalians: "Add the Tuscans"
+  dvg_ari_centralitalians_desc: "We have continued our unification of the Italian peninsula under our rule. The central region of the peninsula is to be added as citizens!"
+
+  dvg_ari_northitalians: "Include the Lombards"
+  dvg_ari_northitalians_desc: "We can now drink and make merry in our success, as we have now achieved our goals in the peninsula. The Latins are fully united, as it shall be forever!"
+
  
  #Other
   LATIN_LEAGUE: "Lega Latina"
