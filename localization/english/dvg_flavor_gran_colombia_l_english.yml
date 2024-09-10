@@ -72,6 +72,27 @@
  je_colombian_nation_building_integrate_caladeran_removal_tt:0 "Every [SCOPE.sCulture('caladeran_culture').GetName] [concept_homeland] will be removed from our lands."
  je_colombian_nation_building_colombian_national_hero_owned:0 "A regional #bold [concept_brz_national_hero]#! has been proclaimed and can be used in propaganda."
 
+dvg_gco_claims_granada: "Claim Granada"
+dvg_gco_claims_granada_desc: "The Granadans would not help us in our hour of need. Are they traitors, or so thoroughly oppressed that they are unable to resist their masters? Regardless of the truth, it has become clear that they would be better with us."
+
+dvg_gco_incorporate_granadan: "The Granadans Secured"
+dvg_gco_incorporate_granadan_desc: "With this victory, we have cemented ourselves as the rightful protectors of the former Spanish colonies in Ameriga. Shall we continue southward?"
+
+dvg_gco_claims_kuba: "Claim Kuba"
+dvg_gco_claims_kuba_desc: "The yoke of Spain is so great that the people of the colony of Kuba were unable to mount serious resistance during our war. If they cannot resist our former overlords, who may oppress them next?"
+
+dvg_gco_incorporate_kuba: "Kuba Secured"
+dvg_gco_incorporate_kuba_desc: "Havana has cause for celebration! No longer may outside powers meddle with the affairs of Kuba. Under our protection, they will prosper with the rest of our strengthened and righteous nation."
+
+dvg_gco_claims_peru: "Claim New Toledo"
+dvg_gco_claims_peru_desc: "Despite assisting us in our war for freedom, it is clear that the Toledans live in a precarious position in this world. It would be better for the safety of their people that our two countries would become one."
+
+dvg_gco_incorporate_peruvian: "New Toledo Secured"
+dvg_gco_incorporate_peruvian_desc: "It is done. Our nation is a protector of catholics and colonists alike. Songs will be sung for hundreds of years to remind our descendants of today."
+
+
+
+
  #Events
  dvg_gran_colombia.1.t:0 "The [ROOT.GetCountry.GetName]!"
  dvg_gran_colombia.1.d:0 "For centuries, Spain has ruled its colonies with the greed and heartlessness of an absentee landlord. The liberal King Jose II usurped the Spanish throne in 1808 and seemed willing to increase colonial trade and local elites’ power, but the Dual Monarchy backed the absolutist pretender Pedro III against Jose. After taking the throne in 1815 at the end of the brutal Peninsular War, Pedro issued the Petrine “Reforms”."
