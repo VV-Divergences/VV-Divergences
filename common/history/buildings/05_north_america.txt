@@ -1160,17 +1160,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CNF"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_naval_base"
 				add_ownership={
 					country={
@@ -1500,17 +1489,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CNF"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_naval_base"
 				add_ownership={
 					country={
@@ -1657,17 +1635,6 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CNF"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
 	}
 	s:STATE_HAUTE_VALOISIE = {
@@ -1747,17 +1714,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CNF"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 		}
 	}
