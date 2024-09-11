@@ -321,7 +321,7 @@ identity_ideological_union = {
 	}
 
 	member_modifier = {
-		
+		country_law_enactment_success_add = 0.05
 	}
 
 	can_leave = {
@@ -470,6 +470,7 @@ identity_military_treaty_organization = {
 		power_bloc_mandate_progress_per_unrecognized_regional_power_member_add = 1
 		power_bloc_invite_acceptance_great_power_add = -15
 		power_bloc_cohesion_per_member_add = -2
+		power_bloc_disallow_war_bool = yes
 	}
 
 	leader_modifier = {
@@ -482,6 +483,7 @@ identity_military_treaty_organization = {
 
 	member_modifier = {
 		building_training_rate_mult = 0.2
+		interest_group_ig_armed_forces_pop_attraction_mult = 0.2
 	}
 	
 	possible = {
@@ -629,6 +631,7 @@ identity_religious = {
 	member_modifier = {
 		state_conversion_mult = 0.33
 		interest_group_ig_devout_pol_str_mult = 0.25
+		state_decree_cost_mult = -0.15
 	}
 
 	can_leave = {
