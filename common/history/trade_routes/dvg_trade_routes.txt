@@ -391,16 +391,16 @@
 		}
 	}
 	c:VEN = {
-		create_trade_route = {
-			goods = iron
-			level = 3
-			direction = import
-			target = c:ARN.market
-		}
+		# create_trade_route = {
+		# 	goods = iron
+		# 	level = 3
+		# 	direction = import
+		# 	target = c:ARN.market
+		# }
 		create_trade_route = {
 			goods = lead
-			level = 3
-			target = c:BOH.market
+			level = 2
+			target = c:SAV.market
 			direction = import
 		}
 		create_trade_route = {
@@ -427,24 +427,24 @@
 			target = c:TUR.market
 			direction = export
 		}
-		create_trade_route = {
-			goods = wood
-			level = 8
-			target = c:POL.market
-			direction = import
-		}
-		create_trade_route = {
-			goods = dye
-			level = 2
-			target = c:TUR.market
-			direction = import
-		}
-		create_trade_route = {
-			goods = hardwood
-			level = 2
-			target = c:TUR.market
-			direction = import
-		}
+		# create_trade_route = {
+		# 	goods = wood
+		# 	level = 8
+		# 	target = c:POL.market
+		# 	direction = import
+		# }
+		# create_trade_route = {
+		# 	goods = dye
+		# 	level = 2
+		# 	target = c:TUR.market
+		# 	direction = import
+		# }
+		# create_trade_route = {
+		# 	goods = hardwood
+		# 	level = 2
+		# 	target = c:TUR.market
+		# 	direction = import
+		# }
 	}
 	c:CNF = {
 		create_trade_route = {
@@ -586,52 +586,52 @@
 			target = c:VEN.market
 		}
 	}
-	c:PRO = {
-		create_trade_route = {
-			goods = paper
-			level = 1
-			direction = import
-			target = c:ARN.market
-		}
-		create_trade_route = {
-			goods = iron
-			level = 1
-			direction = import
-			target = c:ARN.market
-		}
-		create_trade_route = {
-			goods = manowars
-			level = 1
-			direction = import
-			target = c:ARN.market
-		}
-		create_trade_route = {
-			goods = tools
-			level = 1
-			direction = import
-			target = c:ARN.market
-		}
-		create_trade_route = {
-			goods = small_arms
-			level = 1
-			direction = import
-			target = c:ARN.market
-		}
-	}
-	c:PAP = {
-		create_trade_route = {
-			goods = tools
-			level = 1
-			direction = import
-			target = c:ARN.market
-		}
-		create_trade_route = {
-			goods = small_arms
-			level = 1
-			direction = import
-			target = c:ARN.market
-		}
-	}
+	# c:PRO = {
+	# 	create_trade_route = {
+	# 		goods = paper
+	# 		level = 1
+	# 		direction = import
+	# 		target = c:ARN.market
+	# 	}
+	# 	create_trade_route = {
+	# 		goods = iron
+	# 		level = 1
+	# 		direction = import
+	# 		target = c:ARN.market
+	# 	}
+	# 	create_trade_route = {
+	# 		goods = manowars
+	# 		level = 1
+	# 		direction = import
+	# 		target = c:ARN.market
+	# 	}
+	# 	create_trade_route = {
+	# 		goods = tools
+	# 		level = 1
+	# 		direction = import
+	# 		target = c:ARN.market
+	# 	}
+	# 	create_trade_route = {
+	# 		goods = small_arms
+	# 		level = 1
+	# 		direction = import
+	# 		target = c:ARN.market
+	# 	}
+	# }
+	# c:PAP = {
+	# 	create_trade_route = {
+	# 		goods = tools
+	# 		level = 1
+	# 		direction = import
+	# 		target = c:ARN.market
+	# 	}
+	# 	create_trade_route = {
+	# 		goods = small_arms
+	# 		level = 1
+	# 		direction = import
+	# 		target = c:ARN.market
+	# 	}
+	# }
 	c:AZB = {
 		create_trade_route = {
 			goods = clippers
