@@ -109,6 +109,7 @@
 			member = c:VEN
 			member = c:PAP
 			member = c:PRO
+			member = c:GEN
 			
 		}
 		power_bloc = {
