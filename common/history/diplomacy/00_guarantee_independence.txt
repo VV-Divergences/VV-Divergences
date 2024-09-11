@@ -1,0 +1,8 @@
+DIPLOMACY = {
+	c:ARN ?= {
+		create_diplomatic_pact = {
+			country = c:MCD
+			type = guarantee_independence
+		}
+	}
+}
