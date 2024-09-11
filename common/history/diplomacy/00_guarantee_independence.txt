@@ -5,4 +5,10 @@ DIPLOMACY = {
 			type = guarantee_independence
 		}
 	}
+	c:VEN ?= {
+		create_diplomatic_pact = {
+			country = c:ALB
+			type = guarantee_independence
+		}
+	}
 }
