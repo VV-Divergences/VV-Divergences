@@ -37,6 +37,78 @@
 		create_character = {
 			is_general = yes
 			historical = yes
+			noble = yes
+			first_name = Francisco
+			last_name = Escandon
+			culture = cu:mexican
+			ig_leader = yes
+			dna = dna_antonio_lopez
+			birth_date = 1787.1.21
+			hq = region_san_salvador
+			ideology = ideology_authoritarian
+			interest_group = ig_armed_forces
+			traits = {
+				bigoted
+				immortal
+			}
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			noble = yes
+			first_name = Emiliano
+			last_name = Gomez
+			culture = cu:mexican
+			ig_leader = yes
+			dna = dna_antonio_lopez
+			birth_date = 1794.1.21
+			hq = region_san_salvador
+			ideology = ideology_authoritarian
+			interest_group = ig_armed_forces
+			traits = {
+				bigoted
+				immortal
+			}
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			noble = yes
+			first_name = Miguel
+			last_name = de_Yermo
+			culture = cu:mexican
+			ig_leader = yes
+			dna = dna_antonio_lopez
+			birth_date = 1789.1.21
+			hq = region_san_salvador
+			ideology = ideology_authoritarian
+			interest_group = ig_armed_forces
+			traits = {
+				bigoted
+				immortal
+			}
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			noble = yes
+			first_name = Alvaro
+			last_name = Almonte
+			culture = cu:mexican
+			ig_leader = yes
+			dna = dna_antonio_lopez
+			birth_date = 1801.1.21
+			hq = region_san_salvador
+			ideology = ideology_authoritarian
+			interest_group = ig_armed_forces
+			traits = {
+				bigoted
+				immortal
+			}
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
 			first_name = Deodoro
 			last_name = Peixoto
 			culture = cu:lusitanian

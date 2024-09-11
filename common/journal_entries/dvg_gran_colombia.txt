@@ -1,20 +1,24 @@
 ﻿je_colombian_war_of_independence_GCO = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
-	group = je_group_foreign_affairs
+	group = je_group_historical_content
 	
 	complete = {
 		c:GCO = {
 			is_subject = no
 			is_at_war = no
+			NOT = { has_modifier = dvg_war_preparation }
 		}
+		c:SPA = { has_truce_with = c:GCO }
 	}
 	
 	fail = {
 		c:GCO = {
 			is_subject = yes
 			is_at_war = no
+			NOT = { has_modifier = dvg_war_preparation }
 		}
+		c:SPA = { has_truce_with = c:GCO }
 	}
 
     on_complete = {
@@ -32,10 +36,10 @@
 je_build_a_navy_gran_colombia = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
-	group = je_group_internal_affairs
+	group = je_group_historical_content
 	
 	complete = {
-		navy_size >= 30
+		navy_size >= 20
 	}
 	
 	fail = {
@@ -52,23 +56,210 @@ je_build_a_navy_gran_colombia = {
 	should_be_pinned_by_default = yes
 }
 
-je_conquer_kuba_gran_colombia = {
+je_conquer_kuba_GCO_castro = { #Plan mainly for Castro
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
 	group = je_group_foreign_affairs
 	
 	complete = {
-		owns_entire_state_region = STATE_CUBA
+		OR = {
+			owns_entire_state_region = STATE_CUBA
+			AND = {
+				c:CUB = {
+					is_subject_of = c:GCO
+					is_at_war = no
+				}
+				c:SPA = {
+					has_truce_with = c:CUB
+				}
+			}
+			
+		}
+		year < 1864
+	}
+	fail = {
+		OR = {
+			AND = {
+				c:CUB = {
+					is_subject_of = c:SPA
+					is_at_war = no
+				}
+				c:SPA = {
+					has_truce_with = c:CUB
+				}
+			}
+			year = 1864
+		}
 	}
 
 	on_complete = {
-		trigger_event = { id = dvg_gran_colombia.5 }
+		trigger_event = { id = dvg_gran_colombia.9 }
+	}
+	on_fail = {
+		trigger_event = { id = dvg_gran_colombia.22 }
 	}
 
 	weight = 100
 	should_be_pinned_by_default = yes
 }
 
+
+
+je_conquer_granada_gran_colombia = { #Ai should NOT have strategies for this, as it would kinda feck over anyone playing granada.
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_foreign_affairs
+	
+	possible = {
+		is_player = yes
+	}
+	
+	complete = {
+		owns_entire_state_region = STATE_ANGOSTURA
+		owns_entire_state_region = STATE_BOLIVAR
+		owns_entire_state_region = STATE_MIRANDA
+		owns_entire_state_region = STATE_GUAVIARE
+		owns_entire_state_region = STATE_ZULIA
+		owns_entire_state_region = STATE_ANTIOQUIA
+		owns_entire_state_region = STATE_CUNDINAMARCA
+		owns_entire_state_region = STATE_CAUCA
+		NOT = { exists = c:GRA }
+	}
+
+	on_complete = {
+		trigger_event = { id = dvg_gran_colombia.10 }
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_lower_turmoil_granada_gran_colombia = { #Ai should NOT have strategies for this, as it would kinda feck over anyone playing granada.
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_historical_content
+	
+	possible = {
+		is_player = yes
+	}
+	
+	complete = {
+		AND = {
+			any_scope_state = {
+				state_region = s:STATE_ANGOSTURA
+				turmoil < 0.2
+			}
+			any_scope_state = {
+				state_region = s:STATE_BOLIVAR
+				turmoil < 0.2
+			}
+			any_scope_state = {
+				state_region = s:STATE_MIRANDA
+				turmoil < 0.2
+			}
+			any_scope_state = {
+				state_region = s:STATE_GUAVIARE
+				turmoil < 0.2
+			}
+			any_scope_state = {
+				state_region = s:STATE_ZULIA
+				turmoil < 0.2
+			}
+			any_scope_state = {
+				state_region = s:STATE_ANTIOQUIA
+				turmoil < 0.2
+			}
+			any_scope_state = {
+				state_region = s:STATE_CUNDINAMARCA
+				turmoil < 0.2
+			}
+			any_scope_state = {
+				state_region = s:STATE_CAUCA
+				turmoil < 0.2
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dvg_gran_colombia.11 }
+	}
+	
+    on_fail = {
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_conquer_caladero_gran_colombia = { #Ai should NOT have strategies for this, as it would kinda feck over anyone playing caladero.
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_foreign_affairs
+	
+	possible = {
+		is_player = yes
+	}
+	
+	complete = {
+		owns_entire_state_region = STATE_LIMA
+		owns_entire_state_region = STATE_CAJAMARCA
+		owns_entire_state_region = STATE_ECUADOR
+		owns_entire_state_region = STATE_PASTAZA
+		owns_entire_state_region = STATE_NEAR_ANTISUYU
+		NOT = { exists = c:QUI }
+	}
+
+    on_complete = {
+		trigger_event = { id = dvg_gran_colombia.12 }
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_conquer_new_spain_gran_colombia = { #Ai should NOT have strategies for this, as it would kinda feck over anyone playing caladero.
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_foreign_affairs
+	
+	possible = {
+		is_player = yes
+	}
+	
+	complete = {
+		owns_entire_state_region = STATE_LIMA
+		owns_entire_state_region = STATE_CAJAMARCA
+		owns_entire_state_region = STATE_ECUADOR
+		owns_entire_state_region = STATE_PASTAZA
+		owns_entire_state_region = STATE_CAUCA
+		owns_entire_state_region = STATE_CUZCO
+		owns_entire_state_region = STATE_CUNTISUYU
+		owns_entire_state_region = STATE_NEAR_ANTISUYU
+		owns_entire_state_region = STATE_ANGOSTURA
+		owns_entire_state_region = STATE_BOLIVAR
+		owns_entire_state_region = STATE_MIRANDA
+		owns_entire_state_region = STATE_GUAVIARE
+		owns_entire_state_region = STATE_ZULIA
+		owns_entire_state_region = STATE_ANTIOQUIA
+		owns_entire_state_region = STATE_CUNDINAMARCA
+		owns_entire_state_region = STATE_CAUCA
+		owns_entire_state_region = STATE_CUBA
+		owns_entire_state_region = STATE_TERRAS_VERMELHAS
+		owns_entire_state_region = STATE_APACHERIA
+		owns_entire_state_region = STATE_COMANCHERIE
+		owns_entire_state_region = STATE_XINGTIAN
+		owns_entire_state_region = STATE_DONGHAI
+		owns_entire_state_region = STATE_JINSHAN
+		owns_entire_state_region = STATE_YICHENG
+	}
+
+    on_complete = {
+		trigger_event = { id = dvg_gran_colombia.13 }
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+}
 je_veracruz_conference = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 	
@@ -124,151 +315,206 @@ je_veracruz_conference = {
 	weight = 100
 	should_be_pinned_by_default = yes
 }
-
-
-
-je_conquer_granada_gran_colombia = { #Ai should NOT have strategies for this, as it would kinda feck over anyone playing granada.
+je_colombian_civil_war = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
-	
-	group = je_group_foreign_affairs
-	
-	complete = {
-		owns_entire_state_region = STATE_ANGOSTURA
-		owns_entire_state_region = STATE_BOLIVAR
-		owns_entire_state_region = STATE_MIRANDA
-		owns_entire_state_region = STATE_GUAVIARE
-		owns_entire_state_region = STATE_ZULIA
-		owns_entire_state_region = STATE_ANTIOQUIA
-		owns_entire_state_region = STATE_CUNDINAMARCA
-		owns_entire_state_region = STATE_CAUCA
-	}
-
-	on_complete = {
-		#trigger_event = { id = dvg_gran_colombia.6 }
-	}
-
-	weight = 100
-	should_be_pinned_by_default = yes
-}
-
-je_lower_turmoil_granada_gran_colombia = { #Ai should NOT have strategies for this, as it would kinda feck over anyone playing granada.
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	
 	group = je_group_internal_affairs
 	
 	complete = {
-		AND = {
-			any_scope_state = {
-				state_region = s:STATE_ANGOSTURA
-				turmoil < 0.2
-			}
-			any_scope_state = {
-				state_region = s:STATE_BOLIVAR
-				turmoil < 0.2
-			}
-			any_scope_state = {
-				state_region = s:STATE_MIRANDA
-				turmoil < 0.2
-			}
-			any_scope_state = {
-				state_region = s:STATE_GUAVIARE
-				turmoil < 0.2
-			}
-			any_scope_state = {
-				state_region = s:STATE_ZULIA
-				turmoil < 0.2
-			}
-			any_scope_state = {
-				state_region = s:STATE_ANTIOQUIA
-				turmoil < 0.2
-			}
-			any_scope_state = {
-				state_region = s:STATE_CUNDINAMARCA
-				turmoil < 0.2
-			}
-			any_scope_state = {
-				state_region = s:STATE_CAUCA
-				turmoil < 0.2
-			}
+		owns_entire_state_region = STATE_JALISCO
+		owns_entire_state_region = STATE_SINALOA
+		owns_entire_state_region = STATE_DURANGO
+		NOT = { exists = c:JLS }
+	}
+
+	on_complete = {
+		trigger_event = { id = dvg_gran_colombia.46 }
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_jls_colombian_civil_war = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_internal_affairs
+	
+	complete = {
+		NOT = { exists = c:GCO }
+	}
+
+	on_complete = {
+		c:JLS = { change_tag = GCO }
+		trigger_event = { id = dvg_gran_colombia.48 }
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_mex_salvation_war = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_internal_affairs
+	
+	complete = {
+		owns_entire_state_region = STATE_JALISCO
+		owns_entire_state_region = STATE_SINALOA
+		owns_entire_state_region = STATE_DURANGO
+		NOT = { exists = c:JLS }
+	}
+	fail = {
+		exists = c:JLS
+		c:MEX = {
+			has_truce_with = c:JLS
+			is_at_war = no
 		}
 	}
 
 	on_complete = {
-		#trigger_event = { id = dvg_gran_colombia.7 }
+		trigger_event = { id = dvg_gran_colombia.57 }
 	}
-	
-    on_fail = {
+	on_fail = {
+		trigger_event = { id = dvg_gran_colombia.59 }
 	}
 
 	weight = 100
 	should_be_pinned_by_default = yes
 }
-
-je_conquer_caladero_gran_colombia = { #Ai should NOT have strategies for this, as it would kinda feck over anyone playing caladero.
+je_jls_salvation_war = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
-	group = je_group_foreign_affairs
+	group = je_group_internal_affairs
 	
 	complete = {
-		owns_entire_state_region = STATE_LIMA
-		owns_entire_state_region = STATE_CAJAMARCA
-		owns_entire_state_region = STATE_ECUADOR
-		owns_entire_state_region = STATE_PASTAZA
-		owns_entire_state_region = STATE_CAUCA
-		owns_entire_state_region = STATE_CUZCO
-		owns_entire_state_region = STATE_CUNTISUYU
+		owns_entire_state_region = STATE_MEXICO
+		owns_entire_state_region = STATE_VERACRUZ
+		NOT = { exists = c:MEX }
+	}
+	fail = {
+		exists = c:MEX
+		c:JLS = {
+			has_truce_with = c:MEX
+			is_at_war = no
+		}
 	}
 
-    on_complete = {
-		#trigger_event = { id = dvg_gran_colombia.8 }
+	on_complete = {
+		trigger_event = { id = dvg_gran_colombia.58 }
 	}
-	
+	on_fail = {
+		trigger_event = { id = dvg_gran_colombia.59 }
+	}
+
 	weight = 100
 	should_be_pinned_by_default = yes
 }
-
-je_conquer_new_spain_gran_colombia = { #Ai should NOT have strategies for this, as it would kinda feck over anyone playing caladero.
+je_mex_pacification_war = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
-	group = je_group_foreign_affairs
+	group = je_group_internal_affairs
 	
 	complete = {
-		owns_entire_state_region = STATE_LIMA
-		owns_entire_state_region = STATE_CAJAMARCA
-		owns_entire_state_region = STATE_ECUADOR
-		owns_entire_state_region = STATE_PASTAZA
-		owns_entire_state_region = STATE_CAUCA
-		owns_entire_state_region = STATE_CUZCO
-		owns_entire_state_region = STATE_CUNTISUYU
-		owns_entire_state_region = STATE_ANGOSTURA
-		owns_entire_state_region = STATE_BOLIVAR
-		owns_entire_state_region = STATE_MIRANDA
-		owns_entire_state_region = STATE_GUAVIARE
-		owns_entire_state_region = STATE_ZULIA
-		owns_entire_state_region = STATE_ANTIOQUIA
-		owns_entire_state_region = STATE_CUNDINAMARCA
-		owns_entire_state_region = STATE_CAUCA
-		owns_entire_state_region = STATE_CUBA
+		owns_entire_state_region = STATE_GUERRERO
+		owns_entire_state_region = STATE_OAXACA
+		owns_entire_state_region = STATE_BAJIO
+		owns_entire_state_region = STATE_ZACATECAS
+		NAND = {
+			exists = c:MCO
+			exists = c:NAH
+			exists = c:OAX
+		}
 	}
 
-    on_complete = {
-		#trigger_event = { id = dvg_gran_colombia.9 }
+	on_complete = {
+		trigger_event = { id = dvg_gran_colombia.60 }
 	}
-	
+
 	weight = 100
 	should_be_pinned_by_default = yes
 }
+je_retake_lusitania = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_internal_affairs
+	
+	complete = {
+		owns_entire_state_region = STATE_BAHIA
+		owns_entire_state_region = STATE_SANTA_CATARINA
+		owns_entire_state_region = STATE_TEJAS
+		owns_entire_state_region = STATE_RIO_GRANDE
+		owns_entire_state_region = STATE_BAJA_CALIFORNIA
+		NOT = { exists = c:LUS }
+	}
+	fail = {
+		exists = c:LUS
+		c:LUS = {
+			has_truce_with = c:MEX
+			is_at_war = no
+		}
+	}
 
-#je_do_the_civil_war = {
-#	icon = "gfx/interface/icons/event_icons/event_military.dds"
-#	complete = {
-#		owns_entire_state_region = STATE_CUBA
-#	}
-#
-#	on_complete = {
-#		trigger_event = { id = dvg_gran_colombia.5 }
-#	}
-#
-#	weight = 100
-#	should_be_pinned_by_default = yes
-#}
+	on_complete = {
+		trigger_event = { id = dvg_gran_colombia.61 }
+	}
+	on_fail = {
+		trigger_event = { id = dvg_gran_colombia.62 }
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_retake_central_america = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_internal_affairs
+	
+	complete = {
+		owns_entire_state_region = STATE_CHIAPAS
+		owns_entire_state_region = STATE_YUCATAN
+		owns_entire_state_region = STATE_GUATEMALA
+		owns_entire_state_region = STATE_SAN_SALVADOR
+		owns_entire_state_region = STATE_MANAGUA
+		owns_entire_state_region = STATE_COSTA_RICA
+		owns_entire_state_region = STATE_PANAMA
+		
+		NAND = {
+			exists = c:UCA
+			exists = c:MAY
+			exists = c:ELS
+			exists = c:NIC
+			exists = c:PNM
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+je_southern_insurrection = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_internal_affairs
+	
+	complete = {
+		owns_entire_state_region = STATE_CHIAPAS
+		owns_entire_state_region = STATE_YUCATAN
+		owns_entire_state_region = STATE_GUATEMALA
+		owns_entire_state_region = STATE_SAN_SALVADOR
+		owns_entire_state_region = STATE_MANAGUA
+		owns_entire_state_region = STATE_COSTA_RICA
+		owns_entire_state_region = STATE_PANAMA
+		
+		NAND = {
+			exists = c:UCA
+			exists = c:MAY
+			exists = c:OAX
+			exists = c:MCO
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+	
+	on_complete = {
+		trigger_event = { id = dvg_gran_colombia.72 }
+	}
+}

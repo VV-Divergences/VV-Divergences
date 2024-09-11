@@ -32,6 +32,9 @@ dvg_gran_colombia.1 = {
 		add_loyalists = {
 			value = 0.1
 		}
+		add_journal_entry = {
+			type = je_colombian_war_of_independence_GCO
+		}
 		ai_chance = {
 			base = 1
 		}
@@ -48,11 +51,11 @@ dvg_gran_colombia.2 = {
 	flavor = dvg_gran_colombia.2.f
 	
 	event_image = {
-		video = "southamerica_aristocrats"
+		video = "europenorthamerica_springtime_of_nations"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nations"
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
@@ -68,12 +71,10 @@ dvg_gran_colombia.2 = {
 		add_loyalists = {
 			value = 0.1
 		}
-		add_journal_entry = {
-			type = je_colombian_war_of_independence_GCO
-		}
 		add_modifier = {
 			name = dvg_spanish_independence_fighters
 		}
+		
 		remove_modifier = dvg_war_preparation
 		ai_chance = {
 			base = 1
@@ -114,9 +115,7 @@ dvg_gran_colombia.3 = {
 		remove_modifier = dvg_spanish_independence_fighters
 		remove_modifier = dvg_spanish_independence
 		
-		add_journal_entry = {
-			type = je_build_a_navy_gran_colombia
-		}
+		trigger_event = { id = dvg_gran_colombia.13 months = 6 }
 		ai_chance = {
 			base = 1
 		}
@@ -134,48 +133,33 @@ dvg_gran_colombia.4 = {
 	flavor = dvg_gran_colombia.4.f
 	
 	event_image = {
-		video = "southamerica_aristocrats"
+		video = "southamerica_war_civilians"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
 	duration = 3
 
 	immediate = {
-			ig:ig_landowners = {
-					save_scope_as = landowners_ig
-					leader = {
-						save_scope_as = landowners_leader
-					}
-				}
-			ig:ig_petty_bourgeoisie = {
-					save_scope_as = petty_bourgeoisie_ig
-					leader = {
-						save_scope_as = petty_bourgeoisie_leader
-					}
-				}
-			ig:ig_intelligentsia = {
-					save_scope_as = intelligentsia_ig
-					leader = {
-						save_scope_as = intelligentsia_leader
-					}
-				}
-			
-			ig:ig_armed_forces = {
-					save_scope_as = armed_forces_ig
-					leader = {
-						save_scope_as = armed_forces_leader
-					}
-				}
-			ig:ig_rural_folk = {
-					save_scope_as = rural_folk_ig
-					leader = {
-						save_scope_as = rural_folk_leader
-					}
-				}
+		every_scope_character = {
+			limit = { has_variable = is_peixoto }
+			save_scope_as = scope_peixoto
+		}
+		every_scope_character = {
+			limit = { has_variable = is_de_marquez }
+			save_scope_as = scope_de_marquez
+		}
+		every_scope_character = {
+			limit = { has_variable = is_castro }
+			save_scope_as = scope_castro
+		}
+		every_scope_character = {
+			limit = { has_variable = is_santander }
+			save_scope_as = scope_santander
+		}
 	}
 	trigger = {
 	}
@@ -186,25 +170,25 @@ dvg_gran_colombia.4 = {
 		default_option = yes
 		remove_modifier = dvg_spanish_independence_fighters
 		remove_modifier = dvg_spanish_independence
-		leader = {
+		ruler = {
 			kill_character = yes
-			remove_trait = immortal
+			set_character_immortal = no
 		}
-		scope.petty_bourgeoisie_leader = {
+		scope:scope_peixoto = {
 			kill_character = yes
-			remove_trait = immortal
+			set_character_immortal = no
 		}
-		scope.intelligentsia_leader = {
+		scope:scope_de_marquez = {
 			kill_character = yes
-			remove_trait = immortal
+			set_character_immortal = no
 		}
-		scope.armed_forces_leader = {
+		scope:scope_castro = {
 			kill_character = yes
-			remove_trait = immortal
+			set_character_immortal = no
 		}
-		scope.rural_folk_leader = {
+		scope:scope_santander = {
 			kill_character = yes
-			remove_trait = immortal
+			set_character_immortal = no
 		}
 		ai_chance = {
 			base = 1
@@ -241,16 +225,9 @@ dvg_gran_colombia.5 = {
 		default_option = yes
 		remove_modifier = dvg_spanish_independence_fighters
 		remove_modifier = dvg_spanish_independence
+		
 		add_journal_entry = {
 			type = je_build_a_navy_gran_colombia
-		}
-		hidden_effect = {
-			c:SPA = {
-				remove_diplomatic_pact = {
-					country = c:GCO
-					type = dominion
-				}
-			}
 		}
 		ai_chance = {
 			base = 1
@@ -267,11 +244,11 @@ dvg_gran_colombia.6 = {
 	flavor = dvg_gran_colombia.6.f
 	
 	event_image = {
-		video = "southamerica_aristocrats"
+		video = "southamerica_war_civilians"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
@@ -326,37 +303,10 @@ dvg_gran_colombia.7 = {
 	duration = 3
 
 	immediate = {
-			ig:ig_landowners = {
-					save_scope_as = landowners_ig
-					leader = {
-						save_scope_as = landowners_leader
-					}
-				}
-			ig:ig_petty_bourgeoisie = {
-					save_scope_as = petty_bourgeoisie_ig
-					leader = {
-						save_scope_as = petty_bourgeoisie_leader
-					}
-				}
-			ig:ig_intelligentsia = {
-					save_scope_as = intelligentsia_ig
-					leader = {
-						save_scope_as = intelligentsia_leader
-					}
-				}
-			
-			ig:ig_armed_forces = {
-					save_scope_as = armed_forces_ig
-					leader = {
-						save_scope_as = armed_forces_leader
-					}
-				}
-			ig:ig_rural_folk = {
-					save_scope_as = rural_folk_ig
-					leader = {
-						save_scope_as = rural_folk_leader
-					}
-				}
+		every_scope_character = {
+			limit = { has_variable = is_santander }
+			save_scope_as = scope_santander
+		}
 	}
 	trigger = {
 	}
@@ -367,15 +317,12 @@ dvg_gran_colombia.7 = {
 		default_option = yes
 		ruler = {
 			kill_character = yes
-			remove_trait = immortal
+			set_character_immortal = no
 		}
-		scope:intelligentsia_leader = {
-			kill_character = yes
-			remove_trait = immortal
-		}
-		scope:armed_forces_leader = {
+		scope:scope_santander = {
 			set_character_as_ruler = yes
 		}
+		trigger_event = { id = dvg_gran_colombia.48 days = 31 }
 		ai_chance = {
 			base = 1
 		}
@@ -391,11 +338,11 @@ dvg_gran_colombia.8 = {
 	flavor = dvg_gran_colombia.8.f
 	
 	event_image = {
-		video = "southamerica_aristocrats"
+		video = "unspecific_steam_ship"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/steam_ship"
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
@@ -411,9 +358,7 @@ dvg_gran_colombia.8 = {
 		
 		add_modifier = {
 			name = dvg_naval_enthusiasm
-			years = 15
 		}
-		trigger_event = { id = dvg_gran_colombia.13 days = 14 }
 		ai_chance = {
 			base = 1
 		}
@@ -441,114 +386,117 @@ dvg_gran_colombia.9 = {
 	trigger = {
 	}
 	
-	# This should be enough for now...
+	# At last, the remnant of Spanish colonialism has returned to Colombia!
 	option = {
 		name = dvg_gran_colombia.9.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.24 days = 7 }
+		if = {
+			limit = { has_variable = castro_colombia }
+			trigger_event = { id = dvg_cuba.25 days = 7 }
+		}
 		
 		ai_chance = {
 			base = 1
 		}
 	}
 }
-# dvg_gran_colombia.10 = {
-	# type = country_event
-	# placement = ROOT
+dvg_gran_colombia.10 = {
+	type = country_event
+	placement = ROOT
 
-	# title = dvg_gran_colombia.10.t
-	# desc = dvg_gran_colombia.10.d
-	# flavor = dvg_gran_colombia.10.f
+	title = dvg_gran_colombia.10.t
+	desc = dvg_gran_colombia.10.d
+	flavor = dvg_gran_colombia.10.f
 	
-	# event_image = {
-		# video = "southamerica_aristocrats"
-	# }
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
 
-	# on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	# on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
 
-	# icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	# duration = 3
+	duration = 3
 
-	# trigger = {
-	# }
+	trigger = {
+	}
 	
-	# # This should be enough for now...
-	# option = {
-		# name = dvg_gran_colombia.10.a
-		# default_option = yes
+	# This should be enough for now...
+	option = {
+		name = dvg_gran_colombia.10.a
+		default_option = yes
 		
-		# ai_chance = {
-			# base = 1
-		# }
-	# }
-# }
-# dvg_gran_colombia.11 = {
-	# type = country_event
-	# placement = ROOT
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.11 = {
+	type = country_event
+	placement = ROOT
 
-	# title = dvg_gran_colombia.11.t
-	# desc = dvg_gran_colombia.11.d
-	# flavor = dvg_gran_colombia.11.f
+	title = dvg_gran_colombia.11.t
+	desc = dvg_gran_colombia.11.d
+	flavor = dvg_gran_colombia.11.f
 	
-	# event_image = {
-		# video = "southamerica_aristocrats"
-	# }
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
 
-	# on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	# on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
 
-	# icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	# duration = 3
+	duration = 3
 
-	# trigger = {
-	# }
+	trigger = {
+	}
 	
-	# # This should be enough for now...
-	# option = {
-		# name = dvg_gran_colombia.11.a
-		# default_option = yes
+	# This should be enough for now...
+	option = {
+		name = dvg_gran_colombia.11.a
+		default_option = yes
 		
-		# ai_chance = {
-			# base = 1
-		# }
-	# }
-# }
-# dvg_gran_colombia.12 = {
-	# type = country_event
-	# placement = ROOT
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.12 = {
+	type = country_event
+	placement = ROOT
 
-	# title = dvg_gran_colombia.12.t
-	# desc = dvg_gran_colombia.12.d
-	# flavor = dvg_gran_colombia.12.f
+	title = dvg_gran_colombia.12.t
+	desc = dvg_gran_colombia.12.d
+	flavor = dvg_gran_colombia.12.f
 	
-	# event_image = {
-		# video = "southamerica_aristocrats"
-	# }
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
 
-	# on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	# on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
 
-	# icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	# duration = 3
+	duration = 3
 
-	# trigger = {
-	# }
+	trigger = {
+	}
 	
-	# # This should be enough for now...
-	# option = {
-		# name = dvg_gran_colombia.12.a
-		# default_option = yes
+	# This should be enough for now...
+	option = {
+		name = dvg_gran_colombia.12.a
+		default_option = yes
 		
-		# ai_chance = {
-			# base = 1
-		# }
-	# }
-# }
+		ai_chance = {
+			base = 1
+		}
+	}
+}
 #Military Alliance w/QUI and GRA?
 dvg_gran_colombia.13 = {
 	type = country_event
@@ -578,21 +526,21 @@ dvg_gran_colombia.13 = {
 		
 		c:GCO = {
 			create_diplomatic_pact = {
-				country = c:GRA
-				type = alliance
-			}
-			create_diplomatic_pact = {
 				country = c:QUI
 				type = alliance
 			}
 		}
-		c:GRA = {
-			create_diplomatic_pact = {
-				country = c:QUI
-				type = alliance
+		if = {
+			limit = { c:GRA = { is_subject = no }}
+			c:GRA = {
+				create_diplomatic_pact = {
+					country = c:QUI
+					type = alliance
+				}
 			}
 		}
-		trigger_event = { id = dvg_gran_colombia.14 days = 14}
+		
+		trigger_event = { id = dvg_gran_colombia.14 days = 30 }
 		ai_chance = {
 			base = 10
 		}
@@ -604,21 +552,20 @@ dvg_gran_colombia.13 = {
 		
 		c:GCO = {
 			create_diplomatic_pact = {
-				country = c:GRA
-				type = defensive_pact
-			}
-			create_diplomatic_pact = {
 				country = c:QUI
 				type = defensive_pact
 			}
 		}
-		c:GRA = {
-			create_diplomatic_pact = {
-				country = c:QUI
-				type = defensive_pact
+		if = {
+			limit = { c:GRA = { is_subject = no } }
+			c:GRA = {
+				create_diplomatic_pact = {
+					country = c:QUI
+					type = defensive_pact
+				}
 			}
 		}
-		trigger_event = { id = dvg_gran_colombia.14 days = 14}
+		trigger_event = { id = dvg_gran_colombia.14 days = 30 }
 		ai_chance = {
 			base = 65
 		}
@@ -627,7 +574,7 @@ dvg_gran_colombia.13 = {
 	option = {
 		name = dvg_gran_colombia.13.c
 		
-		trigger_event = { id = dvg_gran_colombia.14 days = 14}
+		trigger_event = { id = dvg_gran_colombia.14 days = 30 }
 		ai_chance = {
 			base = 25
 		}
@@ -656,43 +603,45 @@ dvg_gran_colombia.14 = {
 
 	trigger = {
 	}
-	
-	# Trade Agreements
+	#Trade agreement
 	option = {
 		name = dvg_gran_colombia.14.a
 		default_option = yes
 		
 		c:GCO = {
 			create_diplomatic_pact = {
-				country = c:GRA
-				type = trade_agreement
-			}
-			create_diplomatic_pact = {
 				country = c:QUI
 				type = trade_agreement
 			}
 		}
-		c:GRA = {
-			create_diplomatic_pact = {
-				country = c:QUI
-				type = trade_agreement
+		if = {
+			limit = { c:GRA = { is_subject = no } }
+			c:GRA = {
+				create_diplomatic_pact = {
+					country = c:QUI
+					type = trade_agreement
+				}
+			}
+			c:GCO = {
+				create_diplomatic_pact = {
+					country = c:GRA
+					type = trade_agreement
+				}
 			}
 		}
-		trigger_event = { id = dvg_gran_colombia.15 days = 14}
+		trigger_event = { id = dvg_gran_colombia.15 days = 30 }
 		ai_chance = {
 			base = 65
 		}
 	}
-	# Nothing
 	option = {
 		name = dvg_gran_colombia.14.b
 		
-		trigger_event = { id = dvg_gran_colombia.15 days = 14}
+		trigger_event = { id = dvg_gran_colombia.15 days = 30 }
 		ai_chance = {
-			base = 10
+			base = 25
 		}
 	}
-	
 }
 #Vicente
 dvg_gran_colombia.15 = {
@@ -713,40 +662,6 @@ dvg_gran_colombia.15 = {
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
 	duration = 3
-
-	immediate = {
-			ig:ig_landowners = {
-					save_scope_as = landowners_ig
-					leader = {
-						save_scope_as = landowners_leader
-					}
-				}
-			ig:ig_petty_bourgeoisie = {
-					save_scope_as = petty_bourgeoisie_ig
-					leader = {
-						save_scope_as = petty_bourgeoisie_leader
-					}
-				}
-			ig:ig_intelligentsia = {
-					save_scope_as = intelligentsia_ig
-					leader = {
-						save_scope_as = intelligentsia_leader
-					}
-				}
-			
-			ig:ig_armed_forces = {
-					save_scope_as = armed_forces_ig
-					leader = {
-						save_scope_as = armed_forces_leader
-					}
-				}
-			ig:ig_rural_folk = {
-					save_scope_as = rural_folk_ig
-					leader = {
-						save_scope_as = rural_folk_leader
-					}
-				}
-	}
 	
 	trigger = {
 	}
@@ -756,10 +671,23 @@ dvg_gran_colombia.15 = {
 		name = dvg_gran_colombia.15.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.27 days = 14}
+		trigger_event = { id = dvg_gran_colombia.27 days = 30 }
 		
 		ai_chance = {
-			base = 50
+			base = 0
+
+			modifier = {
+				trigger = {
+					has_game_rule = vicente_assassination_random
+				}
+				add = 50
+			}
+			modifier = {
+				trigger = {
+					has_game_rule = vicente_assassination_survive
+				}
+				add = 100
+			}
 		}
 	}
 	#Vicente dies
@@ -767,15 +695,51 @@ dvg_gran_colombia.15 = {
 		name = dvg_gran_colombia.15.b
 		
 		ruler = { 
-			remove_trait = immortal
+			set_character_immortal = no
 			kill_character = yes
 		}
-		scope:intelligentsia_leader = {
-			set_character_as_ruler = yes
+		hidden_effect = {
+			create_character = {
+				historical = yes
+				first_name = Emiliano
+				last_name = Soares
+				culture = cu:nahua
+				birth_date = 1795.10.21
+				ideology = ideology_radical
+				interest_group = ig_rural_folk
+				traits = {
+					firebrand
+					charismatic
+					erudite
+				}
+				on_created = {
+					set_character_as_ruler = yes
+					set_as_interest_group_leader = yes
+				}
+			}
 		}
-		trigger_event = { id = dvg_gran_colombia.16 days = 5}
+		trigger_event = { id = dvg_gran_colombia.16 days = 7 }
 		ai_chance = {
-			base = 50
+			base = 0
+
+			modifier = {
+				trigger = {
+					has_game_rule = vicente_assassination_random
+				}
+				add = 50
+			}
+			modifier = {
+				trigger = {
+					has_game_rule = vicente_assassination_collapse
+				}
+				add = 100
+			}
+			modifier = {
+				trigger = {
+					has_game_rule = vicente_assassination_castro
+				}
+				add = 100
+			}
 		}
 	}
 }
@@ -789,11 +753,11 @@ dvg_gran_colombia.16 = {
 	flavor = dvg_gran_colombia.16.f
 	
 	event_image = {
-		video = "southamerica_aristocrats"
+		video = "southamerica_public_figure_assassination"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
@@ -806,10 +770,7 @@ dvg_gran_colombia.16 = {
 		name = dvg_gran_colombia.16.a
 		default_option = yes
 		
-		add_radicals = {
-			value = 0.05
-		}
-		trigger_event = { id = dvg_gran_colombia.17 days = 14}
+		trigger_event = { id = dvg_gran_colombia.17 days = 5 }
 		
 		ai_chance = {
 			base = 1
@@ -843,15 +804,7 @@ dvg_gran_colombia.17 = {
 		name = dvg_gran_colombia.17.a
 		default_option = yes
 		
-		add_radicals = {
-			value = 0.1
-			interest_group = ig:ig_landowners
-		}
-		add_radicals = {
-			value = 0.1
-			interest_group = ig:ig_rural_folk
-		}
-		trigger_event = { id = dvg_gran_colombia.18 days = 14}
+		trigger_event = { id = dvg_gran_colombia.18 days = 5 }
 		
 		ai_chance = {
 			base = 1
@@ -1371,37 +1324,14 @@ dvg_gran_colombia.19 = {
 	duration = 3
 
 	immediate = {
-			ig:ig_landowners = {
-					save_scope_as = landowners_ig
-					leader = {
-						save_scope_as = landowners_leader
-					}
-				}
-			ig:ig_petty_bourgeoisie = {
-					save_scope_as = petty_bourgeoisie_ig
-					leader = {
-						save_scope_as = petty_bourgeoisie_leader
-					}
-				}
-			ig:ig_intelligentsia = {
-					save_scope_as = intelligentsia_ig
-					leader = {
-						save_scope_as = intelligentsia_leader
-					}
-				}
-			
-			ig:ig_armed_forces = {
-					save_scope_as = armed_forces_ig
-					leader = {
-						save_scope_as = armed_forces_leader
-					}
-				}
-			ig:ig_rural_folk = {
-					save_scope_as = rural_folk_ig
-					leader = {
-						save_scope_as = rural_folk_leader
-					}
-				}
+		every_scope_character = {
+			limit = { has_variable = is_peixoto }
+			save_scope_as = scope_peixoto
+		}
+		every_scope_character = {
+			limit = { has_variable = is_castro }
+			save_scope_as = scope_castro
+		}
 	}
 	
 	trigger = {
@@ -1411,15 +1341,21 @@ dvg_gran_colombia.19 = {
 		name = dvg_gran_colombia.19.a
 		default_option = yes
 		
-		ruler = {
-			kill_character = yes
-			remove_trait = immortal
-		}
-		scope:petty_bourgeoisie_leader = {
-			set_character_as_ruler = yes
-		}
+		ruler = { kill_character = yes }
 		
-		trigger_event = { id = dvg_gran_colombia.20 days = 14 }
+		hidden_effect = {
+			c:GCO = {
+				set_variable = castro_colombia
+			}
+			scope:scope_castro = {
+				set_character_as_ruler = yes
+				remove_as_interest_group_leader = yes
+			}
+			scope:scope_peixoto = {
+				set_character_immortal = no
+			}
+		}
+		trigger_event = { id = dvg_gran_colombia.20 days = 7 }
 		
 		ai_chance = {
 			base = 1
@@ -1452,7 +1388,11 @@ dvg_gran_colombia.20 = {
 		name = dvg_gran_colombia.20.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.21 days = 14 }
+		add_journal_entry = {
+			type = je_build_a_navy_gran_colombia
+		}
+		
+		trigger_event = { id = dvg_gran_colombia.21 days = 7 }
 		
 		ai_chance = {
 			base = 1
@@ -1486,7 +1426,10 @@ dvg_gran_colombia.21 = {
 		default_option = yes
 		
 		add_journal_entry = {
-			type = je_conquer_kuba_gran_colombia
+			type = je_conquer_kuba_GCO_castro
+		}
+		c:CUB = {
+			trigger_event = { id = dvg_cuba.3 }
 		}
 		
 		ai_chance = {
@@ -1514,37 +1457,10 @@ dvg_gran_colombia.22 = {
 	duration = 3
 
 	immediate = {
-			ig:ig_landowners = {
-					save_scope_as = landowners_ig
-					leader = {
-						save_scope_as = landowners_leader
-					}
-				}
-			ig:ig_petty_bourgeoisie = {
-					save_scope_as = petty_bourgeoisie_ig
-					leader = {
-						save_scope_as = petty_bourgeoisie_leader
-					}
-				}
-			ig:ig_intelligentsia = {
-					save_scope_as = intelligentsia_ig
-					leader = {
-						save_scope_as = intelligentsia_leader
-					}
-				}
-			
-			ig:ig_armed_forces = {
-					save_scope_as = armed_forces_ig
-					leader = {
-						save_scope_as = armed_forces_leader
-					}
-				}
-			ig:ig_rural_folk = {
-					save_scope_as = rural_folk_ig
-					leader = {
-						save_scope_as = rural_folk_leader
-					}
-				}
+		every_scope_character = {
+			limit = { has_variable = is_santander }
+			save_scope_as = scope_santander
+		}
 	}
 	
 	trigger = {
@@ -1555,13 +1471,16 @@ dvg_gran_colombia.22 = {
 		default_option = yes
 		
 		ruler = { 
-			remove_trait = immortal
-			kill_character = yes
+			set_character_immortal = no
+			exile_character = yes
 		}
-		scope:armed_forces_leader = {
+		scope:scope_santander = {
 			set_character_as_ruler = yes
+			remove_as_interest_group_leader = yes
 		}
+		trigger_event = { id = dvg_gran_colombia.23 days = 7 }
 		
+		remove_variable = castro_colombia
 		ai_chance = {
 			base = 1
 		}
@@ -1593,6 +1512,7 @@ dvg_gran_colombia.23 = {
 		name = dvg_gran_colombia.23.a
 		default_option = yes
 		
+		set_variable = santander_junta
 		trigger_event = { id = dvg_gran_colombia.48 days = 7 }
 		
 		ai_chance = {
@@ -1609,11 +1529,11 @@ dvg_gran_colombia.24 = {
 	flavor = dvg_gran_colombia.24.f
 	
 	event_image = {
-		video = "southamerica_aristocrats"
+		video = "unspecific_military_parade"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
@@ -1627,14 +1547,54 @@ dvg_gran_colombia.24 = {
 		default_option = yes
 		
 		activate_law = law_type:law_monarchy
-		create_character = {
-			heir = yes
-			historical = yes
-			first_name = Ernesto
-			last_name = Castro
-			birth_date = 1836.05.12
-			ideology = ideology_constitutionalist
-			interest_group = ig_petty_bourgeoisie
+		activate_law = law_type:law_autocracy
+		
+		if = {
+			limit = { has_variable = caribenos_integrated }
+			create_character = {
+				heir = yes
+				historical = yes
+				first_name = Ernesto
+				last_name = Castro
+				culture = cu:colombian
+				birth_date = 1836.05.12
+				ideology = ideology_jingoist_leader
+				interest_group = ig_petty_bourgeoisie
+				traits = {
+					charismatic
+					firebrand
+					celebrity_commander
+				}
+				on_created = {
+					set_variable = is_married
+				}
+			}
+		}
+		else = {
+			create_character = {
+				heir = yes
+				historical = yes
+				first_name = Ernesto
+				last_name = Castro
+				culture = cu:caribeno
+				birth_date = 1836.05.12
+				ideology = ideology_jingoist_leader
+				interest_group = ig_petty_bourgeoisie
+				traits = {
+					charismatic
+					firebrand
+					celebrity_commander
+				}
+				on_created = {
+					set_variable = is_married
+				}
+			}
+		}
+		set_variable = emperor_ernesto_i
+		
+		change_relations = {
+			country = c:PLA
+			value = 15
 		}
 		ai_chance = {
 			base = 1
@@ -1650,19 +1610,23 @@ dvg_gran_colombia.25 = {
 	flavor = dvg_gran_colombia.25.f
 	
 	event_image = {
-		video = "southamerica_aristocrats"
+		video = "southamerica_public_figure_assassination"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
 	duration = 3
 
 	trigger = {
-		year = 1855
+		exists = c:GCO
+		this = c:GCO
+		year = 1865
+		month >= 6
 		has_law = law_type:law_monarchy
+		has_variable = emperor_ernesto_i
 	}
 	
 	option = {
@@ -1671,9 +1635,39 @@ dvg_gran_colombia.25 = {
 		
 		ruler = {
 			kill_character = yes
-			remove_trait = immortal
+			set_character_immortal = no
 		}
-		trigger_event = { id = dvg_gran_colombia.26 }
+		if = {
+			limit = { has_variable = caribenos_integrated }
+			create_character = {
+				heir = yes
+				historical = yes
+				first_name = Cristobal
+				last_name = Castro
+				culture = cu:colombian
+				birth_date = 1855.05.12
+				ideology = ideology_liberal_leader
+				interest_group = ig_petty_bourgeoisie
+			}
+		}
+		else = {
+			create_character = {
+				heir = yes
+				historical = yes
+				first_name = Cristobal
+				last_name = Castro
+				culture = cu:caribeno
+				birth_date = 1855.05.12
+				ideology = ideology_liberal_leader
+				interest_group = ig_petty_bourgeoisie
+			}
+		}
+		
+		remove_variable = emperor_ernesto_i
+		set_variable = emperor_ernesto_ii
+		c:GCO = {
+			trigger_event = { id = dvg_gran_colombia.26 days = 7 }
+		}
 		ai_chance = {
 			base = 1
 		}
@@ -1705,7 +1699,11 @@ dvg_gran_colombia.26 = {
 		name = dvg_gran_colombia.26.a
 		default_option = yes
 		
-		activate_law = law:law_census_voting
+		c:GCO = {
+			activate_law = law_type:law_census_voting
+			activate_law = law_type:law_right_of_assembly
+		}
+		
 		
 		ai_chance = {
 			base = 1
@@ -1737,7 +1735,7 @@ dvg_gran_colombia.27 = {
 	option = {
 		name = dvg_gran_colombia.27.a
 		default_option = yes
-		trigger_event = { id = dvg_gran_colombia.28 days = 14 }
+		trigger_event = { id = dvg_gran_colombia.28 days = 30 }
 		
 		ai_chance = {
 			base = 1
@@ -1770,7 +1768,7 @@ dvg_gran_colombia.28 = {
 		name = dvg_gran_colombia.28.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.29 days = 14 }
+		trigger_event = { id = dvg_gran_colombia.29 days = 30 }
 		
 		ai_chance = {
 			base = 1
@@ -1803,7 +1801,7 @@ dvg_gran_colombia.29 = {
 		name = dvg_gran_colombia.29.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.30 days = 14 }
+		trigger_event = { id = dvg_gran_colombia.30 days = 180 }
 		
 		ai_chance = {
 			base = 1
@@ -1839,7 +1837,7 @@ dvg_gran_colombia.30 = {
 		add_journal_entry = {
 			type = je_veracruz_conference
 		}
-		trigger_event = { id = dvg_gran_colombia.31 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.31 days = 30 }
 		
 		ai_chance = {
 			base = 1
@@ -1878,7 +1876,7 @@ dvg_gran_colombia.31 = {
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_freedom_of_conscience
 		
-		trigger_event = { id = dvg_gran_colombia.32 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.32 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -1895,7 +1893,7 @@ dvg_gran_colombia.31 = {
 		activate_law = law_type:law_private_schools
 		activate_law = law_type:law_freedom_of_conscience
 		
-		trigger_event = { id = dvg_gran_colombia.32 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.32 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -1904,7 +1902,7 @@ dvg_gran_colombia.31 = {
 	option = {
 		name = dvg_gran_colombia.31.c
 		
-		trigger_event = { id = dvg_gran_colombia.32 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.32 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -1942,7 +1940,7 @@ dvg_gran_colombia.32 = {
 		}
 		activate_law = law_type:law_slavery_banned
 		
-		trigger_event = { id = dvg_gran_colombia.33 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.33 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -1958,7 +1956,7 @@ dvg_gran_colombia.32 = {
 		}
 		activate_law = law_type:law_debt_slavery
 		
-		trigger_event = { id = dvg_gran_colombia.33 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.33 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -1967,7 +1965,7 @@ dvg_gran_colombia.32 = {
 	option = {
 		name = dvg_gran_colombia.32.c
 		
-		trigger_event = { id = dvg_gran_colombia.33 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.33 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -2027,7 +2025,7 @@ dvg_gran_colombia.33 = {
 			activate_law = law_type:law_racial_segregation
 			activate_law = law_type:law_no_migration_controls
 		}
-		trigger_event = { id = dvg_gran_colombia.34 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.34 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -2064,7 +2062,7 @@ dvg_gran_colombia.33 = {
 			}
 			activate_law = law_type:law_no_migration_controls
 		}
-		trigger_event = { id = dvg_gran_colombia.34 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.34 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -2072,7 +2070,7 @@ dvg_gran_colombia.33 = {
 	}
 	option = {
 		name = dvg_gran_colombia.33.c
-		trigger_event = { id = dvg_gran_colombia.34 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.34 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -2114,7 +2112,7 @@ dvg_gran_colombia.34 = {
 				days = 3650
 			}
 		}
-		trigger_event = { id = dvg_gran_colombia.35 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.35 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -2194,7 +2192,7 @@ dvg_gran_colombia.34 = {
 				days = 3650
 			}
 		}
-		trigger_event = { id = dvg_gran_colombia.35 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.35 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -2203,7 +2201,7 @@ dvg_gran_colombia.34 = {
 	option = {
 		name = dvg_gran_colombia.34.c
 		
-		trigger_event = { id = dvg_gran_colombia.35 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.35 days = 60 }
 		
 		ai_chance = {
 			base = 33
@@ -2319,23 +2317,21 @@ dvg_gran_colombia.36 = {
 		ruler = {
 			set_as_interest_group_leader = yes
 		}
-		hidden_effect = {
-			scope:scope_de_marquez = {
-				set_character_immortal = no
-			}
-			scope:scope_castro = {
-				set_character_immortal = no
-			}
-			scope:scope_santander = {
-				set_character_immortal = no
-			}
-			scope:scope_peixoto = {
-				set_character_immortal = no
-			}
-			set_global_variable = {
-				name = vicente_colombian_republic
-				value = 0
-			}
+		scope:scope_de_marquez = {
+			set_character_immortal = no
+		}
+		scope:scope_castro = {
+			set_character_immortal = no
+		}
+		scope:scope_santander = {
+			set_character_immortal = no
+		}
+		scope:scope_peixoto = {
+			set_character_immortal = no
+		}
+		set_global_variable = {
+			name = vicente_colombian_republic
+			value = 0
 		}
 		ai_chance = {
 			base = 1
@@ -2401,7 +2397,7 @@ dvg_gran_colombia.38 = {
 		name = dvg_gran_colombia.38.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.39 days = 5}
+		trigger_event = { id = dvg_gran_colombia.39 days = 5 }
 		
 		ai_chance = {
 			base = 0.5
@@ -2438,6 +2434,22 @@ dvg_gran_colombia.39 = {
 	duration = 3
 
 	immediate = {
+		every_scope_character = {
+			limit = { has_variable = is_peixoto }
+			save_scope_as = scope_peixoto
+		}
+		every_scope_character = {
+			limit = { has_variable = is_de_marquez }
+			save_scope_as = scope_de_marquez
+		}
+		every_scope_character = {
+			limit = { has_variable = is_castro }
+			save_scope_as = scope_castro
+		}
+		every_scope_character = {
+			limit = { has_variable = is_santander }
+			save_scope_as = scope_santander
+		}
 		if = {
 			limit = { exists = s:STATE_BAHIA.region_state:GCO }
 			create_country = {
@@ -2462,205 +2474,205 @@ dvg_gran_colombia.39 = {
 					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = { exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO }
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = { exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO }
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = { exists = s:STATE_APACHERIA.region_state:GCO }
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_APACHERIA.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = { exists = s:STATE_APACHERIA.region_state:GCO }
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_APACHERIA.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = { exists = s:STATE_COMANCHERIE.region_state:GCO }
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_COMANCHERIE.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = { exists = s:STATE_COMANCHERIE.region_state:GCO }
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_COMANCHERIE.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = {
-					exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					exists = s:STATE_APACHERIA.region_state:GCO
-				}
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					state = s:STATE_APACHERIA.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				exists = s:STATE_APACHERIA.region_state:GCO
+			}
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				state = s:STATE_APACHERIA.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = {
-					exists = s:STATE_APACHERIA.region_state:GCO
-					exists = s:STATE_COMANCHERIE.region_state:GCO
-				}
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					state = s:STATE_APACHERIA.region_state:GCO
-					state = s:STATE_COMANCHERIE.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_APACHERIA.region_state:GCO
+				exists = s:STATE_COMANCHERIE.region_state:GCO
+			}
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				state = s:STATE_APACHERIA.region_state:GCO
+				state = s:STATE_COMANCHERIE.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = {
-					exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					exists = s:STATE_COMANCHERIE.region_state:GCO
-				}
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					state = s:STATE_COMANCHERIE.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				exists = s:STATE_COMANCHERIE.region_state:GCO
+			}
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				state = s:STATE_COMANCHERIE.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else = {
-				limit = {
-					exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					exists = s:STATE_APACHERIA.region_state:GCO
-					exists = s:STATE_COMANCHERIE.region_state:GCO
-				}
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					state = s:STATE_APACHERIA.region_state:GCO
-					state = s:STATE_COMANCHERIE.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else = {
+			limit = {
+				exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				exists = s:STATE_APACHERIA.region_state:GCO
+				exists = s:STATE_COMANCHERIE.region_state:GCO
+			}
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				state = s:STATE_APACHERIA.region_state:GCO
+				state = s:STATE_COMANCHERIE.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
 		}
@@ -2692,6 +2704,101 @@ dvg_gran_colombia.39 = {
 				}
 			}
 		}
+		if = {
+			limit = { exists =  s:STATE_CUBA.region_state:GCO }
+			create_country = {
+				tag = CUB
+				origin = this
+				state = s:STATE_CUBA.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:caribeno
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		if = {
+			limit = { exists =  s:STATE_ANGOSTURA.region_state:GCO }
+			create_country = {
+				tag = GRA
+				origin = this
+				state = s:STATE_ANGOSTURA.region_state:GCO
+				state = s:STATE_BOLIVAR.region_state:GCO
+				state = s:STATE_MIRANDA.region_state:GCO
+				state = s:STATE_GUAVIARE.region_state:GCO
+				state = s:STATE_ZULIA.region_state:GCO
+				state = s:STATE_ANTIOQUIA.region_state:GCO
+				state = s:STATE_CUNDINAMARCA.region_state:GCO
+				state = s:STATE_CAUCA.region_state:GCO
+				
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:granadan
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		if = {
+			limit = { exists =  s:STATE_LIMA.region_state:GCO }
+			create_country = {
+				tag = QUI
+				origin = this
+				state = s:STATE_LIMA.region_state:GCO
+				state = s:STATE_CAJAMARCA.region_state:GCO
+				state = s:STATE_ECUADOR.region_state:GCO
+				state = s:STATE_PASTAZA.region_state:GCO
+				state = s:STATE_NEAR_ANTISUYU.region_state:GCO
+				
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:caladeran
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		c:LUS = {
+			trigger_event = { id = dvg_gran_colombia.40 }
+		}
+		c:UCA = {
+			trigger_event = { id = dvg_gran_colombia.40 }
+		}
+		c:GCO = {
+			scope:scope_peixoto = {
+				transfer_character = c:LUS
+				set_character_as_ruler = yes
+				set_character_immortal = no
+			}
+			scope:scope_de_marquez = {
+				transfer_character = c:UCA
+				set_character_as_ruler = yes
+				set_character_immortal = no
+			}
+			scope:scope_castro = { set_character_immortal = no }
+		}
 	}
 	trigger = {
 	}
@@ -2700,61 +2807,22 @@ dvg_gran_colombia.39 = {
 		name = dvg_gran_colombia.39.a
 		default_option = yes
 		
-		hidden_effect = {
-			c:LUS = {
-				trigger_event = { id = dvg_gran_colombia.40 }
-				ruler = { kill_character = yes }
-				create_character = {
-					ruler = yes
-					is_general = yes
-					historical = yes
-					first_name = Deodoro
-					last_name = Peixoto
-					culture = cu:lusitanian
-					dna = dna_joaquim_marques_lisboa
-					ig_leader = yes
-					birth_date = 1779.10.21
-					ideology = ideology_republican_leader
-					interest_group = ig_rural_folk
-				}
+		c:GCO = {
+			set_global_variable = {
+				name = vicente_mexican_republic
+				value = 0
 			}
-			c:UCA = {
-				trigger_event = { id = dvg_gran_colombia.40 }
-				create_character = {
-					ruler = yes
-					is_general = yes
-					historical = yes
-					first_name = Jose
-					last_name = de_Puente-Marquez
-					noble = yes
-					culture = cu:central_american
-					ig_leader = yes
-					birth_date = 1787.9.19
-					interest_group = ig_landowners
-					ideology = ideology_royalist
-					traits = {
-						grifter
-					}
-				}
+			ruler = { set_as_interest_group_leader = yes }
+			activate_law = law_type:law_census_voting
+			activate_law = law_type:law_right_of_assembly
+			
+			create_diplomatic_pact = {
+				country = c:LUS
+				type = protectorate
 			}
-			c:GCO = {
-				scope:rural_folk_leader = {
-					kill_character = yes
-					remove_trait = immortal
-				}
-				scope:landowners_leader = {
-					kill_character = yes
-					remove_trait = immortal
-				}
-				scope:petty_bourgeoisie_leader = { remove_trait = immortal }
-				create_diplomatic_play = {
-					country = c:LUS
-					type = protectorate
-				}
-				create_diplomatic_play = {
-					country = c:UCA
-					type = protectorate
-				}
+			create_diplomatic_pact = {
+				country = c:UCA
+				type = protectorate
 			}
 		}
 		ai_chance = {
@@ -2825,14 +2893,28 @@ dvg_gran_colombia.41 = {
 		}
 	}
 	trigger = {
+		exists = c:GCO
+		this = c:GCO
+		year = 1875
+		month >= 6
+		exists = global_var:vicente_mexican_republic
 	}
 	
 	option = {
 		name = dvg_gran_colombia.41.a
 		default_option = yes
 		
+		ruler = { kill_character = yes }
 		c:GCO = { change_tag = MEX }
 		
+		remove_global_variable = vicente_mexican_republic
+		
+		hidden_effect = {
+			c:MEX = {
+				remove_primary_culture = cu:lusitanian
+				remove_primary_culture = cu:central_american
+			}
+		}
 		ai_chance = {
 			base = 1
 		}
@@ -2858,13 +2940,25 @@ dvg_gran_colombia.42 = {
 	duration = 3
 
 	trigger = {
-		year >= 1865
-		country_rank != rank_value:great_power
+		exists = c:GCO
+		this = c:GCO
+		exists = global_var:vicente_colombian_republic
+		NOR = {
+			country_rank >= rank_value:great_power
+			exists = global_var:santander_revolt
+		}
 	}
 	
 	option = {
 		name = dvg_gran_colombia.42.a
 		default_option = yes
+		
+		set_global_variable = {
+			name = santander_revolt
+			value = 0
+		}
+		
+		trigger_event = { id = dvg_gran_colombia.43 days = 7 }
 		
 		ai_chance = {
 			base = 1
@@ -2891,6 +2985,10 @@ dvg_gran_colombia.43 = {
 	duration = 3
 
 	immediate = {
+		every_scope_character = {
+			limit = { has_variable = is_santander }
+			save_scope_as = scope_santander
+		}
 		if = {
 			limit = { exists = s:STATE_JALISCO.region_state:GCO }
 			create_country = {
@@ -2899,52 +2997,26 @@ dvg_gran_colombia.43 = {
 				state = s:STATE_JALISCO.region_state:GCO
 				state = s:STATE_SINALOA.region_state:GCO
 				state = s:STATE_DURANGO.region_state:GCO
-			}
-			on_created = {
-				add_modifier = {
-					name = dvg_revolutionary_militias
-					days = 720
-					is_decaying = yes
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:mexican
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
-				add_loyalists = {
-					value = 0.35
-					culture = cu:mexican
-				}
-				warlord_setup_effect = yes
-				set_variable = warlord_state
 			}
 		}
-			ig:ig_landowners = {
-					save_scope_as = landowners_ig
-					leader = {
-						save_scope_as = landowners_leader
-					}
-				}
-			ig:ig_petty_bourgeoisie = {
-					save_scope_as = petty_bourgeoisie_ig
-					leader = {
-						save_scope_as = petty_bourgeoisie_leader
-					}
-				}
-			ig:ig_intelligentsia = {
-					save_scope_as = intelligentsia_ig
-					leader = {
-						save_scope_as = intelligentsia_leader
-					}
-				}
-			
-			ig:ig_armed_forces = {
-					save_scope_as = armed_forces_ig
-					leader = {
-						save_scope_as = armed_forces_leader
-					}
-				}
-			ig:ig_rural_folk = {
-					save_scope_as = rural_folk_ig
-					leader = {
-						save_scope_as = rural_folk_leader
-					}
-				}
+		scope:scope_santander = {
+			transfer_character = c:JLS
+			set_character_as_ruler = yes
+			set_character_immortal = no
+		}
 	}
 	trigger = {
 	}
@@ -2953,27 +3025,23 @@ dvg_gran_colombia.43 = {
 		name = dvg_gran_colombia.43.a
 		default_option = yes
 		
-		c:GCO = {
-			change_tag = JLS
-			scope:armed_forces_leader = {
-				kill_character = yes
-				remove_trait = immortal
-			}
-		}
+		play_as = c:JLS
+		
 		create_diplomatic_play = {
 			name = salvation_war
-			target = c:JLS
+			target_country = c:JLS
 			war = yes
 			type = dp_annex_war
 			
 			add_war_goal = {
 				holder = c:JLS
-				type = annex_war
+				type = annex_country
 				target_country = c:GCO
 			}
 		}
-		c:JLS = {
-			trigger_event = { id = dvg_gran_colombia.44 }
+		trigger_event = { id = dvg_gran_colombia.44 }
+		c:GCO = {
+			trigger_event = { id = dvg_gran_colombia.45 }
 		}
 		ai_chance = {
 			base = 0
@@ -2985,19 +3053,17 @@ dvg_gran_colombia.43 = {
 		
 		create_diplomatic_play = {
 			name = salvation_war
-			target = c:JLS
+			target_country = c:JLS
 			war = yes
 			type = dp_annex_war
 			
 			add_war_goal = {
 				holder = c:JLS
-				type = annex_war
+				type = annex_country
 				target_country = c:GCO
 			}
 		}
-		c:GCO = {
-			trigger_event = { id = dvg_gran_colombia.45 }
-		}
+		trigger_event = { id = dvg_gran_colombia.45 }
 		c:JLS = {
 			trigger_event = { id = dvg_gran_colombia.44 }
 		}
@@ -3060,16 +3126,17 @@ dvg_gran_colombia.45 = {
 
 	duration = 3
 
+	immediate = {
+		add_journal_entry = {
+			type = je_colombian_civil_war
+		}
+	}
 	trigger = {
 	}
 	
 	option = {
 		name = dvg_gran_colombia.45.a
 		default_option = yes
-		
-		add_journal_entry = {
-			type = je_colombian_civil_war
-		}
 		
 		ai_chance = {
 			base = 1
@@ -3102,6 +3169,8 @@ dvg_gran_colombia.46 = {
 		name = dvg_gran_colombia.46.a
 		default_option = yes
 		
+		add_loyalists = { value = 0.35 }
+		
 		ai_chance = {
 			base = 1
 		}
@@ -3127,61 +3196,64 @@ dvg_gran_colombia.47 = {
 	duration = 3
 
 	immediate = {
-		ig:ig_landowners = {
-			save_scope_as = landowners_ig
-			leader = {
-				save_scope_as = landowners_leader
-			}
-		}
-		ig:ig_petty_bourgeoisie = {
-			save_scope_as = petty_bourgeoisie_ig
-			leader = {
-				save_scope_as = petty_bourgeoisie_leader
-			}
-		}
-		ig:ig_intelligentsia = {
-			save_scope_as = intelligentsia_ig
-			leader = {
-				save_scope_as = intelligentsia_leader
-			}
-		}
-		
-		ig:ig_armed_forces = {
-			save_scope_as = armed_forces_ig
-			leader = {
-				save_scope_as = armed_forces_leader
-			}
-		}
-		ig:ig_rural_folk = {
-			save_scope_as = rural_folk_ig
-			leader = {
-				save_scope_as = rural_folk_leader
-			}
-		}
-		ruler = {
-			kill_character = yes
-			remove_trait = immortal
-		}
 	}
 	trigger = {
+		exists = c:GCO
+		this = c:GCO
 		year = 1875
-		OR = {
-			has_law = law_type:law_landed_voting
-			has_law = law_type:law_wealth_voting
-			has_law = law_type:law_census_voting
-			has_law = law_type:law_universal_voting
-		}
+		month >= 6
+		exists = global_var:vicente_colombian_republic
 	}
 	
 	option = {
 		name = dvg_gran_colombia.47.a
 		default_option = yes
 		
+		if = {
+			limit = {
+				c:GCO = { is_player = yes }
+			}
+			add_journal_entry = {
+				type = je_conquer_granada_gran_colombia
+			}
+			add_journal_entry = {
+				type = je_conquer_caladero_gran_colombia
+			}
+			add_journal_entry = {
+				type = je_conquer_new_spain_gran_colombia
+			}
+			
+		}
+		remove_global_variable = vicente_colombian_republic
+		ruler = {
+			kill_character = yes
+			set_character_immortal = no
+		}
+		create_character = {
+			historical = yes
+			first_name = Emiliano
+			last_name = Soares
+			culture = cu:nahua
+			birth_date = 1840.10.21
+			ideology = ideology_radical
+			interest_group = ig_rural_folk
+			traits = {
+				firebrand
+				charismatic
+				erudite
+			}
+			on_created = {
+				set_character_as_ruler = yes
+				set_as_interest_group_leader = yes
+			}
+		}
+		set_global_variable = {
+			name = colombian_republic
+			value = 0
+		}
+		activate_law = law_type:law_parliamentary_republic
 		ai_chance = {
 			base = 1
-		}
-		hidden_effect = {
-			scope:rural_folk_leader = { remove_trait = immortal }
 		}
 	}
 }
@@ -3338,6 +3410,23 @@ dvg_gran_colombia.52 = {
 	duration = 3
 
 	immediate = {
+		every_scope_character = {
+			limit = { has_variable = is_peixoto }
+			save_scope_as = scope_peixoto
+		}
+		every_scope_character = {
+			limit = { has_variable = is_de_marquez }
+			save_scope_as = scope_de_marquez
+		}
+		every_scope_character = {
+			limit = { has_variable = is_castro }
+			save_scope_as = scope_castro
+		}
+		every_scope_character = {
+			limit = { has_variable = is_santander }
+			save_scope_as = scope_santander
+		}
+		
 		if = {
 			limit = { exists = s:STATE_BAHIA.region_state:GCO }
 			create_country = {
@@ -3362,205 +3451,205 @@ dvg_gran_colombia.52 = {
 					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = { exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO }
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = { exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO }
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = { exists = s:STATE_APACHERIA.region_state:GCO }
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_APACHERIA.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = { exists = s:STATE_APACHERIA.region_state:GCO }
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_APACHERIA.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = { exists = s:STATE_COMANCHERIE.region_state:GCO }
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_COMANCHERIE.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = { exists = s:STATE_COMANCHERIE.region_state:GCO }
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_COMANCHERIE.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = {
-					exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					exists = s:STATE_APACHERIA.region_state:GCO
-				}
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					state = s:STATE_APACHERIA.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				exists = s:STATE_APACHERIA.region_state:GCO
+			}
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				state = s:STATE_APACHERIA.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = {
-					exists = s:STATE_APACHERIA.region_state:GCO
-					exists = s:STATE_COMANCHERIE.region_state:GCO
-				}
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					state = s:STATE_APACHERIA.region_state:GCO
-					state = s:STATE_COMANCHERIE.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_APACHERIA.region_state:GCO
+				exists = s:STATE_COMANCHERIE.region_state:GCO
+			}
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				state = s:STATE_APACHERIA.region_state:GCO
+				state = s:STATE_COMANCHERIE.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else_if = {
-				limit = {
-					exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					exists = s:STATE_COMANCHERIE.region_state:GCO
-				}
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					state = s:STATE_COMANCHERIE.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				exists = s:STATE_COMANCHERIE.region_state:GCO
+			}
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				state = s:STATE_COMANCHERIE.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
-			else = {
-				limit = {
-					exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					exists = s:STATE_APACHERIA.region_state:GCO
-					exists = s:STATE_COMANCHERIE.region_state:GCO
-				}
-				create_country = {
-					tag = LUS
-					origin = this
-					state = s:STATE_BAHIA.region_state:GCO
-					state = s:STATE_SANTA_CATARINA.region_state:GCO
-					state = s:STATE_TEJAS.region_state:GCO
-					state = s:STATE_RIO_GRANDE.region_state:GCO
-					state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
-					state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
-					state = s:STATE_APACHERIA.region_state:GCO
-					state = s:STATE_COMANCHERIE.region_state:GCO
-					on_created = {
-						add_modifier = {
-							name = dvg_revolutionary_militias
-							days = 720
-							is_decaying = yes
-						}
-						add_loyalists = {
-							value = 0.35
-							culture = cu:lusitanian
-						}
-						warlord_setup_effect = yes
-						set_variable = warlord_state
+		}
+		else = {
+			limit = {
+				exists = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				exists = s:STATE_APACHERIA.region_state:GCO
+				exists = s:STATE_COMANCHERIE.region_state:GCO
+			}
+			create_country = {
+				tag = LUS
+				origin = this
+				state = s:STATE_BAHIA.region_state:GCO
+				state = s:STATE_SANTA_CATARINA.region_state:GCO
+				state = s:STATE_TEJAS.region_state:GCO
+				state = s:STATE_RIO_GRANDE.region_state:GCO
+				state = s:STATE_BAJA_CALIFORNIA.region_state:GCO
+				state = s:STATE_TERRAS_VERMELHAS.region_state:GCO
+				state = s:STATE_APACHERIA.region_state:GCO
+				state = s:STATE_COMANCHERIE.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
 					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:lusitanian
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
 			}
 		}
@@ -3592,6 +3681,93 @@ dvg_gran_colombia.52 = {
 				}
 			}
 		}
+		if = {
+			limit = { exists =  s:STATE_CUBA.region_state:GCO }
+			create_country = {
+				tag = CUB
+				origin = this
+				state = s:STATE_CUBA.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:caribeno
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		if = {
+			limit = { exists =  s:STATE_ANGOSTURA.region_state:GCO }
+			create_country = {
+				tag = GRA
+				origin = this
+				state = s:STATE_ANGOSTURA.region_state:GCO
+				state = s:STATE_BOLIVAR.region_state:GCO
+				state = s:STATE_MIRANDA.region_state:GCO
+				state = s:STATE_GUAVIARE.region_state:GCO
+				state = s:STATE_ZULIA.region_state:GCO
+				state = s:STATE_ANTIOQUIA.region_state:GCO
+				state = s:STATE_CUNDINAMARCA.region_state:GCO
+				state = s:STATE_CAUCA.region_state:GCO
+				
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:granadan
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		if = {
+			limit = { exists =  s:STATE_LIMA.region_state:GCO }
+			create_country = {
+				tag = QUI
+				origin = this
+				state = s:STATE_LIMA.region_state:GCO
+				state = s:STATE_CAJAMARCA.region_state:GCO
+				state = s:STATE_ECUADOR.region_state:GCO
+				state = s:STATE_PASTAZA.region_state:GCO
+				state = s:STATE_NEAR_ANTISUYU.region_state:GCO
+				
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:caladeran
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		scope:scope_peixoto = {
+			transfer_character = c:LUS
+			set_character_as_ruler = yes
+			set_as_interest_group_leader = yes
+			set_character_immortal = no
+		}
+		scope:scope_de_marquez = {
+			transfer_character = c:UCA
+			set_character_as_ruler = yes
+			set_character_immortal = no
+		}
 	}
 	trigger = {
 	}
@@ -3600,60 +3776,47 @@ dvg_gran_colombia.52 = {
 		name = dvg_gran_colombia.52.a
 		default_option = yes
 		
-		c:GCO = { change_tag = MEX }
+		change_tag = MEX
+		trigger_event = { id = dvg_gran_colombia.53 days = 7 }
+		set_variable = dvg_santander_mexico
 		
 		hidden_effect = {
 			c:LUS = {
 				trigger_event = { id = dvg_lusitania.1 }
-				ruler = { kill_character = yes }
-				create_character = {
-					ruler = yes
-					is_general = yes
-					historical = yes
-					first_name = Deodoro
-					last_name = Peixoto
-					culture = cu:lusitanian
-					dna = dna_joaquim_marques_lisboa
-					ig_leader = yes
-					birth_date = 1779.10.21
-					ideology = ideology_republican_leader
-					interest_group = ig_rural_folk
+			}
+			if = {
+				limit = { year < 1868 }
+				c:UCA = {
+					trigger_event = { id = dvg_salvador.1 }
 				}
 			}
-			c:UCA = {
-				
-				create_character = {
-					ruler = yes
-					is_general = yes
-					historical = yes
-					first_name = Jose
-					last_name = de_Puente-Marquez
-					noble = yes
-					culture = cu:central_american
-					ig_leader = yes
-					birth_date = 1787.9.19
-					interest_group = ig_landowners
-					ideology = ideology_royalist
-					traits = {
-						grifter
-						immortal
-					}
+			else = {
+				limit = { year >= 1868 }
+				c:UCA = {
+					trigger_event = { id = dvg_salvador.2 }
 				}
 			}
-			c:GCO = {
-				ruler = { remove_trait = immortal }
-				scope:rural_folk_leader = {
-					kill_character = yes
-					remove_trait = immortal
-				}
-				scope:landowners_leader = {
-					kill_character = yes
-					remove_trait = immortal
-				}
-				scope:petty_bourgeoisie_leader = { remove_trait = immortal }
+			ruler = { set_character_immortal = no }
+			remove_primary_culture = cu:lusitanian
+			remove_primary_culture = cu:central_american
+			scope:scope_castro = { set_character_immortal = no }
+			if = {
+				limit = { NOT = { has_law = law_type:law_no_colonial_affairs } }
+				activate_law = law_type:law_no_colonial_affairs
+			}
+			s:STATE_TERRAS_VERMELHAS = {
+				remove_claim = c:GCO
+				add_claim = c:LUS
+			}
+			s:STATE_APACHERIA = {
+				remove_claim = c:GCO
+				add_claim = c:LUS
+			}
+			s:STATE_COMANCHERIE = {
+				remove_claim = c:GCO
+				add_claim = c:LUS
 			}
 		}
-		
 		ai_chance = {
 			base = 1
 		}
@@ -3719,19 +3882,19 @@ dvg_gran_colombia.54 = {
 				origin = this
 				state = s:STATE_BAJIO.region_state:MEX
 				state = s:STATE_ZACATECAS.region_state:MEX
-			}
-			on_created = {
-				add_modifier = {
-					name = dvg_revolutionary_militias
-					days = 720
-					is_decaying = yes
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:nahua
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
-				add_loyalists = {
-					value = 0.35
-					culture = cu:nahua
-				}
-				warlord_setup_effect = yes
-				set_variable = warlord_state
 			}
 		}
 		if = {
@@ -3740,19 +3903,19 @@ dvg_gran_colombia.54 = {
 				tag = MCO
 				origin = this
 				state = s:STATE_GUERRERO.region_state:MEX
-			}
-			on_created = {
-				add_modifier = {
-					name = dvg_revolutionary_militias
-					days = 720
-					is_decaying = yes
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:zapotec
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
-				add_loyalists = {
-					value = 0.35
-					culture = cu:zapotec
-				}
-				warlord_setup_effect = yes
-				set_variable = warlord_state
 			}
 		}
 		if = {
@@ -3761,20 +3924,21 @@ dvg_gran_colombia.54 = {
 				tag = OAX
 				origin = this
 				state = s:STATE_OAXACA.region_state:MEX
-			}
-			on_created = {
-				add_modifier = {
-					name = dvg_revolutionary_militias
-					days = 720
-					is_decaying = yes
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:zapotec
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
-				add_loyalists = {
-					value = 0.35
-					culture = cu:zapotec
-				}
-				warlord_setup_effect = yes
-				set_variable = warlord_state
 			}
+			
 		}
 	}
 	trigger = {
@@ -3819,19 +3983,19 @@ dvg_gran_colombia.55 = {
 				state = s:STATE_JALISCO.region_state:MEX
 				state = s:STATE_SINALOA.region_state:MEX
 				state = s:STATE_DURANGO.region_state:MEX
-			}
-			on_created = {
-				add_modifier = {
-					name = dvg_revolutionary_militias
-					days = 720
-					is_decaying = yes
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:mexican
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
 				}
-				add_loyalists = {
-					value = 0.35
-					culture = cu:mexican
-				}
-				warlord_setup_effect = yes
-				set_variable = warlord_state
 			}
 		}
 	}
@@ -3843,18 +4007,21 @@ dvg_gran_colombia.55 = {
 		name = dvg_gran_colombia.55.a
 		default_option = yes
 		
-		create_diplomatic_play = {
-			name = salvation_war
-			target = c:JLS
-			war = yes
-			type = dp_annex_war
-			
-			add_war_goal = {
-				holder = c:JLS
-				type = annex_war
-				target_country = c:MEX
+		c:MEX = {
+			create_diplomatic_play = {
+				name = salvation_war
+				target_country = c:JLS
+				war = yes
+				type = dp_annex_war
+				
+				add_war_goal = {
+					holder = c:JLS
+					type = annex_country
+					target_country = c:MEX
+				}
 			}
 		}
+		
 		trigger_event = { id = dvg_gran_colombia.56 days = 7 }
 		add_journal_entry = {
 			type = je_mex_salvation_war
@@ -3867,26 +4034,28 @@ dvg_gran_colombia.55 = {
 		name = dvg_gran_colombia.55.b
 		
 		c:MEX = {
-			change_tag = JLS
+			play_as = c:JLS
 			trigger_event = { id = dvg_gran_colombia.56 days = 7 }
 		}
-		create_diplomatic_play = {
-			name = salvation_war
-			target = c:JLS
-			war = yes
-			type = dp_annex_war
-			
-			add_war_goal = {
-				holder = c:JLS
-				type = annex_war
-				target_country = c:MEX
+		c:MEX = {
+			create_diplomatic_play = {
+				name = salvation_war
+				target_country = c:JLS
+				war = yes
+				type = dp_annex_war
+				
+				add_war_goal = {
+					holder = c:JLS
+					type = annex_country
+					target_country = c:MEX
+				}
 			}
 		}
 		c:JLS = {
 			add_journal_entry = {
 				type = je_jls_salvation_war
 			}
-			activate_law = law_type:law_wealth_voting
+			activate_law = law_type:law_census_voting
 			activate_law = law_type:national_militia
 		}
 		ai_chance = {
@@ -3952,24 +4121,30 @@ dvg_gran_colombia.57 = {
 		name = dvg_gran_colombia.57.a
 		default_option = yes
 		
-		create_diplomatic_play = {
-			name = pacification_of_mexico
-			target = c:NAH
-			war = yes
-			add_target_backers = { c:MCO c:OAX }
-			type = dp_annex_war
-			
-			add_war_goal = {
-				holder = c:MEX
-				type = annex_war
-				target_country = c:MCO
+		c:MEX = {
+			create_diplomatic_play = {
+				name = pacification_of_mexico
+				target_country = c:NAH
+				war = yes
+				add_target_backers = { c:MCO c:OAX }
+				type = dp_annex_war
 			}
-			add_war_goal = {
-				holder = c:MEX
-				type = annex_war
+			create_diplomatic_play = {
+				name = pacification_of_mexico
+				target_country = c:MCO
+				war = yes
+				add_target_backers = { c:NAH c:OAX }
+				type = dp_annex_war
+			}
+			create_diplomatic_play = {
+				name = pacification_of_mexico
 				target_country = c:OAX
+				war = yes
+				add_target_backers = { c:NAH c:MCO }
+				type = dp_annex_war
 			}
 		}
+		
 		ai_chance = {
 			base = 1
 		}
@@ -4038,6 +4213,35 @@ dvg_gran_colombia.59 = {
 		name = dvg_gran_colombia.59.a
 		default_option = yes
 		
+		if = {
+			limit = { 
+				c:JLS = { is_player = yes }
+			}
+			play_as = c:MEX
+			c:MEX = {
+				annex_with_incorporation = c:JLS
+			}
+		}
+		else = {
+			c:MEX = {
+				annex_with_incorporation = c:JLS
+			}
+		}
+		create_character = {
+			is_general = yes
+			historical = yes
+			first_name = Manuel
+			last_name = Diaz
+			noble = yes
+			culture = cu:mexican
+			ig_leader = yes
+			birth_date = 1820.9.19
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			on_created = {
+				set_character_as_ruler = yes
+			}
+		}
 		trigger_event = { id = dvg_gran_colombia.62 days = 7 }
 		
 		ai_chance = {
@@ -4073,15 +4277,9 @@ dvg_gran_colombia.60 = {
 		
 		create_diplomatic_play = {
 			name = pacification_of_lusitania
-			target = c:LUS
+			target_country = c:LUS
 			war = no
 			type = dp_annex_war
-			
-			add_war_goal = {
-				holder = c:LUS
-				type = war_reparation
-				target_country = c:MEX
-			}
 		}
 		add_journal_entry = {
 			type = je_retake_lusitania
@@ -4118,18 +4316,25 @@ dvg_gran_colombia.61 = {
 		name = dvg_gran_colombia.61.a
 		default_option = yes
 		
-		every_scope_state = {
-			limit = {
+		if = {
+			every_scope_state = {
+				limit = {
+					state_region = {
+						is_homeland = cu:lusitanian
+					}
+				}
 				state_region = {
-					is_homeland = cu:lusitanian
+					add_homeland = cu:mexican
+					remove_homeland = cu:lusitanian
+				}
+				add_modifier = {
+					name = dvg_mexicanization_lusitania
+					years = 20
 				}
 			}
-			add_homeland = cu:mexican
-			remove_homeland = cu:lusitanian
-			add_modifier = {
-				name = dvg_mexicanization_lusitania
-				years = 20
-			}
+		}
+		add_journal_entry = {
+			type = je_retake_central_america
 		}
 		ai_chance = {
 			base = 1
@@ -4189,15 +4394,18 @@ dvg_gran_colombia.63 = {
 	duration = 3
 
 	trigger = {
+		exists = c:MEX
+		this = c:MEX
 		year = 1875
-		tag = MEX
-		NOT = { exists = LUS }
+		month >= 6
 		has_variable = santander_junta
 	}
 	
 	option = {
 		name = dvg_gran_colombia.63.a
 		default_option = yes
+		
+		remove_variable = santander_junta
 		
 		ai_chance = {
 			base = 1
@@ -4224,15 +4432,18 @@ dvg_gran_colombia.64 = {
 	duration = 3
 
 	trigger = {
+		exists = c:GCO
+		this = c:GCO
 		year = 1875
-		tag = GCO
-		NOT = { exists = LUS }
+		month >= 6
 		has_variable = santander_junta
 	}
 	
 	option = {
 		name = dvg_gran_colombia.64.a
 		default_option = yes
+		
+		remove_variable = santander_junta
 		
 		ai_chance = {
 			base = 1
@@ -4259,11 +4470,22 @@ dvg_gran_colombia.65 = {
 	duration = 3
 
 	trigger = {
+		exists = c:MEX
+		this = c:MEX
+		exists = c:LUS
+		year = 1875
+		month >= 6
+		has_variable = santander_junta
 	}
 	
 	option = {
 		name = dvg_gran_colombia.65.a
 		default_option = yes
+		
+		activate_law = law_type:law_census_voting
+		activate_law = law_type:law_right_of_assembly
+		
+		remove_variable = santander_junta
 		
 		trigger_event = { id = dvg_gran_colombia.67 days = 7 }
 		
@@ -4329,6 +4551,510 @@ dvg_gran_colombia.67 = {
 		name = dvg_gran_colombia.67.a
 		default_option = yes
 		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.68 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.68.t
+	desc = dvg_gran_colombia.68.d
+	flavor = dvg_gran_colombia.68.f
+	
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+	
+	option = {
+		name = dvg_gran_colombia.68.a
+		default_option = yes
+		
+		every_scope_state = {
+			limit = { 
+				owner = ROOT
+				is_incorporated = yes 
+			}
+			add_modifier = {
+				name = dvg_prefect_government
+				days = 365
+			}
+		}
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.69 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.69.t
+	desc = dvg_gran_colombia.69.d
+	flavor = dvg_gran_colombia.69.f
+	
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+	
+	option = {
+		name = dvg_gran_colombia.69.a
+		default_option = yes
+		
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_no_police
+					has_law = law_type:law_local_police
+				}
+			}
+			activate_law = law_type:law_dedicated_police
+		}
+		else = {
+			limit = { has_law = law_type:law_dedicated_police }
+			activate_law = law_type:law_militarized_police
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.70 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.70.t
+	desc = dvg_gran_colombia.70.d
+	flavor = dvg_gran_colombia.70.f
+	
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	immediate = {
+		remove_global_variable = la_reforma 
+		if = {
+			limit = { exists = s:STATE_GUERRERO.region_state:GCO }
+			create_country = {
+				tag = MCO
+				origin = this
+				state = s:STATE_GUERRERO.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:zapotec
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_OAXACA.region_state:GCO }
+			create_country = {
+				tag = OAX
+				origin = this
+				state = s:STATE_OAXACA.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:zapotec
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_YUCATAN.region_state:GCO }
+			create_country = {
+				tag = MAY
+				origin = this
+				state = s:STATE_YUCATAN.region_state:GCO
+				state = s:STATE_CHIAPAS.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:mayan
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+	}
+	trigger = {
+		exists = c:GCO
+		this = c:GCO
+		exists = global_var:la_reforma
+	}
+	
+	option = {
+		name = dvg_gran_colombia.70.a
+		default_option = yes
+		
+		c:GCO = {
+			create_diplomatic_play = {
+				name = great_indian_war
+				target_country = c:OAX
+				add_target_backers = { c:MCO c:OAX }
+				war = no
+				type = dp_annex_war
+				
+				add_war_goal = {
+					holder = c:GCO
+					type = annex_country
+					target_country = c:MCO
+				}
+				add_war_goal = {
+					holder = c:GCO
+					type = annex_country
+					target_country = c:MAY
+				}
+			}
+		}
+		
+		set_variable = reforma_war
+		
+		trigger_event = { id = dvg_gran_colombia.71 days = 7 }
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.71 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.71.t
+	desc = dvg_gran_colombia.71.d
+	flavor = dvg_gran_colombia.71.f
+	
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	immediate = {
+		every_scope_character = {
+			limit = { has_variable = is_de_marquez }
+			save_scope_as = scope_de_marquez
+		}
+		if = {
+			limit = { exists = s:STATE_SAN_SALVADOR.region_state:GCO }
+			create_country = {
+				tag = UCA
+				origin = this
+				state = s:STATE_SAN_SALVADOR.region_state:GCO
+				state = s:STATE_MANAGUA.region_state:GCO
+				state = s:STATE_COSTA_RICA.region_state:GCO
+				state = s:STATE_PANAMA.region_state:GCO
+				on_created = {
+					add_modifier = {
+						name = dvg_revolutionary_militias
+						days = 720
+						is_decaying = yes
+					}
+					add_loyalists = {
+						value = 0.35
+						culture = cu:central_american
+					}
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		scope:scope_de_marquez = {
+			transfer_character = c:UCA
+			set_character_as_ruler = yes
+			set_character_immortal = no
+		}
+	}
+	trigger = {
+	}
+	
+	option = {
+		name = dvg_gran_colombia.71.a
+		default_option = yes
+		
+		c:GCO = {
+			create_diplomatic_play = {
+				name = de_marquez_rebellion
+				target_country = c:UCA
+				war = no
+				type = dp_annex_war
+			}
+		}
+		c:UCA = {
+			create_diplomatic_pact = {
+				country = c:MAY
+				type = alliance
+			}
+		}
+		add_journal_entry = {
+			type = je_southern_insurrection
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.72 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.72.t
+	desc = dvg_gran_colombia.72.d
+	flavor = dvg_gran_colombia.72.f
+	
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+	
+	option = {
+		name = dvg_gran_colombia.72.a
+		default_option = yes
+		
+		trigger_event = { id = dvg_gran_colombia.73 days = 1 }
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.73 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.73.t
+	desc = dvg_gran_colombia.73.d
+	flavor = dvg_gran_colombia.73.f
+	
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+	
+	option = {
+		name = dvg_gran_colombia.73.a
+		default_option = yes
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.74 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.74.t
+	desc = dvg_gran_colombia.74.d
+	flavor = dvg_gran_colombia.74.f
+	
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/public_figure_assassination"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:GCO
+		this = c:GCO
+		year = 1875
+		month >= 6
+		has_law = law_type:law_monarchy
+		has_variable = emperor_ernesto_ii
+	}
+	
+	option = {
+		name = dvg_gran_colombia.74.a
+		default_option = yes
+		
+		ruler = {
+			kill_character = yes
+		}
+		if = {
+			limit = { has_variable = caribenos_integrated }
+			create_character = {
+				heir = yes
+				historical = yes
+				female = yes
+				first_name = Catarina
+				last_name = Castro
+				culture = cu:colombian
+				birth_date = 1875.05.12
+				ideology = ideology_liberal_leader
+				interest_group = ig_petty_bourgeoisie
+			}
+		}
+		else = {
+			create_character = {
+				heir = yes
+				historical = yes
+				female = yes
+				first_name = Catarina
+				last_name = Castro
+				culture = cu:caribeno
+				birth_date = 1875.05.12
+				ideology = ideology_liberal_leader
+				interest_group = ig_petty_bourgeoisie
+			}
+		}
+		
+		remove_variable = emperor_ernesto_ii
+		set_variable = emperor_cristobal_i
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.75 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.75.t
+	desc = dvg_gran_colombia.75.d
+	flavor = dvg_gran_colombia.75.f
+	
+	event_image = {
+		video = "unspecific_sick_in_hospital"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/sick_in_hospital"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	trigger = {
+		exists = c:GCO
+		this = c:GCO
+		year = 1915
+		month >= 6
+		has_law = law_type:law_monarchy
+		has_variable = emperor_cristobal_i
+	}
+	
+	option = {
+		name = dvg_gran_colombia.75.a
+		default_option = yes
+		
+		ruler = {
+			kill_character = yes
+		}
+		remove_variable = emperor_cristobal_i
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+dvg_gran_colombia.76 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_gran_colombia.76.t
+	desc = dvg_gran_colombia.76.d
+	flavor = dvg_gran_colombia.76.f
+	
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+	
+	option = {
+		name = dvg_gran_colombia.76.a
+		default_option = yes
+		
+		set_global_variable = {
+			name = stabilized_peso
+			value = 0
+		}
 		ai_chance = {
 			base = 1
 		}
