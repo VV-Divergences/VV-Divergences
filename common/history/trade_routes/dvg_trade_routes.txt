@@ -40,7 +40,7 @@
 		}
 		create_trade_route = {
 			goods = iron
-			level = 20
+			level = 7
 			direction = import
 			target = c:NOV.market
 		}
