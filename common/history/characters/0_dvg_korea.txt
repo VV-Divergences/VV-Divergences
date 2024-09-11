@@ -16,7 +16,7 @@
 
 				basic_political_operator
 
-				trench_rat
+				rat
 
 				cancer
 

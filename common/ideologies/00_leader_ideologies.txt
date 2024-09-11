@@ -1850,7 +1850,7 @@ ideology_fascist = {
 	}
 	
 	possible = {
-		owner = { has_technology_researched = mass_propaganda }
+		owner = { has_technology_researched = socialism }
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
 			has_role = agitator
@@ -2162,7 +2162,7 @@ ideology_ethno_nationalist = {
 
 	possible = {
 		owner = {
-			has_technology_researched = political_agitation
+			has_technology_researched = corporatism
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {

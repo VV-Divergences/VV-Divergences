@@ -273,6 +273,9 @@ dvg_incorporate_vinlander = {
 		NOT = {
 			country_has_primary_culture = cu:vinlander
 		}
+		NOT = {
+			was_formed_from = VIN
+		}
 	}
 
 	possible = {
@@ -315,6 +318,31 @@ dvg_incorporate_athesian = {
 	
 		add_primary_culture = cu:athesian
 		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+dvg_vinlander_arcadia = {
+	is_shown = {
+		exists = c:ARC
+		root = c:ARC
+		was_formed_from = VIN
+
+		NOT = {
+			country_has_primary_culture = cu:vinlander
+		}
+	}
+
+	possible = {
+		exists = c:ARC
+		root = c:ARC
+	}
+	
+    when_taken = {
+		add_primary_culture = cu:vinlander
     }
 
 	ai_chance = {

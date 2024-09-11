@@ -1,0 +1,151 @@
+﻿dvg_german_game_burgundy_button = {
+	name = dvg_german_game_burgundy_button_title
+	desc = dvg_german_game_burgundy_button_desc
+
+	visible = { 
+		c:BRG ?= THIS
+	 }
+
+	possible = {
+		c:BRG ?= THIS
+		custom_tooltip = {
+			text = dvg_ggg_max_influence_brg
+			scope:journal_entry = {
+				"scripted_bar_progress(dvg_german_game_burgundy_bar)" >= 1000
+			}
+		}
+		any_neighbouring_state = {	#must have valid target
+			owner = {
+				relations:ROOT >= relations_threshold:amicable
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:rheinish
+				}
+				is_in_same_power_bloc = ROOT
+				NOT = { country_rank >= rank_value:major_power }
+				is_player = no
+			}
+		}
+	}
+
+	effect = {
+		trigger_event = { id = dvg_ggg.1 }
+		je:je_dvg_great_german_game = {
+			add_progress = { value = -1000 name = dvg_german_game_burgundy_bar }
+		}
+	}
+
+	ai_chance = {
+		base = 1
+	}
+}
+
+dvg_german_game_bohemia_button = {
+	name = dvg_german_game_bohemia_button_title
+	desc = dvg_german_game_bohemia_button_desc
+
+	visible = { 
+		c:BOH ?= THIS
+	 }
+
+	possible = {
+		c:BOH ?= THIS
+		custom_tooltip = {
+			text = dvg_ggg_max_influence_boh
+			scope:journal_entry = {
+				"scripted_bar_progress(dvg_german_game_bohemia_bar)" >= 1000
+			}
+		}
+		any_neighbouring_state = {	#must have valid target
+				owner = {
+					relations:ROOT >= relations_threshold:amicable
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:rheinish
+					}
+					is_in_same_power_bloc = ROOT
+					NOT = { country_rank >= rank_value:major_power }
+					is_player = no
+				}
+			}
+	}
+
+	effect = {
+		trigger_event = { id = dvg_ggg.1 }
+		je:je_dvg_great_german_game = {
+			add_progress = { value = -1000 name = dvg_german_game_bohemia_bar }
+		}
+	}
+
+	ai_chance = {
+		base = 1
+	}
+}
+
+dvg_german_game_scandinavia_button = {
+	name = dvg_german_game_scandinavia_button_title
+	desc = dvg_german_game_scandinavia_button_desc
+
+	visible = { 
+		c:SCA ?= THIS
+	 }
+
+	possible = {
+		c:SCA ?= THIS
+		custom_tooltip = {
+			text = dvg_ggg_max_influence_sca
+			scope:journal_entry = {
+				"scripted_bar_progress(dvg_german_game_scandinavia_bar)" >= 1000
+			}
+		}
+		any_neighbouring_state = {	#must have valid target
+				owner = {
+					relations:ROOT >= relations_threshold:amicable
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:rheinish
+					}
+					is_in_same_power_bloc = ROOT
+					NOT = { country_rank >= rank_value:major_power }
+					is_player = no
+				}
+			}
+	}
+
+	effect = {
+		trigger_event = { id = dvg_ggg.1 }
+		je:je_dvg_great_german_game = {
+			add_progress = { value = -1000 name = dvg_german_game_scandinavia_bar }
+		}
+	}
+
+	ai_chance = {
+		base = 1
+	}
+}
+
+dvg_german_game_give_up_button = {
+	name = dvg_german_game_give_up_button_title
+	desc = dvg_german_game_give_up_button_desc
+
+	visible = { 
+		always = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = dvg_ggg_give_up_tt_youwillfail
+			set_variable = {
+				name = dvg_gave_up_german_claims
+			}
+		}
+	}
+}
+

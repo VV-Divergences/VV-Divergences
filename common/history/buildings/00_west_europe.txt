@@ -4436,7 +4436,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=5
+						levels=6
 						region="STATE_LORRAINE"
 					}
 				}
@@ -4583,7 +4583,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=2
+						levels=3
 						region="STATE_BURGUNDY"
 					}
 				}
@@ -4661,12 +4661,25 @@ BUILDINGS={
 					building={
 						type="building_manor_house"
 						country="c:BRG"
-						levels=10
+						levels=11
 						region="STATE_FRANCHE_COMTE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:BRG"
+						levels=1
+						region="STATE_FRANCHE_HOLLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_slaughterhouses" }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -4675,7 +4688,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:BRG"
 						levels=3
-						region="STATE_FRANCHE_COMTE"
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -5119,7 +5132,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=4
+						levels=6
 						region="STATE_FLANDERS"
 					}
 				}
@@ -7158,36 +7171,34 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
-	}
-	s:STATE_TYROL = {
-		region_state:TRT = {
+		region_state:FIO = {
 			create_building={
-				building="building_wheat_farm"
+				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:TRT"
-						levels=1
-						region="STATE_TYROL"
+						country="c:FIO"
+						levels=2
+						region="STATE_WEST_SWITZERLAND"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled"  }
 			}
 			create_building={
-				building="building_livestock_ranch"
+				building="building_barracks"
 				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:TRT"
-						levels=1
-						region="STATE_TYROL"
+					country={
+						country="c:FIO"
+						levels=2
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated"  }
+				activate_production_methods={ "pm_general_training" }
 			}
 		}
+	}
+	s:STATE_TYROL = {
 		region_state:TYR = {
 			create_building={
 				building="building_iron_mine"
@@ -8078,7 +8089,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -8197,7 +8208,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"

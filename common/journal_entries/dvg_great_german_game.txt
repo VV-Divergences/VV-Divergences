@@ -1,0 +1,134 @@
+﻿je_dvg_great_german_game = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_historical_content
+
+	immediate = {
+		dvg_set_great_german_game_variables = yes
+	}
+
+	scripted_progress_bar = dvg_german_game_burgundy_bar
+	scripted_progress_bar = dvg_german_game_bohemia_bar
+	scripted_progress_bar = dvg_german_game_scandinavia_bar
+
+	complete = {
+		NOT = {
+			any_nation = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:rheinish
+				}
+				country_rank < rank_value:major_power
+				is_subject = yes
+			}
+		}
+	}
+
+	on_complete = {
+
+	}
+
+	scripted_button = dvg_german_game_burgundy_button
+	scripted_button = dvg_german_game_bohemia_button
+	scripted_button = dvg_german_game_scandinavia_button
+	scripted_button = dvg_german_game_give_up_button
+
+	modifiers_while_active = {
+		dvg_great_german_game_modifier
+	}
+
+	on_weekly_pulse = {
+		events = {
+		}
+		effect = {
+			if = {
+				limit = { 
+					c:BRG ?= THIS
+				}
+				dvg_weekly_pulse_BRG_progress = yes
+			}
+			if = {
+				limit = { 
+					c:BOH ?= THIS
+				}
+				dvg_weekly_pulse_BOH_progress = yes
+			}
+			if = {
+				limit = { 
+					c:SCA ?= THIS
+				}
+				dvg_weekly_pulse_SCA_progress = yes
+			}
+		}
+
+	}
+	on_monthly_pulse = {
+		# random_events = {	someone leaves?
+		# 	500 = 0
+		# 	10 = dvg_ggg.2
+		# }
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = dvg_gave_up_german_claims_tt
+			has_variable = dvg_gave_up_german_claims
+		}
+	}
+	on_fail = {
+		add_modifier = {
+			name = dvg_ggg_gave_up_german_claims
+			years = 5
+		}
+		if = {
+			limit = {
+				c:BRG ?= THIS
+				game_date < 1851.1.1
+			}
+			add_modifier = {
+				name = dvg_left_great_german_game_modifier_brg
+				years = 5
+			}
+		}
+		if = {
+			limit = {
+				c:BOH ?= THIS
+				game_date < 1851.1.1
+			}
+			add_modifier = {
+				name = dvg_left_great_german_game_modifier_boh
+				years = 5
+			}
+		}
+		if = {
+			limit = {
+				c:SCA ?= THIS
+				game_date < 1851.1.1
+			}
+			add_modifier = {
+				name = dvg_left_great_german_game_modifier_sca
+				years = 5
+			}
+			s:STATE_LANCASHIRE = {
+				add_claim = ROOT
+			}
+			s:STATE_YORKSHIRE = {
+				add_claim = ROOT
+			}
+			s:STATE_ULSTER = {
+				add_claim = ROOT
+			}
+			trigger_event = { id = dvg_ggg.2 }
+		}
+	}
+
+	invalid = {
+		
+	}
+	on_invalid = {
+		
+	}
+
+	should_be_pinned_by_default = yes
+}

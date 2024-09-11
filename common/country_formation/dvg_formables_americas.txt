@@ -115,7 +115,7 @@ LOT = { #Lotharingia
 BLC = { #Belgium
 	use_culture_states = yes
 
-	required_states_fraction = 0.85
+	required_states_fraction = 0.25
 
 	possible = {
 		any_country = {

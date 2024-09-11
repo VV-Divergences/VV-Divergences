@@ -55,7 +55,7 @@
 				celebrity_commander
 				wrathful
 				ambitious 
-				trench_rat
+				rat
 			}
 			
 		}

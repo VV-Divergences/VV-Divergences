@@ -15,6 +15,10 @@ principle_construction_1 = {
 		state_construction_mult = 0.1
 	}
 	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
+
 	ai_weight = {
 		value = 100
 		
@@ -48,7 +52,9 @@ principle_construction_2 = {
 		# Members Construction Sectors cost less infrastructure
 		building_group_bg_construction_infrastructure_usage_mult = -0.75
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}	
@@ -66,7 +72,9 @@ principle_construction_3 = {
 		
 		# Members can form Construction type Companies unlock triggers in the company
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}	
@@ -84,7 +92,9 @@ principle_internal_trade_1 = {
 		# More convoy going to the market owner, effect scaling upwards with principle levels
 		country_convoy_contribution_to_market_owner_add = 0.2
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 200 # Good for trade leagues to have
 			
@@ -121,7 +131,9 @@ principle_internal_trade_2 = {
 		tariff_export_outside_power_bloc_mult = 0.2
 		state_infrastructure_mult = 0.1
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}	
@@ -142,7 +154,9 @@ principle_internal_trade_3 = {
 		# Cheaper port connections
 		country_port_connection_cost_mult = -0.25
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -162,10 +176,10 @@ principle_market_unification_1 = {
 		# Members get a bonus to company throughput
 		
 	}
-
 	power_bloc_modifier = {
 		# Members cannot enable Embargos with each other
 		power_bloc_customs_union_bool = yes
+		power_bloc_mandate_progress_mult = -0.05
 	}
 	
 	ai_weight = {
@@ -194,6 +208,7 @@ principle_market_unification_2 = {
 	power_bloc_modifier = {
 		# Members cannot enable Embargos with each other
 		power_bloc_customs_union_bool = yes
+		power_bloc_mandate_progress_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -213,10 +228,11 @@ principle_market_unification_3 = {
 		state_infrastructure_mult = 0.1
 		country_convoy_contribution_to_market_owner_add = 0.4
 	}
-
+	
 	power_bloc_modifier = {
 		# Members are permanently part of the same Customs Union
 		power_bloc_customs_union_bool = yes
+		power_bloc_mandate_progress_mult = -0.15
 	}
 	
 	ai_weight = {
@@ -240,7 +256,9 @@ principle_vassalization_1 = {
 		# Each subject increases authority
 		country_authority_per_subject_add = 25
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 100
 		
@@ -270,7 +288,9 @@ principle_vassalization_2 = {
 		# Subjects pay more to overlord
 		country_subject_income_transfer_mult = 0.25
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -288,7 +308,9 @@ principle_vassalization_3 = {
 		# Can use decrees on subjects
 		country_allow_enacting_decrees_in_subject_bool = yes
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -309,7 +331,9 @@ principle_advanced_research_1 = {
 		country_institution_cost_institution_schools_mult = -0.1
 		country_disallow_law_no_schools_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
 	}
@@ -346,7 +370,9 @@ principle_advanced_research_2 = {
 		country_institution_cost_institution_schools_mult = -0.25
 		country_disallow_law_no_schools_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
 	}
@@ -374,7 +400,9 @@ principle_advanced_research_3 = {
 		country_institution_cost_institution_schools_mult = -0.5
 		country_disallow_law_no_schools_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_education_system_in_power_bloc_bool = yes
 	}
@@ -396,6 +424,98 @@ principle_advanced_research_3 = {
 	}	
 }
 
+# ### DEFENSIVE COOPERATION
+
+# principle_defensive_cooperation_1 = {
+# 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+# 	visible = {
+# 		has_dlc_feature = power_bloc_features
+# 	}
+
+# 	power_bloc_modifier = {
+# 		# Members cannot start wars amongst each other
+# 		power_bloc_disallow_war_bool = yes
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.05
+# 	}
+# 	ai_weight = {
+# 		value = 100
+		
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_strategy = ai_strategy_socialism_in_one_country
+# 					has_strategy = ai_strategy_armed_isolationism
+# 				}	
+# 			}
+# 			multiply = 1.5
+# 		}
+		
+# 		if = {
+# 			limit = { 
+# 				power_bloc ?= { has_principle_group = principle_group:principle_group_aggressive_coordination }			
+# 			}
+# 			multiply = 0.5
+# 		}
+
+# 		if = {
+# 			limit = {
+# 				power_bloc ?= { NOT = { has_identity = identity:identity_military_treaty_organization } } 				
+# 			}
+# 			multiply = 0.5
+# 		}		
+# 	}
+# }
+
+# principle_defensive_cooperation_2 = {
+# 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+# 	power_bloc_modifier = {
+# 		# Modifiers from previous level(s)
+# 		power_bloc_disallow_war_bool = yes
+		
+# 		# Swaying members to join your side costs 50% less maneuvers if the inviting country is on the target's side
+# 		power_bloc_target_sway_cost_mult = -0.5
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.1
+# 	}
+# 	leader_modifier = {
+# 		# Allows leader to impose their own law onto member countries in the army_model law group
+# 		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
+# 	}
+	
+# 	ai_weight = {
+# 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+# 	}
+# }
+
+# principle_defensive_cooperation_3 = {
+# 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+# 	member_modifier = {
+# 		# Countries forced to join defensive plays against members
+# 		country_join_power_bloc_member_in_defensive_plays_bool = yes
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.15
+# 	}
+# 	power_bloc_modifier = {
+# 		# Modifiers from previous level(s)
+# 		power_bloc_disallow_war_bool = yes
+# 		power_bloc_target_sway_cost_mult = -0.5
+# 	}
+	
+# 	ai_weight = {
+# 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+# 	}
+# }
+
 ### DEFENSIVE COOPERATION
 
 principle_defensive_cooperation_1 = {
@@ -406,11 +526,17 @@ principle_defensive_cooperation_1 = {
 		has_dlc_feature = power_bloc_features
 	}
 
-	power_bloc_modifier = {
-		# Members cannot start wars amongst each other
-		power_bloc_disallow_war_bool = yes
+	member_modifier = {
+		# more convoys
+		country_convoys_capacity_mult = 0.2
+		country_convoys_capacity_add = 100
+		# navy experience
+		unit_navy_experience_gain_mult = 0.2
 	}
-	
+
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 100
 		
@@ -444,19 +570,21 @@ principle_defensive_cooperation_2 = {
 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
-	power_bloc_modifier = {
-		# Modifiers from previous level(s)
-		power_bloc_disallow_war_bool = yes
-		
-		# Swaying members to join your side costs 50% less maneuvers if the inviting country is on the target's side
-		power_bloc_target_sway_cost_mult = -0.5
+	member_modifier = {
+		# more convoys
+		country_convoys_capacity_mult = 0.2
+		country_convoys_capacity_add = 100
+		# building training rate
+		building_training_rate_mult = 0.05
+		# navy experience
+		unit_navy_experience_gain_mult = 0.2
 	}
-	
 	leader_modifier = {
-		# Allows leader to impose their own law onto member countries in the army_model law group
 		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -467,14 +595,22 @@ principle_defensive_cooperation_3 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
 	member_modifier = {
-		# Countries forced to join defensive plays against members
-		country_join_power_bloc_member_in_defensive_plays_bool = yes
+		# more convoys
+		country_convoys_capacity_mult = 0.2
+		country_convoys_capacity_add = 100
+		# building training rate
+		building_training_rate_mult = 0.08
+		# naval fighting!
+		unit_navy_defense_mult = 0.05
+		unit_navy_offense_mult = 0.05
+		# navy experience
+		unit_navy_experience_gain_mult = 0.2
 	}
-
+	leader_modifier = {
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
+	}
 	power_bloc_modifier = {
-		# Modifiers from previous level(s)
-		power_bloc_disallow_war_bool = yes
-		power_bloc_target_sway_cost_mult = -0.5
+		power_bloc_mandate_progress_mult = -0.15
 	}
 	
 	ai_weight = {
@@ -482,7 +618,98 @@ principle_defensive_cooperation_3 = {
 	}
 }
 
-### AGGRESSIVE COORDINATION
+# ### AGGRESSIVE COORDINATION
+
+# principle_aggressive_coordination_1 = {
+# 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	
+# 	visible = {
+# 		has_dlc_feature = power_bloc_features
+# 	}
+
+# 	member_modifier = {
+# 		# Reduces maneuver cost for picking wargoals during Diplomatic Play
+# 		country_initiator_war_goal_maneuver_cost_mult = -0.3
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.05
+# 	}
+# 	ai_weight = {
+# 		value = 100	
+		
+# 		if = {
+# 			limit = {
+# 				ig:ig_armed_forces ?= { is_in_government = yes }
+# 			}
+# 			add = 100
+# 		}
+		
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_strategy = ai_strategy_territorial_expansion
+# 					has_strategy = ai_strategy_world_revolution
+# 				}	
+# 			}
+# 			multiply = 1.5
+# 		}		
+		
+# 		if = {
+# 			limit = { 
+# 				power_bloc ?= { has_principle_group = principle_group:principle_group_defensive_cooperation }				
+# 			}
+# 			multiply = 0.5
+# 		}		
+# 	}	
+# }
+
+# principle_aggressive_coordination_2 = {
+# 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+# 	member_modifier = {
+# 		# Modifiers from previous level(s)
+# 		country_initiator_war_goal_maneuver_cost_mult = -0.3
+		
+# 		# Reduces war exhaustion from casualties, propaganda!
+# 		country_war_exhaustion_casualties_mult = -0.15
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.1
+# 	}
+# 	ai_weight = {
+# 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+# 	}	
+# }
+
+# principle_aggressive_coordination_3 = {
+# 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+# 	power_bloc_modifier = {	
+# 		# Reduces cohesion
+# 		power_bloc_cohesion_add = -10
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.15
+# 	}
+# 	member_modifier = {
+# 		# Modifiers from previous level(s)
+# 		country_initiator_war_goal_maneuver_cost_mult = -0.3
+# 		country_war_exhaustion_casualties_mult = -0.15
+	
+# 		# Countries forced to join diplomatic plays of members, other countries are not happy about this threat
+# 		country_join_power_bloc_member_in_plays_bool = yes
+# 		country_infamy_generation_mult = 0.15
+# 	}
+	
+# 	ai_weight = {
+# 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+# 	}
+# }
+
+### ARMY DOCTRINE
 
 principle_aggressive_coordination_1 = {
 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
@@ -494,9 +721,12 @@ principle_aggressive_coordination_1 = {
 
 	member_modifier = {
 		# Reduces maneuver cost for picking wargoals during Diplomatic Play
-		country_initiator_war_goal_maneuver_cost_mult = -0.3
+		country_infamy_generation_mult = -0.1
+		unit_supply_consumption_mult = -0.04
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 100	
 		
@@ -531,13 +761,18 @@ principle_aggressive_coordination_2 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
 	member_modifier = {
-		# Modifiers from previous level(s)
-		country_initiator_war_goal_maneuver_cost_mult = -0.3
-		
-		# Reduces war exhaustion from casualties, propaganda!
+		# Reduces maneuver cost for picking wargoals during Diplomatic Play
+		country_infamy_generation_mult = -0.1
+		unit_supply_consumption_mult = -0.06
+		# new
 		country_war_exhaustion_casualties_mult = -0.15
 	}
-	
+	leader_modifier = {
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
+	}
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}	
@@ -547,19 +782,20 @@ principle_aggressive_coordination_3 = {
 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
-	power_bloc_modifier = {	
-		# Reduces cohesion
-		power_bloc_cohesion_add = -10
-	}
-	
 	member_modifier = {
-		# Modifiers from previous level(s)
-		country_initiator_war_goal_maneuver_cost_mult = -0.3
+		# Reduces maneuver cost for picking wargoals during Diplomatic Play
+		country_infamy_generation_mult = -0.1
 		country_war_exhaustion_casualties_mult = -0.15
-	
-		# Countries forced to join diplomatic plays of members, other countries are not happy about this threat
-		country_join_power_bloc_member_in_plays_bool = yes
-		country_infamy_generation_mult = 0.15
+		unit_supply_consumption_mult = -0.08
+		# new
+		unit_army_offense_mult = 0.05
+		unit_army_defense_mult = 0.1
+	}
+	leader_modifier = {
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
+	}
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
 	}
 	
 	ai_weight = {
@@ -576,8 +812,9 @@ principle_external_trade_1 = {
 	power_bloc_modifier = {
 		# Trade routes cost much less BUR inside the bloc
 		power_bloc_trade_route_cost_mult = -0.75
+		power_bloc_mandate_progress_mult = -0.05
 	}
-
+	
 	member_modifier = {
 		# Trade routes cost less BUR outside the bloc
 		country_trade_route_cost_mult = -0.25
@@ -623,7 +860,7 @@ principle_external_trade_2 = {
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)
 		power_bloc_trade_route_cost_mult = -0.75
-		
+		power_bloc_mandate_progress_mult = -0.1
 		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM
 	}
 
@@ -645,7 +882,7 @@ principle_external_trade_3 = {
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)
 		power_bloc_trade_route_cost_mult = -0.75
-	
+		power_bloc_mandate_progress_mult = -0.15
 		# Also unlocks a PM that grants Trade Centers Influence, checked with trigger on PM (from level 2)
 	}
 	
@@ -676,7 +913,9 @@ principle_food_standardization_1 = {
 	member_modifier = {
 		building_group_bg_agriculture_throughput_add = 0.1
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 100
 		
@@ -710,7 +949,9 @@ principle_food_standardization_2 = {
 		# Lower mortality
 		state_mortality_mult = -0.1
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -726,11 +967,13 @@ principle_food_standardization_3 = {
 		state_mortality_mult = -0.1
 		
 		# Higher SoL
-		state_standard_of_living_add = 1
+		state_standard_of_living_add = 0.5
 		
 		#Unlocks a PM for Food Industries
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -752,7 +995,9 @@ principle_police_coordination_1 = {
 		country_institution_cost_institution_police_mult = -0.1
 		country_disallow_law_no_police_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes
 	}
@@ -792,7 +1037,9 @@ principle_police_coordination_2 = {
 		country_institution_cost_institution_police_mult = -0.25
 		country_disallow_law_no_police_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes
 	}
@@ -800,7 +1047,7 @@ principle_police_coordination_2 = {
 	institution = institution_police
 	institution_modifier = {
 		# Police institution reduces radicalism of political movements
-		political_movement_radicalism_mult = -0.05
+		political_movement_radicalism_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -818,7 +1065,9 @@ principle_police_coordination_3 = {
 		country_institution_cost_institution_police_mult = -0.5
 		country_disallow_law_no_police_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_policing_in_power_bloc_bool = yes
 	}
@@ -829,7 +1078,7 @@ principle_police_coordination_3 = {
 		country_authority_add = 50
 		
 		# Police institution reduces radicalism of political movements
-		political_movement_radicalism_mult = -0.05
+		political_movement_radicalism_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -853,7 +1102,9 @@ principle_transport_1 = {
 		state_infrastructure_from_population_mult = 0.33
 		state_infrastructure_from_population_max_mult = 0.33 		
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 100
 		
@@ -886,8 +1137,12 @@ principle_transport_2 = {
 		
 		# Members have increased convoy capacity
 		country_convoys_capacity_mult = 0.2
+
+		country_trade_route_competitiveness_mult = 0.25
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -902,13 +1157,17 @@ principle_transport_3 = {
 		country_convoys_capacity_mult = 0.2
 		state_infrastructure_from_population_mult = 0.33
 		state_infrastructure_from_population_max_mult = 0.33 
+
+		country_trade_route_competitiveness_mult = 0.25
 		
 		# Increased land trade capacity
 		market_land_trade_capacity_add = 50
 		
 		# Unlocks a set of PMs for Railways
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -931,7 +1190,9 @@ principle_military_industry_1 = {
 		building_artillery_foundries_throughput_add = 0.1
 		building_military_shipyards_throughput_add = 0.1
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 100	
 		
@@ -979,7 +1240,9 @@ principle_military_industry_2 = {
 		# Members get reduced military goods cost
 		country_military_goods_cost_mult = -0.15
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1002,7 +1265,9 @@ principle_military_industry_3 = {
 		
 		# Members get an unique mobilization option mechanic
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1024,10 +1289,18 @@ principle_colonial_offices_1 = {
 		country_institution_cost_institution_colonial_affairs_mult = -0.1
 		country_disallow_law_no_colonial_affairs_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes
 	}
+
+	institution = institution_colonial_affairs
+	institution_modifier = {
+		# Members get higher colony growth for each level of institution
+		state_colony_growth_creation_mult = 0.05
+	}	
 	
 	ai_weight = {
 		value = 200 # High base weight if the leader has colonies
@@ -1056,17 +1329,20 @@ principle_colonial_offices_2 = {
 		country_institution_cost_institution_colonial_affairs_mult = -0.25
 		country_disallow_law_no_colonial_affairs_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes
 	}
 	
 	institution = institution_colonial_affairs
 	institution_modifier = {
-		# Members get higher colony growth for each level of institution
+		# Modifiers from previous level(s)	
 		state_colony_growth_creation_mult = 0.05
+		country_infamy_generation_against_unrecognized_mult = -0.05
 	}	
-	
+
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1081,8 +1357,11 @@ principle_colonial_offices_3 = {
 		country_institution_size_change_speed_institution_colonial_affairs_mult = 0.5
 		country_institution_cost_institution_colonial_affairs_mult = -0.5
 		country_disallow_law_no_colonial_affairs_bool = yes
+		state_colony_growth_speed_mult = 0.1
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	leader_modifier = {
 		country_can_impose_same_lawgroup_colonization_in_power_bloc_bool = yes
 	}
@@ -1112,8 +1391,11 @@ principle_foreign_investment_1 = {
 	member_modifier = {
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
+		country_government_dividends_efficiency_add = 0.2
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 100
 		
@@ -1141,11 +1423,14 @@ principle_foreign_investment_2 = {
 	member_modifier = {
 		# Members get reduced nationalization cost for assets of non-members
 		country_nationalization_cost_non_members_mult = -0.5
+		country_government_dividends_efficiency_add = 0.3
 
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1162,6 +1447,7 @@ principle_foreign_investment_3 = {
 	member_modifier = {
 		# Modifiers from previous level(s)	
 		country_nationalization_cost_non_members_mult = -0.5
+		country_government_dividends_efficiency_add = 0.4
 
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
@@ -1170,6 +1456,7 @@ principle_foreign_investment_3 = {
 	power_bloc_modifier = {
 		# This modifier has no effects and is only here to generate a tooltip
 		power_bloc_allow_foreign_investment_lower_rank_bool = yes 
+		power_bloc_mandate_progress_mult = -0.15
 	}
 
 	ai_weight = {
@@ -1191,7 +1478,9 @@ principle_creative_legislature_1 = {
 		# Laws are less likely to stall during enactment
 		country_law_enactment_stall_mult = -0.33
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 200 # High base value for ideological union, but also generally useful for others
 		
@@ -1216,7 +1505,9 @@ principle_creative_legislature_2 = {
 		political_movement_preserve_support_mult = -0.33
 		political_movement_restore_support_mult = -0.33
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1235,7 +1526,9 @@ principle_creative_legislature_3 = {
 		# Can have one additional setback before failing a law enactment
 		country_law_enactment_max_setbacks_add = 1
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1257,9 +1550,11 @@ principle_freedom_of_movement_1 = {
 
 	member_modifier = {
 		# Increased migration
-		state_migration_quota_mult = 0.25
+		state_migration_quota_mult = 0.15
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 100
 		
@@ -1311,12 +1606,14 @@ principle_freedom_of_movement_2 = {
 
 	member_modifier = {
 		# Modifiers from previous level(s)	
-		state_migration_quota_mult = 0.25
+		state_migration_quota_mult = 0.15
 		
 		# Increases chance to be picked for mass migrations
-		country_mass_migration_attraction_mult = 0.5	
+		country_mass_migration_attraction_mult = 0.25	
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1328,8 +1625,8 @@ principle_freedom_of_movement_3 = {
 	
 	member_modifier = {
 		# Modifiers from previous level(s)	
-		state_migration_quota_mult = 0.25
-		country_mass_migration_attraction_mult = 0.5	
+		state_migration_quota_mult = 0.15
+		country_mass_migration_attraction_mult = 0.25	
 	}
 
 	power_bloc_modifier = {
@@ -1337,8 +1634,9 @@ principle_freedom_of_movement_3 = {
 	
 		# Unlocks power-bloc wide migration
 		power_bloc_allow_wider_migration_area_bool = yes
+		power_bloc_mandate_progress_mult = -0.15
 	}
-
+	
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1357,11 +1655,13 @@ principle_divine_economics_1 = {
 	power_bloc_modifier = {
 		# Increased trade route competitiveness for PB trade routes
 		power_bloc_religion_trade_route_competitiveness_mult = 0.5
+		power_bloc_mandate_progress_mult = -0.05
 	}
 	
 	member_modifier = {
 		# Higher subject payments from other religions
-		country_subject_income_transfer_heathen_mult = 0.5		
+		country_private_construction_allocation_mult = 0.15
+		country_influence_mult = 0.05
 	}
 	
 	ai_weight = {
@@ -1383,13 +1683,24 @@ principle_divine_economics_2 = {
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)		
 		power_bloc_religion_trade_route_competitiveness_mult = 0.5
+		power_bloc_mandate_progress_mult = -0.1
+	}
+	
+	leader_modifier = {
+		country_loan_interest_rate_add = -0.025
+	}
+
+	non_leader_modifier = {
+		country_loan_interest_rate_add = -0.05
 	}
 	
 	member_modifier = {
 		# Modifiers from previous level(s)		
-		country_subject_income_transfer_heathen_mult = 0.5
+		country_private_construction_allocation_mult = 0.15
 
 		# New PM for Financial Districts/Manor Houses unlocked via trigger
+		country_gold_reserve_limit_mult = 0.1
+		country_influence_mult = 0.1
 	}	
 	
 	ai_weight = {
@@ -1404,15 +1715,22 @@ principle_divine_economics_3 = {
 	power_bloc_modifier = {
 		# Modifiers from previous level(s)		
 		power_bloc_religion_trade_route_competitiveness_mult = 0.5
+		power_bloc_mandate_progress_mult = -0.15
+		country_gold_reserve_limit_mult = 0.1
 	}
 	
+	leader_modifier = {
+		country_loan_interest_rate_add = -0.05
+	}
+
+	non_leader_modifier = {
+		country_loan_interest_rate_add = -0.1
+	}
+
 	member_modifier = {
 		# Modifiers from previous level(s)		
-		country_subject_income_transfer_heathen_mult = 0.5		
-	
-		# SoL changes less radical/more loyalist for accepted religion pops
-		state_radicals_from_sol_change_accepted_religion_mult = -0.25
-		state_loyalists_from_sol_change_accepted_religion_mult = 0.25
+		country_private_construction_allocation_mult = 0.15
+		country_influence_mult = 0.15
 		
 		# New PM for Financial Districts/Manor Houses unlocked via trigger
 	}
@@ -1445,6 +1763,7 @@ principle_exploit_members_1 = {
 	power_bloc_modifier = {
 		# Reduce Cohesion
 		power_bloc_cohesion_add = -5
+		power_bloc_mandate_progress_mult = -0.05
 	}
 	
 	ai_weight = {
@@ -1495,6 +1814,7 @@ principle_exploit_members_2 = {
 	power_bloc_modifier = {
 		# Reduce Cohesion
 		power_bloc_cohesion_add = -10
+		power_bloc_mandate_progress_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -1531,8 +1851,9 @@ principle_exploit_members_3 = {
 		power_bloc_cohesion_add = -20
 		# Income transfer from members to leader
 		power_bloc_income_transfer_to_leader_factor = 0.05
+		power_bloc_mandate_progress_mult = -0.15
 	}
-
+	
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 		
@@ -1559,8 +1880,21 @@ principle_sacred_civics_1 = {
 		# Higher diplomatic acceptance from countries with same state religion
 		# This modifier actually has no effect and is just here to generate a tooltip, the effects are scripted in diplomactic_actions
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
+		state_accepted_birth_rate_mult = 0.016
+		country_legitimacy_base_add = 5 #placeholder until i can get the below thing working - Matty
+
+
+		# if = {
+		# 	limit = {
+		# 		ig:ig_devout = { is_in_government = yes }
+		# 	}
+		# 	country_legitimacy_base_add = 15
+		# }
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
+
 	ai_weight = {
 		value = 200 # Religious PBs should tend towards picking the religious principles
 		
@@ -1592,12 +1926,18 @@ principle_sacred_civics_2 = {
 	member_modifier = {
 		# Modifiers from previous level(s)		
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
+
+		state_accepted_birth_rate_mult = 0.034
+
+		country_legitimacy_base_add = 10 #placeholder - Matty
 		
 		# Lower liberty desire for subjects with the same religion
 		# This modifier actually has no effect and is just here to generate a tooltip, the effects are scripted in scripted_values
 		country_reduced_liberty_desire_same_religion_bool = yes
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1611,13 +1951,23 @@ principle_sacred_civics_3 = {
 		# Modifiers from previous level(s)		
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
 		country_reduced_liberty_desire_same_religion_bool = yes
+
+		state_accepted_birth_rate_mult = 0.05
+
+		country_legitimacy_base_add = 15 #placeholder - Matty
+
+		# SoL changes less radical/more loyalist for accepted religion pops
+		state_radicals_from_sol_change_accepted_religion_mult = -0.1
+		state_loyalists_from_sol_change_accepted_religion_mult = 0.1
 	}
 
 	leader_modifier = {
 		# Allows leader to impose their own law onto member countries in the church_and_state law group
 		country_can_impose_same_lawgroup_church_and_state_in_power_bloc_bool = yes
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1641,7 +1991,9 @@ principle_ideological_truth_1 = {
 		country_bolster_cost_mult = -0.25
 		country_suppression_cost_mult = -0.25		
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.05
+	}
 	ai_weight = {
 		value = 200 # High base weight for ideological union
 		
@@ -1677,7 +2029,9 @@ principle_ideological_truth_2 = {
 		# Reduces ideological coherence penalty for IGs in same party
 		country_party_whip_impact_mult = 0.2
 	}
-	
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.1
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -1697,7 +2051,9 @@ principle_ideological_truth_3 = {
 		# Members Legitimacy can't fall under 25
 		country_legitimacy_min_add = 25		
 	}
-
+	power_bloc_modifier = {
+		power_bloc_mandate_progress_mult = -0.15
+	}
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}

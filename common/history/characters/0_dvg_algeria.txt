@@ -17,7 +17,7 @@
 
 				surveyor
 
-				trench_rat
+				rat
 			}
 		}
 	}

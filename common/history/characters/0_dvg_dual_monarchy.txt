@@ -130,7 +130,7 @@
 			ideology = ideology_anglois
 			commander_rank = commander_rank_3
 			traits = {
-				trench_rat
+				rat
 			}
 		}
 

@@ -14,7 +14,7 @@
 
 			traits = {
 				mountain_commander
-				trench_rat
+				rat
 				persistent
 				brave
 			}

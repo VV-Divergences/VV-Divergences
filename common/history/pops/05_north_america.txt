@@ -308,7 +308,7 @@
 	}
 	
 	s:STATE_CAROLINE = {
-		region_state:CCA = {
+		region_state:CNF = {
 			create_pop = {
 				culture = septiman
 				size = 537231
@@ -342,7 +342,7 @@
 		}
 	}
 	s:STATE_HAUTE_VALOISIE = {
-		region_state:CHV = {
+		region_state:CNF = {
 			create_pop = {
 				culture = septiman
 				size = 612032
@@ -361,7 +361,7 @@
 		}
 	}
 	s:STATE_BASSE_VALOISIE = {
-		region_state:CBV = {
+		region_state:CNF = {
 			create_pop = {
 				culture = septiman
 				size = 49394
@@ -384,7 +384,7 @@
 		}
 	}
 	s:STATE_NOUVELLE_LORRAINE = {
-		region_state:CNL = {
+		region_state:CNF = {
 			create_pop = {
 				culture = septiman
 				size = 602043

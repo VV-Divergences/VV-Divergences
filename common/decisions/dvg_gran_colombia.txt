@@ -1,0 +1,222 @@
+#emergency stopgap content to give gran colombia some cultures it previously got through decisions before the campaign in 4 days - Matty
+
+dvg_gco_claims_granada = {
+	is_shown = {
+		exists = c:GCO
+		root = c:GCO
+
+		not = {
+			has_global_variable = dvg_gco_claims_granadan_clay
+		}
+	}
+
+	possible = {
+			has_technology_researched = mass_communication
+			owns_entire_state_region = STATE_MEXICO
+			is_subject = no
+	}
+
+	when_taken = {
+		every_state_region = {
+			limit = {
+			
+				is_homeland = cu:granadan
+				
+			}
+			add_claim = ROOT
+			
+		}
+		hidden_effect = {
+			set_global_variable = dvg_gco_claims_granadan_clay
+		}
+	}
+}
+
+dvg_gco_incorporate_granadan = {
+	is_shown = {
+		has_technology_researched = mass_communication
+		exists = c:GCO
+		root = c:GCO
+		
+		NOT = {
+			country_has_primary_culture = cu:granadan
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		owns_entire_state_region = STATE_ANTIOQUIA
+		owns_entire_state_region = STATE_CUNDINAMARCA
+		owns_entire_state_region = STATE_ZULIA
+		owns_entire_state_region = STATE_MEXICO
+		is_subject = no
+	}
+	
+    when_taken = {
+	
+		add_primary_culture = cu:granadan
+		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+dvg_gco_claims_kuba = {
+	is_shown = {
+		exists = c:GCO
+		root = c:GCO
+
+		not = {
+			has_global_variable = dvg_gco_claims_caribeno
+		}
+	}
+
+	possible = {
+			has_technology_researched = mass_communication
+			owns_entire_state_region = STATE_MEXICO
+			is_subject = no
+	}
+
+	when_taken = {
+		every_state_region = {
+			limit = {
+			
+				is_homeland = cu:caribeno
+				
+			}
+			add_claim = ROOT
+			
+		}
+		hidden_effect = {
+			set_global_variable = dvg_gco_claims_caribeno
+		}
+	}
+}
+
+dvg_gco_incorporate_kuba = {
+	is_shown = {
+		has_technology_researched = mass_communication
+		exists = c:GCO
+		root = c:GCO
+		
+		NOT = {
+			country_has_primary_culture = cu:caribeno
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		owns_entire_state_region = STATE_CUBA
+		owns_entire_state_region = STATE_MEXICO
+		is_subject = no
+	}
+	
+    when_taken = {
+	
+		add_primary_culture = cu:caribeno
+		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+dvg_gco_claims_peru = {
+	is_shown = {
+		has_technology_researched = nationalism
+		exists = c:GCO
+		root = c:GCO
+
+		not = {
+			has_global_variable = dvg_gco_claims_peruvian_clay
+		}
+	}
+
+	possible = {
+			has_technology_researched = pan-nationalism
+			owns_entire_state_region = STATE_MEXICO
+			is_subject = no
+			
+			country_has_primary_culture = cu:granadan
+			country_has_primary_culture = cu:caribeno
+	}
+
+	when_taken = {
+		every_state_region = {
+			limit = {
+				is_homeland = cu:caladeran
+			}
+			add_claim = ROOT
+
+		}
+		hidden_effect = {
+			set_global_variable = dvg_gco_claims_peruvian_clay
+		}
+	}
+}
+
+dvg_gco_incorporate_peruvian = {
+	is_shown = {
+		has_technology_researched = nationalism
+		exists = c:GCO
+		root = c:GCO
+		
+		NOT = {
+			country_has_primary_culture = cu:caladeran
+		}
+	}
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		owns_entire_state_region = STATE_ECUADOR
+		owns_entire_state_region = STATE_LIMA
+		owns_entire_state_region = STATE_CAJAMARCA
+		owns_entire_state_region = STATE_MEXICO
+		is_subject = no
+	}
+	
+    when_taken = {
+	
+		add_primary_culture = cu:caladeran
+		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+dvg_gco_incorporate_africans = {
+	is_shown = {
+		exists = c:GCO
+		root = c:GCO
+		
+		NOT = {
+			country_has_primary_culture = cu:afro_latino
+		}
+	}
+
+	possible = {
+		owns_entire_state_region = STATE_MEXICO
+		has_technology_researched = human_rights
+		has_law = law_type:law_slavery_banned
+		OR = {
+			has_law = law_type:law_multicultural
+			has_law = law_type:law_cultural_exclusion
+		}
+
+	}
+	
+    when_taken = {
+	
+		add_primary_culture = cu:afro_latino
+		
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}

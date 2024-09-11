@@ -1,4 +1,4 @@
-﻿je_colombian_war_of_independence = {
+﻿je_colombian_war_of_independence_GCO = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
 	group = je_group_foreign_affairs
@@ -17,11 +17,11 @@
 	}
 
     on_complete = {
-		trigger_event = { id = dvg_gran_colombia.2 }
+		trigger_event = { id = dvg_gran_colombia.3 }
 	}
 	
     on_fail = {
-		trigger_event = { id = dvg_gran_colombia.3 }
+		trigger_event = { id = dvg_gran_colombia.4 }
 	}
 	
 	weight = 100

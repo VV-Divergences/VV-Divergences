@@ -724,7 +724,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets"  }
+				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
 				building="building_paper_mills"
@@ -1921,14 +1921,12 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
-		}
-		region_state:PRU = {
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:PRU"
+						country="c:LIT"
 						levels=5
 						region="STATE_LITHUANIA"
 					}
@@ -2230,7 +2228,7 @@ BUILDINGS={
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=2
+						levels=3
 						region="STATE_EAST_PRUSSIA"
 					}
 				}
@@ -2247,21 +2245,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "pm_general_training" }
-			}
-		}
-		region_state:POL = {
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:POL"
-						levels=1
-						region="STATE_EAST_PRUSSIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -2297,7 +2280,7 @@ BUILDINGS={
 					building={
 						type="building_manor_house"
 						country="c:POL"
-						levels=2
+						levels=4
 						region="STATE_WEST_PRUSSIA"
 					}
 				}
@@ -2314,21 +2297,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
-			}
-		}
-		region_state:PRU = {
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PRU"
-						levels=2
-						region="STATE_WEST_PRUSSIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -2505,7 +2473,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:POL"
-						levels=1
+						levels=2
 						region="STATE_MAZOVIA"
 					}
 				}
@@ -3847,11 +3815,61 @@ BUILDINGS={
 	s:STATE_NORTHERN_TRANSYLVANIA = {
 		region_state:TRS = {
 			create_building={
-				building="building_government_administration"
+				building="building_arms_industry"
 				add_ownership={
 					country={
 						country="c:TRS"
 						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_iron_mine"
+						country="c:TRS"
+						levels=1
+						region="STATE_NORTHERN_TRANSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:TRS"
+						levels=1
+						region="STATE_NORTHERN_TRANSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:TRS"
+						levels=1
+						region="STATE_NORTHERN_TRANSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:TRS"
+						levels=4
 					}
 				}
 				reserves=1

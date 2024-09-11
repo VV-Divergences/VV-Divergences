@@ -27,7 +27,7 @@
 			hq = region_andes
 			interest_group = ig_armed_forces
 			traits = {
-				trench_rat
+				rat
 			}
 		}
 		

@@ -11,10 +11,12 @@
 			        is_in_government = yes
 		        }
 		        has_insurrectionary_interest_groups = no
-                owns_entire_state_region = STATE_MAZOVIA
-                has_law = law_type:law_hereditary_bureaucrats
+                owns_entire_state_region = STATE_GREATER_POLAND
                 has_law = law_type:law_agrarianism
-                has_law = law_type:law_serfdom
+                OR = { 
+                    has_law = law_type:law_serfdom
+                    has_law = law_type:law_tenant_farmers
+                }
                 has_law = law_type:law_oligarchy
             }
             AND = {
@@ -23,12 +25,15 @@
 			        is_in_government = no
 		        }
                 has_insurrectionary_interest_groups = no
-                owns_entire_state_region = STATE_MAZOVIA
-                has_law = law_type:law_interventionism
-                has_law = law_type:law_wealth_voting
+                owns_entire_state_region = STATE_GREATER_POLAND
+                
+                has_law = law_type:law_monarchy
+                has_law = law_type:law_racial_segregation
                 NOT = {
-                    has_law = law_type:law_hereditary_bureaucrats
+                    has_law = law_type:law_oligarchy
                     has_law = law_type:law_serfdom
+                    has_law = law_type:law_traditionalism
+                    has_law = law_type:law_landed_voting
                 }
             }
         }
@@ -129,6 +134,12 @@ je_eastern_resistance = {
         cu:cossack = {
             NOT = { culture_is_discriminated_in = ROOT }
         }
+        cu:cossack = {
+            NOT = { culture_is_discriminated_in = ROOT }
+        }
+        cu:cossack = {
+            NOT = { culture_is_discriminated_in = ROOT }
+        }
     }  
 
     fail = {
@@ -140,7 +151,8 @@ je_eastern_resistance = {
             is_diplomatic_play_target = yes
             OR = {
                 country_has_primary_culture = cu:cossack
-                country_has_primary_culture = cu:byelorussian 
+                country_has_primary_culture = cu:byelorussian
+                country_has_primary_culture = cu:ruthenian
             }
         }
     }

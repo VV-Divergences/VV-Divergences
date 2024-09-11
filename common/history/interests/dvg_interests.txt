@@ -24,6 +24,7 @@
 	}
 	c:BRG = {
 		add_declared_interest = region_north_germany
+		add_declared_interest = region_south_germany
 		add_declared_interest = region_england
 		add_declared_interest = region_baltic
 		add_declared_interest = region_brazil

@@ -54,14 +54,16 @@ modifier_magnate_oligarchy = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
     state_aristocrats_investment_pool_efficiency_mult = 0.3
     country_authority_add = 200
-    interest_group_ig_landowners_pop_attraction_mult = 0.1
-	interest_group_ig_landowners_pol_str_mult = 0.5
+	country_aristocrats_pol_str_mult = 0.5
 }
 
 modifier_noble_democracy = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-    interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.1
-	interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.5
+    interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.2
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.3
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.2
+	interest_group_ig_armed_forces_pol_str_mult = 0.3
+	state_shopkeepers_investment_pool_efficiency_mult = 0.3
     state_loyalists_from_sol_change_mult = 0.3
 }
 
@@ -154,7 +156,7 @@ dvg_quechua_open_revolt = {
 dvg_spanish_independence_fighters = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	#state_conscription_rate_add = 0.025
-	building_training_rate_add = 500
+	building_training_rate_add = 100
 	unit_army_offense_mult = 0.05
 	unit_army_defense_mult = 0.05
 }
@@ -307,7 +309,7 @@ dvg_rus_enemies_all_sides = {
 }
 
 dvg_rock_and_hard_place = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 
 	country_law_enactment_success_add = -0.15
 	tax_land_add = 0.25
@@ -513,7 +515,7 @@ dvg_hongshan_mistreatment_still_bad = {
 dvg_spanish_independence_fighters = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	#state_conscription_rate_add = 0.025
-	building_training_rate_add = 500
+	building_training_rate_add = 100
 	unit_army_offense_mult = 0.05
 	unit_army_defense_mult = 0.05
 }
@@ -717,34 +719,29 @@ dvg_qingqiu_leagues = {
 	country_trade_route_cost_mult = -0.35
 }
 
-lore_accurate_rohnnst = {
+dvg_great_german_game_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	country_prestige_mult = 0.5
-	state_assimilation_mult = 5.00
-	state_radicals_from_sol_change_mult = -1
-	state_radicals_from_discrimination_mult = -1
-	country_bureaucracy_mult = 2
-	country_tech_spread_mult = 0.5
-	country_society_tech_research_speed_mult = 1
-	unit_army_offense_mult = 10
-	unit_army_defense_mult = 10
-	country_tax_income_add = 200000
-	state_standard_of_living_add = 25
-	state_construction_mult = 10
+	country_influence_mult = 0.1
+	country_radicals_from_conquest_mult = 0.15
 }
 
-lore_accurate_tonga = {
+dvg_left_great_german_game_modifier_boh = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	country_prestige_mult = 0.5
-	state_assimilation_mult = 5.00
-	state_radicals_from_sol_change_mult = -1
-	state_radicals_from_discrimination_mult = -1
-	country_bureaucracy_mult = 2
-	country_tech_spread_mult = 0.5
-	country_society_tech_research_speed_mult = 1
-	unit_army_offense_mult = 10
-	unit_army_defense_mult = 10
-	country_tax_income_add = 200000
-	state_standard_of_living_add = 25
-	state_construction_mult = 10
+	state_accepted_birth_rate_mult = 0.05
+	state_loyalists_from_sol_change_accepted_religion_mult = 0.25
 }
+dvg_left_great_german_game_modifier_sca = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_colony_growth_creation_mult = 0.2
+}
+dvg_left_great_german_game_modifier_brg = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_infamy_generation_mult = -0.15
+	country_radicals_from_conquest_mult = -0.25
+}
+
+dvg_ggg_gave_up_german_claims = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_prestige_add = -25
+}
+

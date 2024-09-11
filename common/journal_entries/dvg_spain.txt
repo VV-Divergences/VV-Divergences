@@ -17,7 +17,7 @@
 			is_at_war = no
 			NOT = { has_modifier = dvg_war_preparation }
 		}
-		c:GRA = {
+		c:QUI = {
 			is_subject = no
 		}
 	}

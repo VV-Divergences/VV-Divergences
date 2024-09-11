@@ -287,7 +287,10 @@
   dvg_incorporate_vinlander_desc: "The Vinlanders have long been oppressed, much like ourselves. Now, we will grant citizenship to our northern territories."
 
   dvg_incorporate_athesian: "The Peoples of the Peninsula"
-  dvg_incorporate_athesian_desc: "The Athesians will be joined with us. The great Arcadian project will continue to project peace and prosperity."
+  dvg_incorporate_athesian_desc: "The southern Italian speakers will be joined with us. The great Arcadian project will continue to exemplify peace and prosperity."
+
+  dvg_vinlander_arcadia: "Arcadia United"
+  dvg_vinlander_arcadia_desc: "O Vinland! The people rejoice in Erikshavn and the nations of the world forward their congratulations! Our great state enters the world stage, with a bright future sure to come."
 
   dvg_embrace_afro_arcadian: "Enfranchise the Afro-Arcadians"
   dvg_embrace_afro_arcadian_desc: "Now that they are no longer discriminated against, Afro-Arcadians have become such an integral part of our society that they can now be afforded the same legal and social status as one of the primary cultures of our country."
