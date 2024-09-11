@@ -30,7 +30,7 @@ namespace = vv_baby_boom
 			add_modifier = {
 				name = vv_baby_boom_modifier
 				months = normal_modifier_time
-		}
+			}
 		
 		}
 	}

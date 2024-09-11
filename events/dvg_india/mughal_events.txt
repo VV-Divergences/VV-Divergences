@@ -34,6 +34,13 @@ mughal.1 = {
 	option = {
 		name = salaf.1.a
 		default_option = yes
+		hidden_effect = {
+			add_modifier = {
+				name = cvg_mughal_ducktape				#fix this
+				months = 120
+				decaying = yes
+			}
+		}
 		custom_tooltip = {
 			text = salaf_tt
 		}
