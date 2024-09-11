@@ -105,15 +105,10 @@
 			founding_date = 1015.6.9 
 			identity = identity_military_treaty_organization
 			principle = principle_defensive_cooperation_1
-<<<<<<< Updated upstream
-=======
-			principle = principle_market_unification_1
->>>>>>> Stashed changes
 
 			member = c:VEN
 			member = c:PAP
 			member = c:PRO
-			member = c:GEN
 			
 		}
 		power_bloc = {
