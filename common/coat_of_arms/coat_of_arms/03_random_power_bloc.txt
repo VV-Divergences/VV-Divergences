@@ -41,7 +41,7 @@ template = {
     }
 
 
-    gbr_power_bloc_1 = {
+    dua_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -79,7 +79,7 @@ template = {
         }
     }
 
-    aus_power_bloc_1 = {
+    bgy_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -117,7 +117,7 @@ template = {
         }
     }
 
-    pru_power_bloc_1 = {
+    boh_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -155,7 +155,7 @@ template = {
         }
     }
 
-    rus_power_bloc_1 = {
+    sca_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -197,7 +197,7 @@ template = {
         }
     }
 
-    tur_power_bloc_1 = {
+    spa_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
