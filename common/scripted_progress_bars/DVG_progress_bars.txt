@@ -23,14 +23,14 @@
 			desc = "dvg_ggg_progress_from_legitimacy"
 			value = global_var:BRG_progress_from_legitimacy
 		}
-		# add = {
-		# 	desc = "tot"
-		# 	value = global_var:dvg_german_prestige_tot
-		# }
-		# add = {
-		# 	desc = "brg"
-		# 	value = global_var:BRG_german_prestige_tot
-		# }
+		add = {
+			desc = "dvg_ggg_progress_from_no_BOH_opposition"
+			value = global_var:BRG_progress_from_no_BOH_competition
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_SCA_opposition"
+			value = global_var:BRG_progress_from_no_SCA_competition
+		}
 	}
 
 	start_value = 1
@@ -62,14 +62,14 @@
 			desc = "dvg_ggg_progress_from_legitimacy"
 			value = global_var:BOH_progress_from_legitimacy
 		}
-		# add = {
-		# 	desc = "tot"
-		# 	value = global_var:dvg_german_prestige_tot
-		# }
-		# add = {
-		# 	desc = "boh"
-		# 	value = global_var:boh_german_prestige_tot
-		# }
+		add = {
+			desc = "dvg_ggg_progress_from_no_BRG_opposition"
+			value = global_var:BOH_progress_from_no_BRG_competition
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_SCA_opposition"
+			value = global_var:BOH_progress_from_no_SCA_competition
+		}
 	}
 
 	start_value = 1
@@ -101,14 +101,14 @@
 			desc = "dvg_ggg_progress_from_legitimacy"
 			value = global_var:SCA_progress_from_legitimacy
 		}
-		# add = {
-		# 	desc = "tot"
-		# 	value = global_var:dvg_german_prestige_tot
-		# }
-		# add = {
-		# 	desc = "sca"
-		# 	value = global_var:sca_german_prestige_tot
-		# }
+		add = {
+			desc = "dvg_ggg_progress_from_no_BRG_opposition"
+			value = global_var:SCA_progress_from_no_BRG_competition
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_BOH_opposition"
+			value = global_var:SCA_progress_from_no_BOH_competition
+		}
 	}
 
 	start_value = 1

@@ -611,7 +611,7 @@ identity_religious = {
 		power_bloc_mandate_progress_per_minor_power_member_add = 2
 		power_bloc_mandate_progress_per_unrecognized_major_power_member_add = 2
 		power_bloc_mandate_progress_per_unrecognized_regional_power_member_add = 1
-		power_bloc_cohesion_per_member_add = -2
+		power_bloc_cohesion_per_member_add = -0.5
 	}
 
 	leader_modifier = {
@@ -667,7 +667,7 @@ identity_religious = {
 		add = {
 			value = define:NPowerBlocs|COHESION_TARGET_MAX
 			multiply = ig:ig_devout.ig_clout
-			add = -10
+			add = -5
 			multiply = 4
 			desc = POWER_BLOC_COHESION_DEVOUT_IG_CLOUT
 		}
@@ -675,13 +675,13 @@ identity_religious = {
 		if = {
 			limit = {
 				ig:ig_devout = {
-					is_in_government = no
+					is_in_government = yes
 				}
 			}
 			add = {
-				add = -15
+				add = 15
 				desc = POWER_BLOC_COHESION_DEVOUT_IG_NOT_IN_GOVERNMENT
-			}	
+			}
 		}
 		
 		add = {
@@ -715,7 +715,7 @@ identity_religious = {
 			else = {
 				add = scope:power_bloc.power_bloc_worst_leader_religion_population_fraction
 			}
-			add = -0.5
+			add = -0.2
 			multiply = 0.5
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
 			desc = POWER_BLOC_COHESION_LEADER_RELIGION_WORST_POPULATION_SHARE
