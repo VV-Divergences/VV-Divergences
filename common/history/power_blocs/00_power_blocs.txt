@@ -104,7 +104,8 @@
 	
 			founding_date = 1015.6.9 
 			identity = identity_military_treaty_organization
-			principle = principle_defensive_cooperation_3
+			principle = principle_defensive_cooperation_1
+			principle = principle_market_unification_1
 
 			member = c:VEN
 			member = c:PAP
