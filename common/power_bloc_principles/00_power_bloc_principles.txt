@@ -1881,6 +1881,9 @@ principle_sacred_civics_1 = {
 		# This modifier actually has no effect and is just here to generate a tooltip, the effects are scripted in diplomactic_actions
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
 		state_accepted_birth_rate_mult = 0.016
+		country_legitimacy_base_add = 5 #placeholder until i can get the below thing working - Matty
+
+
 		if = {
 			limit = {
 				ig:ig_devout = { is_in_government = yes }
@@ -1925,6 +1928,8 @@ principle_sacred_civics_2 = {
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
 
 		state_accepted_birth_rate_mult = 0.034
+
+		country_legitimacy_base_add = 10 #placeholder - Matty
 		
 		# Lower liberty desire for subjects with the same religion
 		# This modifier actually has no effect and is just here to generate a tooltip, the effects are scripted in scripted_values
@@ -1949,9 +1954,11 @@ principle_sacred_civics_3 = {
 
 		state_accepted_birth_rate_mult = 0.05
 
+		country_legitimacy_base_add = 15 #placeholder - Matty
+
 		# SoL changes less radical/more loyalist for accepted religion pops
-		state_radicals_from_sol_change_accepted_religion_mult = -0.25
-		state_loyalists_from_sol_change_accepted_religion_mult = 0.25
+		state_radicals_from_sol_change_accepted_religion_mult = -0.1
+		state_loyalists_from_sol_change_accepted_religion_mult = 0.1
 	}
 
 	leader_modifier = {
