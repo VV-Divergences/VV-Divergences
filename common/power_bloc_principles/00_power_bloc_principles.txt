@@ -519,7 +519,7 @@ principle_advanced_research_3 = {
 ### DEFENSIVE COOPERATION
 
 principle_defensive_cooperation_1 = {
-	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+	icon = "gfx\interface\icons\principles_icons\defensive_cooperation.png"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
 
 	visible = {
@@ -567,7 +567,7 @@ principle_defensive_cooperation_1 = {
 }
 
 principle_defensive_cooperation_2 = {
-	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+	icon = "gfx\interface\icons\principles_icons\defensive_cooperation.png"
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
 	member_modifier = {
@@ -591,7 +591,7 @@ principle_defensive_cooperation_2 = {
 }
 
 principle_defensive_cooperation_3 = {
-	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+	icon = "gfx\interface\icons\principles_icons\defensive_cooperation.png"
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
 	member_modifier = {
@@ -712,7 +712,7 @@ principle_defensive_cooperation_3 = {
 ### ARMY DOCTRINE
 
 principle_aggressive_coordination_1 = {
-	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+	icon = "gfx\interface\icons\principles_icons\aggressive_coordination.png"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
 	
 	visible = {
@@ -757,7 +757,7 @@ principle_aggressive_coordination_1 = {
 }
 
 principle_aggressive_coordination_2 = {
-	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+	icon = "gfx\interface\icons\principles_icons\aggressive_coordination.png"
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
 	member_modifier = {
@@ -779,7 +779,7 @@ principle_aggressive_coordination_2 = {
 }
 
 principle_aggressive_coordination_3 = {
-	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+	icon = "gfx\interface\icons\principles_icons\aggressive_coordination.png"
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
 	member_modifier = {
