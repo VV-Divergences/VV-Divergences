@@ -1882,14 +1882,6 @@ principle_sacred_civics_1 = {
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
 		state_accepted_birth_rate_mult = 0.016
 		country_legitimacy_base_add = 5 #placeholder until i can get the below thing working - Matty
-
-
-		# if = {
-		# 	limit = {
-		# 		ig:ig_devout = { is_in_government = yes }
-		# 	}
-		# 	country_legitimacy_base_add = 15
-		# }
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.05
