@@ -424,6 +424,98 @@ principle_advanced_research_3 = {
 	}	
 }
 
+# ### DEFENSIVE COOPERATION
+
+# principle_defensive_cooperation_1 = {
+# 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+
+# 	visible = {
+# 		has_dlc_feature = power_bloc_features
+# 	}
+
+# 	power_bloc_modifier = {
+# 		# Members cannot start wars amongst each other
+# 		power_bloc_disallow_war_bool = yes
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.05
+# 	}
+# 	ai_weight = {
+# 		value = 100
+		
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_strategy = ai_strategy_socialism_in_one_country
+# 					has_strategy = ai_strategy_armed_isolationism
+# 				}	
+# 			}
+# 			multiply = 1.5
+# 		}
+		
+# 		if = {
+# 			limit = { 
+# 				power_bloc ?= { has_principle_group = principle_group:principle_group_aggressive_coordination }			
+# 			}
+# 			multiply = 0.5
+# 		}
+
+# 		if = {
+# 			limit = {
+# 				power_bloc ?= { NOT = { has_identity = identity:identity_military_treaty_organization } } 				
+# 			}
+# 			multiply = 0.5
+# 		}		
+# 	}
+# }
+
+# principle_defensive_cooperation_2 = {
+# 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+# 	power_bloc_modifier = {
+# 		# Modifiers from previous level(s)
+# 		power_bloc_disallow_war_bool = yes
+		
+# 		# Swaying members to join your side costs 50% less maneuvers if the inviting country is on the target's side
+# 		power_bloc_target_sway_cost_mult = -0.5
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.1
+# 	}
+# 	leader_modifier = {
+# 		# Allows leader to impose their own law onto member countries in the army_model law group
+# 		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
+# 	}
+	
+# 	ai_weight = {
+# 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+# 	}
+# }
+
+# principle_defensive_cooperation_3 = {
+# 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+# 	member_modifier = {
+# 		# Countries forced to join defensive plays against members
+# 		country_join_power_bloc_member_in_defensive_plays_bool = yes
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.15
+# 	}
+# 	power_bloc_modifier = {
+# 		# Modifiers from previous level(s)
+# 		power_bloc_disallow_war_bool = yes
+# 		power_bloc_target_sway_cost_mult = -0.5
+# 	}
+	
+# 	ai_weight = {
+# 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+# 	}
+# }
+
 ### DEFENSIVE COOPERATION
 
 principle_defensive_cooperation_1 = {
@@ -434,10 +526,14 @@ principle_defensive_cooperation_1 = {
 		has_dlc_feature = power_bloc_features
 	}
 
-	power_bloc_modifier = {
-		# Members cannot start wars amongst each other
-		power_bloc_disallow_war_bool = yes
+	member_modifier = {
+		# more convoys
+		country_convoys_capacity_mult = 0.2
+		country_convoys_capacity_add = 100
+		# navy experience
+		unit_navy_experience_gain_mult = 0.2
 	}
+
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.05
 	}
@@ -474,21 +570,21 @@ principle_defensive_cooperation_2 = {
 	icon = "gfx/interface/icons/principles_icons/defensive_coorperation.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
-	power_bloc_modifier = {
-		# Modifiers from previous level(s)
-		power_bloc_disallow_war_bool = yes
-		
-		# Swaying members to join your side costs 50% less maneuvers if the inviting country is on the target's side
-		power_bloc_target_sway_cost_mult = -0.5
+	member_modifier = {
+		# more convoys
+		country_convoys_capacity_mult = 0.2
+		country_convoys_capacity_add = 100
+		# building training rate
+		building_training_rate_mult = 0.05
+		# navy experience
+		unit_navy_experience_gain_mult = 0.2
+	}
+	leader_modifier = {
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.1
 	}
-	leader_modifier = {
-		# Allows leader to impose their own law onto member countries in the army_model law group
-		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
-	}
-	
 	ai_weight = {
 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
@@ -499,16 +595,22 @@ principle_defensive_cooperation_3 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
 	member_modifier = {
-		# Countries forced to join defensive plays against members
-		country_join_power_bloc_member_in_defensive_plays_bool = yes
+		# more convoys
+		country_convoys_capacity_mult = 0.2
+		country_convoys_capacity_add = 100
+		# building training rate
+		building_training_rate_mult = 0.08
+		# naval fighting!
+		unit_navy_defense_mult = 0.05
+		unit_navy_offense_mult = 0.05
+		# navy experience
+		unit_navy_experience_gain_mult = 0.2
+	}
+	leader_modifier = {
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.15
-	}
-	power_bloc_modifier = {
-		# Modifiers from previous level(s)
-		power_bloc_disallow_war_bool = yes
-		power_bloc_target_sway_cost_mult = -0.5
 	}
 	
 	ai_weight = {
@@ -516,7 +618,98 @@ principle_defensive_cooperation_3 = {
 	}
 }
 
-### AGGRESSIVE COORDINATION
+# ### AGGRESSIVE COORDINATION
+
+# principle_aggressive_coordination_1 = {
+# 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+	
+# 	visible = {
+# 		has_dlc_feature = power_bloc_features
+# 	}
+
+# 	member_modifier = {
+# 		# Reduces maneuver cost for picking wargoals during Diplomatic Play
+# 		country_initiator_war_goal_maneuver_cost_mult = -0.3
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.05
+# 	}
+# 	ai_weight = {
+# 		value = 100	
+		
+# 		if = {
+# 			limit = {
+# 				ig:ig_armed_forces ?= { is_in_government = yes }
+# 			}
+# 			add = 100
+# 		}
+		
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					has_strategy = ai_strategy_territorial_expansion
+# 					has_strategy = ai_strategy_world_revolution
+# 				}	
+# 			}
+# 			multiply = 1.5
+# 		}		
+		
+# 		if = {
+# 			limit = { 
+# 				power_bloc ?= { has_principle_group = principle_group:principle_group_defensive_cooperation }				
+# 			}
+# 			multiply = 0.5
+# 		}		
+# 	}	
+# }
+
+# principle_aggressive_coordination_2 = {
+# 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
+# 	member_modifier = {
+# 		# Modifiers from previous level(s)
+# 		country_initiator_war_goal_maneuver_cost_mult = -0.3
+		
+# 		# Reduces war exhaustion from casualties, propaganda!
+# 		country_war_exhaustion_casualties_mult = -0.15
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.1
+# 	}
+# 	ai_weight = {
+# 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+# 	}	
+# }
+
+# principle_aggressive_coordination_3 = {
+# 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
+# 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+# 	power_bloc_modifier = {	
+# 		# Reduces cohesion
+# 		power_bloc_cohesion_add = -10
+# 	}
+# 	power_bloc_modifier = {
+# 		power_bloc_mandate_progress_mult = -0.15
+# 	}
+# 	member_modifier = {
+# 		# Modifiers from previous level(s)
+# 		country_initiator_war_goal_maneuver_cost_mult = -0.3
+# 		country_war_exhaustion_casualties_mult = -0.15
+	
+# 		# Countries forced to join diplomatic plays of members, other countries are not happy about this threat
+# 		country_join_power_bloc_member_in_plays_bool = yes
+# 		country_infamy_generation_mult = 0.15
+# 	}
+	
+# 	ai_weight = {
+# 		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+# 	}
+# }
+
+### ARMY DOCTRINE
 
 principle_aggressive_coordination_1 = {
 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
@@ -528,7 +721,8 @@ principle_aggressive_coordination_1 = {
 
 	member_modifier = {
 		# Reduces maneuver cost for picking wargoals during Diplomatic Play
-		country_initiator_war_goal_maneuver_cost_mult = -0.3
+		country_infamy_generation_mult = -0.1
+		unit_supply_consumption_mult = -0.04
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.05
@@ -567,11 +761,14 @@ principle_aggressive_coordination_2 = {
 	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
 
 	member_modifier = {
-		# Modifiers from previous level(s)
-		country_initiator_war_goal_maneuver_cost_mult = -0.3
-		
-		# Reduces war exhaustion from casualties, propaganda!
+		# Reduces maneuver cost for picking wargoals during Diplomatic Play
+		country_infamy_generation_mult = -0.1
+		unit_supply_consumption_mult = -0.06
+		# new
 		country_war_exhaustion_casualties_mult = -0.15
+	}
+	leader_modifier = {
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.1
@@ -585,21 +782,20 @@ principle_aggressive_coordination_3 = {
 	icon = "gfx/interface/icons/principles_icons/aggressive_coordination.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
 
-	power_bloc_modifier = {	
-		# Reduces cohesion
-		power_bloc_cohesion_add = -10
+	member_modifier = {
+		# Reduces maneuver cost for picking wargoals during Diplomatic Play
+		country_infamy_generation_mult = -0.1
+		country_war_exhaustion_casualties_mult = -0.15
+		unit_supply_consumption_mult = -0.08
+		# new
+		unit_army_offense_mult = 0.05
+		unit_army_defense_mult = 0.1
+	}
+	leader_modifier = {
+		country_can_impose_same_lawgroup_army_model_in_power_bloc_bool = yes
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.15
-	}
-	member_modifier = {
-		# Modifiers from previous level(s)
-		country_initiator_war_goal_maneuver_cost_mult = -0.3
-		country_war_exhaustion_casualties_mult = -0.15
-	
-		# Countries forced to join diplomatic plays of members, other countries are not happy about this threat
-		country_join_power_bloc_member_in_plays_bool = yes
-		country_infamy_generation_mult = 0.15
 	}
 	
 	ai_weight = {
@@ -1695,7 +1891,7 @@ principle_sacred_civics_1 = {
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.05
 	}
-	
+
 	ai_weight = {
 		value = 200 # Religious PBs should tend towards picking the religious principles
 		
