@@ -38,7 +38,7 @@ mughal.1 = {
 			add_modifier = {
 				name = cvg_mughal_ducktape				#fix this
 				months = 120
-				decaying = yes
+				is_decaying = yes
 			}
 		}
 		custom_tooltip = {
