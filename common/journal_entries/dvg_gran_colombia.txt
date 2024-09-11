@@ -70,11 +70,59 @@ je_conquer_kuba_gran_colombia = {
 }
 
 je_veracruz_conference = {
-	icon = "gfx/interface/icons/event_icons/waving_flag"
-
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
 	group = je_group_internal_affairs
+	
+	immediate = {
+		set_variable = {
+			name = dvg_conservative_anger_var
+			value = 0
+		}
+	}
+	current_value = {
+		value = var:dvg_conservative_anger_var
+	}
 
-	complete = 
+	goal_add_value = {
+		value = 6
+	}
+
+	progressbar = yes
+	
+	complete = {
+		custom_tooltip = {
+			text = veracruz_conference_finished
+			has_variable = constitution_convention_finished
+		}
+		custom_tooltip = {
+			text = conservative_angered
+			this = { var:dvg_conservative_anger_var >= 6 }
+		}
+		
+	}
+	
+	fail = {
+		custom_tooltip = {
+			text = veracruz_conference_finished
+			has_variable = constitution_convention_finished
+		}
+		custom_tooltip = {
+			text = conservative_pleased
+			this = { var:dvg_conservative_anger_var < 6 }
+		}
+		
+	}
+	
+	on_complete = {
+		trigger_event = { id = dvg_gran_colombia.37 } #You make people too angry
+	}
+	
+	on_fail = {
+		trigger_event = { id = dvg_gran_colombia.36 } #You calm everyone down
+	}
+	weight = 100
+	should_be_pinned_by_default = yes
 }
 
 
