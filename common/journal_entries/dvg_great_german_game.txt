@@ -12,21 +12,47 @@
 	scripted_progress_bar = dvg_german_game_scandinavia_bar
 
 	complete = {
-		NOT = {
-			any_nation = {
-				OR = {
-					country_has_primary_culture = cu:north_german
-					country_has_primary_culture = cu:south_german
-					country_has_primary_culture = cu:rheinish
+		custom_tooltip = {
+			text = DVG_NO_GERMANS_LEFT_tt
+			OR = {
+				NOT = {
+					any_country = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+							country_has_primary_culture = cu:rheinish
+						}
+						country_rank < rank_value:major_power
+						is_subject = no
+						exists = yes
+					}
 				}
-				country_rank < rank_value:major_power
-				is_subject = yes
+				AND = {
+					c:BRG = THIS
+					global_var:BRG_progress_from_no_BOH_competition > 0
+					global_var:BRG_progress_from_no_SCA_competition > 0
+				}
+				AND = {
+					c:BOH = THIS
+					global_var:BOH_progress_from_no_BRG_competition > 0
+					global_var:BOH_progress_from_no_SCA_competition > 0
+				}
+				AND = {
+					c:SCA = THIS
+					global_var:SCA_progress_from_no_BRG_competition > 0
+					global_var:SCA_progress_from_no_BOH_competition > 0
+				}
 			}
 		}
 	}
 
 	on_complete = {
-
+		trigger_event = { id = dvg_ggg.11 }
+		add_modifier = {
+			name = dvg_ggg_won_modifier
+			years = 10
+			is_decaying = yes
+		}
 	}
 
 	scripted_button = dvg_german_game_burgundy_button
@@ -78,7 +104,7 @@
 	}
 	on_fail = {
 		add_modifier = {
-			name = dvg_ggg_gave_up_german_claims
+			name = dvg_ggg_gave_up_german_claims_modifier
 			years = 5
 		}
 		if = {

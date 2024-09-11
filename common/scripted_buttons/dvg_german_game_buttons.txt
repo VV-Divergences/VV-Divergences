@@ -136,7 +136,25 @@ dvg_german_game_give_up_button = {
 	}
 
 	possible = {
-		always = yes
+		hidden_trigger = {
+			OR = {
+				AND = {
+					c:BRG = THIS
+					NOT = { global_var:BOH_progress_from_no_BRG_competition > 0 }
+					NOT = { global_var:SCA_progress_from_no_BRG_competition > 0 }				
+									}
+				AND = {
+					c:BOH = THIS
+					NOT = { global_var:BRG_progress_from_no_BOH_competition > 0 }
+					NOT = { global_var:SCA_progress_from_no_BOH_competition > 0 }
+				}
+				AND = {
+					c:SCA = THIS
+					NOT = { global_var:BOH_progress_from_no_SCA_competition > 0 }
+					NOT = { global_var:BRG_progress_from_no_SCA_competition > 0 }
+				}
+			}
+		}
 	}
 
 	effect = {
@@ -144,6 +162,45 @@ dvg_german_game_give_up_button = {
 			text = dvg_ggg_give_up_tt_youwillfail
 			set_variable = {
 				name = dvg_gave_up_german_claims
+			}
+			if = {
+				limit = {
+					c:BRG ?= THIS
+				}
+				change_global_variable = {
+					name = BOH_progress_from_no_BRG_competition
+					add = 20
+				}
+				change_global_variable = {
+					name = SCA_progress_from_no_BRG_competition
+					add = 20
+				}
+			}
+			if = {
+				limit = {
+					c:BOH ?= THIS
+				}
+				change_global_variable = {
+					name = BRG_progress_from_no_BOH_competition
+					add = 20
+				}
+				change_global_variable = {
+					name = SCA_progress_from_no_BOH_competition
+					add = 20
+				}
+			}
+			if = {
+				limit = {
+					c:SCA ?= THIS
+				}
+				change_global_variable = {
+					name = BOH_progress_from_no_SCA_competition
+					add = 20
+				}
+				change_global_variable = {
+					name = BRG_progress_from_no_SCA_competition
+					add = 20
+				}
 			}
 		}
 	}

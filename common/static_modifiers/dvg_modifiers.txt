@@ -277,6 +277,7 @@ dvg_yasak = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	country_tax_income_add = 2000
 	state_conscription_rate_mult = -0.4
+	building_unincorporated_subsistence_output_mult = 0.10
 }
 
 dvg_conscription_law = {
@@ -740,8 +741,14 @@ dvg_left_great_german_game_modifier_brg = {
 	country_radicals_from_conquest_mult = -0.25
 }
 
-dvg_ggg_gave_up_german_claims = {
+dvg_ggg_gave_up_german_claims_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_prestige_add = -25
 }
+
+dvg_ggg_won_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_prestige_mult = 0.5
+}
+
 

@@ -174,7 +174,7 @@ principle_market_unification_1 = {
 
 	member_modifier = {
 		# Members get a bonus to company throughput
-		
+		country_company_throughput_bonus_add = 0.1
 	}
 	power_bloc_modifier = {
 		# Members cannot enable Embargos with each other
@@ -198,7 +198,7 @@ principle_market_unification_2 = {
 
 	member_modifier = {
 		# Modifiers from previous level(s)
-		
+		country_company_throughput_bonus_add = 0.1
 		# Members get increased tariffs from countries outside the Power Bloc and infrastructure
 		tariff_import_outside_power_bloc_mult = 0.2
 		tariff_export_outside_power_bloc_mult = 0.2
