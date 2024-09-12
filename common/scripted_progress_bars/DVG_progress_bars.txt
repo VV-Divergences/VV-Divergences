@@ -1,0 +1,118 @@
+﻿ ### For je_dvg_great_german_game
+#this adds the progress to the bar
+ dvg_german_game_burgundy_bar = {
+	name = "dvg_german_game_brg_bar"
+	desc = "dvg_german_game_brg_bar_desc"
+
+	default_bad = yes
+
+	weekly_progress = {
+		add = {
+			desc = "dvg_ggg_progress_from_prestige_share"
+			value = global_var:BRG_progress_from_german_prestige_share
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_infamy"
+			value = global_var:BRG_progress_from_infamy
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_influence"
+			value = global_var:BRG_progress_from_influence
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_legitimacy"
+			value = global_var:BRG_progress_from_legitimacy
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_BOH_opposition"
+			value = global_var:BRG_progress_from_no_BOH_competition
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_SCA_opposition"
+			value = global_var:BRG_progress_from_no_SCA_competition
+		}
+	}
+
+	start_value = 1
+	min_value = 0
+	max_value = 1000
+
+ }
+
+ dvg_german_game_bohemia_bar = {
+	name = "dvg_german_game_boh_bar"
+	desc = "dvg_german_game_boh_bar_desc"
+
+	default_green = yes
+
+	weekly_progress = {
+		add = {
+			desc = "dvg_ggg_progress_from_prestige_share"
+			value = global_var:BOH_progress_from_german_prestige_share
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_infamy"
+			value = global_var:BOH_progress_from_infamy
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_influence"
+			value = global_var:BOH_progress_from_influence
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_legitimacy"
+			value = global_var:BOH_progress_from_legitimacy
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_BRG_opposition"
+			value = global_var:BOH_progress_from_no_BRG_competition
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_SCA_opposition"
+			value = global_var:BOH_progress_from_no_SCA_competition
+		}
+	}
+
+	start_value = 1
+	min_value = 0
+	max_value = 1000
+
+ }
+
+ dvg_german_game_scandinavia_bar = {
+	name = "dvg_german_game_sca_bar"
+	desc = "dvg_german_game_sca_bar_desc"
+
+	default = yes
+
+	weekly_progress = {
+		add = {
+			desc = "dvg_ggg_progress_from_prestige_share"
+			value = global_var:SCA_progress_from_german_prestige_share
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_infamy"
+			value = global_var:SCA_progress_from_infamy
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_influence"
+			value = global_var:SCA_progress_from_influence
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_legitimacy"
+			value = global_var:SCA_progress_from_legitimacy
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_BRG_opposition"
+			value = global_var:SCA_progress_from_no_BRG_competition
+		}
+		add = {
+			desc = "dvg_ggg_progress_from_no_BOH_opposition"
+			value = global_var:SCA_progress_from_no_BOH_competition
+		}
+	}
+
+	start_value = 1
+	min_value = 0
+	max_value = 1000
+
+ }

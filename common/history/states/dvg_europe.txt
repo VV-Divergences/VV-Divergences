@@ -1443,17 +1443,13 @@
 		}
 		create_state = {
 			country = c:TRS
-			owned_provinces = { "xC85CD0" "xA0531B"  }
+			owned_provinces = { "xC85CD0" "xA0531B" "x69BAC7" "x359378" }
 		}
 		
 		add_homeland = cu:slovak
 		add_homeland = cu:hungarian
 	}
 	s:STATE_EAST_SLOVAKIA = { 
-		create_state = {
-			country = c:TRS
-			owned_provinces = { "xD0E061" "x69BAC7" "x359378"  }
-		}
 		create_state = {
 			country = c:MOL
 			owned_provinces = { "x35CE84" "x79D62E" "x56839F" "x7E6263" "xFFCCDA" "x31A0A0" }
@@ -1510,7 +1506,7 @@
 	s:STATE_NORTHERN_TRANSYLVANIA = {
 		create_state = {
 			country = c:TRS
-			owned_provinces = { "x3161A0" "x4884E0" "x6E6896" "x73F00B" "x896455" "x897F3D" "xA08763" "xA77BCB" "xAF609F" "xB06161" "xC63C51" "xD0E0A0" }
+			owned_provinces = { "x3161A0" "x4884E0" "x6E6896" "x73F00B" "x896455" "x897F3D" "xA08763" "xA77BCB" "xAF609F" "xB06161" "xC63C51" "xD0E0A0" "xD0E061" }
 		}
 		
 		add_homeland = cu:hungarian

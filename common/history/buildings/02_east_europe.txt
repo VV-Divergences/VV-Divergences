@@ -724,7 +724,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets"  }
+				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
 				building="building_paper_mills"
@@ -2473,7 +2473,7 @@ BUILDINGS={
 					building={
 						type="building_financial_district"
 						country="c:POL"
-						levels=1
+						levels=2
 						region="STATE_MAZOVIA"
 					}
 				}
@@ -3815,11 +3815,61 @@ BUILDINGS={
 	s:STATE_NORTHERN_TRANSYLVANIA = {
 		region_state:TRS = {
 			create_building={
-				building="building_government_administration"
+				building="building_arms_industry"
 				add_ownership={
 					country={
 						country="c:TRS"
 						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_iron_mine"
+						country="c:TRS"
+						levels=1
+						region="STATE_NORTHERN_TRANSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:TRS"
+						levels=1
+						region="STATE_NORTHERN_TRANSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:TRS"
+						levels=1
+						region="STATE_NORTHERN_TRANSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:TRS"
+						levels=4
 					}
 				}
 				reserves=1

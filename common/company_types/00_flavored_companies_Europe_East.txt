@@ -44,7 +44,7 @@ company_NovgorodSkola = {
 
 # Moskovskiy arsenal
 company_MuscovyGuns = {
-	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\NovgorodSkola.png" 
+	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\MuscovyGuns.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	building_types = {  

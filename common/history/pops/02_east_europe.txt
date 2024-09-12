@@ -88,7 +88,7 @@
 		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
-				size = 342339
+				size = 1342339
 			}
 			create_pop = {
 				culture = hungarian
@@ -116,7 +116,7 @@
 			}
 			create_pop = {
 				culture = hungarian
-				size = 320325
+				size = 120325
 				religion = protestant
 			}
 			create_pop = {
@@ -215,7 +215,7 @@
 			}
 			create_pop = {
 				culture = hungarian
-				size = 16778
+				size = 116778
 				religion = catholic
 			}
 			create_pop = {
@@ -403,7 +403,7 @@
 		region_state:TRS = {
 			create_pop = {
 				culture = hungarian
-				size = 95993
+				size = 395993
 			}
 			create_pop = {
 				culture = hungarian
@@ -412,7 +412,7 @@
 			}
 			create_pop = {
 				culture = romanian
-				size = 380079
+				size = 780079
 			}
 			create_pop = {
 				culture = south_german

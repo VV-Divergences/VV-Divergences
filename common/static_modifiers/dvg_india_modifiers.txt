@@ -1,0 +1,4 @@
+﻿cvg_mughal_ducktape = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_devout_pol_str_mult = 2
+}

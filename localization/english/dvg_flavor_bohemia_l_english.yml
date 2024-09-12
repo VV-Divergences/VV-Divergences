@@ -18,10 +18,10 @@
  boh_german_confederation_desc: "Bohemia is not yet lost. We may have failed to reunify the Holy Roman Empire, but we have retained our presence in the German world."
 
  #Events
- dvg_imperial_authority.1.t: "Imperial Authority"
- dvg_imperial_authority.1.d: "We have defeated the [SCOPE.sC('target_country').GetName] and demand Imperial territory under our control!"
- dvg_imperial_authority.1.f: ""[ROOT.GetCountry.GetRuler.GetFullNameWithTitle] has showed it's strength. The Empire is not yet dead!""
- dvg_imperial_authority.1.a: "Three hurray for [ROOT.GetCountry.GetName]"
+#  dvg_imperial_authority.1.t: "Imperial Authority"
+#  dvg_imperial_authority.1.d: "We have defeated the [SCOPE.sC('target_country').GetName] and demand Imperial territory under our control!"
+#  dvg_imperial_authority.1.f: ""[ROOT.GetCountry.GetRuler.GetFullNameWithTitle] has showed it's strength. The Empire is not yet dead!""
+#  dvg_imperial_authority.1.a: "Three hurray for [ROOT.GetCountry.GetName]"
  elbian_confederation.1.t: "The Elbian Confederation"
  elbian_confederation.1.d: "We have reached accomodation with the [SCOPE.sCulture('north_german_culture').GetName] people. After centuries of unbalanced rule, they will now play an equal role in the Elbian Confederation."
  elbian_confederation.1.d2: "The situation in Germany has reached a boiling point. If we do not give the [SCOPE.sCulture('north_german_culture').GetName] people an equal part in the [ROOT.GetCountry.GetAdjectiveNoFormatting] state, we risk open rebellion."

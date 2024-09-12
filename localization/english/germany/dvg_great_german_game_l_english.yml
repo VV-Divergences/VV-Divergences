@@ -1,0 +1,57 @@
+﻿l_english:
+ je_dvg_great_german_game: "The Great German Game"
+ je_dvg_great_german_game_reason: "The Great German War showed the lengths that our enemies would go to dominate the German kingdoms. Our rivals seek to pick off the German states one by one, unless we get to them first..."
+
+ dvg_german_game_burgundy_button_title:0 "Confederate German Neighbors"
+ dvg_german_game_burgundy_button_desc:0 "We must integrate our german neighbors to protect them and secure our borders with our rivals"
+ dvg_ggg_max_influence_brg:0 "Have 1000 influence"
+ dvg_german_game_bohemia_button_title:0 "Confederate German Neighbors"
+ dvg_german_game_bohemia_button_desc:0 "We must integrate our german neighbors to protect them and secure our borders with our rivals"
+ dvg_ggg_max_influence_boh:0 "Have 1000 influence"
+ dvg_german_game_scandinavia_button_title:0 "Confederate German Neighbors"
+ dvg_german_game_scandinavia_button_desc:0 "We must integrate our german neighbors to protect them and secure our borders with our rivals"
+ dvg_ggg_max_influence_sca:0 "Have 1000 influence"
+
+ DVG_NO_GERMANS_LEFT_tt:0 "Either no German minors remain or all other Major powers have given up their German claims"
+
+ dvg_german_game_give_up_button_title:0 "Give Up German Claims"
+ dvg_german_game_give_up_button_desc:0 "We can focus our efforts elsewhere"
+ dvg_ggg_give_up_tt_youwillfail:0 "You will exit the Great German Game, accelerating your rivals' domination over the remaining German states."
+ dvg_gave_up_german_claims_tt:0 "We give up our claims to German lands"
+
+ dvg_german_game_brg_bar: "Burgundian Influence"
+ dvg_german_game_brg_bar_desc: "Burgundian Influence"
+ dvg_german_game_boh_bar: "Bohemian Influence"
+ dvg_german_game_boh_bar_desc: "Bohemian Influence"
+ dvg_german_game_sca_bar: "Scandinavian Influence"
+ dvg_german_game_sca_bar_desc: "Scandinavian Influence"
+ dvg_ggg_progress_from_prestige_share:0 "Share of Total German Prestige in Our Bloc"
+ dvg_ggg_progress_from_infamy:0 "Low Infamy"
+ dvg_ggg_progress_from_influence:0 "High Influence"
+ dvg_ggg_progress_from_legitimacy:0 "High Legitimacy"
+ dvg_ggg_progress_from_no_BRG_opposition:0 "Burgundy Gave Up Claims"
+ dvg_ggg_progress_from_no_BOH_opposition:0 "Bohemia Gave Up Claims"
+ dvg_ggg_progress_from_no_SCA_opposition:0 "Scandinavia Gave Up Claims"
+
+ dvg_ggg.1.t:0 "Confederation With the Germans"
+ dvg_ggg.1.d:0 "The neighboring German state of [SCOPE.sCountry('dvg_ggg_integrated_german_nation').GetName] has agreed to confederate with us."
+ dvg_ggg.1.f:0 "With the stroke of a pen, the integration of [SCOPE.sCountry('dvg_ggg_integrated_german_nation').GetName] into our realm has been ratified. Though it has not gone unnoticed, our realm continues to swell as the German people flock to our nation."
+ dvg_ggg.1.a:0 "Excellent!"
+ dvg_ggg.11.t:0 "German Domination"
+ dvg_ggg.11.d:0 "[ROOT.GetCountry.GetName] has solidified control over the German states as their power grows"
+ dvg_ggg.11.f:0 "Our domination of the German region is now undisputed now that our rivals have bowed in acknowledgement of our authority. As a result, the german states within our sphere of influence have flocked to us, wishing to integrate themselves as an integral per of our territory."
+ dvg_ggg.11.a:0 "This is only the beginning."
+
+ dvg_ggg.2.t:0 "Pomerania and Mecklenburg Secede"
+ dvg_ggg.2.d:0 "The German states of Pomerania and Mecklenburg have seceded in response to our abandonment of our long-standing German foreign policy."
+ dvg_ggg.2.f:0 "Long have we stood by, and governed the German states of Mecklenburg and Pomerania through consent, and with that, in objection to our recent foreign policy reverse, they have declared their separation from our Union. While leaving is their right enshrined in law, their return by force is not explicitly precluded... "
+ dvg_ggg.2.a:0 "This is unfortunate."
+
+ dvg_great_german_game_modifier:0 "Soft Power Focus"
+ dvg_left_great_german_game_modifier_brg:0 "War, It Must be"
+ dvg_left_great_german_game_modifier_boh:0 "Bohemians Before Germans"
+ dvg_left_great_german_game_modifier_sca:0 "Riches Beyond Germany"
+ dvg_ggg_gave_up_german_claims_modifier:0 "Gave Up German Claims"
+ dvg_ggg_won_modifier:0 "Won the Great German Game"
+ 
+ 

@@ -4204,7 +4204,7 @@ romanian={
 
 hungarian={
 	color= hsv{ 0.25 0.22 0.99 }
-	religion = protestant
+	religion = catholic
 	traits = { hungarian_culture_group european_heritage }
 	male_common_first_names={
 		Alajos

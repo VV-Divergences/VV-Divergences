@@ -1700,7 +1700,7 @@ TRS = { #Transylvania
 	tier = principality
 	
 	cultures = { hungarian romanian }
-	capital = STATE_SOUTHERN_TRANSYLVANIA
+	capital = STATE_NORTHERN_TRANSYLVANIA
 }
 
 BOS = { #Bosnia/Illyria

@@ -10,7 +10,7 @@
 	}
 
     possible = {
-		has_technology_researched = pan-nationalism
+		has_technology_researched = nationalism
 
 		OR = {
 			has_law = law_type:law_multicultural

@@ -436,6 +436,9 @@
 
 	# Starting liberty desire
 		#Scandi bloc
+	c:VIN = {
+		add_liberty_desire = -20
+	}
 	c:SKR = {
 		add_liberty_desire = -20
 	}

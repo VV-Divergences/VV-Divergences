@@ -5,7 +5,6 @@ company_McGallagher = {
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
 	building_types = {  
-		building_iron_mine
 		building_coal_mine
 		building_steel_mills
 	}

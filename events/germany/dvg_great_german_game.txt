@@ -1,0 +1,177 @@
+﻿namespace = dvg_ggg
+
+#confederation
+dvg_ggg.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_ggg.1.t
+	desc = dvg_ggg.1.d
+	flavor = dvg_ggg.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					relations:ROOT >= relations_threshold:amicable
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:rheinish
+					}
+					is_in_same_power_bloc = ROOT
+					NOT = { c:BRG ?= THIS }
+					NOT = { c:BOH ?= THIS }
+					NOT = { c:SCA ?= THIS }
+					is_player = no
+				}
+			}
+			owner = {
+				save_scope_as = dvg_ggg_integrated_german_nation
+			}
+		}
+		
+	}
+
+	option = {
+		name = dvg_ggg.1.a
+		default_option = yes
+
+		annex_with_incorporation = scope:dvg_ggg_integrated_german_nation
+	}
+}
+#YOU WIN
+dvg_ggg.11 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_ggg.11.t
+	desc = dvg_ggg.11.d
+	flavor = dvg_ggg.11.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		
+		
+	}
+
+	option = {
+		name = dvg_ggg.11.a
+		default_option = yes
+
+		every_country = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:rheinish
+				}
+				is_in_same_power_bloc = ROOT
+				NOT = { c:BRG ?= THIS }
+				NOT = { c:BOH ?= THIS }
+				NOT = { c:SCA ?= THIS }
+				is_player = no
+			}
+			root = { annex_with_incorporation = prev }
+		}
+	}
+}
+
+#Pomerania and Mecklenburg Secede
+dvg_ggg.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = dvg_ggg.2.t
+	desc = dvg_ggg.2.d
+	flavor = dvg_ggg.2.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:POM }
+			}
+			create_country = { # POM
+				tag = POM
+				origin = this
+				state = s:STATE_POMERANIA.region_state:SCA
+				on_created = {
+					if = {
+						limit = {
+							NOT = {
+								has_law = law_type:law_presidential_republic
+							}
+						}
+						activate_law = law_type:law_presidential_republic
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { exists = c:MEC }
+			}
+			create_country = { # Mecklenberg
+				tag = MEC
+				origin = this
+				state = s:STATE_MECKLENBURG.region_state:SCA
+				on_created = {
+					if = {
+						limit = {
+							NOT = {
+								has_law = law_type:law_presidential_republic
+							}
+						}
+						activate_law = law_type:law_presidential_republic
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = dvg_ggg.2.a
+		default_option = yes
+
+	}
+}
