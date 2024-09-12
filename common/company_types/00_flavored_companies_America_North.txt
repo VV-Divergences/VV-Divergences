@@ -1,7 +1,7 @@
 
 # Administrateurs du Coton
 company_AdminCoton = {
-	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\AdminCoton.png" 
+	icon = "gfx/interface/icons/company_icons/company_icons/dvg_company_icons/AdminCoton.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
 	
 	building_types = {  
@@ -44,7 +44,7 @@ company_AdminCoton = {
 
 # Táng wàng zìrán zīyuán
 company_TangWang = {
-	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\TangWang.png" 
+	icon = "gfx/interface/icons/company_icons/company_icons/dvg_company_icons/TangWang.png" 
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_wheat.dds"
 	
 	building_types = {  
