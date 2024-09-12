@@ -1842,11 +1842,13 @@ dvg_amazonie.22 = {
 	duration = 3
 
 	trigger = {
+		NOT = { has_variable = meeting_in_port_sucre }
 	    has_variable = equinoxea_var
 		this = { var:equinoxea_var >= 30 }
 		NOT = {exists = c:GOU }
 	}
 	immediate = {
+	set_variable = meeting_in_port_sucre
 	c:EQX = { save_scope_as = scope_EQX }
 	c:ATL = { save_scope_as = scope_ATL }
 	c:AMA = {
@@ -1901,6 +1903,7 @@ dvg_amazonie.23 = {
 	trigger = {
 		has_variable = equinoxea_var
 		has_journal_entry = je_equinoxea_insurgency
+		NOT = { has_variable = gouas_oath }
 		NOT = {has_law = law_type:law_oligarchy}
 		OR = {
 			this = { var:equinoxea_var >= 25 }
@@ -1912,6 +1915,8 @@ dvg_amazonie.23 = {
 		NOT = {exists = c:GOU }
 	}
 	immediate = {
+	set_variable = gouas_oath
+	
 	c:EQX = { save_scope_as = scope_EQX }
 	c:ATL = { save_scope_as = scope_ATL }
 	c:AMA = {

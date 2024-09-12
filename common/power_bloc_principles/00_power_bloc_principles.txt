@@ -178,7 +178,7 @@ principle_market_unification_1 = {
 	}
 	power_bloc_modifier = {
 		# Members cannot enable Embargos with each other
-		power_bloc_customs_union_bool = yes
+		power_bloc_customs_union_bool = yes	#dvg
 		power_bloc_mandate_progress_mult = -0.05
 	}
 	

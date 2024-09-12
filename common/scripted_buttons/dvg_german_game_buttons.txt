@@ -32,12 +32,22 @@
 	effect = {
 		trigger_event = { id = dvg_ggg.1 }
 		je:je_dvg_great_german_game = {
-			add_progress = { value = -1000 name = dvg_german_game_burgundy_bar }
+			set_bar_progress = { value = 0 name = dvg_german_game_burgundy_bar }
+		}
+		c:BOH = {
+			je:je_dvg_great_german_game = {
+				set_bar_progress = { value = 0 name = dvg_german_game_burgundy_bar }
+			}
+		}
+		c:SCA = {
+			je:je_dvg_great_german_game = {
+				set_bar_progress = { value = 0 name = dvg_german_game_burgundy_bar }
+			}
 		}
 	}
 
 	ai_chance = {
-		base = 1
+		base = 10000
 	}
 }
 
@@ -75,12 +85,22 @@ dvg_german_game_bohemia_button = {
 	effect = {
 		trigger_event = { id = dvg_ggg.1 }
 		je:je_dvg_great_german_game = {
-			add_progress = { value = -1000 name = dvg_german_game_bohemia_bar }
+			set_bar_progress = { value = 0 name = dvg_german_game_bohemia_bar }
+		}
+		c:BRG = {
+			je:je_dvg_great_german_game = {
+				set_bar_progress = { value = 0 name = dvg_german_game_bohemia_bar }
+			}
+		}
+		c:SCA = {
+			je:je_dvg_great_german_game = {
+				set_bar_progress = { value = 0 name = dvg_german_game_bohemia_bar }
+			}
 		}
 	}
 
 	ai_chance = {
-		base = 1
+		base = 10000
 	}
 }
 
@@ -101,29 +121,39 @@ dvg_german_game_scandinavia_button = {
 			}
 		}
 		any_neighbouring_state = {	#must have valid target
-				owner = {
-					relations:ROOT >= relations_threshold:amicable
-					OR = {
-						country_has_primary_culture = cu:north_german
-						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish
-					}
-					is_in_same_power_bloc = ROOT
-					NOT = { country_rank >= rank_value:major_power }
-					is_player = no
+			owner = {
+				relations:ROOT >= relations_threshold:amicable
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:rheinish
 				}
+				is_in_same_power_bloc = ROOT
+				NOT = { country_rank >= rank_value:major_power }
+				is_player = no
 			}
+		}
 	}
 
 	effect = {
 		trigger_event = { id = dvg_ggg.1 }
 		je:je_dvg_great_german_game = {
-			add_progress = { value = -1000 name = dvg_german_game_scandinavia_bar }
+			set_bar_progress = { value = 0 name = dvg_german_game_scandinavia_bar }
+		}
+		c:BOH = {
+			je:je_dvg_great_german_game = {
+				set_bar_progress = { value = 0 name = dvg_german_game_scandinavia_bar }
+			}
+		}
+		c:SCA = {
+			je:je_dvg_great_german_game = {
+				set_bar_progress = { value = 0 name = dvg_german_game_scandinavia_bar }
+			}
 		}
 	}
 
 	ai_chance = {
-		base = 1
+		base = 10000
 	}
 }
 
@@ -203,6 +233,10 @@ dvg_german_game_give_up_button = {
 				}
 			}
 		}
+	}
+
+	ai_chance = {
+		base = 0
 	}
 }
 
