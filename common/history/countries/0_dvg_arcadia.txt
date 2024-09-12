@@ -1,56 +1,4 @@
 ﻿COUNTRIES = {
-	#EXAMPLE
-	#c:DUA = {
-	#	set_next_election_date = yyyy.m.d #If wanted
-	#	
-	#	effect_starting_technology_tier_#_tech = yes #1 highest, 7 lowest
-	#	add_technology_researched = techkey #any extra tech beyond the tier
-	#	
-	#	set_tax_level = very_low/low/medium/high/very_high #default medium
-	#	
-	#	add_taxed_goods = g:tradegoodkey #if wanted
-	#	add_discouraged_goods = g:tradegoodkey #if wanted
-	#	
-	#	set_market_capital = STATE_KEY #defaults to capital state
-	#	
-	#	#Default laws are laws at top of each law screen
-	#	effect_starting_politics_liberal/conservative/reactionary/traditional #if wanted for base set of laws
-	#	activate_law = law_type:law_key #for custom law setups or to change from base law scripted effect, suggest keep in order
-	#	
-	#	set_institution_investment_level = { #default institution level is 1 if appropriate law is active
-	#		institution = institution_key
-	#		level = 1-5
-	#	}
-	#	
-	#	set_ruling_interest_groups = { #set country's ruling interest group(s), preferred
-	#		ig_key
-	#		ig_key
-	#		ig_key
-	#	}
-	#	
-	#	ig:ig_key = { #optional
-	#		add_ruling_interest_group = yes #alternate way to set ruling interest groups
-	#		set_interest_group_name = ig_name_key #if want different name from default
-	#		remove_ideology = ideology_key #remove ig's base ideology
-	#		add_ideology = ideology_key #add alternate ideology
-	#		set_ig_bolstering = yes #optional
-	#		set_ig_suppression = yes #optional
-	#	}
-	#	
-	#	add_journal_entry = { type = je_key } #for any starting special journal entries
-	#	
-	#	trigger_event = { #for any starting events
-	#		id = event_key
-	#	}
-	#	
-	#	add_modifier = { #for any starting modifiers, suggest starting event with modifiers in tooltip to let players know
-	#		name = modifier_key
-	#		duration = -1 #in days -1 is permanent
-	#	}
-	#	
-	#	#any other starting effects
-	#}
-	
 	c:CNF = { #Belgium
 		effect_starting_technology_tier_1_tech = yes
 		
@@ -103,113 +51,6 @@
         ig:ig_landowners = {
             set_interest_group_name = ig_planteurs
         }
-		
-		#add_modifier = {
-        #    name = neutrality
-        #    months = 24
-        #}
-	}
-	c:CPH = { #Philippine
-		effect_starting_technology_tier_1_tech = yes
-		
-		effect_starting_politics_liberal = yes
-		activate_law = law_type:law_parliamentary_republic
-		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_no_police
-		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_tenant_farmers
-
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_evangelical_church
-		}
-	}
-	c:CCA = { #Caroline
-		effect_starting_technology_tier_1_tech = yes
-		
-		effect_starting_politics_liberal = yes
-		activate_law = law_type:law_parliamentary_republic
-		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_no_police
-		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_tenant_farmers
-
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_evangelical_church
-		}
-	}
-	c:CFS = { #Flandre Superier
-		effect_starting_technology_tier_1_tech = yes
-		
-		effect_starting_politics_liberal = yes
-		activate_law = law_type:law_parliamentary_republic
-		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_no_police
-		activate_law = law_type:law_legacy_slavery
-		activate_law = law_type:law_tenant_farmers
-
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_evangelical_church
-		}
-	}
-	c:CHV = { #Haute Valoise
-		effect_starting_technology_tier_1_tech = yes
-		
-		effect_starting_politics_liberal = yes
-		activate_law = law_type:law_parliamentary_republic
-		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_no_police
-		activate_law = law_type:law_slave_trade
-		activate_law = law_type:law_tenant_farmers
-
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_evangelical_church
-		}
-	}
-	c:CNL = { #Nouvelle Loraine
-		effect_starting_technology_tier_1_tech = yes
-		
-		effect_starting_politics_liberal = yes
-		activate_law = law_type:law_parliamentary_republic
-		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_no_police
-		activate_law = law_type:law_slave_trade
-		activate_law = law_type:law_tenant_farmers
-
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_evangelical_church
-		}
-	}
-	c:CBV = { #Base Valoise
-		effect_starting_technology_tier_1_tech = yes
-		
-		effect_starting_politics_liberal = yes
-		activate_law = law_type:law_parliamentary_republic
-		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_no_police
-		activate_law = law_type:law_slave_trade
-		activate_law = law_type:law_tenant_farmers
-
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_evangelical_church
-		}
 	}
 	
 	c:VIN = { #Vinland
@@ -268,36 +109,6 @@
 		
 		set_ruling_interest_groups = {
 			ig_armed_forces
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_evangelical_church
-		}
-		
-	}
-	
-	c:MSG = { #Masgirland THIS COUNTRY WAS REMOVED BY MATTY
-		effect_starting_technology_tier_2_tech = yes
-		
-		activate_law = law_type:law_presidential_republic
-		activate_law = law_type:law_census_voting
-		activate_law = law_type:law_racial_segregation
-		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_professional_army
-		activate_law = law_type:law_interventionism
-		activate_law = law_type:law_per_capita_based_taxation
-		activate_law = law_type:law_public_schools
-		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_women_own_property
-		activate_law = law_type:law_homesteading
-		
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 2
-		}
-		
-		set_ruling_interest_groups = {
-			ig_devout
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
@@ -447,13 +258,8 @@
 			name = qin_federal_sys
 			months = -1 
 		}
-		#add_modifier = {
-		#	name = dvg_qingqiu_leagues
-		#	months = -1 
-		#}
 		
 		add_journal_entry = { type = je_qingqiu_migration }
-		#add_journal_entry = { type = je_qingqiu_the_matter_of_the_leages }
 	}
 	
 	c:RHN = { #Rohnnst
@@ -536,27 +342,6 @@
 		}
 		
 	}
-	
-	# Doesnt exist on game start?
-	#c:KKN = { #Kita Kaigan
-	#	effect_starting_technology_tier_3_tech = yes
-	#	
-	#	activate_law = law_type:law_presidential_republic
-	#	activate_law = law_type:law_landed_voting
-	#	activate_law = law_type:law_national_supremacy
-	#	activate_law = law_type:law_interventionism
-	#	activate_law = law_type:law_per_capita_based_taxation
-	#	activate_law = law_type:law_censorship
-	#	
-	#	set_ruling_interest_groups = {
-	#		ig_landowners
-	#	}
-	#	ig:ig_devout = {
-	#		set_interest_group_name = ig_shinto_monks
-	#		remove_ideology = ideology_moralist
-	#		add_ideology = ideology_shinto_moralist
-	#	}
-	#}
 	
 
 	c:ATH = { #Athesia
@@ -653,13 +438,6 @@
 		effect_starting_politics_traditional = yes
 	}
 	
-	#Doesnt exist at game start?
-	#c:PWN = { #Pawnee
-	#	effect_starting_technology_tier_6_tech = yes
-	#	effect_native_conscription_10 = yes
-	#	effect_starting_politics_traditional = yes
-	#}
-	
 	c:MIS = { #Missouria
 		effect_starting_technology_tier_6_tech = yes
 		effect_native_conscription_10 = yes
@@ -678,13 +456,6 @@
 		effect_starting_politics_traditional = yes
 	}
 	
-	#Doesnt exist at game start?
-	#c:DKT = { #Dakota
-	#	effect_starting_technology_tier_6_tech = yes
-	#	effect_native_conscription_10 = yes
-	#	effect_starting_politics_traditional = yes
-	#}
-	
 	c:LKT = { #Lakota
 		effect_starting_technology_tier_6_tech = yes
 		effect_native_conscription_10 = yes
@@ -702,18 +473,4 @@
 		effect_native_conscription_10 = yes
 		effect_starting_politics_traditional = yes
 	}
-	
-	#Dosnt exist at game start?
-	#c:ABS = { #Absaroka
-	#	effect_starting_technology_tier_6_tech = yes
-	#	effect_native_conscription_10 = yes
-	#	effect_starting_politics_traditional = yes
-	#}
-	
-	#Doesnt exist at game start?
-	#c:BLF = { #Niitsitapi
-	#	effect_starting_technology_tier_6_tech = yes
-	#	effect_native_conscription_10 = yes
-	#	effect_starting_politics_traditional = yes
-	#}
 }
