@@ -2,6 +2,7 @@
   "name": "Convergences - A VV MP Mod",
   "id": "Divergences",
   "version": "0.1.1",
+  "picture": "thumbnail.png",
   "supported_game_version": "1.7.*",
   "short_description": "Convergences",
   "tags": ["Alternative History", "Total Conversion" ],
