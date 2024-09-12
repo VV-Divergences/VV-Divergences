@@ -769,8 +769,10 @@ dvg_gran_colombia.16 = {
 	option = {
 		name = dvg_gran_colombia.16.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.17 days = 5 }
+		add_radicals = {
+			value = 0.1
+		}
+		trigger_event = { id = dvg_gran_colombia.17 days = 14 }
 		
 		ai_chance = {
 			base = 1
@@ -803,8 +805,10 @@ dvg_gran_colombia.17 = {
 	option = {
 		name = dvg_gran_colombia.17.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.18 days = 5 }
+		add_radicals = {
+			value = 0.05
+		}
+		trigger_event = { id = dvg_gran_colombia.18 days = 14 }
 		
 		ai_chance = {
 			base = 1
@@ -868,8 +872,6 @@ dvg_gran_colombia.18 = {
 						culture = cu:lusitanian
 					}
 					activate_law = law_type:law_frontier_colonization
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -895,8 +897,6 @@ dvg_gran_colombia.18 = {
 						culture = cu:lusitanian
 					}
 					activate_law = law_type:law_frontier_colonization
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -922,8 +922,6 @@ dvg_gran_colombia.18 = {
 						culture = cu:lusitanian
 					}
 					activate_law = law_type:law_frontier_colonization
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -949,8 +947,6 @@ dvg_gran_colombia.18 = {
 						culture = cu:lusitanian
 					}
 					activate_law = law_type:law_frontier_colonization
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -980,8 +976,6 @@ dvg_gran_colombia.18 = {
 						culture = cu:lusitanian
 					}
 					activate_law = law_type:law_frontier_colonization
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -1736,6 +1730,9 @@ dvg_gran_colombia.27 = {
 		name = dvg_gran_colombia.27.a
 		default_option = yes
 		trigger_event = { id = dvg_gran_colombia.28 days = 30 }
+		add_loyalists = {
+			value = 0.01
+		}
 		
 		ai_chance = {
 			base = 1
@@ -1769,6 +1766,9 @@ dvg_gran_colombia.28 = {
 		default_option = yes
 		
 		trigger_event = { id = dvg_gran_colombia.29 days = 30 }
+		add_radicals = {
+			value = 0.03
+		}
 		
 		ai_chance = {
 			base = 1
@@ -1802,6 +1802,14 @@ dvg_gran_colombia.29 = {
 		default_option = yes
 		
 		trigger_event = { id = dvg_gran_colombia.30 days = 180 }
+		add_loyalists = {
+			pop_type = academics
+			value = medium_radicals
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = medium_radicals
+		}
 		
 		ai_chance = {
 			base = 1
@@ -1875,7 +1883,14 @@ dvg_gran_colombia.31 = {
 		}
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_freedom_of_conscience
-		
+		add_radicals = {
+			pop_type = aristocrats
+			value = large_radicals
+		}
+		add_loyalists = {
+			pop_type = academics
+			value = medium_radicals
+		}
 		trigger_event = { id = dvg_gran_colombia.32 days = 60 }
 		
 		ai_chance = {
@@ -1892,7 +1907,10 @@ dvg_gran_colombia.31 = {
 		}
 		activate_law = law_type:law_private_schools
 		activate_law = law_type:law_freedom_of_conscience
-		
+		add_radicals = {
+			pop_type = aristocrats
+			value = medium_radicals
+		}
 		trigger_event = { id = dvg_gran_colombia.32 days = 60 }
 		
 		ai_chance = {
@@ -1939,7 +1957,14 @@ dvg_gran_colombia.32 = {
 			add = 2
 		}
 		activate_law = law_type:law_slavery_banned
-		
+		add_radicals = {
+			pop_type = aristocrats
+			value = 0.25
+		}
+		add_loyalists = {
+			pop_type = academics
+			value = large_radicals
+		}
 		trigger_event = { id = dvg_gran_colombia.33 days = 60 }
 		
 		ai_chance = {
@@ -1955,7 +1980,14 @@ dvg_gran_colombia.32 = {
 			add = 1
 		}
 		activate_law = law_type:law_debt_slavery
-		
+		add_radicals = {
+			pop_type = aristocrats
+			value = medium_radicals
+		}
+		add_radicals = {
+			pop_type = academics
+			value = small_radicals
+		}
 		trigger_event = { id = dvg_gran_colombia.33 days = 60 }
 		
 		ai_chance = {
@@ -2025,6 +2057,14 @@ dvg_gran_colombia.33 = {
 			activate_law = law_type:law_racial_segregation
 			activate_law = law_type:law_no_migration_controls
 		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = large_radicals
+		}
+		add_radicals = {
+			pop_type = academics
+			value = medium_radicals
+		}
 		trigger_event = { id = dvg_gran_colombia.34 days = 60 }
 		
 		ai_chance = {
@@ -2061,6 +2101,10 @@ dvg_gran_colombia.33 = {
 				}
 			}
 			activate_law = law_type:law_no_migration_controls
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = medium_radicals
 		}
 		trigger_event = { id = dvg_gran_colombia.34 days = 60 }
 		
@@ -2111,6 +2155,14 @@ dvg_gran_colombia.34 = {
 				name = dvg_native_assimilation
 				days = 3650
 			}
+		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = large_radicals
+		}
+		add_loyalists = {
+			pop_type = academics
+			value = medium_radicals
 		}
 		trigger_event = { id = dvg_gran_colombia.35 days = 60 }
 		
@@ -2192,6 +2244,10 @@ dvg_gran_colombia.34 = {
 				days = 3650
 			}
 		}
+		add_radicals = {
+			pop_type = aristocrats
+			value = medium_radicals
+		}
 		trigger_event = { id = dvg_gran_colombia.35 days = 60 }
 		
 		ai_chance = {
@@ -2239,6 +2295,14 @@ dvg_gran_colombia.35 = {
 		}
 		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_national_guard
+		add_radicals = {
+			pop_type = aristocrats
+			value = medium_radicals
+		}
+		add_loyalists = {
+			pop_type = academics
+			value = small_radicals
+		}
 		set_variable = constitution_convention_finished
 		ai_chance = {
 			base = 33
@@ -2253,6 +2317,10 @@ dvg_gran_colombia.35 = {
 			add = 1
 		}
 		activate_law = law_type:law_national_guard
+		add_radicals = {
+			pop_type = aristocrats
+			value = small_radicals
+		}
 		set_variable = constitution_convention_finished
 		ai_chance = {
 			base = 33
@@ -2287,24 +2355,44 @@ dvg_gran_colombia.36 = {
 
 	duration = 3
 
-	immediate = {
-		every_scope_character = {
-			limit = { has_variable = is_peixoto }
-			save_scope_as = scope_peixoto
-		}
-		every_scope_character = {
-			limit = { has_variable = is_de_marquez }
-			save_scope_as = scope_de_marquez
-		}
-		every_scope_character = {
-			limit = { has_variable = is_castro }
-			save_scope_as = scope_castro
-		}
-		every_scope_character = {
-			limit = { has_variable = is_santander }
-			save_scope_as = scope_santander
+	hidden_effect = {
+		immediate = {
+			every_scope_character = {
+				limit = { has_variable = is_peixoto }
+				save_scope_as = scope_peixoto
+			}
+			every_scope_character = {
+				limit = { has_variable = is_de_marquez }
+				save_scope_as = scope_de_marquez
+			}
+			every_scope_character = {
+				limit = { has_variable = is_castro }
+				save_scope_as = scope_castro
+			}
+			every_scope_character = {
+				limit = { has_variable = is_santander }
+				save_scope_as = scope_santander
+			}
+
+			scope:scope_de_marquez = {
+				set_character_immortal = no
+			}
+			scope:scope_castro = {
+				set_character_immortal = no
+			}
+			scope:scope_santander = {
+				set_character_immortal = no
+			}
+			scope:scope_peixoto = {
+				set_character_immortal = no
+			}
+			set_global_variable = {
+				name = vicente_colombian_republic
+				value = 0
+			}
 		}
 	}
+
 	trigger = {
 	}
 	
@@ -2313,25 +2401,11 @@ dvg_gran_colombia.36 = {
 		default_option = yes
 		
 		activate_law = law_type:law_census_voting
-		
+		add_loyalists = {
+			value = 0.10
+		}
 		ruler = {
 			set_as_interest_group_leader = yes
-		}
-		scope:scope_de_marquez = {
-			set_character_immortal = no
-		}
-		scope:scope_castro = {
-			set_character_immortal = no
-		}
-		scope:scope_santander = {
-			set_character_immortal = no
-		}
-		scope:scope_peixoto = {
-			set_character_immortal = no
-		}
-		set_global_variable = {
-			name = vicente_colombian_republic
-			value = 0
 		}
 		ai_chance = {
 			base = 1
@@ -2363,8 +2437,10 @@ dvg_gran_colombia.37 = {
 	option = {
 		name = dvg_gran_colombia.37.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.38 days = 7 }
+		add_radicals = {
+			value = 0.15
+		}
+		trigger_event = { id = dvg_gran_colombia.38 days = 30 }
 		
 		ai_chance = {
 			base = 1
@@ -2397,7 +2473,7 @@ dvg_gran_colombia.38 = {
 		name = dvg_gran_colombia.38.a
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.39 days = 5 }
+		trigger_event = { id = dvg_gran_colombia.39 days = 14 }
 		
 		ai_chance = {
 			base = 0.5
@@ -2407,7 +2483,7 @@ dvg_gran_colombia.38 = {
 		name = dvg_gran_colombia.38.b
 		default_option = yes
 		
-		trigger_event = { id = dvg_gran_colombia.48 days = 7 }
+		trigger_event = { id = dvg_gran_colombia.48 days = 14 }
 		
 		ai_chance = {
 			base = 0.5
@@ -3282,8 +3358,10 @@ dvg_gran_colombia.48 = {
 	option = {
 		name = dvg_gran_colombia.48.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.49 days = 7 }
+		add_radicals = {
+			value = 0.1
+		}
+		trigger_event = { id = dvg_gran_colombia.49 days = 30 }
 		set_variable = santander_junta
 		
 		ai_chance = {
@@ -3316,8 +3394,10 @@ dvg_gran_colombia.49 = {
 	option = {
 		name = dvg_gran_colombia.49.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.50 days = 7 }
+		add_radicals = {
+			value = 0.1
+		}
+		trigger_event = { id = dvg_gran_colombia.50 days = 30 }
 		
 		ai_chance = {
 			base = 1
@@ -3349,8 +3429,10 @@ dvg_gran_colombia.50 = {
 	option = {
 		name = dvg_gran_colombia.50.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.51 days = 7 }
+		add_radicals = {
+			value = 0.1
+		}
+		trigger_event = { id = dvg_gran_colombia.51 days = 14 }
 		
 		ai_chance = {
 			base = 1
@@ -3382,8 +3464,10 @@ dvg_gran_colombia.51 = {
 	option = {
 		name = dvg_gran_colombia.51.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.52 days = 7 }
+		add_radicals = {
+			value = 0.05
+		}
+		trigger_event = { id = dvg_gran_colombia.52 days = 30 }
 		
 		ai_chance = {
 			base = 1
@@ -3447,8 +3531,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:lusitanian
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3473,8 +3555,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:lusitanian
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3499,8 +3579,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:lusitanian
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3525,8 +3603,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:lusitanian
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3555,8 +3631,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:lusitanian
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3586,8 +3660,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:lusitanian
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3616,8 +3688,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:lusitanian
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3648,8 +3718,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:lusitanian
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3676,8 +3744,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:central_american
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3697,8 +3763,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:caribeno
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3726,8 +3790,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:granadan
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3752,8 +3814,6 @@ dvg_gran_colombia.52 = {
 						value = 0.35
 						culture = cu:caladeran
 					}
-					warlord_setup_effect = yes
-					set_variable = warlord_state
 				}
 			}
 		}
@@ -3777,7 +3837,10 @@ dvg_gran_colombia.52 = {
 		default_option = yes
 		
 		change_tag = MEX
-		trigger_event = { id = dvg_gran_colombia.53 days = 7 }
+		add_radicals = {
+			value = 0.25
+		}
+		trigger_event = { id = dvg_gran_colombia.53 days = 30 }
 		set_variable = dvg_santander_mexico
 		
 		hidden_effect = {
@@ -3847,8 +3910,10 @@ dvg_gran_colombia.53 = {
 	option = {
 		name = dvg_gran_colombia.53.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.54 days = 7 }
+		add_radicals = {
+			value = 0.1
+		}
+		trigger_event = { id = dvg_gran_colombia.54 days = 30 }
 		
 		ai_chance = {
 			base = 1
@@ -3947,8 +4012,10 @@ dvg_gran_colombia.54 = {
 	option = {
 		name = dvg_gran_colombia.54.a
 		default_option = yes
-		
-		trigger_event = { id = dvg_gran_colombia.55 days = 7 }
+		add_radicals = {
+			value = 0.05
+		}
+		trigger_event = { id = dvg_gran_colombia.55 days = 14 }
 		
 		ai_chance = {
 			base = 1
@@ -4519,7 +4586,9 @@ dvg_gran_colombia.66 = {
 	option = {
 		name = dvg_gran_colombia.66.a
 		default_option = yes
-		
+		add_loyalists = {
+			value = 0.33
+		}
 		ai_chance = {
 			base = 1
 		}

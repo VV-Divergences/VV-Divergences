@@ -9,7 +9,6 @@
 			is_at_war = no
 			NOT = { has_modifier = dvg_war_preparation }
 		}
-		c:SPA = { has_truce_with = c:GCO }
 	}
 	
 	fail = {
@@ -18,7 +17,6 @@
 			is_at_war = no
 			NOT = { has_modifier = dvg_war_preparation }
 		}
-		c:SPA = { has_truce_with = c:GCO }
 	}
 
     on_complete = {
