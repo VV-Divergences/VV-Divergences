@@ -740,17 +740,6 @@ BUILDINGS={
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SHU"
-						levels=20
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
@@ -888,17 +877,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SHU"
-						levels=20
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_silk_plantation"
 				add_ownership={
 					country={
@@ -990,17 +968,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SHU"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -1063,17 +1030,6 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SHU"
-						levels=20
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
 	}
 	s:STATE_NORTHERN_ANHUI = {
@@ -1114,17 +1070,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SHU"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1233,17 +1178,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SHU"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1426,17 +1360,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:NAN"
-						levels=30
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -1535,17 +1458,6 @@ BUILDINGS={
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:NAN"
-						levels=30
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
-			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					building = {
@@ -1636,17 +1548,6 @@ BUILDINGS={
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" }
 			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:NAN"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
-			}
 		}
 	}
 	s:STATE_ZHEJIANG = {
@@ -1726,17 +1627,6 @@ BUILDINGS={
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:NAN"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" }
 			}
 			create_building={
 				building="building_silk_plantation"

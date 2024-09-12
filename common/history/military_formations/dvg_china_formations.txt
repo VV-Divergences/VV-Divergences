@@ -61,7 +61,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SUZHOU
-				count = 26
+				count = 25
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
@@ -76,17 +76,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_NANJING
-				count = 10
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SOUTHERN_ANHUI
-				count = 25
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SOUTHERN_ANHUI
-				count = 4
+				count = 24
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
@@ -96,12 +91,22 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_ZHEJIANG
-				count = 4
+				count = 8
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_ZHEJIANG
-				count = 1
+				count = 6
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZHEJIANG
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ZHEJIANG
+				count = 4
 			}
 			save_scope_as = dvg_nan_main_army
 		}
@@ -187,29 +192,34 @@
 			name = "Beiyang Clique"  
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_BEIJING
-				count = 15
+				count = 23
 			}
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_SHANXI
-				count = 10
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_HENAN
+				count = 25
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_BEIJING
-				count = 5
+				count = 2
 			}
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_ZHILI
-				count = 15
+				count = 23
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_ZHILI
-				count = 5
+				count = 2
 			}
 			
 			save_scope_as = dvg_shu_main_army
@@ -220,14 +230,14 @@
 			name = "Shandong Clique"  
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_SHANDONG
-				count = 6
+				count = 23
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_SHANDONG
-				count = 4
+				count = 2
 			}
 			
 			
@@ -239,14 +249,14 @@
 			name = "Jiangsu Clique"  
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_JIANGSU
-				count = 12
+				count = 24
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_NORTHERN_ANHUI
-				count = 12
+				count = 17
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
@@ -256,13 +266,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_JIANGSU
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_JIANGSU
-				count = 4
+				count = 1
 			}
 			
 			
