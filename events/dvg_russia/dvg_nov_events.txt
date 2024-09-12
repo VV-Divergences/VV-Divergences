@@ -78,10 +78,10 @@ dvg_nov.2 = {
 
 	immediate = {
 		set_variable = nov_complete
-		# remove_modifier = neutrality
-		# remove_modifier = dvg_unstable_confederation
-		# remove_modifier = outmoded_bureaucracy
-		# remove_modifier = dvg_yasak
+		remove_modifier = neutrality
+		remove_modifier = dvg_unstable_confederation
+		remove_modifier = outmoded_bureaucracy
+		remove_modifier = dvg_yasak
 	}
 
 	option = {
