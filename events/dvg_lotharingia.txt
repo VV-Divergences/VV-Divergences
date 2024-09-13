@@ -396,6 +396,7 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 		exists = c:LOT
 		this = c:LOT
 		NOT = { has_global_variable = lotharingia_shatters }
+		NOT = { is_subject = yes }
 	}
 
 	immediate = {
