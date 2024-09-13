@@ -75,7 +75,7 @@ je_anism = {
 
 	is_shown_when_inactive = {
 		exists = c:BRG
-		c:BRG = ROOT
+		c:BRG ?= ROOT
 		any_scope_character = {
 			has_variable = jean_var
 		}
@@ -117,9 +117,7 @@ je_anism = {
 	complete = {
 		OR = {
 			scope:journal_entry = { is_goal_complete = yes }
-			var:dvg_je_an_var = {
-				value >= 10
-			}
+			var:dvg_je_an_var >= 10
 		}
 		has_global_variable = jean_coup
 
@@ -148,11 +146,8 @@ je_anism = {
 				has_law = law_type:law_monarchy
 			}
 			AND = {
-				var:dvg_je_an_var = {
-					value <= 2
-				}
+				var:dvg_je_an_var <= 2
 				has_global_variable = jean_coup
-
 			}
 			
 
@@ -199,9 +194,6 @@ je_anism = {
 				set_variable = happy_landowners
 			}
 			if = {
-				NOT = {
-					
-				}
 				limit = {
 					ig:ig_landowners = {
 							is_powerful = no
@@ -237,9 +229,6 @@ je_anism = {
 				set_variable = happy_bougie
 			}
 			if = {
-				NOT = {
-					
-				}
 				limit = {
 					ig:ig_petty_bourgeoisie = {
 							is_marginal = yes
@@ -304,12 +293,8 @@ je_anism = {
 					}
 					year >= 1853
 					OR = {
-						var:dvg_je_an_var = {
-							value >= 10
-						}
-						var:dvg_je_an_var = {
-							value <= 0
-						}
+						var:dvg_je_an_var >= 10
+						var:dvg_je_an_var <= 0
 						any_interest_group = {
 							is_marginal = no
 							is_insurrectionary = yes
@@ -339,9 +324,6 @@ je_anism = {
 				set_variable = angry_intelligentsia
 			}
 			if = {
-				NOT = {
-					
-				}
 				limit = {
 					OR = {
 						ig:ig_intelligentsia = {
@@ -938,20 +920,19 @@ je_unify_brg = {
 	is_shown_when_inactive = {
 		exists = c:BRG
 		exists = c:PBG
-		c:BRG = ROOT
+		c:BRG ?= THIS
 	}
 
 	possible = {
-		is_diplomatic_play_enemy_of = PBG	
+		is_diplomatic_play_enemy_of = c:PBG	
 		exists = c:PBG
-		PBG = ROOT
+		c:PBG ?= THIS
 	}
 	immediate = {
 		hidden_effect = {
-			
 			if = {
 				limit = {
-					c:BRG = ROOT
+					c:BRG ?= THIS
 				}
 				set_secret_goal = {
 					country = c:PBG
@@ -1048,7 +1029,6 @@ je_unify_brg = {
 		}
 	}
 	should_be_pinned_by_default = yes
-	inheritable = no
 }
 je_unify_pbg = {
 	icon = "gfx/interface/icons/event_icons/event_empty_chair.dds"
@@ -1073,7 +1053,7 @@ je_unify_pbg = {
 		hidden_effect = {
 			if = {
 				limit = {
-					c:PBG = ROOT
+					c:PBG ?= ROOT
 				}
 				set_secret_goal = {
 					country = c:BRG

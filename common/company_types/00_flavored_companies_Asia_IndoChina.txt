@@ -1,4 +1,4 @@
-
+﻿
 # Quỹ phúc lợi thuốc phiện
 company_QuyPhuc = {
 	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\QuyPhuc.png" 

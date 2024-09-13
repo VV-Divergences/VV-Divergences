@@ -1,4 +1,4 @@
-
+﻿
 # Novgorodskaja Skola
 company_NovgorodSkola = {
 	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\NovgorodSkola.png" 
