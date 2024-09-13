@@ -26,7 +26,6 @@ dvg_ggg.1 = {
 		random_neighbouring_state = {
 			limit = {
 				owner = {
-					relations:ROOT >= relations_threshold:amicable
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
@@ -43,7 +42,31 @@ dvg_ggg.1 = {
 				save_scope_as = dvg_ggg_integrated_german_nation
 			}
 		}
-		
+		ordered_country = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:rheinish
+				}
+				is_adjacent_to_country = ROOT
+				NOT = {
+					is_subject = yes
+				}
+				is_in_same_power_bloc = ROOT
+				NOT = {
+					NOT = { c:BRG ?= THIS }
+					NOT = { c:BOH ?= THIS }
+					NOT = { c:SCA ?= THIS }
+				}
+				is_player = no
+			}
+			order_by = { # reverse order
+				value = 1000
+				subtract = country_rank
+			} 
+			save_scope_as = dvg_ggg_integrated_german_nation
+		}
 	}
 
 	option = {
