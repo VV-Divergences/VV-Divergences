@@ -237,33 +237,33 @@
 		}
 	}
 	s:STATE_EAST_SLOVAKIA = {
-		region_state:TRS = {
-			create_pop = {
-				culture = hungarian
-				size = 13752
-			}
-			create_pop = {
-				culture = hungarian
-				size = 2599
-				religion = protestant
-			}
-			create_pop = {
-				culture = slovak
-				size = 62878
-			}
-			create_pop = {
-				culture = ruthenian
-				size = 143315
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 31249
-			}
-			create_pop = {
-				culture = south_german
-				size = 829
-			}
-		}
+		# region_state:TRS = {
+		# 	create_pop = {
+		# 		culture = hungarian
+		# 		size = 13752
+		# 	}
+		# 	create_pop = {
+		# 		culture = hungarian
+		# 		size = 2599
+		# 		religion = protestant
+		# 	}
+		# 	create_pop = {
+		# 		culture = slovak
+		# 		size = 62878
+		# 	}
+		# 	create_pop = {
+		# 		culture = ruthenian
+		# 		size = 143315
+		# 	}
+		# 	create_pop = {
+		# 		culture = ashkenazi
+		# 		size = 31249
+		# 	}
+		# 	create_pop = {
+		# 		culture = south_german
+		# 		size = 829
+		# 	}
+		# }
 		region_state:POL = {
 			#create_pop = {
 			#	culture = romani
@@ -490,13 +490,7 @@
 		region_state:WAL = {
 			create_pop = {
 				culture = romanian
-				size = 1000000
-			}
-		}
-		region_state:NOG = {
-			create_pop = {
-				culture = romanian
-				size = 229200
+				size = 1229200
 			}
 		}
 	}
@@ -536,6 +530,8 @@
 			}
 		}
 	}
+
+	#Budjak
 	s:STATE_BESSARABIA = {
 		region_state:NOG = {
 			create_pop = {
@@ -563,7 +559,7 @@
 		region_state:MOL = {
 			create_pop = {
 				culture = romanian
-				size = 200000
+				size = 199543
 			}
 		}
 	}

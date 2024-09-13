@@ -396,7 +396,7 @@ BUILDINGS={
 						type="building_financial_district"
 						country="c:SCA"
 						levels=2
-						region="STATE_SVAELAND"
+						region="STATE_NORRLAND"
 					}
 				}
 				reserves=1

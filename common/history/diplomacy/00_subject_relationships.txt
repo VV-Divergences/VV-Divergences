@@ -63,10 +63,6 @@
 			type = dominion
 		}
 		create_diplomatic_pact = {
-			country = c:MSG
-			type = dominion
-		}
-		create_diplomatic_pact = {
 			country = c:SFJ
 			type = puppet
 		}
@@ -201,7 +197,7 @@
 			type = puppet
 		}
 		create_diplomatic_pact = {
-			country = c:CEL
+			country = c:MKS
 			type = puppet
 		}
 	}
@@ -236,24 +232,6 @@
 	c:SPA = {
 		create_diplomatic_pact = {
 			country = c:GRA
-			type = puppet
-		}
-	}
-	c:NOV = {
-		create_diplomatic_pact = {
-			country = c:BLO
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:UGG
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:VYA
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:PRM
 			type = puppet
 		}
 	}
@@ -298,32 +276,6 @@
 	c:PLA = {
 		create_diplomatic_pact = {
 			country = c:CHE
-			type = dominion
-		}
-	}
-	c:CNF = {
-		create_diplomatic_pact = {
-			country = c:CCA
-			type = dominion
-		}
-		create_diplomatic_pact = {
-			country = c:CPH
-			type = dominion
-		}
-		create_diplomatic_pact = {
-			country = c:CFS
-			type = dominion
-		}
-		create_diplomatic_pact = {
-			country = c:CHV
-			type = dominion
-		}
-		create_diplomatic_pact = {
-			country = c:CNL
-			type = dominion
-		}
-		create_diplomatic_pact = {
-			country = c:CBV
 			type = dominion
 		}
 	}
@@ -476,27 +428,6 @@
 	}
 	c:PLM = {
 		add_liberty_desire = -20
-	}
-
-		#Belgians
-	c:CCA = {
-		add_liberty_desire = -30
-	}
-	c:CHV = {
-		add_liberty_desire = -30
-	}
-	c:CNL = {
-		add_liberty_desire = -40
-	}
-	c:CBV = {
-		add_liberty_desire = -10
-	}
-
-	c:CHE = {
-		add_liberty_desire = -20
-	}
-	c:CUB = {
-		add_liberty_desire = -10
 	}
 
 

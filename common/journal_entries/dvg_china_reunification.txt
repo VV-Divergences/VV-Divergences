@@ -132,6 +132,7 @@
 					}
 					has_technology_researched = mass_communication
 					year >= 1853
+					is_subject = no
 				}
 				add_technology_researched = nationalism
 			}

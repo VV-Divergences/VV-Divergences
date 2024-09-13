@@ -1,4 +1,4 @@
-
+﻿
 # bosanska artiljerijska četa
 company_BosanskaArtil = {
 	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\BosanskaArtil.png" 

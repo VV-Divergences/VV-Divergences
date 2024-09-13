@@ -172,7 +172,7 @@ dvg_german_game_give_up_button = {
 					c:BRG = THIS
 					NOT = { global_var:BOH_progress_from_no_BRG_competition > 0 }
 					NOT = { global_var:SCA_progress_from_no_BRG_competition > 0 }				
-									}
+				}
 				AND = {
 					c:BOH = THIS
 					NOT = { global_var:BRG_progress_from_no_BOH_competition > 0 }

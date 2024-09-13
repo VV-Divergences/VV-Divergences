@@ -3,6 +3,18 @@
 	
 	group = je_group_internal_affairs
 
+
+	immediate = {
+		set_variable = {
+			name = nov_var
+			value = 0
+		}
+		set_variable = {
+			name = nov_serfdom
+			value = 0
+		}
+	}
+	
 	complete = {
 		scope:journal_entry = {
 			is_goal_complete = yes

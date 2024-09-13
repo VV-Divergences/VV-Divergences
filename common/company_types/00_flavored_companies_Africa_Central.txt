@@ -1,4 +1,4 @@
-
+﻿
 # Mutuwa da ginin kamfani
 company_MutuwaDaGinin = {
 	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\MutuwaDaGinin.png" 
