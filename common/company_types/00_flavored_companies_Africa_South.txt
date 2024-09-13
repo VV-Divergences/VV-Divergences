@@ -1,4 +1,4 @@
-
+﻿
 # Vrystaatse steenkool
 company_VrystaatCoal = {
 	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\VrystaatCoal.png" 

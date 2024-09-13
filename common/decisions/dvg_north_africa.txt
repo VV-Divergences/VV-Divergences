@@ -206,9 +206,9 @@ dvg_annex_west_sahara = {
 	is_shown = {
 	
 		NOT = { is_country_type = decentralized }
-
+		exists = c:SAH
 		any_neighbouring_state = {
-			owner ?= c:SAH
+			owner = c:SAH
 		}
 
 		

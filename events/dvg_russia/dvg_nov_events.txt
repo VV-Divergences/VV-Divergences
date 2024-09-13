@@ -23,14 +23,6 @@ dvg_nov.1 = {
 	}
 
 	immediate = {
-		set_variable = {
-			name = nov_var
-			value = 0
-		}
-		set_variable = {
-			name = nov_serfdom
-			value = 0
-		}
 
 		add_journal_entry = {
 			type = je_nov_main

@@ -1,4 +1,4 @@
-
+﻿
 # Shāndì jūnfá lián
 company_ShandiJunta = {
 	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\ShandiJunta.png" 

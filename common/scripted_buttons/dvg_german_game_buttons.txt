@@ -11,12 +11,11 @@
 		custom_tooltip = {
 			text = dvg_ggg_max_influence_brg
 			scope:journal_entry = {
-				"scripted_bar_progress(dvg_german_game_burgundy_bar)" >= 1000
+				"scripted_bar_progress(dvg_german_game_burgundy_bar)" >= 2000
 			}
 		}
 		any_neighbouring_state = {	#must have valid target
 			owner = {
-				relations:ROOT >= relations_threshold:amicable
 				OR = {
 					country_has_primary_culture = cu:north_german
 					country_has_primary_culture = cu:south_german
@@ -25,6 +24,22 @@
 				is_in_same_power_bloc = ROOT
 				NOT = { country_rank >= rank_value:major_power }
 				is_player = no
+			}
+		}
+		custom_tooltip = {
+			text = dvg_ggg_relations_req_for_button_tt
+			NOT = {
+				any_country = {	#all germans in your bloc have 0 or more relations with you
+					AND = {
+						is_in_same_power_bloc = ROOT
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+							country_has_primary_culture = cu:rheinish
+						}
+						relations:ROOT <= 0
+					}
+				}
 			}
 		}
 	}
@@ -64,22 +79,37 @@ dvg_german_game_bohemia_button = {
 		custom_tooltip = {
 			text = dvg_ggg_max_influence_boh
 			scope:journal_entry = {
-				"scripted_bar_progress(dvg_german_game_bohemia_bar)" >= 1000
+				"scripted_bar_progress(dvg_german_game_bohemia_bar)" >= 2000
 			}
 		}
 		any_neighbouring_state = {	#must have valid target
-				owner = {
-					relations:ROOT >= relations_threshold:amicable
-					OR = {
-						country_has_primary_culture = cu:north_german
-						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish
+			owner = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:rheinish
+				}
+				is_in_same_power_bloc = ROOT
+				NOT = { country_rank >= rank_value:major_power }
+				is_player = no
+			}
+		}
+		custom_tooltip = {
+			text = dvg_ggg_relations_req_for_button_tt
+			NOT = {
+				any_country = {	#all germans in your bloc have 0 or more relations with you
+					AND = {
+						is_in_same_power_bloc = ROOT
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+							country_has_primary_culture = cu:rheinish
+						}
+						relations:ROOT <= 0
 					}
-					is_in_same_power_bloc = ROOT
-					NOT = { country_rank >= rank_value:major_power }
-					is_player = no
 				}
 			}
+		}
 	}
 
 	effect = {
@@ -117,12 +147,11 @@ dvg_german_game_scandinavia_button = {
 		custom_tooltip = {
 			text = dvg_ggg_max_influence_sca
 			scope:journal_entry = {
-				"scripted_bar_progress(dvg_german_game_scandinavia_bar)" >= 1000
+				"scripted_bar_progress(dvg_german_game_scandinavia_bar)" >= 2000
 			}
 		}
 		any_neighbouring_state = {	#must have valid target
 			owner = {
-				relations:ROOT >= relations_threshold:amicable
 				OR = {
 					country_has_primary_culture = cu:north_german
 					country_has_primary_culture = cu:south_german
@@ -131,6 +160,22 @@ dvg_german_game_scandinavia_button = {
 				is_in_same_power_bloc = ROOT
 				NOT = { country_rank >= rank_value:major_power }
 				is_player = no
+			}
+		}
+		custom_tooltip = {
+			text = dvg_ggg_relations_req_for_button_tt
+			NOT = {
+				any_country = {	#all germans in your bloc have 0 or more relations with you
+					AND = {
+						is_in_same_power_bloc = ROOT
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+							country_has_primary_culture = cu:rheinish
+						}
+						relations:ROOT <= 0
+					}
+				}
 			}
 		}
 	}
@@ -172,7 +217,7 @@ dvg_german_game_give_up_button = {
 					c:BRG = THIS
 					NOT = { global_var:BOH_progress_from_no_BRG_competition > 0 }
 					NOT = { global_var:SCA_progress_from_no_BRG_competition > 0 }				
-									}
+				}
 				AND = {
 					c:BOH = THIS
 					NOT = { global_var:BRG_progress_from_no_BOH_competition > 0 }

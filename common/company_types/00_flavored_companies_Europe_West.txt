@@ -1,4 +1,4 @@
-
+﻿
 # McGallagher Smelteries Ltd.
 company_McGallagher = {
 	icon = "gfx\interface\icons\company_icons\company_icons\dvg_company_icons\McGallagher.png" 

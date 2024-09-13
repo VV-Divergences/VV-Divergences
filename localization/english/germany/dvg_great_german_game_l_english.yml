@@ -18,6 +18,7 @@
  dvg_german_game_give_up_button_desc:0 "We can focus our efforts elsewhere"
  dvg_ggg_give_up_tt_youwillfail:0 "You will exit the Great German Game, accelerating your rivals' domination over the remaining German states."
  dvg_gave_up_german_claims_tt:0 "We give up our claims to German lands"
+ dvg_ggg_relations_req_for_button_tt:0 "Have positive relations with all German minors in your bloc"
 
  dvg_german_game_brg_bar: "Burgundian Influence"
  dvg_german_game_brg_bar_desc: "Burgundian Influence"
