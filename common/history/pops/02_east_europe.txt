@@ -523,12 +523,6 @@
 				size = 22064
 			}
 		}
-		region_state:NOG = {
-			create_pop = {
-				culture = romanian
-				size = 25000
-			}
-		}
 	}
 
 	#Budjak

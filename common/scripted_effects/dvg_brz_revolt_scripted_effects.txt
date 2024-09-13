@@ -138,14 +138,5 @@
 				add = 1
 			}
 		}
-		if = {
-			limit = {
-				has_variable = isabel_confirmed_heir_var
-			}
-			change_variable = {
-				name = brz_slavery_next
-				add = 1
-			}
-		}
 	}
 }

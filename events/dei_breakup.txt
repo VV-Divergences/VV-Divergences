@@ -27,10 +27,6 @@ dei_breakup.1 = {
 		is_at_war = no
 	}
 
-	immediate = {
-		set_variable = bic_collapse_var #Intended
-	}
-
 	option = {
 		name = dei_breakup.1.a
 		ai_chance = {

@@ -73,7 +73,6 @@ dvg_shun.2  = {
 	}
 
 	immediate = {
-		set_variable = china_is_whole_again
 		remove_modifier = questioned_mandate
 		remove_modifier = china_tax
 		remove_modifier = china_bureaucracy

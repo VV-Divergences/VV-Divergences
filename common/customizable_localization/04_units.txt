@@ -141,32 +141,6 @@
 		}
 		localization_key = flotilla_prefix_arm
 	}
-	# text = {
-		# trigger = {
-			# OR = { # "Armada República de Venezuela" only makes sense if Venezuela is a republic
-				# has_law = law_type:law_presidential_republic
-				# has_law = law_type:law_parliamentary_republic
-				# has_law = law_type:law_council_republic
-			# }
-			# exists = c:VNZ
-			# this = c:VNZ
-		# }
-		# localization_key = flotilla_prefix_arv
-	# }
-    # text = {
-		# trigger = {
-			# exists = c:USA
-			# this = c:USA
-		# }
-		# localization_key = flotilla_prefix_uss
-	# }
-    # text = {
-		# trigger = {
-			# exists = c:CSA
-			# this = c:CSA
-		# }
-		# localization_key = flotilla_prefix_css
-	# }
 
 	### generic fallback
 

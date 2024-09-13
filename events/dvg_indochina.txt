@@ -106,19 +106,16 @@ dvg_indochina.2 = { #Split Burma up into warlord states
 		set_global_variable = indochina_shatters
 
 		remove_global_variable = atlantia_indepdendent
-		
-		set_variable = burmese_central_government
-		
-		
-				s:STATE_ASSAM = {
-					add_claim = c:BUR
-				}
-				s:STATE_KACHIN = {
-					add_claim = c:BUR
-				}
-				s:STATE_SHAN_STATES = {
-					add_claim = c:BUR
-				}
+
+			s:STATE_ASSAM = {
+				add_claim = c:BUR
+			}
+			s:STATE_KACHIN = {
+				add_claim = c:BUR
+			}
+			s:STATE_SHAN_STATES = {
+				add_claim = c:BUR
+			}
 		c:BUR = { save_scope_as = scope_BUR
 		remove_diplomatic_pact = {
 			country = c:BGL

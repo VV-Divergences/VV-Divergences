@@ -619,11 +619,6 @@ american_clothes_trigger = {
 				c:ARC = this
 				is_subject = no
 			}
-			# home_country = {
-				# exists = c:USA
-				# c:USA = this
-				# is_subject = no
-			# }
 		}
 	}
 }
@@ -642,11 +637,6 @@ american_clothes_pop_trigger = {
 				c:ARC = this
 				is_subject = no
 			}
-			# home_country = {
-				# exists = c:USA
-				# c:USA = this
-				# is_subject = no
-			# }
 		}
 	}
 }

@@ -396,7 +396,7 @@ BUILDINGS={
 						type="building_financial_district"
 						country="c:SCA"
 						levels=2
-						region="STATE_SVAELAND"
+						region="STATE_NORRLAND"
 					}
 				}
 				reserves=1
@@ -759,7 +759,7 @@ BUILDINGS={
 						type="building_financial_district"
 						country="c:SCA"
 						levels=5
-						region="STATE_SVAELAND"
+						region="STATE_WESTERN_NORWAY"
 					}
 				}
 				reserves=1
@@ -1114,7 +1114,7 @@ BUILDINGS={
 						type="building_financial_district"
 						country="c:SCA"
 						levels=1
-						region="STATE_SVAELAND"
+						region="STATE_SOUTHERN_FINLAND"
 					}
 				}
 				reserves=1
@@ -1164,7 +1164,7 @@ BUILDINGS={
 						type="building_fishing_wharf"
 						country="c:SCA"
 						levels=1
-						region="STATE_WEST_KERALIA"
+						region="STATE_WEST_KARELIA "
 					}
 				}
 				reserves=1
@@ -1177,7 +1177,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:SCA"
 						levels=1
-						region="STATE_SVAELAND"
+						region="STATE_WEST_KARELIA "
 					}
 				}
 				reserves=1
@@ -2294,7 +2294,7 @@ BUILDINGS={
 						type="building_furniture_manufacturies"
 						country="c:DUA"
 						levels=7
-						region="STATEEAST_ANGLIA"
+						region="STATE_EAST_ANGLIA"
 					}
 					building={
 						type="building_financial_district"
@@ -3887,7 +3887,7 @@ BUILDINGS={
 						type="building_logging_camp"
 						country="c:NAV"
 						levels=1
-						region="STATE_NAV"
+						region="STATE_AQUITAINE"
 					}
 				}
 				reserves=1
@@ -3900,7 +3900,7 @@ BUILDINGS={
 						type="building_fishing_wharf"
 						country="c:NAV"
 						levels=1
-						region="STATE_NAV"
+						region="STATE_AQUITAINE"
 					}
 				}
 				reserves=1
@@ -3913,7 +3913,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:NAV"
 						levels=1
-						region="STATE_NAV"
+						region="STATE_AQUITAINE"
 					}
 				}
 				reserves=1
@@ -4182,7 +4182,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:PRO"
 						levels=2
-						region="STATE_LAZIO"
+						region="STATE_PROVENCE"
 					}
 				}
 				reserves=1
@@ -4675,7 +4675,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:BRG"
 						levels=1
-						region="STATE_FRANCHE_HOLLAND"
+						region="STATE_FRANCHE_COMTE"
 					}
 				}
 				reserves=1
@@ -4688,7 +4688,7 @@ BUILDINGS={
 						type="building_manor_house"
 						country="c:BRG"
 						levels=3
-						region="STATE_FLANDERS"
+						region="STATE_FRANCHE_COMTE"
 					}
 				}
 				reserves=1
@@ -5559,7 +5559,7 @@ BUILDINGS={
 						type="building_financial_district"
 						country="c:BRG"
 						levels=3
-						region="STATE_HOLLAND"
+						region="STATE_PALATINATE"
 					}
 				}
 				reserves=1

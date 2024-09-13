@@ -377,15 +377,6 @@ place_event = {
 		localization_key = place_event_kremlin
 	}
 
-	# text = {
-		# trigger = {
-			# exists = c:USA
-			# this = c:USA 
-			# owns_entire_state_region = STATE_DISTRICT_OF_COLUMBIA
-		# }
-		# localization_key = place_event_whitehouse
-	# }
-
 	text = {
 		trigger = {
 			exists = c:GBR
@@ -441,14 +432,6 @@ assassin_description = {
 	text = {
 		localization_key = assassin_description_angry_man
 	}
-
-	# text = {
-		# trigger = {
-			# exists = c:USA
-			# this = c:USA
-		# }
-		# localization_key = assassin_description_mkc
-	# }
 }
 
 assassin_movement = {

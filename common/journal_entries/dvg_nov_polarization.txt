@@ -91,7 +91,6 @@ je_nov_serfdom = {
 	}
 
 	on_complete = {
-		#set_variable = completed_nov_serfdom_je
 		custom_tooltip = je_nov_advance
 		change_variable = {
 			name = nov_var

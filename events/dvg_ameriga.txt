@@ -133,7 +133,6 @@ dvg_ameriga.2 = {
 			name = teeming_shore
 			months = normal_modifier_time
 		}
-		set_global_variable = atlantians_united
 		every_subject_or_below = {
 			limit = { 
 				is_subject_of = ROOT
@@ -172,7 +171,6 @@ dvg_ameriga.2 = {
 			months = normal_modifier_time
 			is_decaying = yes
 		}
-		set_global_variable = atlantians_united
 		every_subject_or_below = {
 			limit = { 
 				is_subject_of = ROOT

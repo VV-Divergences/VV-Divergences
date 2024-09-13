@@ -28,7 +28,6 @@ on_revolution_end = {
 			}
 			scope:target = {
 				set_variable = anglois_path
-				set_variable = supporting_anglois_var
 
 				add_journal_entry = {
 					type = je_dual_integration
@@ -67,7 +66,6 @@ on_revolution_end = {
 			}
 			scope:target = {
 				set_variable = french_path
-				set_variable = supporting_french_var
 
 				add_journal_entry = {
 					type = je_french_integration
@@ -92,7 +90,6 @@ on_revolution_end = {
 			}
 			scope:target = {
 				set_variable = english_path
-				set_variable = supporting_english_var
 
 				add_journal_entry = {
 					type = je_english_integration
@@ -197,7 +194,6 @@ on_secession_start = {
 					has_journal_entry = je_english_integration
 				}
 				scope:target = {
-					set_global_variable = english_integration_secession
 				}
 			}
 			trigger_event = {

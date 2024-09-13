@@ -247,11 +247,6 @@
 		effect_starting_pop_literacy_middling = yes
 	}
 	
-	# c:JNR = { #Janissary Revolt
-		# effect_starting_pop_wealth_medium = yes
-		# effect_starting_pop_literacy_low = yes
-	# }
-	
 	c:HUN = { #Hungary
 		effect_starting_pop_wealth_medium = yes
 		effect_starting_pop_literacy_low = yes

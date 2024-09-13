@@ -99,35 +99,6 @@ korea_monarchy_blue = {
 	}
 }
 
-#japanese_shogunate = {
-#	color = "tokugawa_green"
-#	possible = {
-#		exists = c:JAP
-#		THIS = c:JAP
-#		has_law = law_type:law_monarchy 
-#		NOT = { has_variable = meiji_var }
-#	}
-#}
-
-#usa_technate = {
-#	color = "usa_technate_grey"
-#
-#	possible = {
-#		exists = c:USA
-#		THIS = c:USA
-#		has_law = law_type:law_technocracy
-#	}
-#}
-# usa_monarchy = {
-	# color = "usa_monarchy_blue"
-
-	# possible = {
-		# exists = c:USA
-		# THIS = c:USA
-		# has_law = law_type:law_monarchy
-	# }
-# }
-
 ukraine_free_territory = {
 	color = "black"
 
@@ -441,18 +412,6 @@ commune_france = {
 	}
 }
 
-empire_france = {
-	color = "bonapartist_blue"
-
-	possible = {
-		exists = c:FRA
-		THIS = c:FRA
-		has_law = law_type:law_monarchy
-		has_variable = bonapartist_restoration_var
-		has_variable = one_true_french_dynasty
-	}
-}
-
 republican_india = {
 	color = "orange_india"
 
@@ -520,36 +479,6 @@ generic_red_communist = {
 
 	possible = {
 		coa_def_communist_flag_trigger = yes
-	}
-}
-
-algeria_constantine = {
-	color = "algeria_red"
-
-	possible = {
-		exists = c:ALD
-		THIS = c:ALD
-		has_variable = algeria_constantine_var
-	}
-}
-
-algeria_mascara = {
-	color = "algeria_green"
-
-	possible = {
-		exists = c:ALD
-		THIS = c:ALD
-		has_variable = algeria_mascara_var
-	}
-}
-
-algeria_ait_abbas = {
-	color = "algeria_yellow"
-
-	possible = {
-		exists = c:ALD
-		THIS = c:ALD
-		has_variable = algeria_ait_abbas_var
 	}
 }
 

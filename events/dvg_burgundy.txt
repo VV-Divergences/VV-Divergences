@@ -2548,7 +2548,6 @@ dvg_burgundy.34 = {
 		set_ruling_interest_groups = {
 			ig_petty_bourgeoisie
 		}
-		set_global_variable = jeanist_victory
 		
 		
 

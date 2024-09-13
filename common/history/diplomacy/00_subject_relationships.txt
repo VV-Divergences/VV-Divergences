@@ -171,12 +171,6 @@
 			type = protectorate
 		}
 	}
-	# c:OYO = { #Breaks because Oyo isn't a high enough rank
-		# create_diplomatic_pact = {
-			# country = c:DAH
-			# type = tributary
-		# }
-	# }
 	c:BRG = {
 		create_diplomatic_pact = {
 			country = c:BEI
@@ -429,27 +423,4 @@
 	c:PLM = {
 		add_liberty_desire = -20
 	}
-
-		#Belgians
-	c:CCA = {
-		add_liberty_desire = -30
-	}
-	c:CHV = {
-		add_liberty_desire = -30
-	}
-	c:CNL = {
-		add_liberty_desire = -40
-	}
-	c:CBV = {
-		add_liberty_desire = -10
-	}
-
-	c:CHE = {
-		add_liberty_desire = -20
-	}
-	c:CUB = {
-		add_liberty_desire = -10
-	}
-
-
 }

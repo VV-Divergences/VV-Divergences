@@ -96,19 +96,6 @@ agrarian_party = {
 					THIS = c:HUN
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_peoples_party
-			# 	trigger = {
-			# 		exists = c:USA
-			# 		THIS = c:USA
-			# 	}
-			# }
-			#triggered_desc = {
-			#	desc = party_patrons_of_industry
-			#	trigger = {
-			#		country_has_primary_culture = cu:anglo_canadian
-			#	}
-			#}
 			triggered_desc = {
 				desc = party_peasants_party
 				trigger = {

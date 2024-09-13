@@ -123,7 +123,6 @@ je_andine_culture_building_integrate_chimu = {
 			}
 			custom_tooltip = {
 				text = je_andine_culture_building_ragamuffin_war_south
-				has_variable = ragamuffin_war_completed
 				NOT = {
 					any_scope_state = {
 						state_region = {
@@ -301,7 +300,6 @@ je_andine_culture_building_integrate_aimara = {
 			}
 			custom_tooltip = {
 				text = je_andine_culture_building_ragamuffin_war_done
-				has_variable = ragamuffin_war_completed
 				NOT = {
 					any_scope_state = {
 						state_region = {

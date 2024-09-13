@@ -172,10 +172,6 @@ radical_party = {
 							exists = c:JAP
 							THIS = c:JAP
 						}
-						# AND = {
-						# 	exists = c:USA
-						# 	THIS = c:USA
-						# }
 					}
 				}
 			}

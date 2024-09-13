@@ -1924,14 +1924,6 @@ belle_epoque_events.20 = {
 				save_scope_as = russia_scope
 			}
 		}
-		# if = {
-		# 	limit = {
-		# 		exists = c:USA
-		# 	}
-		# 	c:USA = {
-		# 		save_scope_as = usa_scope
-		# 	}
-		# }
 		if = {
 			limit = {
 				exists = c:CHI
@@ -2045,22 +2037,6 @@ belle_epoque_events.20 = {
 			value = 10
 		}
 	}
-	# option = {
-	# 	name = belle_epoque_events.20.h
-	# 	trigger = {
-	# 		exists = c:USA
-	# 		NOT = {
-	# 			this = c:USA
-	# 		}
-	# 		c:USA = {
-	# 			relations:root >= 20
-	# 		} 
-	# 	}
-	# 	change_relations = {
-	# 		country = c:USA
-	# 		value = 10
-	# 	}
-	# }
 	option = {
 		name = belle_epoque_events.20.i
 		trigger = {

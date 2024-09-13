@@ -56,7 +56,6 @@ dvg_dua.1 = {
 		default_option = yes
 
 		set_variable = french_path
-		set_variable = supporting_french_var
 
 		add_journal_entry = {
 			type = je_french_integration
@@ -98,7 +97,6 @@ dvg_dua.1 = {
 		name = dvg_dua.1.b
 
 		set_variable = english_path
-		set_variable = supporting_english_var
 
 		add_journal_entry = {
 			type = je_english_integration
@@ -145,7 +143,6 @@ dvg_dua.1 = {
 		name = dvg_dua.1.c
 
 		set_variable = anglois_path
-		set_variable = supporting_anglois_var
 
 		add_journal_entry = {
 			type = je_dual_integration
@@ -329,7 +326,6 @@ dvg_dua.4 = {
 	}
 
 	immediate = {
-		set_global_variable = french_accepted
 	}
 
 	option = {
@@ -368,7 +364,6 @@ dvg_dua.6 = {
 	}
 
 	immediate = {
-		set_global_variable = english_accepted
 	}
 
 	option = {
@@ -3085,7 +3080,6 @@ dvg_dua.510 = { #Midi Revolution
 				has_journal_entry = je_english_integration
 			}
 			c:OCC = {
-				set_global_variable = english_integration_secession
 			}
 		}
 	}
@@ -4069,7 +4063,6 @@ dvg_dua.526 = { #Total Revolution won
 	}
 
 	immediate = {
-		set_global_variable = dua_global_revolted_won
 	}
 	
 	option = {

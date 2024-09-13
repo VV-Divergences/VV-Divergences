@@ -704,102 +704,6 @@ gov_hm_gov = {
 	}
 }
 
-gov_fra_constitutional_monarchy_orleanist = {
-	transfer_of_power = hereditary
-
-	male_ruler = "RULER_TITLE_KING"
-	female_ruler = "RULER_TITLE_QUEEN"
-	
-	male_heir = "RULER_TITLE_PRINCE_ROYAL"
-	female_heir = "RULER_TITLE_PRINCESS_ROYAL"
-	
-	possible = {
-		has_law = law_type:law_monarchy
-		country_has_voting_franchise = yes
-		has_variable = orleanist_restoration_var
-		country_has_primary_culture = cu:french
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
-
-gov_fra_constitutional_monarchy_legitimist = {
-	transfer_of_power = hereditary
-
-	male_ruler = "RULER_TITLE_KING"
-	female_ruler = "RULER_TITLE_QUEEN"
-	
-	male_heir = "RULER_TITLE_DAUPHIN"
-	female_heir = "RULER_TITLE_DAUPHINE"
-	
-	possible = {
-		has_law = law_type:law_monarchy
-		country_has_voting_franchise = yes
-		has_variable = legitimist_restoration_var
-		country_has_primary_culture = cu:french
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
-
-gov_fra_absolute_monarchy_orleanist = {
-	transfer_of_power = hereditary
-
-	male_ruler = "RULER_TITLE_KING"
-	female_ruler = "RULER_TITLE_QUEEN"
-	
-	male_heir = "RULER_TITLE_PRINCE_ROYAL"
-	female_heir = "RULER_TITLE_PRINCESS_ROYAL"
-	
-	possible = {
-		has_law = law_type:law_monarchy
-		country_has_voting_franchise = no
-		has_variable = orleanist_restoration_var
-		country_has_primary_culture = cu:french
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
-
-gov_fra_absolute_monarchy_legitimist = {
-	transfer_of_power = hereditary
-
-	male_ruler = "RULER_TITLE_KING"
-	female_ruler = "RULER_TITLE_QUEEN"
-	
-	male_heir = "RULER_TITLE_DAUPHIN"
-	female_heir = "RULER_TITLE_DAUPHINE"
-	
-	possible = {
-		has_law = law_type:law_monarchy
-		country_has_voting_franchise = no
-		has_variable = legitimist_restoration_var
-		country_has_primary_culture = cu:french
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
-
 gov_princely_state_hindu = {
 	transfer_of_power = hereditary
 
@@ -1001,10 +905,6 @@ gov_absolute_empire = {
 			country_tier = hegemony
 			country_tier = empire
 		}
-		NOR = {
-			has_variable = orleanist_restoration_var
-			has_variable = legitimist_restoration_var
-		}
 	}
 
 	on_government_type_change = {
@@ -1033,10 +933,6 @@ gov_feudal_empire = {
 			country_tier = hegemony
 			country_tier = empire
 		}
-		NOR = {
-			has_variable = orleanist_restoration_var
-			has_variable = legitimist_restoration_var
-		}
 	}
 
 	on_government_type_change = {
@@ -1062,10 +958,6 @@ gov_empire = {
 		OR = {
 			country_tier = hegemony
 			country_tier = empire
-		}
-		NOR = {
-			has_variable = orleanist_restoration_var
-			has_variable = legitimist_restoration_var
 		}
 	}
 
@@ -1093,10 +985,6 @@ gov_constitutional_empire = {
 		OR = {
 			country_tier = hegemony
 			country_tier = empire
-		}
-		NOR = {
-			has_variable = orleanist_restoration_var
-			has_variable = legitimist_restoration_var
 		}
 	}
 

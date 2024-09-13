@@ -815,7 +815,6 @@ gg_korea.9 = { # Sino-Japanese War - for China
 				target = root
 			}
 		}
-		set_global_variable = sino_japanese_war
 	}
 }
 
