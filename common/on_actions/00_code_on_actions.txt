@@ -3567,7 +3567,7 @@ on_wargoal_enforced = {
             days = 1825
             value = yes
         }
-        # if = {
+        # if = {			#dvg removed vanilla flavor
         # 	limit = {
         # 		c:PRC ?= root
         # 		NOT = {
@@ -3653,62 +3653,62 @@ on_wargoal_enforced = {
         # 		trigger_event = { id = brazilian_minors.3 days = 0 popup = yes }
         # 	}
         # }
-        # if = {
-        # 	limit = {
-        # 		owner = {
-	    #     		c:PER ?= this
-		# 			NOT = {
-		# 				any_scope_state = {
-		# 					state_region = s:STATE_HERAT
-		# 				}
-		# 			}
-		# 			has_modifier = modifier_herat_inspiration
-		# 		}
-        # 	}
-        # 	owner = {
-        # 		remove_modifier = modifier_herat_inspiration
-        # 	}
-        # }
-		# if = {
-		# 	limit = {
-		# 		scope:target = {
-		# 			has_journal_entry = je_earn_recognition
-		# 		}
-		# 	}
-		# 	scope:target = {
-		# 		change_variable = {
-		# 			name = recognition_progress_var
-		# 			add = {
-		# 				add = scope:wargoal_impact
-		# 				multiply = -4
-		# 			}
-		# 		}
-		# 	}
-		# }
-		# if = {
-		# 	limit = {
-		# 		owner = {
-		# 			has_journal_entry = je_earn_recognition
-		# 		}
-		# 		scope:target = {
-		# 			OR = {
-		# 				is_country_type = recognized
-		# 				is_country_type = colonial
-		# 			}
-		# 			country_rank >= rank_value:major_power
-		# 		}
-		# 	}
-		# 	owner = {
-		# 		change_variable = {
-		# 			name = recognition_progress_var
-		# 			add = {
-		# 				add = scope:wargoal_impact
-		# 				multiply = 4
-		# 			}
-		# 		}
-		# 	}
-		# }
-		#dvg removed
+        if = {
+        	limit = {
+        		owner = {
+	        		c:PER ?= this
+					NOT = {
+						any_scope_state = {
+							state_region = s:STATE_HERAT
+						}
+					}
+					has_modifier = modifier_herat_inspiration
+				}
+        	}
+        	owner = {
+        		remove_modifier = modifier_herat_inspiration
+        	}
+        }
+		if = {
+			limit = {
+				scope:target = {
+					has_journal_entry = je_earn_recognition
+				}
+			}
+			scope:target = {
+				change_variable = {
+					name = recognition_progress_var
+					add = {
+						add = scope:wargoal_impact
+						multiply = -4
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_journal_entry = je_earn_recognition
+				}
+				scope:target = {
+					OR = {
+						is_country_type = recognized
+						is_country_type = colonial
+					}
+					country_rank >= rank_value:major_power
+				}
+			}
+			owner = {
+				change_variable = {
+					name = recognition_progress_var
+					add = {
+						add = scope:wargoal_impact
+						multiply = 4
+					}
+				}
+			}
+		}
+
 	}
 }
 
