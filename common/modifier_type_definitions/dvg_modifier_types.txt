@@ -1,0 +1,223 @@
+﻿state_circassian_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_chechen_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_karelian_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_buryat_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_mordvin_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_chuvash_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_mari_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_udmurt_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_mazanderani_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_luri_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_kho_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_maltese_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_ukrainian_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_tatar_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_muskogean_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_peruvian_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_bolivian_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_ecuadorian_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_chilean_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_venezuelan_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_argentine_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_uruguayan_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_paraguayan_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_colombian_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_sulista_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_nordestino_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_amazonic_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_paulista_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
