@@ -1385,7 +1385,7 @@ trail_of_tears_enactment = {
 native_american_rights = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	state_cherokee_standard_of_living_add = 2
-	state_seminole_standard_of_living_add = 2
+	#state_seminole_standard_of_living_add = 2	#dvg fixed vanilla error
 	state_algonquian_standard_of_living_add = 2
 }
 

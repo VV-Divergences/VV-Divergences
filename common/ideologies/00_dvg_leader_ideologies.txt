@@ -228,7 +228,9 @@ ideology_jeanist_leader = {
 
 	
 	possible = {
-		country_has_primary_culture = cu:burgundian
+		owner = {
+			country_has_primary_culture = cu:burgundian
+		}
 		has_global_variable = jean_time
 			
 		

@@ -924,9 +924,18 @@ je_unify_brg = {
 	}
 
 	possible = {
-		is_diplomatic_play_enemy_of = c:PBG	
-		exists = c:PBG
-		c:PBG ?= THIS
+		OR = {
+			AND = {
+				c:PBG ?= THIS
+				exists = c:BRG
+				is_diplomatic_play_enemy_of = c:BRG
+			}
+			AND = {
+				c:BRG ?= THIS
+				exists = c:PBG
+				is_diplomatic_play_enemy_of = c:PBG
+			}
+		}
 	}
 	immediate = {
 		hidden_effect = {
