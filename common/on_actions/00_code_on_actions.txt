@@ -646,13 +646,13 @@ on_monthly_pulse_country = {
 		1 = coup.1
 	}
 	# Garibaldi
-	#random_events = {
-	#	20 = 0
-	#	30 = garibaldi_events.1
-	#	30 = garibaldi_events.2
-	#	2 = garibaldi_events.3
-	#	1 = garibaldi_events.4
-	#}
+	random_events = {
+		40 = 0	#increased from 20
+		30 = garibaldi_events.1
+		30 = garibaldi_events.2
+		2 = garibaldi_events.3
+		1 = garibaldi_events.4
+	}
 }
 
 

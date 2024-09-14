@@ -1,10 +1,41 @@
 ﻿# This is executed last among all history
 GLOBAL = {
+	
 	every_country = {
 		limit = { NOT = { has_law = law_type:law_slavery_banned } }
 		ig:ig_landowners = { add_ideology = ideology_pro_slavery }
 	}
 	
+	# Jack the ripper, prevents the event from happening every game
+
+	every_country = {
+		if = {
+			limit = {
+				is_player = yes
+			}
+		}
+		random_list = {
+			1 = { set_variable = var_jack_ripper_possible }
+			9 = {
+				#Nothing Happens
+			}
+		}
+	}
+
+	# c:BRZ ?= {
+	# 	set_variable = {
+	# 		name = pedropoints
+	# 		value = 5
+	# 	}
+	# }
+	
+	# c:HAI = {
+	# 	add_treasury = {
+	# 		value = gold_reserves_limit
+	# 		multiply = -1.0
+	# 	}
+	# }
+
 ###ACHIEVEMENT VARIABLES###
 	
 	#Serf's Up
@@ -232,6 +263,7 @@ GLOBAL = {
 			can_form_nation = GER
 		}
 		set_variable = three_hurrahs_ach_possible
+		set_variable = huge_ego_sorry_ach_possible
 	}
 	
 	# #Solomon's Quest
