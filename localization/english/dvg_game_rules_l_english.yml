@@ -23,6 +23,15 @@
  setting_no_collapse: "Rum does not collapse"
  setting_no_collapse_desc: "The Empire of Rum manages to stay together and stabilize its territories"
 
+ rule_great_german_game: "Great German Game"
+ setting_active_great_german_game: "Active Great German Game"
+ setting_active_great_german_game_desc: "The Great German Game Journal Entries will be activated"
+ setting_inactive_great_german_game: "Inactive Great German Game"
+ setting_inactive_great_german_game_desc: "The Great German Game Journal Entries will not be activated"
+
+
+
+
  rule_dvg_hungary_crisis_burgundy: "The Congress of Venice"
  setting_hungary_crisis_historical_burgundy: "Peace"
  setting_hungary_crisis_historical_burgundy_desc: "The participants of the Congress of Venice will strive for peace, resolving the Hungarian Crisis diplomatically"

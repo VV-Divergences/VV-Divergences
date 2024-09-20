@@ -3,10 +3,19 @@
 
 	group = je_group_historical_content
 
+	possible = {
+			has_game_rule = active_great_german_game
+		OR = {
+		c:SCA = this
+		c:BOH = this
+		c:BRG = this
+		}
+	}
+
 	immediate = {
 		dvg_set_great_german_game_variables = yes
 	}
-
+	
 	scripted_progress_bar = dvg_german_game_burgundy_bar
 	scripted_progress_bar = dvg_german_game_bohemia_bar
 	scripted_progress_bar = dvg_german_game_scandinavia_bar

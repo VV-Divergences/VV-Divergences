@@ -39,3 +39,16 @@ rum_collapse = {
 	no_collapse = {
 	}
 }
+
+great_german_game = {
+	default = active_great_german_game
+
+	active_great_german_game = {
+
+	}
+
+	inactive_great_german_game = {
+
+	}
+
+}

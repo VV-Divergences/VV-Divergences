@@ -145,9 +145,7 @@
 		trigger_event = {
 			id = dvg_burgundy.1
 		}
-		add_journal_entry = {
-			type = je_dvg_great_german_game
-		}
+		
 	}
 	
 	c:SCA = { #Scandinavia
@@ -187,9 +185,6 @@
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
-		}
-		add_journal_entry = {
-			type = je_dvg_great_german_game
 		}
 	}
 	
@@ -234,9 +229,6 @@
 		}
 		add_journal_entry = {
 			type = je_hre_external
-		}
-		add_journal_entry = {
-			type = je_dvg_great_german_game
 		}
 	}
 	
