@@ -28,17 +28,17 @@ reclaimed_states = {
 
 modifier_slave_to_liberty = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-    country_authority_add = -400
+    country_authority_add = -300
     building_group_bg_agriculture_tax_mult = -0.25
     interest_group_ig_landowners_pop_attraction_mult = 0.1
 	interest_group_ig_landowners_pol_str_mult = 0.5
 }
 
-modifier_golden_liberty = {
-    icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
-    interest_group_approval_add = -5
-    interest_group_pol_str_mult = 0.5  
-}
+# modifier_golden_liberty = {
+#     icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+#     interest_group_approval_add = -5
+#     interest_group_pol_str_mult = 0.5  
+# }
 
 modifier_eastern_slavery = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
@@ -52,19 +52,28 @@ modifier_eastern_oppression = {
 
 modifier_magnate_oligarchy = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-    state_aristocrats_investment_pool_efficiency_mult = 0.3
+    #state_aristocrats_investment_pool_efficiency_mult = 0.3
     country_authority_add = 200
 	country_aristocrats_pol_str_mult = 0.5
+	state_aristocrats_investment_pool_contribution_add = 0.2 # put them 10% above capitalists base
 }
 
 modifier_noble_democracy = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-    interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.2
-	interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.3
-	interest_group_ig_armed_forces_pop_attraction_mult = 0.2
-	interest_group_ig_armed_forces_pol_str_mult = 0.3
-	state_shopkeepers_investment_pool_efficiency_mult = 0.3
-    state_loyalists_from_sol_change_mult = 0.3
+	interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.25
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.25
+	#interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.3
+	country_shopkeepers_pol_str_mult = 0.25
+	#interest_group_ig_armed_forces_pol_str_mult = 0.3
+	country_officers_pol_str_mult = 0.25
+	state_capitalists_investment_pool_efficiency_mult = 0.1
+    state_loyalists_from_sol_change_mult = 0.15
+}
+
+dvg_pol_tech_spread = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_tech_spread_mult = 0.25
+	state_loyalists_from_sol_change_mult = 0.25
 }
 
 dvg_fallen_kingdom = {

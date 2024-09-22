@@ -1655,11 +1655,13 @@
 			add_ideology = ideology_enlightened_despotism 
 		}
 		trigger_event = {
-			id = poland.1
+			id = dvg_poland.1
 		}
-		add_modifier = {
-			name = modifier_slave_to_liberty
-			months = -1
+		add_journal_entry = {
+			type = je_golden_liberty
+		}
+        add_journal_entry = {
+			type = je_pol_king_maximilian
 		}
 	}
 	
