@@ -5,6 +5,12 @@
 			type = defensive_pact
 		}	
 	}
+	c:DUA = {
+		create_diplomatic_pact = {
+			country = c:BOH
+			type = defensive_pact
+		}	
+	}
 	c:BRG = {
 		create_diplomatic_pact = {
 			country = c:SCA
