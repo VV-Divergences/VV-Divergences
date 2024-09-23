@@ -852,7 +852,7 @@
  commander_events.6.f:0 ""I just fell on her, I swear!""
  commander_events.6.a:0 "We still need a general, and these are personal matters."
  commander_events.6.a.tt:0 "We will just say [SCOPE.sCharacter('cheated_leader').GetFullNameNoFormatting] sat on the wrong toilet."
- commander_events.6.b:0 "We cannot trust a [SCOPE.sCharacter('seducer_commander').GetManWoman] like this."
+ commander_events.6.b:0 "We cannot trust a [SCOPE.sCharacter('seducer_commander').GetWomanMan] like this."
  commander_events.6.b.tt:0 "[SCOPE.sCharacter('seducer_commander').GetFullName] will step down."
  commander_events.6.c:0 "They should settle accounts on their own."
  covered_affair_modifier:0 "Covered Affair"
