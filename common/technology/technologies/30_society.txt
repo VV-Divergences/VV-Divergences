@@ -256,6 +256,10 @@ international_relations = {
 	unlocking_technologies = {
 		tech_bureaucracy
 	}
+
+	modifier = {
+		country_max_declared_interests_add = 1
+	}
 	
 	ai_weight = {
 		value = 1.5 # Important in general
