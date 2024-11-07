@@ -1,4 +1,19 @@
 ﻿vv_baby_boom_modifier = {
-	icon = gfx\interface\icons\timed_modifier_icons\unused\modifier_explosion_positive.dds
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
 	state_birth_rate_mult = 0.2
+}
+
+hb_modernize_landowners_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tech_spread_add = 25
+}
+
+hb_modernize_government_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tech_spread_add = 25
+}
+
+hb_modernize_economy_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tech_spread_add = 25
 }

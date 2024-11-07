@@ -1,0 +1,12 @@
+﻿l_english:
+
+je_spring_reforms_government:0 "Liberalize the Government"
+je_spring_reforms_government_reason:0 "Modernizing our country requires overturning the archaic power structure in our country and empowering our citizens to promote scientific and political discourse crucial for a rapid transition to a more advanced society"
+je_spring_reforms_landowners:0 "Decrease Landowners influence"
+je_spring_reforms_landowners_reason:0 "Overwhelming authority of the privileged landlords and church proves to be an impedance in educating the population with new ideas."
+je_spring_reforms_economic:0 "Modernize the Economy"
+je_spring_reforms_economic_reason:0 "The current economic system severely limits freedom of our citizens to seek better life through education. By liberating our people from what chaining them to endless work on the fields, innovation and creativity in our nation can finally flourish."
+
+hb_modernize_economy_modifier:0 "Rapid Modernization"
+hb_modernize_landowners_modifier:0 "Rapid Modernization"
+hb_modernize_government_modifier:0 "Rapid Modernization"

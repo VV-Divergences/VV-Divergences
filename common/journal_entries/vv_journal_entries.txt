@@ -79,3 +79,120 @@ je_vv_economic_prosperity = {
 	}
 	progressbar = yes
 }
+#catchup JEs
+je_spring_reforms_government = {
+    group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		is_player = yes
+    }
+	possible = {
+		is_player = yes	
+		game_date > 1836.2.1
+		country_rank < rank_value:great_power
+		NOR = {
+			ROOT = c:JAP
+			ROOT = c:PLA
+			ROOT = c:CNF
+			ROOT = c:SKR
+			ROOT = c:ARC
+		}
+	}	
+	complete = {
+		OR = {
+			AND = {
+				NOT = { has_law = law_type:law_autocracy }	
+				NOT = { has_law = law_type:law_state_religion }	
+				NOT = { has_law = law_type:law_censorship }
+			}
+			country_rank = rank_value:great_power
+		}
+	}
+	on_complete = {
+		show_as_tooltip = {
+			add_modifier = {
+				name = hb_modernize_government_modifier
+				months = long_modifier_time
+			}
+		}
+	}
+	
+	weight = 200
+	should_be_pinned_by_default = yes
+}	
+je_spring_reforms_economic = {
+    group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		is_player = yes
+    }
+	possible = {
+		is_player = yes	
+		game_date > 1836.2.1
+		country_rank < rank_value:great_power
+		NOR = {
+			ROOT = c:JAP
+			ROOT = c:PLA
+			ROOT = c:CNF
+			ROOT = c:SKR
+			ROOT = c:ARC
+		}
+	}	
+	complete = {
+        OR = {
+			AND = {
+				NOT = { has_law = law_type:law_serfdom }
+				NOT = { has_law = law_type:law_land_based_taxation }
+				NOT = { has_law = law_type:law_traditionalism }	 	
+			}
+			country_rank = rank_value:great_power
+		}
+	}
+	on_complete = {
+		show_as_tooltip = {
+			add_modifier = {
+				name = hb_modernize_economy_modifier
+				months = long_modifier_time
+			}
+		}	
+	}
+
+	weight = 200
+	should_be_pinned_by_default = yes
+}	
+je_spring_reforms_landowners = {
+    group = je_group_internal_affairs
+	is_shown_when_inactive = {
+		is_player = yes
+    }
+	possible = {
+		is_player = yes	
+		game_date > 1836.2.1
+		country_rank < rank_value:great_power
+		NOR = {
+			ROOT = c:JAP
+			ROOT = c:PLA
+			ROOT = c:CNF
+			ROOT = c:SKR
+			ROOT = c:ARC
+		}
+	}
+	complete = {
+		OR = {
+			AND = {
+				NOT = { ig:ig_landowners = {is_powerful = yes} }
+				NOT = { ig:ig_devout = {is_powerful = yes} }
+			}
+			country_rank = rank_value:great_power
+		}
+	}	
+	on_complete = {
+		show_as_tooltip = {
+			add_modifier = {
+				name = hb_modernize_landowners_modifier
+				months = long_modifier_time
+			}
+		}
+	}
+	
+	weight = 200
+	should_be_pinned_by_default = yes
+}	

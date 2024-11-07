@@ -14,6 +14,7 @@
 	}		
 	
 	possible = {
+		game_date > 1836.2.1
 		
 	}
 
@@ -59,6 +60,7 @@ dp_rebellion = {
 	}		
 	
 	possible = {
+		game_date > 1836.2.1
 		scope:target_country = {
 			is_secessionist = yes
 		}
@@ -103,6 +105,7 @@ dp_unify_the_empire = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { 
 			is_country_type = decentralized
@@ -133,6 +136,7 @@ dp_leadership_the_empire = {
 	}	
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 		NOT = { has_technology_researched = nationalism }	
@@ -159,6 +163,7 @@ dp_unify_aryanam = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 		has_technology_researched = pan-nationalism
@@ -184,6 +189,7 @@ dp_leadership_aryanam = {
 	}	
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 		has_technology_researched = pan-nationalism
@@ -210,6 +216,7 @@ dp_unify_dutch = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 		country_has_primary_culture = cu:boer
@@ -235,6 +242,7 @@ dp_leadership_dutch = {
 	}	
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 		country_has_primary_culture = cu:boer
@@ -261,6 +269,7 @@ dp_unify_gran_colombia = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 	}
@@ -285,6 +294,7 @@ dp_leadership_gran_colombia = {
 	}	
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 	}
@@ -308,6 +318,7 @@ dp_unify_annex_russia = {
 	}
 
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
         OR = { 
             AND = {
@@ -354,6 +365,7 @@ dp_russian_anarchy = {
 	}
 
 	possible = {
+		game_date > 1836.2.1
         OR = {
 			AND = {
                 has_global_variable = rus_anarchy
@@ -388,6 +400,7 @@ dp_unify_russia = {
 	}
 
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		has_technology_researched = nationalism
 		country_rank >= rank_value:major_power
@@ -415,6 +428,7 @@ dp_leadership_russia = {
 	}	
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		has_technology_researched = nationalism
 		country_rank >= rank_value:major_power		
@@ -441,6 +455,7 @@ dp_unify_panarab = {
 	}
 
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		has_technology_researched = pan-nationalism
 		country_rank >= rank_value:major_power
@@ -466,6 +481,7 @@ dp_leadership_panarab = {
 	}	
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		has_technology_researched = pan-nationalism
 		country_rank >= rank_value:major_power		
@@ -492,6 +508,7 @@ dp_unify_britain = {
 	}
 
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 		has_technology_researched = pan-nationalism
@@ -517,6 +534,7 @@ dp_leadership_britain = {
 	}	
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		has_technology_researched = pan-nationalism
 	}
@@ -543,6 +561,7 @@ dp_unify_persia = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 		is_subject = no
@@ -588,6 +607,7 @@ dp_unify_cossacks = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { has_modifier = neutrality }
 		NOT = { is_country_type = decentralized }
@@ -627,6 +647,7 @@ dp_unify_tatars = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { has_modifier = neutrality }
 		NOT = { is_country_type = decentralized }
@@ -670,6 +691,7 @@ dp_akh_warpath = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { has_modifier = neutrality }
 		NOT = { is_country_type = decentralized }
@@ -704,6 +726,7 @@ dp_leadership_china = {
 	}	
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
 		has_technology_researched = nationalism 
@@ -727,6 +750,7 @@ dp_mughal_war = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		exists = c:MV1
 		scope:target_country = {
 			this = c:MV1
@@ -756,6 +780,7 @@ dp_uralic_war = {
 	}
 	
 	possible = {
+		game_date > 1836.2.1
 		exists = c:PRM
 		scope:target_country = {
 			this = c:PRM
@@ -783,6 +808,7 @@ dp_dismantle_empire = {
 	texture = "gfx/interface/icons/war_goals/contain_threat.dds"
 	
 	possible = {
+		game_date > 1836.2.1
 		NOT = { has_modifier = neutrality }
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		NOT = { is_country_type = decentralized }
