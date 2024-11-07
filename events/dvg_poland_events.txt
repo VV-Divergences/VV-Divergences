@@ -1,12 +1,12 @@
-﻿namespace = poland
+﻿namespace = dvg_poland
 
 # start event
-poland.1 = {
+dvg_poland.1 = {
 	type = country_event
 	placement = root
-	title = poland.1.t
-	desc = poland.1.d
-	flavor = poland.1.f
+	title = dvg_poland.1.t
+	desc = dvg_poland.1.d
+	flavor = dvg_poland.1.f
 
 	duration = 3
 
@@ -26,28 +26,16 @@ poland.1 = {
 	}
 
 	option = {
-		name = poland.1.a
-		add_journal_entry = {
-			type = je_golden_liberty
-		}
-        add_journal_entry = {
-			type = je_pol_king_maximilian
-		}
-		show_as_tooltip = {
-            add_modifier = {
-                name = modifier_slave_to_liberty
-                months = -1
-            }	
-		}
+		name = dvg_poland.1.a
 	}
 }
 
-poland.2 = {
+dvg_poland.2 = {
     type = country_event
     placement = root
-    title = poland.2.t
-    desc = poland.2.d
-    flavor = poland.2.f
+    title = dvg_poland.2.t
+    desc = dvg_poland.2.d
+    flavor = dvg_poland.2.f
 
     duration = 3  
 
@@ -61,74 +49,80 @@ poland.2 = {
     icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
     option = {
-        name = poland.2.a
-        c:POL = {
-		    remove_diplomatic_pact = {
-		    	country = c:LIT
-		    	type = personal_union
-		    }
-		    create_diplomatic_pact = {
-		    	country = c:LIT
-		    	type = puppet
-		    }
-		}
-        add_modifier = {
-            name = modifier_magnate_oligarchy
-            months = -1
-        }
-        remove_modifier = modifier_slave_to_liberty
-	}
-}
-
-poland.3 = {
-    type = country_event
-    placement = root
-    title = poland.3.t
-    desc = poland.3.d
-    flavor = poland.3.f
-
-    duration = 3  
-
-    event_image = {
-		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
-	}
-
-    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific_ruler_speaking_to_people"
-
-    icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-    option = {
-        name = poland.3.a
-        ROOT = {
-            add_modifier = {
-                name = modifier_noble_democracy
-                months = -1
+        name = dvg_poland.2.a
+        if = {
+            limit = { 
+                c:LIT = {
+                    is_subject_of = c:POL
+                }
             }
-            remove_modifier = modifier_slave_to_liberty
+            c:POL = {
+                annex = c:LIT
+            }
+        }
+        change_tag = PLC
+        ROOT = {
             every_state_region = {
-			limit = {
-				OR = {
-					is_homeland = cu:ruthenian
-					is_homeland = cu:byelorussian
-				}
-				any_scope_state = {
-					NOT = { owner = ROOT }
-					NOT = { has_claim_by = ROOT }
-				}
-			}
-			add_claim = ROOT
-		}
+                limit = {
+                    OR = {
+                        is_homeland = cu:ruthenian
+                        is_homeland = cu:byelorussian
+                    }
+                    any_scope_state = {
+                        NOT = { owner = ROOT }
+                        NOT = { has_claim_by = ROOT }
+                    }
+                }
+                add_claim = ROOT
+            }
         }
 	}
 }
 
-poland.4 = {
+# dvg_poland.3 = {
+#     type = country_event
+#     placement = root
+#     title = dvg_poland.3.t
+#     desc = dvg_poland.3.d
+#     flavor = dvg_poland.3.f
+
+#     duration = 3  
+
+#     event_image = {
+# 		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+# 	}
+
+#     on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+# 	on_opened_soundeffect = "event:/SFX/Events/unspecific_ruler_speaking_to_people"
+
+#     icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+#     option = {
+#         name = dvg_poland.3.a
+#         ROOT = {
+#             every_state_region = {
+#                 limit = {
+#                     OR = {
+#                         is_homeland = cu:ruthenian
+#                         is_homeland = cu:byelorussian
+#                     }
+#                     any_scope_state = {
+#                         NOT = { owner = ROOT }
+#                         NOT = { has_claim_by = ROOT }
+#                     }
+#                 }
+#                 add_claim = ROOT
+#             }
+#         }
+# 	}
+# }
+
+dvg_poland.4 = {
     type = country_event
     placement = root
-    title = poland.4.t
-    desc = poland.4.d
-    flavor = poland.4.f
+    title = dvg_poland.4.t
+    desc = dvg_poland.4.d
+    flavor = dvg_poland.4.f
 
     duration = 3  
 
@@ -142,7 +136,7 @@ poland.4 = {
     icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
     option = {
-        name = poland.4.a
+        name = dvg_poland.4.a
         if = { 
             limit = {
                 ROOT = {
@@ -165,12 +159,12 @@ poland.4 = {
     }
 }
 
-poland.5 = {
+dvg_poland.5 = {
     type = country_event
     placement = root
-    title = poland.5.t
-    desc = poland.5.d
-    flavor = poland.5.f
+    title = dvg_poland.5.t
+    desc = dvg_poland.5.d
+    flavor = dvg_poland.5.f
 
     event_image = {
 		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
@@ -239,16 +233,16 @@ poland.5 = {
     }
 
     option = {
-        name = poland.5.a
+        name = dvg_poland.5.a
     }
 }
 
-poland.6 = {
+dvg_poland.6 = {
     type = country_event
     placement = root
-    title = poland.6.t
-    desc = poland.6.d
-    flavor = poland.6.f
+    title = dvg_poland.6.t
+    desc = dvg_poland.6.d
+    flavor = dvg_poland.6.f
 
     event_image = {
 		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
@@ -262,7 +256,7 @@ poland.6 = {
     duration = 3
 
     option = {
-        name = poland.6.a
+        name = dvg_poland.6.a
         if = {
             limit = {
                 has_modifier = modifier_eastern_slavery
@@ -278,12 +272,12 @@ poland.6 = {
     }
 }
 
-poland.10 = {
+dvg_poland.10 = {
     type = country_event
     placement = root
-    title = poland.10.t
-    desc = poland.10.d
-    flavor = poland.10.f
+    title = dvg_poland.10.t
+    desc = dvg_poland.10.d
+    flavor = dvg_poland.10.f
 
     duration = 3  
 
@@ -297,7 +291,7 @@ poland.10 = {
     icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
     option = {
-        name = poland.10.a
+        name = dvg_poland.10.a
         c:POL = {
             if = {
                 limit = {
@@ -361,3 +355,4 @@ poland.10 = {
         set_global_variable = move_CSK
 	}
 }
+

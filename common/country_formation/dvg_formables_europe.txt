@@ -218,7 +218,7 @@ PLC = { #Poland-Lithuania
 	ai_will_do = { always = yes }
 }
 
-BYE= { #Belarus
+BYE = { #Belarus
 	states = {
 		STATE_SMOLENSK
 		STATE_BREST
@@ -1262,11 +1262,11 @@ FRA = { #France
 
 	possible = {
 		OR = {
-		has_technology_researched = nationalism
-		AND = {
-		exists = c:PRO
-		c:PRO = THIS
-		}
+			has_technology_researched = nationalism
+			AND = {
+				exists = c:PRO
+				c:PRO = THIS
+			}
 		}
 
 	}
@@ -1296,7 +1296,7 @@ ZAP = { #Zapadoslavia
 	required_states_fraction = 0.85
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		has_technology_researched = nationalism
 		NOT = { has_game_rule = plausible_formable_nations }
 		NOT = { has_journal_entry = je_elbian_confederation }
 		NOT = { has_journal_entry = je_hre_internal }

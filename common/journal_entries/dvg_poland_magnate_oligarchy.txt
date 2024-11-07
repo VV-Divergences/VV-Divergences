@@ -3,6 +3,10 @@
 
 	group = je_group_internal_affairs
 
+    modifiers_while_active = {
+        modifier_slave_to_liberty
+    }
+
     complete = {
         OR = {
             AND = {
@@ -11,7 +15,7 @@
 			        is_in_government = yes
 		        }
 		        has_insurrectionary_interest_groups = no
-                owns_entire_state_region = STATE_GREATER_POLAND
+                has_law = law_type:law_monarchy
                 has_law = law_type:law_agrarianism
                 OR = { 
                     has_law = law_type:law_serfdom
@@ -25,14 +29,13 @@
 			        is_in_government = no
 		        }
                 has_insurrectionary_interest_groups = no
-                owns_entire_state_region = STATE_GREATER_POLAND
-                
-                has_law = law_type:law_monarchy
-                has_law = law_type:law_racial_segregation
                 NOT = {
-                    has_law = law_type:law_oligarchy
+                    has_law = law_type:law_national_supremacy
+                    has_law = law_type:law_ethnostate
                     has_law = law_type:law_serfdom
                     has_law = law_type:law_traditionalism
+                    has_law = law_type:law_autocracy
+                    has_law = law_type:law_oligarchy
                     has_law = law_type:law_landed_voting
                 }
             }
@@ -40,42 +43,63 @@
     }
 
     on_complete = {
-        if = {
-            limit = {
-                ig:ig_landowners = {
-			        is_powerful = yes
-			        is_in_government = yes
-		        }
+        custom_tooltip = {
+            text = dvg_on_complete_pol_magnate_tt
+            if = {
+                limit = {
+                    ig:ig_landowners = {
+                        is_powerful = yes
+                    }
+                }
+                trigger_event = {
+                    id = dvg_poland.2
+                }
+                add_modifier = {
+                    name = modifier_magnate_oligarchy
+                    months = -1
+                }
             }
-            trigger_event = {
-			    id = poland.2
-		    }
-        }
-        else = {
-            trigger_event = {
-			    id = poland.3
-		    }
+            else = {
+                # trigger_event = {
+                #     id = dvg_poland.3
+                # }
+                add_modifier = {
+                    name = modifier_noble_democracy
+                    months = -1
+                }
+                add_modifier = {
+                    name = dvg_pol_tech_spread
+                    years = 10
+                }
+            }
         }
     }
 
     timeout = 16425
 
     on_timeout = {
-        if = {
-            limit = {
-                ig:ig_landowners = {
-			        is_powerful = yes
-			        is_in_government = yes
-		        }
+        custom_tooltip = {
+            text = dvg_on_fail_pol_magnate_tt
+            if = {
+                limit = {
+                    ig:ig_landowners = {
+                        is_powerful = yes
+                    }
+                }
+                add_modifier = {
+                    name = modifier_magnate_oligarchy
+                    months = -1
+                }
             }
-            trigger_event = {
-			    id = poland.2
-		    }
-        }
-        else = {
-            trigger_event = {
-			    id = poland.3
-		    }
+            else = {
+                # trigger_event = {
+                #     id = dvg_poland.3
+                # }
+                add_modifier = {
+                    name = modifier_noble_democracy
+                    months = -1
+                }
+            }
         }
 	}
 
@@ -109,7 +133,7 @@ je_uniting_the_commonwealth = {
 
     on_complete = {
         trigger_event = {
-            id = poland.4
+            id = dvg_poland.4
         }
 
         add_journal_entry = {
@@ -140,7 +164,7 @@ je_eastern_resistance = {
         cu:cossack = {
             NOT = { culture_is_discriminated_in = ROOT }
         }
-    }  
+    }
 
     fail = {
         c:PLC = {
@@ -159,14 +183,14 @@ je_eastern_resistance = {
 
     on_fail = {
         trigger_event = {
-            id = poland.5
+            id = dvg_poland.5
             days = 21
         }
     }
 
     on_complete = {
         trigger_event = {
-            id = poland.6
+            id = dvg_poland.6
         }
     }
 

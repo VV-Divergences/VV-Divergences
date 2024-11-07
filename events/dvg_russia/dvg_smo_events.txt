@@ -159,19 +159,39 @@ dvg_smo.4 = {
 		set_variable = MSO_LIT_WAR_VAR
 		s:STATE_ORSHA.region_state:MSO = { set_state_owner = c:LIT }
 
-		c:PLC = {
-			trigger_event = {
-				id = dvg_smo.5
-				days = 1
-				popup = yes
-			}		
+		if = {
+			limit = { exists = c:POL }
+			c:POL = {
+				trigger_event = {
+					id = dvg_smo.5
+					days = 1
+					popup = yes
+				}		
+			}
 		}
-
-		c:LIT = {
-			trigger_event = {
-				id = dvg_smo.5
-				days = 1
-				popup = yes
+		else_if = {
+			limit = { 
+				exists = c:PLC
+			}
+			c:PLC = {
+				trigger_event = {
+					id = dvg_smo.5
+					days = 1
+					popup = yes
+				}		
+			}
+		}
+		
+		if = {
+			limit = { 
+				exists = c:LIT
+			}
+			c:LIT = {
+				trigger_event = {
+					id = dvg_smo.5
+					days = 1
+					popup = yes
+				}
 			}
 		}
 	}
