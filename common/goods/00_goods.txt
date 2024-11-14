@@ -197,7 +197,8 @@ transportation = {
 	texture = "gfx/interface/icons/goods_icons/transportation.dds"
 	cost = 30
 	category = staple
-	#local = yes
+	#local = yes	#VV
+	tradeable = no	#VV
 
 	prestige_factor = 4
 	
@@ -208,7 +209,8 @@ electricity = {
 	texture = "gfx/interface/icons/goods_icons/electricity.dds"
 	cost = 30
 	category = staple
-	#local = yes
+	#local = yes	#VV
+	tradeable = no	#VV
 	
 	prestige_factor = 5
 	

@@ -11,3 +11,8 @@ NAI = {
 NEconomy = {
 	TRADE_ROUTE_MAX_LEVEL = 1000 #vv change from 100
 }
+
+NDiplomacy = {
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_LIBERATE_COUNTRY = 50 #increased from 30
+	PRESTIGE_FROM_NAVY_POWER_PROJECTION = 0.05	#lowered from 0.1
+}
