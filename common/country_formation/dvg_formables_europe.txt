@@ -1372,4 +1372,15 @@ CLT = { #Carpathia
 	ai_will_do = { always = yes }
 }
 
+NSE = {	#North Sea Empire - Nordreik
+	use_culture_states = yes
 
+	required_states_fraction = 0.74	#20/27 provinces, SCA starts at 17 and requires 3 more
+
+	possible = {
+		has_technology_researched = pan-nationalism
+	}
+
+	ai_will_do = { always = yes }
+}
+ 

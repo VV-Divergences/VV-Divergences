@@ -2048,6 +2048,13 @@ CLT = { #Celtic Union
 	capital = STATE_FLANDERS
 }
 
+NSE = { #North Sea Empire - Nordreik
+	color = { 23 109 157 }
+	
+	country_type = recognized
 
-
-
+	tier = hegemony
+	
+	cultures = { british scottish irish scandinavian }
+	capital = STATE_ZEALAND
+}

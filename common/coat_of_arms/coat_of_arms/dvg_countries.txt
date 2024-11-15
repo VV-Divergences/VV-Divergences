@@ -15049,3 +15049,25 @@ NST_dictatorship = {
 
 	
 }
+
+NSE = {
+	# ripoff of the modern British flag because I'm lazy
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+	}	
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated.dds"
+		color1 = "white"
+		color2 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_cross_england_fimbriated.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+}
