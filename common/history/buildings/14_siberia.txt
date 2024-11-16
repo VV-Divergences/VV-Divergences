@@ -79,7 +79,7 @@ BUILDINGS={
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+                activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
             }
 			create_building={
                 building="building_rye_farm"
@@ -120,7 +120,7 @@ BUILDINGS={
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+                activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
             }
 			create_building={
                 building="building_rye_farm"
@@ -172,7 +172,7 @@ BUILDINGS={
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+                activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
             }
 			create_building={
                 building="building_rye_farm"

@@ -3605,6 +3605,19 @@ BUILDINGS={
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts" }
 			}
 			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building = {
+						type = "building_financial_district"
+						country="c:JAP"
+						levels=4
+						region = "STATE_KANTO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
