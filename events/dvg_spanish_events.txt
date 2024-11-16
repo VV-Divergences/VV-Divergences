@@ -129,6 +129,7 @@ dvg_spain.2 = {
 	option = {
 		name = dvg_spain.2.b
 		
+		set_global_variable = dvg_spain_gave_up_GC
 		c:SPA = {
 			remove_diplomatic_pact = {
 				country = c:QUI
@@ -138,6 +139,7 @@ dvg_spain.2 = {
 				country = c:GCO
 				type = dominion
 			}
+			remove_journal_entry = je_colombian_war_of_independence_SPA
 		}
 		c:GCO = {
 			remove_modifier = dvg_war_preparation
@@ -375,6 +377,7 @@ dvg_spain.7 = {
 	duration = 3
 	
 	trigger = {
+		NOT = { has_global_variable = dvg_spain_gave_up_GC }
 	}
 	
 	immediate = {
@@ -402,6 +405,8 @@ dvg_spain.7 = {
 		# }
 		add_modifier = {
 			name = dvg_fallen_kingdom
+			is_decaying = yes
+			months = long_modifier_time
 		}
 		ai_chance = {
 			base = 1
