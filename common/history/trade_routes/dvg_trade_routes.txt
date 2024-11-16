@@ -200,6 +200,18 @@
 			direction = import
 			target = c:CNF.market
 		}
+		create_trade_route = {
+			goods = explosives
+			level = 3
+			direction = import
+			target = c:BUR.market
+		}
+		create_trade_route = {
+			goods = lead
+			level = 3
+			direction = import
+			target = c:DUA.market
+		}
 	}
 	c:DZU = {
 		create_trade_route = {
