@@ -204,7 +204,7 @@
 			goods = explosives
 			level = 3
 			direction = import
-			target = c:BUR.market
+			target = c:BRG.market
 		}
 		create_trade_route = {
 			goods = lead
