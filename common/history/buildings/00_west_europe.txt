@@ -7523,7 +7523,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=14
+						levels=12
 					}
 				}
 				reserves=1
@@ -7860,7 +7860,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=7
+						levels=5
 					}
 				}
 				reserves=1
@@ -8005,7 +8005,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:BOH"
-						levels=4
+						levels=3
 					}
 				}
 				reserves=1
