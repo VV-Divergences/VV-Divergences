@@ -1064,6 +1064,7 @@ mutual_funds = {
 	modifier = {
 		country_minting_mult = 0.1
 		country_loan_interest_rate_add = -0.02
+		country_loan_interest_rate_mult = -0.1
 	}
 	
 	unlocking_technologies = {
