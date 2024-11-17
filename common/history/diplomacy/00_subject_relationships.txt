@@ -63,6 +63,10 @@
 			type = dominion
 		}
 		create_diplomatic_pact = {
+			country = c:SKR
+			type = dominion
+		}
+		create_diplomatic_pact = {
 			country = c:SFJ
 			type = puppet
 		}
@@ -267,12 +271,6 @@
 			type = tributary
 		}
 	}
-	c:VIN = {
-		create_diplomatic_pact = {
-			country = c:SKR
-			type = dominion
-		}
-	}
 	c:PLA = {
 		create_diplomatic_pact = {
 			country = c:CHE
@@ -389,19 +387,28 @@
 	# Starting liberty desire
 		#Scandi bloc
 	c:VIN = {
-		add_liberty_desire = -20
+		add_liberty_desire = -25
 	}
 	c:SKR = {
+		add_liberty_desire = -25
+	}
+	c:SFJ = {
+		add_liberty_desire = -25
+	}
+	c:PSK = {
 		add_liberty_desire = -20
+	}
+	c:CRL = {
+		add_liberty_desire = -40
+	}
+	c:SIN = {
+		add_liberty_desire = -40
+	}
+	c:BER = {
+		add_liberty_desire = -40
 	}
 	c:SCO = {
 		add_liberty_desire = -50
-	}
-	c:PSK = {
-		add_liberty_desire = -15
-	}
-	c:CRL = {
-		add_liberty_desire = -30
 	}
 	c:CHR = {
 		add_liberty_desire = -50
