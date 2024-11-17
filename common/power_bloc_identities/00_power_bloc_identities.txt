@@ -43,7 +43,7 @@
 	
 	cohesion = {
 		add = {
-			add = 0.15
+			#add = 0.15	#VV Removed
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
 			desc = POWER_BLOC_COHESION_BASE
 		}
@@ -358,7 +358,7 @@ identity_ideological_union = {
 			add = legitimacy
 			divide = 100 # legitimacy max value
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
-			multiply = 0.7
+			multiply = 0.8 #increased from max 70 (0.7) to max 80 (0.8)
 			desc = POWER_BLOC_COHESION_LEGITIMACY
 		}
 		
