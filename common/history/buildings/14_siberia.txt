@@ -92,7 +92,7 @@ BUILDINGS={
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods={ "pm_simple_farming" "pm_apple_orchards" "pm_tools_disabled" }
             }
     }
 }
@@ -133,7 +133,7 @@ BUILDINGS={
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods={ "pm_simple_farming" "pm_apple_orchards" "pm_tools_disabled" }
             }
     }
 }
@@ -185,7 +185,7 @@ BUILDINGS={
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods={ "pm_simple_farming" "pm_apple_orchards" "pm_tools_disabled" }
             }
     }
 }

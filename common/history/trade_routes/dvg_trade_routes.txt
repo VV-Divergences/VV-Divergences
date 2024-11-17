@@ -479,13 +479,13 @@
 	c:CNF = {
 		create_trade_route = {
 			goods = explosives
-			level = 1
+			level = 3
 			direction = import
 			target = c:SCA.market
 		}
 		create_trade_route = {
 			goods = lead
-			level = 1
+			level = 3
 			direction = import
 			target = c:SCA.market
 		}
@@ -727,6 +727,12 @@
 			direction = import
 			target = c:SCA.market
 		}
+		create_trade_route = {
+			goods = hardwood
+			level = 4
+			direction = import
+			target = c:AFG.market
+		}
 	}
 	c:POL = {
 		create_trade_route = {
@@ -741,6 +747,49 @@
 			goods = manowars
 			level = 1
 			target = c:BEO.market
+			direction = import
+		}
+	}
+	c:SHU = {
+		create_trade_route = {
+			goods = hardwood
+			level = 8
+			target = c:MCH.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = dye
+			level = 7
+			target = c:YUE.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = iron
+			level = 5
+			target = c:BRG.market
+			direction = import
+		}
+	}
+	c:DAI = {
+		create_trade_route = {
+			goods = iron
+			level = 2
+			target = c:GNG.market
+			direction = import
+		}
+		
+	}
+	c:MSO = {
+		create_trade_route = {
+			goods = hardwood
+			level = 5
+			target = c:POL.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = fabric
+			level = 3
+			target = c:POL.market
 			direction = import
 		}
 	}

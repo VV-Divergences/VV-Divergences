@@ -772,7 +772,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods={ "pm_saw_mills" "pm_increased_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
 				building="building_forbidden_city"
@@ -2881,7 +2881,7 @@ BUILDINGS={
 					building = {
 						type = "building_logging_camp"
 						country="c:DAI"
-						levels=1
+						levels=2
 						region = "STATE_YUNNAN"
 					}
 				}
@@ -3286,7 +3286,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_fig_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_dye_plantation"
@@ -3610,7 +3610,7 @@ BUILDINGS={
 					building = {
 						type = "building_financial_district"
 						country="c:JAP"
-						levels=2
+						levels=3
 						region = "STATE_KANTO"
 					}
 				}
@@ -5046,7 +5046,7 @@ BUILDINGS={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_fig_orchards" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_opium_plantation"
