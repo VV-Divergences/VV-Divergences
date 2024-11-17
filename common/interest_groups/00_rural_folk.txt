@@ -24,43 +24,21 @@
 	on_enable = {
 		ig:ig_rural_folk = {
 			if = {
-				limit = {
-					owner = {
-					OR = {
-						country_has_primary_culture = cu:sindi
-						country_has_primary_culture = cu:rajput
-						country_has_primary_culture = cu:gujarati
-						country_has_primary_culture = cu:panjabi
-						country_has_primary_culture = cu:kashmiri
-						country_has_primary_culture = cu:avadhi
-						country_has_primary_culture = cu:kanauji
-						country_has_primary_culture = cu:bihari
-						country_has_primary_culture = cu:bengali
-						country_has_primary_culture = cu:oriya
-						country_has_primary_culture = cu:telegu
-						country_has_primary_culture = cu:tamil
-						country_has_primary_culture = cu:tamil
-						country_has_primary_culture = cu:marathi
-						country_has_primary_culture = cu:assamese
-						country_has_primary_culture = cu:kannada
-						country_has_primary_culture = cu:malayalam
-					}
-					}
-				}
-				set_interest_group_name = ig_raiyat
-				set_ig_trait = ig_trait:ig_trait_old_ways
-				set_ig_trait = ig_trait:ig_trait_honest_work
-				set_ig_trait = ig_trait:ig_trait_farmers_markets
-			}
-			else_if = {
+			# 	limit = {
+			# 		has_dlc_feature = rp1_content
+			# 		owner = { c:BRZ ?= this }
+			# 	}
+			# 	set_ig_trait = ig_trait:ig_trait_old_ways
+			# 	set_ig_trait = ig_trait:ig_trait_plantation_work
+			# 	set_ig_trait = ig_trait:ig_trait_nucleos_coloniais
+			# }
+			# else_if = {
 				limit = {
 					owner = { c:RUS ?= this }
 				}
-				ig:ig_rural_folk = {
 				set_ig_trait = ig_trait:ig_trait_old_ways
 				set_ig_trait = ig_trait:ig_trait_honest_work
 				set_ig_trait = ig_trait:ig_trait_obshchina
-				}
 			}
 			else_if = {
 				limit = {
@@ -71,12 +49,87 @@
 				set_ig_trait = ig_trait:ig_trait_fellahin
 				set_ig_trait = ig_trait:ig_trait_farmers_markets
 			}
+			else_if = {	#cvg
+				limit = {
+					owner = {
+						OR = {
+							country_has_primary_culture = cu:sindi
+							country_has_primary_culture = cu:rajput
+							country_has_primary_culture = cu:gujarati
+							country_has_primary_culture = cu:panjabi
+							country_has_primary_culture = cu:kashmiri
+							country_has_primary_culture = cu:avadhi
+							country_has_primary_culture = cu:kanauji
+							country_has_primary_culture = cu:bihari
+							country_has_primary_culture = cu:bengali
+							country_has_primary_culture = cu:oriya
+							country_has_primary_culture = cu:telegu
+							country_has_primary_culture = cu:tamil
+							country_has_primary_culture = cu:tamil
+							country_has_primary_culture = cu:marathi
+							country_has_primary_culture = cu:assamese
+							country_has_primary_culture = cu:kannada
+							country_has_primary_culture = cu:malayalam
+						}
+					}
+				}
+				set_interest_group_name = ig_raiyat
+				set_ig_trait = ig_trait:ig_trait_old_ways
+				set_ig_trait = ig_trait:ig_trait_honest_work
+				set_ig_trait = ig_trait:ig_trait_farmers_markets
+			}
+			else_if = {	#cvg
+				limit = {
+					OR = {
+						owner = { c:PLA ?= this }
+						ROOT = { was_formed_from = PLA }
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_old_ways
+				set_ig_trait = ig_trait:ig_trait_honest_work
+				set_ig_trait = ig_trait:dvg_ig_trait_pla_plantations
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_old_ways
 				set_ig_trait = ig_trait:ig_trait_honest_work
 				set_ig_trait = ig_trait:ig_trait_farmers_markets
 			}
 		}
+	
+		# Jeffersonian Ideology
+		# if = {
+		# 	limit = {
+		# 		OR = {
+		# 			country_has_primary_culture = cu:yankee
+		# 			country_has_primary_culture = cu:dixie
+		# 		}
+		# 	}
+		# 	ig:ig_rural_folk = {
+		# 		remove_ideology = ideology_agrarian
+		# 		add_ideology = ideology_agrarian_jeffersonian
+		# 		set_interest_group_name = ig_yeoman_farmers
+		# 	}
+		# }
+
+		# Heimin
+		if = {
+			limit = {
+				country_has_primary_culture = cu:japanese
+			}
+			ig:ig_rural_folk = {
+				set_interest_group_name = ig_peasants
+			}
+		}
+		# Maka'āinana
+		if = {
+			limit = {
+				country_has_primary_culture = cu:hawaiian
+			}
+			ig:ig_rural_folk = {
+				set_interest_group_name = ig_maka_ainana
+			}
+		}
+			
 	}
 	on_disable = {}
 	on_character_ig_membership = {
@@ -107,6 +160,10 @@
 			pop_employment_building_group = bg_agriculture
 			pop_employment_building_group = bg_ranching
 			pop_employment_building_group = bg_plantations
+			pop_employment_building_group = bg_logging
+			pop_employment_building_group = bg_fishing
+			pop_employment_building_group = bg_whaling
+			pop_employment_building_group = bg_manor_houses
 		}
 	}
 
@@ -121,6 +178,10 @@
 						pop_employment_building_group = bg_agriculture
 						pop_employment_building_group = bg_ranching
 						pop_employment_building_group = bg_plantations
+						pop_employment_building_group = bg_logging
+						pop_employment_building_group = bg_fishing
+						pop_employment_building_group = bg_whaling
+						pop_employment_building_group = bg_manor_houses
 					}
 				}
 				value = 100
@@ -180,6 +241,33 @@
 				value = 1
 				add = scope:interest_group.modifier:interest_group_in_government_attraction_mult
 				min = 0
+			}
+		}
+		
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_in_government = yes
+				}
+			}
+			multiply = { # Multiplied by 1.25x max
+				desc = "POP_LOYALISTS"
+				value = pop_loyalist_fraction
+				divide = 4
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_in_government = no
+				}
+			}
+			multiply = { # Multiplied by 1.25x max
+				desc = "POP_RADICALS"
+				value = pop_radical_fraction
+				divide = 4
+				add = 1
 			}
 		}
 	}

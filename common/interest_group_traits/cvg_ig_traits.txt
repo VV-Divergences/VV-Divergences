@@ -1,0 +1,102 @@
+﻿dvg_ig_trait_mug_bookkeepers = {
+	icon = "gfx/interface/icons/ig_trait_icons/treasury_bonds.dds"
+	min_approval = loyal
+	
+	modifier = {
+		country_loan_interest_rate_mult = -0.1
+	}
+}
+
+dvg_ig_trait_pol_golden_dividends = {
+	icon = "gfx/interface/icons/ig_trait_icons/noblesse_oblige.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_aristocrats_investment_pool_efficiency_mult = 0.15
+	}
+}
+
+dvg_ig_trait_ven_patrician_purses = {
+	icon = "gfx/interface/icons/ig_trait_icons/noblesse_oblige.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_aristocrats_investment_pool_efficiency_mult = 0.15
+	}
+}
+
+dvg_ig_trait_beo_baby_birthers = {
+	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_birth_rate_mult = 0.035
+	}
+}
+
+dvg_ig_trait_ven_silk_road = {
+	icon = "gfx/interface/icons/ig_trait_icons/middle_managers.dds"
+	min_approval = happy
+	
+	modifier = {
+		country_trade_route_competitiveness_mult = 0.25
+	}
+}
+
+dvg_ig_trait_lot_army_with_a_state = {
+	icon = "gfx/interface/icons/ig_trait_icons/patriotic_fervor.dds"
+	min_approval = loyal
+	
+	modifier = {
+		unit_offense_mult = 0.15
+		unit_defense_mult = 0.15
+	}
+}
+
+dvg_ig_trait_lot_military_society = {
+	icon = "gfx/interface/icons/ig_trait_icons/veteran_consultation.dds"
+	min_approval = happy
+	
+	modifier = {
+		country_military_tech_research_speed_mult = 0.1
+		country_authority_mult = 0.1
+	}
+}
+
+dvg_ig_trait_amg_amerigan_resources = {
+	icon = "gfx/interface/icons/ig_trait_icons/honest_work.dds"
+	min_approval = happy
+	
+	modifier = {
+		building_group_bg_mining_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+	}
+}
+
+dvg_ig_trait_pla_plantations = {
+	icon = "gfx/interface/icons/ig_trait_icons/honest_work.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_standard_of_living_add = 0.5
+	}
+}
+
+dvg_ig_trait_SCA_naval_traditions = {
+	icon = "gfx/interface/icons/ig_trait_icons/veteran_consultation.dds"
+	min_approval = happy
+	
+	modifier = {
+		unit_navy_offense_mult = 0.1
+		unit_navy_defense_mult = 0.1
+	}
+}
+
+dvg_ig_trait_da_wat = {
+	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
+	min_approval = happy
+	
+	modifier = {
+		state_conversion_mult = 0.2
+	}
+}

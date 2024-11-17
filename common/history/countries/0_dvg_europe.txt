@@ -1107,6 +1107,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_commercialized_agriculture
+		activate_law = law_type:law_free_trade
 		
 		set_ruling_interest_groups = {
 			ig_landowners
