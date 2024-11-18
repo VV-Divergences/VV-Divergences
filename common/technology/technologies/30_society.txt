@@ -11,7 +11,7 @@ urbanization = {
 		state_infrastructure_from_population_max_add = 40	
 		state_building_construction_sector_max_level_add = 10
 		country_max_weekly_construction_progress_add = 10
-		market_land_trade_capacity_add = 50
+		market_land_trade_capacity_add = 150
 	}
 	
 	ai_weight = {
@@ -29,7 +29,6 @@ urban_planning = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
-		market_land_trade_capacity_add = 10
 	}
 	
 	unlocking_technologies = {
@@ -147,6 +146,10 @@ international_trade = {
 		tech_bureaucracy
 	}
 	
+	modifier = {
+		market_land_trade_capacity_add = 50
+	}
+	
 	ai_weight = {
 		value = 3 # Very important in general
 	}
@@ -216,6 +219,7 @@ academia = {
 	
 	modifier = {
 		state_education_access_wealth_add = 0.005
+		state_building_university_max_level_add = 3
 	}
 	
 	unlocking_technologies = {
@@ -237,6 +241,8 @@ colonization = {
 
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 2
+		country_diplomatic_play_maneuvers_add = 10
+		country_infamy_generation_against_unrecognized_mult = -0.1
 	}	
 	
 	unlocking_technologies = {
@@ -351,6 +357,7 @@ empiricism = {
 		country_influence_mult = 0.1
 		country_institution_schools_max_investment_add = 1
 		state_education_access_wealth_add = 0.005
+		state_building_university_max_level_add = 3
 	}
 	
 	unlocking_technologies = {
@@ -434,7 +441,7 @@ modern_sewerage = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
-		market_land_trade_capacity_add = 10
+		market_land_trade_capacity_add = 50
 		state_pollution_reduction_health_mult = -0.1
 	}
 	
@@ -569,6 +576,7 @@ dialectics = {
 	
 	modifier = {
 		country_institution_schools_max_investment_add = 1
+		state_building_university_max_level_add = 4
 	}
 	
 	unlocking_technologies = {
@@ -588,6 +596,7 @@ psychiatry = {
 	modifier = {
 		country_influence_mult = 0.1
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
+		country_weekly_innovation_mult = 0.15
 	}
 	
 	unlocking_technologies = {
@@ -627,6 +636,8 @@ nationalism = {
 	
 	modifier = {
 		country_authority_mult = 0.1
+		country_diplomatic_play_maneuvers_add = 20
+		country_infamy_decay_mult = 0.10
 	}
 	
 	unlocking_technologies = {
@@ -842,7 +853,7 @@ steel_frame_buildings = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
-		market_land_trade_capacity_add = 10
+		state_urbanization_per_level_mult = -0.1
 	}
 	
 	unlocking_technologies = {
@@ -864,6 +875,8 @@ civilizing_mission = {
 
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 1
+		country_infamy_decay_mult = 0.10
+		country_infamy_generation_against_unrecognized_mult = -0.25
 	}
 	
 	unlocking_technologies = {
@@ -1032,6 +1045,7 @@ pan-nationalism = {
 	
 	modifier = {
 		country_authority_mult = 0.1
+		country_infamy_decay_mult = 0.20
 	}
 	
 	unlocking_technologies = {
@@ -1124,6 +1138,7 @@ philosophical_pragmatism = {
 	modifier = {
 		country_influence_mult = 0.1
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
+		country_weekly_innovation_mult = 0.15
 	}
 	
 	unlocking_technologies = {
@@ -1168,7 +1183,6 @@ elevator = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
-		market_land_trade_capacity_add = 10
 	}	
 	
 	unlocking_technologies = {
@@ -1344,6 +1358,7 @@ psychoanalysis = {
 	modifier = {
 		country_influence_mult = 0.1
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
+		country_weekly_innovation_mult = 0.15
 	}
 	
 	unlocking_technologies = {
@@ -1523,6 +1538,7 @@ behaviorism = {
 	modifier = {
 		country_influence_mult = 0.1
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
+		country_weekly_innovation_mult = 0.15
 	}
 	
 	unlocking_technologies = {
