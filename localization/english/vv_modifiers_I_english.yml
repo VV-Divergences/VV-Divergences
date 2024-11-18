@@ -1,0 +1,2 @@
+﻿state_building_university_max_level_add:      "$building_university$ Max Level"
+ state_building_university_max_level_add_desc: "A bonus or penalty to the maximum level of $building_university$ buildings."
