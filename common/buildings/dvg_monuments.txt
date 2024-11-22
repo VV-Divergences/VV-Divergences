@@ -2,7 +2,7 @@
 
 building_cuiyan_port = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/building_cuiyan_port.dds"
+	icon = "gfx/interface/icons/building_icons/building_cuiyan_port.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -19,7 +19,7 @@ building_cuiyan_port = {
 
 	terrain_manipulator = urban_port
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_MOTU_PARI
 	}
 }
@@ -27,7 +27,7 @@ building_cuiyan_port = {
 #Medina
 building_medina = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/hagia_sophia.dds"
+	icon = "gfx/interface/icons/building_icons/hagia_sophia.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -47,7 +47,7 @@ building_medina = {
 		pmg_base_building_medina
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_HEDJAZ
 	}
 	
@@ -57,7 +57,7 @@ building_medina = {
 #Mecca
 building_mecca = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/hagia_sophia.dds"
+	icon = "gfx/interface/icons/building_icons/hagia_sophia.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -77,7 +77,7 @@ building_mecca = {
 		pmg_base_building_mecca
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_HEDJAZ
 	}
 	
@@ -87,7 +87,7 @@ building_mecca = {
 #Jerusalem
 building_jerusalem = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/hagia_sophia.dds"
+	icon = "gfx/interface/icons/building_icons/hagia_sophia.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -107,7 +107,7 @@ building_jerusalem = {
 		pmg_base_building_jerusalem
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_PALESTINE
 	}
 	
@@ -117,7 +117,7 @@ building_jerusalem = {
 #Imam Ali Shrine
 building_shia = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/hagia_sophia.dds"
+	icon = "gfx/interface/icons/building_icons/hagia_sophia.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -137,7 +137,7 @@ building_shia = {
 		pmg_base_building_shia
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_BAGHDAD
 	}
 	
@@ -146,7 +146,7 @@ building_shia = {
 
 building_lanfang_temple = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/angkor_wat.dds"
+	icon = "gfx/interface/icons/building_icons/angkor_wat.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -166,7 +166,7 @@ building_lanfang_temple = {
 		pmg_base_building_angkor_wat
 	}
 	
-	possible = {
+	potential = {
 		NOT = { has_global_variable = dvg_lanfang_temple_built}
 		owner = {
 			country_has_state_religion = rel:mahayana
@@ -179,7 +179,7 @@ building_lanfang_temple = {
 
 building_borobudur = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/angkor_wat.dds"
+	icon = "gfx/interface/icons/building_icons/angkor_wat.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -198,7 +198,7 @@ building_borobudur = {
 		pmg_base_building_angkor_wat
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_CENTRAL_JAVA
 	}
 	

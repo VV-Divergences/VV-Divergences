@@ -1,6 +1,6 @@
 ﻿building_eiffel_tower = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/building_eiffel_tower.dds"
+	icon = "gfx/interface/icons/building_icons/building_eiffel_tower.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
@@ -25,7 +25,7 @@
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_ILE_DE_FRANCE
 	}
 	
@@ -36,7 +36,7 @@
 
 building_angkor_wat = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/angkor_wat.dds"
+	icon = "gfx/interface/icons/building_icons/angkor_wat.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -56,7 +56,7 @@ building_angkor_wat = {
 		pmg_base_building_angkor_wat
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_CAMBODIA
 	}
 	
@@ -67,7 +67,7 @@ building_angkor_wat = {
 
 building_big_ben = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/big_ben.dds"
+	icon = "gfx/interface/icons/building_icons/big_ben.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
@@ -88,7 +88,7 @@ building_big_ben = {
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_HOME_COUNTIES
 	}
 	
@@ -99,7 +99,7 @@ building_big_ben = {
 
 building_forbidden_city = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/forbidden_city.dds"
+	icon = "gfx/interface/icons/building_icons/forbidden_city.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -119,7 +119,7 @@ building_forbidden_city = {
 		pmg_base_building_forbidden_city
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_BEIJING
 	}
 	
@@ -130,7 +130,7 @@ building_forbidden_city = {
 
 building_hagia_sophia = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/hagia_sophia.dds"
+	icon = "gfx/interface/icons/building_icons/hagia_sophia.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -150,7 +150,7 @@ building_hagia_sophia = {
 		pmg_base_building_hagia_sophia
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_EASTERN_THRACE
 	}
 	
@@ -161,7 +161,7 @@ building_hagia_sophia = {
 
 building_mosque_of_djenne = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/mosque_of_djenne.dds"
+	icon = "gfx/interface/icons/building_icons/mosque_of_djenne.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
@@ -182,7 +182,7 @@ building_mosque_of_djenne = {
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_EASTERN_MALI
 	}
 	
@@ -193,7 +193,7 @@ building_mosque_of_djenne = {
 
 building_saint_basils_cathedral = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/saint_basils_cathedral.dds"
+	icon = "gfx/interface/icons/building_icons/saint_basils_cathedral.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -213,7 +213,7 @@ building_saint_basils_cathedral = {
 		pmg_base_building_saint_basils_cathedral
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_MOSCOW
 	}
 	
@@ -224,7 +224,7 @@ building_saint_basils_cathedral = {
 
 building_statue_of_liberty = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/statue_of_liberty.dds"
+	icon = "gfx/interface/icons/building_icons/statue_of_liberty.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
@@ -249,7 +249,7 @@ building_statue_of_liberty = {
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_COTE_DU_CAFE
 		# state_region = s:STATE_NEW_YORK
 	}
@@ -263,7 +263,7 @@ building_statue_of_liberty = {
 
 # building_taj_mahal = {
 # 	building_group = bg_monuments
-# 	texture = "gfx/interface/icons/building_icons/taj_mahal.dds"
+# 	icon = "gfx/interface/icons/building_icons/taj_mahal.dds"
 # 	expandable = no
 # 	buildable = no
 # 	downsizeable = no
@@ -283,7 +283,7 @@ building_statue_of_liberty = {
 # 		pmg_base_building_taj_mahal
 # 	}
 
-# 	possible = {
+# 	potential = {
 # 		state_region = s:STATE_JAIPUR
 # 	}
 	
@@ -294,7 +294,7 @@ building_statue_of_liberty = {
 
 building_vatican_city = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/vatican_city.dds"
+	icon = "gfx/interface/icons/building_icons/vatican_city.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -315,7 +315,7 @@ building_vatican_city = {
 		pmg_base_building_vatican_city
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_LAZIO
 	}
 	
@@ -326,7 +326,7 @@ building_vatican_city = {
 
 # building_white_house = {
 # 	building_group = bg_monuments
-# 	texture = "gfx/interface/icons/building_icons/white_house.dds"
+# 	icon = "gfx/interface/icons/building_icons/white_house.dds"
 # 	expandable = no
 # 	buildable = no
 # 	downsizeable = no
@@ -346,7 +346,7 @@ building_vatican_city = {
 # 		pmg_base_building_white_house
 # 	}
 	
-# 	possible = {
+# 	potential = {
 # 		state_region = s:STATE_DISTRICT_OF_COLUMBIA
 # 	}
 	
@@ -359,7 +359,7 @@ building_vatican_city = {
 
 building_machu_picchu = {
 	building_group = bg_monuments_hidden
-	texture = "gfx/interface/icons/building_icons/machu_picchu.dds"
+	icon = "gfx/interface/icons/building_icons/machu_picchu.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -702,7 +702,7 @@ building_wat_arun = {
 
 # building_cristo_redentor = {
 # 	building_group = bg_monuments
-# 	texture = "gfx/interface/icons/building_icons/building_cristo_redentor.dds"
+# 	icon = "gfx/interface/icons/building_icons/building_cristo_redentor.dds"
 # 	expandable = no
 # 	downsizeable = no
 # 	unique = yes
@@ -727,7 +727,7 @@ building_wat_arun = {
 	
 # 	required_construction = construction_cost_monument
 	
-# 	possible = {
+# 	potential = {
 # 		state_region = s:STATE_RIO_DE_JANEIRO
 # 		owner = {
 # 			NOT = {
@@ -757,7 +757,7 @@ building_power_bloc_statue = {
 		pmg_base_building_power_bloc_statue
 	}
 
-	texture = "gfx/interface/icons/building_icons/building_powerblock_statue.dds"
+	icon = "gfx/interface/icons/building_icons/building_powerblock_statue.dds"
 
 	required_construction = construction_cost_monument
 
@@ -769,7 +769,7 @@ building_power_bloc_statue = {
 		always = no
 	}	
 	
-	possible = {
+	potential = {
 		owner = {
 			is_in_power_bloc = yes
 		}

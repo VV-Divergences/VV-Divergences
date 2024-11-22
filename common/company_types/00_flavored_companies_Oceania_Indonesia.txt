@@ -36,7 +36,7 @@ company_SemuaDalam = {
 	
 	prosperity_modifier = {
 		state_birth_rate_mult = 0.1
-		state_radicals_from_sol_change_mult = 0.25
+		state_radicals_from_political_movements_mult = 0.25
 		
 	}
 

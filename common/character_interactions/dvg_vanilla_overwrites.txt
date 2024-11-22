@@ -18,7 +18,7 @@ exile_character = {
 	show_requirements = yes
 
 	possible = {
-		owner = {
+		owner ?= {
 			NOT = {
 				has_law = law_type:law_protected_speech
 			}
@@ -52,12 +52,12 @@ exile_character = {
 		this = {
 			save_scope_as = exile_scope
 		}
-		owner = {
+		owner ?= {
 			save_scope_as = exiling_country_scope
 		}
 		if = {
 			limit = {
-				owner = { has_journal_entry = je_caudillo }
+				owner ?= { has_journal_entry = je_caudillo }
 				interest_group = {
 					is_interest_group_type = ig_armed_forces
 				}
@@ -70,7 +70,7 @@ exile_character = {
 						}
 					}
 				}
-				owner = {
+				owner ?= {
 					custom_tooltip = {
 						text = lose_large_caudillo_points
 						change_variable = {
@@ -81,7 +81,7 @@ exile_character = {
 				}
 			}
 			else = {
-				owner = {
+				owner ?= {
 					custom_tooltip = {
 						text = lose_caudillo_points
 						change_variable = {
@@ -94,13 +94,13 @@ exile_character = {
 		}
 		if = {
 			limit = {
-				owner = {
+				owner ?= {
 					is_player = yes
 					NOT = { has_variable = achievement_agitate_elsewhere_var }
 				}
 				popularity >= 100
 			}
-			owner = { set_variable = achievement_agitate_elsewhere_var }
+			owner ?= { set_variable = achievement_agitate_elsewhere_var }
 		}
 		hidden_effect = {
 			if = {
@@ -129,7 +129,7 @@ exile_character = {
 				remove_character_role = politician
 			}
 		}
-		owner = {
+		owner ?= {
 			custom_tooltip = exiling_dissident_radicals_factors
 		}
 		# Extra radical from exiling a popular character
@@ -137,7 +137,7 @@ exile_character = {
 			limit = {
 				popularity >= 50
 			}
-			owner = {
+			owner ?= {
 				add_radicals = {
 					value = small_radicals
 					interest_group = scope:relevant_ig
@@ -147,9 +147,9 @@ exile_character = {
 		# Standard radicals from having Right of Assembly
 		if = {
 			limit = {
-				owner = { has_law = law_type:law_right_of_assembly }
+				owner ?= { has_law = law_type:law_right_of_assembly }
 			}
-			owner = {
+			owner ?= {
 				add_radicals = {
 					value = medium_radicals
 					interest_group = scope:relevant_ig
@@ -159,9 +159,9 @@ exile_character = {
 		# Fewer radicals from Censorship
 		else_if = {
 			limit = {
-				owner = { has_law = law_type:law_censorship }
+				owner ?= { has_law = law_type:law_censorship }
 			}
-			owner = {
+			owner ?= {
 				add_radicals = {
 					value = small_radicals
 					interest_group = scope:relevant_ig

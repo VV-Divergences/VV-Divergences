@@ -1,8 +1,8 @@
 ﻿sway_to_anglois = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_orleanist.dds"
 	potential = {
-		owner = scope:actor
-		owner = {
+		owner ?= scope:actor
+		owner ?= {
 			has_journal_entry = je_dual_integration
 		}
 		NOT = {
@@ -42,7 +42,7 @@
 	}
 	effect = {
 		set_ideology = ideology:ideology_anglois
-		owner = {
+		owner ?= {
 			add_modifier = {
 				name = swayed_to_french_monarchist
 				months = 60
@@ -61,8 +61,8 @@
 sway_to_french = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_orleanist.dds"
 	potential = {
-		owner = scope:actor
-		owner = {
+		owner ?= scope:actor
+		owner ?= {
 			has_journal_entry = je_french_integration
 		}
 		NOT = {
@@ -103,7 +103,7 @@ sway_to_french = {
 	}
 	effect = {
 		set_ideology = ideology:ideology_french
-		owner = {
+		owner ?= {
 			add_modifier = {
 				name = swayed_to_french_monarchist
 				months = 60
@@ -122,8 +122,8 @@ sway_to_french = {
 sway_to_english = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_orleanist.dds"
 	potential = {
-		owner = scope:actor
-		owner = {
+		owner ?= scope:actor
+		owner ?= {
 			has_journal_entry = je_english_integration
 		}
 		NOT = {
@@ -163,7 +163,7 @@ sway_to_english = {
 	}
 	effect = {
 		set_ideology = ideology:ideology_english
-		owner = {
+		owner ?= {
 			add_modifier = {
 				name = swayed_to_french_monarchist
 				months = 60
