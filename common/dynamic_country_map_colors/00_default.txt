@@ -328,24 +328,7 @@ unpleasant_germany = {
 	possible = {
 		exists = c:GER
 		THIS = c:GER
-		coa_dictatorship_trigger = yes
-		NOT = {
-			OR = {
-				py:communist_party ?= {
-					any_member = {
-						is_in_government = yes
-					}
-				}
-				any_scope_character = {
-					is_ruler = yes
-					OR = {
-						has_ideology = ideology:ideology_communist
-						has_ideology = ideology:ideology_vanguardist
-						has_ideology = ideology:ideology_anarchist
-					}
-				}
-			}
-		}
+		coa_fascist_trigger = yes
 	}
 }
 

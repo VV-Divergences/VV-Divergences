@@ -1047,7 +1047,7 @@ principle_police_coordination_2 = {
 	institution = institution_police
 	institution_modifier = {
 		# Police institution reduces radicalism of political movements
-		political_movement_radicalism_mult = -0.1
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -1078,7 +1078,7 @@ principle_police_coordination_3 = {
 		country_authority_add = 50
 		
 		# Police institution reduces radicalism of political movements
-		political_movement_radicalism_mult = -0.1
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.1
 	}
 	
 	ai_weight = {
@@ -1299,7 +1299,7 @@ principle_colonial_offices_1 = {
 	institution = institution_colonial_affairs
 	institution_modifier = {
 		# Members get higher colony growth for each level of institution
-		state_colony_growth_creation_mult = 0.05
+		state_colony_growth_creation_factor = 0.05
 	}	
 	
 	ai_weight = {
@@ -1339,7 +1339,7 @@ principle_colonial_offices_2 = {
 	institution = institution_colonial_affairs
 	institution_modifier = {
 		# Modifiers from previous level(s)	
-		state_colony_growth_creation_mult = 0.05
+		state_colony_growth_creation_factor = 0.05
 		country_infamy_generation_against_unrecognized_mult = -0.05
 	}	
 
@@ -1369,7 +1369,7 @@ principle_colonial_offices_3 = {
 	institution = institution_colonial_affairs
 	institution_modifier = {
 		# Modifiers from previous level(s)	
-		state_colony_growth_creation_mult = 0.05
+		state_colony_growth_creation_factor = 0.05
 		country_infamy_generation_against_unrecognized_mult = -0.05
 	}		
 
@@ -1502,7 +1502,7 @@ principle_creative_legislature_2 = {
 		country_law_enactment_stall_mult = -0.33
 		
 		# Members political movements to preserve and restore have lower support
-		political_movement_preserve_support_mult = -0.33
+		political_movement_radicalism_from_enactment_approval_mult = -0.33
 		political_movement_restore_support_mult = -0.33
 	}
 	power_bloc_modifier = {
@@ -1520,7 +1520,7 @@ principle_creative_legislature_3 = {
 	member_modifier = {
 		# Modifiers from previous level(s)	
 		country_law_enactment_stall_mult = -0.33
-		political_movement_preserve_support_mult = -0.33
+		political_movement_radicalism_from_enactment_approval_mult = -0.33
 		political_movement_restore_support_mult = -0.33
 		
 		# Can have one additional setback before failing a law enactment
@@ -1877,7 +1877,7 @@ principle_sacred_civics_1 = {
 		# Higher diplomatic acceptance from countries with same state religion
 		# This modifier actually has no effect and is just here to generate a tooltip, the effects are scripted in diplomactic_actions
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
-		state_accepted_birth_rate_mult = 0.016
+		state_birth_rate_mult = 0.016
 		country_legitimacy_base_add = 5 #placeholder until i can get the below thing working - Matty
 	}
 	power_bloc_modifier = {
@@ -1916,7 +1916,7 @@ principle_sacred_civics_2 = {
 		# Modifiers from previous level(s)		
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
 
-		state_accepted_birth_rate_mult = 0.034
+		state_birth_rate_mult = 0.034
 
 		country_legitimacy_base_add = 10 #placeholder - Matty
 		
@@ -1941,13 +1941,13 @@ principle_sacred_civics_3 = {
 		country_higher_diplomatic_acceptance_same_religion_bool = yes
 		country_reduced_liberty_desire_same_religion_bool = yes
 
-		state_accepted_birth_rate_mult = 0.05
+		state_birth_rate_mult = 0.05
 
 		country_legitimacy_base_add = 15 #placeholder - Matty
 
-		# SoL changes less radical/more loyalist for accepted religion pops
-		state_radicals_from_sol_change_accepted_religion_mult = -0.1
-		state_loyalists_from_sol_change_accepted_religion_mult = 0.1
+		# SoL changes less radical/more loyalist for accepted religion pops		#VV modifiers removed in 1.8
+		# state_radicals_from_sol_change_accepted_religion_mult = -0.1
+		# state_loyalists_from_sol_change_accepted_religion_mult = 0.1
 	}
 
 	leader_modifier = {

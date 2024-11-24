@@ -42,12 +42,16 @@ modifier_slave_to_liberty = {
 
 modifier_eastern_slavery = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-    state_radicals_from_discrimination_mult = 0.5
+    state_radicalism_increases_violent_hostility_mult = 0.2
+	state_radicalism_increases_cultural_erasure_mult = 0.2
+	state_radicalism_increases_open_prejudice_mult = 0.2
 }
 
 modifier_eastern_oppression = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-    state_radicals_from_discrimination_mult = 0.25
+    state_radicalism_increases_violent_hostility_mult = 0.1
+	state_radicalism_increases_cultural_erasure_mult = 0.1
+	state_radicalism_increases_open_prejudice_mult = 0.1
 }
 
 modifier_magnate_oligarchy = {
@@ -67,19 +71,19 @@ modifier_noble_democracy = {
 	#interest_group_ig_armed_forces_pol_str_mult = 0.3
 	country_officers_pol_str_mult = 0.25
 	state_capitalists_investment_pool_efficiency_mult = 0.1
-    state_loyalists_from_sol_change_mult = 0.15
+    state_loyalists_from_political_movements_mult = 0.15
 }
 
 dvg_pol_tech_spread = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_tech_spread_mult = 0.25
-	state_loyalists_from_sol_change_mult = 0.25
+	state_loyalists_from_political_movements_mult = 0.25
 }
 
 dvg_fallen_kingdom = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	country_prestige_mult = -0.33
-	state_radicals_from_sol_change_mult = 0.05
+	state_radicals_from_political_movements_mult = 0.05
 }
 
 dvg_fallen_kingdom_less_bad = {
@@ -90,7 +94,7 @@ dvg_fallen_kingdom_less_bad = {
 dvg_overthrown_kingdom = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_prestige_mult = -0.10
-	state_radicals_from_sol_change_mult = -0.05
+	state_radicals_from_political_movements_mult = -0.05
 }
 
 dvg_loss_of_morocco = {
@@ -139,7 +143,9 @@ ari_unifier_ruler = {
 
 dvg_quechua_land_rights = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	state_radicals_from_discrimination_mult = -0.25
+	state_radicalism_increases_violent_hostility_mult = -0.1
+	state_radicalism_increases_cultural_erasure_mult = -0.1
+	state_radicalism_increases_open_prejudice_mult = -0.1
 	country_prestige_mult = -0.10
 	state_assimilation_mult = -0.1
 	state_quechua_standard_of_living_add = 1
@@ -147,7 +153,9 @@ dvg_quechua_land_rights = {
 
 dvg_quechua_no_land_rights = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	state_radicals_from_discrimination_mult = 0.25
+	state_radicalism_increases_violent_hostility_mult = -0.1
+	state_radicalism_increases_cultural_erasure_mult = -0.1
+	state_radicalism_increases_open_prejudice_mult = -0.1
 	country_prestige_add = 5
 	state_assimilation_mult = 0.1
 	tax_heathen_add = 0.1
@@ -209,10 +217,12 @@ dvg_fragile_country = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	country_radicals_from_legitimacy_mult = 1
 	country_legitimacy_ideological_incoherence_mult = 0.25
-	political_movement_radicalism_mult = 0.25
+	political_movement_radicalism_from_enactment_disapproval_mult = 0.25
 	state_turmoil_effects_mult = 0.25
-	state_radicals_from_sol_change_mult = 0.33
-	state_radicals_from_discrimination_mult = 0.1
+	state_radicals_from_political_movements_mult = 0.33
+	state_radicalism_increases_violent_hostility_mult = 0.1
+	state_radicalism_increases_cultural_erasure_mult = 0.1
+	state_radicalism_increases_open_prejudice_mult = 0.1
 }
 
 dvg_mid_way = {
@@ -279,7 +289,7 @@ dvg_unstable_confederation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	#country_law_enactment_success_add = -0.10
 	state_turmoil_effects_mult = 0.10
-	state_radicals_from_sol_change_mult = 0.10
+	state_radicals_from_political_movements_mult = 0.10
 	tax_land_add = 0.15
 }
 
@@ -349,7 +359,7 @@ dvg_kongsi_modifier = {
 dvg_red_princed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	country_prestige_mult = -0.50
-	state_radicals_from_sol_change_mult = -0.05
+	state_radicals_from_political_movements_mult = -0.05
 	unit_army_defense_mult = -0.25
 	unit_army_offense_mult = -0.25
 	state_mortality_mult = 0.1
@@ -360,7 +370,7 @@ dvg_red_princed = {
 
 dvg_red_prince_recovery = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
-	state_radicals_from_sol_change_mult = 0.05
+	state_radicals_from_political_movements_mult = 0.05
 	state_standard_of_living_add = -1
 	state_infrastructure_mult = -0.05
 	state_tax_waste_add = 0.5
@@ -404,7 +414,9 @@ dvg_aloysius_clique = {
 dvg_geus_resistance = {
 	icon = gfx/interface/icons/politics_icons/radicalized.dds
 	state_mortality_mult = 0.1
-	state_radicals_from_discrimination_mult = 0.25
+	state_radicalism_increases_violent_hostility_mult = 0.2
+	state_radicalism_increases_cultural_erasure_mult = 0.2
+	state_radicalism_increases_open_prejudice_mult = 0.2
 	country_authority_mult = -0.5
 	state_colony_growth_speed_mult = -0.9
 }
@@ -438,7 +450,9 @@ dvg_increased_patrols = {
 dvg_lacking_patrols = {
 	icon = gfx/interface/icons/event_icons/event_scales.dds
 	country_authority_add = -100
-	state_radicals_from_discrimination_mult = 0.2
+	state_radicalism_increases_violent_hostility_mult = 0.1
+	state_radicalism_increases_cultural_erasure_mult = 0.1
+	state_radicalism_increases_open_prejudice_mult = 0.1
 }
  
 dvg_withdrew_expedition = {
@@ -623,8 +637,10 @@ qin_federal_sys_better = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_law_enactment_time_mult = 0.10
 	country_authority_mult = -0.15
-	state_radicals_from_sol_change_mult = -0.1
-	state_radicals_from_discrimination_mult = -0.1
+	state_radicals_from_political_movements_mult = -0.1
+	state_radicalism_increases_violent_hostility_mult = -0.1
+	state_radicalism_increases_cultural_erasure_mult = -0.1
+	state_radicalism_increases_open_prejudice_mult = -0.1
 	state_construction_mult = 0.05
 	country_bureaucracy_mult = 0.1
 }
@@ -633,7 +649,7 @@ qin_federal_sys = { #Initial modifier for Qingiqu that represents their federal 
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_law_enactment_time_mult = 0.25
 	country_authority_mult = -0.5
-	state_radicals_from_sol_change_mult = -0.05
+	state_radicals_from_political_movements_mult = -0.05
 	state_construction_mult = 0.05
 	state_tax_capacity_mult = -0.1
 	country_bureaucracy_mult = 0.1
@@ -666,13 +682,15 @@ dvg_native_reservation = {
 dvg_fragile_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	state_turmoil_effects_mult = 0.25
-	state_radicals_from_sol_change_mult = 0.33
-	state_radicals_from_discrimination_mult = 0.1
-	state_poor_expected_sol = 2.0
+	state_radicals_from_political_movements_mult = 0.33
+	state_radicalism_increases_violent_hostility_mult = 0.1
+	state_radicalism_increases_cultural_erasure_mult = 0.1
+	state_radicalism_increases_open_prejudice_mult = 0.1
+	state_lower_strata_expected_sol_add = 2.0
 }
 dvg_qin_slightly_upset = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
-	state_radicals_from_sol_change_mult = 0.1
+	state_radicals_from_political_movements_mult = 0.1
 }
 dvg_nation_built = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
@@ -688,16 +706,16 @@ dvg_poor_mans_republic = {
 	interest_group_ig_landowners_pol_str_mult = -0.5
 	country_authority_mult = -0.2
 	country_tech_spread_mult = -0.25
-	state_radicals_from_sol_change_mult = -0.1
-	state_loyalists_from_sol_change_mult = -0.1
+	state_radicals_from_political_movements_mult = -0.1
+	state_loyalists_from_political_movements_mult = -0.1
 }
 
 dvg_batavia_for_all = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	interest_group_ig_rural_folk_pol_str_mult = 0.25
 	interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.25
-	state_radicals_from_sol_change_mult = -0.1
-	state_loyalists_from_sol_change_mult = 0.1
+	state_radicals_from_political_movements_mult = -0.1
+	state_loyalists_from_political_movements_mult = 0.1
 	country_prestige_add = 15
 }
 
@@ -738,12 +756,11 @@ dvg_great_german_game_modifier = {
 
 dvg_left_great_german_game_modifier_boh = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	state_accepted_birth_rate_mult = 0.05
-	state_loyalists_from_sol_change_accepted_religion_mult = 0.25
+	state_birth_rate_mult = 0.05
 }
 dvg_left_great_german_game_modifier_sca = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	state_colony_growth_creation_mult = 0.2
+	state_colony_growth_creation_factor = 0.2
 }
 dvg_left_great_german_game_modifier_brg = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds

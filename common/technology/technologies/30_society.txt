@@ -1007,7 +1007,7 @@ corporatism = {
 	}
 	
 	modifier = {
-		state_radicals_from_sol_change_accepted_culture_mult = -0.10
+		state_radicals_from_political_movements_mult = -0.10
 	}
 	
 	unlocking_technologies = {

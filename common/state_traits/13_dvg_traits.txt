@@ -33,7 +33,7 @@ state_trait_liushadi = {
         building_group_bg_agriculture_throughput_add = -0.10
 		state_infrastructure_add = -15
 		state_construction_mult = -0.10
-		state_radicals_from_sol_change_mult = 0.10
+		state_radicals_from_political_movements_mult = 0.10
 	}
 }
 

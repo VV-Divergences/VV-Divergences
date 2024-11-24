@@ -9,6 +9,12 @@
 		ideology_stratocratic
 		ideology_patriarchal
 	}
+	
+	character_ideologies = {
+		ideology_moderate
+		ideology_traditionalist
+		#ideology_legitimist
+	}
 
 	enable = {
 		always = yes
@@ -269,79 +275,28 @@
 				add_ideology = ideology_caudillismo
 			}
 		}
-		#Zamindars
-		if = {
+		# India
+		else_if = {
 			limit = {
 				OR = {
-					country_has_primary_culture = cu:sindi
-					country_has_primary_culture = cu:rajput
-					country_has_primary_culture = cu:gujarati
-					country_has_primary_culture = cu:panjabi
-					country_has_primary_culture = cu:kashmiri
-					country_has_primary_culture = cu:avadhi
-					country_has_primary_culture = cu:kanauji
-					country_has_primary_culture = cu:bihari
-					country_has_primary_culture = cu:bengali
-					country_has_primary_culture = cu:oriya
-					country_has_primary_culture = cu:telegu
+					c:BIC ?= this
+					any_primary_culture = {
+						has_discrimination_trait = south_asian_heritage
+					}
 				}
 			}
 			ig:ig_landowners = {
 				set_interest_group_name = ig_zamindars
-			}
-		}
-		#Palaiyakkarars
-		if = {
-			limit = {
-				OR = {
-					country_has_primary_culture = cu:tamil
-				}
-			}
-			ig:ig_landowners = {
-				set_interest_group_name = ig_poligars
-			}
-		}
-		#Jenmi
-		if = {
-			limit = {
-				OR = {
-					country_has_primary_culture = cu:malayalam
-				}
-			}
-			ig:ig_landowners = {
-				set_interest_group_name = ig_jenmis
-			}
-		}
-		#Vatandar
-		if = {
-			limit = {
-					OR = {
-						country_has_primary_culture = cu:marathi
+				if = {
+					limit = {
+						owner = {
+							c:BIC ?= this
+						}
 					}
+					set_ig_trait = ig_trait:ig_trait_summon_no_zamindars
 				}
-				ig:ig_landowners = {
-					set_interest_group_name = ig_vatandars
-				}
-			}
-		#Bhuiyan
-		if = {
-			limit = {
-					OR = {
-						country_has_primary_culture = cu:assamese
-					}
-				}
-				ig:ig_landowners = {
-					set_interest_group_name = ig_bhuiyan
-				}
-			}
-		if = {
-			limit = {
-				OR = {
-					country_has_primary_culture = cu:kannada
-				}
-			}
-			ig:ig_landowners = {
-				set_interest_group_name = ig_vokkaligas
+				set_ig_trait = ig_trait:ig_trait_famine_reserves
+				set_ig_trait = ig_trait:ig_trait_profitable_estates
 			}
 		}
 	}
@@ -404,7 +359,7 @@
 				limit = {
 					is_pop_type = officers
 				}
-				value = 50
+				value = 25
 			}
 		}
 
@@ -627,15 +582,6 @@
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.5
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
 	}
 }

@@ -1,7 +1,7 @@
 ﻿
 decree_penal_colony = {
 	texture = "gfx/interface/icons/decree/penal.dds"
-	valid = {
+	state_trigger = {
 		owner = { 
 			NOT = { 
 				has_law = law_no_colonial_affairs

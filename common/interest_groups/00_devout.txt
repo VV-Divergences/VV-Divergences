@@ -9,6 +9,12 @@
 		ideology_moralist
 		ideology_patriarchal
 	}
+	
+	character_ideologies = {
+		ideology_moderate
+		ideology_traditionalist
+		#ideology_legitimist
+	}
 
 	enable = {
 		always = yes
@@ -66,7 +72,7 @@
 					}
 				}
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
-				set_ig_trait = ig_trait:ig_trait_khalsa
+				set_ig_trait = ig_trait:ig_trait_rehat
 				set_ig_trait = ig_trait:ig_trait_kar_seva
 			}
 			else_if = {
@@ -120,6 +126,16 @@
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
 				set_ig_trait = ig_trait:ig_trait_mecelle
 				set_ig_trait = ig_trait:ig_trait_da_wat
+			}
+			else_if = {
+				limit = {
+					owner = {
+						c:BIC ?= this
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_pious_fiction
+				set_ig_trait = ig_trait:ig_trait_divine_right
+				set_ig_trait = ig_trait:ig_trait_asceticism
 			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
@@ -221,6 +237,16 @@
 				set_interest_group_name = ig_church_of_norway
 			}
 		}
+		# Church of Finland
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:protestant
+				country_has_primary_culture = cu:finnish
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_church_of_finland
+			}
+		}
 		# Church of Sweden
 		else_if = {
 			limit = {
@@ -306,9 +332,6 @@
 			ig:ig_devout = { 
 				set_interest_group_name = ig_evangelical_church
 			}
-			ig:ig_devout ={
-				set_ig_trait = ig_trait:ig_trait_work_ethic
-			}
 		}
 		# Sunni Ulema
 		else_if = {
@@ -384,14 +407,13 @@
 				set_interest_group_name = ig_mahayana_monks
 				remove_ideology = ideology_moralist
 				add_ideology = ideology_buddhist_moralist
-				set_ig_trait = ig_trait:ig_trait_asceticism
 			}
 		}
-		# Sikh Priesthood
+		# Sikh Granthis
 		else_if = {
 			limit = { country_has_state_religion = rel:sikh }
 			ig:ig_devout = {
-				set_interest_group_name = ig_sikh_priesthood
+				set_interest_group_name = ig_granthis
 				remove_ideology = ideology_moralist
 				add_ideology = ideology_sikh_moralist
 			}
@@ -446,7 +468,10 @@
 	}
 
 	pop_weight = {
-		value = 25
+		add = {
+			desc = "POP_BASE_ATTRACTION"
+			value = 25
+		}
 
 		add = {
 			desc = "POP_CLERGYMEN"
@@ -751,15 +776,6 @@
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
 	}
 }

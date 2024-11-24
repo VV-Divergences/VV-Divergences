@@ -24,7 +24,9 @@ dvg_nightmare_in_the_west = {
 
 dvg_border_raids = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_radicals_from_discrimination_mult = 0.5
+	state_radicalism_increases_violent_hostility_mult = 0.2
+	state_radicalism_increases_cultural_erasure_mult = 0.2
+	state_radicalism_increases_open_prejudice_mult = 0.2
 	state_infrastructure_mult = -1.0
 	state_mortality_turmoil_mult = 0.15
 	state_construction_mult = -1.0
@@ -123,12 +125,16 @@ english_rebel_funding_modifier = {
 
 jagiellonian_poland_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	state_radicals_from_discrimination_mult = -0.10
+	state_radicalism_increases_violent_hostility_mult = -0.1
+	state_radicalism_increases_cultural_erasure_mult = -0.1
+	state_radicalism_increases_open_prejudice_mult = -0.1
 }
 
 piast_poland_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
-	state_radicals_from_discrimination_mult = 0.10
+	state_radicalism_increases_violent_hostility_mult = -0.1
+	state_radicalism_increases_cultural_erasure_mult = -0.1
+	state_radicalism_increases_open_prejudice_mult = -0.1
 }
 
 piast_poland_ig_modifier = {

@@ -226,3 +226,12 @@ state_building_university_max_level_add= {
 	percent=no
 	decimals=0
 }
+
+unit_combat_unit_type_lancers_offense_mult={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

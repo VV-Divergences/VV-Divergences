@@ -43,8 +43,6 @@ law_religious_autonomy = {
     
     modifier = {
         interest_group_ig_devout_pol_str_mult = 0.25
-        state_radicals_from_sol_change_accepted_religion_mult = -0.01
-        state_loyalists_from_sol_change_accepted_religion_mult = 0.01    
         country_authority_add = 100
     }
     

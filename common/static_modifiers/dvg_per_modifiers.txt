@@ -27,7 +27,7 @@ dvg_modifier_karkiya_lite = {
 }
 dvg_civilians_killed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_radicals_from_sol_change_mult = 0.2
+	state_radicals_from_political_movements_mult = 0.2
 	state_mortality_turmoil_mult = 0.05
 	state_mortality_mult = 0.05
 	state_turmoil_effects_mult = 0.50
@@ -37,7 +37,7 @@ dvg_soyurghal = {
     interest_group_ig_landowners_pol_str_mult = 0.5
 	state_conscription_rate_add = -0.25
 	state_tax_waste_add  = 0.5
-    state_rich_expected_sol = 2.0 
+    state_upper_strata_expected_sol_add = 2.0 
 }
 
 dvg_monument_restored = {

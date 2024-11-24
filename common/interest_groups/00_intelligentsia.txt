@@ -10,6 +10,17 @@
 		ideology_republican
 		ideology_anti_slavery
 	}
+	
+	character_ideologies = {
+		ideology_moderate
+		ideology_republican_leader
+		ideology_radical
+		ideology_reformer
+		ideology_sovereignist_leader
+		#ideology_orleanist
+		ideology_despotic_utopian
+		ideology_humanitarian
+	}
 
 	enable = {
 		always = yes
@@ -118,6 +129,9 @@
 				OR = {
 					c:GBR ?= THIS
 					c:JAP ?= THIS
+					any_primary_culture = { # Princely States and Nepal
+						has_discrimination_trait = south_asian_heritage
+					}
 				}
 			}
 			ig:ig_intelligentsia = {
@@ -466,15 +480,6 @@
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
 	}
 }

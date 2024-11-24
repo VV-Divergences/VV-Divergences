@@ -302,11 +302,7 @@ chinese_manchu_queue_hairstyle_character_trigger = { # hairsyle for Manchu chara
 								has_discrimination_trait = han_chinese 
 							}
 						}
-						cu:manchu = {
-							NOT = { 
-								culture_is_discriminated_in = scope:character.home_country 
-							}
-						}
+						cultural_acceptance_base = { target = cu:manchu value >= acceptance_status_4 }
 					}
 				}
 				culture = cu:manchu
@@ -340,11 +336,7 @@ chinese_manchu_queue_hairstyle_pops_trigger = { # hairsyle for Manchu pops not l
 								has_discrimination_trait = han_chinese 
 							}
 						}
-						cu:manchu = {
-							NOT = { 
-								culture_is_discriminated_in = scope:pop.home_country 
-							}
-						}
+						cultural_acceptance_base = { target = cu:manchu value >= acceptance_status_4 }
 					}
 				}
 				culture = cu:manchu
@@ -588,7 +580,10 @@ indian_clothes_trigger = {
 	scope:character = {
 		OR = {
 			culture = {
-				has_discrimination_trait = south_asian_heritage
+				OR = {
+					has_discrimination_trait = south_asian_heritage
+					cu:pathan ?= this
+				}
 			}
 			religion = rel:sikh
 		}
@@ -598,6 +593,9 @@ indian_clothes_trigger = {
 siamese_clothes_trigger = { #Pretty sure this is actual burmese
 	exists = scope:character
 	scope:character = {
+		NOT = {
+			culture = cu:vietnamese
+		}
 		culture = {
 			has_discrimination_trait = southeast_asian_heritage
 		}
@@ -775,6 +773,7 @@ overweight_trigger = {
 	exists = scope:character
 	scope:character = {
      	has_trait = expensive_tastes
+     	is_historical = no # do not alter the shape of characters that are sculpted to appear a certain way
      }
 }
 
@@ -1359,7 +1358,7 @@ very_overweight_pop_trigger = {
 struggling_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
-		standard_of_living < 10
+		is_in_severe_starvation = yes
 	}
 }
 

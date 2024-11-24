@@ -9,6 +9,14 @@
 		ideology_laissez_faire
 		ideology_individualist
 	}
+	
+	character_ideologies = {
+		ideology_moderate
+		ideology_market_liberal
+		ideology_protectionist
+		#ideology_orleanist
+		#ideology_bonapartist
+	}
 
 	enable = {
 		always = yes
@@ -354,15 +362,6 @@
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
 	}
 }

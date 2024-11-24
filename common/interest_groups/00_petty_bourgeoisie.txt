@@ -9,6 +9,17 @@
 		ideology_meritocratic
 		ideology_patriotic
 	}
+	
+	character_ideologies = {
+		ideology_moderate
+		ideology_traditionalist
+		ideology_jingoist_leader
+		ideology_protectionist
+		#ideology_orleanist
+		#ideology_bonapartist
+		#ideology_legitimist
+		ideology_sovereignist_leader
+	}
 
 	enable = {
 		always = yes
@@ -75,6 +86,43 @@
 				set_ig_trait = ig_trait:dvg_ig_trait_ven_silk_road
 				set_ig_trait = ig_trait:ig_trait_treasury_bonds
 			}
+			else_if = {
+				limit = {
+					owner = { 
+						OR = {
+							c:BIC ?= this
+							any_primary_culture = {
+								has_discrimination_trait = south_asian_heritage
+							}
+						}
+					}
+				}
+				remove_ideology = ideology_reactionary
+				add_ideology = ideology_modernizer
+				if = {
+					limit = {
+						owner = {
+							c:BIC ?= this
+						}
+					}
+					# Name
+					set_interest_group_name = ig_bhadralok
+
+					# Ideologies
+					remove_ideology = ideology_patriotic
+					add_ideology = ideology_sovereignist
+					
+					# Traits
+					set_ig_trait = ig_trait:ig_trait_swadesh
+					set_ig_trait = ig_trait:ig_trait_lines_of_credit
+					set_ig_trait = ig_trait:ig_trait_cooperative_agencies
+				}
+				else = {
+					set_ig_trait = ig_trait:ig_trait_xenophobia
+					set_ig_trait = ig_trait:ig_trait_middle_managers
+					set_ig_trait = ig_trait:ig_trait_treasury_bonds
+				}
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_xenophobia
 				set_ig_trait = ig_trait:ig_trait_middle_managers
@@ -127,15 +175,28 @@
 		custom_tooltip = {
 			text = would_be_accepted_under_national_supremacy_tt
 			this.culture = {
-				AND = {
-					shares_heritage_trait_with_any_primary_culture = prev.owner
-					shares_non_heritage_trait_with_any_primary_culture = prev.owner
+				OR = {
+					AND = {
+						shares_heritage_trait_with_any_primary_culture = prev.owner
+						shares_non_heritage_trait_with_any_primary_culture = prev.owner
+					}
+					AND = {
+						c:BIC ?= prev.owner
+						has_discrimination_trait = south_asian_heritage
+					}
 				}
 			}
 		}
 		NOR = {
 			is_pop_type = aristocrats
-			is_pop_type = capitalists
+			trigger_if = {
+				limit = {
+					NOT = {
+						c:BIC ?= owner
+					}
+				}
+				is_pop_type = capitalists
+			}
 		}
 		OR = {
 			pop_employment_building_group = bg_manufacturing
@@ -168,7 +229,24 @@
 	}
 
 	pop_weight = {
-		value = 50
+		if = {
+			limit = {
+				strata = lower
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = 25
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = 50
+			}
+		}
 
 		add = {
 			desc = "POP_SHOPKEEPERS"
@@ -454,15 +532,6 @@
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
 	}
 }
