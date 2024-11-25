@@ -48,7 +48,7 @@ rationalism = {
 	
 	modifier = {
 		country_institution_schools_max_investment_add = 1
-		state_education_access_wealth_add = 0.005
+		state_education_access_wealth_add = 0.01
 	}
 	
 	ai_weight = {
@@ -241,6 +241,7 @@ colonization = {
 
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 2
+		country_max_declared_interests_add = 1
 		country_diplomatic_play_maneuvers_add = 10
 		country_infamy_generation_against_unrecognized_mult = -0.1
 	}	
@@ -684,6 +685,10 @@ labor_movement = {
 	texture = "gfx/interface/icons/invention_icons/labor_movement.dds"
 	category = society
 	
+	on_researched = {
+		set_global_variable = labour_movement_researched
+	}
+
 	modifier = {
 		state_expected_sol_from_literacy = 1
 		country_institution_workplace_safety_max_investment_add = 3
@@ -877,6 +882,7 @@ civilizing_mission = {
 		country_institution_colonial_affairs_max_investment_add = 1
 		country_infamy_decay_mult = 0.10
 		country_infamy_generation_against_unrecognized_mult = -0.25
+		country_max_declared_interests_add = 1
 	}
 	
 	unlocking_technologies = {
@@ -1007,7 +1013,7 @@ corporatism = {
 	}
 	
 	modifier = {
-		state_radicals_from_political_movements_mult = -0.10
+		state_radicals_from_political_movements_mult = -0.1
 	}
 	
 	unlocking_technologies = {
@@ -1195,7 +1201,6 @@ elevator = {
 }
 
 zeppelins = {
-	# #todo#! Does nothing at the moment
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/zeppelins.dds"
 	category = society
@@ -1256,6 +1261,7 @@ central_planning = {
 	
 	modifier = {
 		state_tax_capacity_add = 25
+		country_government_dividends_efficiency_add = 0.05
 	}
 	
 	unlocking_technologies = {
@@ -1309,8 +1315,6 @@ political_agitation = {
 }
 
 international_exchange_standards = {
-	# #todo#! Does nothing at the moment
-	# Should increase trade power maybe
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/international_exchange_standards.dds"
 	category = society
@@ -1349,8 +1353,6 @@ corporate_management = {
 }
 
 psychoanalysis = {
-	# #todo#! Does nothing at the moment
-	# Should provide additional methods for dealing with negative psychological character traits
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/psychoanalysis.dds"
 	category = society
@@ -1396,6 +1398,7 @@ multilateral_alliances = {
 	
 	modifier = {
 		country_diplomatic_play_maneuvers_add = 25
+		country_infamy_generation_mult = -0.25
 		country_allow_multiple_alliances_bool = yes
 	}
 	
@@ -1436,13 +1439,13 @@ mass_surveillance = {
 }
 
 antibiotics = {
-	# #todo#! Reduces state mortality by -10% (same as Vitamins)
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/antibiotics.dds"
 	category = society
 	
 	modifier = {
 		country_institution_health_system_max_investment_add = 1
+		state_harvest_condition_disease_outbreak_impact_mult = -0.15
 	}
 	
 	unlocking_technologies = {
@@ -1454,20 +1457,7 @@ antibiotics = {
 	}
 }
 
-#vitamins = {
-#	# #todo#! Reduces state mortality by -10% (same as Antibiotics)
-#	era = era_5
-#	texture = "gfx/interface/icons/invention_icons/vitamins.dds"
-#	category = society
-#	
-#	modifier = {
-#		state_mortality_mult = -0.10
-#	}
-#	
-#	unlocking_technologies = {
-#		malaria_prevention
-#	}
-#}
+
 
 mass_propaganda = {
 	# Unlocks Better Radios PM in Electrics Industries
@@ -1498,7 +1488,8 @@ modern_financial_instruments = {
 	category = society
 	modifier = {
 		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02		
+		country_loan_interest_rate_add = -0.02	
+		country_government_dividends_efficiency_add = 0.05	
 	}
 	unlocking_technologies = {
 		international_exchange_standards
@@ -1551,7 +1542,6 @@ behaviorism = {
 }
 
 analytical_philosophy = {
-	# #todo#! Does nothing at the moment
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/analytical_philosophy.dds"
 	category = society
@@ -1569,12 +1559,11 @@ paved_roads = {
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/paved_roads.dds"
 	category = society
-	
+	should_update_map = yes
 	modifier = {
-		state_infrastructure_from_population_add = 1.5
-		state_infrastructure_from_population_max_add = 30
 		country_max_weekly_construction_progress_add = 10
-		market_land_trade_capacity_add = 20
+		state_infrastructure_from_automobiles_consumption_add = 0.25
+		market_land_trade_capacity_add = 200
 	}
 	
 	unlocking_technologies = {	
