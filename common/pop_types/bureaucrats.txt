@@ -22,9 +22,15 @@
 			
 			if = {
 				limit = { 
-					standard_of_living < 5
+					is_in_mild_starvation = yes
 				}
-				value = 1
+				value = 0.5
+			}
+			else_if = {
+				limit = {
+					is_in_severe_starvation = yes
+				}
+				value = 1.5
 			}		
 		}
 	}
@@ -45,14 +51,23 @@
 			}
 			if = {
 				limit = {
-					culture_accepted = yes
-					religion_accepted = yes
+					pop_acceptance >= acceptance_status_5
 				}
 				multiply = {
 					value = 2
 					desc = "POTENTIALS_CULTURAL_RELIGIOUS_ACCEPTANCE"
 				}
 			}
+			else_if = {
+				limit = {
+					pop_acceptance >= acceptance_status_4
+				}
+				multiply = {
+					value = 1.5
+					desc = "POTENTIALS_CULTURAL_RELIGIOUS_ACCEPTANCE"
+				}
+			}
+
 			if = {
 				limit = {
 					is_pop_type = clerks
@@ -73,10 +88,15 @@
 			}
 			if = {
 				limit = {
-					culture_accepted = no
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+						   	value < acceptance_status_4 
+					   	}
+					}
 				}
 				multiply = {
-					value = 0.2
+					value = 0.1
 					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 				}
 			}
