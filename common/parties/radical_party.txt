@@ -205,12 +205,13 @@ radical_party = {
 					country_has_primary_culture = cu:portuguese
 				}
 			}
-			triggered_desc = {
-				desc = party_progressive_league
-				trigger = {
-					country_has_primary_culture = cu:brazilian
-				}
-			}
+			# triggered_desc = {
+			# 	desc = party_farroupilha
+			# 	trigger = {
+			# 		country_has_primary_culture = cu:brazilian
+			# 		has_law = law_type:law_monarchy
+			# 	}
+			# }
 			triggered_desc = {
 				desc = party_radical_peoples_party
 				trigger = {
@@ -265,21 +266,19 @@ radical_party = {
 			country_has_voting_franchise = yes
 			any_interest_group = {
 				is_marginal = no
-				leader = {
-					has_ideology = ideology:ideology_radical
+				OR = {
+					leader = {
+						has_ideology = ideology:ideology_radical
+					}
+					AND = {
+						is_interest_group_type = ig_trade_unions
+						NOT = {
+							has_ideology = ideology:ideology_socialist
+						}
+					}
 				}
 			}
 		}
-		OR = {
-	     	NOT = {
-	         	owner = {
-	         		has_variable = only_valid_party
-	         	}
-	        }
-	        owner.var:only_valid_party = {
-	        	is_party_type = radical_party
-	        }
-	    }
 		NOR = {
 			is_interest_group_type = ig_landowners
 			is_interest_group_type = ig_devout
@@ -287,6 +286,7 @@ radical_party = {
 		leader = { # fascists and conservatives hate radicals
 			NOT = {
 				has_ideology = ideology:ideology_fascist
+				has_ideology = ideology:ideology_integralist
 				has_ideology = ideology:ideology_ethno_nationalist
 				has_ideology = ideology:ideology_traditionalist
 				has_ideology = ideology:ideology_royalist
@@ -307,6 +307,36 @@ radical_party = {
 			value = -5
 			desc = "base_value"
 		}
+		if = {
+			limit = {
+				owner = {
+					country_is_in_south_america = yes
+					any_primary_culture = {
+						has_discrimination_trait = hispanophone
+					}
+				}
+			}
+			add = {
+				value = -10
+				desc = "south_america_two_party_system"
+			}
+		}
+		# if = {
+		# 	limit = {
+		# 		owner = {
+		# 			country_is_in_north_america = yes
+		# 			OR = {
+		# 				country_has_primary_culture = cu:yankee
+		# 				country_has_primary_culture = cu:dixie
+		# 			}
+		# 			has_law = law_type:law_presidential_republic
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = -10
+		# 		desc = "usa_two_party_system"
+		# 	}
+		# }
 		if = { # radicals love radicalism
 			limit = {
 				leader = {
@@ -339,7 +369,10 @@ radical_party = {
 				owner = {
 					any_interest_group = {
 						is_powerful = yes
-						has_ideology = ideology:ideology_liberal
+						OR = {
+							has_ideology = ideology:ideology_liberal
+							has_ideology = ideology:ideology_liberal_modern
+						}
 					}
 				}
 			}
@@ -351,7 +384,10 @@ radical_party = {
 		if = { # weak liberals will fall in line behind strong radicals
 			limit = {
 				is_powerful = no
-				has_ideology = ideology:ideology_liberal
+				OR = {
+					has_ideology = ideology:ideology_liberal
+					has_ideology = ideology:ideology_liberal_modern
+				}
 				owner = {
 					any_interest_group = {
 						is_powerful = yes
@@ -510,6 +546,7 @@ radical_party = {
 				OR = {
 					has_ideology = ideology:ideology_liberal
 					has_ideology = ideology:ideology_egalitarian
+					has_ideology = ideology:ideology_egalitarian_modern
 					leader = {
 						has_ideology = ideology:ideology_humanitarian
 					}
@@ -527,6 +564,7 @@ radical_party = {
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_liberal
+					has_ideology = ideology:ideology_liberal_modern
 					leader = {
 						OR = {	
 							has_ideology = ideology:ideology_humanitarian
@@ -573,6 +611,7 @@ radical_party = {
 				}
 				OR = {
 					has_ideology = ideology:ideology_egalitarian
+					has_ideology = ideology:ideology_egalitarian_modern
 					has_ideology = ideology:ideology_anti_slavery
 					has_ideology = ideology:ideology_laissez_faire
 					has_ideology = ideology:ideology_particularist
@@ -586,6 +625,19 @@ radical_party = {
 			add = {
 				value = 3
 				desc = "from_serfdom"
+			}
+		}
+		if = { # early Trade Unions
+			limit = {
+				is_interest_group_type = ig_trade_unions
+				is_powerful = no
+				NOT = {
+					has_ideology = ideology:ideology_socialist
+				}
+			}
+			add = {
+				value = 10
+				desc = "from_early_trade_unions"
 			}
 		}
 		if = {
@@ -624,52 +676,6 @@ radical_party = {
 			multiply = {
 				value = 0.1
 				desc = "from_more_than_three_prior_members"
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	NOT = {
-			        owner.var:only_valid_party = {
-			        	is_party_type = radical_party
-			        }
-			    }
-			}
-			multiply = {
-				value = 0
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-				 owner.var:only_valid_party = {
-					 is_party_type = radical_party
-				 }
-	         	owner.ruler = {
-					this.interest_group = prev
-				}
-			}
-			add = {
-				value = 1000
-				desc = "from_only_legal_party"
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = radical_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
 			}
 		}
 	}

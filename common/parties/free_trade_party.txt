@@ -62,6 +62,24 @@ free_trade_party = {
 					has_law = law_type:law_monarchy
 				}
 			}
+			# triggered_desc = {
+			# 	desc = party_constitutional_union_party
+			# 	trigger = {
+			# 		exists = c:USA
+			# 		THIS = c:USA
+			# 		NOT = {
+			# 			has_global_variable = american_civil_war
+			# 		}
+			# 	}
+			# }
+			# triggered_desc = {
+			# 	desc = party_federalist_party
+			# 	trigger = {
+			# 		exists = c:NEN
+			# 		THIS = c:NEN
+			# 	}
+			# }
+
 			triggered_desc = {
 				desc = party_free_minded_venstre
 				trigger = {
@@ -116,16 +134,6 @@ free_trade_party = {
 				}
 			}
 		}
-		OR = {
-	     	NOT = {
-	         	owner = {
-	         		has_variable = only_valid_party
-	         	}
-	        }
-	        owner.var:only_valid_party = {
-	        	is_party_type = free_trade_party
-	        }
-	    }
 	}
 	
 	# Root - IG considering joining
@@ -135,6 +143,38 @@ free_trade_party = {
 			value = -5
 			desc = "base_value"
 		}
+		if = {
+			limit = {
+				owner = {
+					country_is_in_south_america = yes
+					any_primary_culture = {
+						has_discrimination_trait = hispanophone
+					}
+				}
+			}
+			add = {
+				value = -10
+				desc = "south_america_two_party_system"
+			}
+		}
+		
+		# if = {
+		# 	limit = {
+		# 		owner = {
+		# 			country_is_in_north_america = yes
+		# 			OR = {
+		# 				country_has_primary_culture = cu:yankee
+		# 				country_has_primary_culture = cu:dixie
+		# 			}
+		# 			has_law = law_type:law_presidential_republic
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = -10
+		# 		desc = "usa_two_party_system"
+		# 	}
+		# }
+		
 		if = { # capitalists like capitalism
 			limit = {
 				OR = {
@@ -290,6 +330,9 @@ free_trade_party = {
 					leader = {
 						has_ideology = ideology:ideology_fascist
 					}
+					leader = {
+						has_ideology = ideology:ideology_integralist
+					}
 				}
 			}
 			add = {
@@ -385,6 +428,17 @@ free_trade_party = {
 				desc = "from_lack_of_private_schools"
 			}
 		}
+		if = { # protectionism bad
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_protectionist
+				}
+			}
+			add = {
+				value = -10
+				desc = from_protectionist_leader
+			}
+		}
 		if = {
 			limit = {
 				is_interest_group_type = ig_industrialists
@@ -431,17 +485,6 @@ free_trade_party = {
 			multiply = {
 				value = 0.1
 				desc = "from_more_than_three_prior_members"
-			}
-		}
-		if = { # protectionism bad
-			limit = {
-				leader = {
-					has_ideology = ideology:ideology_protectionist
-				}
-			}
-			add = {
-				value = -10
-				desc = from_protectionist_leader
 			}
 		}
 		if = { # anti-orleanist
@@ -522,51 +565,23 @@ free_trade_party = {
 				desc = "from_french_monarchist_rival"
 			}
 		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	NOT = {
-			        owner.var:only_valid_party = {
-			        	is_party_type = free_trade_party
-			        }
-			    }
-			}
-			multiply = {
-				value = 0
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-				owner.var:only_valid_party = {
-					is_party_type = free_trade_party
-				}
-	         	owner.ruler = {
-					this.interest_group = prev
-				}
-			}
-			add = {
-				value = 1000
-				desc = "from_only_legal_party"
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = free_trade_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		owner = {
+		# 			country_has_primary_culture = cu:brazilian
+		# 			NOT = {
+		# 				OR = {
+		# 					has_technology_researched = socialism
+		# 					has_technology_researched = corporatism
+		# 					has_technology_researched = anarchism
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = -10
+		# 		desc = "from_two_party_system"
+		# 	}
+		# }
 	}
 }

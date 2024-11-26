@@ -143,7 +143,20 @@ conservative_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_russian_party
+				desc = party_napist_party
+				trigger = {
+					exists = c:GRE
+					THIS = c:GRE
+					has_law = law_type:law_monarchy
+					ruler = {
+						culture = {
+							has_discrimination_trait = german_speaking
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_ethnikon_komma
 				trigger = {
 					exists = c:GRE
 					THIS = c:GRE
@@ -302,6 +315,7 @@ conservative_party = {
 						has_ideology = ideology:ideology_legitimist
 						has_ideology = ideology:ideology_theocrat
 						has_ideology = ideology:ideology_slaver
+						has_ideology = ideology:ideology_corporatist_leader
 						has_ideology = ideology:ideology_anglois
 						has_ideology = ideology:ideology_french
 						has_ideology = ideology:ideology_english
@@ -320,6 +334,7 @@ conservative_party = {
 					has_ideology = ideology:ideology_stratocratic
 					has_ideology = ideology:ideology_patriarchal
 					has_ideology = ideology:ideology_moralist
+					has_ideology = ideology:ideology_corporatist
 				}
 			}
 			add = {
@@ -364,6 +379,7 @@ conservative_party = {
 						has_ideology = ideology:ideology_pacifist
 						has_ideology = ideology:ideology_reformer
 						has_ideology = ideology:ideology_humanitarian
+						has_ideology = ideology:ideology_humanitarian_royalist
 					}
 				}
 			}
@@ -808,16 +824,30 @@ conservative_party = {
 		if = {
 			limit = {
 				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	NOT = {
-			        owner.var:only_valid_party = {
-			        	is_party_type = conservative_party
-			        }
-			    }
+					country_is_in_south_america = yes
+					any_primary_culture = {
+						has_discrimination_trait = hispanophone
+					}
+				}
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_devout
+				}
 			}
-			multiply = {
-				value = 0
+			add = {
+				value = 10
+				desc = "south_america_two_party_system"
+			}
+		}
+		if = {
+			limit = {
+				leader = {
+					has_variable = caudillo_conservative
+				}
+			}
+			add = {
+				value = 20
+				desc = "caudillo_support"
 			}
 		}
 		if = {
@@ -829,37 +859,6 @@ conservative_party = {
 			add = {
 				value = 1000
 				desc = "from_jacksonian_democrat"
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-				owner.var:only_valid_party = {
-					is_party_type = conservative_party
-				}
-	         	owner.ruler = {
-					this.interest_group = prev
-				}
-			}
-			add = {
-				value = 1000
-				desc = "from_only_legal_party"
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = conservative_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
 			}
 		}
 	}

@@ -1047,7 +1047,7 @@ principle_police_coordination_2 = {
 	institution = institution_police
 	institution_modifier = {
 		# Police institution reduces radicalism of political movements
-		political_movement_radicalism_from_enactment_disapproval_mult = -0.1
+		political_movement_radicalism_add = -0.1
 	}
 	
 	ai_weight = {
@@ -1078,7 +1078,7 @@ principle_police_coordination_3 = {
 		country_authority_add = 50
 		
 		# Police institution reduces radicalism of political movements
-		political_movement_radicalism_from_enactment_disapproval_mult = -0.1
+		political_movement_radicalism_add = -0.1
 	}
 	
 	ai_weight = {
@@ -1501,9 +1501,9 @@ principle_creative_legislature_2 = {
 		# Modifiers from previous level(s)	
 		country_law_enactment_stall_mult = -0.33
 		
-		# Members political movements to preserve and restore have lower support
-		political_movement_radicalism_from_enactment_approval_mult = -0.33
-		political_movement_restore_support_mult = -0.33
+		# Political Movements are happier about enactments they approve of, and less angry about enactments they disapprove of
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
+		political_movement_radicalism_from_enactment_approval_mult = 0.25
 	}
 	power_bloc_modifier = {
 		power_bloc_mandate_progress_mult = -0.1
@@ -1520,8 +1520,8 @@ principle_creative_legislature_3 = {
 	member_modifier = {
 		# Modifiers from previous level(s)	
 		country_law_enactment_stall_mult = -0.33
-		political_movement_radicalism_from_enactment_approval_mult = -0.33
-		political_movement_restore_support_mult = -0.33
+		political_movement_radicalism_from_enactment_disapproval_mult = -0.25
+		political_movement_radicalism_from_enactment_approval_mult = 0.25
 		
 		# Can have one additional setback before failing a law enactment
 		country_law_enactment_max_setbacks_add = 1
