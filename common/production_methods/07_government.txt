@@ -35,7 +35,7 @@ pm_basic_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 175
+			country_convoys_capacity_add = 300
 		}
 	}
 	state_modifiers = {
@@ -68,7 +68,7 @@ pm_industrial_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 225
+			country_convoys_capacity_add = 350
 		}
 	}
 	state_modifiers = {
@@ -100,7 +100,7 @@ pm_modern_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 300
+			country_convoys_capacity_add = 400
 		}
 	}
 	state_modifiers = {
@@ -293,7 +293,7 @@ pm_scholastic_education = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_paper_add = 8
+			goods_input_paper_add = 10
 		}	
 	
 		level_scaled = {
@@ -324,7 +324,7 @@ pm_philosophy_department = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_paper_add = 15
+			goods_input_paper_add = 20
 		}
 		
 		level_scaled = {
@@ -355,7 +355,7 @@ pm_analytical_philosophy_department = {
 	
 	building_modifiers = {
 		workforce_scaled = { 
-			goods_input_paper_add = 25
+			goods_input_paper_add = 30
 		}
 		
 		level_scaled = {

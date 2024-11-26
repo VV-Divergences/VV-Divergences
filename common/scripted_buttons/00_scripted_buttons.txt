@@ -22,7 +22,7 @@
 		}	
         add_radicals = {
             value = small_radicals
-            strata = poor
+            strata = lower
         }
         custom_tooltip = commune_progress_subtract_10
         change_global_variable = {
@@ -56,7 +56,7 @@ je_the_paris_commune_france_button_b = {
 		}	
 		add_loyalists = {
 			value = small_radicals
-			strata = poor
+			strata = lower
         }
         custom_tooltip = commune_progress_add_10
         change_global_variable = {
@@ -86,11 +86,13 @@ je_positivist_movement_embrace_positivism_button = {
 	effect = {
 		custom_tooltip = {
 			text = positivists_advance_10
-			change_variable = { name = positivism_progress_var add = 10 }
+			je:je_positivist_movement = {
+				add_progress = { value = 10 name = positivist_progress_bar }
+			}
 		}
 		add_radicals = {
 			value = small_radicals
-			strata = poor
+			strata = lower
 		}
 		scope:journal_entry = {
 			custom_tooltip = cooldown_year_tt
@@ -119,7 +121,9 @@ je_positivist_movement_suppress_positivism_button = {
 	effect = {
 		custom_tooltip = {
 			text = positivists_retreat_10
-			change_variable = { name = positivism_progress_var subtract = 10 }
+			je:je_positivist_movement = {
+				add_progress = { value = -10 name = positivist_progress_bar }
+			}
 		}
 		add_radicals = {
 			value = small_radicals

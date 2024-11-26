@@ -777,5 +777,8 @@ dvg_ggg_won_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	country_prestige_mult = 0.5
 }
-
+dvg_patagonian_settlement = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_migration_pull_mult = 1
+}
 

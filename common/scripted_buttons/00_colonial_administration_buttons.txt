@@ -20,6 +20,11 @@
 			is_largest_state_in_region = yes
 			count >= 2
 		}
+
+		#prevents splitting off during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+
 		custom_tooltip = {
 			text = colonial_administration_cooldown
 			NOT = {
@@ -88,7 +93,7 @@
 		hidden_effect = {
 			create_diplomatic_pact = {
 				country = scope:newly_formed_colonial_nation_capital_scope.owner
-				type = puppet
+				type = colony
 			}
 		}
 		trigger_event = { id = colonial_administration_events.1 days = 1 popup = yes }
@@ -119,6 +124,11 @@ je_colonial_administration_button_niger = {
 			is_largest_state_in_region = yes
 			count >= 2
 		}
+
+		#prevents splitting off during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+
 		custom_tooltip = {
 			text = colonial_administration_cooldown
 			NOT = {
@@ -187,7 +197,7 @@ je_colonial_administration_button_niger = {
 		hidden_effect = {
 			create_diplomatic_pact = {
 				country = scope:newly_formed_colonial_nation_capital_scope.owner
-				type = puppet
+				type = colony
 			}
 		}
 		trigger_event = { id = colonial_administration_events.1 days = 1 popup = yes }
@@ -218,6 +228,11 @@ je_colonial_administration_button_ethiopia = {
 			is_largest_state_in_region = yes
 			count >= 2
 		}
+
+		#prevents splitting off during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		custom_tooltip = {
 			text = colonial_administration_cooldown
 			NOT = {
@@ -286,7 +301,7 @@ je_colonial_administration_button_ethiopia = {
 		hidden_effect = {
 			create_diplomatic_pact = {
 				country = scope:newly_formed_colonial_nation_capital_scope.owner
-				type = puppet
+				type = colony
 			}
 		}
 		trigger_event = { id = colonial_administration_events.1 days = 1 popup = yes }
@@ -317,6 +332,11 @@ je_colonial_administration_button_zanj = {
 			is_largest_state_in_region = yes
 			count >= 2
 		}
+
+		#prevents splitting off during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		custom_tooltip = {
 			text = colonial_administration_cooldown
 			NOT = {
@@ -385,7 +405,7 @@ je_colonial_administration_button_zanj = {
 		hidden_effect = {
 			create_diplomatic_pact = {
 				country = scope:newly_formed_colonial_nation_capital_scope.owner
-				type = puppet
+				type = colony
 			}
 		}
 		trigger_event = { id = colonial_administration_events.1 days = 1 popup = yes }
@@ -416,6 +436,11 @@ je_colonial_administration_button_southern_africa = {
 			is_largest_state_in_region = yes
 			count >= 2
 		}
+
+		#prevents splitting off during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		custom_tooltip = {
 			text = colonial_administration_cooldown
 			NOT = {
@@ -484,7 +509,7 @@ je_colonial_administration_button_southern_africa = {
 		hidden_effect = {
 			create_diplomatic_pact = {
 				country = scope:newly_formed_colonial_nation_capital_scope.owner
-				type = puppet
+				type = colony
 			}
 		}
 		trigger_event = { id = colonial_administration_events.1 days = 1 popup = yes }
@@ -515,6 +540,11 @@ je_colonial_administration_button_congo = {
 			is_largest_state_in_region = yes
 			count >= 2
 		}
+
+		#prevents splitting off during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		custom_tooltip = {
 			text = colonial_administration_cooldown
 			NOT = {
@@ -583,7 +613,7 @@ je_colonial_administration_button_congo = {
 		hidden_effect = {
 			create_diplomatic_pact = {
 				country = scope:newly_formed_colonial_nation_capital_scope.owner
-				type = puppet
+				type = colony
 			}
 		}
 		trigger_event = { id = colonial_administration_events.1 days = 1 popup = yes }
@@ -909,11 +939,16 @@ je_colonial_administration_button_expand_senegal = {
 	}
 
 	possible = {
+		#prevents expanding during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		OR = {
 			any_scope_state = {
 				region = sr:region_senegal
 				is_under_colonization = no
 			}
+
 			custom_tooltip = {
 				text = colonial_transfer_two_subjects_tt
 				any_subject_or_below = {
@@ -994,6 +1029,10 @@ je_colonial_administration_button_expand_niger = {
 	}
 
 	possible = {
+		#prevents expanding during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		OR = {
 			any_scope_state = {
 				region = sr:region_niger
@@ -1079,6 +1118,10 @@ je_colonial_administration_button_expand_ethiopia = {
 	}
 
 	possible = {
+		#prevents expanding during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		OR = {
 			any_scope_state = {
 				region = sr:region_ethiopia
@@ -1164,6 +1207,10 @@ je_colonial_administration_button_expand_zanj = {
 	}
 
 	possible = {
+		#prevents expanding during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		OR = {
 			any_scope_state = {
 				region = sr:region_zanj
@@ -1249,6 +1296,10 @@ je_colonial_administration_button_expand_southern_africa = {
 	}
 
 	possible = {
+		#prevents expanding during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		OR = {
 			any_scope_state = {
 				region = sr:region_southern_africa
@@ -1334,6 +1385,10 @@ je_colonial_administration_button_expand_congo = {
 	}
 
 	possible = {
+		#prevents expanding during diplo play or war as it invalidates wargoals. is_at_war is there for clarity for players even though it's technically included in the former
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+		
 		OR = {
 			any_scope_state = {
 				region = sr:region_congo
