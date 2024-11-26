@@ -115,16 +115,6 @@ military_party = {
 				is_marginal = no
 			}
 		}
-		OR = {
-	     	NOT = {
-	         	owner = {
-	         		has_variable = only_valid_party
-	         	}
-	        }
-	        owner.var:only_valid_party = {
-	        	is_party_type = military_party
-	        }
-	    }
 	}
 	
 	# Root - IG considering joining
@@ -134,6 +124,37 @@ military_party = {
 			value = -5
 			desc = "base_value"
 		}
+		if = {
+			limit = {
+				owner = {
+					country_is_in_south_america = yes
+					any_primary_culture = {
+						has_discrimination_trait = hispanophone
+					}
+				}
+			}
+			add = {
+				value = -10
+				desc = "south_america_two_party_system"
+			}
+		}
+		
+		# if = {
+		# 	limit = {
+		# 		owner = {
+		# 			country_is_in_north_america = yes
+		# 			OR = {
+		# 				country_has_primary_culture = cu:yankee
+		# 				country_has_primary_culture = cu:dixie
+		# 			}
+		# 			has_law = law_type:law_presidential_republic
+		# 		}
+		# 	}
+		# 	add = {
+		# 		value = -10
+		# 		desc = "usa_two_party_system"
+		# 	}
+		# }
 		if = { # nobody will join if the armed forces don't join
 			limit = {
 				NOT = { is_interest_group_type = ig_armed_forces }
@@ -258,54 +279,6 @@ military_party = {
 				desc = "from_no_proportional_or_per_capita_tax"
 			}
 		}
-		if = {
-			limit = {
-				is_interest_group_type = ig_armed_forces
-				is_powerful = yes
-			}
-			multiply = {
-				value = 2
-				desc = "from_archetype_party"
-			}
-		}
-		if = {
-			limit = {
-				scope:number = 1
-				is_powerful = no
-				is_marginal = no
-			}
-			multiply = {
-				value = 2
-				desc = "from_influential_supporting_member"
-			}
-		}
-		else_if = {
-			limit = {
-				scope:number = 2
-			}
-			multiply = {
-				value = 0.5
-				desc = "from_two_prior_members"
-			}
-		}
-		else_if = {
-			limit = {
-				scope:number = 3
-			}
-			multiply = {
-				value = 0.25
-				desc = "from_three_prior_members"
-			}
-		}
-		else_if = {
-			limit = {
-				scope:number > 3
-			}
-			multiply = {
-				value = 0.1
-				desc = "from_more_than_three_prior_members"
-			}
-		}
 		# alliance for stricter internal security
 		if = {
 			limit = {
@@ -354,6 +327,54 @@ military_party = {
 			add = {
 				value = 5
 				desc = from_authoritarian
+			}
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_armed_forces
+				is_powerful = yes
+			}
+			multiply = {
+				value = 2
+				desc = "from_archetype_party"
+			}
+		}
+		if = {
+			limit = {
+				scope:number = 1
+				is_powerful = no
+				is_marginal = no
+			}
+			multiply = {
+				value = 2
+				desc = "from_influential_supporting_member"
+			}
+		}
+		else_if = {
+			limit = {
+				scope:number = 2
+			}
+			multiply = {
+				value = 0.5
+				desc = "from_two_prior_members"
+			}
+		}
+		else_if = {
+			limit = {
+				scope:number = 3
+			}
+			multiply = {
+				value = 0.25
+				desc = "from_three_prior_members"
+			}
+		}
+		else_if = {
+			limit = {
+				scope:number > 3
+			}
+			multiply = {
+				value = 0.1
+				desc = "from_more_than_three_prior_members"
 			}
 		}
 		if = { # anti-orleanist
@@ -432,52 +453,6 @@ military_party = {
 			add = {
 				value = -5
 				desc = "from_french_monarchist_rival"
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	NOT = {
-			        owner.var:only_valid_party = {
-			        	is_party_type = military_party
-			        }
-			    }
-			}
-			multiply = {
-				value = 0
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-				owner.var:only_valid_party = {
-		        	is_party_type = military_party
-		        }
-	         	owner.ruler = {
-					this.interest_group = prev
-				}
-			}
-			add = {
-				value = 1000
-				desc = "from_only_legal_party"
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = military_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
 			}
 		}
 	}

@@ -156,6 +156,34 @@
 						country_has_primary_culture = cu:south_german
 						country_has_primary_culture = cu:rheinish #DVg
 					}
+					any_interest_group = {
+						leader = {
+							OR = {
+								has_ideology = ideology:ideology_ethno_nationalist
+								has_ideology = ideology:ideology_fascist
+							}
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_german_social_party
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:rheinish #DVg
+					}
+					NOT = {
+						any_interest_group = {
+							leader = {
+								OR = {
+									has_ideology = ideology:ideology_ethno_nationalist
+									has_ideology = ideology:ideology_fascist
+								}
+							}
+						}
+					}
 				}
 			}
 			triggered_desc = {
@@ -244,22 +272,12 @@
 		default = "/gfx/interface/icons/political_parties/fascists.dds"
 	}
 	unlocking_technologies = {
-		political_agitation
+		mass_propaganda
 	}
 	available_for_interest_group = {
 		owner = {
 			country_has_voting_franchise = yes
 		}
-		OR = {
-	     	NOT = {
-	         	owner = {
-	         		has_variable = only_valid_party
-	         	}
-	        }
-	        owner.var:only_valid_party = {
-	        	is_party_type = fascist_party
-	        }
-	    }
 	}
 	
 	# Root - IG considering joining
@@ -275,6 +293,7 @@
 					OR = {
 						has_ideology = ideology:ideology_fascist
 						has_ideology = ideology:ideology_ethno_nationalist
+						has_ideology = ideology:ideology_integralist
 					}
 				}
 			}
@@ -287,7 +306,10 @@
 			limit = {
 				is_powerful = yes
 				leader = {
-					has_ideology = ideology:ideology_fascist
+					OR = {
+						has_ideology = ideology:ideology_fascist
+						has_ideology = ideology:ideology_integralist
+					}
 				}
 			}
 			add = {
@@ -318,7 +340,10 @@
 					any_interest_group = {
 						is_powerful = yes
 						leader = {
-							has_ideology = ideology:ideology_fascist
+							OR = {
+								has_ideology = ideology:ideology_fascist
+								has_ideology = ideology:ideology_integralist
+							}
 						}
 					}
 				}
@@ -356,6 +381,7 @@
 						has_ideology = ideology:ideology_abolitionist
 						has_ideology = ideology:ideology_pacifist
 						has_ideology = ideology:ideology_humanitarian
+						has_ideology = ideology:ideology_humanitarian_royalist
 					}	
 				}
 			}
@@ -393,6 +419,31 @@
 			add = {
 				value = -3
 				desc = "from_moderate"
+			}
+		}
+		if = { # corporatists fall in line if they don't have christian democrats
+			limit = {
+				owner = {
+					any_interest_group = {
+						is_powerful = yes
+						leader = {
+							OR = {
+								has_ideology = ideology:ideology_fascist
+								has_ideology = ideology:ideology_integralist
+							}
+						}
+					}
+				}
+				OR = {
+					has_ideology = ideology:ideology_corporatist
+					leader = {
+						has_ideology = ideology:ideology_corporatist_leader
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_corporatism"
 			}
 		}
 		if = { # patriots are inclined towards fascism
@@ -477,6 +528,17 @@
 				desc = "from_no_proportional_or_per_capita_tax"
 			}
 		}
+		if = { # authoritarians inclined towards fascism
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_authoritarian
+				}
+			}
+			add = {
+				value = 3
+				desc = "from_authoritarian"
+			}
+		}
 		if = {
 			limit = {
 				scope:number = 1
@@ -513,17 +575,6 @@
 			multiply = {
 				value = 0.1
 				desc = "from_more_than_three_prior_members"
-			}
-		}
-		if = { # authoritarians inclined towards fascism
-			limit = {
-				leader = {
-					has_ideology = ideology:ideology_authoritarian
-				}
-			}
-			add = {
-				value = 3
-				desc = "from_authoritarian"
 			}
 		}
 		if = { # anti-orleanist
@@ -606,48 +657,13 @@
 		}
 		if = {
 			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	NOT = {
-			        owner.var:only_valid_party = {
-			        	is_party_type = fascist_party
-			        }
-			    }
-			}
-			multiply = {
-				value = 0
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-				 owner.var:only_valid_party = {
-					 is_party_type = fascist_party
-				 }
-	         	owner.ruler = {
-					this.interest_group = prev
+				leader = {
+					has_variable = caudillo_fascist
 				}
 			}
 			add = {
-				value = 1000
-				desc = "from_only_legal_party"
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = fascist_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
+				value = 20
+				desc = "caudillo_support"
 			}
 		}
 	}

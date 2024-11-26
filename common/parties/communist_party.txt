@@ -333,6 +333,7 @@
 		leader = { # fascists, conservatives, and capitalists hate communism
 			NOR = {
 				has_ideology = ideology:ideology_fascist
+				has_ideology = ideology:ideology_integralist
 				has_ideology = ideology:ideology_ethno_nationalist
 				has_ideology = ideology:ideology_market_liberal
 				has_ideology = ideology:ideology_traditionalist
@@ -341,7 +342,7 @@
 				has_ideology = ideology:ideology_bonapartist
 				has_ideology = ideology:ideology_legitimist
 				has_ideology = ideology:ideology_theocrat
-				has_ideology = ideology:ideology_anglois
+				has_ideology = ideology:ideology_corporatist_leader
 			}
 		}
 		OR = {
@@ -580,6 +581,7 @@
 				}
 				OR = {
 					has_ideology = ideology:ideology_egalitarian
+					has_ideology = ideology:ideology_egalitarian_modern
 					has_ideology = ideology:ideology_anti_slavery
 					has_ideology = ideology:ideology_laissez_faire
 					has_ideology = ideology:ideology_particularist
@@ -655,48 +657,13 @@
 		}
 		if = {
 			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	NOT = {
-			        owner.var:only_valid_party = {
-			        	is_party_type = communist_party
-			        }
-			    }
-			}
-			multiply = {
-				value = 0
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-				owner.var:only_valid_party = {
-					is_party_type = communist_party
-				}
-	         	owner.ruler = {
-					this.interest_group = prev
+				leader = {
+					has_variable = caudillo_communist
 				}
 			}
 			add = {
-				value = 1000
-				desc = "from_only_legal_party"
-			}
-		}
-		else_if = {
-			limit = {
-				owner = {
-	         		has_variable = only_valid_party
-	         	}
-	         	 owner.var:only_valid_party = {
-		        	is_party_type = communist_party
-		        }
-			}
-			add = {
-				value = 3
-				desc = "from_only_legal_party"
+				value = 20
+				desc = "caudillo_support"
 			}
 		}
 	}
