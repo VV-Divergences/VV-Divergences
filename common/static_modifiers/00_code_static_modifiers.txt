@@ -176,7 +176,7 @@ declared_bankruptcy = {
 	state_welfare_payments_mult = -1
 	country_force_privatization_bool = yes
 	state_construction_mult = -0.25				#vv change
-	political_movement_radicalism_from_enactment_disapproval_mult = 0.5	#vv change
+	political_movement_radicalism_add = 0.5	#vv change
 }
 
 incorporated_state = {
