@@ -135,6 +135,8 @@ company_SchweizerBank = {
 	
 	building_types = {  
 		building_financial_district
+		building_paper_mills
+		building_arts_academy
 	}
 	
 	potential = {
@@ -156,6 +158,14 @@ company_SchweizerBank = {
 			any_scope_building = {
 				is_building_type = building_financial_district
 				level >= 10
+			}
+			any_scope_building = {
+				is_building_type = building_paper_mills
+				level >= 5
+			}
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 3
 			}
 		}
 		has_technology_researched = mutual_funds
