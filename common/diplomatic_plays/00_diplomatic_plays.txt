@@ -352,7 +352,7 @@ dp_take_treaty_port = {
 		game_date > 1836.2.1
 		NOT = { is_country_type = decentralized }
 		NOT = { has_modifier = diplomatic_plays_blocked }
-		#NOT = { has_modifier = neutrality }		#vv dvg Novgorgreed
+		NOT = { has_modifier = neutrality }		#vv dvg Novgorgreed
 		aggressive_diplomatic_plays_permitted = yes
 		NOT = { is_subject_of = scope:target_country }
 		scope:target_country = {
@@ -512,7 +512,7 @@ dp_annex_subject = {
 		}
 		
 		NOT = { is_country_type = decentralized }
-		NOT = { has_journal_entry = je_nov_main }
+		NOT = { has_modifier = neutrality }
 		aggressive_diplomatic_plays_permitted = yes
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
@@ -828,6 +828,7 @@ dp_give_foreign_investment_rights = {
 		NOT = { is_country_type = decentralized }
 		aggressive_diplomatic_plays_permitted = yes
 		diplomatic_play_has_no_relations_blockers = yes
+		NOT = { has_modifier = neutrality }
 		scope:target_country = {
 			NOT = { has_modifier = neutrality }
 		}
@@ -1329,6 +1330,7 @@ dp_humiliation = {
 	
 	possible = {
 		game_date > 1836.2.1	
+		NOT = { has_modifier = neutrality }
 		NOT = { has_modifier = diplomatic_plays_blocked }
 		aggressive_diplomatic_plays_permitted = yes		
 	}

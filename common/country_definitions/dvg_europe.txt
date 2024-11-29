@@ -1795,16 +1795,16 @@ HLR = { #Holy Roman Empire HRE
 	capital = STATE_BOHEMIA
 }
 
-ITC = { #Italian Confederation
-	color = { 25 120 50 }
+# ITC = { #Italian Confederation
+# 	color = { 25 120 50 }
 	
-	country_type = recognized
+# 	country_type = recognized
 
-	tier = kingdom
+# 	tier = kingdom
 
-	cultures = { north_italian central_italian}
-	capital = STATE_TUSCANY
-}
+# 	cultures = { north_italian central_italian}
+# 	capital = STATE_TUSCANY
+# }
 
 SWZ = { #Switzerland Confederation
 	color = { 153  122  108 }

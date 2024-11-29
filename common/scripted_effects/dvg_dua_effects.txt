@@ -160,7 +160,7 @@ dua_weekly_pulse_french_progress = {
 	#From Characters
 	every_scope_character = {
 		limit = {
-			has_ideology = ideology:ideology_french
+			has_ideology = ideology:ideology_anglois
 		}
 		ROOT = {
 			change_variable = { name = french_progress_from_characters add = prev.popularity }
@@ -171,7 +171,7 @@ dua_weekly_pulse_french_progress = {
 	every_interest_group = {
 		limit = {
 			leader = {
-				has_ideology = ideology:ideology_french
+				has_ideology = ideology:ideology_anglois
 			}
 		}
 		ROOT = {
@@ -247,7 +247,7 @@ dua_weekly_pulse_french_progress = {
 		limit = {
 			NOT = {
 				ruler = {
-					has_ideology = ideology:ideology_french
+					has_ideology = ideology:ideology_anglois
 				}
 			}
 		}
@@ -282,7 +282,7 @@ dua_weekly_pulse_english_progress = {
 	#From Characters
 	every_scope_character = {
 		limit = {
-			has_ideology = ideology:ideology_english
+			has_ideology = ideology:ideology_anglois
 		}
 		ROOT = {
 			change_variable = { name = english_progress_from_characters add = prev.popularity }
@@ -293,7 +293,7 @@ dua_weekly_pulse_english_progress = {
 	every_interest_group = {
 		limit = {
 			leader = {
-				has_ideology = ideology:ideology_english
+				has_ideology = ideology:ideology_anglois
 			}
 		}
 		ROOT = {
@@ -366,7 +366,7 @@ dua_weekly_pulse_english_progress = {
 		limit = {
 			NOT = {
 				ruler = {
-					has_ideology = ideology:ideology_english
+					has_ideology = ideology:ideology_anglois
 				}
 			}
 		}

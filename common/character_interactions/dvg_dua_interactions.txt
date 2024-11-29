@@ -66,7 +66,7 @@ sway_to_french = {
 			has_journal_entry = je_french_integration
 		}
 		NOT = {
-			has_ideology = ideology:ideology_french
+			has_ideology = ideology:ideology_anglois
 		}
 	}
 	possible = {
@@ -102,7 +102,7 @@ sway_to_french = {
 		}
 	}
 	effect = {
-		set_ideology = ideology:ideology_french
+		set_ideology = ideology:ideology_anglois
 		owner ?= {
 			add_modifier = {
 				name = swayed_to_french_monarchist
@@ -127,7 +127,7 @@ sway_to_english = {
 			has_journal_entry = je_english_integration
 		}
 		NOT = {
-			has_ideology = ideology:ideology_english
+			has_ideology = ideology:ideology_anglois
 		}
 	}
 	possible = {
@@ -162,7 +162,7 @@ sway_to_english = {
 		}
 	}
 	effect = {
-		set_ideology = ideology:ideology_english
+		set_ideology = ideology:ideology_anglois
 		owner ?= {
 			add_modifier = {
 				name = swayed_to_french_monarchist

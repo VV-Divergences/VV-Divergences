@@ -329,7 +329,7 @@ dvg_dua.4 = {
 	}
 
 	immediate = {
-		set_global_variable = french_accepted
+		#set_global_variable = french_accepted	#this does nothing except errors
 	}
 
 	option = {

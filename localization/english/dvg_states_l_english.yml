@@ -293,7 +293,7 @@
 
 
 # 1.8 patch split bengal East/West, we keep N/S
-STATE_NORTH_BENGAL:0 "North Bengal"
+ STATE_NORTH_BENGAL:0 "North Bengal"
  HUB_NAME_STATE_CENTRAL_INDIA_city:0 "Indore"
  HUB_NAME_STATE_CENTRAL_INDIA_mine:1 "Rewa"
  HUB_NAME_STATE_CENTRAL_INDIA_farm:1 "Gwalior"
@@ -302,3 +302,14 @@ STATE_NORTH_BENGAL:0 "North Bengal"
  HUB_NAME_STATE_NAGPUR_mine:1 "Ambikapur"
  HUB_NAME_STATE_NAGPUR_farm:0 "Jagdalpur"
  HUB_NAME_STATE_NAGPUR_wood:1 "Amravati"
+
+ STATE_BURMA:0 "Burma"
+ HUB_NAME_STATE_BURMA_city:0 "Mandalay"
+ HUB_NAME_STATE_BURMA_port:0 "NAME"
+ HUB_NAME_STATE_BURMA_mine:0 "Monywa"
+ HUB_NAME_STATE_BURMA_farm:0 "Naypyitaw"
+ HUB_NAME_STATE_BURMA_wood:0 "Magway"
+
+
+ region_north_india:0 "North India"
+ region_south_india:0 "South India"

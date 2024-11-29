@@ -217,14 +217,14 @@ ideology_french = {
 		law_command_economy = strongly_disapprove
 	}
 
-	possible = {
-		NOT = { has_role = agitator }
+	country_trigger = {
+		
 		# no monarchists in countries with strong republican tradition
 		owner = {
 			AND = {
 				exists = c:DUA
 				OR = {
-					c:DUA = this
+					c:DUA ?= this
 					civil_war_origin_country = c:DUA
 				}
 			}
@@ -258,7 +258,7 @@ ideology_french = {
 		}
 	}
 
-	leader_weight = {
+	interest_group_leader_weight = {
 		value = 200
 		# less likely in a theocracy
 		if = {

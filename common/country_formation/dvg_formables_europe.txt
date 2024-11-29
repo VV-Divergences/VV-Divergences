@@ -482,37 +482,37 @@ NET = { #Netherlands
 	}
 }
 
-ITC = { #Italian Confederation
-	states = {
-		STATE_SAVOY
-		STATE_PIEDMONT
-		STATE_EMILIA
-		STATE_TUSCANY
-		STATE_ROMAGNA
-		STATE_LOMBARDY
-		STATE_UMBRIA
-		STATE_LAZIO
-		STATE_CORSICA
-	}
+# ITC = { #Italian Confederation retired
+# 	states = {
+# 		STATE_SAVOY
+# 		STATE_PIEDMONT
+# 		STATE_EMILIA
+# 		STATE_TUSCANY
+# 		STATE_ROMAGNA
+# 		STATE_LOMBARDY
+# 		STATE_UMBRIA
+# 		STATE_LAZIO
+# 		STATE_CORSICA
+# 	}
 	
-	required_states_fraction = 0.70	
+# 	required_states_fraction = 0.70	
 
-	ai_will_do = { always = yes }
+# 	ai_will_do = { always = yes }
 
-	possible = {
-		OR = {
-			country_has_primary_culture = cu:north_italian
-			country_has_primary_culture = cu:central_italian
-		}
-		any_country = {
-			OR = {
-				country_has_primary_culture = cu:north_italian
-				country_has_primary_culture = cu:central_italian
-			}
-			has_technology_researched = nationalism
-		}
-	}
-}
+# 	possible = {
+# 		OR = {
+# 			country_has_primary_culture = cu:north_italian
+# 			country_has_primary_culture = cu:central_italian
+# 		}
+# 		any_country = {
+# 			OR = {
+# 				country_has_primary_culture = cu:north_italian
+# 				country_has_primary_culture = cu:central_italian
+# 			}
+# 			has_technology_researched = nationalism
+# 		}
+# 	}
+# }
 
 SAX = { #Saxony
 	states = {
@@ -1140,37 +1140,37 @@ NET = { #Netherlands
 	}
 }
 
-ITC = { #Italian Confederation
-	states = {
-		STATE_SAVOY
-		STATE_PIEDMONT
-		STATE_EMILIA
-		STATE_TUSCANY
-		STATE_ROMAGNA
-		STATE_LOMBARDY
-		STATE_UMBRIA
-		STATE_LAZIO
-		STATE_CORSICA
-	}
+# ITC = { #Italian Confederation retired
+# 	states = {
+# 		STATE_SAVOY
+# 		STATE_PIEDMONT
+# 		STATE_EMILIA
+# 		STATE_TUSCANY
+# 		STATE_ROMAGNA
+# 		STATE_LOMBARDY
+# 		STATE_UMBRIA
+# 		STATE_LAZIO
+# 		STATE_CORSICA
+# 	}
 	
-	required_states_fraction = 0.70	
+# 	required_states_fraction = 0.70	
 
-	ai_will_do = { always = yes }
+# 	ai_will_do = { always = yes }
 
-	possible = {
-		OR = {
-			country_has_primary_culture = cu:north_italian
-			country_has_primary_culture = cu:central_italian
-		}
-		any_country = {
-			OR = {
-				country_has_primary_culture = cu:north_italian
-				country_has_primary_culture = cu:central_italian
-			}
-			has_technology_researched = nationalism
-		}
-	}
-}
+# 	possible = {
+# 		OR = {
+# 			country_has_primary_culture = cu:north_italian
+# 			country_has_primary_culture = cu:central_italian
+# 		}
+# 		any_country = {
+# 			OR = {
+# 				country_has_primary_culture = cu:north_italian
+# 				country_has_primary_culture = cu:central_italian
+# 			}
+# 			has_technology_researched = nationalism
+# 		}
+# 	}
+# }
 
 SAX = { #Saxony
 	states = {

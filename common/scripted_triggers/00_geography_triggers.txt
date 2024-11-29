@@ -271,10 +271,6 @@ is_vulnerable_to_droughts = {
 	OR = {
 		any_scope_state = {
 			OR = {
-				state_region = s:STATE_CALIFORNIA
-				state_region = s:STATE_NEVADA
-				state_region = s:STATE_ARIZONA
-				state_region = s:STATE_UTAH
 				state_region = s:STATE_LOWLANDS
 				state_region = s:STATE_HIGHLANDS
 				state_region = s:STATE_ULSTER
@@ -292,10 +288,7 @@ is_vulnerable_to_droughts = {
 			region = sr:region_pacific_coast
 			region = sr:region_north_sea_coast
 			region = sr:region_baltic
-			region = sr:region_finland
-			region = sr:region_arctic_russia
-			region = sr:region_urals
-			region = sr:region_baltic_states
+			region = sr:region_russia
 		}
 	}
 }
@@ -337,11 +330,8 @@ is_vulnerable_to_frosts = {
 		region = sr:region_anatolia
 		region = sr:region_arabic
 		region = sr:region_persia
-		region = sr:region_madras
-		region = sr:region_bengal
-		region = sr:region_bombay
-		region = sr:region_punjab
-		region = sr:region_central_india
+		region = sr:region_north_india
+		region = sr:region_south_india
 		region = sr:region_dixie
 		region = sr:region_mexico
 		region = sr:region_central_america
@@ -380,11 +370,8 @@ is_vulnerable_to_locust_swarms = {
 		region = sr:region_niger
 		region = sr:region_arabic
 		region = sr:region_persia
-		region = sr:region_madras
-		region = sr:region_bengal
-		region = sr:region_bombay
-		region = sr:region_punjab
-		region = sr:region_central_india
+		region = sr:region_north_india
+		region = sr:region_south_india
 		region = sr:region_brazil
 		region = sr:region_andes
 		region = sr:region_la_plata
@@ -398,7 +385,6 @@ is_vulnerable_to_heatwaves = {
 		region = sr:region_west_siberia
 		region = sr:region_east_siberia
 		region = sr:region_himalayas
-		region = sr:region_arctic_russia
 	}
 }
 
