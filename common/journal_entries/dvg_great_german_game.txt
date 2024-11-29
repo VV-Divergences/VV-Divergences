@@ -4,15 +4,20 @@
 	group = je_group_historical_content
 
 	is_shown_when_inactive = {
-	has_game_rule = active_great_german_game
+		has_game_rule = active_great_german_game
+		OR = {
+			c:SCA ?= this
+			c:BOH ?= this
+			c:BRG ?= this
+			}
 	}
 
 	possible = {
 			has_game_rule = active_great_german_game
 		OR = {
-		c:SCA = this
-		c:BOH = this
-		c:BRG = this
+		c:SCA ?= this
+		c:BOH ?= this
+		c:BRG ?= this
 		}
 	}
 

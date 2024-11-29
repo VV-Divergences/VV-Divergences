@@ -1345,7 +1345,7 @@ on_diplomatic_play_started = {
 				scope:initiator = {
 					has_variable = selected_federal_solution_var
 				}
-				scope:target = {
+				scope:target ?= {
 					has_variable = indian_federation_member
 				}
 			}
@@ -1845,7 +1845,7 @@ on_diplomats_expelled = {
 				scope:initiator = {
 					has_variable = we_are_not_amused_ach_possible
 				}
-				scope:target = {
+				scope:target ?= {
 					c:FRA ?= this
 					"relations(scope:initiator)" >= -10 #Why? Because the on_action fires after the opinion malus from expel diplomats occurs.
 				}
@@ -1879,7 +1879,7 @@ on_country_released_as_independent = {
 			limit = {
 				c:NEN ?= scope:target
 			}
-			scope:target = {
+			scope:target ?= {
 				create_character = {
 					ig_leader = yes
 					interest_group = ig_rural_folk
@@ -1889,7 +1889,7 @@ on_country_released_as_independent = {
 		}
 		if = {
 			limit = {
-				scope:target = {
+				scope:target ?= {
 					country_has_primary_culture = cu:ashkenazi
 				}
 				NOT = {
@@ -1906,7 +1906,7 @@ on_country_released_as_independent = {
 		#dvg these cultures don't exist
 		# if = {
 		# 	limit = {
-		# 		scope:target = {
+		# 		scope:target ?= {
 		# 			OR = {
 		# 				country_has_primary_culture = cu:afro_caribbean
 		# 				country_has_primary_culture = cu:afro_antillean
@@ -1920,7 +1920,7 @@ on_country_released_as_independent = {
 		# 			}
 		# 		}
 		# 	}
-		# 	scope:target = {
+		# 	scope:target ?= {
 		# 		trigger_event = { id = slave_revolt_events.1 days = 0 }
 		# 	}
 		# }
@@ -1935,7 +1935,7 @@ on_country_released_as_own_subject = {
 			limit = {
 				c:NEN ?= scope:target
 			}
-			scope:target = {
+			scope:target ?= {
 				create_character = {
 					ig_leader = yes
 					interest_group = ig_rural_folk
@@ -1945,7 +1945,7 @@ on_country_released_as_own_subject = {
 		}
 		if = {
 			limit = {
-				scope:target = {
+				scope:target ?= {
 					country_has_primary_culture = cu:ashkenazi
 				}
 				NOT = {
@@ -1959,7 +1959,7 @@ on_country_released_as_own_subject = {
 				add_homeland = cu:ashkenazi
 			}
 		}
-		scope:target = {
+		scope:target ?= {
 			if = {
 				limit = {
 					country_has_state_religion = rel:theravada
@@ -2055,7 +2055,7 @@ on_country_released_as_overlord_subject = {
 	effect = {
 		if = {
 			limit = {
-				scope:target = {
+				scope:target ?= {
 					country_has_primary_culture = cu:ashkenazi
 				}
 				NOT = {
@@ -2069,7 +2069,7 @@ on_country_released_as_overlord_subject = {
 				add_homeland = cu:ashkenazi
 			}
 		}
-		scope:target = {
+		scope:target ?= {
 			if = {
 				limit = {
 					country_has_state_religion = rel:theravada
@@ -3282,7 +3282,7 @@ on_revolution_start = {
 					has_journal_entry = je_meiji_restoration
 					has_inactive_journal_entry = je_meiji_restoration
 				}
-				scope:target = {
+				scope:target ?= {
 					ig:ig_landowners = {
 						is_in_government = yes
 					}
@@ -3333,7 +3333,7 @@ on_revolution_start = {
 		# 	}
 		# 	if = {
 		# 		limit = {
-		# 			scope:target = {
+		# 			scope:target ?= {
 		# 				is_secessionist = no
 		# 				has_law = law_type:law_monarchy
 		# 				any_interest_group = {
@@ -3345,7 +3345,7 @@ on_revolution_start = {
 		# 				}
 		# 			}
 		# 		}
-		# 		scope:target = {
+		# 		scope:target ?= {
 		# 			if = {
 		# 				limit = {
 		# 					has_variable = bonapartist_restoration_var
@@ -3376,7 +3376,7 @@ on_revolution_start = {
 		# 	}
 		# 	else_if = {
 		# 		limit = {
-		# 			scope:target = {
+		# 			scope:target ?= {
 		# 				is_secessionist = no
 		# 				has_law = law_type:law_monarchy
 		# 				any_interest_group = {
@@ -3388,7 +3388,7 @@ on_revolution_start = {
 		# 				}
 		# 			}
 		# 		}
-		# 		scope:target = {
+		# 		scope:target ?= {
 		# 			if = {
 		# 				limit = {
 		# 					has_variable = bonapartist_restoration_var
@@ -3419,7 +3419,7 @@ on_revolution_start = {
 		# 	}
 		# 	else_if = {
 		# 		limit = {
-		# 			scope:target = {
+		# 			scope:target ?= {
 		# 				is_secessionist = no
 		# 				has_law = law_type:law_monarchy
 		# 				any_interest_group = {
@@ -3431,7 +3431,7 @@ on_revolution_start = {
 		# 				}
 		# 			}
 		# 		}
-		# 		scope:target = {
+		# 		scope:target ?= {
 		# 			if = {
 		# 				limit = {
 		# 					has_variable = orleanist_restoration_var
@@ -3505,7 +3505,7 @@ on_revolution_start = {
 				limit = {
 					is_civil_war_type = revolution
 				}
-				scope:target = {
+				scope:target ?= {
 					set_variable = { name = civil_war_type_var value = prev.political_movement.type }
 				}
 			}
@@ -3529,7 +3529,7 @@ on_revolution_start = {
 					}
 				}
 			}
-			scope:target = {
+			scope:target ?= {
 				change_tag = BHT
 				remove_primary_culture = cu:british
 				grant_indian_cultures = yes
@@ -3613,7 +3613,7 @@ on_secession_start = {
 				NOT = {
 					exists = c:RSM
 				}
-				scope:target = {
+				scope:target ?= {
 					OR = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:south_italian
@@ -3647,7 +3647,7 @@ on_secession_start = {
 		# 	            }
 		# 	        }
 		# 		}
-		# 		scope:target = {
+		# 		scope:target ?= {
 		# 			OR = {
 		# 	            c:POL ?= this
 		# 	            c:KRA ?= this
@@ -3677,7 +3677,7 @@ on_secession_start = {
 		# 			}
 		# 		}
 		# 	}
-		# 	scope:target = {
+		# 	scope:target ?= {
 		# 		set_variable = {
 		# 			name = polish_rebel_country_var
 		# 			months = short_modifier_time
@@ -4004,11 +4004,11 @@ on_wargoal_enforced = {
         }
 		if = {
 			limit = {
-				scope:target = {
+				scope:target ?= {
 					has_journal_entry = je_earn_recognition
 				}
 			}
-			scope:target = {
+			scope:target ?= {
 				set_variable = { 
 					name = temp_wargoal_impact 
 					value = {
@@ -4031,7 +4031,7 @@ on_wargoal_enforced = {
 				owner = {
 					has_journal_entry = je_earn_recognition
 				}
-				scope:target = {
+				scope:target ?= {
 					OR = {
 						is_country_type = recognized
 						is_country_type = colonial
@@ -4235,7 +4235,7 @@ on_war_end = {
 		    #	value = scope:target
 		    #}
 		}
-		scope:target = {
+		scope:target ?= {
 			set_variable = {
 		        name = recently_had_war
 		        days = 1825

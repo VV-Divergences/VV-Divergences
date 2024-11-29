@@ -2409,7 +2409,10 @@ exile_character_with_martyrdom = {
 		}
 	}
 	clean_up_exile_character_roles = yes
-	exile_character = yes
+	if = {
+		limit = { is_in_exile_pool = no }
+		exile_character = yes
+	}
 }
 
 calculate_populism_progress = {

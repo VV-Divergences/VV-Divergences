@@ -1427,6 +1427,8 @@
 		}
 		
 		add_homeland = cu:hungarian
+		add_claim = c:TRS
+		add_claim = c:HUN
 	}
 	s:STATE_TRANSDANUBIA = {
 		create_state = {
@@ -1435,6 +1437,7 @@
 		}
 		
 		add_homeland = cu:hungarian
+		add_claim = c:TRS
 	}
 	s:STATE_WEST_SLOVAKIA = {
 		create_state = {
@@ -1448,6 +1451,8 @@
 		
 		add_homeland = cu:slovak
 		add_homeland = cu:hungarian
+		add_claim = c:TRS
+		add_claim = c:HUN
 	}
 	s:STATE_EAST_SLOVAKIA = { 
 		create_state = {
@@ -1493,6 +1498,7 @@
 		
 		add_homeland = cu:hungarian
 		add_homeland = cu:romanian
+		add_claim = c:HUN
 	}
 	s:STATE_SOUTHERN_TRANSYLVANIA = {
 		create_state = {
@@ -1502,6 +1508,7 @@
 		
 		add_homeland = cu:hungarian
 		add_homeland = cu:romanian
+		add_claim = c:HUN
 	}
 	s:STATE_NORTHERN_TRANSYLVANIA = {
 		create_state = {
@@ -1511,6 +1518,7 @@
 		
 		add_homeland = cu:hungarian
 		add_homeland = cu:romanian
+		add_claim = c:HUN
 	}
 	
 	#Wallachia

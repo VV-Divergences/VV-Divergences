@@ -290,3 +290,15 @@
  STATE_DVG_LESSER_POLAND: "Lesser Poland"
  STATE_DVG_GREATER_POLAND: "Greater Poland"
  STATE_DVG_MAZOVIA: "Mazovia"
+
+
+# 1.8 patch split bengal East/West, we keep N/S
+STATE_NORTH_BENGAL:0 "North Bengal"
+ HUB_NAME_STATE_CENTRAL_INDIA_city:0 "Indore"
+ HUB_NAME_STATE_CENTRAL_INDIA_mine:1 "Rewa"
+ HUB_NAME_STATE_CENTRAL_INDIA_farm:1 "Gwalior"
+ HUB_NAME_STATE_CENTRAL_INDIA_wood:0 "Bhopal"
+ HUB_NAME_STATE_NAGPUR_city:0 "Nagpur"
+ HUB_NAME_STATE_NAGPUR_mine:1 "Ambikapur"
+ HUB_NAME_STATE_NAGPUR_farm:0 "Jagdalpur"
+ HUB_NAME_STATE_NAGPUR_wood:1 "Amravati"

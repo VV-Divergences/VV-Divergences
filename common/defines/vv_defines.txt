@@ -2,6 +2,7 @@
 }
 
 NMilitary = {
+	CONVOY_RAIDING_STRENGTH_MULT = 0.6 #vv up from 0.3 # How strong each Convoy raiding point is ( num flotillas * ce offense )
 	CONVOY_RAIDING_RECOVERY_RATE_PEACETIME_FACTOR = 8 #vv change from 4		# While a country is at peace, convoys will be restored this much faster
 }
 
