@@ -103,9 +103,9 @@ PAG = { #Pagaruyung
 PLM = { #Palembang
 	color = { 183 141 1 }
 	
-	country_type = colonial
+	country_type = unrecognized
 	
-	tier = grand_principality
+	tier = principality
 	
 	cultures = { malay batak}
 	

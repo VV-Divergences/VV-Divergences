@@ -196,12 +196,13 @@
 		}
 	}
 	c:BEI = {
+		
 		create_diplomatic_pact = {
-			country = c:PLM
+			country = c:MKS
 			type = puppet
 		}
 		create_diplomatic_pact = {
-			country = c:MKS
+			country = c:PLM
 			type = puppet
 		}
 	}
