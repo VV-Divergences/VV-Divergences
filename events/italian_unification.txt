@@ -1,4 +1,4 @@
-﻿namespace = italian_unification #Replace with DVG specific when able
+﻿namespace = italian_unification
 
 # Unified italian_unification
 italian_unification.1 = {
@@ -26,12 +26,13 @@ italian_unification.1 = {
 		ruler.interest_group = {
 			save_scope_as = ruler_ig_scope
 		}
-	}
+	}		
 
 	option = {
 		name = italian_unification.1.a
 		default_option = yes
 		give_claims_on_italy = yes
+		
 		# prestige
 		add_modifier = {
 			name = italian_unifier_prestige
@@ -39,14 +40,14 @@ italian_unification.1 = {
 		}
 	}
 	option = {
-		name = german_unification.1.b
+		name = italian_unification.1.b
 		give_claims_on_italy = yes
-
+		
 		# ruler IG attraction
 		scope:ruler_ig_scope = {
 			add_modifier = {
 				name = italian_unifiers_ig
-				months = normal_modifier_time
+				months = long_modifier_time
 			}
 		}
 	}
@@ -72,7 +73,6 @@ italian_unification.2 = {
 	duration = 1
 
 	trigger = {
-		# NOT = { has_journal_entry = je_italian_confederation }
 		any_neighbouring_state = {
 			owner = {
 				OR = {
@@ -126,7 +126,19 @@ italian_unification.2 = {
 			country = scope:italian_annex_country
 			value = 10
 		}
-		annex = scope:italian_annex_country
+		hidden_effect = { # remove all Italian radicals in country that's being annexed pre-annexation, to prevent chain annexations
+			scope:italian_annex_country = {
+				add_radicals = {
+					value = -1
+					culture = cu:north_italian
+				}
+				add_radicals = {
+					value = -1
+					culture = cu:south_italian
+				}				
+			}
+		}
+		annex_with_incorporation = scope:italian_annex_country
 		ai_chance = {
 			base = 1
 		}
@@ -193,8 +205,13 @@ italian_unification.4 = {
 	cooldown = { months = 3 }
 
 	trigger = {
+		NOT = { has_variable = italian_unification_5_happened_here }
 		exists = var:italian_states_radicals_total_bar
 		var:italian_states_radicals_total_bar >= 25
+		NOR = {
+			has_revolution = yes
+			is_revolutionary = yes
+		}
 		any_country = {
 			NOT = {
 				this = root
@@ -340,6 +357,10 @@ italian_unification.4 = {
 			value = very_large_radicals
 			culture = cu:south_italian
 		}
+		add_loyalists = {
+			value = very_large_radicals
+			culture = cu:central_italian
+		}
 		scope:italian_leader = {
 			trigger_event = { id = italian_unification.6 popup = yes }
 		}
@@ -407,6 +428,22 @@ italian_unification.5 = {
 				play_as = root
 			}
 		}
+		hidden_effect = { # remove all Italian radicals in country that's being annexed pre-annexation, to prevent chain annexations
+			scope:italian_pannational_country = {
+				add_radicals = {
+					value = -1
+					culture = cu:north_italian
+				}
+				add_radicals = {
+					value = -1
+					culture = cu:south_italian
+				}	
+				add_radicals = {
+					value = -1
+					culture = cu:central_italian
+				}			
+			}
+		}		
 		annex_with_incorporation = scope:italian_pannational_country
 	}
 	option = {
@@ -417,6 +454,12 @@ italian_unification.5 = {
 		create_diplomatic_pact = {
 			country = scope:italian_pannational_country
 			type = puppet
+		}
+		scope:italian_pannational_country = {
+			set_variable = { 
+				name = italian_unification_5_happened_here
+				months = normal_modifier_time
+			}
 		}
 	}
 }
@@ -467,6 +510,15 @@ italian_unification.6 = {
 		if = {
 			limit = {
 				country_has_primary_culture = cu:north_italian
+			}
+			add_loyalists = {
+				value = medium_radicals
+				culture = cu:north_italian
+			}
+		}
+		if = {
+			limit = {
+				country_has_primary_culture = cu:central_italian
 			}
 			add_loyalists = {
 				value = medium_radicals
@@ -936,4 +988,3 @@ italian_unification.10 = {
 		set_variable = risorgimento_anti_unifying_stance
 	}
 }
-
