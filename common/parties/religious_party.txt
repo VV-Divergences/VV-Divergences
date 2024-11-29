@@ -48,13 +48,13 @@ religious_party = {
 					THIS = c:SPA
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_christian_peoples_party
-			# 	trigger = {
-			# 		exists = c:BEL
-			# 		THIS = c:BEL
-			# 	}
-			# }
+			triggered_desc = {
+				desc = party_christian_peoples_party
+				trigger = {
+					exists = c:BEL
+					THIS = c:BEL
+				}
+			}
 			triggered_desc = {
 				desc = party_clerical_party
 				trigger = {
@@ -85,16 +85,9 @@ religious_party = {
 						OR = {
 							country_has_primary_culture = cu:north_german
 							country_has_primary_culture = cu:south_german
-							country_has_primary_culture = cu:rheinish #DVG
 						}
 						country_has_state_religion = rel:catholic
 					}
-				}
-			}
-			triggered_desc = {
-				desc = party_tuanjiedang
-				trigger = {
-					country_has_primary_culture = cu:zhourao
 				}
 			}
 			triggered_desc = {
@@ -103,15 +96,12 @@ religious_party = {
 					OR = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:south_italian
-						country_has_primary_culture = cu:central_italian #DVG
-						country_has_primary_culture = cu:venetian
 					}
 				}
 			}
 			triggered_desc = {
 				desc = party_moderate_venstre
 				trigger = {
-					country_has_primary_culture = cu:scandinavian
 					country_has_primary_culture = cu:norwegian
 				}
 			}
@@ -170,6 +160,18 @@ religious_party = {
 				}
 			}
 			triggered_desc = {
+				desc = party_hindu_mahasabha
+				trigger = {
+					ig:ig_devout = {
+						has_ideology = ideology:ideology_hindu_moralist
+					}
+					OR = {
+						c:BIC ?= this
+						c:BHT ?= this
+					}
+				}
+			}
+			triggered_desc = {
 				desc = party_religious
 				trigger = {
 					always = yes
@@ -200,6 +202,26 @@ religious_party = {
 		if = {
 			limit = {
 				owner = {
+					c:BIC ?= this
+					is_subject = yes
+					OR = {
+						has_modifier = modifier_india_crown_rule
+						has_modifier = modifier_india_company_rule
+					}
+				}
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = {
+				value = -100
+				desc = "india_colonial_government"
+			}
+		}
+		if = {
+			limit = {
+				owner = {
 					country_is_in_south_america = yes
 					any_primary_culture = {
 						has_discrimination_trait = hispanophone
@@ -211,22 +233,22 @@ religious_party = {
 				desc = "south_america_two_party_system"
 			}
 		}
-		# if = {
-		# 	limit = {
-		# 		owner = {
-		# 			country_is_in_north_america = yes
-		# 			OR = {
-		# 				country_has_primary_culture = cu:yankee
-		# 				country_has_primary_culture = cu:dixie
-		# 			}
-		# 			has_law = law_type:law_presidential_republic
-		# 		}
-		# 	}
-		# 	add = {
-		# 		value = -10
-		# 		desc = "usa_two_party_system"
-		# 	}
-		# }
+		if = {
+			limit = {
+				owner = {
+					country_is_in_north_america = yes
+					OR = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+					has_law = law_type:law_presidential_republic
+				}
+			}
+			add = {
+				value = -10
+				desc = "usa_two_party_system"
+			}
+		}
 		if = {
 			limit = {
 				owner = {

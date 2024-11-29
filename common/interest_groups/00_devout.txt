@@ -13,7 +13,7 @@
 	character_ideologies = {
 		ideology_moderate
 		ideology_traditionalist
-		#ideology_legitimist
+		ideology_legitimist
 	}
 
 	enable = {
@@ -29,21 +29,13 @@
 
 	on_enable = {
 		ig:ig_devout = {
-			if = {		#cvg
-				limit = {
-					OR = {
-						owner = { c:MUG ?= this }
-						ROOT = { was_formed_from = MUG }
-					}
-				}
-				set_ig_trait = ig_trait:ig_trait_pious_fiction
-				set_ig_trait = ig_trait:dvg_ig_trait_da_wat
-				set_ig_trait = ig_trait:dvg_ig_trait_mug_bookkeepers
-			}
-			else_if = {
+			if = {
 				limit = {
 					owner = {
 						country_has_state_religion = rel:protestant
+						NOT = {
+							c:BIC ?= this
+						}
 					}
 				}
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
@@ -191,13 +183,14 @@
 					country_has_primary_culture = cu:anglo_canadian
 					country_has_primary_culture = cu:british
 					country_has_primary_culture = cu:irish
-					country_has_primary_culture = cu:beornian
 					c:NRU ?= this
+				}
+				NOT = {
+					c:BIC ?= this
 				}
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_anglican_church
-				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
 			}
 		}
 		# Russian Orthodox Church
@@ -206,8 +199,8 @@
 				country_has_state_religion = rel:orthodox
 				OR = {
 					country_has_primary_culture = cu:russian
-					country_has_primary_culture = cu:north_russian
 					country_has_primary_culture = cu:byelorussian
+					country_has_primary_culture = cu:ukrainian
 				}
 			}
 			ig:ig_devout = {
@@ -221,7 +214,6 @@
 			limit = {
 				country_has_state_religion = rel:protestant
 				country_has_primary_culture = cu:danish
-				country_has_primary_culture = cu:scandinavian
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_church_of_denmark
@@ -260,13 +252,7 @@
 		# Confucian Scholars
 		else_if = {
 			limit = {
-				country_has_state_religion = rel:mahayana
-				OR = {
-					country_has_primary_culture = cu:korean
-					any_primary_culture = {
-						has_discrimination_trait = han_chinese
-					}
-				}
+				country_has_state_religion = rel:confucian
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_confucian
@@ -280,15 +266,14 @@
 			limit = {
 				country_has_state_religion = rel:protestant
 				OR = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+					country_has_primary_culture = cu:afro_american
 					country_has_primary_culture = cu:cherokee
-					country_has_primary_culture = cu:vinlander
-					country_has_primary_culture = cu:lotharian
-					country_has_primary_culture = cu:atlantian
 				}
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_evangelicals
-				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 		# Roman Curia
@@ -300,19 +285,6 @@
 				set_interest_group_name = ig_roman_curia
 				remove_ideology = ideology_moralist
 				add_ideology = ideology_papal_moralist
-			}
-		}
-		# Dutch Reformed Church
-		else_if = {
-			limit = {
-				AND = {
-					country_has_state_religion = rel:protestant
-					country_has_primary_culture = cu:boer
-					
-				}
-			}
-			ig:ig_devout = {
-				set_interest_group_name = ig_dutch_reformed_church
 			}
 		}
 
@@ -328,7 +300,12 @@
 		}
 		# Evangelical Church
 		else_if = {
-			limit = { country_has_state_religion = rel:protestant }
+			limit = { 
+				country_has_state_religion = rel:protestant 
+				NOT = {
+					c:BIC ?= this
+				}
+			}
 			ig:ig_devout = { 
 				set_interest_group_name = ig_evangelical_church
 			}
@@ -363,8 +340,7 @@
 				NOR = {
 					country_has_primary_culture = cu:russian
 					country_has_primary_culture = cu:byelorussian
-					country_has_primary_culture = cu:cossack
-					country_has_primary_culture = cu:georgian
+					country_has_primary_culture = cu:ukrainian
 				}
 			}
 			ig:ig_devout = { 
@@ -375,11 +351,27 @@
 		}
 		# Hindu Priesthood
 		else_if = {
-			limit = { country_has_state_religion = rel:hindu }
+			limit = { 
+				OR = {
+					country_has_state_religion = rel:hindu 
+					c:BIC ?= this
+				}
+			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_hindu_priesthood
-				remove_ideology = ideology_moralist
-				add_ideology = ideology_hindu_moralist
+				if = {
+					limit = {
+						owner = {
+							c:BIC ?= this
+						}
+					}
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_hindu_moralist_british_india
+				}
+				else = {
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_hindu_moralist
+				}
 			}
 		}
 		# Vajrayana Monks
@@ -429,22 +421,33 @@
 				add_ideology = ideology_corporatist
 			}
 		}
+	}
+	on_disable = {}
 
-		if = {		#cvg
-			limit = {
-				OR = {
-					owner = { c:BEO ?= this }
-					ROOT = { was_formed_from = BEO }
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = { 
+					cu:british = this
 				}
 			}
-			ig:ig_devout = {
-				set_ig_trait = ig_trait:dvg_ig_trait_beo_baby_birthers
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
 			}
 		}
 	}
-	on_disable = {}
+
 	on_character_ig_membership = {
 		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+				}
+			}
+			change_character_religion = rel:hindu
+		}
+		else_if = {
 			limit = {
 				NOT = {
 					owner = {
@@ -461,7 +464,14 @@
 
 
 	pop_potential = {
-		has_state_religion = yes
+		OR = {
+			has_state_religion = yes
+			AND = {
+				exists = c:BIC
+				owner ?= c:BIC
+				has_pop_religion = hindu
+			}
+		}
 		NOT = {
 			has_pop_religion = atheist
 		}

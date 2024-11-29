@@ -35,19 +35,6 @@ military_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_lizhushe
-				trigger = {
-					country_has_primary_culture = cu:zhourao
-					has_law = law_type:law_monarchy
-				}
-			}
-			triggered_desc = {
-				desc = party_datongshe
-				trigger = {
-					country_has_primary_culture = cu:zhourao
-				}
-			}
-			triggered_desc = {
 				desc = party_russian_assembly
 				trigger = {
 					exists = c:RUS
@@ -89,7 +76,6 @@ military_party = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish #DVG
 					}
 				}
 			}
@@ -127,6 +113,26 @@ military_party = {
 		if = {
 			limit = {
 				owner = {
+					c:BIC ?= this
+					is_subject = yes
+					OR = {
+						has_modifier = modifier_india_crown_rule
+						has_modifier = modifier_india_company_rule
+					}
+				}
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = {
+				value = -100
+				desc = "india_colonial_government"
+			}
+		}
+		if = {
+			limit = {
+				owner = {
 					country_is_in_south_america = yes
 					any_primary_culture = {
 						has_discrimination_trait = hispanophone
@@ -139,22 +145,22 @@ military_party = {
 			}
 		}
 		
-		# if = {
-		# 	limit = {
-		# 		owner = {
-		# 			country_is_in_north_america = yes
-		# 			OR = {
-		# 				country_has_primary_culture = cu:yankee
-		# 				country_has_primary_culture = cu:dixie
-		# 			}
-		# 			has_law = law_type:law_presidential_republic
-		# 		}
-		# 	}
-		# 	add = {
-		# 		value = -10
-		# 		desc = "usa_two_party_system"
-		# 	}
-		# }
+		if = {
+			limit = {
+				owner = {
+					country_is_in_north_america = yes
+					OR = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+					has_law = law_type:law_presidential_republic
+				}
+			}
+			add = {
+				value = -10
+				desc = "usa_two_party_system"
+			}
+		}
 		if = { # nobody will join if the armed forces don't join
 			limit = {
 				NOT = { is_interest_group_type = ig_armed_forces }

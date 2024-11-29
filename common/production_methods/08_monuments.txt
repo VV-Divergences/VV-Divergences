@@ -22,6 +22,28 @@ pm_default_building_eiffel_tower = {
 	}
 }
 
+pm_default_building_cristo_redentor = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	country_modifiers = {
+		workforce_scaled = {
+			interest_group_ig_devout_pol_str_mult = 0.15
+			country_prestige_add = 50
+		}
+	}
+
+	building_modifiers = {
+		#workforce_scaled = {
+		#}
+
+		level_scaled = {
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
 pm_default_building_angkor_wat = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
@@ -429,13 +451,15 @@ pm_power_bloc_prestige_only = {
 	}
 }
 
-pm_base_building_medina = {
+pm_default_building_victoria_terminus = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
 
 	country_modifiers = {
 		workforce_scaled = {
-			interest_group_ig_devout_pop_attraction_mult = 0.1
-			country_prestige_add = 25
+			country_prestige_add = 50
+			building_railway_throughput_add = 0.20
 		}
 	}
 
@@ -444,74 +468,9 @@ pm_base_building_medina = {
 		#}
 
 		level_scaled = {
-			building_employment_clergymen_add = 200
-		}
-	}
-}
-
-pm_base_building_mecca = {
-	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
-
-	country_modifiers = {
-		workforce_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.25
-			country_influence_add = 100
-			country_authority_add = 50
-			country_prestige_add = 25
-			country_minting_add = 5000
-		}
-	}
-
-	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
-		level_scaled = {
-			building_employment_clergymen_add = 200
-		}
-	}
-}
-
-pm_base_building_jerusalem = {
-	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
-
-	country_modifiers = {
-		workforce_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.75
-			country_influence_add = 200
-			country_authority_add = 100
-			country_prestige_add = 25
-			country_minting_add = 5000
-		}
-	}
-
-	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
-		level_scaled = {
-			building_employment_clergymen_add = 200
-		}
-	}
-}
-
-pm_base_building_shia = {
-	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
-
-	country_modifiers = {
-		workforce_scaled = {
-			interest_group_ig_devout_pop_attraction_mult = 0.25
-			country_prestige_add = 25
-			country_minting_add = 2000
-		}
-	}
-
-	building_modifiers = {
-		#workforce_scaled = {
-		#}
-
-		level_scaled = {
-			building_employment_clergymen_add = 200
+			building_employment_laborers_add = 200
+			building_employment_machinists_add = 200
+			building_employment_clerks_add = 100
 		}
 	}
 }

@@ -1,5 +1,51 @@
 ﻿namespace = east_indies
 
+# Consolidation of [countryadjective] rule
+east_indies.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = east_indies.1.t
+	desc = east_indies.1.d # probably want a triggered desc here
+	flavor = east_indies.1.f
+
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = east_indies.1.a
+		default_option = yes
+		every_princely_state = {
+			change_relations = {
+				country = ROOT
+				value = 30
+			}
+		}
+	}
+	option = {
+		name = east_indies.1.b
+		ig:ig_industrialists = {
+			add_modifier = {
+				name = east_india_company_men
+				months = long_modifier_time
+			}
+		}
+	}
+}
+
 # Reforming the Indies
 east_indies.2 = {
 	type = country_event
@@ -14,7 +60,6 @@ east_indies.2 = {
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/factory_opening"
 
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 
@@ -63,7 +108,6 @@ east_indies.3 = {
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/middleclass_cafe"
 
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 

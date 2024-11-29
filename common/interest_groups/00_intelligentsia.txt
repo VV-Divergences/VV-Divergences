@@ -17,7 +17,7 @@
 		ideology_radical
 		ideology_reformer
 		ideology_sovereignist_leader
-		#ideology_orleanist
+		ideology_orleanist
 		ideology_despotic_utopian
 		ideology_humanitarian
 	}
@@ -65,6 +65,15 @@
 				set_ig_trait = ig_trait:ig_trait_avant_garde
 				set_ig_trait = ig_trait:ig_trait_les_beaux_arts
 			}
+			else_if = {
+				limit = {
+					has_dlc_feature = ip2_content
+					owner = { c:BIC ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_swaraj
+				set_ig_trait = ig_trait:ig_trait_civil_service
+				set_ig_trait = ig_trait:ig_trait_westernisation
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_social_criticism
 				set_ig_trait = ig_trait:ig_trait_avant_garde
@@ -96,16 +105,10 @@
 				any_primary_culture = {
 					has_discrimination_trait = han_chinese
 				}
-				any_interest_group = {
-					NOT = {
-						has_ideology = ideolog:ideology_mengzi
-					}
-				}
 			}
 			ig:ig_intelligentsia = { 
 				set_interest_group_name = ig_literati
 				remove_ideology = ideology_anti_clerical
-				add_ideology = ideology:ideology_mengzi
 			}
 		}
 		# Brazilian Intelligentsia
@@ -123,8 +126,20 @@
 				add_ideology = ideology_constitutionalist
 			}
 		}
-		# Britain and other Constitutionalists
+		# India
 		else_if = {
+			limit = {
+				c:BIC ?= THIS
+			}
+			ig:ig_intelligentsia = {
+				set_interest_group_name = ig_civil_servants
+
+				remove_ideology = ideology_republican
+				add_ideology = ideology_constitutionalist
+			}
+		}
+		# Britain and other Constitutionalists
+		if = {
 			limit = {
 				OR = {
 					c:GBR ?= THIS
@@ -154,24 +169,20 @@
 		}
 	}
 	on_disable = {}
-	on_character_ig_membership = {
-		if = {
-			limit = {
-				owner = {
-					country_has_state_religion = rel:taiping
-				}
-				NOT = {
-					owner = {
-						has_law = law_type:law_state_atheism
-					}
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = { 
+					cu:british = this
 				}
 			}
-			change_character_religion = scope:interest_group.owner.religion
-		}
-		else = {
-		
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
 		}
 	}
+	on_character_ig_membership = {}
 
 	pop_potential = {
 		literacy_rate > 0.25
@@ -255,6 +266,49 @@
 					}
 				}
 				value = 100
+			}
+		}
+
+		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+				}
+				OR = {
+					is_pop_type = bureaucrats
+					is_pop_type = clerks
+				}
+			}
+			if = {
+				limit = {
+					culture = {
+						has_discrimination_trait = european_heritage
+					}
+				}
+				multiply = {
+					desc = "POP_INDIA_COLONIAL_RULE"
+					value = 0.25
+				}
+			}
+			else = {
+				multiply = {
+					desc = "POP_INDIA_CIVIL_SERVICE"
+					value = 1.5
+				}
+			}
+		}
+		
+		add = {
+			desc = "POP_MILITARY_BUREAUCRACY"
+			if = {
+				limit = {
+					is_pop_type = bureaucrats
+					owner = {
+						c:ALK ?= this
+						has_government_type = gov_chartered_company
+					}
+				}
+				multiply = 0.25
 			}
 		}
 		

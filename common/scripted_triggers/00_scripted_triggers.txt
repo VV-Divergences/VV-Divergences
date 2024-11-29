@@ -60,7 +60,7 @@ country_can_form_power_bloc = {
 
 power_bloc_is_weak = {
 	power_bloc_leader = {
-		country_rank < rank_value:major_power		#great_power	#VV
+		country_rank < rank_value:great_power
 	}
 }
 
@@ -509,124 +509,119 @@ has_subsistence_building = {
 	}
 }
 
-# owned_central_asia_region_states = {
-	# owns_entire_state_region = STATE_BASHKORTOSTAN
-	# owns_entire_state_region = STATE_URALSK
-	# owns_entire_state_region = STATE_AKMOLINSK
-	# owns_entire_state_region = STATE_SEMIRECHE
-	# owns_entire_state_region = STATE_DZUNGARIA
-	# owns_entire_state_region = STATE_TIANSHAN
-	# owns_entire_state_region = STATE_NGARI
-	# owns_entire_state_region = STATE_LHASA
-	# owns_entire_state_region = STATE_KASHMIR
-	# owns_entire_state_region = STATE_PASHTUNISTAN
-	# owns_entire_state_region = STATE_TAJIKISTAN
-	# owns_entire_state_region = STATE_KIRGHIZIA
-	# owns_entire_state_region = STATE_UZBEKIA
-	# owns_entire_state_region = STATE_TURKMENIA
-	# owns_entire_state_region = STATE_KHIVA
-# }
+owned_central_asia_region_states = {
+	owns_entire_state_region = STATE_SAMARA
+	owns_entire_state_region = STATE_URALSK
+	owns_entire_state_region = STATE_AKMOLINSK
+	owns_entire_state_region = STATE_SEMIRECHE
+	owns_entire_state_region = STATE_DZUNGARIA
+	owns_entire_state_region = STATE_TIANSHAN
+	owns_entire_state_region = STATE_JETISY
+	owns_entire_state_region = STATE_TAJIKISTAN
+	owns_entire_state_region = STATE_KIRGHIZIA
+	owns_entire_state_region = STATE_UZBEKIA
+	owns_entire_state_region = STATE_TURKMENIA
+	owns_entire_state_region = STATE_KHIVA
+}
 
-# owned_great_plains_region_states = {
-	# owns_entire_state_region = STATE_MONTANA
-	# owns_entire_state_region = STATE_NORTH_DAKOTA
-	# owns_entire_state_region = STATE_SOUTH_DAKOTA
-	# owns_entire_state_region = STATE_NEBRASKA
-	# owns_entire_state_region = STATE_WYOMING
-	# owns_entire_state_region = STATE_COLORADO
-	# owns_entire_state_region = STATE_KANSAS
-	# owns_entire_state_region = STATE_OKLAHOMA
-	# owns_entire_state_region = STATE_NEW_MEXICO
-	# owns_entire_state_region = STATE_TEXAS
-# }
+owned_great_plains_region_states = {
+	owns_entire_state_region = STATE_MONTANA
+	owns_entire_state_region = STATE_NORTH_DAKOTA
+	owns_entire_state_region = STATE_SOUTH_DAKOTA
+	owns_entire_state_region = STATE_NEBRASKA
+	owns_entire_state_region = STATE_WYOMING
+	owns_entire_state_region = STATE_COLORADO
+	owns_entire_state_region = STATE_KANSAS
+	owns_entire_state_region = STATE_NEW_MEXICO
+}
 
-# owned_pacific_coast_region_states = {
-	# owns_entire_state_region = STATE_WASHINGTON
-	# owns_entire_state_region = STATE_IDAHO
-	# owns_entire_state_region = STATE_OREGON
-	# owns_entire_state_region = STATE_NEVADA
-	# owns_entire_state_region = STATE_UTAH
-	# owns_entire_state_region = STATE_ARIZONA
-	# owns_entire_state_region = STATE_BAJA_CALIFORNIA
-	# owns_entire_state_region = STATE_BAJA_CALIFORNIA
-# }
+owned_pacific_coast_region_states = {
+	owns_entire_state_region = STATE_WASHINGTON
+	owns_entire_state_region = STATE_IDAHO
+	owns_entire_state_region = STATE_OREGON
+	owns_entire_state_region = STATE_NEVADA
+	owns_entire_state_region = STATE_UTAH
+	owns_entire_state_region = STATE_ARIZONA
+	owns_entire_state_region = STATE_CALIFORNIA
+	owns_entire_state_region = STATE_BAJA_CALIFORNIA
+}
 
-# french_treaty_ports = {
-	# OR = {
-		# owns_treaty_port_in = STATE_PICARDY
-		# owns_treaty_port_in = STATE_NORMANDY
-		# owns_treaty_port_in = STATE_BRITTANY
-		# owns_treaty_port_in = STATE_LOIRE
-		# owns_treaty_port_in = STATE_POITOU
-		# owns_treaty_port_in = STATE_AQUITAINE
-		# owns_treaty_port_in = STATE_PROVENCE
-		# owns_treaty_port_in = STATE_LANGUEDOC
-	# }
-# }
+french_treaty_ports = {
+	OR = {
+		owns_treaty_port_in = STATE_PICARDY
+		owns_treaty_port_in = STATE_NORMANDY
+		owns_treaty_port_in = STATE_BRITTANY
+		owns_treaty_port_in = STATE_FRENCH_LOW_COUNTRIES
+		owns_treaty_port_in = STATE_POITOU
+		owns_treaty_port_in = STATE_AQUITAINE
+		owns_treaty_port_in = STATE_PROVENCE
+		owns_treaty_port_in = STATE_LANGUEDOC
+	}
+}
 
-# german_treaty_ports = {
-	# OR = {
-		# owns_treaty_port_in = STATE_HANNOVER
-		# owns_treaty_port_in = STATE_ELBE
-		# owns_treaty_port_in = STATE_SCHLESWIG_HOLSTEIN
-		# owns_treaty_port_in = STATE_MECKLENBURG
-		# owns_treaty_port_in = STATE_POMERANIA
-		# owns_treaty_port_in = STATE_WEST_PRUSSIA
-		# owns_treaty_port_in = STATE_EAST_PRUSSIA
-	# }
-# }
+german_treaty_ports = {
+	OR = {
+		owns_treaty_port_in = STATE_HANNOVER
+		owns_treaty_port_in = STATE_ELBE
+		owns_treaty_port_in = STATE_SCHLESWIG_HOLSTEIN
+		owns_treaty_port_in = STATE_MECKLENBURG
+		owns_treaty_port_in = STATE_POMERANIA
+		owns_treaty_port_in = STATE_WEST_PRUSSIA
+		owns_treaty_port_in = STATE_EAST_PRUSSIA
+	}
+}
 
-# british_treaty_ports = {
-	# OR = {
-		# owns_treaty_port_in = STATE_WEST_COUNTRY
-		# owns_treaty_port_in = STATE_HOME_COUNTIES
-		# owns_treaty_port_in = STATE_EAST_ANGLIA
-		# owns_treaty_port_in = STATE_WALES
-		# owns_treaty_port_in = STATE_MIDLANDS
-		# owns_treaty_port_in = STATE_YORKSHIRE
-		# owns_treaty_port_in = STATE_LANCASHIRE
-		# owns_treaty_port_in = STATE_LOWLANDS
-		# owns_treaty_port_in = STATE_HIGHLANDS
-		# owns_treaty_port_in = STATE_ULSTER
-		# owns_treaty_port_in = STATE_LEINSTER
-		# owns_treaty_port_in = STATE_CONNAUGHT
-		# owns_treaty_port_in = STATE_MUNSTER
-	# }
-# }
+british_treaty_ports = {
+	OR = {
+		owns_treaty_port_in = STATE_WEST_COUNTRY
+		owns_treaty_port_in = STATE_HOME_COUNTIES
+		owns_treaty_port_in = STATE_EAST_ANGLIA
+		owns_treaty_port_in = STATE_WALES
+		owns_treaty_port_in = STATE_MIDLANDS
+		owns_treaty_port_in = STATE_YORKSHIRE
+		owns_treaty_port_in = STATE_LANCASHIRE
+		owns_treaty_port_in = STATE_LOWLANDS
+		owns_treaty_port_in = STATE_HIGHLANDS
+		owns_treaty_port_in = STATE_ULSTER
+		owns_treaty_port_in = STATE_LEINSTER
+		owns_treaty_port_in = STATE_CONNAUGHT
+		owns_treaty_port_in = STATE_MUNSTER
+	}
+}
 
-# italian_treaty_ports = {
-	# OR = {
-		# owns_treaty_port_in = STATE_SARDINIA
-		# owns_treaty_port_in = STATE_SICILY
-		# owns_treaty_port_in = STATE_CALABRIA
-		# owns_treaty_port_in = STATE_APULIA
-		# owns_treaty_port_in = STATE_CAMPANIA
-		# owns_treaty_port_in = STATE_ABRUZZO
-		# owns_treaty_port_in = STATE_LAZIO
-		# owns_treaty_port_in = STATE_UMBRIA
-		# owns_treaty_port_in = STATE_ROMAGNA
-		# owns_treaty_port_in = STATE_TUSCANY
-		# owns_treaty_port_in = STATE_PIEDMONT
-		# owns_treaty_port_in = STATE_VENETIA
-		# owns_treaty_port_in = STATE_ISTRIA
-		# owns_treaty_port_in = STATE_EMILIA
-	# }
-# }
+italian_treaty_ports = {
+	OR = {
+		owns_treaty_port_in = STATE_SARDINIA
+		owns_treaty_port_in = STATE_SICILY
+		owns_treaty_port_in = STATE_CALABRIA
+		owns_treaty_port_in = STATE_APULIA
+		owns_treaty_port_in = STATE_CAMPANIA
+		owns_treaty_port_in = STATE_ABRUZZO
+		owns_treaty_port_in = STATE_LAZIO
+		owns_treaty_port_in = STATE_UMBRIA
+		owns_treaty_port_in = STATE_ROMAGNA
+		owns_treaty_port_in = STATE_TUSCANY
+		owns_treaty_port_in = STATE_PIEDMONT
+		owns_treaty_port_in = STATE_VENETIA
+		owns_treaty_port_in = STATE_ISTRIA
+		owns_treaty_port_in = STATE_EMILIA
+	}
+}
 	
-# iberian_treaty_ports = {
-	# OR = {
-		# owns_treaty_port_in = STATE_GRANADA
-		# owns_treaty_port_in = STATE_ANDALUSIA
-		# owns_treaty_port_in = STATE_VALENCIA
-		# owns_treaty_port_in = STATE_CATALONIA
-		# owns_treaty_port_in = STATE_NAVARRA
-		# owns_treaty_port_in = STATE_GALICIA
-		# owns_treaty_port_in = STATE_BALEARES
-		# owns_treaty_port_in = STATE_BEIRA
-		# owns_treaty_port_in = STATE_ESTREMADURA
-		# owns_treaty_port_in = STATE_ALENTEJO
-	# }
-# }
+iberian_treaty_ports = {
+	OR = {
+		owns_treaty_port_in = STATE_GRANADA
+		owns_treaty_port_in = STATE_ANDALUSIA
+		owns_treaty_port_in = STATE_VALENCIA
+		owns_treaty_port_in = STATE_CATALONIA
+		owns_treaty_port_in = STATE_NAVARRA
+		owns_treaty_port_in = STATE_GALICIA
+		owns_treaty_port_in = STATE_BALEARES
+		owns_treaty_port_in = STATE_BEIRA
+		owns_treaty_port_in = STATE_ESTREMADURA
+		owns_treaty_port_in = STATE_ALENTEJO
+	}
+}
 
 european_colonies_north_africa = {
 	or = {
@@ -644,7 +639,7 @@ european_colonies_north_africa = {
 		owns_entire_state_region = STATE_TUNISIA
 		owns_entire_state_region = STATE_CONSTANTINE
 		owns_entire_state_region = STATE_INNER_MOROCCO
-		owns_entire_state_region = STATE_TLEMCEN
+		owns_entire_state_region = STATE_ORAN
 		owns_entire_state_region = STATE_ALGIERS
 		owns_entire_state_region = STATE_AL_RIF
 		owns_entire_state_region = STATE_INNER_MOROCCO
@@ -675,8 +670,6 @@ european_colonies_west_africa = {
 		owns_entire_state_region = STATE_SIERRA_LEONE
 		owns_entire_state_region = STATE_GAMBIA
 		owns_entire_state_region = STATE_SENEGAL
-		#DVG
-		owns_entire_state_region = STATE_TERRA_DORO
 	}
 }
 
@@ -697,8 +690,6 @@ european_colonies_nile_basin = {
 		owns_entire_state_region = STATE_MATRUH
 		owns_entire_state_region = STATE_LOWER_EGYPT
 		owns_entire_state_region = STATE_SINAI
-		#DVG
-		owns_entire_state_region = STATE_ADAL
 	}
 }
 
@@ -719,8 +710,6 @@ european_colonies_central_africa = {
 		owns_entire_state_region = STATE_UBANGI_SHARI
 		owns_entire_state_region = STATE_WADDAI
 		owns_entire_state_region = STATE_NORTH_CAMEROON
-		#DVG
-		owns_entire_state_region = STATE_MAROUA
 	}
 }
 
@@ -754,54 +743,51 @@ european_colonies_south_africa = {
 		owns_entire_state_region = STATE_ZAMBEZI
 		owns_entire_state_region = STATE_HEREROLAND
 		owns_entire_state_region = STATE_ZULULAND
-		#DVG
-		owns_entire_state_region = STATE_NOORDLAND
-		owns_entire_state_region = STATE_TRANS_ORANJE
 	}
 }
 
-# owned_andes_region_states = {
-	# owns_entire_state_region = STATE_LA_PAZ
-	# owns_entire_state_region = STATE_PASTAZA
-	# owns_entire_state_region = STATE_JUJUY
-	# owns_entire_state_region = STATE_ECUADOR
-	# owns_entire_state_region = STATE_SANTA_CRUZ
-	# owns_entire_state_region = STATE_CUNTISUYU
-	# owns_entire_state_region = STATE_CAJAMARCA
-	# owns_entire_state_region = STATE_ICA
-	# owns_entire_state_region = STATE_LIMA
-	# owns_entire_state_region = STATE_POTOSI
-	# owns_entire_state_region = STATE_TARAPACA
-	# owns_entire_state_region = STATE_ANTOFAGASTA
-	# owns_entire_state_region = STATE_ACRE
-# }
+owned_andes_region_states = {
+	owns_entire_state_region = STATE_LA_PAZ
+	owns_entire_state_region = STATE_PASTAZA
+	owns_entire_state_region = STATE_JUJUY
+	owns_entire_state_region = STATE_ECUADOR
+	owns_entire_state_region = STATE_SANTA_CRUZ
+	owns_entire_state_region = STATE_AREQUIPA
+	owns_entire_state_region = STATE_CAJAMARCA
+	owns_entire_state_region = STATE_ICA
+	owns_entire_state_region = STATE_LIMA
+	owns_entire_state_region = STATE_POTOSI
+	owns_entire_state_region = STATE_TARAPACA
+	owns_entire_state_region = STATE_ANTOFAGASTA
+	owns_entire_state_region = STATE_ACRE
+}
 
-# owned_gran_colombia_region_states = {
-	# owns_entire_state_region = STATE_BOLIVAR
-	# owns_entire_state_region = STATE_CUNDINAMARCA
-	# owns_entire_state_region = STATE_CAUCA
-	# owns_entire_state_region = STATE_GUAVIARE
-	# owns_entire_state_region = STATE_ZULIA
-	# owns_entire_state_region = STATE_ANTIOQUIA
-	# owns_entire_state_region = STATE_MIRANDA
-	# owns_entire_state_region = STATE_GUAYANA
-# }
+owned_gran_colombia_region_states = {
+	owns_entire_state_region = STATE_BOLIVAR
+	owns_entire_state_region = STATE_CUNDINAMARCA
+	owns_entire_state_region = STATE_CAUCA
+	owns_entire_state_region = STATE_GUAVIARE
+	owns_entire_state_region = STATE_ZULIA
+	owns_entire_state_region = STATE_ANTIOQUIA
+	owns_entire_state_region = STATE_MIRANDA
+	owns_entire_state_region = STATE_GUAYANA
+}
 
-# owned_la_plata_region_states = {
-	# owns_entire_state_region = STATE_SANTIAGO
-	# owns_entire_state_region = STATE_PATAGONIA
-	# owns_entire_state_region = STATE_ARAUCANIA
-	# owns_entire_state_region = STATE_LOS_RIOS
-	# owns_entire_state_region = STATE_SOUTH_ATLANTIC_ISLANDS
-	# owns_entire_state_region = STATE_BAJO_PARAGUAY
-	# owns_entire_state_region = STATE_ALTO_PARAGUAY
-	# owns_entire_state_region = STATE_BUENOS_AIRES
-	# owns_entire_state_region = STATE_CHACO
-	# owns_entire_state_region = STATE_TUCUMAN
-	# owns_entire_state_region = STATE_CORRIENTES
-	# owns_entire_state_region = STATE_SANTA_FE
-	# owns_entire_state_region = STATE_RIO_NEGRO
-# }
+owned_la_plata_region_states = {
+	owns_entire_state_region = STATE_SANTIAGO
+	owns_entire_state_region = STATE_PATAGONIA
+	owns_entire_state_region = STATE_ARAUCANIA
+	owns_entire_state_region = STATE_LOS_RIOS
+	owns_entire_state_region = STATE_SOUTH_ATLANTIC_ISLANDS
+	owns_entire_state_region = STATE_BAJO_PARAGUAY
+	owns_entire_state_region = STATE_ALTO_PARAGUAY
+	owns_entire_state_region = STATE_BUENOS_AIRES
+	owns_entire_state_region = STATE_CHACO
+	owns_entire_state_region = STATE_TUCUMAN
+	owns_entire_state_region = STATE_CORRIENTES
+	owns_entire_state_region = STATE_SANTA_FE
+	owns_entire_state_region = STATE_RIO_NEGRO
+}
 
 is_farm_building = {
 	or = {
@@ -1624,10 +1610,10 @@ is_major_unifier = {
 			exists = c:YUG # Yugoslavia
 			this = c:YUG
 		}
-		#AND = {
-		#	exists = c:TRH # Turkestan
-		#	this = c:TRH
-		#}
+		AND = {
+			exists = c:TRH # Turkestan
+			this = c:TRH
+		}
 		AND = {
 			exists = c:IDN # Indonesia
 			this = c:IDN
@@ -1636,56 +1622,31 @@ is_major_unifier = {
 			exists = c:BHT # India
 			this = c:BHT
 		}
-		#DVG
 		AND = {
-			exists = c:RUS # Russia
-			this = c:RUS
-		}
-		AND = {
-			exists = c:CSK # Cossackia
-			this = c:CSK
-		}
-		AND = {
-			exists = c:TAR # Tatarstan
-			this = c:TAR
-		}
-		AND = {
-			exists = c:ARC # Arcadia
-			this = c:ARC
-		}
-		AND = {
-			exists = c:ARI # Aragon-Italy
-			this = c:ARI
-		}
-		AND = {
-			exists = c:GBR # Great Britain
-			this = c:GBR
-		}
-		AND = {
-			exists = c:PER # Persia
-			this = c:PER
+			exists = c:FND # Federation
+			this = c:FND
 		}
 	}
 }
 
-#wants_to_solve_schleswig_holstein = {
-#	has_journal_entry = je_schleswig_holstein_question 
-#	has_technology_researched = nationalism 
-#	country_rank >= rank_value:great_power
-#}
+wants_to_solve_schleswig_holstein = {
+	has_journal_entry = je_schleswig_holstein_question 
+	has_technology_researched = nationalism 
+	country_rank >= rank_value:great_power
+}
 
-#is_oppressor_of_schleswig_holstein = {
-#	NOR = {
-#		country_has_primary_culture = cu:north_german
-#		country_has_primary_culture = cu:south_german						
-#	}
-#	OR = {
-#		any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
-#		any_subject_or_below = {
-#			any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
-#		}
-#	}
-#}
+is_oppressor_of_schleswig_holstein = {
+	NOR = {
+		country_has_primary_culture = cu:north_german
+		country_has_primary_culture = cu:south_german						
+	}
+	OR = {
+		any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
+		any_subject_or_below = {
+			any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
+		}
+	}
+}
 
 is_active_in_diplomatic_play = {
 	OR = {

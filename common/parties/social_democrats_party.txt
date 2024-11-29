@@ -62,13 +62,13 @@ social_democrat_party = {
 					THIS = c:FIN
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_belgian_workers_party
-			# 	trigger = {
-			# 		exists = c:BEL
-			# 		THIS = c:BEL
-			# 	}
-			# }
+			triggered_desc = {
+				desc = party_belgian_workers_party
+				trigger = {
+					exists = c:BEL
+					THIS = c:BEL
+				}
+			}
 			triggered_desc = {
 				desc = party_sdapo
 				trigger = {
@@ -125,13 +125,13 @@ social_democrat_party = {
 					THIS = c:MEX
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_confederate_socialist_party
-			# 	trigger = {
-			# 		exists = c:CSA
-			# 		THIS = c:CSA
-			# 	}
-			# }
+			triggered_desc = {
+				desc = party_confederate_socialist_party
+				trigger = {
+					exists = c:CSA
+					THIS = c:CSA
+				}
+			}
 			triggered_desc = {
 				desc = party_seke
 				trigger = {
@@ -169,15 +169,6 @@ social_democrat_party = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish #DVG
-					}
-				}
-			}
-			triggered_desc = {
-				desc = party_gongrenlianhehui
-				trigger = {
-					OR = {
-						country_has_primary_culture = cu:zhourao
 					}
 				}
 			}
@@ -187,8 +178,6 @@ social_democrat_party = {
 					OR = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:south_italian
-						country_has_primary_culture = cu:central_italian #DVG
-						country_has_primary_culture = cu:venetian #DVG
 					}
 				}
 			}
@@ -198,12 +187,21 @@ social_democrat_party = {
 					country_has_primary_culture = cu:yankee
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_anl
-			# 	trigger = {
-			# 		country_has_primary_culture = cu:brazilian
-			# 	}
-			# }
+			triggered_desc = {
+				desc = party_anl
+				trigger = {
+					country_has_primary_culture = cu:brazilian
+				}
+			}
+			triggered_desc = {
+				desc = party_inc
+				trigger = {
+					OR = {
+						c:BIC ?= this
+						c:BHT ?= this
+					}
+				}
+			}
 			triggered_desc = {
 				desc = party_social_democrats
 				trigger = {
@@ -253,7 +251,6 @@ social_democrat_party = {
 				has_ideology = ideology:ideology_bonapartist
 				has_ideology = ideology:ideology_legitimist
 				has_ideology = ideology:ideology_theocrat
-				has_ideology = ideology:ideology_anglois
 			}
 		}
 	}
@@ -264,6 +261,26 @@ social_democrat_party = {
 		value = {
 			value = -5
 			desc = "base_value"
+		}
+		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+					is_subject = yes
+					OR = {
+						has_modifier = modifier_india_crown_rule
+						has_modifier = modifier_india_company_rule
+					}
+				}
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = {
+				value = -100
+				desc = "india_colonial_government"
+			}
 		}
 		if = { # social democrats love social democracy
 			limit = {
@@ -639,7 +656,6 @@ social_democrat_party = {
 				OR = {
 					has_ideology = ideology:ideology_socialist
 					has_ideology = ideology:ideology_isolationist
-					has_ideology = ideology:ideology_isolationist_expansionism
 				}
 			}
 			add = {
@@ -719,4 +735,3 @@ social_democrat_party = {
 		}
 	}
 }
-

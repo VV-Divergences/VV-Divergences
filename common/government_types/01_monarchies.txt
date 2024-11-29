@@ -465,8 +465,17 @@ gov_maharaja = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		exists = c:PAN
-		c:PAN = ROOT
+		OR = {
+			AND = { exists = c:NAG c:NAG = ROOT }
+			AND = { exists = c:NEP c:NEP = ROOT }
+			AND = { exists = c:MYS c:MYS = ROOT }
+			AND = { exists = c:GWA c:GWA = ROOT }
+			AND = { exists = c:BER c:BER = ROOT }
+			AND = { exists = c:MEW c:MEW = ROOT }
+			AND = { exists = c:JOD c:JOD = ROOT }
+			AND = { exists = c:JAI c:JAI = ROOT }
+			AND = { exists = c:PTA c:PTA = ROOT } # Maharaja-e Rajgan
+		}
 	}	
 
 	on_government_type_change = {
@@ -533,10 +542,8 @@ gov_tsardom = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		or = {
-			AND = { exists = c:RUS c:RUS = ROOT }
-			AND = { exists = c:BUL c:BUL = ROOT } #dvg
-		}
+		exists = c:RUS
+		c:RUS = ROOT
 	}
 
 	on_government_type_change = {
@@ -580,50 +587,39 @@ gov_sultanate = {
 		has_law = law_type:law_monarchy
 		or = {
 			AND = { exists = c:TUR c:TUR = ROOT }
-			AND = { exists = c:WRE c:WRE = ROOT } #dvg
-			# AND = { exists = c:ERE c:ERE = ROOT } #dvg
-			# AND = { exists = c:RUM c:RUM = ROOT } #dvg
-			AND = { exists = c:BSG c:BSG = ROOT } #dvg
 			AND = { exists = c:MOR c:MOR = ROOT }
 			AND = { exists = c:OMA c:OMA = ROOT }
 			AND = { exists = c:JOH c:JOH = ROOT }
 			AND = { exists = c:BRU c:BRU = ROOT }
 			AND = { exists = c:ACE c:ACE = ROOT }
-			# AND = { exists = c:BLG c:BLG = ROOT }
-			# AND = { exists = c:YEM c:YEM = ROOT }
-			# AND = { exists = c:ZAN c:ZAN = ROOT }
-			# AND = { exists = c:SEL c:SEL = ROOT }
-			# AND = { exists = c:PRK c:PRK = ROOT }
+			AND = { exists = c:BLG c:BLG = ROOT }
+			AND = { exists = c:YEM c:YEM = ROOT }
+			AND = { exists = c:ZAN c:ZAN = ROOT }
+			AND = { exists = c:SEL c:SEL = ROOT }
+			AND = { exists = c:PRK c:PRK = ROOT }
 			AND = { exists = c:SUL c:SUL = ROOT }
-			# AND = { exists = c:SAK c:SAK = ROOT }
-			# AND = { exists = c:YOG c:YOG = ROOT }
-			# AND = { exists = c:TID c:TID = ROOT }
+			AND = { exists = c:SAK c:SAK = ROOT }
+			AND = { exists = c:YOG c:YOG = ROOT }
+			AND = { exists = c:TID c:TID = ROOT }
 			AND = { exists = c:BNJ c:BNJ = ROOT }
-			# AND = { exists = c:STG c:STG = ROOT }
-			# AND = { exists = c:SMB c:SMB = ROOT }
-			# AND = { exists = c:PON c:PON = ROOT }
-			# AND = { exists = c:JMB c:JMB = ROOT }
+			AND = { exists = c:STG c:STG = ROOT }
+			AND = { exists = c:SMB c:SMB = ROOT }
+			AND = { exists = c:PON c:PON = ROOT }
+			AND = { exists = c:JMB c:JMB = ROOT }
 			AND = { exists = c:KTI c:KTI = ROOT }
-			# AND = { exists = c:BTN c:BTN = ROOT }
-			# AND = { exists = c:MGD c:MGD = ROOT }
-			# AND = { exists = c:MAH c:MAH = ROOT }
-			# AND = { exists = c:LAH c:LAH = ROOT }
-			# AND = { exists = c:KAT c:KAT = ROOT }
+			AND = { exists = c:BTN c:BTN = ROOT }
+			AND = { exists = c:MGD c:MGD = ROOT }
+			AND = { exists = c:MAH c:MAH = ROOT }
+			AND = { exists = c:LAH c:LAH = ROOT }
+			AND = { exists = c:KAT c:KAT = ROOT }
 			AND = { exists = c:GLD c:GLD = ROOT }
-			# AND = { exists = c:MJT c:MJT = ROOT }
-			# AND = { exists = c:WSG c:WSG = ROOT }
-			# AND = { exists = c:ISQ c:ISQ = ROOT }
+			AND = { exists = c:MJT c:MJT = ROOT }
+			AND = { exists = c:WSG c:WSG = ROOT }
+			AND = { exists = c:ISQ c:ISQ = ROOT }
 			AND = { exists = c:DFR c:DFR = ROOT }
-			#AND = { exists = c:YLN c:YLN = ROOT } #dvg
-			#AND = { exists = c:NGL c:NGL = ROOT } #dvg
-			#AND = {
-			#	exists = c:GNS 
-			#	c:GNS = ROOT
-			#	OR = {
-			#		was_formed_from = c:YLN
-			#		was_formed_from = c:NGL
-			#	}
-			#} #dvg
+			AND = { exists = c:TUG c:TUG = ROOT }
+			AND = { exists = c:AIT c:AIT = ROOT }
+			AND = { exists = c:ALD c:ALD = ROOT }
 		}
 	}
 
@@ -635,22 +631,29 @@ gov_sultanate = {
 	}
 }
 
-# gov_hakimate = {
-	# transfer_of_power = hereditary
+gov_hakimate = {
+	transfer_of_power = hereditary
 	
-	# male_ruler = "RULER_TITLE_HAKIM"
-	# female_ruler = "" # Empty on purpose
+	male_ruler = "RULER_TITLE_HAKIM"
+	female_ruler = "" # Empty on purpose
 
-	# male_heir = "RULER_TITLE_PRINCE"
-	# female_heir = "" # Empty on purpose
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "" # Empty on purpose
 	
-	# possible = {
-		# country_tier = principality
-		# has_law = law_type:law_monarchy
-		# exists = c:BHN
-		# c:BHN = ROOT
-	# }
-# }
+	possible = {
+		country_tier = principality
+		has_law = law_type:law_monarchy
+		exists = c:BHN
+		c:BHN = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
 
 gov_chitrali_monarchy = {
 	transfer_of_power = hereditary
@@ -725,21 +728,28 @@ gov_kongolese_kingdom = {
 	}
 }
 
-# gov_sunanate = {
-	# transfer_of_power = hereditary
+gov_sunanate = {
+	transfer_of_power = hereditary
 	
-	# male_ruler = "RULER_TITLE_SUSUHUNAN"
-	# female_ruler = "" # Empty on purpose
+	male_ruler = "RULER_TITLE_SUSUHUNAN"
+	female_ruler = "" # Empty on purpose
 
-	# male_heir = "RULER_TITLE_PRINCE"
-	# female_heir = "" # Empty on purpose
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "" # Empty on purpose
 	
-	# possible = {
-		# has_law = law_type:law_monarchy
-		# exists = c:SRK 
-		# c:SRK = ROOT
-	# }
-# }
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:SRK 
+		c:SRK = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
 
 gov_balinese_monarchy = {
 	transfer_of_power = hereditary
@@ -833,44 +843,51 @@ gov_mughal_empire = {
 	}
 }
 
-# gov_caliphate = {
-	# transfer_of_power = hereditary
+gov_caliphate = {
+	transfer_of_power = hereditary
 	
-	# male_ruler = "RULER_TITLE_CALIPH"
-	# female_ruler = "" # Empty on purpose
+	male_ruler = "RULER_TITLE_CALIPH"
+	female_ruler = "" # Empty on purpose
 
-	# male_heir = "RULER_TITLE_PRINCE"
-	# female_heir = "" # Empty on purpose
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "" # Empty on purpose
 	
-	# possible = {
-		# has_law = law_type:law_monarchy
-		# exists = c:SOK
-		# c:SOK = ROOT
-	# }
-# }
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:SOK
+		c:SOK = ROOT
+	}
 
-# gov_khedive = {
-	# transfer_of_power = hereditary
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_khedive = {
+	transfer_of_power = hereditary
 	
-	# male_ruler = "RULER_TITLE_KHEDIVE"
-	# female_ruler = "" # Empty on purpose
+	male_ruler = "RULER_TITLE_KHEDIVE"
+	female_ruler = "" # Empty on purpose
 
-	# male_heir = "RULER_TITLE_PRINCE"
-	# female_heir = "" # Empty on purpose
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "" # Empty on purpose
 	
-	# possible = {
-		# has_law = law_type:law_monarchy
-		# exists = c:EGY
-		# c:EGY = ROOT
-	# }
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:EGY
+		c:EGY = ROOT
+	}
 
-	# on_government_type_change = {
-		# change_to_hereditary = yes
-	# }
-	# on_post_government_type_change = {
-		# post_change_to_hereditary = yes
-	# }
-# }
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
 
 
 gov_vilayet = {								
@@ -1330,18 +1347,14 @@ gov_khanate = {
 	possible = {
 		has_law = law_type:law_monarchy
 		OR = {
-			# AND = { exists = c:KHI c:KHI = ROOT }
+			AND = { exists = c:KHI c:KHI = ROOT }
 			AND = { exists = c:KOK c:KOK = ROOT }
 			AND = { exists = c:KAZ c:KAZ = ROOT }
-			# AND = { exists = c:KAL c:KAL = ROOT }
-			#DVG
-			AND = { exists = c:DZU c:DZU = ROOT }
-			AND = { exists = c:SBR c:SBR = ROOT }
-			AND = { exists = c:TRC c:TRC = ROOT }
-			AND = { exists = c:NOG c:NOG = ROOT }
-			AND = { exists = c:ASK c:ASK = ROOT }
-			AND = { exists = c:CRI c:CRI = ROOT }
-			AND = { exists = c:TAR c:TAR = ROOT }
+			AND = { exists = c:KAL c:KAL = ROOT }
+			AND = { exists = c:MAI c:MAI = ROOT }
+			AND = { exists = c:KUN c:KUN = ROOT }
+			AND = { exists = c:MAZ c:MAZ = ROOT }
+			AND = { exists = c:DIR c:DIR = ROOT }
 		}
 	}
 

@@ -145,6 +145,7 @@ principle_group_freedom_of_movement = {
 }
 
 principle_group_divine_economics = {
+	unlocking_identity = identity_religious
 	primary_for_identity = identity_religious
 
 	levels = {
@@ -167,7 +168,6 @@ principle_group_exploit_members = {
 
 principle_group_sacred_civics = {
 	primary_for_identity = identity_religious
-	unlocking_identity = identity_religious
 
 	levels = {
 		principle_sacred_civics_1

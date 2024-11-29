@@ -15,9 +15,9 @@
 		ideology_traditionalist
 		ideology_jingoist_leader
 		ideology_protectionist
-		#ideology_orleanist
-		#ideology_bonapartist
-		#ideology_legitimist
+		ideology_orleanist
+		ideology_bonapartist
+		ideology_legitimist
 		ideology_sovereignist_leader
 	}
 
@@ -35,14 +35,14 @@
 	on_enable = {
 		ig:ig_petty_bourgeoisie = {
 			if = {
-			# 	limit = {
-			# 		owner = { c:SWE ?= this}
-			# 	}
-			# 	set_ig_trait = ig_trait:ig_trait_xenophobia
-			# 	set_ig_trait = ig_trait:ig_trait_bergsbrukens_valdistrikten
-			# 	set_ig_trait = ig_trait:ig_trait_treasury_bonds
-			# }
-			# else_if = {
+				limit = {
+					owner = { c:SWE ?= this}
+				}
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_bergsbrukens_valdistrikten
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			}
+			else_if = {
 				limit = {
 					owner = { c:TUR ?= this }
 				}
@@ -74,17 +74,6 @@
 				set_ig_trait = ig_trait:ig_trait_bah_humbug
 				set_ig_trait = ig_trait:ig_trait_civil_service
 				set_ig_trait = ig_trait:ig_trait_old_lady_of_threadneedle_street
-			}
-			else_if = {	#cvg
-				limit = {
-					OR = {
-						owner = { c:VEN ?= this }
-						ROOT = { was_formed_from = VEN }
-					}
-				}
-				set_ig_trait = ig_trait:ig_trait_xenophobia
-				set_ig_trait = ig_trait:dvg_ig_trait_ven_silk_road
-				set_ig_trait = ig_trait:ig_trait_treasury_bonds
 			}
 			else_if = {
 				limit = {
@@ -129,47 +118,23 @@
 				set_ig_trait = ig_trait:ig_trait_treasury_bonds
 			}
 		}
-		### Specific to CVG
+	}
 
-		# Nuweflander
-		if = {
-			limit = {
-				country_has_state_religion = rel:mahayana
-				country_has_primary_culture = cu:japanese
-			}
-			ig:ig_petty_bourgeoisie = {
-				set_interest_group_name = ig_winkeliers
-			}
-		}
-		# Geus
-		else_if = {
-			limit = {
-				country_has_primary_culture = cu:boer
-			}
-			ig:ig_petty_bourgeoisie = {
-				set_interest_group_name = ig_stadbewooners
-			}
-		}
-	}
 	on_disable = {}
-	on_character_ig_membership = {
-		if = {
-			limit = {
-				owner = {
-					country_has_state_religion = rel:taiping
-				}
-				NOT = {
-					owner = {
-						has_law = law_type:law_state_atheism
-					}
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = { 
+					cu:british = this
 				}
 			}
-			change_character_religion = scope:interest_group.owner.religion
-		}
-		else = {
-		
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
 		}
 	}
+	on_character_ig_membership = {}
 
 	pop_potential = {
 		custom_tooltip = {
@@ -329,6 +294,36 @@
 				}
 				value = 25
 				add = this.standard_of_living
+			}
+		}
+
+		if = {
+			limit = {
+				c:BIC ?= owner
+				culture = {
+					has_discrimination_trait = european_heritage
+				}
+			}
+			multiply = {
+				desc = "POP_INDIA_COLONIAL_RULE"
+				value = 0.1
+			}
+		}
+		
+		if = {
+			limit = {
+				c:BIC ?= owner
+				culture = {
+					has_discrimination_trait = south_asian_heritage
+				}
+				OR = {
+					is_pop_type = capitalists
+					is_pop_type = shopkeepers
+				}
+			}
+			add = {
+				desc = "POP_INDIA_MONEYED_ELITES"
+				value = 75
 			}
 		}
 

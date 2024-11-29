@@ -47,10 +47,7 @@
 				}
 				custom_tooltip = {
 					text = is_in_sa_tt
-					state_region = {
-						is_homeland = cu:lotharian
-						is_incorporated = yes
-					}
+					state_is_in_south_america = yes
 				}
 			}
 			trigger_else_if = {
@@ -119,9 +116,9 @@ patagonia_button = {
 		}
 		any_scope_state = {
 			OR = {
-				state_region = s:STATE_COLLASUYU
-				state_region = s:STATE_LANDS_END
-				state_region = s:STATE_NEW_CORNWALL
+				state_region = s:STATE_ARAUCANIA
+				state_region = s:STATE_PATAGONIA
+				state_region = s:STATE_RIO_NEGRO
 			}
 			is_under_colonization = yes
 		}

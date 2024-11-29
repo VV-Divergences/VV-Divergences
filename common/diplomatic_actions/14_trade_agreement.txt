@@ -42,11 +42,11 @@
 		cost = 50
 	
 		first_modifier = {
-			country_pact_leverage_generation_add = 200
+			country_pact_leverage_generation_add = 100
 		}
 
 		second_modifier = {
-			country_pact_leverage_generation_add = 200
+			country_pact_leverage_generation_add = 100
 		}
 
 		is_trade_agreement = yes

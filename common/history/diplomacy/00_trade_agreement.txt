@@ -1,37 +1,40 @@
 ﻿DIPLOMACY = {
-	# c:SWE = {
-		# create_diplomatic_pact = {
-			# country = c:PRU
-			# type = trade_agreement
-		# }
-	# }
-	c:BEI = {
+	c:TUS ?= {
 		create_diplomatic_pact = {
-			country = c:LAN
+			country = c:SIC
 			type = trade_agreement
-		}
-		create_diplomatic_pact = {
-			country = c:FRS
-			type = trade_agreement
-		}
+		}		
 	}
-	c:CHR = {
+	c:AUS ?= {
 		create_diplomatic_pact = {
-			country = c:LAN
+			country = c:SIC
 			type = trade_agreement
 		}
-	}
-	
-	c:DUA = {
 		create_diplomatic_pact = {
-			country = c:AMA
+			country = c:TUS
+			type = trade_agreement
+		}		
+	}	
+	c:SWE ?= {
+		create_diplomatic_pact = {
+			country = c:PRU
 			type = trade_agreement
 		}
-	}
-	c:LOT = {
+	}	
+	c:HAM ?= {
 		create_diplomatic_pact = {
-			country = c:BEO
+			country = c:PRU
 			type = trade_agreement
 		}
-	}
+	}		
+	c:GBR ?= {
+		create_diplomatic_pact = {
+			country = c:POR
+			type = trade_agreement
+		}		
+		create_diplomatic_pact = {
+			country = c:BEL
+			type = trade_agreement
+		}		
+	}	
 }

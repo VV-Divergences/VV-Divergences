@@ -20,7 +20,7 @@
 			desc = "POP_STARVATION"	
 			
 			if = {
-				limit = { 
+				limit = {
 					is_in_mild_starvation = yes
 				}
 				value = 0.5
@@ -30,9 +30,8 @@
 					is_in_severe_starvation = yes
 				}
 				value = 1.5
-			}		
-		}	
-		
+			}
+		}
 	}
 	
 	qualifications_growth_desc = "OFFICERS_QUALIFICATIONS_DESC"
@@ -54,8 +53,8 @@
 			add = {
 				value = literacy_rate
 				subtract = 0.2
-				min = 0.05
-				multiply = 30
+				min = 0
+				multiply = 10
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			if = {
@@ -63,7 +62,7 @@
 					is_pop_type = aristocrats
 				}
 				multiply = {
-					value = 10
+					value = 5
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
@@ -91,22 +90,8 @@
 					NOT = { is_pop_type = aristocrats }
 				}
 				multiply = {
-					value = 0.5
-					desc = "QUALIFICATIONS_OFFICERS_PEASANT_LEVIES"
-				}
-			}
-			if = {
-				limit = {
-					state = {
-						state_cultural_acceptance = {
-							target = PREV.culture
-						   	value < acceptance_status_4
-					   	}
-					}
-				}
-				multiply = {
 					value = 0.1
-					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+					desc = "QUALIFICATIONS_OFFICERS_PEASANT_LEVIES"
 				}
 			}
 		}

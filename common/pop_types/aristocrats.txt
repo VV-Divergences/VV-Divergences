@@ -20,11 +20,11 @@
 			desc = "POP_STARVATION"	
 			
 			if = {
-				limit = { 
+				limit = {
 					is_in_starvation = yes
 				}
 				value = 1
-			}		
+			}
 		}
 		
 	}	

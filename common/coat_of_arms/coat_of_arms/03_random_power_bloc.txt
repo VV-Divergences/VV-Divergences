@@ -41,7 +41,7 @@ template = {
     }
 
 
-    brg_power_bloc_1 = {
+    gbr_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -49,14 +49,14 @@ template = {
         # in NGraphics::NPowerBlocCoa::PIECE_LAYERS_ORDER.
 
         colored_emblem = {
-            texture = "pb_shield_pattern_00.dds"
-            color1 = { 76 15 18 }
-            color2 = { 140 9 7 }
+            texture = "pb_shield_pattern_03.dds"
+            color1 = "blue"
+            color2 = "red"
             instance = { scale = { 0.72 0.72 } position = { 0.49 0.6 } }
         }
 
         textured_emblem = {
-            texture = "pb_top_02.dds"
+            texture = "pb_top_05.dds"
             instance = { scale = { 0.7 0.7 } position = { 0.5 0.19 } }
         }
 
@@ -66,8 +66,9 @@ template = {
         }
 
         colored_emblem = {
-            texture = "pb_center_04.dds"
-            color1 = { 151 151 127 }
+            texture = "pb_lion_passant_guardant.dds"
+            color1 = "yellow"
+            color2 = "red"
             instance = { scale = { 0.45 0.45 } position = { 0.49 0.54 } }
         }
 
@@ -78,7 +79,7 @@ template = {
         }
     }
 
-    spa_power_bloc_1 = {
+    aus_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -86,46 +87,9 @@ template = {
         # in NGraphics::NPowerBlocCoa::PIECE_LAYERS_ORDER.
 
         colored_emblem = {
-            texture = "pb_shield_pattern_03.dds"
-            color1 = { 24 31 88 }
-            color2 = { 147 144 67 }
-            instance = { scale = { 0.72 0.72 } position = { 0.49 0.6 } }
-        }
-
-        textured_emblem = {
-            texture = "pb_top_02.dds"
-            instance = { scale = { 0.7 0.7 } position = { 0.5 0.19 } }
-        }
-
-        textured_emblem = {
-            texture = "pb_frame_02.dds"
-            instance = { scale = { 0.9 0.9 } position = { 0.5 0.6 } }
-        }
-
-        colored_emblem = {
-            texture = "pb_center_02.dds"
-            color1 = { 255 255 255 }
-            instance = { scale = { 0.45 0.45 } position = { 0.49 0.54 } }
-        }
-
-        textured_emblem = {
-            texture = "pb_side_06.dds"
-            instance = { scale = { 0.65 0.65 } position = { 0.155 0.55 } }
-            instance = { scale = { -0.65 0.65 } position = { 0.82 0.55 } }
-        }
-    }
-
-    boh_power_bloc_1 = {
-        pattern = "pattern_solid.tga"
-        color1 = { 0.0 0.0 0.0 0.0 }
-
-        # If we ever change the order of layers here, remember to also update them
-        # in NGraphics::NPowerBlocCoa::PIECE_LAYERS_ORDER.
-
-        colored_emblem = {
-            texture = "pb_shield_pattern_03.dds"
-            color1 = { 181 169 169 }
-            color2 = { 118 8 8 }
+            texture = "pb_shield_pattern_02.dds"
+            color1 = "black"
+            color2 = "yellow"
             instance = { scale = { 0.72 0.72 } position = { 0.49 0.6 } }
         }
 
@@ -140,19 +104,20 @@ template = {
         }
 
         colored_emblem = {
-            texture = "pb_lion_passant_guardant.dds"
-            color1 = { 225 137 11 }
+            texture = "pb_eagle_doubleheaded.dds"
+            color1 = "white"
+            color2 = "red"
             instance = { scale = { 0.45 0.45 } position = { 0.49 0.54 } }
         }
 
         textured_emblem = {
-            texture = "pb_side_06.dds"
+            texture = "pb_side_05.dds"
             instance = { scale = { 0.65 0.65 } position = { 0.155 0.55 } }
             instance = { scale = { -0.65 0.65 } position = { 0.82 0.55 } }
         }
     }
 
-    arn_power_bloc_1 = {
+    pru_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -160,40 +125,37 @@ template = {
         # in NGraphics::NPowerBlocCoa::PIECE_LAYERS_ORDER.
 
         colored_emblem = {
-            texture = "pb_shield_pattern_03.dds"
-            color1 = { 147 98 21 }
-            color2 = { 134 13 11 }
+            texture = "pb_shield_pattern_00.dds"
+            color1 = "white"
+            color2 = "white"
             instance = { scale = { 0.72 0.72 } position = { 0.49 0.6 } }
         }
 
         textured_emblem = {
-            texture = "pb_top_03.dds"
+            texture = "pb_top_02.dds"
             instance = { scale = { 0.7 0.7 } position = { 0.5 0.19 } }
         }
 
         textured_emblem = {
-            texture = "pb_frame_00.dds"
+            texture = "pb_frame_02.dds"
             instance = { scale = { 0.9 0.9 } position = { 0.5 0.6 } }
         }
 
         colored_emblem = {
-            texture = "pb_center_06.dds"
-            color1 = { 255 255 255 }
+            texture = "pb_iron_cross.dds"
+            color1 = "black"
+            color2 = "black"
             instance = { scale = { 0.45 0.45 } position = { 0.49 0.54 } }
         }
 
         textured_emblem = {
-            texture = "pb_side_00.dds"
+            texture = "pb_side_03.dds"
             instance = { scale = { 0.65 0.65 } position = { 0.155 0.55 } }
-        }
-
-        textured_emblem = {
-            texture = "pb_side_00.dds"
             instance = { scale = { -0.65 0.65 } position = { 0.82 0.55 } }
         }
     }
 
-    dua_power_bloc_1 = {
+    rus_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -201,9 +163,9 @@ template = {
         # in NGraphics::NPowerBlocCoa::PIECE_LAYERS_ORDER.
 
         colored_emblem = {
-            texture = "pb_shield_pattern_02.dds"
-            color1 = { 88 0 142 }
-            color2 = { 136 22 22 }
+            texture = "pb_shield_pattern_00.dds"
+            color1 = "yellow"
+            color2 = "red"
             instance = { scale = { 0.72 0.72 } position = { 0.49 0.6 } }
         }
 
@@ -213,24 +175,29 @@ template = {
         }
 
         textured_emblem = {
-            texture = "pb_frame_00.dds"
+            texture = "pb_frame_02.dds"
             instance = { scale = { 0.9 0.9 } position = { 0.5 0.6 } }
         }
 
         colored_emblem = {
-            texture = "pb_lion_passant_guardant.dds"
-            color1 = { 173 138 25 }
+            texture = "pb_bear.dds"
+            color1 = "black"
+            color2 = "red"
             instance = { scale = { 0.45 0.45 } position = { 0.49 0.54 } }
         }
 
         textured_emblem = {
-            texture = "pb_side_02.dds"
+            texture = "pb_side_04.dds"
             instance = { scale = { 0.65 0.65 } position = { 0.155 0.55 } }
+        }
+
+        textured_emblem = {
+            texture = "pb_side_05.dds"
             instance = { scale = { -0.65 0.65 } position = { 0.82 0.55 } }
         }
     }
 
-    mug_power_bloc_1 = {
+    tur_power_bloc_1 = {
         pattern = "pattern_solid.tga"
         color1 = { 0.0 0.0 0.0 0.0 }
 
@@ -238,9 +205,9 @@ template = {
         # in NGraphics::NPowerBlocCoa::PIECE_LAYERS_ORDER.
 
         colored_emblem = {
-            texture = "pb_shield_pattern_02.dds"
-            color1 = { 216 175 36 }
-            color2 = { 24 58 12 }
+            texture = "pb_shield_pattern_00.dds"
+            color1 = "red"
+            color2 = "red"
             instance = { scale = { 0.72 0.72 } position = { 0.49 0.6 } }
         }
 
@@ -250,59 +217,21 @@ template = {
         }
 
         textured_emblem = {
-            texture = "pb_frame_01.dds"
+            texture = "pb_frame_00.dds"
             instance = { scale = { 0.9 0.9 } position = { 0.5 0.6 } }
         }
 
         colored_emblem = {
             texture = "pb_crescent_star_turkey.dds"
-            color1 = { 22 60 14 }
+            color1 = "white"
+            color2 = "red"
             instance = { scale = { 0.45 0.45 } position = { 0.49 0.54 } }
         }
 
         textured_emblem = {
-            texture = "pb_side_01.dds"
+            texture = "pb_side_06.dds"
             instance = { scale = { 0.65 0.65 } position = { 0.155 0.55 } }
             instance = { scale = { -0.65 0.65 } position = { 0.82 0.55 } }
         }
     }
-
-    sca_power_bloc_1 = {
-        pattern = "pattern_solid.tga"
-        color1 = { 0.0 0.0 0.0 0.0 }
-
-        # If we ever change the order of layers here, remember to also update them
-        # in NGraphics::NPowerBlocCoa::PIECE_LAYERS_ORDER.
-
-        colored_emblem = {
-            texture = "pb_shield_pattern_01.dds"
-            color1 = { 24 57 193 }
-            color2 = { 198 203 36 }
-            instance = { scale = { 0.72 0.72 } position = { 0.49 0.6 } }
-        }
-
-        textured_emblem = {
-            texture = "pb_top_05.dds"
-            instance = { scale = { 0.7 0.7 } position = { 0.5 0.19 } }
-        }
-
-        textured_emblem = {
-            texture = "pb_frame_03.dds"
-            instance = { scale = { 0.9 0.9 } position = { 0.5 0.6 } }
-        }
-
-        colored_emblem = {
-            texture = "pb_center_02.dds"
-            color1 = { 189 13 13 }
-            instance = { scale = { 0.45 0.45 } position = { 0.49 0.54 } }
-        }
-
-        textured_emblem = {
-            texture = "pb_side_00.dds"
-            instance = { scale = { 0.65 0.65 } position = { 0.155 0.55 } }
-            instance = { scale = { -0.65 0.65 } position = { 0.82 0.55 } }
-        }
-    }
-
-    
 }

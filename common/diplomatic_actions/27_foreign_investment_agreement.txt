@@ -80,11 +80,11 @@
 		relations_improvement_max = 80
 
 		first_modifier = {
-			country_pact_leverage_generation_add = 200
+			country_pact_leverage_generation_add = 150
 		}
 
 		second_modifier = {
-			country_pact_leverage_generation_add = 200
+			country_pact_leverage_generation_add = 150
 		}
 
 		requirement_to_maintain = {

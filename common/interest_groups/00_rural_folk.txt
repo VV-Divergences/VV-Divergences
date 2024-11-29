@@ -13,8 +13,8 @@
 	character_ideologies = {
 		ideology_moderate
 		ideology_pacifist
-		#ideology_bonapartist
-		#ideology_legitimist
+		ideology_bonapartist
+		ideology_legitimist
 	}
 
 	enable = {
@@ -31,15 +31,15 @@
 	on_enable = {
 		ig:ig_rural_folk = {
 			if = {
-			# 	limit = {
-			# 		has_dlc_feature = rp1_content
-			# 		owner = { c:BRZ ?= this }
-			# 	}
-			# 	set_ig_trait = ig_trait:ig_trait_old_ways
-			# 	set_ig_trait = ig_trait:ig_trait_plantation_work
-			# 	set_ig_trait = ig_trait:ig_trait_nucleos_coloniais
-			# }
-			# else_if = {
+				limit = {
+					has_dlc_feature = rp1_content
+					owner = { c:BRZ ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_old_ways
+				set_ig_trait = ig_trait:ig_trait_plantation_work
+				set_ig_trait = ig_trait:ig_trait_nucleos_coloniais
+			}
+			else_if = {
 				limit = {
 					owner = { c:RUS ?= this }
 				}
@@ -75,16 +75,14 @@
 				set_ig_trait = ig_trait:ig_trait_imandari
 				set_ig_trait = ig_trait:ig_trait_bazaar_bargains
 			}
-			else_if = {	#cvg
+			else_if = {
 				limit = {
-					OR = {
-						owner = { c:PLA ?= this }
-						ROOT = { was_formed_from = PLA }
-					}
+					owner = { c:PAN ?= this }
 				}
+				set_interest_group_name = ig_jats
 				set_ig_trait = ig_trait:ig_trait_old_ways
 				set_ig_trait = ig_trait:ig_trait_honest_work
-				set_ig_trait = ig_trait:dvg_ig_trait_pla_plantations
+				set_ig_trait = ig_trait:ig_trait_khalsa_panth
 			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_old_ways
@@ -94,19 +92,19 @@
 		}
 	
 		# Jeffersonian Ideology
-		# if = {
-		# 	limit = {
-		# 		OR = {
-		# 			country_has_primary_culture = cu:yankee
-		# 			country_has_primary_culture = cu:dixie
-		# 		}
-		# 	}
-		# 	ig:ig_rural_folk = {
-		# 		remove_ideology = ideology_agrarian
-		# 		add_ideology = ideology_agrarian_jeffersonian
-		# 		set_interest_group_name = ig_yeoman_farmers
-		# 	}
-		# }
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+			ig:ig_rural_folk = {
+				remove_ideology = ideology_agrarian
+				add_ideology = ideology_agrarian_jeffersonian
+				set_interest_group_name = ig_yeoman_farmers
+			}
+		}
 
 		# Heimin
 		if = {
@@ -166,24 +164,20 @@
 		}
 	}
 	on_disable = {}
-	on_character_ig_membership = {
-		if = {
-			limit = {
-				owner = {
-					country_has_state_religion = rel:taiping
-				}
-				NOT = {
-					owner = {
-						has_law = law_type:law_state_atheism
-					}
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = { 
+					cu:british = this
 				}
 			}
-			change_character_religion = scope:interest_group.owner.religion
-		}
-		else = {
-		
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
 		}
 	}
+	on_character_ig_membership = {}
 
 	pop_potential = {
 		NOR = {
@@ -257,6 +251,19 @@
 					is_pop_type = clergymen
 				}
 				value = 75
+			}
+		}
+		
+		if = {
+			limit = {
+				c:BIC ?= owner
+				culture = {
+					has_discrimination_trait = european_heritage
+				}
+			}
+			multiply = {
+				desc = "POP_INDIA_COLONIAL_RULE"
+				value = 0.1
 			}
 		}
 	

@@ -202,14 +202,14 @@ hawaii_events.4 = { #Great Power makes hawaii puppet or annex's them
 		}
 		create_incident = {
 			country = c:HAW
-			value = 10
+			value = 5
 		}
 		ai_chance = {
 			base = 50
-			#modifier = {
-			#	add = 50
-			#	c:USA = ROOT
-			#}
+			modifier = {
+				add = 50
+				c:USA = ROOT
+			}
 		}
 	}
 	option = { #annex hawaii
@@ -223,14 +223,14 @@ hawaii_events.4 = { #Great Power makes hawaii puppet or annex's them
 		annex = c:HAW
 		create_incident = {
 			country = c:HAW
-			value = 30
+			value = 10
 		}
 		ai_chance = {
 			base = 25
-			#modifier = {
-			#	add = 50
-			#	c:USA = ROOT
-			#}
+			modifier = {
+				add = 50
+				c:USA = ROOT
+			}
 		}
 	}
 	option = { #no hostile action improve relations
@@ -287,10 +287,10 @@ type = country_event
 		}
 		ai_chance = {
 			base = 25
-			#modifier = {
-			#	add = 50
-			#	c:USA = ROOT
-			#}
+			modifier = {
+				add = 50
+				c:USA = ROOT
+			}
 		}
 	}
 }

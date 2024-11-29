@@ -72,24 +72,20 @@
 	}
 
 	on_disable = {}
-	on_character_ig_membership = {
-		if = {
-			limit = {
-				owner = {
-					country_has_state_religion = rel:taiping
-				}
-				NOT = {
-					owner = {
-						has_law = law_type:law_state_atheism
-					}
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = { 
+					cu:british = this
 				}
 			}
-			change_character_religion = scope:interest_group.owner.religion
-		}
-		else = {
-		
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
 		}
 	}
+	on_character_ig_membership = {}
 
 	pop_potential = {
 		NOR = {

@@ -22,10 +22,6 @@
 				is_powerful = yes
 			}
 		}
-		NOT = {
-			this = c:LEW
-			#this = c:BTV
-		}
 	}
 
 	immediate = {

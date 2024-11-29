@@ -20,7 +20,7 @@
 			desc = "POP_STARVATION"	
 			
 			if = {
-				limit = { 
+				limit = {
 					is_in_mild_starvation = yes
 				}
 				value = 0.5
@@ -30,12 +30,12 @@
 					is_in_severe_starvation = yes
 				}
 				value = 1.5
-			}		
-		}		
+			}
+		}
 
 		multiply = {
 			desc = "HAS_POLITICAL_AGITATION"	
-			value = 1.0	
+			value = 1.0
 			
 			if = {
 				limit = { 
@@ -58,7 +58,7 @@
 			# baseline: ( literacy - 0.2 ) * 5 + ( wealth / 20 ), norm 2.5 for Wealth 20 and Literacy 50%
 			add = {
 				value = literacy_rate
-				subtract = 0.6
+				subtract = 0.2
 				multiply = 10
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
@@ -83,20 +83,6 @@
 				multiply = {
 					value = 4
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
-				}
-			}
-			if = {
-				limit = {
-					state = {
-						state_cultural_acceptance = {
-							target = PREV.culture
-						   	value < acceptance_status_4
-					   	}
-					}
-				}
-				multiply = {
-					value = 0.2
-					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 				}
 			}
 		}

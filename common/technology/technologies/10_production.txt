@@ -259,9 +259,9 @@ atmospheric_engine = {
 	
 	ai_weight = {
 		value = 1
-		
+
 		if = {
-			limit = { 
+			limit = {
 				country_rank >= rank_value:unrecognized_major_power
 			}
 			add = 2
@@ -298,9 +298,9 @@ railways = {
 	
 	ai_weight = {
 		value = 2 # Important tech for everyone
-		
+
 		if = {
-			limit = { 
+			limit = {
 				country_rank >= rank_value:unrecognized_major_power
 			}
 			add = 2
@@ -1011,7 +1011,7 @@ radio = {
 	unlocking_technologies = {
 		telephone
 	}
-	
+
 	modifier = {
 		country_max_declared_interests_add = 1
 	}
@@ -1031,7 +1031,7 @@ telephone = {
 		shift_work
 		electrical_generation
 	}
-	
+
 	modifier = {
 		country_max_declared_interests_add = 1
 	}

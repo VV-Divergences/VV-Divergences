@@ -1,7 +1,6 @@
 ﻿bureaucrats = {
 	texture = "gfx/interface/icons/pops_icons/bureaucrats.dds"
 	color = hsv{ 0.25 0.4 0.5 }
-	strata = middle
 	start_quality_of_life = 10
 	wage_weight = 4
 	paid_private_wage = yes
@@ -21,7 +20,7 @@
 			desc = "POP_STARVATION"	
 			
 			if = {
-				limit = { 
+				limit = {
 					is_in_mild_starvation = yes
 				}
 				value = 0.5
@@ -31,7 +30,7 @@
 					is_in_severe_starvation = yes
 				}
 				value = 1.5
-			}		
+			}
 		}
 	}
 	
@@ -45,10 +44,11 @@
 			# baseline: ( literacy - 0.2 ) * 10 * ( 2 if accepted culture and religion), norm 6 for Literacy 50% and Accepted C/R
 			add = {
 				value = literacy_rate
-				subtract = 0.4
+				subtract = 0.2
 				multiply = 20
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
+
 			if = {
 				limit = {
 					pop_acceptance >= acceptance_status_5

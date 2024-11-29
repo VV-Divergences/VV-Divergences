@@ -66,6 +66,197 @@ je_the_paris_commune_france_button_b = {
 	}
 }
 
+french_monarchy_bonapartist_button = {
+	name = "bonapartist_button"
+	desc = "bonapartist_button_desc"
+
+	visible = {
+		owner = { 
+			has_variable = chose_initial_french_dynasty 
+			NOT = { has_variable = fra_divided_monarchists_freeze } 
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = has_selected_bonapartist_once_var
+			}
+			custom_tooltip = {
+				text = cannot_choose_bonapartist_twice_tt
+				always = no
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_bonapartist
+			}
+		}
+		custom_tooltip = {
+			text = not_already_supporting_bonapartism
+			NOT = { has_variable = supporting_bonapartist_var }
+		}
+	}
+	
+	selected = {
+		has_variable = supporting_bonapartist_var
+	}
+
+	effect = {
+		set_variable = supporting_bonapartist_var
+		set_variable = has_selected_bonapartist_once_var
+		remove_variable = supporting_orleanist_var
+		remove_variable = supporting_legitimist_var
+		custom_tooltip = {
+			text = supporting_bonapartist_tt
+		}
+		custom_tooltip = {
+			text = bonapartist_progress_increase_10_tt
+			je:je_divided_monarchists = {
+				add_progress = { value = 10 name = divided_monarchists_bonapartist_progress_bar }
+			}
+		}
+	}
+}
+
+french_monarchy_orleanist_button = {
+	name = "orleanist_button"
+	desc = "orleanist_button_desc"
+
+	visible = {
+		owner = { 
+			has_variable = chose_initial_french_dynasty 
+			NOT = { has_variable = fra_divided_monarchists_freeze } 
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = has_selected_orleanist_once_var
+			}
+			custom_tooltip = {
+				text = cannot_choose_orleanist_twice_tt
+				always = no
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_orleanist
+			}
+		}
+		custom_tooltip = {
+			text = not_already_supporting_orleanism
+			NOT = { has_variable = supporting_orleanist_var }
+		}
+	}
+	
+	selected = {
+		has_variable = supporting_orleanist_var
+	}
+
+	effect = {
+		# Only one of these variables can be active at a time
+		set_variable = supporting_orleanist_var
+		set_variable = has_selected_orleanist_once_var
+		remove_variable = supporting_bonapartist_var
+		remove_variable = supporting_legitimist_var
+		custom_tooltip = {
+			text = supporting_orleanism_tt
+		}
+		custom_tooltip = {
+			text = orleanist_progress_increase_10_tt
+			je:je_divided_monarchists = {
+				add_progress = { value = 10 name = divided_monarchists_orleanist_progress_bar }
+			}
+		}
+	}
+}
+
+french_monarchy_legitimist_button = {
+	name = "legitimist_button"
+	desc = "legitimist_button_desc"
+
+	visible = {
+		owner = { 
+			has_variable = chose_initial_french_dynasty 
+			NOT = { has_variable = fra_divided_monarchists_freeze } 
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = has_selected_legitimist_once_var
+			}
+			custom_tooltip = {
+				text = cannot_choose_legitimist_twice_tt
+				always = no
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_legitimist
+			}
+		}
+		custom_tooltip = {
+			text = not_already_supporting_legitimist
+			NOT = { has_variable = supporting_legitimist_var }
+		}
+	}
+	
+	selected = {
+		has_variable = supporting_legitimist_var
+	}
+
+	effect = {
+		set_variable = supporting_legitimist_var
+		set_variable = has_selected_legitimist_once_var
+		remove_variable = supporting_bonapartist_var
+		remove_variable = supporting_orleanist_var
+		custom_tooltip = {
+			text = supporting_legitimists_tt
+		}
+		custom_tooltip = {
+			text = legitimist_progress_increase_10_tt
+			je:je_divided_monarchists = {
+				add_progress = { value = 10 name = divided_monarchists_legitimist_progress_bar }
+			}
+		}
+	}
+}
+
+je_the_krakow_uprising_annex_button = {
+	name = "je_the_krakow_uprising_annex_button"
+	desc = "je_the_krakow_uprising_annex_button_desc"
+
+	visible = { always = yes }
+	
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		c:KRA ?= {
+			is_subject_of = c:AUS
+			has_revolution = no
+		}
+		is_at_war = no
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = c:KRA
+			}
+			annex = c:KRA
+		}
+	}
+}
+
 je_positivist_movement_embrace_positivism_button = {
 	name = "je_positivist_movement_embrace_positivism_button"
 	desc = "je_positivist_movement_embrace_positivism_button_desc"
@@ -140,7 +331,11 @@ je_sell_alaska_button = {
 	name = "je_sell_alaska_button"
 	desc = "je_sell_alaska_button_desc"
 
-	visible = { always = yes }
+	visible = { 
+		c:ALK ?= {
+			is_player = no
+		} 
+	}
 
 	ai_chance = {
 		base = 0
@@ -185,7 +380,12 @@ je_sell_alaska_button = {
 			text = has_alaska_sale_cooldown_tt
 			NOT = { has_variable = alaska_sale_cooldown }
 		}
-		has_state_in_state_region = STATE_ALASKA
+		OR = {
+			has_state_in_state_region = STATE_ALASKA
+			any_subject_or_below = {
+				has_state_in_state_region = STATE_ALASKA
+			}
+		}
 		custom_tooltip = {
 			text = friendly_nation_with_interest_in_alaska_tt
 			any_country = {
@@ -229,7 +429,11 @@ je_buy_alaska_button = {
 	name = "je_buy_alaska_button"
 	desc = "je_buy_alaska_button_desc"
 
-	visible = { always = yes }
+	visible = { 
+		c:ALK ?= {
+			is_player = no
+		} 
+	}
 
 	ai_chance = {
 		base = 100
@@ -283,10 +487,9 @@ je_risorgimento_austrian_radicals_button = {
 	desc = "je_risorgimento_austrian_radicals_button_desc"
 
 	visible = { 
-		always = yes
-		# NOT = {
-		# 	is_subject = yes
-		# }
+		NOT = {
+			is_subject = yes
+		}
 	}
 
 	possible = {
@@ -303,7 +506,6 @@ je_risorgimento_austrian_radicals_button = {
 			any_scope_country = {
 				NOR = {
 					country_has_primary_culture = cu:south_italian
-					country_has_primary_culture = cu:central_italian
 					country_has_primary_culture = cu:north_italian
 				}
 				custom_tooltip = {
@@ -312,7 +514,6 @@ je_risorgimento_austrian_radicals_button = {
 						state_region = {
 							OR = {
 								is_homeland = cu:south_italian
-								is_homeland = cu:central_italian
 								is_homeland = cu:north_italian
 							}
 						}
@@ -340,15 +541,13 @@ je_risorgimento_austrian_radicals_button = {
 				any_country = {
 					NOR = {
 						country_has_primary_culture = cu:south_italian
-						country_has_primary_culture = cu:central_italian
 						country_has_primary_culture = cu:north_italian
 					}
 					any_scope_state = {
 						state_region = {
 							OR = {
-								country_has_primary_culture = cu:south_italian
-								country_has_primary_culture = cu:central_italian
-								country_has_primary_culture = cu:north_italian
+								is_homeland = cu:south_italian
+								is_homeland = cu:north_italian
 							}
 						}
 					}
@@ -367,15 +566,13 @@ je_risorgimento_austrian_radicals_button = {
 			limit = {
 				NOR = {
 					country_has_primary_culture = cu:south_italian
-					country_has_primary_culture = cu:central_italian
 					country_has_primary_culture = cu:north_italian
 				}
 				any_scope_state = {
 					state_region = {
 						OR = {
-							country_has_primary_culture = cu:south_italian
-							country_has_primary_culture = cu:central_italian
-							country_has_primary_culture = cu:north_italian
+							is_homeland = cu:south_italian
+							is_homeland = cu:north_italian
 						}
 					}
 				}
@@ -393,13 +590,13 @@ je_risorgimento_austrian_radicals_button = {
 						}
 					}
 					add_radicals_in_state = {
-						value = 0.10	#nerfed from 15
+						value = 0.15
 						culture = cu:north_italian
 					}
 				}
 				else = {
 					add_radicals_in_state = {
-						value = 0.05	#nerfed from 10
+						value = 0.10
 						culture = cu:north_italian
 					}
 				}
@@ -417,38 +614,14 @@ je_risorgimento_austrian_radicals_button = {
 						}
 					}
 					add_radicals_in_state = {
-						value = 0.10 #nerfed from 15
+						value = 0.15
 						culture = cu:south_italian
 					}
 				}
 				else = {
 					add_radicals_in_state = {
-						value = 0.05	#nerfed from 10
+						value = 0.10
 						culture = cu:south_italian
-					}
-				}
-			}
-			every_scope_state = {
-				limit = {
-					state_region = {
-						is_homeland = cu:central_italian
-					}
-				}
-				if = {
-					limit = {
-						ROOT = {
-							country_rank >= rank_value:major_power
-						}
-					}
-					add_radicals_in_state = {
-						value = 0.10 #nerfed from 15
-						culture = cu:central_italian
-					}
-				}
-				else = {
-					add_radicals_in_state = {
-						value = 0.05	#nerfed from 10
-						culture = cu:central_italian
 					}
 				}
 			}
@@ -466,10 +639,9 @@ je_risorgimento_italian_radicals_button = {
 	desc = "je_risorgimento_italian_radicals_button_desc"
 
 	visible = { 
-		always = yes
-		# NOT = {
-		# 	is_subject = yes
-		# }
+		NOT = {
+			is_subject = yes
+		}
 	}
 
 	possible = {
@@ -486,7 +658,6 @@ je_risorgimento_italian_radicals_button = {
 			OR = {
 				country_has_primary_culture = cu:south_italian
 				country_has_primary_culture = cu:north_italian
-				country_has_primary_culture = cu:central_italian
 			}
 			custom_tooltip = {
 				text = risorgimento_opposing_stance_tt
@@ -516,7 +687,6 @@ je_risorgimento_italian_radicals_button = {
 					OR = {
 						country_has_primary_culture = cu:south_italian
 						country_has_primary_culture = cu:north_italian
-						country_has_primary_culture = cu:central_italian
 					}
 					NOT = {
 						has_variable = risorgimento_unifying_stance
@@ -532,7 +702,6 @@ je_risorgimento_italian_radicals_button = {
 					OR = {
 						country_has_primary_culture = cu:south_italian
 						country_has_primary_culture = cu:north_italian
-						country_has_primary_culture = cu:central_italian
 					}
 					NOT = {
 						has_variable = risorgimento_unifying_stance
@@ -556,7 +725,6 @@ je_risorgimento_italian_radicals_button = {
 				OR = {
 					country_has_primary_culture = cu:south_italian
 					country_has_primary_culture = cu:north_italian
-					country_has_primary_culture = cu:central_italian
 				}
 				custom_tooltip = {
 					text = risorgimento_opposing_stance_tt
@@ -585,17 +753,6 @@ je_risorgimento_italian_radicals_button = {
 				add_radicals_in_state = {
 					value = 0.05
 					culture = cu:south_italian
-				}
-			}
-			every_scope_state = {
-				limit = {
-					state_region = {
-						is_homeland = cu:central_italian
-					}
-				}
-				add_radicals_in_state = {
-					value = 0.05
-					culture = cu:central_italian
 				}
 			}
 			post_notification = sabotage_decision_agitation_occurred

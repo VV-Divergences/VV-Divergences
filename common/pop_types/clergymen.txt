@@ -20,7 +20,7 @@
 			desc = "POP_STARVATION"	
 			
 			if = {
-				limit = { 
+				limit = {
 					is_in_mild_starvation = yes
 				}
 				value = 0.5
@@ -30,20 +30,20 @@
 					is_in_severe_starvation = yes
 				}
 				value = 1.5
-			}		
-		}	
+			}
+		}
 	}
 	
 	qualifications_growth_desc = "CLERGYMEN_QUALIFICATIONS_DESC"
 	qualifications = {
 		if = {
 			limit = {
-				literacy_rate > 0.15
+				literacy_rate > 0.2
 			}
-			# baseline: ( literacy - 0.15 ) * 20, norm 6 for Literacy 50% and Accepted Religion
+			# baseline: ( literacy - 0.2 ) * 20, norm 6 for Literacy 50% and Accepted Religion
 			add = {
 				value = literacy_rate
-				subtract = 0.15
+				subtract = 0.2
 				multiply = 20
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}

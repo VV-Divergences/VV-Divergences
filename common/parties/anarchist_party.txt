@@ -19,12 +19,6 @@ anarchist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_zhourao_gongtuandang
-				trigger = {
-					country_has_primary_culture = cu:zhourao
-				}
-			}
-			triggered_desc = {
 				desc = party_anarcho_communist_federation
 				trigger = {
 					exists = c:FRA
@@ -41,7 +35,6 @@ anarchist_party = {
 				desc = party_young_socialists
 				trigger = {
 					OR = {
-						country_has_primary_culture = cu:scandinavian
 						country_has_primary_culture = cu:norwegian
 						country_has_primary_culture = cu:danish
 					}
@@ -52,9 +45,7 @@ anarchist_party = {
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:north_italian
-						country_has_primary_culture = cu:central_italian
 						country_has_primary_culture = cu:south_italian
-						country_has_primary_culture = cu:venetian #DVG
 					}
 				}
 			}
@@ -97,6 +88,26 @@ anarchist_party = {
 		value = {
 			value = -5
 			desc = "base_value"
+		}
+		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+					is_subject = yes
+					OR = {
+						has_modifier = modifier_india_crown_rule
+						has_modifier = modifier_india_company_rule
+					}
+				}
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = {
+				value = -100
+				desc = "india_colonial_government"
+			}
 		}
 		if = { # anarchists like anarchism
 			limit = {

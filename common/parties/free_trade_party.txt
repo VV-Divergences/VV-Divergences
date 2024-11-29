@@ -13,13 +13,6 @@ free_trade_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_democratic_alliance
-				trigger = {
-					exists = c:DUA
-					THIS = c:DUA
-				}
-			}
-			triggered_desc = {
 				desc = party_peelites
 				trigger = {
 					exists = c:GBR
@@ -47,13 +40,13 @@ free_trade_party = {
 					THIS = c:CHI
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_national_party
-			# 	trigger = {
-			# 		exists = c:CHL
-			# 		THIS = c:CHL
-			# 	}
-			# }
+			triggered_desc = {
+				desc = party_national_party
+				trigger = {
+					exists = c:CHL
+					THIS = c:CHL
+				}
+			}
 			triggered_desc = {
 				desc = party_party_of_peaceful_renovation
 				trigger = {
@@ -62,35 +55,27 @@ free_trade_party = {
 					has_law = law_type:law_monarchy
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_constitutional_union_party
-			# 	trigger = {
-			# 		exists = c:USA
-			# 		THIS = c:USA
-			# 		NOT = {
-			# 			has_global_variable = american_civil_war
-			# 		}
-			# 	}
-			# }
-			# triggered_desc = {
-			# 	desc = party_federalist_party
-			# 	trigger = {
-			# 		exists = c:NEN
-			# 		THIS = c:NEN
-			# 	}
-			# }
-
 			triggered_desc = {
-				desc = party_free_minded_venstre
+				desc = party_constitutional_union_party
 				trigger = {
-					country_has_primary_culture = cu:scandinavian
-					country_has_primary_culture = cu:norwegian
+					exists = c:USA
+					THIS = c:USA
+					NOT = {
+						has_global_variable = american_civil_war
+					}
 				}
 			}
 			triggered_desc = {
-				desc = party_nanyanghui
+				desc = party_federalist_party
 				trigger = {
-					country_has_primary_culture = cu:zhourao
+					exists = c:NEN
+					THIS = c:NEN
+				}
+			}
+			triggered_desc = {
+				desc = party_free_minded_venstre
+				trigger = {
+					country_has_primary_culture = cu:norwegian
 				}
 			}
 			triggered_desc = {
@@ -99,7 +84,6 @@ free_trade_party = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish #DVG
 					}
 				}
 			}
@@ -146,6 +130,27 @@ free_trade_party = {
 		if = {
 			limit = {
 				owner = {
+					c:BIC ?= this
+					is_subject = yes
+					OR = {
+						has_modifier = modifier_india_crown_rule
+						has_modifier = modifier_india_company_rule
+					}
+				}
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = {
+				value = -100
+				desc = "india_colonial_government"
+			}
+		}
+		
+		if = {
+			limit = {
+				owner = {
 					country_is_in_south_america = yes
 					any_primary_culture = {
 						has_discrimination_trait = hispanophone
@@ -158,22 +163,22 @@ free_trade_party = {
 			}
 		}
 		
-		# if = {
-		# 	limit = {
-		# 		owner = {
-		# 			country_is_in_north_america = yes
-		# 			OR = {
-		# 				country_has_primary_culture = cu:yankee
-		# 				country_has_primary_culture = cu:dixie
-		# 			}
-		# 			has_law = law_type:law_presidential_republic
-		# 		}
-		# 	}
-		# 	add = {
-		# 		value = -10
-		# 		desc = "usa_two_party_system"
-		# 	}
-		# }
+		if = {
+			limit = {
+				owner = {
+					country_is_in_north_america = yes
+					OR = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+					has_law = law_type:law_presidential_republic
+				}
+			}
+			add = {
+				value = -10
+				desc = "usa_two_party_system"
+			}
+		}
 		
 		if = { # capitalists like capitalism
 			limit = {
@@ -565,23 +570,23 @@ free_trade_party = {
 				desc = "from_french_monarchist_rival"
 			}
 		}
-		# if = {
-		# 	limit = {
-		# 		owner = {
-		# 			country_has_primary_culture = cu:brazilian
-		# 			NOT = {
-		# 				OR = {
-		# 					has_technology_researched = socialism
-		# 					has_technology_researched = corporatism
-		# 					has_technology_researched = anarchism
-		# 				}
-		# 			}
-		# 		}
-		# 	}
-		# 	add = {
-		# 		value = -10
-		# 		desc = "from_two_party_system"
-		# 	}
-		# }
+		if = {
+			limit = {
+				owner = {
+					country_has_primary_culture = cu:brazilian
+					NOT = {
+						OR = {
+							has_technology_researched = socialism
+							has_technology_researched = corporatism
+							has_technology_researched = anarchism
+						}
+					}
+				}
+			}
+			add = {
+				value = -10
+				desc = "from_two_party_system"
+			}
+		}
 	}
 }

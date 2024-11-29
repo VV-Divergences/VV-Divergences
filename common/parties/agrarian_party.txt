@@ -14,12 +14,6 @@ agrarian_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_tylakinics
-				trigger = {
-					country_has_primary_culture = cu:ny_sjaellander
-				}
-			}
-			triggered_desc = {
 				desc = party_independent_agriculture_party
 				trigger = {
 					exists = c:GBR
@@ -62,10 +56,13 @@ agrarian_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_agrarian_and_farmer_party
+				desc = party_conservative_republican_party
 				trigger = {
-					exists = c:DUA
-					THIS = c:DUA
+					country_has_primary_culture = cu:brazilian
+					OR = {
+						has_law = law_type:law_presidential_republic
+						has_law = law_type:law_parliamentary_republic
+					}
 				}
 			}
 			triggered_desc = {
@@ -96,19 +93,19 @@ agrarian_party = {
 					THIS = c:HUN
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_peoples_party
-			# 	trigger = {
-			# 		exists = c:USA
-			# 		THIS = c:USA
-			# 	}
-			# }
-			#triggered_desc = {
-			#	desc = party_patrons_of_industry
-			#	trigger = {
-			#		country_has_primary_culture = cu:anglo_canadian
-			#	}
-			#}
+			triggered_desc = {
+				desc = party_peoples_party
+				trigger = {
+					exists = c:USA
+					THIS = c:USA
+				}
+			}
+			triggered_desc = {
+				desc = party_patrons_of_industry
+				trigger = {
+					country_has_primary_culture = cu:anglo_canadian
+				}
+			}
 			triggered_desc = {
 				desc = party_peasants_party
 				trigger = {
@@ -127,14 +124,19 @@ agrarian_party = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish
 					}
 				}
 			}
 			triggered_desc = {
-				desc = party_minshengdang
+				desc = party_justice_party
 				trigger = {
-					country_has_primary_culture = cu:zhourao
+					OR = {
+						c:BIC ?= this
+						AND = {
+							c:BHT ?= this
+							is_subject = yes
+						}
+					}
 				}
 			}
 			triggered_desc = {
@@ -172,6 +174,26 @@ agrarian_party = {
 		if = {
 			limit = {
 				owner = {
+					c:BIC ?= this
+					is_subject = yes
+					OR = {
+						has_modifier = modifier_india_crown_rule
+						has_modifier = modifier_india_company_rule
+					}
+				}
+				OR = {
+					is_interest_group_type = ig_industrialists
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			add = {
+				value = -100
+				desc = "india_colonial_government"
+			}
+		}
+		if = {
+			limit = {
+				owner = {
 					country_is_in_south_america = yes
 					any_primary_culture = {
 						has_discrimination_trait = hispanophone
@@ -183,22 +205,22 @@ agrarian_party = {
 				desc = "south_america_two_party_system"
 			}
 		}
-		#if = {
-		#	limit = {
-		#		owner = {
-		#			country_is_in_north_america = yes
-		#			OR = {
-		#				country_has_primary_culture = cu:yankee
-		#				country_has_primary_culture = cu:dixie
-		#			}
-		#			has_law = law_type:law_presidential_republic
-		#		}
-		#	}
-		#	add = {
-		#		value = -10
-		#		desc = "usa_two_party_system"
-		#	}
-		#}
+		if = {
+			limit = {
+				owner = {
+					country_is_in_north_america = yes
+					OR = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+					has_law = law_type:law_presidential_republic
+				}
+			}
+			add = {
+				value = -10
+				desc = "usa_two_party_system"
+			}
+		}
 		if = { # a party for powerful farmers
 			limit = {
 				has_ideology = ideology:ideology_agrarian
@@ -485,23 +507,23 @@ agrarian_party = {
 				desc = "from_more_than_three_prior_members"
 			}
 		}
-		#if = {
-		#	limit = {
-		#		owner = {
-		#			country_has_primary_culture = cu:brazilian
-		#			NOT = {
-		#				OR = {
-		#					has_technology_researched = socialism
-		#					has_technology_researched = corporatism
-		#					has_technology_researched = anarchism
-		#				}
-		#			}
-		#		}
-		#	}
-		#	add = {
-		#		value = -10
-		#		desc = "from_two_party_system"
-		#	}
-		#}
+		if = {
+			limit = {
+				owner = {
+					country_has_primary_culture = cu:brazilian
+					NOT = {
+						OR = {
+							has_technology_researched = socialism
+							has_technology_researched = corporatism
+							has_technology_researched = anarchism
+						}
+					}
+				}
+			}
+			add = {
+				value = -10
+				desc = "from_two_party_system"
+			}
+		}
 	}
 }

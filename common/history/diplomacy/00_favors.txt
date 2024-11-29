@@ -1,8 +1,22 @@
-﻿#DIPLOMACY = {
-#	c:POR = {
-#		set_owes_obligation_to = {
-#			country = c:SPA
-#			setting = yes
-#		}
-#	}
-#}
+﻿DIPLOMACY = {
+	c:GRE ?= {
+		set_owes_obligation_to = {
+			country = c:RUS
+			setting = yes
+		}
+		set_owes_obligation_to = {
+			country = c:FRA
+			setting = yes
+		}
+		set_owes_obligation_to = {
+			country = c:GBR 
+			setting = yes
+		}
+	}
+	c:POR ?= {
+		set_owes_obligation_to = {
+			country = c:SPA
+			setting = yes
+		}
+	}
+}

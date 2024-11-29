@@ -7,8 +7,6 @@
 		OR = {
 			country_has_primary_culture = cu:north_italian
 			country_has_primary_culture = cu:south_italian
-			country_has_primary_culture = cu:central_italian
-			country_has_primary_culture = cu:venetian
 		}
 		NOR = {
 			is_revolutionary = yes
@@ -27,23 +25,11 @@
 		cu:south_italian = {
 			save_scope_as = south_italian_scope
 		}
-		cu:south_italian = {
-			save_scope_as = central_italian_scope
-		}
 		trigger_event = { id = italian_unification.10 popup = yes }
-		if = {	#preserve the weird DVG Tuscany confederation with Pope as Head of State
-			limit = {
-				exists = c:TUS
-				this = c:TUS
-			}
-			trigger_event = { id = dvg_italian_confederation.2 }
-		}
-		set_strategy = ai_strategy_unify_north_italy
 	}
 		
 	possible = {
 		has_technology_researched = nationalism
-		NOT = { has_modifier = dvg_ven_patricians }	#DVG venice starting modifier
 		NOR = {
 			country_tier = hegemony
 			country_tier = empire
@@ -64,8 +50,6 @@
 	on_weekly_pulse = {
 		events = {
 			italian_unification.4
-			dvg_italian_confederation.4	#DVG Pope confederacy was accepted by people
-			dvg_italian_confederation.5 #DVG Pope confederacy was declined
 		}
 		effect = {
 			if = {
@@ -74,9 +58,7 @@
 						state_region = {
 							OR = {
 								is_homeland = cu:north_italian
-								is_homeland = cu:central_italian
 								is_homeland = cu:south_italian
-								is_homeland = cu:venetian
 							}
 						}
 					}
@@ -88,7 +70,7 @@
 
 	on_monthly_pulse = {
 		random_events = {
-			80 = 0	#vv dvg made more likely than vanilla
+			180 = 0
 			20 = italian_unification.2
 		}
 		effect = {
@@ -114,9 +96,7 @@
 					state_region = {
 						OR = {
 							is_homeland = cu:north_italian
-							is_homeland = cu:central_italian
 							is_homeland = cu:south_italian
-							is_homeland = cu:venetian
 						}
 					}
 				}

@@ -19,7 +19,7 @@
 			desc = "POP_STARVATION"	
 			
 			if = {
-				limit = { 
+				limit = {
 					is_in_mild_starvation = yes
 				}
 				value = 0.5
@@ -29,7 +29,7 @@
 					is_in_severe_starvation = yes
 				}
 				value = 1.5
-			}		
+			}
 		}
 	}	
 	
@@ -67,20 +67,6 @@
 			multiply = {
 				desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
 				value = 0
-			}
-		}
-		if = {
-			limit = {
-				state = {
-					state_cultural_acceptance = {
-						target = PREV.culture
-						   value < acceptance_status_4
-					   }
-				}
-			}
-			multiply = {
-				value = 0.33
-				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 			}
 		}
 	}

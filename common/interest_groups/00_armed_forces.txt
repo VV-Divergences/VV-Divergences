@@ -12,8 +12,8 @@
 	
 	character_ideologies = {
 		ideology_moderate
-		#ideology_orleanist
-		#ideology_bonapartist
+		ideology_orleanist
+		ideology_bonapartist
 	}
 
 	enable = {
@@ -66,37 +66,36 @@
 				set_ig_trait = ig_trait:ig_trait_veteran_consultation
 				set_ig_trait = ig_trait:ig_trait_el_buen_jefe
 			}
-			# else_if = {
-			# 	limit = {
-			# 		owner = {
-			# 			has_dlc_feature = rp1_content
-			# 			c:BRZ ?= this
-			# 		}
-			# 	}
-			# 	set_ig_trait = ig_trait:ig_trait_coronelismo
-			# 	set_ig_trait = ig_trait:ig_trait_clube_militar
-			# 	set_ig_trait = ig_trait:ig_trait_patriotic_fervor
-			# }
-			else_if = {		#cvg
+			else_if = {
 				limit = {
-					OR = {
-						owner = { c:LOT ?= this }
-						ROOT = { was_formed_from = LOT }
+					owner = {
+						has_dlc_feature = rp1_content
+						c:BRZ ?= this
 					}
 				}
-				set_ig_trait = ig_trait:ig_trait_materiel_waste
-				set_ig_trait = ig_trait:dvg_ig_trait_lot_military_society
-				set_ig_trait = ig_trait:dvg_ig_trait_lot_army_with_a_state
+				set_ig_trait = ig_trait:ig_trait_coronelismo
+				set_ig_trait = ig_trait:ig_trait_clube_militar
+				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 			}
-			else_if = {		#cvg
+			else_if = {
 				limit = {
-					OR = {
-						owner = { c:SCA ?= this }
-						ROOT = { was_formed_from = SCA }
+					owner = {
+						has_dlc_feature = ip2_content
+						c:BIC ?= this
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_divided_ranks
+				set_ig_trait = ig_trait:ig_trait_imperial_service
+				set_ig_trait = ig_trait:ig_trait_veerta
+			}
+			else_if = {
+				limit = {
+					owner = {
+						c:PAN ?= this
 					}
 				}
 				set_ig_trait = ig_trait:ig_trait_materiel_waste
-				set_ig_trait = ig_trait:dvg_ig_trait_SCA_naval_traditions
+				set_ig_trait = ig_trait:ig_trait_khalsa
 				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 			}
 			else = {
@@ -131,65 +130,45 @@
 				set_interest_group_name = ig_samurai
 			}
 		}
-		# Mansabdars
+		# India
 		else_if = {
 			limit = {
-				c:MUG ?= this
+				c:BIC ?= this
 			}
 			ig:ig_armed_forces = {
-				set_interest_group_name = ig_mansabdars
+				set_interest_group_name = ig_presidency_armies
 			}
 		}
-		#Maratha Sena
+		# Sikh Empire
 		else_if = {
 			limit = {
-				c:VIJ ?= this
+				c:PAN ?= this
 			}
 			ig:ig_armed_forces = {
-				set_interest_group_name = ig_maratha
+				set_interest_group_name = ig_khalsaji
+				remove_ideology = ideology_jingoist
+				add_ideology = ideology_sikh_militancy
 			}
-		}
-		#Paiks
-		else_if = {
-			limit = {
-				c:ASM ?= this
-			}
-			ig:ig_armed_forces = {
-				set_interest_group_name = ig_paik
-			}
-		}
-		#Khandayat
-		else_if = {
-			limit = {
-				c:ORI ?= this
-			}
-			ig:ig_armed_forces = {
-				set_interest_group_name = ig_khanda
-			}
-		}
-		else = {
 		}
 	}
 	on_disable = {}
-	on_character_ig_membership = {
-		if = {
-			limit = {
-				owner = {
-					country_has_state_religion = rel:taiping
-				}
-				NOT = {
-					owner = {
-						has_law = law_type:law_state_atheism
-					}
+
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = { 
+					cu:british = this
 				}
 			}
-			change_character_religion = scope:interest_group.owner.religion
-		}
-		else = {
-		
+			cultures = {
+				british scottish irish
+			}
 		}
 	}
 
+	on_character_ig_membership = {}
+	
 	pop_potential = {
 		OR = {
 			is_pop_type = soldiers

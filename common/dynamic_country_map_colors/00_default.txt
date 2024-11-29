@@ -21,50 +21,31 @@
 #	}
 #}
 
-# peru_bolivia = {
-	# color = "peru_bolivia"
+kalmar_union = {
+	color = "kalmar_orange"
 
-	# possible = {
-		# OR = {
-			# AND = {
-				# exists = c:PEU
-				# THIS = c:PEU
-			# }
-			# AND = {
-				# exists = c:BOL
-				# THIS = c:BOL
-			# }
-		# }
-		# owns_entire_state_region = STATE_LA_PAZ
-		# owns_entire_state_region = STATE_LIMA
-	# }
-# }
+	possible = {
+		exists = c:SCA
+		THIS = c:SCA
+		has_law = law_type:law_monarchy
+		ruler = {
+			has_culture = cu:danish
+		}
+	}
+}
 
-# kalmar_union = {
-	# color = "kalmar_orange"
+fennoscandia = {
+	color = "finnish_brown"
 
-	# possible = {
-		# exists = c:SCA
-		# THIS = c:SCA
-		# has_law = law_type:law_monarchy
-		# ruler = {
-			# has_culture = cu:danish
-		# }
-	# }
-# }
-
-# fennoscandia = {
-	# color = "finnish_brown"
-
-	# possible = {
-		# exists = c:SCA
-		# THIS = c:SCA
-		# has_law = law_type:law_monarchy
-		# ruler = {
-			# has_culture = cu:finnish
-		# }
-	# }
-# }
+	possible = {
+		exists = c:SCA
+		THIS = c:SCA
+		has_law = law_type:law_monarchy
+		ruler = {
+			has_culture = cu:finnish
+		}
+	}
+}
 
 yellow_prussia = {
 	color = "yellow"
@@ -99,34 +80,35 @@ korea_monarchy_blue = {
 	}
 }
 
-#japanese_shogunate = {
-#	color = "tokugawa_green"
-#	possible = {
-#		exists = c:JAP
-#		THIS = c:JAP
-#		has_law = law_type:law_monarchy 
-#		NOT = { has_variable = meiji_var }
-#	}
-#}
+japanese_shogunate = {
+	color = "tokugawa_green"
+	possible = {
+		exists = c:JAP
+		THIS = c:JAP
+		has_law = law_type:law_monarchy 
+		NOT = { has_variable = meiji_var }
+	}
+}
 
-#usa_technate = {
-#	color = "usa_technate_grey"
-#
-#	possible = {
-#		exists = c:USA
-#		THIS = c:USA
-#		has_law = law_type:law_technocracy
-#	}
-#}
-# usa_monarchy = {
-	# color = "usa_monarchy_blue"
+usa_technate = {
+	color = "usa_technate_grey"
 
-	# possible = {
-		# exists = c:USA
-		# THIS = c:USA
-		# has_law = law_type:law_monarchy
-	# }
-# }
+	possible = {
+		exists = c:USA
+		THIS = c:USA
+		has_law = law_type:law_technocracy
+	}
+}
+
+usa_monarchy = {
+	color = "usa_monarchy_blue"
+
+	possible = {
+		exists = c:USA
+		THIS = c:USA
+		has_law = law_type:law_monarchy
+	}
+}
 
 ukraine_free_territory = {
 	color = "black"
@@ -163,15 +145,15 @@ purple_naples = {
 	}
 }
 
-# united_netherlands = {
-	# color = "united_netherlands_orange"
-	# possible = {
-		# exists = c:NET
-		# THIS = c:NET
-		# owns_entire_state_region = STATE_FLANDERS
-		# owns_entire_state_region = STATE_WALLONIA
-	# }
-# }
+united_netherlands = {
+	color = "united_netherlands_orange"
+	possible = {
+		exists = c:NET
+		THIS = c:NET
+		owns_entire_state_region = STATE_FLANDERS
+		owns_entire_state_region = STATE_WALLONIA
+	}
+}
 
 mexican_empire = {
 	color = "mexican_empire_green"
@@ -191,15 +173,25 @@ dark_khmer = {
 	}
 }
 
-# austria_hungary = {
-	# color = "yellow_light"
+austria_hungary = {
+	color = "austria_hungary_color"
 
-	# possible = {
-		# exists = c:AUS
-		# THIS = c:AUS
-		# country_has_primary_culture = cu:hungarian
-	# }
-# }
+	possible = {
+		exists = c:AUS
+		THIS = c:AUS
+		country_has_primary_culture = cu:hungarian
+	}
+}
+
+communist_austria = {
+	color = "communist_austria_red"
+
+	possible = {
+		exists = c:AUS
+		THIS = c:AUS
+		has_law = law_type:law_council_republic
+	}
+}
 
 imperial_japan = {
 	color = "white"
@@ -436,12 +428,57 @@ empire_france = {
 	}
 }
 
-republican_india = {
+hindu_india = {
 	color = "orange_india"
 
 	possible = {
 		exists = c:BHT
 		THIS = c:BHT
+		country_has_state_religion = rel:hindu
+		OR = {
+			has_law = law_type:law_state_religion
+			has_law = law_type:law_freedom_of_conscience
+		}
+	}
+}
+
+muslim_india = {
+	color = "green_india"
+
+	possible = {
+		exists = c:BHT
+		THIS = c:BHT
+		OR = {
+			country_has_state_religion = rel:shiite
+			country_has_state_religion = rel:sunni
+		}
+		OR = {
+			has_law = law_type:law_state_religion
+			has_law = law_type:law_freedom_of_conscience
+		}
+	}
+}
+
+sikh_india = {
+	color = "blue_india"
+
+	possible = {
+		exists = c:BHT
+		THIS = c:BHT
+		country_has_state_religion = rel:sikh
+		OR = {
+			has_law = law_type:law_state_religion
+			has_law = law_type:law_freedom_of_conscience
+		}
+	}
+}
+
+republican_hindustan = {
+	color = "hoi4_pakistan_blue"
+
+	possible = {
+		exists = c:HND
+		THIS = c:HND
 		OR = {
 			has_law = law_type:law_parliamentary_republic
 			has_law = law_type:law_presidential_republic
@@ -449,20 +486,6 @@ republican_india = {
 		}
 	}
 }
-
-# republican_hindustan = {
-	# color = "hoi4_pakistan_blue"
-
-	# possible = {
-		# exists = c:HND
-		# THIS = c:HND
-		# OR = {
-			# has_law = law_type:law_parliamentary_republic
-			# has_law = law_type:law_presidential_republic
-			# has_law = law_type:law_council_republic
-		# }
-	# }
-# }
 
 nihilist_russia = {
 	color = "nihilist_russia_color"
@@ -592,15 +615,15 @@ hre_fascist = {
 	}
 }
 
-#burgundy = {
-#	color = "burgundy_burgundy"
-#	
-#	possible = {
-#		exists = c:UNL
-#		THIS = c:UNL
-#		coa_absolute_monarchy_trigger = yes
-#	}
-#}
+burgundy = {
+	color = "burgundy_burgundy"
+	
+	possible = {
+		exists = c:UNL
+		THIS = c:UNL
+		coa_absolute_monarchy_trigger = yes
+	}
+}
 
 plc_pink = {
 	color = "plc_pink"
@@ -695,3 +718,19 @@ kartli_kakheti = {
 		}
 	}
 }
+
+bengal_free_state = {
+	color = "bengal_free_state_colour"
+
+	possible = {
+		c:BIC ?= this
+		has_variable = bengal_free_state
+		capital ?= {
+			region = sr:region_bengal
+		}
+		any_primary_culture = {
+			cu:british = this
+		}
+	}
+}
+

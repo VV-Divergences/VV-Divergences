@@ -1,110 +1,110 @@
 ﻿namespace = manifest_destiny
 
-# # Completed Mexico JE
-# manifest_destiny.1 = {
-	# type = country_event
-	# placement = ROOT
+# Completed Mexico JE
+manifest_destiny.1 = {
+	type = country_event
+	placement = ROOT
 
-	# event_image = {
-		# video = "europenorthamerica_capitalists_meeting"
-	# }
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
 
-	# on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	# on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	# icon = "gfx/interface/icons/event_icons/event_military.dds"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
-	# title = manifest_destiny.1.t
-	# desc = manifest_destiny.1.d
-	# flavor = manifest_destiny.1.f
+	title = manifest_destiny.1.t
+	desc = manifest_destiny.1.d
+	flavor = manifest_destiny.1.f
 	
-	# duration = 3
+	duration = 3
 	
-	# trigger = {
-	# }
+	trigger = {
+	}
 	
-	# option = {
-		# name = manifest_destiny.1.a
-		# default_option = yes
-		# s:STATE_CALIFORNIA = { 
-			# add_homeland = cu: = yankee
-		# }
-		# s:STATE_NEVADA = { 
-			# add_homeland = cu: = yankee
-		# }
-		# s:STATE_UTAH = { 
-			# add_homeland = cu: = yankee
-		# }
-		# s:STATE_ARIZONA = { 
-			# add_homeland = cu: = dixie
-		# }
-		# s:STATE_NEW_MEXICO = { 
-			# add_homeland = cu: = dixie
-		# }
-	# }
-# }
+	option = {
+		name = manifest_destiny.1.a
+		default_option = yes
+		s:STATE_CALIFORNIA = { 
+			add_homeland = cu:yankee
+		}
+		s:STATE_NEVADA = { 
+			add_homeland = cu:yankee
+		}
+		s:STATE_UTAH = { 
+			add_homeland = cu:yankee
+		}
+		s:STATE_ARIZONA = { 
+			add_homeland = cu:dixie
+		}
+		s:STATE_NEW_MEXICO = { 
+			add_homeland = cu:dixie
+		}
+	}
+}
 
-# # Completed Natives JE
-# manifest_destiny.2 = {
-	# type = country_event
-	# placement = ROOT
+# Completed Natives JE
+manifest_destiny.2 = {
+	type = country_event
+	placement = ROOT
 
-	# event_image = {
-		# video = "europenorthamerica_native_american"
-	# }
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
 
-	# on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	# on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/native_american"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	# icon = "gfx/interface/icons/event_icons/event_map.dds"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	
-	# title = manifest_destiny.2.t
-	# desc = manifest_destiny.2.d
-	# flavor = manifest_destiny.2.f
+	title = manifest_destiny.2.t
+	desc = manifest_destiny.2.d
+	flavor = manifest_destiny.2.f
 	
-	# duration = 3
+	duration = 3
 	
-	# trigger = {
-	# }
+	trigger = {
+	}
 	
-	# option = {
-		# name = manifest_destiny.1.a
-		# default_option = yes
-		# if = {
-			# limit = {
-				# exists = c:SEQ
-				# c:SEQ = { is_subject_of = ROOT }
-			# }
-			# annex = c:SEQ
-		# }
-		# s:STATE_OKLAHOMA = { 
-			# add_homeland = cu: = dixie
-		# }
-		# s:STATE_MONTANA = { 
-			# add_homeland = cu: = yankee
-		# }
-		# s:STATE_WYOMING = { 
-			# add_homeland = cu: = yankee
-		# }
-		# s:STATE_COLORADO = { 
-			# add_homeland = cu: = yankee
-		# }
-		# s:STATE_NORTH_DAKOTA = { 
-			# add_homeland = cu: = yankee
-		# }
-		# s:STATE_SOUTH_DAKOTA = { 
-			# add_homeland = cu: = yankee
-		# }
-		# s:STATE_NEBRASKA = { 
-			# add_homeland = cu: = yankee 
-		# }
-		# s:STATE_KANSAS = { 
-			# add_homeland = cu: = yankee 
-		# }
-	# }
-# }
+	option = {
+		name = manifest_destiny.1.a
+		default_option = yes
+		if = {
+			limit = {
+				exists = c:SEQ
+				c:SEQ = { 
+					is_subject_of = ROOT 
+					is_player = no
+				}
+			}
+			annex = c:SEQ
+		}
+		s:STATE_OKLAHOMA = { 
+			add_homeland = cu:dixie
+		}
+		s:STATE_MONTANA = { 
+			add_homeland = cu:yankee
+		}
+		s:STATE_WYOMING = { 
+			add_homeland = cu:yankee
+		}
+		s:STATE_COLORADO = { 
+			add_homeland = cu:yankee
+		}
+		s:STATE_NORTH_DAKOTA = { 
+			add_homeland = cu:yankee
+		}
+		s:STATE_SOUTH_DAKOTA = { 
+			add_homeland = cu:yankee
+		}
+		s:STATE_NEBRASKA = { 
+			add_homeland = cu:yankee 
+		}
+		s:STATE_KANSAS = { 
+			add_homeland = cu:yankee 
+		}
+	}
+}
 
-# Bison Hunting
 # Bison Hunting
 manifest_destiny.3 = {
 	type = country_event

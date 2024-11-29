@@ -20,6 +20,10 @@
 		add_modifier = {
 			name = modifier_olympic_games
 		}
+		add_modifier = {
+			name = modifier_olympic_games_bureaucracy
+			months = short_modifier_time
+		}
 	}
 
 	ai_chance = {
@@ -96,32 +100,32 @@ lowlands_land_reclamation = {
 	}
 }
 
-# abolish_tangena_ordeal = {
-	# is_shown = {
-		# exists = c:MAD
-		# ROOT = c:MAD
-		# has_modifier = modifier_tangena_ordeal
-	# }
+abolish_tangena_ordeal = {
+	is_shown = {
+		exists = c:MAD
+		ROOT = c:MAD
+		has_modifier = modifier_tangena_ordeal
+	}
 
-	# possible = {
-		# exists = c:MAD
-		# ROOT = c:MAD
-		# has_modifier = modifier_tangena_ordeal
-		# custom_tooltip = {
-			# text = ranavalona_tt
-			# NOT = {
-				# ruler = {
-					# has_variable = ranavalona
-				# }
-			# }
-		# }
-	# }
+	possible = {
+		exists = c:MAD
+		ROOT = c:MAD
+		has_modifier = modifier_tangena_ordeal
+		custom_tooltip = {
+			text = ranavalona_tt
+			NOT = {
+				ruler = {
+					has_variable = ranavalona
+				}
+			}
+		}
+	}
 
-	# when_taken = {
-		# remove_modifier = modifier_tangena_ordeal
-	# }
+	when_taken = {
+		remove_modifier = modifier_tangena_ordeal
+	}
 
-	# ai_chance = {
-		# base = 100
-	# }
-# }
+	ai_chance = {
+		base = 100
+	}
+}

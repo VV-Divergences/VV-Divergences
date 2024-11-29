@@ -1,118 +1,44 @@
 ﻿DIPLOMACY = {
-	c:TUR = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:BEL
+			months = 40
+		}
+	}	
+}
 
-        create_truce = {
-			country = c:ALB
-			months = 24
-		}
-		create_truce = {
-			country = c:VEN
-			months = 24
-		}
-		create_truce = {
-			country = c:MCD
-			months = 24
-		}
-	}
-	c:QUI = {
-		create_truce = {
-			country = c:TWT
-			months = 24
-		}
-	}
-	c:LOT = {
-		create_truce = {
-			country = c:ATL
-			months = 65
-		}
-	}
-  	c:AMA = {
-		create_truce = {
-			country = c:ATL
-			months = 65
-		}
-		
-	}
-	c:BEO = {
-		create_truce = {
-			country = c:TWT
-			months = 65
-		}
-	}
-	
-	c:AZB = {
-		create_truce = {
-			country = c:SAM
-			months = 55
-		}
-		create_truce = {
-			country = c:IME
-			months = 55
-		}
-		create_truce = {
-			country = c:TRC
-			months = 30
-		}
-	}
-	c:TEH = {
-		create_truce = {
-			country = c:SHZ
-			months = 16
-		}
-		create_truce = {
-			country = c:TRC
-			months = 24
-		}
-	}
-	c:SHZ = {
-		create_truce = {
+DIPLOMACY = {
+	c:EGY= {
+		create_bidirectional_truce = {
 			country = c:TUR
-			months = 24
+			months = 48
 		}
-		create_truce = {
-			country = c:TRC
-			months = 24
+	}	
+}
+
+DIPLOMACY = {
+	c:ASH= {
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 6
 		}
-	}
-	c:AFG = {
-		create_truce = {
-			country = c:TRC
-			months = 24
+	}	
+}
+
+DIPLOMACY = {
+	c:GRE= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 12
 		}
-	}
-	c:JAP = {
-		create_truce = {
-			country = c:KOR
-			months = 60
+	}	
+}
+
+DIPLOMACY = {
+	c:SIA= {
+		create_bidirectional_truce = {
+			country = c:DAI
+			months = 36
 		}
-		create_truce = {
-			country = c:MCH
-			months = 60
-		}
-	}
-	c:NAN = {
-		create_truce = {
-			country = c:SHU
-			months = 30
-		}
-		create_truce = {
-			country = c:JIA
-			months = 30
-		}
-	}
-	c:BRG = {
-		create_truce = {
-			country = c:RHI
-			months = 72
-		}
-		
-	}
-	c:MJN = {
-		create_truce = {
-			country = c:YLO
-			months = 60
-		}
-		
-	}
-	
+	}	
 }

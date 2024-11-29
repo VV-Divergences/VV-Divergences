@@ -413,52 +413,38 @@ coat_of_arms_template_lists = {
 
 		special_selection = {
 			trigger = { 
-				exists = c:BRG
-				ROOT.power_bloc_leader = c:BRG
+				exists = c:GBR
+				ROOT.power_bloc_leader = c:GBR
 			}
-			90000 = brg_power_bloc_1
-		}
-		special_selection = {
-			trigger = { 
-				exists = c:SPA
-				ROOT.power_bloc_leader = c:SPA
-			}
-			90000 = spa_power_bloc_1
-		}
-		special_selection = {
-			trigger = { 
-				exists = c:BOH
-				ROOT.power_bloc_leader = c:BOH
-			}
-			90000 = boh_power_bloc_1
+			90000 = gbr_power_bloc_1
 		}	
 		special_selection = {
 			trigger = { 
-				exists = c:ARN
-				ROOT.power_bloc_leader = c:ARN
+				exists = c:AUS
+				ROOT.power_bloc_leader = c:AUS
 			}
-			90000 = arn_power_bloc_1
-		}
+			90000 = aus_power_bloc_1
+		}	
 		special_selection = {
 			trigger = { 
-				exists = c:DUA
-				ROOT.power_bloc_leader = c:DUA
+				exists = c:PRU
+				ROOT.power_bloc_leader = c:PRU
 			}
-			90000 = dua_power_bloc_1
-		}
+			90000 = pru_power_bloc_1
+		}	
 		special_selection = {
 			trigger = { 
-				exists = c:MUG
-				ROOT.power_bloc_leader = c:MUG
+				exists = c:RUS
+				ROOT.power_bloc_leader = c:RUS
 			}
-			90000 = mug_power_bloc_1
-		}
+			90000 = rus_power_bloc_1
+		}	
 		special_selection = {
 			trigger = { 
-				exists = c:SCA
-				ROOT.power_bloc_leader = c:SCA
+				exists = c:TUR
+				ROOT.power_bloc_leader = c:TUR
 			}
-			90000 = sca_power_bloc_1
-		}
+			90000 = tur_power_bloc_1
+		}	
 	}
 }

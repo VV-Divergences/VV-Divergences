@@ -1,490 +1,177 @@
 ﻿POPS = {
-	#Mianjin
-	s:STATE_ZHENG_HE = {
-		region_state:MJN = {
-			create_pop = {
-				culture = zhourao
-				size = 686816
-			}
-			create_pop = {
-				culture = zhourao
-				religion = sunni
-				size = 294348
-			}
-			create_pop = {
-				culture = zhourao
-				religion = catholic
-				size = 177400
-			}
+	s:STATE_NEW_SOUTH_WALES = {
+		region_state:NSW = {
 			create_pop = {
 				culture = aborigine
-				size = 85200
-				religion = mahayana
+				size = 63200
+			}
+			create_pop = {
+				culture = australian
+				size = 101384
+			}
+			create_pop = {
+				culture = irish
+				size = 16080
 			}
 		}
 	}
-	s:STATE_WEIHUAI = {
-		region_state:MJN = {
-			create_pop = {
-				culture = zhourao
-				size = 750000
-			}
-			create_pop = {
-				culture = zhourao
-				religion = sunni
-				size = 500000
-			}
-			create_pop = {
-				culture = zhourao
-				religion = catholic
-				size = 91200
-			}
+	s:STATE_VICTORIA = {
+		region_state:NSW = {
 			create_pop = {
 				culture = aborigine
-				size = 235734
-				religion = mahayana
+				size = 31118
+			}
+			create_pop = {
+				culture = australian
+				size = 24676
 			}
 		}
 	}
-	#Yulao
-	s:STATE_QINGSHUI = {
-		region_state:YLO = {
-			create_pop = {
-				culture = zhourao
-				size = 1115080
-			}
+
+	s:STATE_TASMANIA = {
+		region_state:TAS = {
 			create_pop = {
 				culture = aborigine
-				size = 249305
-				religion = mahayana
+				size = 200
 			}
 			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 35615
+				culture = australian
+				size = 41200
 			}
 		}
 	}
-	s:STATE_GUANSHAN = {
-		region_state:YLO = {
-			create_pop = {
-				culture = zhourao
-				size = 658400
-			}
+	s:STATE_QUEENSLAND = {
+		region_state:NSW = {
 			create_pop = {
 				culture = aborigine
-				size = 123900
-				religion = mahayana
+				size = 59200
 			}
 			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 17700
+				culture = australian
+				size = 4000
 			}
 		}
 	}
-	s:STATE_XINXIANG = {
-		region_state:YLO = {
+	s:STATE_SOUTH_AUSTRALIA = {
+		region_state:SAS = {
 			create_pop = {
-				culture = zhourao
-				size = 896800
-			}
+				culture = australian
+				size = 10500
+			}		
 			create_pop = {
 				culture = aborigine
-				religion = mahayana
-				size = 103200
+				size = 18000
 			}
 		}
-	}
-	
-	#Decentralized
-	s:STATE_PITJANTJAJARA = {
-		region_state:PJT = {
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 7780
-			}
-		}
-	}
-	s:STATE_YONGLING = {
-		region_state:KOO = {
-			create_pop = {
-				culture = aborigine
-				religion = mahayana
-				size = 31854
-			}
-			create_pop = {
-				culture = zhourao
-				size = 86004
-			}
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 66246
-			}
-		}
-		region_state:YLO = {
-			create_pop = {
-				culture = aborigine
-				religion = mahayana
-				size = 5854
-			}
-			create_pop = {
-				culture = zhourao
-				size = 16004
-			}
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 6246
-			}
-		}
-	}
-	s:STATE_COOMALONG = {
-		region_state:YMT = {
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 10350
-			}
-			create_pop = {
-				culture = aborigine
-				religion = protestant
-				size = 1390
-			}
-		}
-		region_state:BEI = {
-			create_pop = {
-				culture = javan
-				size = 66960
-			}
-			create_pop = {
-				culture = burgundian
-				size = 3928
-			}
-		}
-	}
-	s:STATE_TAITUNG = {
-		region_state:WIR = {
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 43320
-			}
-			create_pop = {
-				culture = aborigine
-				religion = mahayana
-				size = 24430
-			}
-		}
-		region_state:MJN = {
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 3320
-			}
-			create_pop = {
-				culture = aborigine
-				religion = mahayana
-				size = 4430
-			}
-			create_pop = {
-				culture = zhourao
-				size = 22640
-			}
-		}
-	}
-	s:STATE_YONGJIA = {
 		region_state:KAU = {
 			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 20302
-			}
+				culture = australian
+				size = 300
+			}		
 			create_pop = {
 				culture = aborigine
-				religion = mahayana
-				size = 7320
+				size = 51000
+			}
+		}
+		region_state:WTI = {
+			create_pop = {
+				culture = aborigine
+				#size = 4000 # historical increased for gameplay
+				size = 12500
 			}
 		}
 	}
-	s:STATE_OODNATTA = {
-		region_state:NUN = {
+	s:STATE_WESTERN_AUSTRALIA = {
+		region_state:WAS = {
 			create_pop = {
 				culture = aborigine
-				religion = animist
-				size = 11360
+				size = 51456
+			}
+			create_pop = {
+				culture = australian
+				size = 3004
 			}
 		}
-	}
-	s:STATE_NOONGAR = {
 		region_state:NNG = {
 			create_pop = {
 				culture = aborigine
-				religion = animist
-				size = 81283
+				size = 21100
 			}
+		}
+		region_state:WTI = {
 			create_pop = {
 				culture = aborigine
+				#size = 4044 # historical increased for gameplay
+				size = 12500
+			}
+		}
+		region_state:MRN = {
+			create_pop = {
+				culture = aborigine
+				#size = 2000 # historical increased for gameplay
+				size = 10000
+			}
+		}
+	}
+	s:STATE_NORTHERN_TERRITORY = {
+		region_state:NSW = {
+			create_pop = {
+				culture = aborigine
+				size = 29000
+			}
+		}
+		region_state:WTI = {
+			create_pop = {
+				culture = aborigine
+				#size = 2804 #historical increased for gameplay
+				size = 12500
+			}
+		}
+	}
+	s:STATE_NORTH_ISLAND = {
+		region_state:UNT = {
+			create_pop = {
+				culture = maori
 				religion = protestant
-				size = 21041
-			}
-		}
-		region_state:BRG = {
-			create_pop = {
-				culture = verlander
-				size = 4560
-			}
-			create_pop = {
-				culture = aborigine
-				religion = protestant
-				size = 1242
-			}
-		}
-	}
-	s:STATE_YOLNGU = {
-		region_state:YLN = {
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 48300
-			}
-			create_pop = {
-				culture = moluccan
-				size = 1240
-			}
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 3450
-			}
-		}
-		region_state:GWG = {
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 34550
-			}
-			create_pop = {
-				culture = moluccan
-				size = 670
-			}
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 11050
-			}
-		}
-		region_state:NGL = {
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 34650
-			}
-			create_pop = {
-				culture = moluccan
-				size = 1850
-			}
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 1320
-			}
-		}
-		region_state:GRJ = {
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 22250
-			}
-		}
-		region_state:MKS = {
-			create_pop = {
-				culture = moluccan
-				size = 14542
-			}
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 2250
-			}
-		}
-		region_state:DUA = {
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 3000
-			}
-			create_pop = {
-				culture = anglois
-				size = 800
-			}
-		}
-	}
-	#Zhushan
-	s:STATE_WENCHENG = {
-		region_state:ZSA = {
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 107660
-			}
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 31380
-			}
-			create_pop = {
-				culture = moluccan
-				size = 35480
-			}
-			create_pop = {
-				culture = zhourao
-				religion = sunni
-				size = 726400
-			}
-			create_pop = {
-				culture = zhourao
-				size = 72640
-			}
-		}
-		region_state:YAL = {
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 25920
-			}
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 77890
-			}
-		}
-	}
-	s:STATE_JINZHOU = {
-		region_state:ZSA = {
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 95334
-			}
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 8666
-			}
-			create_pop = {
-				culture = moluccan
-				size = 23040
-			}
-			create_pop = {
-				culture = zhourao
-				religion = sunni
-				size = 940728
-			}
-			create_pop = {
-				culture = zhourao
-				size = 94072
-			}
-		}
-	}
-	s:STATE_WEIZHOU = {
-		region_state:ZSA = {
-			create_pop = {
-				culture = zhourao
-				religion = sunni
-				size = 808000
-			}
-			create_pop = {
-				culture = zhourao
-				size = 452000
-			}
-			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 20000
-			}
-			create_pop = {
-				culture = aborigine
-				religion = sunni
-				size = 120000
-			}
-		}
-	}
-	
-	#Aotearoa
-	s:STATE_MOTU_PARI = {
-		region_state:AOT = {
-			create_pop = {
-				culture = maori
-				size = 176800
+				size = 30000
 			}
 			create_pop = {
 				culture = maori
-				size = 9800
-				religion = mahayana
-			}
-			create_pop = {
-				culture = maori
-				size = 3200
-				religion = catholic
+				size = 25000
 			}
 		}
-		region_state:QQQ = {
+		region_state:NSW = {
 			create_pop = {
 				culture = maori
-				size = 8300
-				religion = mahayana
+				size = 5000
 			}
 			create_pop = {
-				culture = zhourao
-				size = 25200
-				religion = mahayana
-			}
-		}
-	}
-	
-	#Scandinavia
-	s:STATE_MOTU_TIMU = {
-		region_state:NTU = {
-			create_pop = {
-				culture = maori
-				size = 11600
+				culture = australian
+				size = 1004
 			}
 		}
 		region_state:NTO = {
 			create_pop = {
 				culture = maori
-				size = 16380
-			}
-		}
-		region_state:SCA = {
-			create_pop = {
-				culture = ny_sjaellander
-				size = 1638
-			}
-			create_pop = {
-				culture = maori
-				size = 380
+				size = 32000
 			}
 		}
 	}
-	s:STATE_PARLEVAR = {
-		region_state:SCA = {
+	s:STATE_SOUTH_ISLAND = {
+		region_state:NTO = {
 			create_pop = {
-				culture = ny_sjaellander
-				size = 14558
+				culture = australian
+				size = 428
 			}
 			create_pop = {
-				culture = aborigine
-				religion = animist
-				size = 30482
+				culture = maori
+				size = 12000
 			}
+		}
+		region_state:NTU = {
 			create_pop = {
-				culture = aborigine
-				religion = mahayana
-				size = 2520
+				culture = maori
+				size = 64000
 			}
 		}
 	}

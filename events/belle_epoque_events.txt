@@ -160,6 +160,13 @@ belle_epoque_events.2 = { #Art Nouveau
 			}
 			save_scope_as = obsessed_culture
 		}
+		random_scope_building = {
+			limit = {
+				is_building_type = building_arts_academy
+				level >= 3
+			}
+			save_scope_as = belle_epoque_building
+		}
 		set_variable = art_nouveau_var
 	}
 	
@@ -229,6 +236,7 @@ belle_epoque_events.3 = {
 					has_trait = innovative
 				}
 				is_busy = no
+				is_immortal = no
 			}
 		}
 		NOT = { has_variable = symbolist_var }
@@ -1635,7 +1643,7 @@ belle_epoque_events.16 = {
 		scope:belle_epoque_state = {
 			add_loyalists_in_state = {
 				value = medium_radicals
-				strata = rich
+				strata = upper
 			}
 			add_loyalists_in_state = {
 				value = medium_radicals
@@ -1902,10 +1910,10 @@ belle_epoque_events.20 = {
 	immediate = {
 		if = {
 			limit = {
-				exists = c:DUA
+				exists = c:FRA
 			}
-			c:DUA = {
-				save_scope_as = dua_scope
+			c:FRA = {
+				save_scope_as = france_scope
 			}
 		}
 		if = {
@@ -1924,14 +1932,14 @@ belle_epoque_events.20 = {
 				save_scope_as = russia_scope
 			}
 		}
-		# if = {
-		# 	limit = {
-		# 		exists = c:USA
-		# 	}
-		# 	c:USA = {
-		# 		save_scope_as = usa_scope
-		# 	}
-		# }
+		if = {
+			limit = {
+				exists = c:USA
+			}
+			c:USA = {
+				save_scope_as = usa_scope
+			}
+		}
 		if = {
 			limit = {
 				exists = c:CHI
@@ -1965,7 +1973,7 @@ belle_epoque_events.20 = {
 		name = belle_epoque_events.20.a
 		default_option = yes
 		trigger = {
-			country_has_primary_culture = cu:anglois
+			country_has_primary_culture = cu:french
 		}
 		add_modifier = {
 			name = modifier_famous_botanical_garden
@@ -1983,7 +1991,7 @@ belle_epoque_events.20 = {
 		default_option = yes
 		trigger = {	
 			NOT = {
-				country_has_primary_culture = cu:anglois
+				country_has_primary_culture = cu:french
 			}
 		}
 		add_modifier = {
@@ -2045,22 +2053,22 @@ belle_epoque_events.20 = {
 			value = 10
 		}
 	}
-	# option = {
-	# 	name = belle_epoque_events.20.h
-	# 	trigger = {
-	# 		exists = c:USA
-	# 		NOT = {
-	# 			this = c:USA
-	# 		}
-	# 		c:USA = {
-	# 			relations:root >= 20
-	# 		} 
-	# 	}
-	# 	change_relations = {
-	# 		country = c:USA
-	# 		value = 10
-	# 	}
-	# }
+	option = {
+		name = belle_epoque_events.20.h
+		trigger = {
+			exists = c:USA
+			NOT = {
+				this = c:USA
+			}
+			c:USA = {
+				relations:root >= 20
+			} 
+		}
+		change_relations = {
+			country = c:USA
+			value = 10
+		}
+	}
 	option = {
 		name = belle_epoque_events.20.i
 		trigger = {

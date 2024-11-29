@@ -19,7 +19,7 @@
 			desc = "POP_STARVATION"	
 			
 			if = {
-				limit = { 
+				limit = {
 					is_in_mild_starvation = yes
 				}
 				value = 0.5
@@ -29,8 +29,8 @@
 					is_in_severe_starvation = yes
 				}
 				value = 1.5
-			}		
-		}		
+			}
+		}	
 
 		multiply = {
 			desc = "NO_LABOR_MOVEMENT"	
@@ -63,10 +63,10 @@
 	
 	qualifications_growth_desc = "MACHINISTS_QUALIFICATIONS_DESC"
 	qualifications = {
-		# baseline: ( literacy - 0.25 ) * 20, norm 8 for Laborers with Literacy 30%
+		# baseline: ( literacy - 0.1 ) * 20, norm 8 for Laborers with Literacy 30%
 		add = {
 			value = literacy_rate
-			subtract = 0.25
+			subtract = 0.1
 			min = 0
 			multiply = 20
 			desc = "QUALIFICATIONS_LITERACY_FACTOR"
@@ -87,20 +87,6 @@
 			multiply = {
 				value = 0.05
 				desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
-			}
-		}
-		if = {
-			limit = {
-				state = {
-					state_cultural_acceptance = {
-						target = PREV.culture
-						   value < acceptance_status_4
-					   }
-				}
-			}
-			multiply = {
-				value = 0.4
-				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 			}
 		}
 	}

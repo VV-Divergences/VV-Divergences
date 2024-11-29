@@ -346,7 +346,31 @@ ai_strategy_industrial_expansion = {
 				}
 			}
 			add = 20
-		}	
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					has_modifier = shogun_ig_forced_to_open_market
+					has_journal_entry = je_meiji_main					
+				}
+			}
+			add = 1000
+		}		
+
+		if = {
+			limit = { 
+				exists = c:FRA
+				c:FRA = this
+				ruler = {
+					OR = {
+						has_variable = orleanist_leader
+						has_variable = bonapartist_leader
+					}
+				}
+			}
+			add = 20
+		}
 
 		if = {
 			limit = {

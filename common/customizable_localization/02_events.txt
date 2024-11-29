@@ -350,23 +350,23 @@ place_event = {
 	}
 
 
-	# text = {
-		# trigger = {
-			# exists = c:SWE
-			# this = c:SWE
-			# owns_entire_state_region = STATE_SVEALAND
-		# }
-		# localization_key = place_event_gamla_stan
-	# }
+	text = {
+		trigger = {
+			exists = c:SWE
+			this = c:SWE
+			owns_entire_state_region = STATE_SVEALAND
+		}
+		localization_key = place_event_gamla_stan
+	}
 
-	# text = {
-		# trigger = {
-			# exists = c:SWE
-			# this = c:SWE
-			# owns_entire_state_region = STATE_SVEALAND
-		# }
-		# localization_key = place_event_gustav
-	# }
+	text = {
+		trigger = {
+			exists = c:SWE
+			this = c:SWE
+			owns_entire_state_region = STATE_SVEALAND
+		}
+		localization_key = place_event_gustav
+	}
 
 	text = {
 		trigger = {
@@ -377,14 +377,14 @@ place_event = {
 		localization_key = place_event_kremlin
 	}
 
-	# text = {
-		# trigger = {
-			# exists = c:USA
-			# this = c:USA 
-			# owns_entire_state_region = STATE_DISTRICT_OF_COLUMBIA
-		# }
-		# localization_key = place_event_whitehouse
-	# }
+	text = {
+		trigger = {
+			exists = c:USA
+			this = c:USA 
+			owns_entire_state_region = STATE_DISTRICT_OF_COLUMBIA
+		}
+		localization_key = place_event_whitehouse
+	}
 
 	text = {
 		trigger = {
@@ -396,21 +396,19 @@ place_event = {
 
 	text = {
 		trigger = {
-			exists = c:DUA
-			this = c:DUA
-			# exists = c:GBR
-			# this = c:GBR
+			exists = c:GBR
+			this = c:GBR
 		}
 		localization_key = place_event_jersey
 	}
 
-	# text = {
-		# trigger = {
-			# exists = c:BRZ
-			# this = c:BRZ
-		# }
-		# localization_key = place_event_largo
-	# }
+	text = {
+		trigger = {
+			exists = c:BRZ
+			this = c:BRZ
+		}
+		localization_key = place_event_largo
+	}
 
 	text = {
 		trigger = {
@@ -442,13 +440,13 @@ assassin_description = {
 		localization_key = assassin_description_angry_man
 	}
 
-	# text = {
-		# trigger = {
-			# exists = c:USA
-			# this = c:USA
-		# }
-		# localization_key = assassin_description_mkc
-	# }
+	text = {
+		trigger = {
+			exists = c:USA
+			this = c:USA
+		}
+		localization_key = assassin_description_mkc
+	}
 }
 
 assassin_movement = {
@@ -885,73 +883,73 @@ GetHerselfHimself = {
 }
 
 mother_father = {
-    type = country
-    text = {
-        trigger = {
-            has_variable = ruler_female
-        }
-        localization_key = custom_mother
-    }
+	type = country
+	text = {
+		trigger = {
+			has_variable = ruler_female
+		}
+		localization_key = custom_mother
+	}
 
-    text = {
-        trigger = {
-            has_variable = ruler_male
-        }
-        localization_key = custom_father
-    }
+	text = {
+		trigger = {
+			has_variable = ruler_male
+		}
+		localization_key = custom_father
+	}
 }
 
 fiction_cliche = {
-    type = country
-    
-    text = {
-        trigger = {
-            OR = {
-                country_has_primary_culture = cu:russian
-            } 
-        }
-        localization_key = fanfic_ship_russia
-    }
-    
-    text = {
-        trigger = {
-            OR = {
-                country_is_in_europe = yes
-                country_is_in_north_america = yes
-            }
-        }
-        localization_key = fanfic_ship_west
-    }
+	type = country
+	
+	text = {
+		trigger = {
+			OR = {
+				country_has_primary_culture = cu:russian
+			} 
+		}
+		localization_key = fanfic_ship_russia
+	}
+	
+	text = {
+		trigger = {
+			OR = {
+				country_is_in_europe = yes
+				country_is_in_north_america = yes
+			}
+		}
+		localization_key = fanfic_ship_west
+	}
 
-    text = {
-        trigger = {
-            country_is_in_south_america = yes
-        }
-        localization_key = fanfic_ship_south_america
-    }
+	text = {
+		trigger = {
+			country_is_in_south_america = yes
+		}
+		localization_key = fanfic_ship_south_america
+	}
 
-    text = {
-        trigger = {
-            OR = {
-                country_has_primary_culture = cu:han
-                country_has_primary_culture = cu:manchu
-            } 
-        }
-        localization_key = fanfic_ship_china
-    }
+	text = {
+		trigger = {
+			OR = {
+				country_has_primary_culture = cu:han
+				country_has_primary_culture = cu:manchu
+			} 
+		}
+		localization_key = fanfic_ship_china
+	}
 
-    text = {
-        trigger = {
-            OR = {
-                country_has_primary_culture = cu:japanese
-                country_has_primary_culture = cu:korean
-            } 
-        }
-        localization_key = fanfic_ship_japan
-    }
+	text = {
+		trigger = {
+			OR = {
+				country_has_primary_culture = cu:japanese
+				country_has_primary_culture = cu:korean
+			} 
+		}
+		localization_key = fanfic_ship_japan
+	}
 
-    text = {
-        localization_key = fanfic_ship_generic
-    }
+	text = {
+		localization_key = fanfic_ship_generic
+	}
 
 }
