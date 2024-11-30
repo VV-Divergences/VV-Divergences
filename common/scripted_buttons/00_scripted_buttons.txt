@@ -373,9 +373,9 @@ je_risorgimento_austrian_radicals_button = {
 				any_scope_state = {
 					state_region = {
 						OR = {
-							country_has_primary_culture = cu:south_italian
-							country_has_primary_culture = cu:central_italian
-							country_has_primary_culture = cu:north_italian
+							is_homeland = cu:south_italian
+							is_homeland = cu:central_italian
+							is_homeland = cu:north_italian
 						}
 					}
 				}
