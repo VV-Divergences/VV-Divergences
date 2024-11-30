@@ -30,6 +30,14 @@ state_buryat_standard_of_living_add = {
 	}
 }
 
+state_burgindian_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
 state_mordvin_standard_of_living_add = {
 	decimals = 1
 	color = good
@@ -221,6 +229,15 @@ state_paulista_standard_of_living_add = {
 		ai_value = 0
 	}
 }
+
+state_anglois_standard_of_living_add = {
+	decimals = 1
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
 state_building_university_max_level_add= {
 	color=good
 	percent=no
