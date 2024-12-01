@@ -17,7 +17,12 @@
 	undesirable_infamy_level = {
 		value = 50
 	}
-	
+	subsidies = {
+		building_power_plant = must_have
+		building_railway = must_have
+		building_trade_center = must_have		
+		building_port = must_have
+	}
 	# The AI will never deliberately add wargoals that will bring its infamy this high
 	# Using a different value in a strategy will override this value
 	unacceptable_infamy_level = {
