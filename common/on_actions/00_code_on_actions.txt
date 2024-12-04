@@ -770,7 +770,6 @@ on_monthly_pulse_country = {
 		delay = { days = 7 }
 		fund_lobbies_monthly_events
 		spooky_halloween_events
-		HMPS_Coastal_Capital	#vv
 	}
 }
 
