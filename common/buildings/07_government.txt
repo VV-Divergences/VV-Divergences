@@ -1,4 +1,4 @@
-﻿############ GOVERNMENT BUILDINGS
+############ GOVERNMENT BUILDINGS
 building_port = {
 	building_group = bg_private_infrastructure
 	city_type = port
@@ -21,10 +21,9 @@ building_port = {
 	potential = {
 		is_coastal = yes
 	}
-
+	ownership_type = self
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
-
 building_government_administration = {
 	building_group = bg_bureaucracy
 	city_type = city
