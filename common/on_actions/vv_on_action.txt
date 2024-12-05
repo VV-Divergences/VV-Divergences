@@ -1,0 +1,52 @@
+﻿# Root = Country
+HMPS_Coastal_Capital = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_modifier = coastal_capital }
+				capital = { is_coastal = yes }
+			}
+			add_modifier = {
+				name = coastal_capital
+				months = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { has_modifier = near_coastal_capital }
+				capital = {
+					any_neighbouring_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			add_modifier = {
+				name = near_coastal_capital
+				months = -1
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = coastal_capital
+				capital = {
+					is_coastal = no
+				}
+			}
+			remove_modifier = coastal_capital
+		}
+		if = {
+			limit = {
+				has_modifier = near_coastal_capital
+				capital = {
+					NOT = {
+						any_neighbouring_state = {
+							is_coastal = yes
+						}
+					}
+				}
+			}
+			remove_modifier = near_coastal_capital
+		}
+	}
+}
+	
