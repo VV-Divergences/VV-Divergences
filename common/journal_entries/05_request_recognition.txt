@@ -83,7 +83,7 @@
 			if = {
 				limit = {
 					# Your Standard of Living is relatively high
-					sol_ranking <= 75	#vv raise from 20 
+					sol_ranking <= 35	#vv raise from 20 
 				}
 				change_variable = {
 					name = recognition_progress_var
@@ -186,7 +186,7 @@
 			if = {
 				limit = {
 					# Your Standard of Living is relatively low
-					sol_ranking >= 100	#vv increased from 50
+					sol_ranking >= 75	#vv increased from 50
 				}
 				change_variable = {
 					name = recognition_progress_var

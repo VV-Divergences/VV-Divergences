@@ -219,7 +219,7 @@ decentralized_power = {
 	
 	modifier = {
 		country_diplomatic_play_maneuvers_add = 30
-		building_throughput_add = -0.33
+		building_throughput_add = -0.4
 		country_max_declared_interests_add = 1 #vv added
 	}
 }
